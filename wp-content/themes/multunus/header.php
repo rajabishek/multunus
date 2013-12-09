@@ -1,39 +1,39 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!--> <html <?php language_attributes(); ?>> <!--<![endif]-->
 
 <head>
-	<meta charset="<?php bloginfo('charset'); ?>" />
-	
-	<?php if (is_search()) { ?>
-	   <meta name="robots" content="noindex, nofollow" /> 
-	<?php } ?>
+  <meta charset="<?php bloginfo('charset'); ?>" />
+  <meta name="description" content="<?php bloginfo('description'); ?>">
+  <meta name="author" content="Multunus">
 
-	<title>
-		   <?php
-		      if (function_exists('is_tag') && is_tag()) {
-		         single_tag_title("Tag Archive for &quot;"); echo '&quot; - '; }
-		      elseif (is_archive()) {
-		         wp_title(''); echo ' Archive - '; }
-		      elseif (is_search()) {
-		         echo 'Search for &quot;'.wp_specialchars($s).'&quot; - '; }
-		      elseif (!(is_404()) && (is_single()) || (is_page())) {
-		         wp_title(''); echo ' - '; }
-		      elseif (is_404()) {
-		         echo 'Not Found - '; }
-		      if (is_home()) {
-		         bloginfo('name'); echo ' - '; bloginfo('description'); }
-		      else {
-		          bloginfo('name'); }
-		      if ($paged>1) {
-		         echo ' - page '. $paged; }
-		   ?>
+  <?php if (is_search()) { ?>
+    <meta name="robots" content="noindex, nofollow" /> 
+  <?php } ?>
+
+  <title>
+    <?php
+    if (function_exists('is_tag') && is_tag()) {
+      single_tag_title("Tag Archive for &quot;"); echo '&quot; - '; }
+    elseif (is_archive()) {
+      wp_title(''); echo ' Archive - '; }
+    elseif (is_search()) {
+      echo 'Search for &quot;'.wp_specialchars($s).'&quot; - '; }
+    elseif (!(is_404()) && (is_single()) || (is_page())) {
+      wp_title(''); echo ' - '; }
+    elseif (is_404()) {
+      echo 'Not Found - '; }
+
+    if (is_home()) {
+      bloginfo('name'); echo ' | '; bloginfo('description'); }
+    else {
+      bloginfo('name'); }
+    if ($paged>1) {
+      echo ' - page '. $paged; }
+    ?>
 	</title>
 	
-	<link rel="shortcut icon" href="/favicon.ico">
-	
-	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
-	
-	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+	<link rel="shortcut icon" href="/img/favicon.ico">
 
 	<?php if ( is_singular() ) wp_enqueue_script('comment-reply'); ?>
 
@@ -41,10 +41,39 @@
 </head>
 
 <body <?php body_class(); ?>>
-	
-	<div id="page-wrap">
+  <header>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="<?php bloginfo('url'); ?>">
+          <div class="logo-container"></div>
+        </a>
+      </div>
 
-		<div id="header">
-			<h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
-			<div class="description"><?php bloginfo('description'); ?></div>
-		</div>
+      <?php
+        wp_nav_menu( array(
+          'menu'              => 'primary',
+          'theme_location'    => 'primary',
+          'depth'             => 2,
+          'container'         => 'div',
+          'container_class'   => 'collapse navbar-collapse',
+          'container_id'      => 'navbar-collapse',
+          'menu_class'        => 'nav navbar-nav',
+          'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+          'items_wrap'        => '<ul class="%2$s">%3$s</ul>
+                                  <div class="blinker">
+                                    <div class="navbar-text tagline active"><a href="#" class="navbar-link">Disciplined <span class="highlight">Creativity</span></a></div>
+                                    <div class="navbar-text contact-no"><a href="#" class="navbar-link">Let\'s talk: <span class="highlight">+91 9739864271</span></a></div>
+                                  </div>',
+          'walker'            => new wp_bootstrap_navwalker())
+        );
+      ?>
+
+
+    </nav>
+  </header>
