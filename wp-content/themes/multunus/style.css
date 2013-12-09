@@ -1,0 +1,27 @@
+/*   
+Theme Name: Multunus5 Theme
+Theme URI: http://multunus.com
+Description: Multunus Wordpress Theme 2013
+Author: multunus
+Author URI: http://multunus.com
+Version: 0.1
+ */
+
+/* minimal reset css */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* apply a natural box layout model to all elements */
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
