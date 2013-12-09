@@ -22,6 +22,17 @@ Version: 0.1
   box-sizing: border-box;
 }
 
+/* w3c device adaptation */
+@viewport {
+  width: extend-to-zoom;
+  zoom: 1.0;
+}
+
+@-ms-viewport {
+  width: extend-to-zoom;
+  zoom: 1.0;
+}
+
 html, body {
   height: 100%;
 }
