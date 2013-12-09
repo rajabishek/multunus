@@ -38,6 +38,13 @@ if (!is_admin()) {
     wp_enqueue_script('bootstrap-js');
   }
 
+  // Add proxima-nova font from typekit
+  add_filter( 'wp_head', 'add_typekit_font' ); 
+  function add_typekit_font() {
+    echo '<script type="text/javascript" src="//use.typekit.net/pfx5bei.js"></script>';
+    echo '<script type="text/javascript">try{Typekit.load();}catch(e){}</script>';
+  }
+
   // Add viewport meta tag to head
   add_filter('wp_head', 'viewport_meta');
   function viewport_meta() { 
