@@ -7,6 +7,14 @@ define('IMAGES', THEMEROOT.'/images');
 // Only on front-end pages, NOT in admin area
 if (!is_admin()) {
 
+  // add ie conditional html5 shim to header
+  add_action('wp_head', 'add_ie_html5_shim', 10);
+  function add_ie_html5_shim () {
+    echo '<!--[if lt IE 9]>';
+    echo '<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>';
+    echo '<![endif]-->';
+  }
+
   // Load CSS
   add_action('wp_enqueue_scripts', 'twbs_load_styles', 11);
   function twbs_load_styles() {
@@ -29,6 +37,13 @@ if (!is_admin()) {
     wp_register_script('bootstrap-js', '//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js', array('jquery'), null, true);
     wp_enqueue_script('bootstrap-js');
   }
+
+  // Add viewport meta tag to head
+  add_filter('wp_head', 'viewport_meta');
+  function viewport_meta() { 
+    echo '<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>';
+  }
+
 
 } // end if !is_admin
 	
