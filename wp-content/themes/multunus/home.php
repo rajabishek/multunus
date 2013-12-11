@@ -51,4 +51,22 @@
   </div> <!-- end container -->
 </article> <!-- end main-content -->
 
+<section class="our-services">
+  <div class="container">
+    <div class="row">
+        <div class="col-md-4">
+          <img src="/img/web-apps-icon-grey.png" />
+        </div>
+
+        <div class="col-md-4">
+          <img src="/img/mobile-apps-icon-grey.png" />
+        </div>
+
+        <div class="col-md-4">
+          <img src="/img/opensource-apps-icon-grey.png" />
+        </div>
+    </div>
+  </div>
+</section>
+
 <?php get_footer(); ?>
