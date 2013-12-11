@@ -26,7 +26,7 @@
 <article class="big-picture-text">
   <div class="container">
     <div class="row">
-      <div class="col-md-3 hidden-xs hidden-sm vertical-center">
+      <div class="col-md-3 col-md-offset-1 hidden-xs hidden-sm vertical-center">
         <h1>The<br /><span class="red-text">Big Picture</span></h1>
       </div>
 
@@ -37,7 +37,7 @@
         </a>
       </div>
 
-      <div class="col-md-3 col-xs-12 big-picture-list">
+      <div class="col-md-4 col-xs-12 big-picture-list">
         <div class="col-md-3 col-sm-offset-1 visible-sm visible-xs align-center">
           <h1>The <span class="red-text">Big Picture</span></h1>
         </div>
