@@ -1,5 +1,6 @@
 .navbar {
   background: $navbar-default-bg;
+  font-weight: normal;
 
   .navbar-header {
     .navbar-brand {
@@ -104,6 +105,8 @@
     }
 
     .tagline, .contact-no {
+      margin-right: 15px;
+      font-size: 15px;
       position: absolute;
       right: 0px;
       opacity: 0;
@@ -116,21 +119,17 @@
         opacity: 1;
       }
 
-      a {
-        color: white;
-
-        &:hover {
-          text-decoration: none;
-        }
+      &:hover {
+        cursor: none;
       }
 
-      .highlight {
+      .text-white {
+        color: white;
+      }
+
+      .text-pink {
         color: #cc2d48;
       }
-    }
-
-    .contact-no {
-      margin-right: 15px;
     }
   }
 }

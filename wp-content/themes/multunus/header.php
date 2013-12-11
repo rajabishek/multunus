@@ -67,8 +67,8 @@
           'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
           'items_wrap'        => '<ul class="%2$s">%3$s</ul>
                                   <div class="blinker">
-                                    <div class="navbar-text tagline active"><a href="#">Disciplined <span class="highlight">Creativity</span></a></div>
-                                    <div class="navbar-text contact-no">Let\'s talk: <a class="highlight" href="tel:+91 80 26590594">+91 80 26590594</a></div>
+                                    <div class="navbar-text tagline active"><span class="text-white">Disciplined </span><span class="text-pink">Creativity</span></div>
+                                    <div class="navbar-text contact-no"><span class="text-white">Let\'s talk: </span><a class="text-pink" href="tel:+91 80 26590594">+91 80 26590594</a></div>
                                   </div>',
           'walker'            => new wp_bootstrap_navwalker())
         );

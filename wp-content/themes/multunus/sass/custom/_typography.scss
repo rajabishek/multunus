@@ -3,6 +3,10 @@ $theme-color-dark-pink: #b01732;
 $white-bg: #fff;
 $grey-bg: #f1f1f1;
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: lighter;
+}
+
 h1 {
   font-size: 42px;
   line-height: 49.55px;
@@ -43,9 +47,10 @@ a:hover {
   color: white;
 }
 
-body {
+html, body {
   font-family: "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 300;
+  font-size: 16px;
 }
 
 .red-text {
