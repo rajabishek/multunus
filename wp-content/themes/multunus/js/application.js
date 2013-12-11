@@ -28,6 +28,16 @@ $(function() {
     setupBlinker: function() {
       this.startBlinker();
       this.setupBlinkerHoverHandler();
+    },
+
+    setupNavBarCollapse: function() {
+      $(document).on('click',function(){
+          $('.navbar #navbar-collapse').collapse('hide');
+      });
+
+      $('.navbar #navbar-collapse').on('hidden.bs.collapse', function () {
+        $('.navbar .navbar-toggle').addClass('collapsed');
+      });
     }
   };
   /** header JS **/
@@ -50,6 +60,7 @@ $(function() {
   };
 
   window.header.setupBlinker();
+  window.header.setupNavBarCollapse();
   window.HOMEPAGE.toggleHomePageVideo();
 
 });
