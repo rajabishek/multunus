@@ -45,7 +45,7 @@ $(function() {
   window.HOMEPAGE = {
     toggleHomePageVideo: function(){
       if(this.isMobileDevice()){
-        $(".video-section-container .overlay").addClass("mobile-device");
+        $(".video-section-container").addClass("mobile-device");
       }
     },
     isMobileDevice: function() {
