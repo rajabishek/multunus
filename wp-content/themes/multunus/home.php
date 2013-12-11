@@ -3,7 +3,7 @@
 <div class="video-section-container">
   <div class="overlay">
     <div class="overlay-content">
-      <h1 id="quote">We help entrepreneurs succeed</h1>
+      <h1 id="quote">We help entrepreneurs<br /> succeed</h1>
       <div class="hidden-xs">
         <a href="#main-content" class="btn-red">explore<span></span></a>
       </div>
