@@ -1,0 +1,87 @@
+.team-header {
+  margin-top: 55px;
+  margin-bottom: 63px;
+
+  h1 {
+    margin-bottom: 22px;
+  }
+}
+
+.team-sort {
+  ul {
+    line-height: 27.55px;
+  }
+
+  li {
+    padding-right: 12px;
+    margin-left: 10px;
+    border-right: 1px solid #dfdddd;
+
+    cursor: pointer;
+
+    &:first-child {
+      margin-left: 0;
+      border-right: 0;
+      color: #999;
+    }
+
+    &:last-child {
+      border-right: 0;
+    }
+  }
+}
+
+.team-sort-active {
+  border-bottom: 4px solid $theme-color-pink;
+}
+
+.team-images {
+  margin-top: 33px;
+  margin-bottom: 65px;
+
+  figure {
+    float: left;
+    width: 140px;
+    height: 140px;
+    margin-right: 1.5em;
+    margin-bottom: 60px;
+
+    img {
+      filter: url(filters.svg#grayscale);
+      filter: gray;
+      -webkit-filter: grayscale(1);
+    }
+
+    img:hover {
+      filter: none;
+      -webkit-filter: grayscale(0);
+    }
+
+    figcaption {
+      padding-top: 15px;
+      text-align: center;
+    }
+
+    &.ux-designer, &.lead-programmer {
+      background-color: #666;
+      text-align: center;
+      padding: 48px 20px 53px 20px;
+
+      &:after {
+        content: url('/img/arrow-right.png');
+      }
+
+      &:hover {
+        background-color: $theme-color-pink;
+      }
+    }
+  }
+}
+
+@media (max-width: $screen-sm) {
+  .team-images figure {
+    width: 109px;
+    height: 109px;
+    margin-right: 1px;
+  }
+}

@@ -19,8 +19,8 @@ if (!is_admin()) {
   add_action('wp_enqueue_scripts', 'twbs_load_styles', 11);
   function twbs_load_styles() {
     // Bootstrap
-    wp_register_style('bootstrap-css', '//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css', array(), null, 'all');
-    wp_enqueue_style('bootstrap-css');
+    // wp_register_style('bootstrap-css', '//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css', array(), null, 'all');
+    // wp_enqueue_style('bootstrap-css');
     // Theme Styles
     wp_register_style('theme-styles', get_stylesheet_uri(), array(), null, 'all');
     wp_enqueue_style('theme-styles');

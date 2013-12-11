@@ -1,0 +1,98 @@
+body {
+  padding-top: 50px;
+}
+
+.mobile-device {
+  background: url("/img/shadow.png") repeat-x, url(/img/grid.png) repeat, url("http://www.sintel.org/wp-content/uploads/2010/06/05.8b_comp_000272.jpg") !important;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+}
+
+.video-section-container {
+  position: relative;
+  width: 100%;
+  overflow: auto;
+  video {
+    width:100%;
+    height: auto !important;
+    float: left;
+    background: transparent url('/img/poster.png') no-repeat 0 0; 
+    -webkit-background-size:cover; 
+    -moz-background-size:cover; 
+    -o-background-size:cover; 
+    background-size:cover; 
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-image: url('/img/shadow.png'), url('/img/grid.png');
+  background-position: left top, left top;
+  background-repeat: repeat-x, repeat;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+
+  .overlay-content {
+    display: inline-block;
+    margin-top: 20%;
+    @media (min-width: 320px){
+      width: 82%;
+      margin-top: 10%;
+      }
+      @media (min-width: $screen-xs){
+        width: 82%;
+        margin-top: 15%;
+      }
+      @media (min-width : 624px){
+        width: 54.7%;
+      }
+      @media (min-width : $screen-sm){
+        width: 54.66%;
+      }
+      @media (min-width : $screen-md){
+        width: 50%;
+        margin-top: 21%
+      }
+      @media (min-width : $screen-lg){
+        width: 53.6667%;
+      }
+
+      h1 {
+        color: #fff;
+        @media (min-width: 320px){
+          font-size: 30px;
+          line-height: 28px;
+      }
+      @media (min-width: $screen-xs){
+        font-size: 32px;
+        line-height: 34px;
+      }
+      @media (min-width : 624px){
+        font-size: 40px;
+        line-height: 46px;
+      }
+      @media (min-width : $screen-sm){
+        font-size: 49px;
+        line-height: 52px;
+      }
+      @media (min-width : $screen-md){
+        font-size: 49px;
+        line-height: 52px;
+      }
+      @media (min-width : $screen-lg){
+        font-size: 4.5vw;
+        line-height: 4.5vw;
+      }
+    }
+
+    strong{
+      font-weight: normal;
+      color: $theme-color-pink;
+    }
+  }
+}

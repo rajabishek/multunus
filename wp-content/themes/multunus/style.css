@@ -7,6 +7,8 @@ Author URI: http://multunus.com
 Version: 0.1
  */
 
+@import url("css/custom/custom.css");
+
 /* minimal reset css */
 * {
   margin: 0;

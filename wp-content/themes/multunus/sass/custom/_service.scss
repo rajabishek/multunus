@@ -1,0 +1,154 @@
+article.services {
+  background-color: #f1f1f1;
+  padding-top: 56px;
+
+  hgroup {
+    text-align: center;
+
+    h1 {
+      margin-bottom: 20px;
+      margin-top: 0;
+  }
+
+  h4 {
+    margin-bottom: 50px;
+  }
+}
+
+ul.text li {
+  font-size: 16px
+}
+
+}
+
+.framework-img {
+  padding-top: 66px;
+  position: relative;
+
+img.fg-img {
+  position: absolute;
+  left: 4.2em;
+  bottom: 3.5em;
+}
+
+img.fg-img-2 {
+  position: absolute;
+  left: 2em;
+  bottom: 5em;
+}
+}
+
+section {
+  background-color: #fff;
+
+  article {
+    background-color: #fff;
+}
+
+h1 {
+  text-align: center;
+}
+}
+
+
+section[role="services"] {
+  header {
+    background-color: #fff;
+
+    ul{
+      margin-bottom:0;
+      li {
+        margin: 12px 60px 0 60px;
+
+        p {
+          display: inline-block;
+          font-size: 20px;
+        }
+
+      &:hover {
+        box-shadow: 0 -4px $theme-color-pink inset;
+      }
+      &:nth-child(1):before {
+        position: relative;
+        right: 15px;
+        top: 5px;
+        content: url('/img/webapps-icon-small-inactive-grey.png');
+      }
+      &:hover:nth-child(1):before {
+        content: url('/img/webapps-icon-small-active-red.png');
+      }
+    &:nth-child(2):before {
+      position: relative;
+      right: 15px;
+      top: 5px;
+      content: url('/img/mobileapps-icon-small-inactive-grey.png');
+    }
+    &:hover:nth-child(2):before {
+      content: url('/img/mobileapps-icon-small-active-red.png');
+    }
+    &:nth-child(3):before {
+      position: relative;
+      right: 15;
+      top: 5px;
+      content: url('/img/opensource-icon-small-inactive-grey.png');
+    }
+    &:hover:nth-child(3):before {
+      content: url('/img/opensource-icon-small-active-red.png');
+    }
+
+    }
+  }
+}
+}
+
+.domains{
+  background-color:#F1F1F1;
+  article{
+    background-color:transparent;
+    ul.list-inline{
+      li{
+        text-align: center;
+      }
+      p{
+        padding: 10px;
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+  }
+}
+
+.work-sample {
+  display: inline;
+
+  & + ul li {
+    border-right: 1px solid #e0e0e0;
+    padding-right: 20px;
+    margin-right: 10px;
+  }
+}
+
+.tech-text p {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.portfolio-imgs {
+  margin-bottom: 220px;
+
+  img {
+    width: 100%;
+  }
+
+  figcaption {
+    background-color: #f1f1f1;
+    position: relative;
+
+    &:before {
+      content: url('/img/arrow-right-red.png');
+      position: absolute;
+      top: 2em;
+      right: 2em;
+    }
+  }
+}

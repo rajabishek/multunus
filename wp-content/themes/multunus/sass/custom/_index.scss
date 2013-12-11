@@ -1,0 +1,122 @@
+.big-picture-header {
+  background-color: $white-bg;
+
+  ul {
+    margin: 0 auto;
+    line-height: 3;
+  }
+
+  li {
+    border-right: 1px solid #e3e3e3;
+    padding-right: 35px;
+
+    &:first-child {
+      padding-left: 45px !important;
+    }
+
+    &:last-child {
+      border-right: 0;
+      padding-left: 25px;
+    }
+  }
+}
+
+@media (max-width: $screen-sm) {
+  .big-picture-text ul {
+    padding-left: 0;
+  }
+
+  .big-picture-text li {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+.big-picture-text {
+  background-color: $grey-bg;
+  font-weight: 300;
+  min-height: 430px;
+  padding-top: 35px;
+
+  .vertical-center {
+    margin-top: 100px;
+
+    h1 {
+      text-align: right;
+      font-weight: 100;
+    }
+  }
+}
+
+.big-picture-list {
+  padding-top: 60px;
+
+  ul {
+    list-style-type: none;
+  }
+
+  li {
+    display: block;
+    font-size: 20px;
+    line-height: 1.5;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e3e3e3;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  li a:hover {
+    border-bottom: 1px dotted;
+    color: $theme-color-pink;
+  }
+}
+
+@media (max-width: $screen-md) {
+  .big-picture-list {
+    ul {
+      margin-top: 30px;
+    }
+
+    li {
+      text-align: center;
+    }
+  }
+}
+
+.big-picture-img-container {
+  .what-img {
+    position: relative;
+    background: url("/img/what-active.png");
+    height: 337px;
+    width: 288px;
+    margin: 0 auto;
+  }
+
+  .how-img {
+    position: absolute;
+    top: 65px;
+    left: 55px;
+    background: url("/img/how-active.png");
+    height: 214px;
+    width: 179px;
+  }
+
+  .why-img {
+    position: absolute;
+    top: 60px;
+    left: 50px;
+    background: url("/img/why-active.png");
+    height: 93px;
+    width: 78px;
+  }
+}
+
+@media (min-width: $screen-md) {
+  .big-picture-img-container {
+  }
+}
+

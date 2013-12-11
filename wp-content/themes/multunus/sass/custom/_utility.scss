@@ -1,0 +1,23 @@
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-center {
+  text-align: center;
+}
+
+// center images, using text-align is not supported by w3c
+@mixin img-center {
+  display: block;
+  margin: 0 auto;
+}
+
+// fluid images
+img {
+  max-width: 100%;
+  height: auto;
+}
