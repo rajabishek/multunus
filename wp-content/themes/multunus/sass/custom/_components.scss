@@ -4,7 +4,7 @@
 	color: #fff;
 	display: inline-block;
 	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;	
+	-moz-border-radius: 6px;
 	border-radius: 6px;
 	-webkit-transition: all .5s ease;
 	transition: all .5s ease;
@@ -35,7 +35,7 @@
 		font-size: 26px;
 		padding: 12px 30px;
 	}
-
+	cursor: pointer;
   &:hover {
     background: $theme-color-dark-pink;
   }
