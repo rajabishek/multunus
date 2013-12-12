@@ -64,3 +64,13 @@ $(function() {
   window.HOMEPAGE.toggleHomePageVideo();
 
 });
+
+// 'explore' button should scroll to 'main-content'
+// get offset of 'main-content' from top of the viewport
+// get height of 'main-content'
+// subtract height from offset and scroll to that location
+$(document).ready(function() {
+  $('a[href=#main-content]').click(function(e) {
+    $('html, body').animate({scrollTop: $("#main-content").offset().top - $("#main-content").height()}, 1000);
+  });
+});
