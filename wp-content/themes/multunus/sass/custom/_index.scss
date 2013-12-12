@@ -10,13 +10,27 @@
     border-right: 1px solid #e3e3e3;
     padding-right: 35px;
 
+    a {
+      color: inherit;
+
+      &:hover {
+        color: $theme-color-pink;
+      }
+    }
+
+    &.active a {
+      border-bottom: 4px solid $theme-color-pink;
+      padding-bottom: 12px;
+      color: $theme-color-pink;
+    }
+
     &:first-child {
       padding-left: 45px !important;
     }
 
     &:last-child {
       border-right: 0;
-      padding-left: 25px;
+      margin-left: 25px;
     }
   }
 }
@@ -57,21 +71,20 @@
   }
 
   li {
-    display: block;
-    font-size: 20px;
-    line-height: 1.5;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #e3e3e3;
+      display: block;
+      font-size: 20px;
+      line-height: 1.5;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #e3e3e3;
 
-    &:last-child {
-      border-bottom: none;
+      &:last-child {
+        border-bottom: none;
     }
   }
 
   li a:hover {
-    border-bottom: 1px dotted;
-    color: $theme-color-pink;
+    @include border-bottom-pink
   }
 }
 
@@ -79,12 +92,12 @@
   .big-picture-list {
     ul {
       margin-top: 30px;
-    }
-
-    li {
-      text-align: center;
-    }
   }
+
+  li {
+    text-align: center;
+  }
+}
 }
 
 .big-picture-img-container {
@@ -94,29 +107,66 @@
     height: 337px;
     width: 288px;
     margin: 0 auto;
-  }
+}
 
-  .how-img {
-    position: absolute;
-    top: 65px;
-    left: 55px;
-    background: url("/img/how-active.png");
-    height: 214px;
-    width: 179px;
-  }
+.how-img {
+  position: absolute;
+  top: 65px;
+  left: 55px;
+  background: url("/img/how-active.png");
+  height: 214px;
+  width: 179px;
+}
 
-  .why-img {
-    position: absolute;
-    top: 60px;
-    left: 50px;
-    background: url("/img/why-active.png");
-    height: 93px;
-    width: 78px;
+.why-img {
+  position: absolute;
+  top: 60px;
+  left: 50px;
+  background: url("/img/why-active.png");
+  height: 93px;
+  width: 78px;
+}
+}
+
+/* OUR SERVICES */
+
+.our-services {
+  background-color: $grey-bg;
+  padding: 4.5rem 0 4.5rem 0;
+
+  .service-item {
+    text-align: center;
+
+    img {
+      @include img-center;
+    }
+
+    a {
+      display: inline-block;
+      font-size: 18px;
+      color: $theme-color-pink;
+
+        &:hover {
+        @include border-bottom-pink;
+      }
+    }
+
+    span {
+      display: inline-block;
+      margin-left: 10px;
+      width: 14px;
+      height: 11px;
+      background: url("/img/arrow-right-red.png") no-repeat;
+    }
   }
 }
 
-@media (min-width: $screen-md) {
-  .big-picture-img-container {
+@media (max-width: $screen-md) {
+  .service-item a {
+    margin: 20px 0 60px 0;
+  }
+
+  .service-item:last-child a{
+    margin-bottom: 0;
   }
 }
-

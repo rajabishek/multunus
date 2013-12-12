@@ -21,3 +21,8 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+@mixin border-bottom-pink {
+  border-bottom: 1px dotted;
+  color: $theme-color-pink;
+}
