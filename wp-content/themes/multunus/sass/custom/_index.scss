@@ -169,22 +169,6 @@
 
 /* RECENT WORK */
 
-@media (max-width: $screen-sm) {
-  img.recent-client-img {
-  }
-}
-
-@media (max-width: $screen-md) {
-  .recent-client-text {
-    text-align: center;
-    margin: 0 40px;
-  }
-
-  a.red-btn {
-    margin: 48px auto 63px;;
-  }
-}
-
 .recent-work {
   min-height: 800px;
   padding-top: 55px;
@@ -206,6 +190,7 @@
 
   .recent-client-text {
     padding-top: 60px;
+
     h2 {
       color: $theme-color-pink;
       border-bottom: 1px dashed #d4d4d4;
@@ -246,18 +231,38 @@
           margin-left: 15px
         }
 
-        &:hover {
-          background-color: $theme-color-dark-pink;
+        @media (min-width: $screen-md) {
+          &:hover {
+            background-color: $theme-color-dark-pink;
+          }
         }
       }
     }
 
     span {
       @include right-arrow;
+
+      &.vertical-align-arrow {
+        vertical-align: middle;
+      }
     }
 
     p {
       border-bottom: 1px dashed #d4d4d4;
+    }
+  }
+}
+
+@media (max-width: $screen-md) {
+  .recent-work {
+    .recent-client-text {
+      text-align: center;
+      margin: 0 40px;
+      padding-top: 20px;
+    }
+
+    a.red-btn {
+      margin: 48px auto 63px;;
     }
   }
 }

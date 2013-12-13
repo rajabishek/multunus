@@ -94,7 +94,7 @@
 
       <div class="col-md-4 recent-client-text">
         <h2 class="hidden-xs visible-sm">Narrable</h2> 
-        <h2 class="visible-xs"><a href="#">Narrable</a><span></span></h2> 
+        <h2 class="visible-xs"><a href="#">Narrable</a><span class="vertical-align-arrow"></span></h2> 
         <p>Web App</h2>
         <div class="hidden-xs">
           <p>Narrable is a storytelling app, which engages students to draw out important higher order thinking skills.</p>
