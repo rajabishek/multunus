@@ -106,4 +106,36 @@
   </div>
 </article>
 
+<article class="our-clients">
+  <div class="container">
+    <div class="row">
+      <p class="heading align-center">Hear from our clients!</p>
+      <div class="col-md-1 col-sm-1 col-xs-2 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 slider" id="left-slider">
+      </div>
+
+      <div class="col-md-6 col-sm-8 col-xs-6 col-md-offset-1 our-customer-img">
+        <img src="/img/customer-picture-round.png">
+      </div>
+
+      <div class="col-md-1 col-sm-1 col-xs-2 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 slider" id="right-slider">
+      </div>
+    </div>
+
+    <div class="row our-customer-text">
+      <div class="align-center">
+        <h1>Steve Jhonson</h1>
+        <h4>Lollypop UI/UX Studio</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+        </p>
+      </div>
+    </div>
+
+    <div class="row our-customer-btn">
+      <a class="client-btn" href="#"><span id="reel-icon"></span><span class="underline">Watch Video</span></a>
+      <a class="client-btn" href="#"><span id="eye-icon"></span><span class="underline">View Project</span></a>
+    </div>
+  </div>
+</article>
+
 <?php get_footer(); ?>

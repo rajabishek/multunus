@@ -266,3 +266,129 @@
     }
   }
 }
+
+/* OUR CLIENTS */
+.our-clients {
+  background: url('/img/testimonial-background.png') repeat-x, #e4e4e4;
+  background-size: auto 100%;
+  padding: 50px 0 78px 0;
+  color: white;
+  text-align: center;
+
+  p.heading {
+    font-size: 42px;
+    font-weight: lighter;
+  }
+
+  .slider {
+    margin-top: 100px;
+    display: inline-block;
+    height: 46px;
+    cursor: pointer;
+  }
+
+  #left-slider {
+    background: url('/img/arrow-slider-left-normal.png') no-repeat;
+    
+    &:hover {
+      background: url('/img/arrow-slider-left-hover.png') no-repeat;
+    }
+  }
+
+  #right-slider {
+    background: url('/img/arrow-slider-right-normal.png') no-repeat;
+
+    &:hover {
+      background: url('/img/arrow-slider-right-hover.png') no-repeat;
+    }
+  }
+
+  .our-customer-img {
+    margin-top: 60px;
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  .our-customer-text {
+    margin: 0 15em;
+
+    h4 {
+      margin-top: 0;
+    }
+  }
+
+  .our-customer-btn {
+
+    a.client-btn {
+      color: white;
+      display: inline-block;
+      background-color: #a80d1e;
+      margin-top: 35px;
+      padding: 16px 19px 16px 14px;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      border-radius: 6px;
+
+      span {
+        display: inline-block;
+        margin-right: 10px;
+        vertical-align: middle;
+        border-bottom: 1px dashed transparent;
+      }
+
+      span.underline:hover {
+        border-bottom: 1px dashed white;
+      }
+    }
+
+    #reel-icon {
+      width: 22px;
+      height: 22px;
+      background: url('/img/reel-icon-red.png') no-repeat;
+    }
+
+    #eye-icon {
+      width: 25px;
+      height: 14px;
+      background: url('/img/eye-icon-red.png') no-repeat;
+    }
+  }
+}
+
+@media (max-width: $screen-lg) {
+  .our-clients .our-customer-text {
+    margin: 0 5em;
+  }
+}
+
+@media (max-width: $screen-md) {
+  .our-clients .our-customer-text {
+    margin: 0 3em;
+  }
+}
+
+@media (max-width: $screen-sm) {
+  .our-clients .our-customer-text {
+    margin: 0 2em;
+  }
+}
+
+@media (max-width: $screen-xs) {
+  .our-clients {
+    p.heading, h1 {
+      font-size: 30px;
+      font-weight: lighter;
+    }
+
+    h4 {
+      font-size: 16px;
+    }
+  }
+
+  .our-clients .our-customer-text {
+    margin: 0 1em;
+  }
+}
