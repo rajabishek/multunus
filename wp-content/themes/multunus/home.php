@@ -83,5 +83,27 @@
   </article>
 </div> <!-- end tab-content -->
 
+<article class="recent-work">
+  <div class="container">
+
+    <p class="heading align-center">Our recent work which makes us proud</p>
+    <div class="row">
+      <div class="col-md-8">
+        <img class="recent-client-img" src="/img/work-narrable.png" />
+      </div>
+
+      <div class="col-md-4 recent-client-text">
+        <h2 class="hidden-xs visible-sm">Narrable</h2> 
+        <h2 class="visible-xs"><a href="#">Narrable</a><span></span></h2> 
+        <p>Web App</h2>
+        <div class="hidden-xs">
+          <p>Narrable is a storytelling app, which engages students to draw out important higher order thinking skills.</p>
+          <a class="view-work" href="#">View Work</a><span></span> 
+        </div>
+        <a class="red-btn" href="#">see all</a>
+      </div>
+    </div>
+  </div>
+</article>
 
 <?php get_footer(); ?>
