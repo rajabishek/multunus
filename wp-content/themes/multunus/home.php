@@ -83,5 +83,103 @@
   </article>
 </div> <!-- end tab-content -->
 
+<article class="recent-work">
+  <div class="container">
+
+    <p class="heading align-center">Our recent work which makes us proud</p>
+    <div class="row">
+      <div class="col-md-8">
+        <img class="recent-client-img" src="/img/work-narrable-imac-frame.jpg" />
+      </div>
+
+      <div class="col-md-4 recent-client-text">
+        <h2 class="hidden-xs visible-sm">Narrable</h2> 
+        <h2 class="visible-xs"><a href="#">Narrable</a><span class="vertical-align-arrow"></span></h2> 
+        <p>Web App</h2>
+        <div class="hidden-xs">
+          <p>Narrable is a storytelling app, which engages students to draw out important higher order thinking skills.</p>
+          <a class="view-work" href="#">View Work</a><span></span> 
+        </div>
+        <a class="red-btn" href="#">see all</a>
+      </div>
+    </div>
+  </div>
+</article>
+
+<article class="our-clients">
+  <div class="container">
+    <div class="row">
+      <p class="heading align-center">Hear from our clients!</p>
+      <div class="col-md-1 col-sm-1 col-xs-2 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 slider" id="left-slider">
+        <a class="left carousel-control" href="#our-clients-carousel" data-slide="prev">
+        </a>
+      </div>
+
+      <div class="col-md-6 col-sm-8 col-xs-6 col-md-offset-1 our-customer-img">
+        <div id="our-clients-carousel" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+
+            <div class="item active">
+              <img src="/img/customer-picture-round.png">
+              <div class="carousel-caption">
+                <h1>Steve Jhonson I</h1>
+                <h4>Lollypop UI/UX Studio</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <img class="img-circle" src="http://lorempixel.com/147/147" />
+              <div class="carousel-caption">
+                <h1>Steve Jhonson II</h1>
+                <h4>Lollypop UI/UX Studio</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <img class="img-circle" src="http://lorempixel.com/147/147" />
+              <div class="carousel-caption">
+                <h1>Steve Jhonson III</h1>
+                <h4>Lollypop UI/UX Studio</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                </p>
+              </div>
+            </div>
+
+          </div> <!-- end carousel-inner -->
+        </div> <!-- end our-clients-carousel -->
+      </div>
+
+      <div class="col-md-1 col-sm-1 col-xs-2 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 slider" id="right-slider">
+        <a class="right carousel-control" href="#our-clients-carousel" data-slide="next">
+        </a>
+      </div>
+    </div>
+
+    <div class="row our-customer-btn">
+      <a class="client-btn" id="client-video" href="http://www.youtube.com/v/GuO8jRW9g5U&amp;autoplay=1"><span id="reel-icon"></span><span class="underline">Watch Video</span></a>
+      <a class="client-btn" href="#"><span id="eye-icon"></span><span class="underline">View Project</span></a>
+    </div>
+
+      <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <div class="modal-body">
+              <iframe width="400" height="300" frameborder="0" allowfullscreen=""></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</article>
 
 <?php get_footer(); ?>

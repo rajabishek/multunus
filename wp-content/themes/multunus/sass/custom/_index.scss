@@ -152,11 +152,7 @@
     }
 
     span {
-      display: inline-block;
-      margin-left: 10px;
-      width: 14px;
-      height: 11px;
-      background: url("/img/arrow-right-red.png") no-repeat;
+      @include right-arrow;
     }
   }
 }
@@ -169,4 +165,237 @@
   .service-item:last-child a{
     margin-bottom: 0;
   }
+}
+
+/* RECENT WORK */
+
+.recent-work {
+  min-height: 800px;
+  padding-top: 55px;
+
+  img.recent-client-img {
+    display: block;
+    max-height: 520px;
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  p.heading {
+    font-size: 42px;
+    font-weight: 100;
+    line-height: 49.55px;
+    margin-bottom: 60px;
+  }
+
+  .recent-client-text {
+
+    h2 {
+      color: $theme-color-pink;
+      border-bottom: 1px dashed #d4d4d4;
+    }
+
+    p {
+      padding-top: 5px;
+      padding-bottom: 15px;
+    }
+
+    a {
+      color: $theme-color-pink;
+
+      &.view-work {
+        display: inline-block;
+        margin-top: 10px;
+
+        &:hover {
+          border-bottom: 1px dashed $theme-color-pink;
+        }
+      }
+
+      &.red-btn {
+        display: block;
+        width: 140px;
+        background-color: $theme-color-pink;
+        color: white;
+        font-size: 22px;
+        font-weight: 100;
+        margin-top: 55px;
+        padding: 15px 15px 15px 25px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        border-radius: 6px;
+
+        &:after {
+          content: url('/img/arrow-right.png') no-repeat;
+          margin-left: 15px
+        }
+
+        @media (min-width: $screen-md) {
+          &:hover {
+            background-color: $theme-color-dark-pink;
+          }
+        }
+      }
+    }
+
+    span {
+      @include right-arrow;
+
+      &.vertical-align-arrow {
+        vertical-align: middle;
+      }
+    }
+
+    p {
+      border-bottom: 1px dashed #d4d4d4;
+    }
+  }
+}
+
+@media (max-width: $screen-md) {
+  .recent-work {
+    .recent-client-text {
+      text-align: center;
+      margin: 0 40px;
+      padding-top: 20px;
+    }
+
+    a.red-btn {
+      margin: 48px auto 63px;;
+    }
+  }
+}
+
+/* OUR CLIENTS */
+.our-clients {
+  background: url('/img/testimonial-background.png') repeat-x, #e4e4e4;
+  background-size: auto 100%;
+  padding: 50px 0 78px 0;
+  color: white;
+  text-align: center;
+
+  p.heading {
+    font-size: 42px;
+    font-weight: lighter;
+  }
+
+  .slider {
+    margin-top: 100px;
+    display: inline-block;
+    height: 46px;
+    cursor: pointer;
+  }
+
+  #left-slider {
+    background: url('/img/arrow-slider-left-normal.png') no-repeat;
+    
+    &:hover {
+      background: url('/img/arrow-slider-left-hover.png') no-repeat;
+    }
+  }
+
+  #right-slider {
+    background: url('/img/arrow-slider-right-normal.png') no-repeat;
+
+    &:hover {
+      background: url('/img/arrow-slider-right-hover.png') no-repeat;
+    }
+  }
+
+  .our-customer-img {
+    margin-top: 60px;
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  .our-customer-btn {
+
+    a.client-btn {
+      color: white;
+      display: inline-block;
+      background-color: #a80d1e;
+      margin-top: 35px;
+      padding: 16px 19px 16px 14px;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      border-radius: 6px;
+
+      span {
+        display: inline-block;
+        margin-right: 10px;
+        vertical-align: middle;
+        border-bottom: 1px dashed transparent;
+      }
+
+      span.underline:hover {
+        border-bottom: 1px dashed white;
+      }
+    }
+
+    #reel-icon {
+      width: 22px;
+      height: 22px;
+      background: url('/img/reel-icon-red.png') no-repeat;
+    }
+
+    #eye-icon {
+      width: 25px;
+      height: 14px;
+      background: url('/img/eye-icon-red.png') no-repeat;
+    }
+  }
+}
+
+@media (max-width: $screen-lg) {
+}
+
+@media (max-width: $screen-md) {
+}
+
+@media (max-width: $screen-sm) {
+  .our-clients {
+    p.heading, h1 {
+      font-size: 30px;
+      font-weight: lighter;
+    }
+
+    h4 {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: $screen-xs) {
+}
+
+// bootstrap classes overrides
+.carousel-control {
+  width: 100%;
+}
+
+.carousel-control.left, .carousel-control.right {
+  background-image: none;
+}
+
+.carousel-control.right {
+  left: 0;
+}
+
+.carousel-control.right {
+  right: 0;
+}
+
+.carousel-caption {
+  position: static;
+}
+
+.modal-content {
+  width: 700px;
+  height: 482px;
+}
+
+.modal-header {
+  border-bottom: none;
 }
