@@ -73,4 +73,22 @@ $(document).ready(function() {
   $('a[rel=#main-content]').click(function(e) {
     $('html, body').animate({scrollTop: $("#main-content").offset().top - $("#main-content").height()}, 1000);
   });
+
+  // 'recent work' video button
+  $('#client-video').click(function (e) {
+    e.preventDefault();
+
+    $('#myModal').modal('show');
+    $('#myModal iframe').attr({
+      width: '630px',
+      height: '380px',
+      src: $(this).attr('href')
+    });
+  });
+
+  // remove 'src' attribute from iframe when user clicks on close button
+  $('#myModal button').click(function () {
+    $('#myModal iframe').removeAttr('src');
+  });
+
 });

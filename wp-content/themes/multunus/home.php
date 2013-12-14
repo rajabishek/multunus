@@ -132,9 +132,22 @@
     </div>
 
     <div class="row our-customer-btn">
-      <a class="client-btn" href="#"><span id="reel-icon"></span><span class="underline">Watch Video</span></a>
+      <a class="client-btn" id="client-video" href="http://www.youtube.com/v/GuO8jRW9g5U&amp;autoplay=1"><span id="reel-icon"></span><span class="underline">Watch Video</span></a>
       <a class="client-btn" href="#"><span id="eye-icon"></span><span class="underline">View Project</span></a>
     </div>
+
+      <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <div class="modal-body">
+              <iframe width="400" height="300" frameborder="0" allowfullscreen=""></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
   </div>
 </article>
 
