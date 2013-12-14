@@ -115,14 +115,14 @@
         </a>
       </div>
 
-      <div class="col-md-6 col-sm-8 col-xs-6 col-md-offset-1 our-customer-img">
+      <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-3 col-xs-12 our-customer-img">
         <div id="our-clients-carousel" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
 
             <div class="item active">
               <img src="/img/customer-picture-round.png">
               <div class="carousel-caption">
-                <h1>Steve Jhonson I</h1>
+                <h3>Steve Jhonson I</h3>
                 <h4>Lollypop UI/UX Studio</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
@@ -133,7 +133,7 @@
             <div class="item">
               <img class="img-circle" src="http://lorempixel.com/147/147" />
               <div class="carousel-caption">
-                <h1>Steve Jhonson II</h1>
+                <h3>Steve Jhonson II</h3>
                 <h4>Lollypop UI/UX Studio</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
@@ -144,7 +144,7 @@
             <div class="item">
               <img class="img-circle" src="http://lorempixel.com/147/147" />
               <div class="carousel-caption">
-                <h1>Steve Jhonson III</h1>
+                <h3>Steve Jhonson III</h3>
                 <h4>Lollypop UI/UX Studio</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
