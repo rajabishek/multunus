@@ -76,14 +76,22 @@ $(document).ready(function() {
 
   // 'recent work' video button
   $('#client-video').click(function (e) {
-    e.preventDefault();
+    if (window.HOMEPAGE.isMobileDevice()) {
+      $(this).attr({
+        href: $(this).attr('href').replace('v/', 'watch?v='),
+        target: '_blank'
+      });
+    }
+    else {
+      e.preventDefault();
 
-    $('#myModal').modal('show');
-    $('#myModal iframe').attr({
-      width: '630px',
-      height: '380px',
-      src: $(this).attr('href')
-    });
+      $('#myModal').modal('show');
+      $('#myModal iframe').attr({
+        width: '630px',
+        height: '380px',
+        src: $(this).attr('href')
+      });
+    }
   });
 
   // remove 'src' attribute from iframe when user clicks on close button
