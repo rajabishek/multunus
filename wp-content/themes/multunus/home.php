@@ -89,7 +89,7 @@
     <p class="heading align-center">Our recent work which makes us proud</p>
     <div class="row">
       <div class="col-md-8">
-        <img class="recent-client-img" src="/img/work-narrable.png" />
+        <img class="recent-client-img" src="/img/work-narrable-imac-frame.jpg" />
       </div>
 
       <div class="col-md-4 recent-client-text">
@@ -111,23 +111,54 @@
     <div class="row">
       <p class="heading align-center">Hear from our clients!</p>
       <div class="col-md-1 col-sm-1 col-xs-2 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 slider" id="left-slider">
+        <a class="left carousel-control" href="#our-clients-carousel" data-slide="prev">
+        </a>
       </div>
 
       <div class="col-md-6 col-sm-8 col-xs-6 col-md-offset-1 our-customer-img">
-        <img src="/img/customer-picture-round.png">
+        <div id="our-clients-carousel" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+
+            <div class="item active">
+              <img src="/img/customer-picture-round.png">
+              <div class="carousel-caption">
+                <h1>Steve Jhonson I</h1>
+                <h4>Lollypop UI/UX Studio</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <img class="img-circle" src="http://lorempixel.com/147/147" />
+              <div class="carousel-caption">
+                <h1>Steve Jhonson II</h1>
+                <h4>Lollypop UI/UX Studio</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <img class="img-circle" src="http://lorempixel.com/147/147" />
+              <div class="carousel-caption">
+                <h1>Steve Jhonson III</h1>
+                <h4>Lollypop UI/UX Studio</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                </p>
+              </div>
+            </div>
+
+          </div> <!-- end carousel-inner -->
+        </div> <!-- end our-clients-carousel -->
       </div>
 
       <div class="col-md-1 col-sm-1 col-xs-2 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 slider" id="right-slider">
-      </div>
-    </div>
-
-    <div class="row our-customer-text">
-      <div class="align-center">
-        <h1>Steve Jhonson</h1>
-        <h4>Lollypop UI/UX Studio</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-        </p>
+        <a class="right carousel-control" href="#our-clients-carousel" data-slide="next">
+        </a>
       </div>
     </div>
 
