@@ -99,39 +99,53 @@ $(document).ready(function() {
     $('#myModal iframe').removeAttr('src');
   });
 
-});
 
-$('.team-images figure').click(function(event) {
-  selectedElement = $(this);
-  // $(document).scrollTop(selectedElement.position().top - 64);
-  $('.team-images figure').removeClass('active');
-  selectedElement.addClass('active');
-  profileData = selectedElement.data();
+  $('.team-images figure').click(function(event) {
+    var selectedElement = $(this);
+    var profileData = selectedElement.data();
+    var profileElement = $('.team-images .profile').remove();
+    var lastElementInCurrentRow;
 
-  if(selectedElement.nextAll().length === 0) {
-    lastElementInCurrentRow = selectedElement;
-  } else {
-    selectedElement.nextAll().each(function(index, element) {
-      if($(element).position().top !== selectedElement.position().top) {
-        lastElementInCurrentRow = $(element).prev();
-        return false;
+    $('.team-images figure').removeClass('active');
+    selectedElement.addClass('active');
+
+    if(selectedElement.nextAll().length === 0) {
+      lastElementInCurrentRow = selectedElement;
+    } else {
+      selectedElement.nextAll().each(function(index, element) {
+        if($(element).position().top !== selectedElement.position().top) {
+          lastElementInCurrentRow = $(element).prev();
+          return false;
+        }
+        lastElementInCurrentRow = $(element);
+      });
+    }
+
+    profileElement.find('.image-container img').attr('src', profileData.imageBig);
+    profileElement.find('h2').html(profileData.name);
+    profileElement.find('h4').html(profileData.position);
+    profileElement.find('.bio').html(profileData.bio);
+
+    socialLinks =  profileElement.find('.social-links');
+    socialLinks.find('.github').attr('href', profileData.github);
+    if(profileData.github) {
+      socialLinks.find('.github').parent().removeClass('hidden');
+    } else {
+      socialLinks.find('.github').parent().addClass('hidden');
+    }
+    socialLinks.find('.twitter').attr('href', profileData.twitter);
+
+    $('html, body').animate({
+      scrollTop: selectedElement.position().top - 64
+    },
+    {
+      duration: 'slow',
+      start: function() {
+        profileElement.removeClass('hidden').insertAfter(lastElementInCurrentRow);
       }
-      lastElementInCurrentRow = $(element);
     });
-  }
 
-  profileElement = $('.team-images .profile');
-  profileElement.find('.image-container img').attr('src', profileData.imageBig);
-  profileElement.find('h2').html(profileData.name);
-  profileElement.find('h4').html(profileData.position);
-  profileElement.find('.bio').html(profileData.bio);
-
-  socialLinks =  profileElement.find('.social-links');
-  socialLinks.find('.github').attr('href', profileData.github);
-  socialLinks.find('.twitter').attr('href', profileData.twitter);
-
-  $('.team-images aside.profile').removeClass('hidden').insertAfter(lastElementInCurrentRow);
-
+  });
 });
 
 

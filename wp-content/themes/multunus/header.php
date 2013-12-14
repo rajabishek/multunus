@@ -8,7 +8,7 @@
   <meta name="author" content="Multunus">
 
   <?php if (is_search()) { ?>
-    <meta name="robots" content="noindex, nofollow" /> 
+    <meta name="robots" content="noindex, nofollow" />
   <?php } ?>
 
   <title>
@@ -32,7 +32,7 @@
       echo ' - page '. $paged; }
     ?>
 	</title>
-	
+
 	<link rel="shortcut icon" href="/img/favicon.ico">
 
 	<?php if ( is_singular() ) wp_enqueue_script('comment-reply'); ?>
@@ -77,3 +77,9 @@
 
     </nav>
   </header>
+
+  <?php if(!is_home() && function_exists('bcn_display')) {
+    echo '<div class="breadcrumbs">';
+    bcn_display(); }
+    echo '</div>';
+  ?>

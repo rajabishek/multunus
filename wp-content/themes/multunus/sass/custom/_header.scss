@@ -135,3 +135,22 @@
   }
 }
 }
+
+.breadcrumbs {
+  padding: 11px 62px;
+  height: 46px;
+  border-bottom: 2px solid #c7c7c7;
+
+  @media (max-width: $screen-sm) {
+    padding: 11px 15px;
+  }
+
+  a {
+    color: #333;
+
+    &:hover {
+      border-bottom: 1px dashed $theme-color-pink;
+      color: $theme-color-pink;
+    }
+  }
+}
