@@ -42,7 +42,7 @@ if (!is_admin()) {
   }
 
   // Add proxima-nova font from typekit
-  add_filter( 'wp_head', 'add_typekit_font' ); 
+  add_filter( 'wp_head', 'add_typekit_font' );
   function add_typekit_font() {
     echo '<script type="text/javascript" src="//use.typekit.net/pfx5bei.js"></script>';
     echo '<script type="text/javascript">try{Typekit.load();}catch(e){}</script>';
@@ -50,13 +50,13 @@ if (!is_admin()) {
 
   // Add viewport meta tag to head
   add_filter('wp_head', 'viewport_meta');
-  function viewport_meta() { 
+  function viewport_meta() {
     echo '<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>';
   }
 
 
 } // end if !is_admin
-	
+
 // Clean up the <head>
 function removeHeadLinks() {
   remove_action('wp_head', 'rsd_link');
@@ -72,11 +72,11 @@ require_once('wp_bootstrap_navwalker.php');
 add_action( 'after_setup_theme', 'wpt_nav_setup' );
 
 if ( ! function_exists( 'wpt_setup' ) ):
-  function wpt_nav_setup() {  
+  function wpt_nav_setup() {
     register_nav_menu( 'primary', __( 'Primary navigation', 'multunus' ) );
   }
 endif;
-    
+
 // Declare sidebar widget zone
 if (function_exists('register_sidebar')) {
   register_sidebar(array(
@@ -89,5 +89,38 @@ if (function_exists('register_sidebar')) {
     'after_title'   => '</h2>'
   ));
  }
+
+ /**
+  * Register `team` post type
+  */
+ function team_post_type() {
+
+    // Labels
+  $labels = array(
+    'name' => _x("Team", "post type general name"),
+    'singular_name' => _x("Team", "post type singular name"),
+    'menu_name' => 'Team Profiles',
+    'add_new' => _x("Add New", "team item"),
+    'add_new_item' => __("Add New Profile"),
+    'edit_item' => __("Edit Profile"),
+    'new_item' => __("New Profile"),
+    'view_item' => __("View Profile"),
+    'search_items' => __("Search Profiles"),
+    'not_found' =>  __("No Profiles Found"),
+    'not_found_in_trash' => __("No Profiles Found in Trash"),
+    'parent_item_colon' => ''
+  );
+
+  // Register post type
+  register_post_type('team' , array(
+    'labels' => $labels,
+    'public' => true,
+    'has_archive' => false,
+    'menu_icon' => get_stylesheet_directory_uri() . '/lib/TeamProfiles/team-icon.png',
+    'rewrite' => false,
+    'supports' => array('title', 'editor', 'thumbnail')
+  ) );
+ }
+ add_action( 'init', 'team_post_type', 0 );
 
 ?>

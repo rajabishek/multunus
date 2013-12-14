@@ -40,11 +40,10 @@
   margin-bottom: 65px;
 
   figure {
+    cursor: pointer;
     float: left;
-    width: 140px;
-    height: 140px;
-    margin-right: 1.5em;
-    margin-bottom: 60px;
+    text-align: center;
+    margin-top: 12px;
 
     img {
       filter: url(filters.svg#grayscale);
@@ -52,14 +51,31 @@
       -webkit-filter: grayscale(1);
     }
 
-    img:hover {
-      filter: none;
-      -webkit-filter: grayscale(0);
+    figcaption {
+      padding: 10px 0 8px 0;
+      max-width: 140px;
+      margin: auto;
     }
 
-    figcaption {
-      padding-top: 15px;
-      text-align: center;
+    &:hover {
+      img {
+        filter: none;
+        -webkit-filter: grayscale(0);
+      }
+      figcaption {
+        color: $theme-color-pink;
+      }
+    }
+
+    &.active {
+      img {
+        filter: none;
+        -webkit-filter: grayscale(0);
+      }
+
+      figcaption {
+        border-bottom: 4px solid $theme-color-pink;
+      }
     }
 
     &.ux-designer, &.lead-programmer {
@@ -76,12 +92,47 @@
       }
     }
   }
-}
 
-@media (max-width: $screen-sm) {
-  .team-images figure {
-    width: 109px;
-    height: 109px;
-    margin-right: 1px;
+  .profile {
+    float: left;
+    position: relative;
+    margin-bottom: 60px;
+
+    .translucent-layer {
+      width: 100%;
+      background: #797979;
+      position: absolute;
+      height: 100%;
+      opacity: 0.1;
+      z-index: 10;
+    }
+
+    .image-container, .description {
+      margin-top: 17px;
+    }
+
+    .image-container {
+      text-align: center;
+    }
+
+    .description {
+      z-index: 11;
+
+      h2 {
+        color: #bd1f3a;
+      }
+
+      h4 {
+        color: #666666;
+      }
+
+      .bio {
+        line-height: 1.5;
+      }
+
+      ul {
+        line-height: 4;
+      }
+    }
   }
 }

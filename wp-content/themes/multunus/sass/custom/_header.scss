@@ -58,6 +58,7 @@
 
       > li {
         background: url("/img/header-nav-divider.png") right center no-repeat;
+        text-transform: uppercase;
         @media (max-width: $screen-sm) {
           background: none;
           border-bottom: 1px solid;

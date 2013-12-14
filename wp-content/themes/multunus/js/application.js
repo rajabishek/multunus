@@ -74,3 +74,59 @@ $(document).ready(function() {
     $('html, body').animate({scrollTop: $("#main-content").offset().top - $("#main-content").height()}, 1000);
   });
 });
+
+$('.team-images figure').click(function(event) {
+  selectedElement = $(this);
+  // $(document).scrollTop(selectedElement.position().top - 64);
+  $('.team-images figure').removeClass('active');
+  selectedElement.addClass('active');
+  profileData = selectedElement.data();
+
+  if(selectedElement.nextAll().length === 0) {
+    lastElementInCurrentRow = selectedElement;
+  } else {
+    selectedElement.nextAll().each(function(index, element) {
+      if($(element).position().top !== selectedElement.position().top) {
+        lastElementInCurrentRow = $(element).prev();
+        return false;
+      }
+      lastElementInCurrentRow = $(element);
+    });
+  }
+
+  profileElement = $('.team-images .profile');
+  profileElement.find('.image-container img').attr('src', profileData.imageBig);
+  profileElement.find('h2').html(profileData.name);
+  profileElement.find('h4').html(profileData.position);
+  profileElement.find('.bio').html(profileData.bio);
+
+  socialLinks =  profileElement.find('.social-links');
+  socialLinks.find('.github').attr('href', profileData.github);
+  socialLinks.find('.twitter').attr('href', profileData.twitter);
+
+  $('.team-images aside.profile').removeClass('hidden').insertAfter(lastElementInCurrentRow);
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
