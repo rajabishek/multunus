@@ -282,6 +282,12 @@
     font-weight: lighter;
   }
 
+  @media (max-width: $screen-xs) {
+    p.heading {
+      font-size: 30px;
+    }
+  }
+
   h3 {
     margin-bottom: 0;
   }
@@ -300,6 +306,12 @@
     position: absolute;
     top: 50px;
   }
+  
+  @media (max-width: $screen-xs) {
+    .slider {
+      top: 30px;
+    }
+  }
 
   #left-slider {
     background: url('/img/arrow-slider-left-normal.png') no-repeat;
@@ -308,6 +320,12 @@
     
     &:hover {
       background: url('/img/arrow-slider-left-hover.png') no-repeat;
+    }
+  }
+
+  @media (max-width: $screen-xs) {
+    #left-slider {
+      left: 14px;
     }
   }
 
