@@ -31,12 +31,16 @@ $(function() {
     },
 
     setupNavBarCollapse: function() {
+      var collapseElement = $('.navbar #navbar-collapse');
+
       $(document).on('click',function(){
-          $('.navbar #navbar-collapse').collapse('hide');
+        if(!collapseElement.hasClass('collapse')) {
+          collapseElement.collapse('hide');
+        }
       });
 
-      $('.navbar #navbar-collapse').on('hidden.bs.collapse', function () {
-        $('.navbar .navbar-toggle').addClass('collapsed');
+      collapseElement.on('hidden.bs.collapse', function () {
+          $('.navbar .navbar-toggle').addClass('collapsed');
       });
     }
   };

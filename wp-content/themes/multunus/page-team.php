@@ -11,6 +11,7 @@ $team_posts = get_posts( array(
     'post_type' => 'team',
     'posts_per_page' => -1, // Unlimited posts
     'orderby' => 'title', // Order alphabetically by name
+    'order' => 'ASC'
 ) );
 
 if ( $team_posts ):

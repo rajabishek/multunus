@@ -54,50 +54,54 @@
     @media (max-width: $screen-sm) {
       margin-bottom: 0px;
       margin-top: 0px;
+    }
+
+    > li {
+      background: url("/img/header-nav-divider.png") right center no-repeat;
+      text-transform: uppercase;
+      padding: 0 9px 0 0px;
+
+      @media (max-width: $screen-sm) {
+        background: none;
+        border-bottom: 1px solid;
+        background: url("/img/arrow-right-grey.png") 18px center no-repeat;
       }
 
-      > li {
-        background: url("/img/header-nav-divider.png") right center no-repeat;
-        text-transform: uppercase;
+      &:hover, &.active {
+        > a {
+          color: $theme-color-pink;
+          background-color: initial;
+        }
+      }
+
+      &.active {
+        > a span {
+          border-top: 4px solid $theme-color-pink;
+          @media (max-width: $screen-sm) {
+            border-top: none;
+          }
+        }
+      }
+
+      &:last-child {
         @media (max-width: $screen-sm) {
-          background: none;
-          border-bottom: 1px solid;
           background: url("/img/arrow-right-grey.png") 18px center no-repeat;
         }
+        background: none;
+      }
 
-        &:last-child {
-          @media (max-width: $screen-sm) {
-            background: url("/img/arrow-right-grey.png") 18px center no-repeat;
-          }
-          background: none;
+      > a {
+        color: white;
+        @media (max-width: $screen-sm) {
+          margin-left: 32px;
         }
 
-        padding: 0 9px 0 0px;
+        span {
+          padding-top: 11px;
+        }
 
-          > a {
-            color: white;
-            @media (max-width: $screen-sm) {
-              margin-left: 32px;
-              }
-
-              span {
-                padding-top: 13px;
-              }
-
-              &:hover, &.active {
-                color: $theme-color-pink;
-              }
-
-              &.active {
-                span {
-                  border-top: 4px solid $theme-color-pink;
-                  @media (max-width: $screen-sm) {
-                    border-top: none;
-                      }
-                  }
-              }
-          }
       }
+    }
   }
 
   .blinker {
