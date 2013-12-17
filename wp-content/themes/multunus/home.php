@@ -3,9 +3,9 @@
 <div class="video-section-container">
   <div class="overlay">
     <div class="overlay-content">
-      <h1 id="quote">We help entrepreneurs<br /> succeed</h1>
+      <h1 id="quote">Expertly Crafted Apps for <br /> Lean Startups</h1>
       <div class="hidden-xs">
-        <a rel="#main-content" class="btn-red">explore<span></span></a>
+        <a rel="#main-content" class="btn-red">Explore<span></span></a>
       </div>
     </div>
   </div>
@@ -15,16 +15,16 @@
     <source src="/vids/2.mp4" type="video/mp4" />
   </video>
 </div>
-
+<!--
 <article id="main-content" class="align-center big-picture-header">
   <ul class="list-inline">
     <li class="active"><a href="#big-picture" data-toggle="tab">Big Picture</a></li>
     <li><a href="#our-services" data-toggle="tab">Our Services</a></li>
   </ul>
 </article>
-
-<div class="tab-content">
-  <article class="big-picture-text tab-pane fade in active" id="big-picture">
+-->
+<div class="tab-content" id="main-content">
+  <article class="big-picture-text" style="background-color: #fff;">
     <div class="container">
       <div class="row">
         <div class="col-md-3 col-md-offset-1 hidden-xs hidden-sm vertical-center">
@@ -52,55 +52,51 @@
     </div> <!-- end container -->
   </article>
 
-  <article class="our-services tab-pane fade" id="our-services">
+  <article class="our-services" style="display:visible;opacity:1;" >
     <div class="container">
       <div class="row">
         <div class="col-md-4 service-item">
           <img src="/img/web-apps-icon-grey.png" />
           <h2>Web Apps</h2>
-          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-           ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
+          <p>Leverage HTML5, Javascript, CSS3 and Ruby on Rails to build web apps. On desktops, tablets and phones.</p>
           <a href="#">Learn More</a><span></span>
         </div>
 
         <div class="col-md-4 service-item">
           <img src="/img/mobile-apps-icon-grey.png" />
           <h2>Mobile Apps</h2>
-          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-           ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
+          <p>Craft beautiful experiences on the iOS and Android platforms.</p>
           <a href="#">Learn More</a><span></span>
         </div>
 
         <div class="col-md-4 service-item">
-          <img src="/img/opensource-apps-icon-grey.png" />
-          <h2>Open Source</h2>
-          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-           ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
+          <img src="/img/cal-icon.png" />
+          <h2>Every 2 Days</h2>
+          <p> Working software every 2 days. It's the primary measure of progress.</p>
           <a href="#">Learn More</a><span></span>
         </div>
       </div>
     </div>
   </article>
-</div> <!-- end tab-content -->
+</div><!-- end tab-content -->
 
 <article class="recent-work">
   <div class="container">
-
-    <p class="heading align-center">Our recent work which makes us proud</p>
+    <p class="heading align-center">Our recent work</p>
     <div class="row">
       <div class="col-md-8">
         <img class="recent-client-img" src="/img/work-narrable-imac-frame.jpg" />
       </div>
 
       <div class="col-md-4 recent-client-text">
-        <h2 class="hidden-xs visible-sm">Narrable</h2> 
-        <h2 class="visible-xs"><a href="#">Narrable</a><span class="vertical-align-arrow"></span></h2> 
+        <h2 class="hidden-xs visible-sm">Narrable</h2>
+        <h2 class="visible-xs"><a href="#">Narrable</a><span class="vertical-align-arrow"></span></h2>
         <p>Web App</h2>
         <div class="hidden-xs">
-          <p>Narrable is a storytelling app, which engages students to draw out important higher order thinking skills.</p>
-          <a class="view-work" href="#">View Work</a><span></span> 
+          <p>Narrable uses storytelling through images and narrations to engage students and to draw out important higher order thinking skills.</p>
+          <a class="view-work" href="#">View Work</a><span></span>
         </div>
-        <a class="red-btn" href="#">see all</a>
+        <a class="red-btn" href="#">See All</a>
       </div>
     </div>
   </div>
@@ -109,7 +105,7 @@
 <article class="our-clients">
   <div class="container">
     <div class="row">
-      <p class="heading align-center">Hear from our clients!</p>
+      <p class="heading align-center">Hear from our customers</p>
       <div class="col-md-1 col-sm-1 col-xs-2 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 slider" id="left-slider">
         <a class="left carousel-control" href="#our-clients-carousel" data-slide="prev">
         </a>
@@ -120,34 +116,31 @@
           <div class="carousel-inner">
 
             <div class="item active">
-              <img src="/img/customer-picture-round.png">
+              <img src="/img/customer-picture-round-3.png">
               <div class="carousel-caption">
-                <h3>Steve Jhonson I</h3>
-                <h4>Lollypop UI/UX Studio</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                <h3>Anil Jain</h3>
+                <h4>Brightmonk Innovation</h4>
+                <p>"Working with Multunus has been the best experience out of all the Outsourced Companies I’ve worked with."
                 </p>
               </div>
             </div>
 
             <div class="item">
-              <img class="img-circle" src="http://lorempixel.com/147/147" />
+              <img class="img-circle" src="/img/customer-picture-round-2.png" />
               <div class="carousel-caption">
-                <h3>Steve Jhonson II</h3>
-                <h4>Lollypop UI/UX Studio</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                <h3>Anuroop Iyengar</h3>
+                <h4>CogKnit</h4>
+                <p>"We are confidently speaking of going to market. You brought us here."
                 </p>
               </div>
             </div>
 
             <div class="item">
-              <img class="img-circle" src="http://lorempixel.com/147/147" />
+              <img class="img-circle" src="/img/customer-picture-round.png" />
               <div class="carousel-caption">
-                <h3>Steve Jhonson III</h3>
-                <h4>Lollypop UI/UX Studio</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                <h3>Dustin Curzon</h3>
+                <h4>Narrable</h4>
+                <p>"I’m impressed with the team aspect of working with multunus."
                 </p>
               </div>
             </div>

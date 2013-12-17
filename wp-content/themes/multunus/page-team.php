@@ -17,14 +17,12 @@ $team_posts = get_posts( array(
 if ( $team_posts ):
 ?>
 <section class="container team-header">
-  <h1 class="align-left">Meet our multi-disciplinary team</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-    mollit anim id est laborum.
-  </p>
+  <h1 class="align-left">Here's To The Crazy Ones</h1>
+  <blockquote>
+    <p>Here's To The Crazy Ones. The misfits. The rebels. The trouble-makers. The ones who see things differently. And while some may see them as the crazy ones, we see genius. Because the people who are crazy enough to think they can change the world - are the ones who DO!</p>
+    <small><cite title="Source Title">Apple [1997]</cite></small>
+  </blockquote>
+
 </section>
 
 <aside class="container team-sort">
