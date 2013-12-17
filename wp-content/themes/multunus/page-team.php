@@ -26,6 +26,34 @@ if ( $team_posts ):
     mollit anim id est laborum.
   </p>
 </section>
+
+<aside class="container team-sort">
+  <ul class="list-inline category-list-desktop hidden-xs">
+    <li class="categories-label"><span>Show:</span></li>
+    <li class="active"><a data-category="all">All</a></li>
+    <li><a data-category="management">Pointy Haired</a></li>
+    <li><a data-category="technology">Technology</a></li>
+    <li><a data-category="product">Product</a></li>
+    <li><a data-category="people-culture">People & Culture</a></li>
+  </ul>
+
+  <div class="visible-xs category-list-mobile">
+    <div class="categories-label">Show: </div>
+    <div class="btn-group">
+      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+        All <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" role="menu">
+        <li><a data-category="all">All</a></li>
+        <li><a data-category="management">Pointy Haired</a></li>
+        <li><a data-category="technology">Technology</a></li>
+        <li><a data-category="product">Product</a></li>
+        <li><a data-category="people-culture">People & Culture</a></li>
+      </ul>
+    </div>
+  </div>
+</aside>
+
 <section class="container clearfix team-images">
     <aside class="row profile hidden">
       <div class="translucent-layer">
@@ -76,6 +104,7 @@ if ( $team_posts ):
 
     <figure class="col-sm-2 col-xs-4"
       data-name="<?php the_title(); ?>"
+      data-category="<?php the_field('team_category'); ?>"
       data-image-big="<?php the_field('team_display_picture_big'); ?>"
       data-position="<?php the_field('team_position'); ?>"
       data-github="<?php the_field('team_github'); ?>"

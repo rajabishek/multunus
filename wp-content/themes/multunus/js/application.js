@@ -103,20 +103,40 @@ $(document).ready(function() {
     $('#myModal iframe').removeAttr('src');
   });
 
+  $('.team-sort ul li a').click(function() {
+    $('.team-images .profile').addClass('hidden');
+    $('.team-images figure').removeClass('active');
+    var selectedElement = $(this);
+    selectedElement.parents('ul').find('li').removeClass('active');
+    selectedElement.parents('li').addClass('active');
+
+    var category = selectedElement.data().category;
+    $('.team-images figure').removeClass('hidden');
+    $(".team-images figure[data-category!='" + category + "']").addClass('hidden');
+  });
+
+  $(".team-sort ul li a[data-category='all']").click(function() {
+    $('.team-images figure').removeClass('hidden');
+  });
+
+  $('.team-sort .category-list-mobile ul li a').click(function() {
+    var category = this.text;
+    $(this).parents('ul').siblings('button').html(category + "<span class='caret'></span>");
+  });
 
   $('.team-images figure').click(function(event) {
-    var selectedElement = $(this);
+    selectedElement = $(this);
     var profileData = selectedElement.data();
-    var profileElement = $('.team-images .profile').remove();
+    var profileElement = $('.team-images .profile').addClass('hidden');
     var lastElementInCurrentRow;
 
     $('.team-images figure').removeClass('active');
     selectedElement.addClass('active');
 
-    if(selectedElement.nextAll().length === 0) {
+    if(selectedElement.nextAll().not('.hidden').length === 0) {
       lastElementInCurrentRow = selectedElement;
     } else {
-      selectedElement.nextAll().each(function(index, element) {
+      selectedElement.nextAll().not('.hidden').each(function(index, element) {
         if($(element).position().top !== selectedElement.position().top) {
           lastElementInCurrentRow = $(element).prev();
           return false;
