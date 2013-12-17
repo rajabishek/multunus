@@ -121,7 +121,7 @@ $(document).ready(function() {
 
   $('.team-sort .category-list-mobile ul li a').click(function() {
     var category = this.text;
-    $(this).parents('ul').siblings('button').html(category + "<span class='caret'></span>");
+    $(this).parents('ul').siblings('button').html(category);
   });
 
   $('.team-images figure').click(function(event) {
@@ -152,12 +152,18 @@ $(document).ready(function() {
 
     socialLinks =  profileElement.find('.social-links');
     socialLinks.find('.github').attr('href', profileData.github);
+
     if(profileData.github) {
       socialLinks.find('.github').parent().removeClass('hidden');
     } else {
       socialLinks.find('.github').parent().addClass('hidden');
     }
-    socialLinks.find('.twitter').attr('href', profileData.twitter);
+
+    if(profileData.twitter) {
+      socialLinks.find('.twitter').parent().removeClass('hidden');
+    } else {
+      socialLinks.find('.twitter').parent().addClass('hidden');
+    }
 
     $('html, body').animate({
       scrollTop: selectedElement.position().top - 64

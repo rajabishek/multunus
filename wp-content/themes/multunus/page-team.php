@@ -39,9 +39,9 @@ if ( $team_posts ):
 
   <div class="visible-xs category-list-mobile">
     <div class="categories-label">Show: </div>
-    <div class="btn-group">
+    <div class="btn-group dropdown">
       <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-        All <span class="caret"></span>
+        All
       </button>
       <ul class="dropdown-menu" role="menu">
         <li><a data-category="all">All</a></li>
