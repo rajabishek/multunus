@@ -35,8 +35,8 @@ if ( $team_posts ):
     <li><a data-category="people-culture">People & Culture</a></li>
   </ul>
 
-  <div class="visible-xs category-list-mobile">
-    <div class="categories-label">Show: </div>
+  <div class="visible-xs dropdown-container">
+    <div class="dropdown-label">Show: </div>
     <div class="btn-group dropdown">
       <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
         All

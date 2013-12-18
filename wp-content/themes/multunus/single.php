@@ -3,7 +3,8 @@
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 	<div class="blog-post container">
 		<div class="row">
-			<article <?php post_class('col-sm-9') ?> id="post-<?php the_ID(); ?>">
+			<?php get_sidebar(); ?>
+			<article <?php post_class('col-sm-9 col-sm-pull-3') ?> id="post-<?php the_ID(); ?>">
 
 				<h2><?php the_title(); ?></h2>
 
@@ -18,7 +19,7 @@
 
 						<?php the_content(); ?>
 
-						<div>
+						<div class="post-categories">
 							Posted in :
 							<?php
 							$categories = get_the_category();
@@ -40,12 +41,11 @@
 					</div>
 				</div>
 
-				<?php comments_template(); ?>
+				<? //php comments_template(); ?>
 
 				<?php edit_post_link('Edit this entry','','.'); ?>
 
 			</article>
-			<?php get_sidebar(); ?>
 		</div>
 	</div>
 
