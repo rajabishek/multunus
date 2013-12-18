@@ -12,8 +12,8 @@
     <div class="row blog-top">
       <h1>Blog</h1>
 
-      <div class="blog-categories">
-        <small>Categories:</small>
+      <div class="blog-categories dropdown-container">
+        <div class="dropdown-label">Categories: </div>
         <div class="btn-group dropdown">
           <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
             Recent Articles

@@ -21,13 +21,8 @@
   .blog-categories {
     margin-top: 13px;
     float: right;
-
-    small {
-      margin-right: 12px;
-      color: #999;
-    }
   }
-  
+
   @media (max-width: $screen-xs) {
     .blog-categories {
       @include make-xs-column(12);
@@ -123,7 +118,7 @@
     font-weight: 600;
 
     li {
-      a { 
+      a {
         color: inherit;
         border-right: 1px solid #cccccc;
         padding-right: 12px;
