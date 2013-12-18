@@ -123,4 +123,57 @@ if (function_exists('register_sidebar')) {
  }
  add_action( 'init', 'team_post_type', 0 );
 
+  // Custom pagination
+ function numeric_pagination_nav() {
+
+    if( is_singular() )
+      return;
+
+    global $wp_query;
+    $max_pages = 5;
+
+    /** Stop execution if there's only 1 page */
+    if( $wp_query->max_num_pages <= 1 )
+      return;
+
+    $paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
+    $max   = intval( $wp_query->max_num_pages );
+
+    /** Add current page to the array */
+    if ( $paged >= 1 )
+      $links[] = $paged;
+
+    if ( ( $paged + 2 ) <= $max ) {
+      $links[] = $paged + 2;
+      $links[] = $paged + 1;
+    }
+
+    echo '<div class="pagination"><ul class="list-inline pull-right">' . "\n";
+
+    /** Always show link to the first page **/
+    printf( '<li><a href="%s">First</a></li>' . "\n", esc_url( get_pagenum_link( 1 ) ), '1' );
+
+    /** Previous Post Link */
+    if ( get_previous_posts_link() )
+      printf( '<li>%s</li>' . "\n", get_previous_posts_link('<<') );
+
+    // Link to current page, plus next $max_pages in forward direction
+    for ( $i = $paged; $i <= $max; $i++ ) {
+      if ( $i >= $paged + $max_pages ) break;
+
+      $class = $paged == $i ? ' class="active"' : '';
+      printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( $i ) ), $i );
+    }
+
+    /** Next Post Link */
+    if ( get_next_posts_link() )
+      printf( '<li>%s</li>' . "\n", get_next_posts_link('>>') );
+
+    /** Always show link to the last page **/
+    printf( '<li><a href="%s">Last</a></li>' . "\n", esc_url( get_pagenum_link( $max ) ), $max );
+
+    echo '</ul></div>' . "\n";
+
+  }
+
 ?>

@@ -1,0 +1,138 @@
+.our-blog {
+  margin-top: 23px;
+
+  h2 {
+    color: $theme-color-pink;
+    margin-bottom: 32px;
+    line-height: 1;
+  }
+}
+
+.blog-top {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 10px;
+
+  h1 {
+    text-transform: capitalize;
+    display: inline;
+  }
+
+  .blog-categories {
+    margin-top: 13px;
+    float: right;
+
+    small {
+      margin-right: 12px;
+      color: #999;
+    }
+  }
+  
+  @media (max-width: $screen-xs) {
+    .blog-categories {
+      @include make-xs-column(12);
+
+      padding-left: 0;
+      float: none;
+    }
+  }
+}
+
+.one-post {
+  height: 500px;
+  border: 1px solid #dfdddd;
+  position: relative;
+
+  margin-bottom: 40px;
+
+  .post-img img {
+    width: 100%;
+  }
+
+  .post-text {
+    padding: 5px 25px 42px 25px;
+    font-size: 16px;
+    line-height: 27.55px;
+
+    h4 {
+      font-weight: 400;
+    }
+  }
+
+  .post-text h4 a {
+    color: inherit;
+
+    &:hover {
+      color: $theme-color-pink;
+    }
+  }
+}
+
+.post-meta {
+  background-color: #f1f1f1;
+  font-size: 13px;
+  padding: 15px;
+
+  display: block;
+  width: 100%;
+
+  position: absolute;
+  bottom: 0;
+
+  #post-date {
+    padding-right: 17px;
+    vertical-align: top;
+  }
+
+  #post-category {
+    padding-left: 17px;
+    border-left: 1px solid #d1d1d1;
+    display: inline-block;
+
+    @media (max-width: $screen-lg) {
+      width: 60%;
+    }
+
+    @media (max-width: $screen-xs) {
+      width: 65%;
+    }
+
+    a {
+      color: $theme-color-pink;
+
+      &:hover {
+        border-bottom: 1px solid $theme-color-pink;
+      }
+    }
+  }
+}
+
+.pagination {
+  @include clearfix; // includes only floated elements
+
+  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+
+  display: block;
+  width: 100%;
+
+  ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    font-weight: 600;
+
+    li {
+      a { 
+        color: inherit;
+        border-right: 1px solid #cccccc;
+        padding-right: 12px;
+      }
+
+      &:last-child a { border-right: none; }
+      &.active { color: $theme-color-pink; }
+    }
+  }
+
+  border-radius: 0;
+}
