@@ -84,7 +84,12 @@
         .post-image {
             max-height: 390px;
             overflow: hidden;
-            margin-bottom: 25px
+            margin-bottom: 25px;
+
+            img {
+                // max-height: 390px;
+                width: 100%;
+            }
         }
 
         .post-categories {

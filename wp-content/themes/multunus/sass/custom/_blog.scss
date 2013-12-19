@@ -40,14 +40,21 @@
 
   margin-bottom: 40px;
 
-  .post-img img {
-    width: 100%;
+  .post-img {
+    max-height: 240px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
   }
 
   .post-text {
     padding: 5px 25px 42px 25px;
     font-size: 16px;
     line-height: 27.55px;
+    max-height: 195px;
+    overflow: hidden;
 
     h4 {
       font-weight: 400;
