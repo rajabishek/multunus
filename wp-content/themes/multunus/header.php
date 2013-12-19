@@ -68,7 +68,7 @@
           'items_wrap'        => '<ul class="%2$s">%3$s</ul>
                                   <div class="blinker">
                                     <div class="navbar-text tagline active"><span class="text-white">Disciplined </span><span class="text-pink">Creativity</span></div>
-                                    <div class="navbar-text contact-no"><span class="text-white">Let\'s talk: </span><a class="text-pink" href="tel:+91 80 26590594">+91 80 26590594</a></div>
+                                    <div class="navbar-text contact-no"><a class="text-white" href="mailto:info@multunus.com">info@multunus.com</a></div>
                                   </div>',
           'walker'            => new wp_bootstrap_navwalker())
         );
