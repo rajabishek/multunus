@@ -6,8 +6,10 @@
 			<?php get_sidebar(); ?>
 			<article <?php post_class('col-sm-9 col-sm-pull-3') ?> id="post-<?php the_ID(); ?>">
 
-				<h2><?php the_title(); ?></h2>
-
+				<h1 class="post-title"><?php the_title(); ?></h1>
+				<div class="post-image">
+					<?php if ( has_post_thumbnail() ) { the_post_thumbnail(); } ?>
+				</div>
 				<div class="row">
 					<div class="meta-data col-sm-2">
 
@@ -16,7 +18,6 @@
 					</div>
 
 					<div class="content col-sm-10">
-
 						<?php the_content(); ?>
 
 						<div class="post-categories">

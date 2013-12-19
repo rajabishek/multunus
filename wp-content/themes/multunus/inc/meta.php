@@ -1,5 +1,5 @@
+<div class="authors">By <?php coauthors_posts_links(); ?> </div>
 <ul class="meta">
-    <li class="authors">By <?php coauthors_posts_links(); ?> </li>
     <li>
         <?php
         if(function_exists(estimated_reading_time)) {

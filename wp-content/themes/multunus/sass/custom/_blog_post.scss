@@ -2,24 +2,36 @@
     ul {
         list-style: none;
     }
-    .meta {
-        li {
+    .meta-data {
+        .authors {
             border-bottom: 1px solid #e3e3e3;
             padding: 7px 0;
             line-height: 1.4;
 
-            @media (max-width: $screen-xs){
-                display: inline;
+            @media (max-width: $screen-xs) {
                 border-bottom: none;
-                border-right: 1px solid #e3e3e3;
-                padding: 0 12px;
+            }
+        }
 
-                &:first-child {
-                    padding-left: 0;
-                }
+        .meta {
+            li {
+                border-bottom: 1px solid #e3e3e3;
+                padding: 7px 0;
+                line-height: 1.4;
 
-                &:last-child {
-                    border-right: none;
+                @media (max-width: $screen-xs){
+                    display: inline;
+                    border-bottom: none;
+                    border-right: 1px solid #e3e3e3;
+                    padding: 0 12px;
+
+                    &:first-child {
+                        padding-left: 0;
+                    }
+
+                    &:last-child {
+                        border-right: none;
+                    }
                 }
             }
         }
@@ -33,9 +45,46 @@
         border-bottom: 1px solid #e3e3e3;
         padding-bottom: 45px;
 
-        h2 {
+        p {
+            line-height: 1.67;
+            word-wrap: break-word;
+        }
+
+        ol {
+            margin-left: 30px;
+        }
+
+        a {
+            color: $theme-color-pink;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .alignleft {
+            float: left;
+        }
+
+        .alignright {
+            float: right;
+        }
+
+        .aligncenter {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .post-title {
             margin-top: 50px;
             margin-bottom: 18px;
+        }
+
+        .post-image {
+            max-height: 390px;
+            overflow: hidden;
+            margin-bottom: 25px
         }
 
         .post-categories {
