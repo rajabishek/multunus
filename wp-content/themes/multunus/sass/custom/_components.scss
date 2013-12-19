@@ -1,3 +1,19 @@
+a {
+  color: inherit;
+
+  &:hover {
+    color: $theme-color-pink;
+  }
+
+  &.colored-link {
+    color: $theme-color-pink;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
 .btn-red {
 	margin-top: 1.4vw;
 	background: $theme-color-pink;

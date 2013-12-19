@@ -2,9 +2,11 @@
     ul {
         list-style: none;
     }
-    .meta-data {
+    .meta {
         li {
             border-bottom: 1px solid #e3e3e3;
+            padding: 7px 0;
+            line-height: 1.4;
 
             @media (max-width: $screen-xs){
                 display: inline;
@@ -21,6 +23,10 @@
                 }
             }
         }
+
+        .social-share {
+            margin-top: 10px;
+        }
     }
 
     .post {
@@ -34,12 +40,14 @@
 
         .post-categories {
             margin-top: 30px;
-            a {
-                color: $theme-color-pink;
+        }
 
-                &:hover {
-                    color: $theme-color-pink;
-                    text-decoration: underline;
+        .content {
+            .social-share {
+                margin-top: 30px;
+
+                li {
+                    display: inline;
                 }
             }
         }
@@ -59,14 +67,6 @@
 
                 &:last-child {
                     border-bottom: none;
-                }
-
-                a {
-                    color: #333;
-
-                    &:hover {
-                        color: $theme-color-pink;
-                    }
                 }
             }
         }

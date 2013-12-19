@@ -27,12 +27,19 @@
 							$output = '';
 							if($categories){
 								foreach($categories as $category) {
-									$output .= '<a href="'.get_category_link( $category->term_id ).'" title="' . esc_attr( sprintf( __( "View all posts in %s" ), $category->name ) ) . '">'.$category->cat_name.'</a>'.$separator;
+									$output .= '<a class="colored-link" href="'.get_category_link( $category->term_id ).'" title="' . esc_attr( sprintf( __( "View all posts in %s" ), $category->name ) ) . '">'.$category->cat_name.'</a>'.$separator;
 								}
 								echo trim($output, $separator);
 							}
 							?>
 						</div>
+
+						<ul class="social-share visible-xs">
+							<li><a class="addthis_button_facebook_like" fb:like:layout="button_count"></a></li>
+							<li><a class="addthis_button_tweet"></a></li>
+							<li><a class="addthis_button_google_plusone" g:plusone:size="medium"></a></li>
+							<li><a class="addthis_button_linkedin_counter"></a></li>
+						</ul>
 
 						<?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
 
