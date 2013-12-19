@@ -310,7 +310,7 @@
     height: 46px;
     cursor: pointer;
     position: absolute;
-    top: 6%;;
+    top: 8%;;
 
     a {
       width: 100%;
@@ -342,12 +342,12 @@
     margin-top: 60px;
 
     .carousel-inner {
-      height: 300px;
+      height: 400px;
     }
 
     @media (max-width: $screen-xs) {
       .carousel-inner {
-        height: 350px;
+        height: 450px;
       }
     }
 
@@ -369,6 +369,7 @@
   }
 
   .our-customer-btn {
+      margin-top: 35px;
 
     a.client-btn {
       color: white;
@@ -432,9 +433,19 @@ onialarousel-control {
   padding-top: 0;
 }
 
+.modal-dialog {
+    display: block;
+    height: 100%;
+    position: relative;
+}
+
 .modal-content {
   width: 700px;
   height: 482px;
+
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
 }
 
 .modal-header {
