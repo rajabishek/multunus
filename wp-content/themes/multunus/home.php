@@ -15,20 +15,12 @@
     <source src="/vids/2.mp4" type="video/mp4" />
   </video>
 </div>
-<!--
-<article id="main-content" class="align-center big-picture-header">
-  <ul class="list-inline">
-    <li class="active"><a href="#big-picture" data-toggle="tab">Big Picture</a></li>
-    <li><a href="#our-services" data-toggle="tab">Our Services</a></li>
-  </ul>
-</article>
--->
 <div class="tab-content" id="main-content">
   <article class="big-picture-text" style="background-color: #fff;">
     <div class="container">
       <div class="row">
         <div class="col-md-3 col-md-offset-1 hidden-xs hidden-sm vertical-center">
-          <h1>The<br /><span class="red-text">Big Picture</span></h1>
+          <h1>The<br />Big Picture</h1>
         </div>
 
         <div class="col-md-4 big-picture-img-container">
@@ -40,19 +32,19 @@
 
         <div class="col-md-3 col-xs-12 big-picture-list">
         <div class="col-md-3 col-sm-offset-1 visible-sm visible-xs align-center">
-          <h1>The <span class="red-text">Big Picture</span></h1>
+          <h1>The Big Picture</h1>
         </div>
           <ul>
-            <li><a class="red-text" href="#">Why</a></span> we exist?</li>
-            <li><a class="red-text" href="#">How</a></span> we achieve<br /> our mission?</li>
-            <li><a class="red-text" href="#">What</a></span> we do on a<br /> daily basis?</li>
+            <li>What makes us different?</li>
+            <li><a class="red-text" href="#">Take a deep dive</a></span> to find out.</li>
           </ul>
         </div>
       </div> <!-- end row -->
     </div> <!-- end container -->
   </article>
 
-  <article class="our-services" style="display:visible;opacity:1;" >
+  <article class="our-services" >
+    <h1 class="align-center">Our Services</h1>
     <div class="container">
       <div class="row">
         <div class="col-md-4 service-item">
@@ -91,7 +83,6 @@
       <div class="col-md-4 recent-client-text">
         <h2 class="hidden-xs visible-sm">Narrable</h2>
         <h2 class="visible-xs"><a href="#">Narrable</a><span class="vertical-align-arrow"></span></h2>
-        <p>Web App</h2>
         <div class="hidden-xs">
           <p>Narrable uses storytelling through images and narrations to engage students and to draw out important higher order thinking skills.</p>
           <a class="view-work" href="#">View Work</a><span></span>
@@ -106,12 +97,12 @@
   <div class="container">
     <div class="row">
       <p class="heading align-center">Hear from our customers</p>
-      <div class="col-md-1 col-sm-1 col-xs-2 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 slider" id="left-slider">
+      <div class="slider" id="left-slider">
         <a class="left carousel-control" href="#our-clients-carousel" data-slide="prev">
         </a>
       </div>
 
-      <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-3 col-xs-12 our-customer-img">
+      <div class="col-md-12 col-sm-12 coll-xs-12 our-customer-img">
         <div id="our-clients-carousel" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
 
@@ -120,8 +111,7 @@
               <div class="carousel-caption">
                 <h3>Anil Jain</h3>
                 <h4>Brightmonk Innovation</h4>
-                <p>"Working with Multunus has been the best experience out of all the Outsourced Companies I’ve worked with."
-                </p>
+                <p class="client-testimonial">"Working with Multunus has been the best experience out of all the Outsourced Companies I’ve worked with." </p>
               </div>
             </div>
 
@@ -130,8 +120,7 @@
               <div class="carousel-caption">
                 <h3>Anuroop Iyengar</h3>
                 <h4>CogKnit</h4>
-                <p>"We are confidently speaking of going to market. You brought us here."
-                </p>
+                <p class="client-testimonial">"We are confidently speaking of going to market. You brought us here." </p>
               </div>
             </div>
 
@@ -140,8 +129,7 @@
               <div class="carousel-caption">
                 <h3>Dustin Curzon</h3>
                 <h4>Narrable</h4>
-                <p>"I’m impressed with the team aspect of working with multunus."
-                </p>
+                <p class="client-testimonial">"I’m impressed with the team aspect of working with multunus." </p>
               </div>
             </div>
 
@@ -149,16 +137,15 @@
         </div> <!-- end our-clients-carousel -->
       </div>
 
-      <div class="col-md-1 col-sm-1 col-xs-2 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 slider" id="right-slider">
+      <div class="slider" id="right-slider">
         <a class="right carousel-control" href="#our-clients-carousel" data-slide="next">
         </a>
       </div>
-    </div>
 
-    <div class="row our-customer-btn">
-      <a class="client-btn" id="client-video" href="http://www.youtube.com/v/GuO8jRW9g5U&amp;autoplay=1"><span id="reel-icon"></span><span class="underline">Watch Video</span></a>
-      <a class="client-btn" href="#"><span id="eye-icon"></span><span class="underline">View Project</span></a>
-    </div>
+      <div class="our-customer-btn">
+        <a class="client-btn" id="client-video" href="http://www.youtube.com/v/GuO8jRW9g5U&amp;autoplay=1"><span id="reel-icon"></span><span class="underline">Watch Video</span></a>
+        <a class="client-btn" href="#"><span id="eye-icon"></span><span class="underline">View Project</span></a>
+      </div>
 
       <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -172,7 +159,9 @@
           </div>
         </div>
       </div>
-  </div>
+    </div><!-- end of row -->
+
+  </div><!-- end of container -->
 </article>
 
 <?php get_footer(); ?>
