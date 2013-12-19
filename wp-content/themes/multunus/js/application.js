@@ -79,7 +79,7 @@ $(document).ready(function() {
   });
 
   // 'recent work' video button
-  $('#client-video').click(function (e) {
+  $('.client-video').click(function (e) {
     if (window.HOMEPAGE.isMobileDevice()) {
       $(this).attr({
         href: $(this).attr('href').replace('v/', 'watch?v='),

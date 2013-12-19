@@ -16,11 +16,15 @@
   </video>
 </div>
 <div class="tab-content" id="main-content">
-  <article class="big-picture-text" style="background-color: #fff;">
+  <article class="big-picture-text">
     <div class="container">
       <div class="row">
-        <div class="col-md-3 col-md-offset-1 hidden-xs hidden-sm vertical-center">
+        <div class="col-md-3 col-md-offset-1 hidden-xs hidden-sm on-desktop">
           <h1>The<br />Big Picture</h1>
+        </div>
+
+        <div class="col-md-3 col-sm-offset-1 visible-sm visible-xs align-center on-mobile">
+          <h1>The Big Picture</h1>
         </div>
 
         <div class="col-md-4 big-picture-img-container">
@@ -31,9 +35,6 @@
         </div>
 
         <div class="col-md-3 col-xs-12 big-picture-list">
-        <div class="col-md-3 col-sm-offset-1 visible-sm visible-xs align-center">
-          <h1>The Big Picture</h1>
-        </div>
           <ul>
             <li>What makes us different?</li>
             <li><a class="red-text" href="#">Take a deep dive</a></span> to find out.</li>
@@ -112,8 +113,15 @@
                 <h3>Anil Jain</h3>
                 <h4>Brightmonk Innovation</h4>
                 <p class="client-testimonial">"Working with Multunus has been the best experience out of all the Outsourced Companies I’ve worked with." </p>
-              </div>
-            </div>
+                <div class="our-customer-btn">
+                  <div class="row">
+                    <a class="client-btn client-video" href="http://www.youtube.com/v/GuO8jRW9g5U&amp;autoplay=1"><span id="reel-icon"></span><span class="underline">Watch Video</span></a>
+                    <a class="client-btn" href="#"><span id="eye-icon"></span><span class="underline">View Project</span></a>
+                  </div>
+                </div>
+
+              </div><!-- end of item -->
+            </div><!-- end of carousel-inner -->
 
             <div class="item">
               <img class="img-circle" src="/img/customer-picture-round-2.png" />
@@ -121,8 +129,15 @@
                 <h3>Anuroop Iyengar</h3>
                 <h4>CogKnit</h4>
                 <p class="client-testimonial">"We are confidently speaking of going to market. You brought us here." </p>
-              </div>
-            </div>
+                <div class="our-customer-btn">
+                  <div class="row">
+                      <a class="client-btn client-video" href="http://www.youtube.com/v/NAMGHISmWH8&amp;autoplay=1"><span id="reel-icon"></span><span class="underline">Watch Video</span></a>
+                      <a class="client-btn" href="#"><span id="eye-icon"></span><span class="underline">View Project</span></a>
+                  </div>
+                </div>
+
+              </div><!-- end of item -->
+            </div><!-- end of carousel-inner -->
 
             <div class="item">
               <img class="img-circle" src="/img/customer-picture-round.png" />
@@ -130,22 +145,26 @@
                 <h3>Dustin Curzon</h3>
                 <h4>Narrable</h4>
                 <p class="client-testimonial">"I’m impressed with the team aspect of working with multunus." </p>
-              </div>
-            </div>
+                <div class="our-customer-btn">
+                  <div class="row">  
+                    <a class="client-btn client-video" href="http://www.youtube.com/v/z1tzfsRI_Ds&amp;autoplay=1"><span id="reel-icon"></span><span class="underline">Watch Video</span></a>
+                    <a class="client-btn" href="#"><span id="eye-icon"></span><span class="underline">View Project</span></a>
+                  </div>
+                </div>
+
+              </div><!-- end of item -->
+            </div><!-- end of carousel-inner -->
 
           </div> <!-- end carousel-inner -->
         </div> <!-- end our-clients-carousel -->
-      </div>
+
+      </div><!-- end of our-customer-img -->
 
       <div class="slider" id="right-slider">
         <a class="right carousel-control" href="#our-clients-carousel" data-slide="next">
         </a>
       </div>
 
-      <div class="our-customer-btn">
-        <a class="client-btn" id="client-video" href="http://www.youtube.com/v/GuO8jRW9g5U&amp;autoplay=1"><span id="reel-icon"></span><span class="underline">Watch Video</span></a>
-        <a class="client-btn" href="#"><span id="eye-icon"></span><span class="underline">View Project</span></a>
-      </div>
 
       <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -158,9 +177,9 @@
             </div>
           </div>
         </div>
-      </div>
-    </div><!-- end of row -->
+      </div><!-- end of myModal -->
 
+    </div><!-- end of row -->
   </div><!-- end of container -->
 </article>
 

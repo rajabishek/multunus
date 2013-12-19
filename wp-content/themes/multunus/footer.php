@@ -9,7 +9,7 @@
       </div>
 
       <div class="col-sm-4 col-xs-6">
-          <div class="align-center heading">Career</div>
+          <div class="align-center heading">Careers</div>
           <div class="hexagon">
             <a href="/careers"><img src="/img/robot-icon-red.png"></a>
           </div>
@@ -29,6 +29,12 @@
               <li>
                 <a class="social" href="https://twitter.com/multunus" title="Follow us on Twitter">
                   <img src="/img/twitter-icon-footer.png" alt=""/>
+                </a>
+              </li>
+
+              <li>
+                <a class="social" href="http://www.linkedin.com/company/multunus" title="Follow us on Linkedin">
+                  <img src="/img/linkedin-icon-footer.png" alt=""/>
                 </a>
               </li>
 

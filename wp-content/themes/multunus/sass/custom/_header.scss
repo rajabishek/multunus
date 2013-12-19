@@ -105,6 +105,8 @@
   }
 
   .blinker {
+    letter-spacing: 1px;
+
     @media (max-width: $screen-sm) {
       display: none !important;
     }
