@@ -123,6 +123,9 @@ if (function_exists('register_sidebar')) {
  }
  add_action( 'init', 'team_post_type', 0 );
 
+ // Add Featured Image
+ add_theme_support('post-thumbnails');
+
   // Custom pagination
  function numeric_pagination_nav() {
 
