@@ -1,5 +1,6 @@
 a {
   color: inherit;
+  cursor: pointer;
 
   &:hover {
     color: $theme-color-pink;
@@ -31,7 +32,7 @@ a {
 	@media (min-width: 320px){
 		font-size: 20px;
 		padding: 6px 16px;
-}
+  }
 	@media (min-width: $screen-xs){
 		font-size: 20px;
 		padding: 6px 24px;
@@ -52,12 +53,14 @@ a {
 		font-size: 26px;
 		padding: 12px 30px;
 	}
-	cursor: pointer;
+
+  cursor: pointer;
+
   &:hover {
     background: $theme-color-dark-pink;
   }
 
-	span{
+	span {
 		background: url('/img/down_arrow.png') left center no-repeat;
 		height: 14px;
 		width: 11px;
@@ -113,7 +116,7 @@ form {
         color: #999;
         float: left;
         min-height: 36px;
-        padding: 2px 5px;
+        padding: 2px 5px 2px 0;
         margin-right: 8px;
         line-height: 2;
     }

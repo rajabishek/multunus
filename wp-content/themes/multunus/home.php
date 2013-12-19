@@ -5,7 +5,7 @@
     <div class="overlay-content">
       <h1 id="quote">Expertly Crafted Apps for <br /> Lean Startups</h1>
       <div class="hidden-xs">
-        <a rel="#main-content" class="btn-red">Explore<span></span></a>
+        <div rel="#main-content" class="btn-red">Explore<span></span></div>
       </div>
     </div>
   </div>

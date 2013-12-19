@@ -94,7 +94,7 @@ if ( $team_posts ):
         </div>
       </div>
     </aside>
-
+    <div class="row">
     <?php
     foreach ( $team_posts as $post ):
       setup_postdata($post);
@@ -114,6 +114,7 @@ if ( $team_posts ):
     </figure>
 
     <?php endforeach; ?>
+  </div>
 </section>
 <?php get_footer(); ?>
 <?php endif; ?>

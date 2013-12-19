@@ -74,7 +74,7 @@ $(function() {
 // get height of 'main-content'
 // subtract height from offset and scroll to that location
 $(document).ready(function() {
-  $('a[rel=#main-content]').click(function(e) {
+  $('[rel=#main-content]').click(function(e) {
     $('html, body').animate({scrollTop: $("#main-content").offset().top - 50}, 1000); // TODO: Remove magic number 50px
   });
 
