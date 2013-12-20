@@ -11,8 +11,8 @@
   </div>
 
   <video tabindex="0" autoplay loop>
-    <source src="/vids/1.mp4" type="video/mp4" />
-    <source src="/vids/2.mp4" type="video/mp4" />
+    <source src="http://multunus_website.s3.amazonaws.com/wp-content/uploads/2013/12/1.mp4" type="video/mp4" />
+    <source src="http://multunus_website.s3.amazonaws.com/wp-content/uploads/2013/12/2.mp4" type="video/mp4" />
   </video>
 </div>
 <div class="tab-content" id="main-content">
