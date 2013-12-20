@@ -1,0 +1,144 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Insert Estimated Reading Time 1.1.2\n"
+"POT-Creation-Date: 2013-12-13 10:31+0900\n"
+"PO-Revision-Date: 2013-12-13 15:27+0900\n"
+"Last-Translator: nigauri <i18n@nigauri.me>\n"
+"Language-Team: nigauri.me <i18n@nigauri.me>\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../insert-estimated-reading-time.php:83
+msgid ""
+"<p class=\"estimated-reading-time\">Estimated reading time: %min% minute(s)</"
+"p>"
+msgstr ""
+"<p class=\"estimated-reading-time\">この記事を読むのに必要な時間は約 %min% 分"
+"です。</p>"
+
+#: ../insert-estimated-reading-time.php:114
+msgid "Options saved."
+msgstr "設定を保存しました。"
+
+#: ../insert-estimated-reading-time.php:129
+#: ../insert-estimated-reading-time.php:254
+msgid "Insert Estimated Reading Time Options"
+msgstr "Insert Estimated Reading Time 設定"
+
+#: ../insert-estimated-reading-time.php:139
+msgid "Number of characters per minute:"
+msgstr "一分間あたりの文字数:"
+
+#: ../insert-estimated-reading-time.php:148
+msgid "Format:"
+msgstr "フォーマット:"
+
+#: ../insert-estimated-reading-time.php:155
+msgid "<code>%min%</code> will replace minute(s)."
+msgstr "<code>%min%</code> は分に置き換わります。"
+
+#: ../insert-estimated-reading-time.php:156
+msgid "<code>%sec%</code> will replace second(s)."
+msgstr "<code>%sec%</code> は秒に置き換わります。"
+
+#: ../insert-estimated-reading-time.php:157
+msgid "<code>%num%</code> will replace Number of characters per minute."
+msgstr "<code>%num%</code> は一分間あたりの文字数に置き換わります。"
+
+#: ../insert-estimated-reading-time.php:160
+msgid "If you select \"Minutes\" in \"Time output\", please include \"%min%\"."
+msgstr "「時間出力」 で 「分」 を選択した場合は、「%min%」を含めてください。"
+
+#: ../insert-estimated-reading-time.php:161
+msgid ""
+"If you select \"Minutes and seconds\" in \"Time output\", please include "
+"\"%min%\" and \"%sec%\"."
+msgstr ""
+"「時間出力」 で 「分・秒」 を選択した場合は、「%min%」および「%sec%」を含めて"
+"ください。"
+
+#: ../insert-estimated-reading-time.php:170
+msgid "Time output:"
+msgstr "時間出力:"
+
+#: ../insert-estimated-reading-time.php:174
+msgid "Minutes"
+msgstr "分"
+
+#: ../insert-estimated-reading-time.php:175
+msgid "Minutes and seconds"
+msgstr "分・秒"
+
+#: ../insert-estimated-reading-time.php:182
+msgid "Hide in Home:"
+msgstr "ホームでは表示しない:"
+
+#: ../insert-estimated-reading-time.php:191
+msgid "Hide in Front Page:"
+msgstr "フロントページでは表示しない:"
+
+#: ../insert-estimated-reading-time.php:200
+msgid "Hide in Post:"
+msgstr "投稿では表示しない:"
+
+#: ../insert-estimated-reading-time.php:209
+msgid "Hide in Page:"
+msgstr "固定ページでは表示しない:"
+
+#: ../insert-estimated-reading-time.php:218
+msgid "Shortcode"
+msgstr "ショートコード"
+
+#: ../insert-estimated-reading-time.php:221
+msgid "Add <code>[estimated_reading_time]</code> to your post content."
+msgstr "<code>[estimated_reading_time]</code> を投稿記事に追加してください。"
+
+#: ../insert-estimated-reading-time.php:222
+#: ../insert-estimated-reading-time.php:232
+msgid ""
+"Estimated reading time is displayed regardless of the state of checkbox."
+msgstr "チェックボックスの状態にかかわらず表示されます。"
+
+#: ../insert-estimated-reading-time.php:228
+msgid "Tag"
+msgstr "タグ"
+
+#: ../insert-estimated-reading-time.php:231
+msgid ""
+"Add <code>&lt;?php estimated_reading_time(); ?&gt;</code> to your theme/"
+"template."
+msgstr ""
+"<code>&lt;?php estimated_reading_time(); ?&gt;</code> をテーマ/テンプレートに"
+"追加してください。"
+
+#: ../insert-estimated-reading-time.php:239
+msgid "Save Changes"
+msgstr "変更を保存"
+
+#: ../insert-estimated-reading-time.php:255
+msgid "Insert Estimated Reading Time"
+msgstr "Insert Estimated Reading Time"
+
+#. Plugin URI of the plugin/theme
+msgid ""
+"http://www.nigauri.me/tech/wordpress/plugin_insert_estimated_reading_time"
+msgstr ""
+"http://www.nigauri.me/tech/wordpress/plugin_insert_estimated_reading_time"
+
+#. Description of the plugin/theme
+msgid "This plugin inserts estimated reading time before contents."
+msgstr "「この記事を読むのに必要な時間」を記事の前に挿入します。"
+
+#. Author of the plugin/theme
+msgid "nigauri"
+msgstr "nigauri"
+
+#. Author URI of the plugin/theme
+msgid "http://www.nigauri.me/"
+msgstr "http://www.nigauri.me/"
