@@ -1,16 +1,16 @@
 === WP Example Content ===
-Contributors: joshferrara, jonathandsimmons
+Contributors: joshferrara
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XK5QHUZD4UP6A
 Tags: dummy content, content, example, sample, development, theme development, lorem ipsum, lorem
 Requires at least: 1.5
-Tested up to: 3.4
-Stable tag: 1.1
+Tested up to: 3.8
+Stable tag: 1.2
 
 Add and remove example post content to assist you in designing and developing new and current themes.
 
 == Description ==
 
-With the options provided, you can add and remove example post content to assist you in designing and developing new and current themes. Enjoy!
+Easily add and remove example post content to assist you in designing and developing new and current themes. Enjoy!
 
 After activating the plugin, simply access the plugin in the admin panel navigation (usually the last item).
 
@@ -55,6 +55,9 @@ Sure won't! It will only erase posts and pages created by this plugin.
 
 = 1.1 =
 * Updated menu position declaration to play nicely with other plugins.
+
+= 1.2 =
+* Updated for WP 3.8 compatibility
 
 == Upgrade Notice ==
 = First release =

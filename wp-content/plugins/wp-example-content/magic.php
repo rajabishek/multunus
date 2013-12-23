@@ -2,7 +2,7 @@
 Plugin Name: WP Example Content
 Plugin URI: http://hivemindlabs.com/projects/wp-example-content/
 Description: Provides multiple example posts & pages to assist with styling and developing new and current themes.
-Version: 1.1 
+Version: 1.2 
 Author: Hivemind Labs, Inc.
 Author URI: http://hivemindlabs.com/
 
