@@ -71,15 +71,19 @@ $(function() {
 
 // 'explore' button should scroll to 'main-content'
 // get offset of 'main-content' from top of the viewport
-// get height of 'main-content'
+// get height of 'navbar'
 // subtract height from offset and scroll to that location
 $(document).ready(function() {
   $('[rel=#main-content]').click(function(e) {
-    $('html, body').animate({scrollTop: $("#main-content").offset().top - 50}, 1000); // TODO: Remove magic number 50px
+    $('html, body').animate({scrollTop: $("#main-content").offset().top - $("nav").height()}, 1000);
+  });
+
+  $('[rel=#open-positions]').click(function(e) {
+    $('html, body').animate({scrollTop: $("#open-positions").offset().top - $("nav").height()}, 2000);
   });
 
   // 'recent work' video button
-  $('.client-video').click(function (e) {
+  $('.client-video, #founder-video').click(function (e) {
     if (window.HOMEPAGE.isMobileDevice()) {
       $(this).attr({
         href: $(this).attr('href').replace('v/', 'watch?v='),
@@ -177,26 +181,3 @@ $(document).ready(function() {
 
   });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

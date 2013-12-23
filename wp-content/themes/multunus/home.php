@@ -15,63 +15,62 @@
     <source src="http://multunus_website.s3.amazonaws.com/wp-content/uploads/2013/12/2.mp4" type="video/mp4" />
   </video>
 </div>
-<div class="tab-content" id="main-content">
-  <article class="big-picture-text">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 col-md-offset-1 hidden-xs hidden-sm on-desktop">
-          <h1>The<br />Big Picture</h1>
-        </div>
 
-        <div class="col-md-3 col-sm-offset-1 visible-sm visible-xs align-center on-mobile">
-          <h1>The Big Picture</h1>
-        </div>
+<article id="main-content" class="big-picture-text">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-md-offset-1 hidden-xs hidden-sm on-desktop">
+        <h1>The<br />Big Picture</h1>
+      </div>
 
-        <div class="col-md-4 big-picture-img-container">
-          <a href="#"><div class="what-img">
-            <div class="how-img"> <div class="why-img"></div></div>
-            </div>
-          </a>
-        </div>
+      <div class="col-md-3 col-sm-offset-1 visible-sm visible-xs align-center on-mobile">
+        <h1>The Big Picture</h1>
+      </div>
 
-        <div class="col-md-3 col-xs-12 big-picture-list">
-          <ul>
-            <li>What makes us different?</li>
-            <li><a class="red-text" href="#">Take a deep dive</a></span> to find out.</li>
-          </ul>
-        </div>
-      </div> <!-- end row -->
-    </div> <!-- end container -->
-  </article>
+      <div class="col-md-4 big-picture-img-container">
+        <a href="#"><div class="what-img">
+          <div class="how-img"> <div class="why-img"></div></div>
+          </div>
+        </a>
+      </div>
 
-  <article class="our-services" >
-    <h1 class="align-center">Our Services</h1>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 service-item">
-          <img src="/img/web-apps-icon-grey.png" />
-          <h2>Web Apps</h2>
-          <p>Leverage HTML5, Javascript, CSS3 and Ruby on Rails to build web apps. On desktops, tablets and phones.</p>
-          <a href="#">Learn More</a><span></span>
-        </div>
+      <div class="col-md-3 col-xs-12 big-picture-list">
+        <ul>
+          <li>What makes us different?</li>
+          <li><a class="red-text" href="#">Take a deep dive</a></span> to find out.</li>
+        </ul>
+      </div>
+    </div> <!-- end row -->
+  </div> <!-- end container -->
+</article>
 
-        <div class="col-md-4 service-item">
-          <img src="/img/mobile-apps-icon-grey.png" />
-          <h2>Mobile Apps</h2>
-          <p>Craft beautiful experiences on the iOS and Android platforms.</p>
-          <a href="#">Learn More</a><span></span>
-        </div>
+<article class="our-services" >
+  <h1 class="align-center">Our Services</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 service-item">
+        <img src="/img/web-apps-icon-grey.png" />
+        <h2>Web Apps</h2>
+        <p>Leverage HTML5, Javascript, CSS3 and Ruby on Rails to build web apps. On desktops, tablets and phones.</p>
+        <a href="#">Learn More</a><span></span>
+      </div>
 
-        <div class="col-md-4 service-item">
-          <img src="/img/cal-icon.png" />
-          <h2>Every 2 Days</h2>
-          <p> Working software every 2 days. It's the primary measure of progress.</p>
-          <a href="#">Learn More</a><span></span>
-        </div>
+      <div class="col-md-4 service-item">
+        <img src="/img/mobile-apps-icon-grey.png" />
+        <h2>Mobile Apps</h2>
+        <p>Craft beautiful experiences on the iOS and Android platforms.</p>
+        <a href="#">Learn More</a><span></span>
+      </div>
+
+      <div class="col-md-4 service-item">
+        <img src="/img/cal-icon.png" />
+        <h2>Every 2 Days</h2>
+        <p> Working software every 2 days. It's the primary measure of progress.</p>
+        <a href="#">Learn More</a><span></span>
       </div>
     </div>
-  </article>
-</div><!-- end tab-content -->
+  </div>
+</article>
 
 <article class="recent-work">
   <div class="container">
