@@ -173,65 +173,82 @@
   }
 }
 
-/* career-details page */
-article[role="career-details"] {
-  background-color: white;
-  padding: 1em;
+// CAREER-DETAILS PAGE //
 
-  p {
-    font-size: 1.2em;
+h5 {
+  font-weight: 600;
+  color: #000;
+}
+
+.career-details {
+  margin-top: 30px;
+  margin-bottom: 100px;
+  h4 { color: #000; }
+}
+
+.career-details-content {
+  ul {
+    list-style-image: url('/img/arrow-right-red.png');
+    padding-top: 20px;
+    margin-left: 12px;
   }
-
-  h3 {
-    font-size: 1em;
+  li {
+    border-bottom: 1px solid #e3e3e3;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    &:last-child { border-bottom: none; }
   }
+}
 
-  section {
-    h2 {
-      font-weight: 900;
-    }
+.current-openings {
+  list-style-type: none;
 
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
+  li {
+    border-bottom: 1px dashed #d4d4d4;
+    &:first-child { font-weight: 600; }
+    &:last-child { border-bottom: none; }
 
-    li {
-      background: url('/img/arrow-right-red.png') left 0.5em no-repeat;
-      line-height: 1.5em;
-      padding-left: 1.5em;
-      padding-right: 1em;
-      margin-top: 0.5em;
-      font-size: 1.5em;
-      font-weight: bold;
-
-      span {
-        display: inline-block;
-        padding-bottom: 0.5em;
-        border-bottom: 2px solid #eee;
-      }
+    a {
+      color: $theme-color-pink;
+      &:hover { text-decoration: underline; }
     }
   }
 }
 
-aside[role="career-faq"] {
-  ol {
-    list-style-position: inside;
-    font-family: "Proximanova Semi Bold";
-    margin-left: -20px;
+.career-details-sidebar {
+  margin-top: 45px;
+}
 
-    p {
-      border-bottom: 1px dotted black;
+.career-faq {
+  list-style-position: inside;
 
-      &:last-child {
-        border-bottom: none;
-      }
+  li { margin-bottom: 20px; }
+
+  p {
+    font-size: 16px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px dotted black;
+    &:last-child {
+      border-bottom: none;
+      margin-bottom: 16px;
+      padding-bottom: 0;
     }
   }
+}
 
-  a:after {
-    position: relative;
-    left: 4%;
+#read-faq-more {
+  color: $theme-color-pink;
+  &:hover { text-decoration: underline; }
+
+  &:after {
+    margin-left: 10px;
     content: url('/img/arrow-right-red.png');
   }
+}
+
+.career-contact {
+  h5 { margin-top: 0; }
+  a {color: $theme-color-pink;}
 }

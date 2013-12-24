@@ -6,31 +6,10 @@
 
 <?php get_header(); ?>
 
-<?php
-the_post();
-
-// Get 'job' posts
-$job_posts = get_posts( array(
-  'post_type' => 'job',
-  'posts_per_page' => -1, // Unlimited posts
-  'orderby' => 'title', // Order alphabetically by name
-  ) );
-
-if ( $job_posts ):
-  foreach ($job_posts as $job):
-    setup_postdata($job);
-  endforeach;
-endif;
-
-wp_reset_postdata();
-?>
-
 <div class="video-section-container career-page">
   <div class="overlay">
     <div class="overlay-content">
       <h1 id="quote">Build your dream. At work.</h1>
-      <div id="career-text-overlay">
-      </div>
       <div rel="#open-positions" class="btn-red">Open Positions<span></span></div>
     </div>
   </div>
@@ -119,19 +98,25 @@ wp_reset_postdata();
   <div class="container">
     <h1>Open Positions</h1>
       <aside class="row career-position-container">
-        <div class="career-position col-md-3 col-md-offset-3">
-          <a href="#">
-            <span>Programmer</span>
-            <p>Web Application Development experience. More specifically, this includes the following:</p>
-          </a>
-        </div>
 
-        <div class="career-position col-md-3">
-          <a href="#">
-            <span>Business Analyst</span>
-            <p>Web Application Development experience. More specifically, this includes the following:</p>
-          </a>
-        </div>
+    <?php
+    if ($childrens = get_children('post_parent=40&post_type=page')):
+      foreach ($childrens as $children):
+        $post = get_post($children->ID);
+        $title = $post->post_title;
+        $excerpt = $post->post_excerpt;
+        $permalink = post_permalink($children->ID);
+    ?>
+
+      <div class="career-position col-md-3">
+      <a href="<?php echo $permalink ?>">
+        <span><?php echo $title ?></span>
+        <p><?php echo $excerpt ?></p>
+        </a>
+      </div>
+
+    <?php endforeach; ?>
+    <?php endif; ?>
       </aside>
   </div>
 </article>
