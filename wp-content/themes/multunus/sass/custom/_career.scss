@@ -180,13 +180,38 @@ h5 {
   color: #000;
 }
 
+.current-openings-dropdown {
+  margin-top: 22px;
+
+  button {
+    width: 180px;
+    text-align: left;
+  }
+
+  .dropdown-label {
+    display: inline-block;
+    color: #999;
+  }
+
+  .dropdown { margin-left: 10px; }
+}
+
 .career-details {
   margin-top: 30px;
   margin-bottom: 100px;
   h4 { color: #000; }
+
+  @media (max-width: $screen-xs) {
+    margin-bottom: 0;
+  }
 }
 
 .career-details-content {
+
+  @media (max-width: $screen-xs) {
+    .position-title { font-size: 30px; }
+  }
+
   ul {
     list-style-image: url('/img/arrow-right-red.png');
     padding-top: 20px;
@@ -218,9 +243,14 @@ h5 {
 
 .career-details-sidebar {
   margin-top: 45px;
+
+  @media (max-width: $screen-sm) {
+    background-color: #f2f2f2;
+    padding: 30px 20px;
+  }
 }
 
-.career-faq {
+.career-details-faq {
   list-style-position: inside;
 
   li { margin-bottom: 20px; }
@@ -251,4 +281,54 @@ h5 {
 .career-contact {
   h5 { margin-top: 0; }
   a {color: $theme-color-pink;}
+}
+
+// CAREER FAQ PAGE //
+.career-faq {
+  margin-top: 22px;
+  margin-bottom: 50px;
+
+  @media (max-width: $screen-xs) {
+    h1 { font-size: 30px; }
+    h2 { font-size: 26px; }
+    li { font-size: 24px; }
+    p { font-size: 18px; }
+  }
+
+  ol {
+    margin-left: 30px;
+  }
+
+  li {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+
+  p {
+    border-bottom: 1px dotted #e3e3e3;
+    font-size: 16px;
+    line-height: 27.55px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+
+    &:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  .go-to-top {
+    color: $theme-color-pink;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:after {
+      margin-left: 10px;
+      content: url('/img/arrow-top-red.png');
+    }
+  }
 }
