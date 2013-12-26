@@ -93,7 +93,7 @@
             aliqua. Ut enim ad minim veniam,
         </ol>
 
-        <?php $permalink = get_permalink( 4228 ); ?> 
+        <?php $permalink = get_permalink( get_page_by_path( 'faq' ) ); ?> 
         <a id="read-faq-more" href="<?php echo $permalink ?>">Read All FAQ</a>
       </div><!-- end of career-details-section -->
     </div><!-- end of row -->
