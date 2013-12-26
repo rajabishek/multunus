@@ -1,0 +1,92 @@
+.get-in-touch {
+  h1 {
+    margin-top: 50px;
+    margin-bottom: 35px;
+  }
+
+  h5 {
+    margin-bottom: 0;
+  }
+
+  a {
+    color: $theme-color-pink;
+  }
+}
+
+.latest-tweet-section {
+  margin-top: 40px;
+  margin-bottom: 80px;
+
+  .latest-tweets {
+    margin-bottom: 20px;
+
+    ul {
+      list-style-type: none;
+      width: 60%;
+      margin: 0 auto;
+    }
+
+    a {
+      color: $theme-color-pink;
+    }
+  }
+}
+
+.multunus-gmap {
+  position: relative;
+}
+
+.form-container {
+  padding: 30px;
+  background-color: #fff;
+  z-index: 777;
+  position: absolute;
+  width: 380px;
+  bottom: 0;
+  left: 20%;
+
+  h2 {
+    color: #000;
+    margin-top: 0;
+  }
+
+  form {
+    height: 100%;
+
+    p {
+      margin-bottom: 0;
+    }
+
+    label {
+      color: $theme-color-pink;
+      margin-left: 5px;
+    }
+
+    textarea {
+      width: 100%;
+      outline: none;
+      resize: none;
+      border: 1px solid #dfdddd;
+      border-radius: 4px;
+    }
+
+    input[type="submit"] {
+      width: 40%;
+      height: 55px;
+      padding: 0;
+    }
+  }
+}
+
+#map {
+  height: 600px;
+}
+
+#map-content {
+  text-align: center;
+
+  h3 {
+    color: $theme-color-pink;
+    margin-top: 0;
+  }
+}

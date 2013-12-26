@@ -177,11 +177,6 @@
 
 // CAREER-DETAILS PAGE //
 
-h5 {
-  font-weight: 600;
-  color: #000;
-}
-
 .current-openings-dropdown {
   margin-top: 22px;
 
@@ -281,6 +276,11 @@ h5 {
 }
 
 .career-contact {
-  h5 { margin-top: 0; }
+  h5 {
+    margin-top: 0;
+    font-weight: 600;
+    color: #000;
+  }
+
   a {color: $theme-color-pink;}
 }
