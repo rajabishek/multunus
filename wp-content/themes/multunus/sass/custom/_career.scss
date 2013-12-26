@@ -148,6 +148,8 @@
     p { color: #333; }
   }
 
+  a:focus { outline: none; }
+
   .career-position {
     background-color: rgb(241, 240, 240);
     background: url('/img/arrow-right-red.png') #fff center 90% no-repeat;
@@ -197,12 +199,12 @@ h5 {
 }
 
 .career-details {
-  margin-top: 30px;
-  margin-bottom: 100px;
+  padding-top: 30px;
+  padding-bottom: 100px;
   h4 { color: #000; }
 
-  @media (max-width: $screen-xs) {
-    margin-bottom: 0;
+  @media (max-width: $screen-sm) {
+    padding-bottom: 0;
   }
 }
 

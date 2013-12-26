@@ -5,6 +5,10 @@
 ?>
 
 <?php get_header(); the_post(); ?>
+<?php 
+  $mypage = get_page_by_path('careers');
+  $mypageid = ( $mypage ? $mypage->ID : '0' );
+?>
 
 <div class="video-section-container career-page">
   <div class="overlay">
@@ -20,7 +24,7 @@
   </video>
 </div>
 
-<div class="container current-openings-dropdown visible-xs">
+<div class="container current-openings-dropdown dropdown-container visible-xs">
   <div class="dropdown-label">Current Openings: </div>
   <div class="btn-group dropdown">
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
@@ -29,7 +33,7 @@
     <ul class="dropdown-menu" role="menu">
       <?php
         $page_id = get_queried_object_id();
-        if ($childrens = get_children('post_parent=40&post_type=page')):
+        if ($childrens = get_children('post_parent=' . $mypageid . '&post_type=page')):
           foreach ($childrens as $children):
             $post = get_post($children->ID);
             $title = $post->post_title;
@@ -40,7 +44,7 @@
               echo '<li><a href="' . $permalink . '">' . $title . '</a></li>';
             endif;
           endforeach;
-        endif;
+        endif; wp_reset_query();
       ?>
     </ul>
   </div>
@@ -67,7 +71,7 @@
           <li>Programmer</li>
 
           <?php
-          if ($childrens = get_children('post_parent=40&post_type=page')):
+          if ($childrens = get_children('post_parent=' . $mypageid . '&post_type=page')):
             foreach ($childrens as $children):
               $post = get_post($children->ID);
               $title = $post->post_title;
