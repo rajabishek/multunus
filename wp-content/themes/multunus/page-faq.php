@@ -6,14 +6,13 @@
 
 <?php get_header(); ?>
 
-<section id="back-to-top" class="career-faq">
+<section class="career-faq">
   <div class="container">
     <div class="row">
       <div class="col-md-9">
        <h1>Frequently Asked Question</h1>
         <hgroup class="red-text clearfix">
           <h2 class="pull-left">Company</h2>
-          <a class="pull-right go-to-top" href="#">Back to Top</a>
         </hgroup>
         <ol>
           <li>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </li>
@@ -32,7 +31,7 @@
 
         <hgroup class="red-text clearfix">
           <h2 class="pull-left">Project</h2>
-          <a class="pull-right go-to-top" href="#">Back to Top</a>
+          <a class="pull-right go-to-top" href="#back-to-top">Back to Top</a>
         </hgroup>
         <ol>
           <li>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </li>
@@ -51,7 +50,7 @@
 
         <hgroup class="red-text clearfix">
           <h2 class="pull-left">Career</h2>
-          <a class="pull-right go-to-top" href="#">Back to Top</a>
+          <a class="pull-right go-to-top" href="#back-to-top">Back to Top</a>
         </hgroup>
         <ol>
           <li>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </li>
@@ -68,7 +67,7 @@
              amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
         </ol>
 
-        <a class="go-to-top visible-xs" href="back-to-top">Back to Top</a>
+        <a class="go-to-top visible-xs" href="#back-to-top">Back to Top</a>
       </div>
 
     </div><!-- end of row -->

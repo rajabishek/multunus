@@ -82,6 +82,11 @@ $(document).ready(function() {
     $('html, body').animate({scrollTop: $("#open-positions, #career-details").offset().top - $("nav").height()}, 2000);
   });
 
+  $('[href=#back-to-top]').click(function(e) {
+    $('html, body').animate({scrollTop: 0}, 500);
+    return false;
+  });
+
   // 'recent work' video button
   $('.client-video, #founder-video').click(function (e) {
     if (window.HOMEPAGE.isMobileDevice()) {
