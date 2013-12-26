@@ -101,15 +101,39 @@
 
     <?php
     if ($childrens = get_children('post_parent=40&post_type=page')):
+
+        // Logic to center align open positions
+        $num_childrens = count($childrens);
+
+        switch($num_childrens) {
+          case 1:
+            $offset_num = 4;
+            break;
+          case 2:
+              $offset_num = 3;
+              break;
+          case 3:
+              $offset_num = 1;
+              break;
+        }
+
+      $i = 0;
       foreach ($childrens as $children):
         $post = get_post($children->ID);
         $title = $post->post_title;
         $excerpt = $post->post_excerpt;
         $permalink = post_permalink($children->ID);
+
+        if ($i == 0) {
+          echo '<div class="career-position col-md-3 col-md-offset-' . $offset_num . '">';
+        }
+        else {
+          echo '<div class="career-position col-md-3">';
+        }
+        $i++;
     ?>
 
-      <div class="career-position col-md-3">
-      <a href="<?php echo $permalink ?>">
+        <a href="<?php echo $permalink ?>">
         <span><?php echo $title ?></span>
         <p><?php echo $excerpt ?></p>
         </a>
