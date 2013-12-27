@@ -57,7 +57,7 @@
             </div>
 
             <div class="post-meta">
-              <span id="post-date"><?php the_date('d M, Y'); ?></span>
+              <span id="post-date"><?php the_time('d M, Y'); ?></span>
               <span id="post-category">
                 <?php
                   $categories = get_the_category();
