@@ -5,38 +5,10 @@
 
     <div class="row blog-top">
       <h1>Blog</h1>
-
-      <div class="blog-categories dropdown-container">
-        <div class="dropdown-label">Categories: </div>
-        <div class="btn-group dropdown">
-          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-            <?php single_cat_title(); ?>
-          </button>
-          <ul class="dropdown-menu" role="menu">
-            <?php $categories = get_categories();
-              foreach ($categories as $category) {
-                $category_id = get_cat_ID( $category->name );
-                $category_link = get_category_link( $category_id );
-                if ( strcmp(single_cat_title('', false), $category->name) ) {
-                  echo '<li><a href=' . $category_link . '>' . $category->name . '</a></li>';
-                } else {
-                  echo '<li class="active"><a href=' . $category_link . '>' . $category->name . '</a></li>';
-                }
-              }
-            ?>
-          </ul>
-        </div>
-      </div><!-- end of  blog-categories -->
-
     </div><!-- end of blog-top -->
-
-
-    <h2><?php single_cat_title(); ?></h2>
 
     <div class="row blog-row">
 
-      <?php $cat = get_query_var('cat'); $cat_name = get_category($cat); ?>
-      <?php query_posts('posts_per_page=6&category_name=' . $cat_name->slug . '&paged=' . $paged); ?>
       <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
         <div class="col-md-4">

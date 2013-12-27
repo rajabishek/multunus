@@ -3,7 +3,6 @@
 
   h2 {
     color: $theme-color-pink;
-    margin-bottom: 32px;
     line-height: 1;
   }
 }
@@ -31,6 +30,10 @@
       float: none;
     }
   }
+}
+
+.blog-row {
+  margin-top: 30px;
 }
 
 .one-post {
