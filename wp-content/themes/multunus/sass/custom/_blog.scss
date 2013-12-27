@@ -43,6 +43,10 @@
 
   margin-bottom: 40px;
 
+  -webkit-box-shadow: 0 2px 1px rgba(1, 2, 2, 0.15);
+  -moz-box-shadow: 0 2px 1px rgba(1, 2, 2, 0.15);
+  box-shadow: 0 2px 1px rgba(1, 2, 2, 0.15);
+
   .post-img {
     max-height: 240px;
     overflow: hidden;

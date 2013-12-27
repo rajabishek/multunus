@@ -153,7 +153,11 @@ form {
 
           &.active {
             > a {
-                background: $theme-color-pink;
+              background: $theme-color-pink;
+
+              &:hover {
+                color: #fff;
+              }
             }
           }
           &:last-child {
@@ -162,6 +166,10 @@ form {
 
           > a {
             line-height: 2.1;
+
+            &:hover {
+              color: $theme-color-pink;
+            }
           }
         }
       }
