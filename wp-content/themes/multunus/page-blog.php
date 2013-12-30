@@ -34,7 +34,7 @@
 
     <h2>Recent Articles</h2>
 
-    <div class="row">
+    <div class="row blog-row">
       <?php query_posts('posts_per_page=6&paged=' . $paged); ?>
       <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -57,7 +57,7 @@
             </div>
 
             <div class="post-meta">
-              <span id="post-date"><?php the_date('d M, Y'); ?></span>
+              <span id="post-date"><?php the_time('d M, Y'); ?></span>
               <span id="post-category">
                 <?php
                   $categories = get_the_category();

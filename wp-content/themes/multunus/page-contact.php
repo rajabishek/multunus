@@ -40,8 +40,12 @@
 </section><!-- end of get-in-touch -->
 
 <section class="multunus-gmap">
+  <div id="map">
+  </div>
+
   <div class="form-container">
     <h2>Drop A line</h2>
+    <?php echo $response; ?>
     <form role="form">
       <div class="form-group">
         <p>Name<label>*</label></p>
@@ -61,9 +65,6 @@
       <input value="Submit" class="btn-red" type="submit">
     </form>
   </div><!-- end of form-container -->
-
-  <div id="map">
-  </div>
 </section>
 
 <section class="latest-tweet-section">
@@ -93,7 +94,7 @@ function initialize() {
   };
 
   var map = new google.maps.Map(document.getElementById('map'), myOptions);
-  map.panBy(-400,-100);
+  map.panBy(-300,-100);
 
   var contentString = '<div id="map-content">'+
     '<h3>We are here</h3>'+

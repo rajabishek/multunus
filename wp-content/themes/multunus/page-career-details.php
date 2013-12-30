@@ -68,7 +68,6 @@
         <div class="hidden-xs">
           <h4>Current Openings</h4>
           <ul class="current-openings">
-          <li>Programmer</li>
 
           <?php
           if ($childrens = get_children('post_parent=' . $mypageid . '&post_type=page')):
