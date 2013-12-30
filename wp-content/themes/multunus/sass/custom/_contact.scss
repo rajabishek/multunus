@@ -51,7 +51,7 @@
     border-top-right-radius: 6px;
     border-top-left-radius: 6px;
     background: -webkit-linear-gradient(90deg, rgba(0,0,0,0.19), white 10%) no-repeat;
-    background: linear-gradient(0deg, rgba(0,0,0,0.19), white 10%) no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20),rgba(0, 0, 0, 0) 10%) no-repeat,linear-gradient(0deg, #fff, #fff 100%) no-repeat;
   }
 
   @media (max-width: $screen-xs) {
