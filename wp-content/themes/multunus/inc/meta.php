@@ -1,4 +1,10 @@
-<div class="authors">By <?php coauthors_posts_links(); ?> </div>
+<div class="authors">By
+    <?php
+    if(function_exists(coauthors_posts_links)) {
+        coauthors_posts_links();
+    }
+    ?>
+</div>
 <ul class="meta">
     <li>
         <?php

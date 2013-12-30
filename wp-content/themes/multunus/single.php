@@ -48,8 +48,8 @@
 
 					</div>
 				</div>
-
-				<? //php comments_template(); ?>
+				<hr>
+				<?php comments_template(); ?>
 
 				<?php edit_post_link('Edit this entry','','.'); ?>
 

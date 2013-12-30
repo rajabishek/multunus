@@ -97,6 +97,8 @@
         }
 
         .content {
+            margin-bottom: 28px;
+
             .social-share {
                 margin-top: 30px;
 
@@ -104,6 +106,10 @@
                     display: inline;
                 }
             }
+        }
+
+        #disqus_thread {
+            margin-top: 40px;
         }
     }
 
