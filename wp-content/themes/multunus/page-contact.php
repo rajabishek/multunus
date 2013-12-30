@@ -6,7 +6,7 @@
 
 <?php get_header(); ?>
 
-<div class="video-section-container career-page">
+<div class="video-section-container contact-page">
   <div class="overlay">
     <div class="overlay-content">
       <h1 id="quote">We'd love to hear from you.</h1>
