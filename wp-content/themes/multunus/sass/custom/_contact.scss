@@ -15,22 +15,46 @@
 
 .multunus-gmap {
   position: relative;
+  background: linear-gradient(0deg, lightgrey, rgba(255,255,255,0) 10%) no-repeat;
+
+  #map {
+    height: 600px;
+    z-index: -2;
+  }
+
+  #map-content {
+    text-align: center;
+
+    h3 {
+      color: $theme-color-pink;
+      margin-top: 0;
+    }
+  }
 }
 
 .form-container {
   padding: 30px;
   background-color: #fff;
-  z-index: 777;
   position: absolute;
   width: 380px;
   bottom: 0;
   left: 20%;
+
+  @media (min-width: $screen-xs) {
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    background: linear-gradient(0deg, #d3d3d3, white 10%) no-repeat;
+  }
 
   @media (max-width: $screen-xs) {
     position: static;
     background-color: #f2f2f2;
     border-top: 1px solid #cfcccb;
     width: 100%;
+  }
+
+  .notification {
+    margin-bottom: 10px;
   }
 
   h2 {
@@ -46,11 +70,16 @@
     }
 
     label {
-      color: $theme-color-pink;
-      margin-left: 5px;
+      font-weight: 600;
+
+      span {
+        color: $theme-color-pink;
+        margin-left: 5px;
+      }
     }
 
     textarea {
+      padding: 6px 12px;
       width: 100%;
       outline: none;
       resize: none;
@@ -59,23 +88,23 @@
     }
 
     input[type="submit"] {
+      background: $theme-color-pink url('/img/arrow-right.png') no-repeat 85%;
+      color: white;
+      text-align: left;
+      padding-left: 20px;
+      font-size: 20px;
+      font-weight: 300;
       width: 40%;
       height: 55px;
-      padding: 0;
+
+      @media (max-width: $screen-xs) {
+        width: 35%;
+      }
+
+      &:hover {
+        background-color: $theme-color-dark-pink;
+      }
     }
-  }
-}
-
-#map {
-  height: 600px;
-}
-
-#map-content {
-  text-align: center;
-
-  h3 {
-    color: $theme-color-pink;
-    margin-top: 0;
   }
 }
 

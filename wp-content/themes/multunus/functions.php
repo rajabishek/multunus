@@ -41,6 +41,15 @@ if (!is_admin()) {
     wp_enqueue_script('bootstrap-js');
   }
 
+  add_action('wp_enqueue_scripts', 'jq_validate_script', 13);
+  function jq_validate_script() {
+    if (is_page('contact')) {
+      // Load jquery-validate on contact us page
+      wp_register_script('jquery-validate', '//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js', array('jquery'), null, true);
+      wp_enqueue_script('jquery-validate');
+    }
+  }
+
   // Add proxima-nova font from typekit
   add_filter( 'wp_head', 'add_typekit_font' );
   function add_typekit_font() {
