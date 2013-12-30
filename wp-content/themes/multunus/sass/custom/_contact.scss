@@ -15,6 +15,7 @@
 
 .multunus-gmap {
   position: relative;
+  background: -webkit-linear-gradient(90deg, lightgrey, rgba(255,255,255,0) 10%) no-repeat;
   background: linear-gradient(0deg, lightgrey, rgba(255,255,255,0) 10%) no-repeat;
 
   #map {
@@ -43,6 +44,7 @@
   @media (min-width: $screen-xs) {
     border-top-right-radius: 6px;
     border-top-left-radius: 6px;
+    background: -webkit-linear-gradient(90deg, #d3d3d3, white 10%) no-repeat;
     background: linear-gradient(0deg, #d3d3d3, white 10%) no-repeat;
   }
 
@@ -96,10 +98,6 @@
       font-weight: 300;
       width: 40%;
       height: 55px;
-
-      @media (max-width: $screen-xs) {
-        width: 35%;
-      }
 
       &:hover {
         background-color: $theme-color-dark-pink;
