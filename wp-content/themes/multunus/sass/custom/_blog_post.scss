@@ -89,7 +89,6 @@
             margin-bottom: 25px;
 
             img {
-                // max-height: 390px;
                 width: 100%;
             }
         }
@@ -100,6 +99,14 @@
 
         .content {
             margin-bottom: 28px;
+
+            ul {
+              list-style: disc;
+              margin-left: 12px;
+            }
+            li {
+              margin-left: 10px;
+            }
 
             .social-share {
                 margin-top: 30px;
