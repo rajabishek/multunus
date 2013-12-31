@@ -1,3 +1,9 @@
+<?php
+  /*
+   Template Name: Home
+   */
+?>
+
 <?php get_header(); ?>
 
 <div class="video-section-container">
@@ -145,7 +151,7 @@
                 <h4>Narrable</h4>
                 <p class="client-testimonial">"I’m impressed with the team aspect of working with multunus." </p>
                 <div class="our-customer-btn">
-                  <div class="row">  
+                  <div class="row">
                     <a class="client-btn client-video" href="http://www.youtube.com/v/z1tzfsRI_Ds&amp;autoplay=1"><span id="reel-icon"></span><span class="underline">Watch Video</span></a>
                     <a class="client-btn" href="#"><span id="eye-icon"></span><span class="underline">View Project</span></a>
                   </div>

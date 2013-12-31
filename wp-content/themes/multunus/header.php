@@ -78,7 +78,7 @@
     </nav>
   </header>
 
-  <?php if(!is_home() && function_exists('bcn_display')) {
+  <?php if(!is_page_template("page-home.php") && function_exists('bcn_display')) {
     echo '<div class="breadcrumbs">';
     bcn_display(); }
     echo '</div>';
