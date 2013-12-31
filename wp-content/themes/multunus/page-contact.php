@@ -81,6 +81,9 @@
       </div>
     </form>
   </div><!-- end of form-container -->
+
+  <div id="map-inner-shadow">
+  </div>
 </section>
 
 <section class="latest-tweet-section">
@@ -146,7 +149,7 @@ function initialize() {
   map.panBy(-300,-100);
 
   var contentString = '<div id="map-content">'+
-    '<h3>We are here</h3>'+
+    '<a href="https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Multunus+Software+Pvt+Ltd,+9th+Cross+Road,+Phase+II,+J+P+Nagar,+Bangalore,+Karnataka,+India&aq=0&oq=multunus&sll=12.953997,77.63094&sspn=0.836455,1.229095&vpsrc=0&ie=UTF8&hq=multunus+software+pvt+ltd&hnear=9th+Cross+Rd,+Phase+II,+J+P+Nagar,+Bangalore,+Bangalore+Urban,+Karnataka,+India&ll=12.910541,77.588925&spn=0.006536,0.009602&t=m&z=17&iwloc=A&cid=14451696054480489098">We are here</a>'+
     '<p>No. 1316/A, 2nd floor,</p>'+
     '<p>9th Cross, JP Nagar 2nd Phase,</p>'+
     '<p>Bangalore</p>'+
