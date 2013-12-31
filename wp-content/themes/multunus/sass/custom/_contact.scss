@@ -1,3 +1,7 @@
+::-webkit-input-placeholder { color: $theme-color-pink; }
+:-moz-placeholder { color: $theme-color-pink; }
+:-ms-input-placeholder { color: $theme-color-pink; }
+
 .contact-page {
   #quote {
     margin-top: 25%;
@@ -21,21 +25,33 @@
 
 .multunus-gmap {
   position: relative;
-  background: -webkit-linear-gradient(90deg, rgba(0,0,0,0.19), rgba(0,0,0,0) 10%) no-repeat;
-  background: linear-gradient(0deg, rgba(0,0,0,0.19), rgba(0,0,0,0) 10%) no-repeat;
 
   #map {
     height: 600px;
-    z-index: -2;
   }
 
   #map-content {
     text-align: center;
 
-    h3 {
+    a {
       color: $theme-color-pink;
+      font-size: 24px;
+      display: block;
       margin-top: 0;
+      margin-bottom: 10px;
     }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  #map-inner-shadow {
+    box-shadow: inset 0 -15px 20px rgba(51,51,51,0.1);
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
   }
 }
 
@@ -50,8 +66,6 @@
   @media (min-width: $screen-xs) {
     border-top-right-radius: 6px;
     border-top-left-radius: 6px;
-    background: -webkit-linear-gradient(90deg, rgba(0,0,0,0.19), white 10%) no-repeat;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20),rgba(0, 0, 0, 0) 10%) no-repeat,linear-gradient(0deg, #fff, #fff 100%) no-repeat;
   }
 
   @media (max-width: $screen-xs) {
@@ -70,6 +84,14 @@
     margin-top: 0;
   }
 
+  .success {
+      background-color: #6ac158;
+      padding: 15px;
+      border-radius: 6px;
+      color: white;
+      font-weight: 600;
+  }
+
   form {
     height: 100%;
 
@@ -86,9 +108,14 @@
       }
     }
 
+    input.invalid, textarea.invalid {
+      border: 1px solid $theme-color-pink;
+    }
+
     textarea {
       padding: 6px 12px;
       color: #555;
+      font-weight: 300;
       width: 100%;
       outline: none;
       resize: none;
@@ -110,6 +137,7 @@
         background-color: $theme-color-dark-pink;
       }
     }
+
   }
 }
 
@@ -135,4 +163,3 @@
     }
   }
 }
-
