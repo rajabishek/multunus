@@ -1,3 +1,7 @@
+::-webkit-input-placeholder { color: $theme-color-pink; }
+:-moz-placeholder { color: $theme-color-pink; }
+:-ms-input-placeholder { color: $theme-color-pink; }
+
 .contact-page {
   #quote {
     margin-top: 25%;
@@ -70,6 +74,14 @@
     margin-top: 0;
   }
 
+  .success {
+      background-color: #6ac158;
+      padding: 15px;
+      border-radius: 6px;
+      color: white;
+      font-weight: 600;
+  }
+
   form {
     height: 100%;
 
@@ -86,9 +98,14 @@
       }
     }
 
+    input.invalid, textarea.invalid {
+      border: 1px solid $theme-color-pink;
+    }
+
     textarea {
       padding: 6px 12px;
       color: #555;
+      font-weight: 300;
       width: 100%;
       outline: none;
       resize: none;
@@ -110,6 +127,7 @@
         background-color: $theme-color-dark-pink;
       }
     }
+
   }
 }
 
@@ -135,4 +153,3 @@
     }
   }
 }
-

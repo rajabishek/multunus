@@ -50,7 +50,8 @@
     <h2>Drop A line</h2>
     <?php echo $response; ?>
     <div class="notification success" style="display:none;">
-      Thank You. We got your message.
+      <img src="/img/tick-arrow-white-icon.png" />
+      Thanks! We'll get in touch soon
     </div>
     <form action="https://docs.google.com/a/multunus.com/spreadsheet/formResponse?formkey=dDRNZFlZYUxqbGNpSEpzVGhiU2JZR1E6MQ&amp;ifq" method="POST" target="hidden_iframe" id="ss-form">
       <div class="form-group ss-form-entry">
@@ -92,34 +93,36 @@
 </section>
 
 <script type="text/javascript">
-$(function() {
-  var form = $('#ss-form');
-  form.validate({
-    errorClass: 'invalid',
-    rules: {
-      'entry.0.single': "required",
-      'entry.1.single': {
-        required: true,
-        email: true
-      }
-    },
-    messages: {
-      'entry.0.single': "Please specify your name",
-      'entry.1.single': {
-        required: "Please enter an email address",
-        email: "Your email address must be in the format of name@domain.com"
-      }
-    }
-  });
+  $(function() {
+    var form = $('#ss-form');
+    form.validate({
+      errorClass: 'invalid',
+      errorPlacement: function(error, element) {
+        element.attr("placeholder", error.text());
+      },
+      rules: {
+        'entry.0.single': { required: true, maxlength: 25 },
+        'entry.1.single': { required: true, email: true },
+        'entry.4.single': { required: true, maxlength: 1000 }
+      },
+      messages: {
+        'entry.0.single': { required: "Name is required" },
+        'entry.1.single': {
+          required: "Email id is required",
+          email: "Your email address must be in the format of name@domain.com"
+        },
+        'entry.4.single': { required: "Message is required" }
+      },
+    });
 
-  $("#hidden_iframe").load(function (){
-    $("#ss-form input[type='text'], #ss-form textarea").val('');
-    $('.notification').slideDown('slow');
-    setTimeout(function(){
-      $('.notification').slideUp('slow');
-    },2000);
+    $("#hidden_iframe").load(function (){
+      $("#ss-form input[type='text'], #ss-form textarea").val('');
+      $('.notification').slideDown('slow');
+      setTimeout(function(){
+        $('.notification').slideUp('slow');
+      },2000);
+    });
   });
-});
 </script>
 
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
