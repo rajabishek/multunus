@@ -97,6 +97,37 @@ if (function_exists('register_sidebar')) {
   ));
  }
 
+ // Register `portfolio` post type
+ function portfolio_post_type() {
+   // Labels
+   $labels = array(
+     'name' => _x("Portfolio", "post type general name"),
+     'singular_name' => _x("Portfolio", "post type singular name"),
+     'menu_name' => 'Portfolio',
+     'add_new' => _x("Add New", "team item"),
+     'add_new_item' => __("Add New Project"),
+     'edit_item' => __("Edit Project"),
+     'new_item' => __("New Project"),
+     'view_item' => __("View Project"),
+     'search_items' => __("Search Projects"),
+     'not_found' =>  __("No Projects Found"),
+     'not_found_in_trash' => __("No Projects Found in Trash"),
+     'parent_item_colon' => ''
+   );
+
+   // Register post type
+   register_post_type('portfolio' , array(
+     'labels' => $labels,
+     'public' => true,
+     'has_archive' => false,
+     'rewrite' => false,
+     'supports' => array('title', 'editor', 'thumbnail')
+   ) );
+ }
+ add_action( 'init', 'portfolio_post_type', 0 );
+
+
+
 // Register `team` post type
 function team_post_type() {
   // Labels

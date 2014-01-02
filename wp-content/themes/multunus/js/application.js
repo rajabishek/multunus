@@ -112,7 +112,7 @@ $(document).ready(function() {
     $('#myModal iframe').removeAttr('src');
   });
 
-  $('.team-sort ul li a').click(function() {
+  $('.team-filter ul li a').click(function() {
     $('.team-images .profile').addClass('hidden');
     $('.team-images figure').removeClass('active');
     var selectedElement = $(this);
@@ -124,11 +124,11 @@ $(document).ready(function() {
     $(".team-images figure[data-category!='" + category + "']").addClass('hidden');
   });
 
-  $(".team-sort ul li a[data-category='all']").click(function() {
+  $(".team-filter ul li a[data-category='all']").click(function() {
     $('.team-images figure').removeClass('hidden');
   });
 
-  $('.team-sort .category-list-mobile ul li a').click(function() {
+  $('.team-filter .category-list-mobile ul li a').click(function() {
     var category = this.text;
     $(this).parents('ul').siblings('button').html(category);
   });
@@ -184,5 +184,24 @@ $(document).ready(function() {
       }
     });
 
+  });
+
+  $('.portfolio-filter ul li a').click(function() {
+    var selectedElement = $(this);
+    selectedElement.parents('ul').find('li').removeClass('active');
+    selectedElement.parents('li').addClass('active');
+
+    var category = selectedElement.data().category;
+    $('.portfolio-list figure').removeClass('hidden');
+    $(".portfolio-list figure[data-category!='" + category + "']").addClass('hidden');
+  });
+
+  $(".portfolio-filter ul li a[data-category='all']").click(function() {
+    $('.portfolio-list figure').removeClass('hidden');
+  });
+
+  $('.portfolio-filter .category-list-mobile ul li a').click(function() {
+    var category = this.text;
+    $(this).parents('ul').siblings('button').html(category);
   });
 });
