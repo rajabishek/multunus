@@ -8,6 +8,7 @@
 
     a {
       display: block;
+      border: 1px solid #ddd;
 
       img {
         height: 230px;
@@ -17,9 +18,10 @@
   }
 
   figcaption {
-    background: #f1f1f1;
+    background: url("/img/arrow-right-red.png") no-repeat right, #f1f1f1;
     font-size: 1.35em;
     padding: 10px;
+    border-right: 16px solid transparent;
 
     p {
       margin: 0;

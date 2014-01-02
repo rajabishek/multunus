@@ -5,7 +5,7 @@
 ?>
 
 <?php get_header(); the_post(); ?>
-<?php 
+<?php
   $mypage = get_page_by_path('careers');
   $mypageid = ( $mypage ? $mypage->ID : '0' );
 ?>
@@ -28,7 +28,7 @@
   <div class="dropdown-label">Current Openings: </div>
   <div class="btn-group dropdown">
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-      Programmer 
+      <?php the_title(); ?>
     </button>
     <ul class="dropdown-menu" role="menu">
       <?php
@@ -89,14 +89,14 @@
         <h4>FAQ</h4>
         <ol class="career-details-faq">
           <li>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</li>
-          <p>onsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+          <p>onsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
             aliqua. Ut enim ad minim veniam,
           <li>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</li>
-          <p>onsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+          <p>onsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
             aliqua. Ut enim ad minim veniam,
         </ol>
 
-        <?php $permalink = get_permalink( get_page_by_path( 'faq' ) ); ?> 
+        <?php $permalink = get_permalink( get_page_by_path( 'faq' ) ); ?>
         <a id="read-faq-more" href="<?php echo $permalink ?>">Read All FAQ</a>
       </div><!-- end of career-details-section -->
     </div><!-- end of row -->

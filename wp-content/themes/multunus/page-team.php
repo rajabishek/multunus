@@ -35,14 +35,14 @@ if ( $team_posts ):
     <li><a data-category="people-culture">People & Culture</a></li>
   </ul>
 
-  <div class="visible-xs dropdown-container">
+  <div class="visible-xs category-list-mobile dropdown-container">
     <div class="dropdown-label">Show: </div>
     <div class="btn-group dropdown">
       <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
         All
       </button>
       <ul class="dropdown-menu" role="menu">
-        <li><a data-category="all">All</a></li>
+        <li class="active"><a data-category="all">All</a></li>
         <li><a data-category="management">Pointy Haired</a></li>
         <li><a data-category="technology">Technology</a></li>
         <li><a data-category="product">Product</a></li>

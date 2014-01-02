@@ -36,14 +36,14 @@ if ( $portfolio_item ):
     <li><a data-category="mobile">Mobile Apps</a></li>
   </ul>
 
-  <div class="visible-xs dropdown-container">
+  <div class="visible-xs category-list-mobile dropdown-container">
     <div class="dropdown-label">Show: </div>
     <div class="btn-group dropdown">
       <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
         All
       </button>
       <ul class="dropdown-menu" role="menu">
-        <li><a data-category="all">All</a></li>
+        <li class="active"><a data-category="all">All</a></li>
         <li><a data-category="web">Web Apps</a></li>
         <li><a data-category="mobile">Mobile Apps</a></li>
       </ul>
@@ -56,10 +56,11 @@ if ( $portfolio_item ):
     <?php
     foreach ( $portfolio_item as $post ):
       setup_postdata($post);
+      $permalink = post_permalink($post->ID);
     ?>
 
     <figure class="col-sm-4 col-xs-12" data-category="<?php the_field('category'); ?>">
-      <a>
+      <a href="<?php echo $permalink ?>">
         <img src="<?php the_field('thumbnail'); ?>" alt="<?php the_title(); ?>">
         <figcaption>
           <p class="name"><?php the_title(); ?></p>

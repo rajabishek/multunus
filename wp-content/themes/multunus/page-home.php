@@ -93,7 +93,7 @@
           <p>Narrable uses storytelling through images and narrations to engage students and to draw out important higher order thinking skills.</p>
           <a class="view-work" href="#">View Work</a><span></span>
         </div>
-        <a class="red-btn" href="#">See All</a>
+        <a class="red-btn" href="/portfolio">See All</a>
       </div>
     </div>
   </div>
