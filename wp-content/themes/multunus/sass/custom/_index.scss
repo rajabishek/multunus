@@ -142,6 +142,8 @@
 .our-services {
   background-color: $grey-bg;
   padding: 2.5rem 0 2.5rem 0;
+  border-top: 1px solid #E4E4E4;
+  border-bottom: 1px solid #E4E4E4;
 
   h1 { margin-bottom: 2.5rem; }
 
@@ -202,11 +204,13 @@
 
     h2 {
       color: $theme-color-pink;
+      border-bottom: 1px dotted #d4d4d4;
     }
 
     p {
       padding-top: 5px;
       padding-bottom: 15px;
+      border-bottom: 1px dotted #d4d4d4;
     }
 
     a {
@@ -255,10 +259,6 @@
         vertical-align: middle;
       }
     }
-
-    p {
-      border-bottom: 1px solid #d4d4d4;
-    }
   }
 }
 
@@ -270,7 +270,7 @@
       padding-top: 20px;
 
         a.red-btn {
-          margin: 38px auto 63px;;
+          margin: 20px auto 63px;;
         }
     }
 

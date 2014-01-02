@@ -28,7 +28,7 @@
         <h5>Enquiry</h5>
         <a href="mailto:info@multunus.com">info@multunus.com</a>
       </div>
-      <div class="contact-enquiry align-center col-xs-5 col-xs-offset-1 col-md-3">
+      <div class="contact-enquiry align-center col-md-3">
         <img src="/img/phone-contactus.png" />
         <h5>India</h5>
         <a href="tel:+918065702964">+918065702964</a>
@@ -49,11 +49,7 @@
 
     <h2>Drop A line</h2>
     <?php echo $response; ?>
-    <div class="notification success" style="display:none;">
-      <img src="/img/tick-arrow-white-icon.png" />
-      Thanks! We'll get in touch soon
-    </div>
-    <form action="https://docs.google.com/a/multunus.com/spreadsheet/formResponse?formkey=dDRNZFlZYUxqbGNpSEpzVGhiU2JZR1E6MQ&amp;ifq" method="POST" target="hidden_iframe" id="ss-form">
+    <form action="http://docs.google.com/a/multunus.com/spreadsheet/formResponse?formkey=dDRNZFlZYUxqbGNpSEpzVGhiU2JZR1E6MQ&amp;ifq" method="POST" target="hidden_iframe" id="ss-form">
       <div class="form-group ss-form-entry">
         <label class="ss-q-title" for="entry_0">Name <span>*</span></label>
         <label class="ss-q-help" for="entry_0"></label>
@@ -78,6 +74,11 @@
       <div class="ss-form-entry">
         <input type="submit" name="submit" value="Submit">
         <span></span>
+      </div>
+
+      <div class="notification success" style="display:none;">
+        <img src="/img/tick-arrow-white-icon.png" />
+        Thanks! We'll get in touch soon
       </div>
     </form>
   </div><!-- end of form-container -->
@@ -110,20 +111,15 @@
       },
       messages: {
         'entry.0.single': { required: "Name is required" },
-        'entry.1.single': {
-          required: "Email id is required",
-          email: "Your email address must be in the format of name@domain.com"
-        },
+        'entry.1.single': { required: "Email id is required" },
         'entry.4.single': { required: "Message is required" }
       },
     });
 
     $("#hidden_iframe").load(function (){
       $("#ss-form input[type='text'], #ss-form textarea").val('');
-      $('.notification').slideDown('slow');
-      setTimeout(function(){
-        $('.notification').slideUp('slow');
-      },2000);
+      $('input[type="submit"]').hide();
+      $('.notification').show();
     });
   });
 </script>
