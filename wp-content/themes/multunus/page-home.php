@@ -120,8 +120,8 @@
                 <p class="client-testimonial">"Working with Multunus has been the best experience out of all the Outsourced Companies I’ve worked with." </p>
                 <div class="our-customer-btn">
                   <div class="row">
-                    <a class="client-btn client-video" href="http://www.youtube.com/v/GuO8jRW9g5U&amp;autoplay=1"><span id="reel-icon"></span><span class="underline">Watch Video</span></a>
-                    <a class="client-btn" href="#"><span id="eye-icon"></span><span class="underline">View Project</span></a>
+                    <a class="button-with-icon client-video" href="http://www.youtube.com/v/GuO8jRW9g5U&amp;autoplay=1"><span id="reel-icon"></span><span class="underline">Watch Video</span></a>
+                    <a class="button-with-icon" href="#"><span id="eye-icon"></span><span class="underline">View Project</span></a>
                   </div>
                 </div>
 
@@ -136,8 +136,8 @@
                 <p class="client-testimonial">"We are confidently speaking of going to market. You brought us here." </p>
                 <div class="our-customer-btn">
                   <div class="row">
-                      <a class="client-btn client-video" href="http://www.youtube.com/v/NAMGHISmWH8&amp;autoplay=1"><span id="reel-icon"></span><span class="underline">Watch Video</span></a>
-                      <a class="client-btn" href="#"><span id="eye-icon"></span><span class="underline">View Project</span></a>
+                      <a class="button-with-icon client-video" href="http://www.youtube.com/v/NAMGHISmWH8&amp;autoplay=1"><span id="reel-icon"></span><span class="underline">Watch Video</span></a>
+                      <a class="button-with-icon" href="#"><span id="eye-icon"></span><span class="underline">View Project</span></a>
                   </div>
                 </div>
 
@@ -152,8 +152,8 @@
                 <p class="client-testimonial">"I’m impressed with the team aspect of working with multunus." </p>
                 <div class="our-customer-btn">
                   <div class="row">
-                    <a class="client-btn client-video" href="http://www.youtube.com/v/z1tzfsRI_Ds&amp;autoplay=1"><span id="reel-icon"></span><span class="underline">Watch Video</span></a>
-                    <a class="client-btn" href="#"><span id="eye-icon"></span><span class="underline">View Project</span></a>
+                    <a class="button-with-icon client-video" href="http://www.youtube.com/v/z1tzfsRI_Ds&amp;autoplay=1"><span id="reel-icon"></span><span class="underline">Watch Video</span></a>
+                    <a class="button-with-icon" href="#"><span id="eye-icon"></span><span class="underline">View Project</span></a>
                   </div>
                 </div>
 

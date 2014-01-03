@@ -6,12 +6,10 @@ get_header();
 
 the_post();
 
-// Get 'team' posts
+// Get 'portfolio' posts
 $portfolio_item = get_posts( array(
     'post_type' => 'portfolio',
-    'posts_per_page' => -1, // Unlimited posts
-    'orderby' => 'title', // Order alphabetically by name
-    'order' => 'ASC'
+    'posts_per_page' => -1 // Unlimited posts
 ) );
 
 if ( $portfolio_item ):

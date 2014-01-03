@@ -380,38 +380,8 @@
   .our-customer-btn {
       margin-top: 35px;
 
-    a.client-btn {
-      color: white;
-      display: inline-block;
-      background-color: #a80d1e;
+    a.button-with-icon {
       margin-top: 5px;
-      padding: 16px 10px 16px 14px;
-      -webkit-border-radius: 6px;
-      -moz-border-radius: 6px;
-      border-radius: 6px;
-
-      span {
-        display: inline-block;
-        margin-right: 10px;
-        vertical-align: middle;
-        border-bottom: 1px solid transparent;
-      }
-
-      span.underline:hover {
-        border-bottom: 1px solid white;
-      }
-    }
-
-    #reel-icon {
-      width: 22px;
-      height: 22px;
-      background: url('/img/reel-icon-red.png') no-repeat;
-    }
-
-    #eye-icon {
-      width: 25px;
-      height: 14px;
-      background: url('/img/eye-icon-red.png') no-repeat;
     }
   }
 }

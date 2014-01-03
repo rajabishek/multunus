@@ -112,72 +112,109 @@ form {
 }
 
 .dropdown-container {
-    .dropdown-label {
-        color: #999;
-        float: left;
-        min-height: 36px;
-        padding: 2px 5px 2px 0;
-        margin-right: 8px;
-        line-height: 2;
+  .dropdown-label {
+    color: #999;
+    float: left;
+    min-height: 36px;
+    padding: 2px 5px 2px 0;
+    margin-right: 8px;
+    line-height: 2;
+  }
+  .dropdown {
+    button.dropdown-toggle {
+      background: -moz-linear-gradient(top, rgba(255,255,255,0.05) 0%, rgba(0,0,0,0.05) 100%);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,0.05)), color-stop(100%, rgba(0,0,0,0.05)));
+      background: -webkit-linear-gradient(top, rgba(255,255,255,0.05) 0%, rgba(0,0,0,0.05) 100%);
+      background: -o-linear-gradient(top, rgba(255,255,255,0.05) 0%, rgba(0,0,0,0.05) 100%);
+      background: -ms-linear-gradient(top, rgba(255,255,255,0.05) 0%, rgba(0,0,0,0.05) 100%);
+      background: linear-gradient(to bottom, rgba(255,255,255,0.05) 0%,rgba(0,0,0,0.05) 100%);
+
+      background: url("/img/dropdown-arrow.png") 185px center no-repeat !important;
+
+      -moz-box-shadow: 0px 2px 1px -1px #767676;
+      -webkit-box-shadow: 0px 2px 1px -1px #767676;
+      box-shadow: 0px 2px 1px -1px #767676;
+
+      min-height: 35px;
+      min-width: 212px;
+      text-align: left;
+      position: relative;
+
     }
-    .dropdown {
-      button.dropdown-toggle {
-        background: -moz-linear-gradient(top, rgba(255,255,255,0.05) 0%, rgba(0,0,0,0.05) 100%);
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,0.05)), color-stop(100%, rgba(0,0,0,0.05)));
-        background: -webkit-linear-gradient(top, rgba(255,255,255,0.05) 0%, rgba(0,0,0,0.05) 100%);
-        background: -o-linear-gradient(top, rgba(255,255,255,0.05) 0%, rgba(0,0,0,0.05) 100%);
-        background: -ms-linear-gradient(top, rgba(255,255,255,0.05) 0%, rgba(0,0,0,0.05) 100%);
-        background: linear-gradient(to bottom, rgba(255,255,255,0.05) 0%,rgba(0,0,0,0.05) 100%);
 
-        background: url("/img/dropdown-arrow.png") 185px center no-repeat !important;
+    ul.dropdown-menu {
+      margin: 0;
+      padding: 0;
+      min-width: 212px;
 
-        -moz-box-shadow: 0px 2px 1px -1px #767676;
-        -webkit-box-shadow: 0px 2px 1px -1px #767676;
-        box-shadow: 0px 2px 1px -1px #767676;
-
+      > li {
+        border-bottom: 1px dotted #d1d1d1;
         min-height: 35px;
-        min-width: 212px;
-        text-align: left;
-        position: relative;
 
-      }
-
-      ul.dropdown-menu {
-        margin: 0;
-        padding: 0;
-        min-width: 212px;
-
-        > li {
-          border-bottom: 1px dotted #d1d1d1;
-          min-height: 35px;
-
-          &.active {
-            > a {
-              background: $theme-color-pink;
-
-              &:hover {
-                color: #fff;
-              }
-            }
-          }
-          &:last-child {
-            border-bottom: none;
-          }
-
+        &.active {
           > a {
-            line-height: 2.1;
+            background: $theme-color-pink;
 
             &:hover {
-              color: $theme-color-pink;
+              color: #fff;
             }
           }
         }
-      }
+        &:last-child {
+          border-bottom: none;
+        }
 
-      &.open {
-        button.dropdown-toggle {
-          background-color: initial;
+        > a {
+          line-height: 2.1;
+
+          &:hover {
+            color: $theme-color-pink;
+          }
         }
       }
     }
+
+    &.open {
+      button.dropdown-toggle {
+        background-color: initial;
+      }
+    }
+  }
+}
+
+.button-with-icon {
+  color: white;
+  display: inline-block;
+  background-color: #a80d1e;
+  padding: 16px 10px 16px 14px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+
+  &:hover {
+    color: white;
+  }
+
+  span {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+    border-bottom: 1px solid transparent;
+  }
+
+  span.underline:hover {
+    border-bottom: 1px solid white;
+  }
+
+  #reel-icon {
+    width: 22px;
+    height: 22px;
+    background: url('/img/reel-icon-red.png') no-repeat;
+  }
+
+  #eye-icon {
+    width: 25px;
+    height: 14px;
+    background: url('/img/eye-icon-red.png') no-repeat;
+  }
 }
