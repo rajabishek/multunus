@@ -199,7 +199,6 @@ function numeric_pagination_nav() {
     return;
 
   global $wp_query;
-  $max_pages = 5;
 
   // Stop execution if there's only 1 page
   if( $wp_query->max_num_pages <= 1 )
@@ -218,7 +217,6 @@ function numeric_pagination_nav() {
     printf( '<li>%s</li>' . "\n", get_previous_posts_link('<<') );
 
   // Link to previous two pages starting from page 3
-  //
   if ( $paged >= 3 ) {
     $link = $paged - 2;
   }
@@ -228,7 +226,7 @@ function numeric_pagination_nav() {
 
   // Link to current page, previous two pages, plus next $max_pages in forward direction
   for ( $link; $link <= $max; $link++ ) {
-    if ( $link >= $paged + $max_pages ) break;
+    if ( $link > $paged + 2 ) break; // show only next two pages
 
     $class = $paged == $link ? ' class="active"' : '';
     printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( $link ) ), $link );
