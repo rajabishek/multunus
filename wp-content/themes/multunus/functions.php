@@ -126,8 +126,6 @@ if (function_exists('register_sidebar')) {
  }
  add_action( 'init', 'portfolio_post_type', 0 );
 
-
-
 // Register `team` post type
 function team_post_type() {
   // Labels
@@ -157,6 +155,35 @@ function team_post_type() {
 }
 add_action( 'init', 'team_post_type', 0 );
 
+// Register `services` post type
+function services_post_type() {
+  // Labels
+  $labels = array(
+    'name' => _x("Services", "post type general name"),
+    'singular_name' => _x("Service", "post type singular name"),
+    'menu_name' => 'Services',
+    'add_new' => _x("Add New", "service item"),
+    'add_new_item' => __("Add New Service"),
+    'edit_item' => __("Edit Service"),
+    'new_item' => __("New Service"),
+    'view_item' => __("View Service"),
+    'search_items' => __("Search Services"),
+    'not_found' =>  __("No Services Found"),
+    'not_found_in_trash' => __("No Services Found in Trash"),
+    'parent_item_colon' => ''
+  );
+
+  // Register post type
+  register_post_type('services' , array(
+    'labels' => $labels,
+    'public' => true,
+    'has_archive' => false,
+    'rewrite' => false,
+    'supports' => array('title', 'editor', 'thumbnail')
+  ) );
+}
+add_action( 'init', 'services_post_type', 0 );
+
 // Add Featured Image
 add_theme_support('post-thumbnails');
 
@@ -181,15 +208,6 @@ function numeric_pagination_nav() {
   $paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
   $max   = intval( $wp_query->max_num_pages );
 
-  // Add current page to the array
-  if ( $paged >= 1 )
-    $links[] = $paged;
-
-  if ( ( $paged + 2 ) <= $max ) {
-    $links[] = $paged + 2;
-    $links[] = $paged + 1;
-  }
-
   echo '<div class="pagination"><ul class="list-inline pull-right">' . "\n";
 
   // Always show link to the first page
@@ -199,12 +217,21 @@ function numeric_pagination_nav() {
   if ( get_previous_posts_link() )
     printf( '<li>%s</li>' . "\n", get_previous_posts_link('<<') );
 
-  // Link to current page, plus next $max_pages in forward direction
-  for ( $i = $paged; $i <= $max; $i++ ) {
-    if ( $i >= $paged + $max_pages ) break;
+  // Link to previous two pages starting from page 3
+  //
+  if ( $paged >= 3 ) {
+    $link = $paged - 2;
+  }
+  else {
+    $link = $paged;
+  }
 
-    $class = $paged == $i ? ' class="active"' : '';
-    printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( $i ) ), $i );
+  // Link to current page, previous two pages, plus next $max_pages in forward direction
+  for ( $link; $link <= $max; $link++ ) {
+    if ( $link >= $paged + $max_pages ) break;
+
+    $class = $paged == $link ? ' class="active"' : '';
+    printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( $link ) ), $link );
   }
 
   // Next Post Link
