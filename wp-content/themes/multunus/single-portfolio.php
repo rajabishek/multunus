@@ -9,7 +9,8 @@
       'post_type' => 'portfolio',
       'posts_per_page'   => 1,
       'order'            => 'ASC');
-    $next_post = array_values(get_posts($args))[0];
+    $next = get_posts($args);
+    $next_post = $next[0];
   }
 
   $previous_post = get_previous_post();
@@ -17,7 +18,8 @@
     $args = array(
       'post_type' => 'portfolio',
       'posts_per_page'   => 1);
-    $previous_post = array_values(get_posts($args))[0];
+    $previous = get_posts($args);
+    $previous_post = $previous[0];
   }
   ?>
 
