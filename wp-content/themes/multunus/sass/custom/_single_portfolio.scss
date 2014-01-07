@@ -4,6 +4,10 @@
     overflow: hidden;
     position: relative;
 
+    @media (max-width: $screen-sm) {
+      height: 458px;
+    }
+
     .overlay {
       background: url("/img/portfolio-parrern-one.png");
       position: absolute;
@@ -15,10 +19,108 @@
       width: 100%;
       position: absolute;
       top: 50px;
+      height: 100%;
     }
 
     .app-image {
+      position: absolute;
+      z-index: 4;
 
+      &.center {
+        position: relative;
+        margin: 0 auto;
+        display: block;
+        z-index: 5;
+      }
+
+    }
+
+    &.macbook {
+      .app-image {
+        width: 28%;
+        top: 175px;
+        min-width: 500px;
+
+        &.left {
+          left: 10%;
+          @media (max-width: $screen-sm) {
+            display: none;
+          }
+        }
+
+        &.center {
+          width: 35%;
+          top: 130px;
+          min-width: 630px;
+
+          @media (max-width: $screen-sm) {
+            width: initial;
+            min-width: initial;
+            top: 160px;
+          }
+        }
+
+        &.right {
+          right: 10%;
+          @media (max-width: $screen-sm) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    &.nexus-5, &.iphone {
+      .app-image {
+        top: 276px;
+        width: 14%;
+
+        @media (max-width: $screen-sm) {
+          width: 36%;;
+        }
+
+        &.left {
+          left: 24%;
+
+          @media (max-width: $screen-sm) {
+            left: 10%;;
+          }
+        }
+
+        &.center {
+          top: 130px;
+          width: 20%;
+
+          @media (max-width: $screen-sm) {
+            width: 45%;;
+            top: 160px;
+          }
+        }
+
+        &.right {
+          right: 24%;
+
+          @media (max-width: $screen-sm) {
+            right: 10%;;
+          }
+        }
+      }
+    }
+
+    &.iphone {
+      .app-image {
+
+        &.left {
+
+        }
+
+        &.center {
+
+        }
+
+        &.right {
+
+        }
+      }
     }
   }
 
