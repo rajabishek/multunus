@@ -218,3 +218,12 @@ form {
     background: url('/img/eye-icon-red.png') no-repeat;
   }
 }
+
+.right-arrow {
+  display: inline-block;
+  margin-left: 10px;
+  width: 14px;
+  height: 11px;
+  background: url("/img/arrow-right-red.png") no-repeat;
+  vertical-align: middle;
+}

@@ -123,10 +123,6 @@
         @include border-bottom-pink;
       }
     }
-
-    span {
-      @include right-arrow;
-    }
   }
 }
 
@@ -212,13 +208,6 @@
       }
     }
 
-    span {
-      @include right-arrow;
-
-      &.vertical-align-arrow {
-        vertical-align: middle;
-      }
-    }
   }
 }
 

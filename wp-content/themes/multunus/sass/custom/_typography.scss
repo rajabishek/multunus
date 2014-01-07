@@ -1,7 +1,15 @@
 $theme-color-pink: #d22341;
 $theme-color-dark-pink: #b01732;
-$white-bg: #fff;
 $grey-bg: #f1f1f1;
+
+html, body {
+  font-family: $font-family-sans-serif;
+  font-weight: 400;
+  color: #333;
+  font-size: 16px;
+}
+
+/* UI ELEMENTS */
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: lighter;
@@ -47,13 +55,6 @@ ul {
 a:hover {
   text-decoration: none;
   color: white;
-}
-
-html, body {
-  font-family: "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
-  font-weight: 400;
-  color: #333;
-  font-size: 16px;
 }
 
 .red-text {

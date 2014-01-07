@@ -58,21 +58,21 @@
         <img src="/img/web-apps-icon-grey.png" />
         <h2>Web Apps</h2>
         <p>Leverage HTML5, Javascript, CSS3 and Ruby on Rails to build web apps. On desktops, tablets and phones.</p>
-        <a href="#">Learn More</a><span></span>
+        <a href="#">Learn More</a><span class="right-arrow"></span>
       </div>
 
       <div class="col-md-4 service-item">
         <img src="/img/mobile-apps-icon-grey.png" />
         <h2>Mobile Apps</h2>
         <p>Craft beautiful experiences on the iOS and Android platforms.</p>
-        <a href="#">Learn More</a><span></span>
+        <a href="#">Learn More</a><span class="right-arrow"></span>
       </div>
 
       <div class="col-md-4 service-item">
         <img src="/img/cal-icon.png" />
         <h2>Every 2 Days</h2>
         <p> Working software every 2 days. It's the primary measure of progress.</p>
-        <a href="#">Learn More</a><span></span>
+        <a href="#">Learn More</a><span class="right-arrow"></span>
       </div>
     </div>
   </div>
@@ -91,7 +91,7 @@
         <h2 class="visible-xs"><a href="#">Narrable</a><span class="vertical-align-arrow"></span></h2>
         <div class="hidden-xs">
           <p>Narrable uses storytelling through images and narrations to engage students and to draw out important higher order thinking skills.</p>
-          <a class="view-work" href="#">View Work</a><span></span>
+          <a class="view-work" href="#">View Work</a><span class="right-arrow"></span>
         </div>
         <a class="red-btn" href="/portfolio">See All</a>
       </div>

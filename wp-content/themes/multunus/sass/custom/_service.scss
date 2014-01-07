@@ -1,18 +1,17 @@
 .services-container {
   border-bottom: 1px solid #e3e3e3;
-  padding-top: 20px;
-  padding-bottom: 10px;
 
   ul {
     margin: 0 auto;
   }
 
   li {
-    border-right: 2px solid #000;
-    padding-right: 35px;
+    padding: 10px 35px 10px 0;
+    border-right: 1px solid #e3e3e3;
 
     a {
       color: inherit;
+      font-size: 20px;
 
       &:hover {
         color: $theme-color-pink;
@@ -46,7 +45,6 @@
 }
 
 .tech-image {
-  margin-top: 100px;
   clear: both;
 }
 
@@ -57,5 +55,46 @@
 
   .tech-image {
     text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.portfolio-container {
+  h1, h3 {
+   display: inline-block; 
+   text-align: right;
+  }
+
+  h1 {
+    width: 60%;
+  }
+
+  h3 {
+    width: 39%;
+  }
+
+  a {
+    color: $theme-color-pink;
+
+    &:hover {
+      border-bottom: 1px solid $theme-color-pink;
+    }
+  }
+}
+
+@media (max-width: $screen-sm) {
+  .portfolio-container {
+    h1, h3 {
+      text-align: center;
+    }
+
+    h1 {
+      width: 100%;
+    }
+
+    h3 {
+      width: 100%;
+   }
   }
 }
