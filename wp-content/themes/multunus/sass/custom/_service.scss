@@ -48,6 +48,12 @@
   clear: both;
 }
 
+.tech-text {
+  p {
+    color: #000;
+  }
+}
+
 @media (max-width: $screen-sm) {
   .technology-section div:nth-child(4n+1) {
     float: none;
@@ -74,7 +80,7 @@
     width: 39%;
   }
 
-  a {
+  a.see-all-portfolio {
     color: $theme-color-pink;
 
     &:hover {

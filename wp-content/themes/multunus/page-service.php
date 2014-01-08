@@ -66,7 +66,8 @@
     <div class="container portfolio-container">
       <div>
         <h1 class="align-center">Work Samples</h1>
-        <h3><a href="">See All</a><span class="right-arrow"></span></h3>
+        <?php $permalink = get_permalink( get_page_by_path( 'portfolio' ) ); ?>
+        <h3><a class="see-all-portfolio" href="<?php echo $permalink ?>">See All</a><span class="right-arrow"></span></h3>
       </div>
       <div class="row portfolio-list">
         <?php 
@@ -83,7 +84,8 @@
               setup_postdata($post);
         ?>
           <figure class="col-sm-4 col-xs-12" data-category="<?php the_field('category'); ?>">
-            <a>
+            <?php $permalink = post_permalink($post->ID); ?>
+          <a href="<?php echo $permalink ?>">
               <img src="<?php the_field('thumbnail'); ?>" alt="<?php the_title(); ?>">
               <figcaption>
                 <p class="name"><?php the_title(); ?></p>
@@ -137,7 +139,8 @@
     <div class="container portfolio-container">
       <div>
         <h1 class="align-center">Work Samples</h1>
-        <h3><a href="">See All</a><span class="right-arrow"></span></h3>
+        <?php $permalink = get_permalink( get_page_by_path( 'portfolio' ) ); ?>
+        <h3><a class="see-all-portfolio" href="<?php echo $permalink ?>">See All</a><span class="right-arrow"></span></h3>
       </div>
       <div class="row portfolio-list">
         <?php 
@@ -154,7 +157,8 @@
               setup_postdata($post);
         ?>
           <figure class="col-sm-4 col-xs-12" data-category="<?php the_field('category'); ?>">
-            <a>
+            <?php $permalink = post_permalink($post->ID); ?>
+          <a href="<?php echo $permalink ?>">
               <img src="<?php the_field('thumbnail'); ?>" alt="<?php the_title(); ?>">
               <figcaption>
                 <p class="name"><?php the_title(); ?></p>
