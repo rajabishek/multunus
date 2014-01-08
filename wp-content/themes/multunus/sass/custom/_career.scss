@@ -23,11 +23,17 @@
       padding-top: 1em;
     }
 
-    #name { font-weight: 600; }
+    #name { 
+      font-weight: 600;
+    }
+  }
+
+  .quote-video {
+    margin-top: 20px;
   }
 
   #founder-video {
-    postion: relative;
+    position: relative;
 
     img {
       width: 250px;
@@ -37,12 +43,12 @@
     }
 
     span {
-      width: 64px;
-      height: 64px;
+      width: 48px;
+      height: 48px;
       background: url('/img/play-arrow.png') no-repeat;
       position: absolute;
-      left: 30%;
-      top: 35%;
+      right: 40%;
+      top: -25%;
     }
   }
 }
