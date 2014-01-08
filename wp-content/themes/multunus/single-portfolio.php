@@ -25,12 +25,14 @@
 
   <section class="single-portfolio">
 
-    <div class="app-image-container <?php the_field('display_device'); ?>">
+    <div class="portfolio-image-section">
       <div class="overlay"></div>
       <img class="background" src="<?php the_field('background_image'); ?>"></img>
-      <img class="app-image left" src="<?php the_field('app_image_left'); ?>"></img>
-      <img class="app-image center" src="<?php the_field('app_image_center'); ?>"></img>
-      <img class="app-image right" src="<?php the_field('app_image_right'); ?>"></img>
+      <div class="app-images-container container <?php the_field('display_device'); ?>">
+        <img class="app-image left" src="<?php the_field('app_image_left'); ?>"></img>
+        <img class="app-image center" src="<?php the_field('app_image_center'); ?>"></img>
+        <img class="app-image right" src="<?php the_field('app_image_right'); ?>"></img>
+      </div>
     </div>
 
     <div class="title-container">
