@@ -53,7 +53,7 @@ if ( $team_posts ):
 </aside>
 
 <section class="container clearfix team-images">
-    <aside class="row profile hidden">
+    <aside class="profile hidden">
       <div class="translucent-layer">
       </div>
       <div class="container">

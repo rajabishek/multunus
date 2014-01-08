@@ -42,7 +42,8 @@
             <?php
             $category = get_field('category') == 'web' ? 'Web Application' : 'Mobile Application' ;
             ?>
-            <h1 class="post-title"><?php the_title(); ?> <span class='category'><?php echo $category; ?></span></h1>
+            <div class="post-title"><h1><?php the_title(); ?> </h1></div>
+            <div class="category"><span><?php echo $category; ?></span></div>
           </div>
           <div class="col-sm-4 hidden-xs portfolio-nav">
             <a href="<?php echo get_permalink( $previous_post->ID ); ?>" class="links previous-project"></a>
