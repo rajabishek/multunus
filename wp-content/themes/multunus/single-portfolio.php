@@ -40,7 +40,7 @@
         <div class="row">
           <div class="project-title col-sm-8">
             <?php
-            $category = get_field('category') == 'web' ? 'Web Application' : 'Mobile Application' ;
+            $category = get_field('category') == 'web' ? 'Web App' : 'Mobile App' ;
             ?>
             <div class="post-title"><h1><?php the_title(); ?> </h1></div>
             <div class="category"><span><?php echo $category; ?></span></div>
@@ -57,7 +57,7 @@
     <div class="content-container">
       <div class="container">
         <div class="row">
-          <article class="col-sm-8">
+          <article class="post col-sm-8">
             <?php the_content(); ?>
           </article>
           <aside class="col-sm-4">

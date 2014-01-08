@@ -47,23 +47,6 @@
         border-bottom: 1px solid #e3e3e3;
         padding-bottom: 45px;
 
-        p {
-            line-height: 1.67;
-            word-wrap: break-word;
-        }
-
-        ol {
-            margin-left: 30px;
-        }
-
-        a {
-            color: $theme-color-pink;
-
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-
         .alignleft {
             float: left;
         }
