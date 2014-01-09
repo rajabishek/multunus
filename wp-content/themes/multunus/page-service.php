@@ -85,7 +85,7 @@
         ?>
           <figure class="col-sm-4 col-xs-12" data-category="<?php the_field('category'); ?>">
             <?php $permalink = post_permalink($post->ID); ?>
-          <a href="<?php echo $permalink ?>">
+            <a href="<?php echo $permalink ?>">
               <img src="<?php the_field('thumbnail'); ?>" alt="<?php the_title(); ?>">
               <figcaption>
                 <p class="name"><?php the_title(); ?></p>

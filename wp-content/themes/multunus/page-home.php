@@ -87,13 +87,26 @@
       </div>
 
       <div class="col-md-4 recent-client-text">
-        <h2 class="hidden-xs visible-sm">Narrable</h2>
-        <h2 class="visible-xs"><a href="#">Narrable</a><span class="vertical-align-arrow"></span></h2>
+        <?php
+           $posts = get_posts(array('name' => 'Narrable', 'post_type' => 'portfolio'));
+            foreach ($posts as $post) {
+              $permalink_narrable = get_permalink($post->ID);
+              break;
+            }
+         ?>
+        <h2 class="hidden-xs visible-sm">
+          <a href="<?php echo $permalink_narrable ?>">Narrable</a>
+        </h2>
+        <h2 class="visible-xs">
+          <a href="<?php echo $permalink_narrable ?>">Narrable</a>
+          <span class="vertical-align-arrow"></span>
+        </h2>
         <div class="hidden-xs">
           <p>Narrable uses storytelling through images and narrations to engage students and to draw out important higher order thinking skills.</p>
-          <a class="view-work" href="#">View Work</a><span class="right-arrow"></span>
+          <a class="view-work" href="<?php echo $permalink_narrable ?>">View Work</a><span class="right-arrow"></span>
         </div>
-        <a class="red-btn" href="/portfolio">See All</a>
+        <?php $permalink = get_permalink( get_page_by_path( 'portfolio') ); ?>
+        <a class="red-btn" href="<?php echo $permalink ?>">See All</a>
       </div>
     </div>
   </div>
