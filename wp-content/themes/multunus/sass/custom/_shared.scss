@@ -1,9 +1,52 @@
-.quote-header {
-  margin-top: 125px;
-  margin-bottom: 3.2%;
 
-  h1 {
-    margin-bottom: 22px;
+.modal-dialog {
+    display: block;
+    height: 100%;
+    position: relative;
+}
+
+.modal-content {
+  width: 700px;
+  height: 482px;
+
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-body {
+  text-align: center;
+}
+
+.quote-header {
+  margin-top: 142px;
+
+  @media (max-width: $screen-sm) {
+    margin-top: 104px;
+  }
+}
+
+.post {
+  p {
+      line-height: 1.45;
+      word-wrap: break-word;
+      margin-bottom: 24px;
+  }
+
+  ol {
+      margin-left: 30px;
+  }
+
+  a {
+      color: $theme-color-pink;
+
+      &:hover {
+          text-decoration: underline;
+      }
   }
 }
 
@@ -19,6 +62,7 @@
 
   ul.category-list-desktop {
     line-height: 27.55px;
+    margin-top: 58px;
 
     li {
       padding-right: 11px;

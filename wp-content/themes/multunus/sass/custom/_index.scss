@@ -398,22 +398,3 @@
   position: static;
   padding-top: 0;
 }
-
-.modal-dialog {
-    display: block;
-    height: 100%;
-    position: relative;
-}
-
-.modal-content {
-  width: 700px;
-  height: 482px;
-
-  margin: auto;
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-}
-
-.modal-header {
-  border-bottom: none;
-}

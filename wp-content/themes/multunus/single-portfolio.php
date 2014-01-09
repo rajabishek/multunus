@@ -40,9 +40,10 @@
         <div class="row">
           <div class="project-title col-sm-8">
             <?php
-            $category = get_field('category') == 'web' ? 'Web Application' : 'Mobile Application' ;
+            $category = get_field('category') == 'web' ? 'Web App' : 'Mobile App' ;
             ?>
-            <h1 class="post-title"><?php the_title(); ?> <span class='category'><?php echo $category; ?></span></h1>
+            <div class="post-title"><h1><?php the_title(); ?> </h1></div>
+            <div class="category"><span><?php echo $category; ?></span></div>
           </div>
           <div class="col-sm-4 hidden-xs portfolio-nav">
             <a href="<?php echo get_permalink( $previous_post->ID ); ?>" class="links previous-project"></a>
@@ -56,7 +57,7 @@
     <div class="content-container">
       <div class="container">
         <div class="row">
-          <article class="col-sm-8">
+          <article class="post col-sm-8">
             <?php the_content(); ?>
           </article>
           <aside class="col-sm-4">
