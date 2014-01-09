@@ -25,11 +25,11 @@
 <article id="main-content" class="big-picture-text">
   <div class="container">
     <div class="row">
-      <div class="col-md-3 col-md-offset-1 hidden-xs hidden-sm on-desktop">
+      <div class="col-md-4 hidden-xs hidden-sm on-desktop">
         <h1>The<br />Big Picture</h1>
       </div>
 
-      <div class="col-md-3 col-sm-offset-1 visible-sm visible-xs align-center on-mobile">
+      <div class="col-sm-4 visible-sm visible-xs align-center on-mobile">
         <h1>The Big Picture</h1>
       </div>
 
