@@ -1,3 +1,10 @@
+article#main-content {
+  min-height: 432px;
+  @media (min-width: $screen-sm) {
+    padding-top: 45px;
+  }
+}
+
 @media (max-width: $screen-sm) {
   .big-picture-text ul {
     padding-left: 0;
@@ -13,12 +20,9 @@
 .big-picture-text {
   background-color: #fff;
   font-weight: 300;
-  min-height: 430px;
-  padding-top: 35px;
-  padding-bottom: 35px;
 
-  .on-desktop {
-    margin-top: 100px;
+  &.on-desktop {
+    padding-top: 95px;
 
     h1 {
       margin-right: 15px;
@@ -27,8 +31,9 @@
     }
   }
 
-  .on-mobile {
-    margin-bottom: 30px;
+  &.on-mobile {
+    padding-top: 35px;
+    padding-bottom: 35px;
   }
 }
 
@@ -40,6 +45,10 @@
     list-style-type: none;
     margin-top: 15px;
     margin-left: 32px;
+
+    @media (max-width: $screen-sm) {
+      margin-left: 0px;
+    }
   }
 
   li {
