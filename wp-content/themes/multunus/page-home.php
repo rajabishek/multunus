@@ -34,16 +34,16 @@
       </div>
 
       <div class="col-md-4 big-picture-img-container">
-        <a href="#"><div class="what-img">
-          <div class="how-img"> <div class="why-img"></div></div>
+        <a href="/why-us"><div class="what-img">
+          <div class="how-img"><div class="why-img"></div></div>
           </div>
         </a>
       </div>
 
-      <div class="col-md-3 col-xs-12 big-picture-list">
+      <div class="col-md-4 col-xs-12 big-picture-list">
         <ul>
           <li>What makes us different?</li>
-          <li><a class="red-text" href="#">Take a deep dive</a></span> to find out.</li>
+          <li><a class="red-text" href="/why-us">Take a deep dive</a></span> to find out.</li>
         </ul>
       </div>
     </div> <!-- end row -->
@@ -57,22 +57,22 @@
       <div class="col-md-4 service-item">
         <img src="/img/web-apps-icon-grey.png" />
         <h2>Web Apps</h2>
-        <p>Leverage HTML5, Javascript, CSS3 and Ruby on Rails to build web apps. On desktops, tablets and phones.</p>
-        <a href="#">Learn More</a><span class="right-arrow"></span>
+        <p>Leverage HTML5, Javascript, CSS3 and Ruby on Rails to build responsive web apps</p>
+        <a href="/services">Learn More</a><span class="right-arrow"></span>
       </div>
 
       <div class="col-md-4 service-item">
         <img src="/img/mobile-apps-icon-grey.png" />
         <h2>Mobile Apps</h2>
         <p>Craft beautiful experiences on the iOS and Android platforms.</p>
-        <a href="#">Learn More</a><span class="right-arrow"></span>
+        <a href="/services">Learn More</a><span class="right-arrow"></span>
       </div>
 
       <div class="col-md-4 service-item">
         <img src="/img/cal-icon.png" />
         <h2>Every 2 Days</h2>
         <p> Working software every 2 days. It's the primary measure of progress.</p>
-        <a href="#">Learn More</a><span class="right-arrow"></span>
+        <a href="/why-us">Learn More</a><span class="right-arrow"></span>
       </div>
     </div>
   </div>

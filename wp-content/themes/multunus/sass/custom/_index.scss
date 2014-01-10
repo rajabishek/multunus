@@ -21,6 +21,7 @@
     margin-top: 100px;
 
     h1 {
+      margin-right: 15px;
       text-align: right;
       font-weight: 100;
     }
@@ -38,6 +39,7 @@
   ul {
     list-style-type: none;
     margin-top: 15px;
+    margin-left: 32px;
   }
 
   li {
@@ -60,13 +62,13 @@
 @media (max-width: $screen-md) {
   .big-picture-list {
     ul {
-    margin-top: 30px;
-  }
+      margin-top: 30px;
+    }
 
-  li {
-    text-align: center;
+    li {
+      text-align: center;
+    }
   }
-}
 }
 
 .big-picture-img-container {
@@ -105,7 +107,7 @@
   border-top: 1px solid #E4E4E4;
   border-bottom: 1px solid #E4E4E4;
 
-  h1 { margin-bottom: 2.5rem; }
+  h1 { margin-bottom: 60px; }
 
   .service-item {
     text-align: center;
@@ -268,7 +270,7 @@
     height: 46px;
     cursor: pointer;
     position: absolute;
-    top: 8%;;
+    top: 3%;
 
     a {
       width: 100%;
@@ -354,11 +356,7 @@
     img {
       display: block;
       margin: 0 auto;
-
-      @media (max-width: $screen-xs) {
-        height: 107px;
-        width: 107px;
-      }
+      width: 107px;
     }
   }
 
