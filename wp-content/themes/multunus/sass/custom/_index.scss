@@ -69,34 +69,6 @@
 }
 }
 
-.big-picture-img-container {
-  .what-img {
-    position: relative;
-    background: url("/img/what-active.png");
-    height: 337px;
-    width: 288px;
-    margin: 0 auto;
-}
-
-.how-img {
-  position: absolute;
-  top: 65px;
-  left: 55px;
-  background: url("/img/how-active.png");
-  height: 214px;
-  width: 179px;
-}
-
-.why-img {
-  position: absolute;
-  top: 60px;
-  left: 50px;
-  background: url("/img/why-active.png");
-  height: 93px;
-  width: 78px;
-}
-}
-
 /* OUR SERVICES */
 
 .our-services {

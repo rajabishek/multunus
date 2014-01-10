@@ -34,10 +34,11 @@
       </div>
 
       <div class="col-md-4 big-picture-img-container">
-        <a href="#"><div class="what-img">
-          <div class="how-img"> <div class="why-img"></div></div>
-          </div>
-        </a>
+        <figure>
+          <a href="#what" data-toggle="tab" class="golden-circle what-img"></a>
+          <a href="#how" data-toggle="tab" class="golden-circle how-img"></a>
+          <a href="#why" data-toggle="tab" class="golden-circle why-img"></a>
+        </figure>
       </div>
 
       <div class="col-md-3 col-xs-12 big-picture-list">

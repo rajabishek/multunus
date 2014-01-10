@@ -95,3 +95,64 @@
     }
   }
 }
+
+
+.big-picture-img-container {
+  figure {
+    position: relative;
+    height: 337px;
+    width: 288px;
+    margin: auto;
+  }
+
+  .golden-circle {
+    transition: background 0.5s;
+    position: absolute;
+  }
+
+  .what-img {
+    background: url("/img/what-active.png") no-repeat;
+    height: 337px;
+    width: 288px;
+
+    &.inactive {
+      background: url("/img/what-inactive.png") no-repeat;
+    }
+
+    &.active {
+      background: url("/img/what-active.png") no-repeat;
+    }
+  }
+
+  .how-img {
+    top: 65px;
+    left: 55px;
+    background: url("/img/how.png") no-repeat;
+    height: 214px;
+    width: 179px;
+
+    &.inactive {
+      background: url("/img/how-inactive.png") no-repeat;
+    }
+
+    &.active {
+      background: url("/img/how-active.png") no-repeat;
+    }
+  }
+
+  .why-img {
+    top: 128px;
+    left: 105px;
+    background: url("/img/why.png") no-repeat;
+    height: 93px;
+    width: 78px;
+
+    &.inactive {
+      background: url("/img/why-inactive.png") no-repeat;
+    }
+
+    &.active {
+      background: url("/img/why-active.png") no-repeat;
+    }
+  }
+}
