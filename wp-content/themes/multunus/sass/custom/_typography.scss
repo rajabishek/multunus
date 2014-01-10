@@ -57,6 +57,10 @@ ul {
   line-height: 33.55px;
 }
 
+a, a:hover, a:active, a:focus {
+  outline: 0;
+}
+
 a:hover {
   text-decoration: none;
   color: white;

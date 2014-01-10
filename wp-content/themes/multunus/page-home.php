@@ -25,11 +25,11 @@
 <article id="main-content" class="big-picture-text">
   <div class="container">
     <div class="row">
-      <div class="col-md-3 col-md-offset-1 hidden-xs hidden-sm on-desktop">
+      <div class="col-md-4 hidden-xs hidden-sm on-desktop">
         <h1>The<br />Big Picture</h1>
       </div>
 
-      <div class="col-md-3 col-sm-offset-1 visible-sm visible-xs align-center on-mobile">
+      <div class="col-sm-4 visible-sm visible-xs align-center on-mobile">
         <h1>The Big Picture</h1>
       </div>
 
@@ -41,10 +41,10 @@
         </figure>
       </div>
 
-      <div class="col-md-3 col-xs-12 big-picture-list">
+      <div class="col-md-4 col-xs-12 big-picture-list">
         <ul>
           <li>What makes us different?</li>
-          <li><a class="red-text" href="#">Take a deep dive</a></span> to find out.</li>
+          <li><a class="red-text" href="/why-us">Take a deep dive</a></span> to find out.</li>
         </ul>
       </div>
     </div> <!-- end row -->
@@ -58,22 +58,22 @@
       <div class="col-md-4 service-item">
         <img src="/img/web-apps-icon-grey.png" />
         <h2>Web Apps</h2>
-        <p>Leverage HTML5, Javascript, CSS3 and Ruby on Rails to build web apps. On desktops, tablets and phones.</p>
-        <a href="#">Learn More</a><span class="right-arrow"></span>
+        <p>Leverage HTML5, Javascript, CSS3 and Ruby on Rails to build responsive web apps</p>
+        <a href="/services">Learn More</a><span class="right-arrow"></span>
       </div>
 
       <div class="col-md-4 service-item">
         <img src="/img/mobile-apps-icon-grey.png" />
         <h2>Mobile Apps</h2>
         <p>Craft beautiful experiences on the iOS and Android platforms.</p>
-        <a href="#">Learn More</a><span class="right-arrow"></span>
+        <a href="/services">Learn More</a><span class="right-arrow"></span>
       </div>
 
       <div class="col-md-4 service-item">
         <img src="/img/cal-icon.png" />
         <h2>Every 2 Days</h2>
         <p> Working software every 2 days. It's the primary measure of progress.</p>
-        <a href="#">Learn More</a><span class="right-arrow"></span>
+        <a href="/why-us">Learn More</a><span class="right-arrow"></span>
       </div>
     </div>
   </div>
@@ -88,13 +88,26 @@
       </div>
 
       <div class="col-md-4 recent-client-text">
-        <h2 class="hidden-xs visible-sm">Narrable</h2>
-        <h2 class="visible-xs"><a href="#">Narrable</a><span class="vertical-align-arrow"></span></h2>
+        <?php
+           $posts = get_posts(array('name' => 'Narrable', 'post_type' => 'portfolio'));
+            foreach ($posts as $post) {
+              $permalink_narrable = get_permalink($post->ID);
+              break;
+            }
+         ?>
+        <h2 class="hidden-xs visible-sm">
+          <a href="<?php echo $permalink_narrable ?>">Narrable</a>
+        </h2>
+        <h2 class="visible-xs">
+          <a href="<?php echo $permalink_narrable ?>">Narrable</a>
+          <span class="vertical-align-arrow"></span>
+        </h2>
         <div class="hidden-xs">
           <p>Narrable uses storytelling through images and narrations to engage students and to draw out important higher order thinking skills.</p>
-          <a class="view-work" href="#">View Work</a><span class="right-arrow"></span>
+          <a class="view-work" href="<?php echo $permalink_narrable ?>">View Work</a><span class="right-arrow"></span>
         </div>
-        <a class="red-btn" href="/portfolio">See All</a>
+        <?php $permalink = get_permalink( get_page_by_path( 'portfolio') ); ?>
+        <a class="red-btn" href="<?php echo $permalink ?>">See All</a>
       </div>
     </div>
   </div>

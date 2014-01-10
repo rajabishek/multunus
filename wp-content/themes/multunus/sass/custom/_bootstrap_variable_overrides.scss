@@ -1,5 +1,9 @@
 $font-family-sans-serif:  "proxima-nova", "Helvetica Neue", Helvetica-, Arial, sans-serif !default;
 
+$screen-xxs: 320px;
+
+$grid-gutter-width: 20px !default;
+$container-large-desktop: ((940px + $grid-gutter-width)) !default;
 $grid-float-breakpoint: 992px !default;
 
 $navbar-default-bg: rgb(32, 32, 32);

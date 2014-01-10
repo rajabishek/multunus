@@ -3,16 +3,12 @@
     <div class="row">
       <div class="col-sm-4 col-xs-6">
           <div class="align-center heading">Say Hello!</div>
-          <div class="hexagon">
-            <a class="mail-container" href="mailto:info@multunus.com"><img src="/img/mail-icon-red.png"/></a>
-          </div>
+          <a class="mail-container" href="mailto:info@multunus.com"><img src="/img/footer-mail-icon-red.png"/></a>
       </div>
 
       <div class="col-sm-4 col-xs-6">
           <div class="align-center heading">Careers</div>
-          <div class="hexagon">
-            <a href="/careers"><img src="/img/robot-icon-red.png"></a>
-          </div>
+          <a class="robot-container" href="/careers"><img src="/img/footer-robot-icon-red.png"></a>
       </div>
 
       <div class="col-sm-4 col-xs-12 follow-us-container">
@@ -22,19 +18,19 @@
             <ul class="list-inline align-center">
               <li>
                 <a class="social" href="https://www.facebook.com/multunus" title="Follow us on Facebook">
-                  <img src="/img/facebook-icon-footer.png" alt=""/>
+                  <img class="facebook" src="/img/facebook-icon-footer.png" alt=""/>
                 </a>
               </li>
 
               <li>
                 <a class="social" href="https://twitter.com/multunus" title="Follow us on Twitter">
-                  <img src="/img/twitter-icon-footer.png" alt=""/>
+                  <img class="twitter" src="/img/twitter-icon-footer.png" alt=""/>
                 </a>
               </li>
 
               <li>
                 <a class="social" href="http://www.linkedin.com/company/multunus" title="Follow us on Linkedin">
-                  <img src="/img/linkedin-icon-footer.png" alt=""/>
+                  <img class="linkedin" src="/img/linkedin-icon-footer.png" alt=""/>
                 </a>
               </li>
 

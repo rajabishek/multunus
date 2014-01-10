@@ -10,8 +10,6 @@
       margin-right: 12px;
 
       background-color: $theme-header-color;
-      transition: margin-right 0.5s ease-in-out;
-
 
       .logo-container {
         background: url("/img/header-logo.png") 9px center no-repeat;
@@ -156,6 +154,10 @@
       .text-pink {
         color: #cc2d48;
       }
+    }
+
+    .contact-no a {
+      padding: 5px 8px;
     }
   }
 }
