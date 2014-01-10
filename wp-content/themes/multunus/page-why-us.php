@@ -9,11 +9,11 @@ get_header();
   <div class="why-us-image-section">
     <div class="container">
       <div class="row">
-        <div class="col-md-4 hidden-xs hidden-sm on-desktop big-picture-text">
+        <div class="col-md-4 hidden-xs hidden-sm on-desktop big-picture-text fade in">
           <h1>The<br />Big Picture</h1>
         </div>
 
-        <div class="col-md-4 visible-sm visible-xs align-center on-mobile big-picture-text">
+        <div class="col-md-12 visible-sm visible-xs align-center on-mobile big-picture-text">
           <h1>The Big Picture</h1>
         </div>
 
@@ -25,7 +25,7 @@ get_header();
           </figure>
         </div>
 
-        <div class="col-md-4 col-xs-12 big-picture-list">
+        <div class="col-md-4 col-sm-12 big-picture-list fade in">
           <ul>
             <li><a class="red-text" href="#">Why</a></span> we exist?</li>
             <li><a class="red-text" href="#">How</a></span> we achieve<br /> our mission?</li>
@@ -33,8 +33,8 @@ get_header();
           </ul>
         </div>
 
-        <div class="tab-content col-md-6 col-xs-12">
-          <div class="tab-pane fade in active hidden" id="why">
+        <div class="tab-content col-md-6 col-sm-12">
+          <div class="tab-pane fade in" id="why">
             <h1><span class="red-text">Why</span> we exist?</h1>
             <h3>Help Enterpreneurs succeed</h3>
             <p>
@@ -44,7 +44,7 @@ get_header();
             </p>
           </div>
 
-          <div class="tab-pane fade" id="how">
+          <div class="tab-pane fade in" id="how">
             <h1><span class="red-text">How</span> we achieve our mission?</h1>
             <h3>Better products, with deliberate discovery</h3>
             <p>
@@ -54,7 +54,7 @@ get_header();
             </p>
           </div>
 
-          <div class="tab-pane fade" id="what">
+          <div class="tab-pane fade in" id="what">
             <h1><span class="red-text">What</span> we do on a daily basis?</h1>
             <h3>Culture + Process + Technology &divamp; Tools </h3>
             <p>

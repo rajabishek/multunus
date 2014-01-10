@@ -228,15 +228,19 @@ $(document).ready(function() {
       var self = this;
       var currentCircle = self.$('.why-img');
 
-      self.goldenCirclesAutoAnimation = setInterval(function() {
-        self.$('.on-desktop').addClass('visible-xs');
-        self.$('.big-picture-list').hide('slow');
+      self.$('.big-picture-text.on-desktop, .big-picture-list').removeClass("in");
+
+      setTimeout(function() {
+        self.$('.big-picture-text.on-desktop').addClass('shiva');
         self.$('.big-picture-img-container').addClass('col-md-6');
-        self.$('.tab-pane.hidden').removeClass('hidden');
+        self.$('.big-picture-list').hide();
+      }, 500);
+
+      self.goldenCirclesAutoAnimation = setInterval(function() {
         self.activateCircle(currentCircle);
         currentCircle.tab('show');
         currentCircle = currentCircle.nextCircle();
-      }, 2000);
+      }, 3000);
     },
 
     setupCircleClick: function() {
