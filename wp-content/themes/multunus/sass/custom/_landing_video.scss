@@ -9,7 +9,7 @@
     min-height: 360px;
 
     @media (min-width: $screen-sm) {
-      min-height: 650px;
+      min-height: 700px;
     }
 
     video {
@@ -18,14 +18,14 @@
   }
 
   video {
-    width:100%;
+    background: transparent url('/img/home-page-poster.png') no-repeat 0 0;
+    width: 100%;
     height: auto !important;
     float: left;
-    background: transparent url('/img/home-page-poster.png') no-repeat 0 0;
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
-    background-size:cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 }
 

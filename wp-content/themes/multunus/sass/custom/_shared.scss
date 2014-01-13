@@ -1,4 +1,3 @@
-
 .modal-dialog {
     display: block;
     height: 100%;
@@ -74,11 +73,6 @@
 
       &:first-child {
         margin-left: 0;
-        border-right: 0;
-      }
-
-      &:last-child {
-        border-right: 0;
       }
 
       &:hover, &.active {
