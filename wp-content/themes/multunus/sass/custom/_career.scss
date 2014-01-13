@@ -7,8 +7,8 @@
 }
 
 .founder-quote {
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding-top: 32px;
+  padding-bottom: 38px;
   background-color: rgb(241, 241, 241);
   text-align: left;
 
@@ -16,7 +16,7 @@
     margin-bottom: 0px;
     font-size: 24px;
     font-weight: 300;
-    line-height: 1.2;
+    line-height: 35.63px;
 
     &#founder {
       font-size: 16px;
@@ -29,7 +29,7 @@
   }
 
   .quote-video {
-    margin-top: 20px;
+    margin-top: 47px;
   }
 
   #founder-video {
@@ -90,8 +90,9 @@
 
       span {
         display: inline-block;
+        width: 100%;
         padding-bottom: 0.5em;
-        border-bottom: 2px solid #eee;
+        border-bottom: 1px solid #e3e3e3;
       }
 
       &:last-child span {
@@ -103,33 +104,31 @@
 
 .career-images {
   background-color: black;
+  width: 100%;
+
   article {
     padding: 0;
 
     img {
-      height: 394px;
+      height: 395px;
+      width: 100%;
       filter: url(filters.svg#grayscale);
       filter: gray;
       -webkit-filter: grayscale(1);
     }
+  }
 
-    &:nth-child(2) {
-      color: white;
-      background-color: $theme-color-pink;
-      height: 394px;
-      padding: 55px 40px;
-      text-align: center;
+  .work-with-us {
+    color: white;
+    background-color: $theme-color-pink;
+    height: 395px;
+    padding: 60px 40px 40px;
+    text-align: center;
 
-      #still-thinking-heading {
-        font-size: 30px;
-        line-height: 1;
-      }
-
-      #still-thinking-text { 
-        font-size: 20px;
-        font-weight: 300;
-        line-height: 1.5;
-      }
+    #still-thinking-text { 
+      font-size: 20px;
+      font-weight: lighter;
+      line-height: 27.55px;
     }
   }
 }
@@ -186,6 +185,10 @@
 .current-openings-dropdown {
   margin-top: 22px;
 
+  @media (max-width: $screen-sm) {
+    margin-top: 142px;
+  }
+
   button {
     width: 180px;
     text-align: left;
@@ -200,16 +203,18 @@
 }
 
 .career-details {
-  padding-top: 30px;
+  margin-top: 130px;
   padding-bottom: 100px;
   h4 { color: #000; }
 
   @media (max-width: $screen-sm) {
+    margin-top: 0;
     padding-bottom: 0;
   }
 }
 
 .career-details-content {
+  color: #000;
 
   @media (max-width: $screen-xs) {
     .position-title { font-size: 30px; }
@@ -217,7 +222,7 @@
 
   ul {
     list-style-image: url('/img/arrow-right-red.png');
-    padding-top: 20px;
+    padding-top: 14px;
     margin-left: 12px;
   }
   li {
@@ -237,8 +242,7 @@
     &:last-child { border-bottom: none; }
 
     a {
-      color: $theme-color-pink;
-      &:hover { text-decoration: underline; }
+      &:hover { color: $theme-color-pink; }
     }
   }
 }

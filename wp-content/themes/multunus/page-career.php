@@ -24,8 +24,8 @@
   <div class="container">
     <div class="col-md-8 quote-text">
       <p>At Multunus, we do a lot of things differently. But it starts from the way we hire. We look for people who're likely to make this place more friendly, more transparent,
-        more fun, more disciplined, more mindful, more bold, more customer focussed.</p>
-      <p id="founder"><span id="name">Vaidyanathan</span>, <em>CEO, Founder at Multunus</em></p>
+        more fun, more disciplined, more mindful, more bold, more customer focused.</p>
+      <p id="founder"><span id="name">Vaidy</span>, <em>Founder & CEO</em></p>
     </div>
 
     <div class="col-md-4 quote-video">
@@ -55,15 +55,16 @@
     <div class="row">
 
       <div class="col-md-4">
-        <h1>We at <span id="company-name">Multunus</span> strictly follow these things to ensure its a fun place to be:</h1>
+        <h1>5 reasons to work here:</h1>
       </div>
 
       <div class="col-md-7">
         <ul>
-          <li><span>You get to spend 45 minutes everyday learning and interacting with your colleagues.</span></li>
-          <li><span>We ask everyone to leave by 7PM everyday. And working weekends are strongly discouraged.</span></li>
-          <li><span>We constantly invest in some of the best training material available.</span></li>
-          <li><span>We invite industry leaders to visit our office and interact with the team here. We call these events "fireside chats".</span></li>
+          <li><span>You'll love our hacknights.</span></li>
+          <li><span>Get high by shipping working software every 2 days.</span></li>
+          <li><span>Create more than just software. Help entrepreneurs succeed.</span></li>
+          <li><span>Work with honest and nice people. Who care about both work <em>and</em> life.</span></li>
+          <li><span>Dive into the new and exciting world of Lean Startups.</span></li>
         </ul>
       </div>
 
@@ -75,20 +76,21 @@
   <div class="container">
     <div class="row">
     <article class="col-md-3 col-xs-12"> 
-      <img src="http://lorempixel.com/344/394" />
+      <img src="http://placekitten.com/344/394" />
     </article>
 
-    <article class="col-md-3 col-md-push-3 col-xs-12">
-      <p id="still-thinking-heading">Still thinking about working for us?</p>
-      <p id="still-thinking-text">As they say, the proof of the pudding is in the eating. But that will require you to join our team.</p>
+    <article class="col-md-4 col-md-push-2 col-xs-12 work-with-us">
+      <h1 id="still-thinking-heading">Take a test drive.</h1>
+      <p id="still-thinking-text">We hire differently. Check out the challenges we have in store for you. You'll
+      get a taste of how it feels to work with us.</p>
     </article>
 
-    <article class="col-md-3 col-md-pull-3 col-xs-12">
-      <img src="http://lorempixel.com/344/394" />
+    <article class="col-md-2 col-md-pull-4 col-xs-12">
+      <img src="http://placekitten.com/344/394" />
     </article>
 
     <article class="col-md-3 col-xs-12">
-      <img src="http://lorempixel.com/344/394" />
+      <img src="http://placekitten.com/344/394" />
     </article>
     </div>
 </div>

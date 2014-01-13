@@ -78,8 +78,8 @@ $(document).ready(function() {
     $('html, body').animate({scrollTop: $("#main-content").offset().top - $("nav").height()}, 1000);
   });
 
-  $('[rel=#open-positions], [rel=#career-details]').click(function(e) {
-    $('html, body').animate({scrollTop: $("#open-positions, #career-details").offset().top - $("nav").height()}, 2000);
+  $('[rel=#open-positions]').click(function(e) {
+    $('html, body').animate({scrollTop: $("#open-positions").offset().top - $("nav").height()}, 2000);
   });
 
   $('[href=#back-to-top]').click(function(e) {

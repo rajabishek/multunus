@@ -10,20 +10,6 @@
   $mypageid = ( $mypage ? $mypage->ID : '0' );
 ?>
 
-<div class="video-section-container career-page">
-  <div class="overlay">
-    <div class="overlay-content">
-      <h1 id="quote">Build your dream. At work.</h1>
-      <div rel="#career-details" class="btn-red">Join Us<span></span></div>
-    </div>
-  </div>
-
-  <video tabindex="0" autoplay loop>
-    <source src="http://multunus_website.s3.amazonaws.com/wp-content/uploads/2013/12/1.mp4" type="video/mp4" />
-    <source src="http://multunus_website.s3.amazonaws.com/wp-content/uploads/2013/12/2.mp4" type="video/mp4" />
-  </video>
-</div>
-
 <div class="container current-openings-dropdown dropdown-container visible-xs">
   <div class="dropdown-label">Current Openings: </div>
   <div class="btn-group dropdown">
@@ -56,12 +42,6 @@
       <div class="col-md-8 career-details-content">
         <h1 class="position-title"><?php the_title(); ?></h1>
         <p><?php the_content(); ?></p>
-
-        <aside class="career-contact">
-          <h5>Interested</h5>
-          <p class="hidden-xs">Send a little something about yourself to <a href="mailto:jobs@multunus.com">jobs@multunus.com</a></p>
-          <p class="visible-xs">Send a little  about yourself to <br /><a href="mailto:jobs@multunus.com">jobs@multunus.com</a></p>
-        </aside>
       </div>
 
       <div class="col-md-3 col-md-offset-1 career-details-sidebar">
@@ -82,9 +62,6 @@
           <?php endif; ?>
           </ul>
         </div>
-
-        <h4>How We Hire</h4>
-        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
 
         <h4>FAQ</h4>
         <ol class="career-details-faq">
