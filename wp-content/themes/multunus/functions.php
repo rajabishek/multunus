@@ -50,6 +50,14 @@ if (!is_admin()) {
     }
   }
 
+  add_action('wp_enqueue_scripts', 'why_us_script', 14);
+  function why_us_script() {
+    if (is_page('why-us')) {
+      wp_register_script( 'why_us', get_template_directory_uri() . '/js/why_us.js', array( 'jquery' ), null, true );
+      wp_enqueue_script('why_us');
+    }
+  }
+
   // Add proxima-nova font from typekit
   add_filter( 'wp_head', 'add_typekit_font' );
   function add_typekit_font() {

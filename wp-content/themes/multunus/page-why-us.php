@@ -2,8 +2,7 @@
 /**
  * Template Name: Why Us
  */
-get_header();
-
+  get_header();
 ?>
 <section class="why-us-page">
   <div class="why-us-image-section">
@@ -34,10 +33,10 @@ get_header();
           </ul>
         </div>
 
-        <div class="tab-content col-md-6 col-sm-12">
+        <div class="tab-content col-md-7 col-sm-12">
           <div class="tab-pane fade" id="why">
             <h1><span class="red-text">Why</span> we exist?</h1>
-            <h3>Help Enterpreneurs succeed</h3>
+            <h4>Help Enterpreneurs succeed</h4>
             <p>
               Raw denim you probably haven't heard of them jean shorts Austin.
               Nesciunt tofu stumptown aliqua, retro synth master cleanse.
@@ -47,7 +46,7 @@ get_header();
 
           <div class="tab-pane fade" id="how">
             <h1><span class="red-text">How</span> we achieve our mission?</h1>
-            <h3>Better products, with deliberate discovery</h3>
+            <h4>Better products, with deliberate discovery</h4>
             <p>
               Raw denim you probably haven't heard of them jean shorts Austin.
               Nesciunt tofu stumptown aliqua, retro synth master cleanse.
@@ -57,7 +56,7 @@ get_header();
 
           <div class="tab-pane fade" id="what">
             <h1><span class="red-text">What</span> we do on a daily basis?</h1>
-            <h3>Culture + Process + Technology &divamp; Tools </h3>
+            <h4>Culture + Process + Technology &amp; Tools </h4>
             <p>
               Raw denim you probably haven't heard of them jean shorts Austin.
               Nesciunt tofu stumptown aliqua, retro synth master cleanse.
@@ -70,4 +69,5 @@ get_header();
     </div>
   </div>
 </section>
+
 <?php get_footer(); ?>
