@@ -9,14 +9,41 @@
     -moz-box-shadow: inset 0px 0px 163px rgb(145, 145, 145);
     box-shadow: inset 0px 0px 163px rgb(145, 145, 145);
 
+    @media (max-width: $screen-sm) {
+      background: #f2f2f2;
+      box-shadow: none;
+    }
+
+    .big-picture-text {
+      -webkit-transition: width 0.8s ease, padding 0.8s ease;
+      -moz-transition: width 0.8s ease, padding 0.8s ease;
+      -o-transition: width 0.8s ease, padding 0.8s ease;
+      transition: width 0.8s ease, padding 0.8s ease;
+
+      &.size-0 {
+        width: 0;
+        padding: 0;
+      }
+    }
+
     .big-picture-img-container {
-      -webkit-transition: width 0.3s ease, margin 0.3s ease;
-      -moz-transition: width 0.3s ease, margin 0.3s ease;
-      -o-transition: width 0.3s ease, margin 0.3s ease;
-      transition: width 0.3s ease, margin 0.3s ease;
+      padding-bottom: 35px;
+
+      -webkit-transition: width 0.8s ease;
+      -moz-transition: width 0.8s ease;
+      -o-transition: width 0.8s ease;
+      transition: width 0.8s ease;
+
+      .image-prefetcher {
+        background: url("/img/why-inactive.png") no-repeat, url("/img/why-active.png") no-repeat, url("/img/how-inactive.png") no-repeat, url("/img/how-active.png") no-repeat, url("/img/what-inactive.png") no-repeat;
+      }
     }
 
     .big-picture-list {
+      @media (max-width: $screen-sm) {
+        display: none;
+      }
+
       padding-top: 14px;
 
       li {
@@ -29,10 +56,24 @@
           border-bottom: none;
         }
       }
+    }
 
-      li a:hover {
-        @include border-bottom-pink
+    .tab-content {
+
+      .tab-pane {
+        padding-top: 50px;
+        padding-bottom: 10px;
+        @media (max-width: $screen-sm) {
+          padding-top: 0;
+          display: block !important;
+          opacity: 1 !important;
+
+          h1, h4 {
+            line-height: 1;
+          }
+        }
       }
+
     }
   }
 }

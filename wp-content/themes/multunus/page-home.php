@@ -23,14 +23,14 @@
     </video>
   </div>
 
-  <article id="main-content">
+  <article id="main-content" class="why-us-image-section">
     <div class="container">
       <div class="row">
         <div class="col-md-4 hidden-xs hidden-sm big-picture-text on-desktop">
           <h1>The<br />Big Picture</h1>
         </div>
 
-        <div class="col-sm-4 visible-sm visible-xs align-center big-picture-text on-mobile">
+        <div class="col-sm-12 visible-sm visible-xs align-center big-picture-text on-mobile">
           <h1>The Big Picture</h1>
         </div>
 
@@ -42,7 +42,7 @@
           </figure>
         </div>
 
-        <div class="col-md-4 col-xs-12 big-picture-list">
+        <div class="col-md-4 col-sm-12 big-picture-list">
           <ul>
             <li>What makes us different?</li>
             <li><a class="red-text" href="/why-us">Take a deep dive</a></span> to find out.</li>
