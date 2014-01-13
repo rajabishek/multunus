@@ -207,62 +207,69 @@ $(document).ready(function() {
 });
 
 
-$.fn.nextCircle = function(){
-  return this.prev().length ? this.prev() : this.siblings().addBack(this).last();
-};
-
 $(document).ready(function() {
-  window.whyUsPage = {
-    $el: $('.why-us-page'),
+
+  window.goldenCircles = {
+    $el: $('.why-us-image-section'),
 
     $: function(selector) {
       return this.$el.find(selector);
     },
 
-    activateCircle: function(selectedCircle) {
-      this.$('.golden-circle').removeClass('active').addClass('inactive');
-      selectedCircle.addClass('active');
+    nextCircleOf: function(givenCircle){
+      return givenCircle.prev().length ? givenCircle.prev() : givenCircle.siblings().addBack(givenCircle).last();
     },
 
-    startGoldenCirclesAnimation: function() {
+    activateCircle: function(selectedCircle) {
+      var correspondingTab = $(selectedCircle.attr('data-tab'));
+
+      this.$('.golden-circle').removeClass('active').addClass('inactive');
+      this.$('.tab-pane').removeClass('active in');
+
+      setTimeout(function() {
+        selectedCircle.removeClass('inactive').addClass('active');
+        correspondingTab.addClass('active in');      
+      }, 150);
+    },
+
+    startAnimation: function() {
       var self = this;
       var currentCircle = self.$('.why-img');
 
       self.$('.big-picture-text.on-desktop, .big-picture-list').removeClass("in");
 
       setTimeout(function() {
-        self.$('.big-picture-text.on-desktop').addClass('shiva');
+        self.$('.big-picture-text.on-desktop').addClass('size-0');
         self.$('.big-picture-img-container').addClass('col-md-6');
         self.$('.big-picture-list').hide();
       }, 500);
 
       self.goldenCirclesAutoAnimation = setInterval(function() {
         self.activateCircle(currentCircle);
-        currentCircle.tab('show');
-        currentCircle = currentCircle.nextCircle();
+        currentCircle = self.nextCircleOf(currentCircle);
       }, 3000);
     },
 
     setupCircleClick: function() {
       var self = this;
 
-      self.$('.golden-circle').click(function() {
+      self.$('.big-picture-img-container .golden-circle').click(function() {
         clearInterval(self.goldenCirclesAutoAnimation);
         var selectedCircle = $(this);
         self.activateCircle(selectedCircle);
       });
     },
 
-    initializeGoldenCircles: function() {
+    initialize: function() {
       var self = this;
 
-      self.setupCircleClick();
       setTimeout(function() {
-        // self.startGoldenCirclesAnimation();
+        self.startAnimation();
+        self.setupCircleClick();
       }, 3000);
     }
 
   };
 
-  window.whyUsPage.initializeGoldenCircles();
+  window.goldenCircles.initialize();
 });

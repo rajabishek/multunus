@@ -18,10 +18,11 @@ get_header();
         </div>
 
         <div class="col-md-4 big-picture-img-container">
+          <div class="image-prefetcher"></div>
           <figure>
-            <a href="#what" data-toggle="tab" class="golden-circle what-img"></a>
-            <a href="#how" data-toggle="tab" class="golden-circle how-img"></a>
-            <a href="#why" data-toggle="tab" class="golden-circle why-img"></a>
+            <a data-tab="#what" class="golden-circle what-img"></a>
+            <a data-tab="#how" class="golden-circle how-img"></a>
+            <a data-tab="#why" class="golden-circle why-img"></a>
           </figure>
         </div>
 
@@ -34,7 +35,7 @@ get_header();
         </div>
 
         <div class="tab-content col-md-6 col-sm-12">
-          <div class="tab-pane fade in" id="why">
+          <div class="tab-pane fade" id="why">
             <h1><span class="red-text">Why</span> we exist?</h1>
             <h3>Help Enterpreneurs succeed</h3>
             <p>
@@ -44,7 +45,7 @@ get_header();
             </p>
           </div>
 
-          <div class="tab-pane fade in" id="how">
+          <div class="tab-pane fade" id="how">
             <h1><span class="red-text">How</span> we achieve our mission?</h1>
             <h3>Better products, with deliberate discovery</h3>
             <p>
@@ -54,7 +55,7 @@ get_header();
             </p>
           </div>
 
-          <div class="tab-pane fade in" id="what">
+          <div class="tab-pane fade" id="what">
             <h1><span class="red-text">What</span> we do on a daily basis?</h1>
             <h3>Culture + Process + Technology &divamp; Tools </h3>
             <p>

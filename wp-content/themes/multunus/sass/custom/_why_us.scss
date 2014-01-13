@@ -15,7 +15,7 @@
       -o-transition: width 0.8s ease, padding 0.8s ease;
       transition: width 0.8s ease, padding 0.8s ease;
 
-      &.shiva {
+      &.size-0 {
         width: 0;
         padding: 0;
       }
@@ -26,6 +26,10 @@
       -moz-transition: width 0.8s ease;
       -o-transition: width 0.8s ease;
       transition: width 0.8s ease;
+
+      .image-prefetcher {
+        background: url("/img/why-inactive.png") no-repeat, url("/img/how-inactive.png") no-repeat, url("/img/what-inactive.png") no-repeat;
+      }
     }
 
     .big-picture-list {
