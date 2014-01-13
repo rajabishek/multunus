@@ -23,7 +23,7 @@
     </video>
   </div>
 
-  <article id="main-content">
+  <article id="main-content" class="why-us-image-section">
     <div class="container">
       <div class="row">
         <div class="col-md-4 hidden-xs hidden-sm big-picture-text on-desktop">

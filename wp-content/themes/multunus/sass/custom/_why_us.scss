@@ -56,10 +56,6 @@
           border-bottom: none;
         }
       }
-
-      li a:hover {
-        @include border-bottom-pink
-      }
     }
 
     .tab-content {

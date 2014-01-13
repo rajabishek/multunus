@@ -1,386 +1,328 @@
-article#main-content {
-  min-height: 432px;
-  padding: 40px 0;
-  @media (min-width: $screen-sm) {
-    padding-top: 45px;
-  }
-}
-
-@media (max-width: $screen-sm) {
-  .big-picture-text ul {
-    padding-left: 0;
-  }
-
-  .big-picture-text li {
-    text-align: center;
-    width: 50%;
-    margin: 0 auto;
-  }
-}
-
-.big-picture-text {
-  font-weight: 300;
-
-  &.on-desktop {
-    padding-top: 95px;
-
-    h1 {
-      margin-right: 15px;
-      text-align: right;
-      font-weight: 100;
-    }
-  }
-
-  &.on-mobile {
-    padding-bottom: 35px;
-
-    h1 {
-      font-size: 42px;
-    }
-  }
-}
-
-.big-picture-list {
-  padding-top: 60px;
-  font-weight: 100;
-
-  @media (max-width: $screen-sm) {
-    padding-top: 10px;
-  }
-
-  ul {
-    list-style-type: none;
-    margin-top: 15px;
-    margin-left: 32px;
-
-    @media (max-width: $screen-sm) {
-      margin-left: 0px;
-    }
-  }
-
-  li {
-    display: block;
-    font-size: 30px;
-    line-height: 1.5;
-  }
-
-  li a:hover {
-    @include border-bottom-pink
-  }
-}
-
-@media (max-width: $screen-xs) {
-  .big-picture-list {
-    padding-top: 0;
-  }
-}
-
-@media (max-width: $screen-md) {
-  .big-picture-list {
-    ul {
-      margin-top: 30px;
+.home-page {
+  article.why-us-image-section{
+    min-height: 432px;
+    padding: 40px 0;
+    @media (min-width: $screen-sm) {
+      padding-top: 45px;
     }
 
-    li {
-      text-align: center;
-    }
-  }
-}
+    .big-picture-list {
+      padding-top: 60px;
 
-/* OUR SERVICES */
-
-.our-services {
-  background-color: $grey-bg;
-  padding: 40px 0 108px 0;
-  border-top: 1px solid #E4E4E4;
-  border-bottom: 1px solid #E4E4E4;
-
-  h1 { margin-bottom: 60px; }
-
-  .service-item {
-    text-align: center;
-
-    img {
-      @include img-center;
-    }
-
-    a {
-      display: inline-block;
-      font-size: 18px;
-      color: $theme-color-pink;
-
-        &:hover {
-        @include border-bottom-pink;
-      }
-    }
-  }
-}
-
-@media (max-width: $screen-md) {
-  .service-item a {
-    margin: 20px 0 60px 0;
-  }
-
-  .service-item:last-child a{
-    margin-bottom: 0;
-  }
-}
-
-/* RECENT WORK */
-
-.recent-work {
-  padding-top: 55px;
-  padding-bottom: 55px;
-
-  img.recent-client-img {
-    display: block;
-    max-height: 520px;
-    width: 600px;
-    margin: 0 auto;
-  }
-
-  p.heading {
-    font-size: 42px;
-    font-weight: 100;
-    line-height: 49.55px;
-    margin-bottom: 60px;
-  }
-
-  .recent-client-text {
-
-    h2 {
-      color: $theme-color-pink;
-      border-bottom: 1px dotted #d4d4d4;
-    }
-
-    p {
-      padding-top: 5px;
-      padding-bottom: 15px;
-      border-bottom: 1px dotted #d4d4d4;
-    }
-
-    a {
-      color: $theme-color-pink;
-      border-bottom: 1px solid transparent;
-
-      &.view-work {
-        display: inline-block;
-        margin-top: 10px;
-
-        &:hover {
-          border-bottom: 1px solid $theme-color-pink;
-        }
+      @media (max-width: $screen-sm) {
+        padding-top: 10px;
       }
 
-      &.red-btn {
+      @media (max-width: $screen-xs) {
+        padding-top: 0;
+      }
+
+      li {
         display: block;
-        width: 140px;
-        background-color: $theme-color-pink;
-        color: white;
-        font-size: 22px;
-        font-weight: 100;
-        margin-top: 55px;
-        padding: 15px 15px 15px 25px;
-        -webkit-border-radius: 6px;
-        -moz-border-radius: 6px;
-        border-radius: 6px;
+        font-size: 30px;
+        line-height: 1.5;
+      }
 
-        &:after {
-          content: url('/img/arrow-right.png') no-repeat;
-          margin-left: 15px
+    }
+
+  }
+
+  /* OUR SERVICES */
+
+  .our-services {
+    background-color: $grey-bg;
+    padding: 40px 0 108px 0;
+    border-top: 1px solid #E4E4E4;
+    border-bottom: 1px solid #E4E4E4;
+
+    h1 { margin-bottom: 60px; }
+
+    .service-item {
+      text-align: center;
+
+      img {
+        @include img-center;
+      }
+
+      a {
+        display: inline-block;
+        font-size: 18px;
+        color: $theme-color-pink;
+
+          &:hover {
+          @include border-bottom-pink;
+        }
+      }
+    }
+  }
+
+  @media (max-width: $screen-md) {
+    .service-item a {
+      margin: 20px 0 60px 0;
+    }
+
+    .service-item:last-child a{
+      margin-bottom: 0;
+    }
+  }
+
+  /* RECENT WORK */
+
+  .recent-work {
+    padding-top: 55px;
+    padding-bottom: 55px;
+
+    img.recent-client-img {
+      display: block;
+      max-height: 520px;
+      width: 600px;
+      margin: 0 auto;
+    }
+
+    p.heading {
+      font-size: 42px;
+      font-weight: 100;
+      line-height: 49.55px;
+      margin-bottom: 60px;
+    }
+
+    .recent-client-text {
+
+      h2 {
+        color: $theme-color-pink;
+        border-bottom: 1px dotted #d4d4d4;
+      }
+
+      p {
+        padding-top: 5px;
+        padding-bottom: 15px;
+        border-bottom: 1px dotted #d4d4d4;
+      }
+
+      a {
+        color: $theme-color-pink;
+        border-bottom: 1px solid transparent;
+
+        &.view-work {
+          display: inline-block;
+          margin-top: 10px;
+
+          &:hover {
+            border-bottom: 1px solid $theme-color-pink;
+          }
         }
 
-        @media (min-width: $screen-md) {
-          &:hover {
-            background-color: $theme-color-dark-pink;
+        &.red-btn {
+          display: block;
+          width: 140px;
+          background-color: $theme-color-pink;
+          color: white;
+          font-size: 22px;
+          font-weight: 100;
+          margin-top: 55px;
+          padding: 15px 15px 15px 25px;
+          -webkit-border-radius: 6px;
+          -moz-border-radius: 6px;
+          border-radius: 6px;
+
+          &:after {
+            content: url('/img/arrow-right.png') no-repeat;
+            margin-left: 15px
+          }
+
+          @media (min-width: $screen-md) {
+            &:hover {
+              background-color: $theme-color-dark-pink;
+            }
           }
         }
       }
-    }
 
-  }
-}
-
-@media (max-width: $screen-md) {
-  .recent-work {
-    .recent-client-text {
-      text-align: center;
-      margin: 0 40px;
-      padding-top: 20px;
-
-        a.red-btn {
-          margin: 20px auto 63px;;
-        }
-    }
-
-  }
-}
-
-/* OUR CLIENTS */
-.our-clients {
-  background: url('/img/testimonial-background.png') repeat-x, #e4e4e4;
-  background-size: auto 100%;
-  padding: 50px 0 78px 0;
-  color: white;
-  text-align: center;
-
-  .row {
-    position: relative;
-  }
-
-  p.heading {
-    font-size: 42px;
-    font-weight: lighter;
-  }
-
-  @media (max-width: $screen-xs) {
-    p.heading {
-      font-size: 30px;
     }
   }
 
-  h3 {
-    margin-bottom: 0;
-    line-height: 35.55px;
-  }
+  @media (max-width: $screen-md) {
+    .recent-work {
+      .recent-client-text {
+        text-align: center;
+        margin: 0 40px;
+        padding-top: 20px;
 
-  h4 {
-    font-size: 16px;
-    line-height: 25.55px;
-    margin-top: 0;
-    margin-bottom: 10px;
-  }
-
-  .slider {
-    margin-top: 100px;
-    display: inline-block;
-    width: 46px;
-    height: 46px;
-    cursor: pointer;
-    position: absolute;
-    top: 3%;
-
-    a {
-      width: 100%;
-      height: 100%;
-    }
-  }
-
-  #left-slider {
-    background: url('/img/arrow-slider-left-normal.png') no-repeat;
-    left: 10%;;
-    z-index: 30;
-
-    &:hover {
-      background: url('/img/arrow-slider-left-hover.png') no-repeat;
-    }
-
-    @media (min-width: $screen-xxs) and (max-width: $screen-xs) {
-      background-size: 35px;
-      top: 4%;
-      left: 8%;
-
-      &:hover {
-        background-size: 35px;
-      }
-    }
-
-    @media (max-width: $screen-xxs) {
-      top: 9%;
-    }
-
-  }
-
-  #right-slider {
-    background: url('/img/arrow-slider-right-normal.png') no-repeat;
-    right: 10%;;
-    z-index: 30;
-
-    &:hover {
-      background: url('/img/arrow-slider-right-hover.png') no-repeat;
-    }
-
-    @media (min-width: $screen-xxs) and (max-width: $screen-xs) {
-      background-size: 35px;
-      top: 4%;
-      right: 5%;;
-
-      &:hover {
-        background-size: 35px;
-      }
-    }
-
-    @media (max-width: $screen-xxs) {
-      top: 9%;
-    }
-
-  }
-
-  .our-customer-img {
-    margin-top: 60px;
-
-    .carousel-inner {
-      height: 410px;
-
-      @media (max-width: $screen-xs) {
-        height: 425px;
-      }
-    }
-
-    .carousel-caption .client-testimonial {
-        width: 50%;
-        margin: 0 auto;
-
-      @media (max-width: $screen-sm) {
-        width: 100%;
-        height: 60px;
+          a.red-btn {
+            margin: 20px auto 63px;;
+          }
       }
 
-      @media (max-width: $screen-xs) {
-        height: 70px;
-      }
-    }
-
-    img {
-      display: block;
-      margin: 0 auto;
-      width: 107px;
     }
   }
 
-  .our-customer-btn {
-      margin-top: 35px;
-
-    a.button-with-icon {
-      margin-top: 5px;
-
-      @media (max-width: $screen-xxs) {
-        display: block;
-        width: 80%;
-        margin: 0 auto 10px;
-      }
-    }
-  }
-}
-
-@media (max-width: $screen-sm) {
+  /* OUR CLIENTS */
   .our-clients {
+    background: url('/img/testimonial-background.png') repeat-x, #e4e4e4;
+    background-size: auto 100%;
+    padding: 50px 0 78px 0;
+    color: white;
+    text-align: center;
+
+    .row {
+      position: relative;
+    }
+
+    p.heading {
+      font-size: 42px;
+      font-weight: lighter;
+    }
+
+    @media (max-width: $screen-xs) {
+      p.heading {
+        font-size: 30px;
+      }
+    }
+
+    h3 {
+      margin-bottom: 0;
+      line-height: 35.55px;
+    }
+
     h4 {
       font-size: 16px;
+      line-height: 25.55px;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .slider {
+      margin-top: 100px;
+      display: inline-block;
+      width: 46px;
+      height: 46px;
+      cursor: pointer;
+      position: absolute;
+      top: 3%;
+
+      a {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    #left-slider {
+      background: url('/img/arrow-slider-left-normal.png') no-repeat;
+      left: 10%;;
+      z-index: 30;
+
+      &:hover {
+        background: url('/img/arrow-slider-left-hover.png') no-repeat;
+      }
+
+      @media (min-width: $screen-xxs) and (max-width: $screen-xs) {
+        background-size: 35px;
+        top: 4%;
+        left: 8%;
+
+        &:hover {
+          background-size: 35px;
+        }
+      }
+
+      @media (max-width: $screen-xxs) {
+        top: 9%;
+      }
+
+    }
+
+    #right-slider {
+      background: url('/img/arrow-slider-right-normal.png') no-repeat;
+      right: 10%;;
+      z-index: 30;
+
+      &:hover {
+        background: url('/img/arrow-slider-right-hover.png') no-repeat;
+      }
+
+      @media (min-width: $screen-xxs) and (max-width: $screen-xs) {
+        background-size: 35px;
+        top: 4%;
+        right: 5%;;
+
+        &:hover {
+          background-size: 35px;
+        }
+      }
+
+      @media (max-width: $screen-xxs) {
+        top: 9%;
+      }
+
+    }
+
+    .our-customer-img {
+      margin-top: 60px;
+
+      .carousel-inner {
+        height: 410px;
+
+        @media (max-width: $screen-xs) {
+          height: 425px;
+        }
+      }
+
+      .carousel-caption .client-testimonial {
+          width: 50%;
+          margin: 0 auto;
+
+        @media (max-width: $screen-sm) {
+          width: 100%;
+          height: 60px;
+        }
+
+        @media (max-width: $screen-xs) {
+          height: 70px;
+        }
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        width: 107px;
+      }
+    }
+
+    .our-customer-btn {
+        margin-top: 35px;
+
+      a.button-with-icon {
+        margin-top: 5px;
+
+        @media (max-width: $screen-xxs) {
+          display: block;
+          width: 80%;
+          margin: 0 auto 10px;
+        }
+      }
     }
   }
-}
 
-// bootstrap classes overrides
-.carousel-control.left, .carousel-control.right {
-  background-image: none;
-}
+  @media (max-width: $screen-sm) {
+    .our-clients {
+      h4 {
+        font-size: 16px;
+      }
+    }
+  }
 
-.carousel-control.right {
-  left: 0;
-}
+  // bootstrap classes overrides
+  .carousel-control.left, .carousel-control.right {
+    background-image: none;
+  }
 
-.carousel-caption {
-  position: static;
-  padding-top: 0;
+  .carousel-control.right {
+    left: 0;
+  }
+
+  .carousel-caption {
+    position: static;
+    padding-top: 0;
+  }
+
 }
