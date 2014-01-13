@@ -59,7 +59,7 @@ if (!is_admin()) {
   }
 
   // Add proxima-nova font from typekit
-  add_filter( 'wp_head', 'add_typekit_font' );
+  add_filter( 'wp_footer', 'add_typekit_font' );
   function add_typekit_font() {
     echo '<script type="text/javascript" src="//use.typekit.net/pfx5bei.js"></script>';
     echo '<script type="text/javascript">try{Typekit.load();}catch(e){}</script>';
