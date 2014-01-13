@@ -69,6 +69,24 @@
     position: relative;
     margin-bottom: 60px;
 
+    &:before, &:after {
+      content: "";
+      position: absolute;
+      background: #797979;
+      opacity: 0.1;
+      top: 0;
+      bottom: 0;
+      width: 9999px;
+    }
+
+    &:before {
+      right: 100%;
+    }
+
+    &:after {
+      left: 100%;
+    }
+
     .translucent-layer {
       width: 100%;
       background: #797979;

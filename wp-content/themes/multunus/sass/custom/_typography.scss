@@ -3,6 +3,12 @@ $theme-color-dark-pink: #b01732;
 $theme-header-color: #bd1f3a;
 $grey-bg: #f1f1f1;
 
+html {
+  // team detail: grey background stretches to full with
+  // hides horizontal scrollbars
+  overflow-x: hidden;
+}
+
 html, body {
   font-family: $font-family-sans-serif;
   font-weight: 400;
