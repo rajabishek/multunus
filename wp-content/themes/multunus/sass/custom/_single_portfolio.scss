@@ -61,20 +61,31 @@
             display: none;
           }
         }
+
+        .screenshot {
+          position: absolute;
+          top: 5.76%;
+          left: 10.31%;
+          width: 79.86%;
+          //height: 80.95%;
+        }
       }
     }
 
     .nexus-5, .iphone {
       .app-image {
-        margin-top: 290px;
+        margin-top: 333px;
         width: 194px;
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
 
         &.left {
           margin-right: 30px;
         }
 
         &.center {
-          margin-top: 140px;
+          margin-top: 170px;
           width: 275px;
         }
 
@@ -108,20 +119,23 @@
       }
     }
 
-    &.iphone {
-      .app-image {
+    .nexus-5 {
+      .screenshot {
+        position: absolute;
+        top: 8.45%;
+        left: 2.72%;
+        width: 93.95%;
+        //height: 83.7%;
+      }
+    }
 
-        &.left {
-
-        }
-
-        &.center {
-
-        }
-
-        &.right {
-
-        }
+    .iphone {
+      .screenshot {
+        position: absolute;
+        top: 13.71%;
+        left: 7.7%;
+        width: 84.6%;
+        //height: 72.25%;
       }
     }
   }

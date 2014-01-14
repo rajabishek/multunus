@@ -9,8 +9,8 @@
       'post_type' => 'portfolio',
       'posts_per_page'   => 1,
       'order'            => 'ASC');
-    $next = get_posts($args);
-    $next_post = $next[0];
+    $next_posts = get_posts($args);
+    $next_post = $next_posts[0];
   }
 
   $previous_post = get_previous_post();
@@ -18,8 +18,8 @@
     $args = array(
       'post_type' => 'portfolio',
       'posts_per_page'   => 1);
-    $previous = get_posts($args);
-    $previous_post = $previous[0];
+    $previous_posts = get_posts($args);
+    $previous_post = $previous_posts[0];
   }
   ?>
 
@@ -29,9 +29,17 @@
       <div class="overlay"></div>
       <img class="background" src="<?php the_field('background_image'); ?>"></img>
       <div class="app-images-container container <?php the_field('display_device'); ?>">
-        <img class="app-image left" src="<?php the_field('app_image_left'); ?>"></img>
-        <img class="app-image center" src="<?php the_field('app_image_center'); ?>"></img>
-        <img class="app-image right" src="<?php the_field('app_image_right'); ?>"></img>
+        
+        <?php foreach (array(1 => "left", 2 => "center", 3 => "right") as $position) {
+          $device_image_src = '/img/' . get_field('display_device') . '.png';         
+          $screenshot_src = get_field('app_image_' . $position);
+        
+          echo '<div class="app-image ' . $position . '" >';
+          echo '<img src="' . $device_image_src . '"></img>';
+          echo '<img class="screenshot" src="' . $screenshot_src . '"></img>';
+          echo '</div>';          
+        } ?>
+
       </div>
     </div>
 
