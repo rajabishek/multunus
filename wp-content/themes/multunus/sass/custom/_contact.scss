@@ -7,6 +7,10 @@
 
   #map {
     height: 600px;
+
+    img {
+      max-width: none;
+    }
   }
 
   #map-content {
