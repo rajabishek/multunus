@@ -74,7 +74,7 @@
           $portfolio_item = get_posts( array(
             'post_type' => 'portfolio',
             'posts_per_page' => -1, // Unlimited posts
-            'meta_key' => 'portfolio_category',
+            'meta_key' => 'category',
             'meta_value' => 'web',
             'orderby' => 'title' // Order alphabetically by name
           ) );
@@ -90,7 +90,7 @@
               <figcaption>
                 <p class="name"><?php the_title(); ?></p>
                 <p class="category">
-                  <?php echo get_field('portfolio_category') == "web" ? "Web Application" : "Mobile Application"; ?>
+                  <?php echo get_field('category') == "web" ? "Web Application" : "Mobile Application"; ?>
                 </p>
               </figcaption>
             </a>
@@ -147,7 +147,7 @@
           $portfolio_item = get_posts( array(
             'post_type' => 'portfolio',
             'posts_per_page' => -1, // Unlimited posts
-            'meta_key' => 'portfolio_category',
+            'meta_key' => 'category',
             'meta_value' => 'mobile',
             'orderby' => 'title' // Order alphabetically by name
           ) );
@@ -163,7 +163,7 @@
               <figcaption>
                 <p class="name"><?php the_title(); ?></p>
                 <p class="category">
-                  <?php echo get_field('poftfolio_category') == "web" ? "Web Application" : "Mobile Application"; ?>
+                  <?php echo get_field('category') == "web" ? "Web Application" : "Mobile Application"; ?>
                 </p>
               </figcaption>
             </a>
