@@ -3,7 +3,6 @@
   margin-bottom: 65px;
 
   figure {
-    margin-top: 12px;
     margin-bottom: 30px;
 
     a {
@@ -19,6 +18,7 @@
   figcaption {
     background: url("/img/arrow-right-red.png") no-repeat right, #f1f1f1;
     font-size: 1.35em;
+    height: 65px;
     padding: 10px;
     border-right: 16px solid transparent;
 
@@ -26,8 +26,14 @@
       margin: 0;
       line-height: 1.2;
 
+      &.name {
+        font-weight: 600;
+      }
+
       &.category {
         color: #999999;
+        font-weight: 300;
+        font-size: 16px;
       }
     }
 
