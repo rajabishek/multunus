@@ -9,7 +9,10 @@
 <div class="video-section-container contact-page">
   <div class="overlay">
     <div class="overlay-content">
-      <h1 id="quote">We'd love to hear from you.</h1>
+      <h1 id="quote">Namaste! We'd love to hear from you.</h1>
+        <div class="hidden-xs">
+          <div rel="#main-content" class="btn-red">Get in Touch<span></span></div>
+        </div>
     </div>
   </div>
 
@@ -19,24 +22,8 @@
   </video>
 </div>
 
-<section class="get-in-touch">
-  <div class="container">
-    <h1 class="align-center">Get in touch with us</h1>
-    <div class="row">
-      <div class="contact-enquiry align-center col-xs-5 col-xs-offset-1 col-md-3 col-md-offset-3">
-        <img src="/img/email-contactus.png" />
-        <h5>Enquiry</h5>
-        <a href="mailto:info@multunus.com">info@multunus.com</a>
-      </div>
-      <div class="contact-enquiry align-center col-md-3">
-        <img src="/img/phone-contactus.png" />
-        <h5>India</h5>
-        <a href="tel:+918065702964">+918065702964</a>
-      </div>
-    </div><!-- end of row -->
-
-    <h1 class="align-center">Find us on the map</h1>
-  </div><!-- end of container -->
+<section id="main-content" class="container">
+  <h1 class="align-center">Find us on the map</h1>
 </section><!-- end of get-in-touch -->
 
 <section class="multunus-gmap">
@@ -47,7 +34,9 @@
     <script type="text/javascript">var submitted=false;</script>
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='whateveryourredirectis.html';}"></iframe>
 
-    <h2>Drop A line</h2>
+    <h2>Write To Us</h2>
+    <a href="mailto:info@multunus.com" class="mail-us hidden-ipad">Or Just email us at info@multunus.com</a>
+    <a href="mailto:info@multunus.com" class="mail-us visible-ipad">Email us at info@multunus.com</a>
     <?php echo $response; ?>
     <form action="http://docs.google.com/a/multunus.com/spreadsheet/formResponse?formkey=dDRNZFlZYUxqbGNpSEpzVGhiU2JZR1E6MQ&amp;ifq" method="POST" target="hidden_iframe" id="ss-form">
       <div class="form-group ss-form-entry">

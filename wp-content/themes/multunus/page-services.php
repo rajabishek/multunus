@@ -48,11 +48,11 @@
             setup_postdata($post);
         ?>
 
-          <div class="col-md-3 col-md-offset-1 tech-image">
+          <div class="col-md-4 tech-image">
             <?php if ( has_post_thumbnail()  ) { the_post_thumbnail();  } ?>
           </div>
 
-          <div class="col-md-8 tech-text">
+          <div class="col-md-8 tech-text post">
             <h2><?php the_title(); ?></h2>
             <p><?php the_content(); ?></p>
           </div>
@@ -121,11 +121,11 @@
             $count++; 
         ?>
 
-          <div class="col-md-3 col-md-offset-1 tech-image">
+          <div class="col-md-4 tech-image">
             <?php if ( has_post_thumbnail()  ) { the_post_thumbnail();  } ?>
           </div>
 
-          <div class="col-md-8 tech-text">
+          <div class="col-md-8 tech-text post">
             <h2><?php the_title(); ?></h2>
             <p><?php the_content(); ?></p>
           </div>

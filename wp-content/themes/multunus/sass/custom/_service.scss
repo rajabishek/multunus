@@ -6,7 +6,7 @@
   }
 
   li {
-    padding: 10px 35px 10px 0;
+    padding: 10px 0;
     border-right: 1px solid #e3e3e3;
 
     a {
@@ -20,12 +20,12 @@
 
     &.active a {
       border-bottom: 4px solid $theme-color-pink;
-      padding-bottom: 15px;
+      padding-bottom: 12px;
       color: $theme-color-pink;
     }
 
     &:first-child {
-      padding-left: 45px !important;
+      padding-right: 35px;
     }
 
     &:last-child {
@@ -42,6 +42,10 @@
 
 .technology-section div:nth-child(4n+1) {
   float: right;
+
+  img {
+    float: right;
+  }
 }
 
 .tech-image {

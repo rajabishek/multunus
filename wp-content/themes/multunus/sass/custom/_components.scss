@@ -227,3 +227,20 @@ form {
   background: url("/img/arrow-right-red.png") no-repeat;
   vertical-align: middle;
 }
+
+.visible-ipad {
+  @media (max-width: 1024px) {
+    display: block !important;
+  }
+
+  @media (min-width: 1024px) {
+    display: none !important;
+  }
+}
+
+.hidden-ipad {
+  @media (max-width: 1024px) {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
