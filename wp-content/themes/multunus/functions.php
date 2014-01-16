@@ -58,6 +58,14 @@ if (!is_admin()) {
     }
   }
 
+  add_action('wp_enqueue_scripts', 'portfolio_script', 15);
+  function portfolio_script() {
+    if (is_page('portfolio')) {
+      wp_register_script( 'portfolio', get_template_directory_uri() . '/js/portfolio.js', array( 'jquery' ), null, true );
+      wp_enqueue_script('portfolio');
+    }
+  }
+
   // Add proxima-nova font from typekit
   add_filter( 'wp_footer', 'add_typekit_font' );
   function add_typekit_font() {

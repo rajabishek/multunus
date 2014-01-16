@@ -28,20 +28,21 @@ if ( $portfolio_item ):
   <ul class="list-inline category-list-desktop hidden-xs">
     <li class="categories-label"><span>Platforms:</span></li>
     <li class="active"><a data-category="all">All</a></li>
-    <li><a data-category="web">Web Apps</a></li>
-    <li><a data-category="mobile">Mobile Web</a></li>
-    <li><a data-category="mobile">iOS</a></li>
-    <li><a data-category="mobile">Android</a></li>
+    <li><a data-category="Web">Web</a></li>
+    <li><a data-category="Mobile Web">Mobile Web</a></li>
+    <li><a data-category="iOS">iOS</a></li>
+    <li><a data-category="Android">Android</a></li>
   </ul>
 
   <ul class="list-inline category-list-desktop hidden-xs">
-    <li class="categories-label"><span>Domain:</span></li>
+    <li class="categories-label"><span>Domains:</span></li>
     <li><a data-category="all">All</a></li>
-    <li><a data-category="web">Finance</a></li>
-    <li><a data-category="mobile">Consumer</a></li>
-    <li><a data-category="mobile">Media</a></li>
-    <li><a data-category="mobile">Health</a></li>
-    <li><a data-category="mobile">Education</a></li>
+    <li><a data-category="Finance">Finance</a></li>
+    <li><a data-category="Consumer">Consumer</a></li>
+    <li><a data-category="Media">Media</a></li>
+    <li><a data-category="Health">Health</a></li>
+    <li><a data-category="Education">Education</a></li>
+    <li><a data-category="Enterprise Mobility">Enterprise Mobility</a></li>
   </ul>
 
   <div class="visible-xs category-list-mobile dropdown-container">
@@ -52,15 +53,17 @@ if ( $portfolio_item ):
       </button>
       <ul class="dropdown-menu" role="menu">
         <li class="active"><a data-category="all">All</a></li>
-        <li><a data-category="web">Web Apps</a></li>
-        <li><a data-category="mobile">Mobile Web</a></li>
-        <li><a data-category="ios">iOS</a></li>
-        <li><a data-category="android">Andriod</a></li>
-        <li><a data-category="finance">Finance</a></li>
-        <li><a data-category="consumer">Consumer</a></li>
-        <li><a data-category="media">Media</a></li>
-        <li><a data-category="health">Health</a></li>
-        <li><a data-category="education">Education</a></li>
+        <li><a data-category="Web">Web</a></li>
+        <li><a data-category="Mobile Web">Mobile Web</a></li>
+        <li><a data-category="iOS">iOS</a></li>
+        <li><a data-category="Android">Android</a></li>
+        <li><a data-category="all">All</a></li>
+        <li><a data-category="Finance">Finance</a></li>
+        <li><a data-category="Consumer">Consumer</a></li>
+        <li><a data-category="Media">Media</a></li>
+        <li><a data-category="Health">Health</a></li>
+        <li><a data-category="Education">Education</a></li>
+        <li><a data-category="Enterprise Mobility">Enterprise Mobility</a></li>
       </ul>
     </div>
   </div>
