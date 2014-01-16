@@ -4,8 +4,6 @@
  */
 get_header();
 
-the_post();
-
 // Get 'team' posts
 $team_posts = get_posts( array(
     'post_type' => 'team',

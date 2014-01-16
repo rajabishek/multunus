@@ -112,7 +112,7 @@ if (function_exists('register_sidebar')) {
      'name' => _x("Portfolio", "post type general name"),
      'singular_name' => _x("Portfolio", "post type singular name"),
      'menu_name' => 'Portfolio',
-     'add_new' => _x("Add New", "team item"),
+     'add_new' => _x("Add New", "portfolio item"),
      'add_new_item' => __("Add New Project"),
      'edit_item' => __("Edit Project"),
      'new_item' => __("New Project"),
@@ -191,6 +191,35 @@ function services_post_type() {
   ) );
 }
 add_action( 'init', 'services_post_type', 0 );
+
+// Register `why_us` post type
+function why_us_post_type() {
+  // Labels
+  $labels = array(
+    'name' => _x("Why Us Posts", "post type general name"),
+    'singular_name' => _x("Why Us Post", "post type singular name"),
+    'menu_name' => 'Why Us Posts',
+    'add_new' => _x("Add New", "post item"),
+    'add_new_item' => __("Add New Post"),
+    'edit_item' => __("Edit Post"),
+    'new_item' => __("New Post"),
+    'view_item' => __("View Post"),
+    'search_items' => __("Search Posts"),
+    'not_found' =>  __("No Posts Found"),
+    'not_found_in_trash' => __("No Posts Found in Trash"),
+    'parent_item_colon' => ''
+  );
+
+  // Register post type
+  register_post_type('why_us' , array(
+    'labels' => $labels,
+    'public' => true,
+    'has_archive' => false,
+    'rewrite' => false,
+    'supports' => array('title', 'editor', 'thumbnail')
+  ) );
+}
+add_action( 'init', 'why_us_post_type', 0 );
 
 // Add Featured Image
 add_theme_support('post-thumbnails');

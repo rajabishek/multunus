@@ -4,8 +4,6 @@
  */
 get_header();
 
-the_post();
-
 // Get 'portfolio' posts
 $portfolio_item = get_posts( array(
     'post_type' => 'portfolio',
