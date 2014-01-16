@@ -50,10 +50,10 @@ if ( $team_posts ):
   </div>
 </aside>
 
-<section class="container clearfix team-images">
+<section class="overflow-fix">
+  <div class="container clearfix team-images">
     <aside class="profile hidden">
-      <div class="translucent-layer">
-      </div>
+      <div class="translucent-layer"></div>
       <div class="container">
         <div class="row">
           <div class="image-container col-sm-6 col-xs-12">
@@ -88,9 +88,9 @@ if ( $team_posts ):
                   </a>
                 </li-->
               </ul>
-            </div>
-        </div>
-      </div>
+            </div><!-- end of description -->
+        </div><!-- end of row -->
+      </div><!-- end of container -->
     </aside>
     <div class="row">
     <?php
@@ -112,6 +112,7 @@ if ( $team_posts ):
     </figure>
 
     <?php endforeach; ?>
+  </div>
   </div>
 </section>
 <?php get_footer(); ?>
