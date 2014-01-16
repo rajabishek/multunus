@@ -28,10 +28,21 @@ if ( $portfolio_item ):
 
 <aside class="container portfolio-filter category-filter">
   <ul class="list-inline category-list-desktop hidden-xs">
-    <li class="categories-label"><span>Show:</span></li>
+    <li class="categories-label"><span>Platform:</span></li>
     <li class="active"><a data-category="all">All</a></li>
     <li><a data-category="web">Web Apps</a></li>
-    <li><a data-category="mobile">Mobile Apps</a></li>
+    <li><a data-category="mobile">Mobile Web</a></li>
+    <li><a data-category="mobile">iOS</a></li>
+    <li><a data-category="mobile">Android</a></li>
+  </ul>
+
+  <ul class="list-inline category-list-desktop hidden-xs">
+    <li class="categories-label"><span>Domain:</span></li>
+    <li><a data-category="web">Finance</a></li>
+    <li><a data-category="mobile">Consumer</a></li>
+    <li><a data-category="mobile">Media</a></li>
+    <li><a data-category="mobile">Health</a></li>
+    <li><a data-category="mobile">Education</a></li>
   </ul>
 
   <div class="visible-xs category-list-mobile dropdown-container">
@@ -43,7 +54,14 @@ if ( $portfolio_item ):
       <ul class="dropdown-menu" role="menu">
         <li class="active"><a data-category="all">All</a></li>
         <li><a data-category="web">Web Apps</a></li>
-        <li><a data-category="mobile">Mobile Apps</a></li>
+        <li><a data-category="mobile">Mobile Web</a></li>
+        <li><a data-category="ios">iOS</a></li>
+        <li><a data-category="android">Andriod</a></li>
+        <li><a data-category="finance">Finance</a></li>
+        <li><a data-category="consumer">Consumer</a></li>
+        <li><a data-category="media">Media</a></li>
+        <li><a data-category="health">Health</a></li>
+        <li><a data-category="education">Education</a></li>
       </ul>
     </div>
   </div>
@@ -63,7 +81,7 @@ if ( $portfolio_item ):
         <figcaption>
           <p class="name"><?php the_title(); ?></p>
           <p class="category">
-            <?php echo get_field('category') == "web" ? "Web Application" : "Mobile Application"; ?>
+            <?php echo the_field('category'); ?>
           </p>
         </figcaption>
       </a>
