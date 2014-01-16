@@ -67,6 +67,11 @@
           padding-top: 0;
           display: block !important;
           opacity: 1 !important;
+          border-bottom: 1px solid #e3e3e3;
+
+          &:last-child {
+            border-bottom: none;
+          }
 
           h1, h4 {
             line-height: 1;
@@ -92,7 +97,7 @@
 
     .tab {
       text-align: center;
-      padding: 15px;
+      padding: 11px;
       border-right: 1px solid #e3e3e3;
       font-size: 20px;
 
@@ -111,7 +116,7 @@
       &.active {
         a {
           border-bottom: 4px solid #d22341;
-          padding-bottom: 17px;
+          padding-bottom: 13px;
           color: #d22341;
         }
       }
@@ -127,9 +132,22 @@
         padding-top: 0;
       }
 
+      .post {
+        ul {
+          margin-left: 28px;
+        }
+      }
+
+      .title {
+        margin-bottom: 12px;
+      }
+
       .video-container {
+        padding-top: 6px;
+
         @media (max-width: $screen-sm) {
           text-align: center;
+          padding-top: 0;
         }
 
         iframe {
@@ -143,15 +161,23 @@
         }
 
         .quote {
-          margin-top: 36px;
+          margin: 0;
           text-align: center;
+          font-size: 25px;
+          font-weight: 100;
+          line-height: 1.45;
+          padding: 35px 18px;
         }
       }
     }
 
-    .post:nth-child(4n+1) {
+    .post:nth-child(2n+1) {
       .video-summary {
-        float: right;
+        @include make-md-column-pull(6);
+      }
+
+      .video-container {
+        @include make-md-column-push(6);
       }
     }
   }

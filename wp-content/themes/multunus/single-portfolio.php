@@ -29,15 +29,15 @@
       <div class="overlay"></div>
       <img class="background" src="<?php the_field('background_image'); ?>"></img>
       <div class="app-images-container container <?php the_field('display_device'); ?>">
-        
+
         <?php foreach (array(1 => "left", 2 => "center", 3 => "right") as $position) {
-          $device_image_src = '/img/' . get_field('display_device') . '.png';         
+          $device_image_src = '/img/' . get_field('display_device') . '.png';
           $screenshot_src = get_field('app_image_' . $position);
-        
+
           echo '<div class="app-image ' . $position . '" >';
           echo '<img src="' . $device_image_src . '"></img>';
           echo '<img class="screenshot" src="' . $screenshot_src . '"></img>';
-          echo '</div>';          
+          echo '</div>';
         } ?>
 
       </div>
@@ -74,13 +74,18 @@
               </img>
               <h3><?php the_field('customer_name'); ?></h3>
               <p class="customer-org"><?php the_field('customer_organization'); ?></p>
+
+              <?php if(get_field('customer_quote') != "") { ?>
               <p>"<?php the_field('customer_quote'); ?>"</p>
+              <?php } ?>
+
               <?php if(get_field('customer_video') != "") { ?>
               <a class="button-with-icon client-video" href="<?php the_field('customer_video'); ?>">
                 <span id="reel-icon"></span>
                 <span class="underline">Watch Video</span>
               </a>
               <?php } ?>
+
             </div>
             <div class="jagged-pattern">
             </div>
