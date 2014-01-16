@@ -22,12 +22,6 @@
 
 <article class="founder-quote">
   <div class="container">
-    <div class="col-md-8 quote-text">
-      <p>At Multunus, we do a lot of things differently. But it starts from the way we hire. We look for people who're likely to make this place more friendly, more transparent,
-        more fun, more disciplined, more mindful, more bold, more customer focused.</p>
-      <p id="founder"><span id="name">Vaidy</span>, <em>Founder & CEO</em></p>
-    </div>
-
     <div class="col-md-4 quote-video">
       <a id="founder-video" href="http://www.youtube.com/v/-K0U9ppL7N0&autoplay=1">
         <img src="/img/founder.jpg" />
@@ -35,19 +29,25 @@
       </a>
 
       <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-            </div>
-            <div class="modal-body">
-              <iframe width="400" height="300" frameborder="0" allowfullscreen=""></iframe>
-            </div>
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          </div>
+          <div class="modal-body">
+            <iframe width="400" height="300" frameborder="0" allowfullscreen=""></iframe>
           </div>
         </div>
       </div><!-- end of myModal -->
 
+    </div><!-- end of quote-video -->
+
+    <div class="col-md-8 quote-text">
+      <p>At Multunus, we do a lot of things differently. But it starts from the way we hire. We look for people who're likely to make this place more friendly, more transparent,
+        more fun, more disciplined, more mindful, more bold, more customer focused.</p>
+      <p id="founder"><span id="name">Vaidy</span>, <em>Founder & CEO</em></p>
     </div>
-  </div>
+
+  </div><!-- end of container -->
 </article>
 
 <article class="career-values">
@@ -58,7 +58,7 @@
         <h1>5 reasons to work here:</h1>
       </div>
 
-      <div class="col-md-7">
+      <div class="col-md-7 why-work-here" >
         <ul>
           <li><span>You'll love our hacknights.</span></li>
           <li><span>Get high by shipping working software every 2 days.</span></li>
@@ -112,7 +112,7 @@
             $offset_num = 4;
             break;
           case 2:
-              $offset_num = 3;
+              $offset_num = 2;
               break;
           case 3:
               $offset_num = 1;
@@ -127,19 +127,21 @@
         $permalink = post_permalink($children->ID);
 
         if ($i == 0) {
-          echo '<div class="career-position col-md-3 col-md-offset-' . $offset_num . '">';
+          echo '<div class="col-md-4 col-md-offset-' . $offset_num . '">';
         }
         else {
-          echo '<div class="career-position col-md-3">';
+          echo '<div class="col-md-4">';
         }
         $i++;
     ?>
 
-        <a href="<?php echo $permalink ?>">
-        <span><?php echo $title ?></span>
-        <p><?php echo $excerpt ?></p>
-        </a>
-      </div>
+      <div class="career-position">
+         <a href="<?php echo $permalink ?>">
+         <span><?php echo $title ?></span>
+         <p><?php echo $excerpt ?></p>
+         </a>
+       </div>
+     </div>
 
     <?php endforeach; ?>
     <?php endif; ?>

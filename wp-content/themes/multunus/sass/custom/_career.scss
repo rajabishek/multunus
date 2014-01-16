@@ -14,9 +14,9 @@
 
   .quote-text p {
     margin-bottom: 0px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 300;
-    line-height: 35.63px;
+    line-height: 25.55px;
 
     &#founder {
       font-size: 16px;
@@ -29,7 +29,9 @@
   }
 
   .quote-video {
-    margin-top: 47px;
+    @media (max-width: $screen-sm) {
+      margin-bottom: 20px;
+    }
   }
 
   #founder-video {
@@ -69,8 +71,8 @@
     }
   }
 
-  #company-name {
-    color: $theme-color-pink;
+  .why-work-here {
+    margin-left: 32px;
   }
 
   ul {
@@ -161,7 +163,7 @@
     text-align: center;
     margin-right: 1em;
     margin-bottom: 1em;
-    padding-bottom: 1em;
+    padding: 0 1em 1em 1em;
 
     @media (max-width: $screen-xs) {
       margin-left: 1em;
