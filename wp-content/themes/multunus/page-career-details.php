@@ -65,12 +65,9 @@
 
         <h4>FAQ</h4>
         <ol class="career-details-faq">
-          <li>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</li>
-          <p>onsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam,
-          <li>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</li>
-          <p>onsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam,
+        <?php $page = get_page_by_path( 'faq'  ); ?>
+        <?php $the_excerpt = $page->post_excerpt; ?>
+        <?php echo $the_excerpt; ?>
         </ol>
 
         <?php $permalink = get_permalink( get_page_by_path( 'faq' ) ); ?>

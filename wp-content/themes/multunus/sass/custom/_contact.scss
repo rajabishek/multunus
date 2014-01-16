@@ -2,32 +2,15 @@
 :-moz-placeholder { color: $theme-color-pink; }
 :-ms-input-placeholder { color: $theme-color-pink; }
 
-.contact-page {
-  #quote {
-    margin-top: 25%;
-  }
-}
-
-.get-in-touch {
-  h1 {
-    margin-top: 50px;
-    margin-bottom: 35px;
-  }
-
-  h5 {
-    margin-bottom: 0;
-  }
-
-  a {
-    color: $theme-color-pink;
-  }
-}
-
 .multunus-gmap {
   position: relative;
 
   #map {
     height: 600px;
+
+    img {
+      max-width: none;
+    }
   }
 
   #map-content {
@@ -84,6 +67,12 @@
     margin-top: 0;
   }
 
+  a {
+    color: $theme-color-pink;
+    display: block;
+    margin-bottom: 20px;
+  }
+
   .success {
       background-color: #6ac158;
       padding: 15px;
@@ -94,6 +83,10 @@
 
   form {
     height: 100%;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
 
     p {
       margin-bottom: 0;

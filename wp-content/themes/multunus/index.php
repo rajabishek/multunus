@@ -16,7 +16,7 @@
         <div class="dropdown-label">Categories: </div>
         <div class="btn-group dropdown">
           <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-            Recent Articles
+            All Posts
           </button>
           <ul class="dropdown-menu" role="menu">
             <?php $categories = get_categories();

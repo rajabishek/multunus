@@ -48,11 +48,11 @@
             setup_postdata($post);
         ?>
 
-          <div class="col-md-3 col-md-offset-1 tech-image">
+          <div class="col-md-4 tech-image">
             <?php if ( has_post_thumbnail()  ) { the_post_thumbnail();  } ?>
           </div>
 
-          <div class="col-md-8 tech-text">
+          <div class="col-md-8 tech-text post">
             <h2><?php the_title(); ?></h2>
             <p><?php the_content(); ?></p>
           </div>
@@ -74,7 +74,7 @@
           $portfolio_item = get_posts( array(
             'post_type' => 'portfolio',
             'posts_per_page' => -1, // Unlimited posts
-            'meta_key' => 'portfolio_category',
+            'meta_key' => 'category',
             'meta_value' => 'web',
             'orderby' => 'title' // Order alphabetically by name
           ) );
@@ -90,7 +90,7 @@
               <figcaption>
                 <p class="name"><?php the_title(); ?></p>
                 <p class="category">
-                  <?php echo get_field('portfolio_category') == "web" ? "Web Application" : "Mobile Application"; ?>
+                  <?php echo get_field('category') == "web" ? "Web Application" : "Mobile Application"; ?>
                 </p>
               </figcaption>
             </a>
@@ -121,11 +121,11 @@
             $count++; 
         ?>
 
-          <div class="col-md-3 col-md-offset-1 tech-image">
+          <div class="col-md-4 tech-image">
             <?php if ( has_post_thumbnail()  ) { the_post_thumbnail();  } ?>
           </div>
 
-          <div class="col-md-8 tech-text">
+          <div class="col-md-8 tech-text post">
             <h2><?php the_title(); ?></h2>
             <p><?php the_content(); ?></p>
           </div>
@@ -147,7 +147,7 @@
           $portfolio_item = get_posts( array(
             'post_type' => 'portfolio',
             'posts_per_page' => -1, // Unlimited posts
-            'meta_key' => 'portfolio_category',
+            'meta_key' => 'category',
             'meta_value' => 'mobile',
             'orderby' => 'title' // Order alphabetically by name
           ) );
@@ -163,7 +163,7 @@
               <figcaption>
                 <p class="name"><?php the_title(); ?></p>
                 <p class="category">
-                  <?php echo get_field('poftfolio_category') == "web" ? "Web Application" : "Mobile Application"; ?>
+                  <?php echo get_field('category') == "web" ? "Web Application" : "Mobile Application"; ?>
                 </p>
               </figcaption>
             </a>

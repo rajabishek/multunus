@@ -220,6 +220,10 @@
     .position-title { font-size: 30px; }
   }
 
+  a {
+    color: $theme-color-pink;
+  }
+
   ul {
     list-style-image: url('/img/arrow-right-red.png');
     padding-top: 14px;
