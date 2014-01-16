@@ -28,7 +28,7 @@ if ( $portfolio_item ):
 
 <aside class="container portfolio-filter category-filter">
   <ul class="list-inline category-list-desktop hidden-xs">
-    <li class="categories-label"><span>Platform:</span></li>
+    <li class="categories-label"><span>Platforms:</span></li>
     <li class="active"><a data-category="all">All</a></li>
     <li><a data-category="web">Web Apps</a></li>
     <li><a data-category="mobile">Mobile Web</a></li>
@@ -38,6 +38,7 @@ if ( $portfolio_item ):
 
   <ul class="list-inline category-list-desktop hidden-xs">
     <li class="categories-label"><span>Domain:</span></li>
+    <li><a data-category="all">All</a></li>
     <li><a data-category="web">Finance</a></li>
     <li><a data-category="mobile">Consumer</a></li>
     <li><a data-category="mobile">Media</a></li>
