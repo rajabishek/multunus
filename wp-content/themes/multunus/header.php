@@ -19,6 +19,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+  <?php include_once("analyticstracking.php") ?>
   <header>
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="navbar-header">
