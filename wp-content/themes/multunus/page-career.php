@@ -76,7 +76,6 @@
   <div class="container">
     <div class="row">
     <article class="col-md-3 col-xs-12">
-      <img src="http://placekitten.com/344/394" />
     </article>
 
     <article class="col-md-4 col-md-push-2 col-xs-12 work-with-us">
@@ -86,11 +85,9 @@
     </article>
 
     <article class="col-md-2 col-md-pull-4 col-xs-12">
-      <img src="http://placekitten.com/344/394" />
     </article>
 
     <article class="col-md-3 col-xs-12">
-      <img src="http://placekitten.com/344/394" />
     </article>
     </div>
 </div>

@@ -36,9 +36,9 @@
 
         <div class="col-md-4 big-picture-img-container">
           <figure>
-            <a href="/why-us" data-toggle="tab" class="golden-circle what-img"></a>
-            <a href="/why-us" data-toggle="tab" class="golden-circle how-img"></a>
-            <a href="/why-us" data-toggle="tab" class="golden-circle why-img"></a>
+            <a href="/why-us" class="golden-circle what-img"></a>
+            <a href="/why-us" class="golden-circle how-img"></a>
+            <a href="/why-us" class="golden-circle why-img"></a>
           </figure>
         </div>
 
