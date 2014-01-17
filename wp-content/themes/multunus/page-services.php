@@ -70,7 +70,7 @@
               <ul class="arrow-list-style">
                 <li><span>Startup idea to version 1</span></li>
                 <li><span>Enterprise Software Development [especially High Risk & Large Scale]</span></li>
-                <li><span>Product Analsis, Feature breakdown & release planning</span></li>
+                <li><span>Product Analysis, Feature breakdown & release planning</span></li>
                 <li><span>UX and UI Design (with our <a href="http://www.lollypop.biz/">awesome partner)</a></span></li>
                 <li><span>Production Deployment and Monitoring</span></li>
                 <li><span>Maintenance</span></li>
@@ -104,7 +104,7 @@
         <h4><a class="see-all-portfolio" href="<?php echo $permalink ?>">See All</a><span class="right-arrow"></span></h4>
       </div>
       <div class="row portfolio-list">
-        <?php 
+        <?php
           $portfolio_filter = array('mobile_web' => array('web', 'mobile web'),
                                      'ios_android' => array('ios', 'android'));
 

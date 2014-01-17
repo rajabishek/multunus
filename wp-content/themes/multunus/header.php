@@ -4,7 +4,6 @@
 
 <head>
   <meta charset="<?php bloginfo('charset'); ?>" />
-  <meta name="description" content="<?php bloginfo('description'); ?>">
   <meta name="author" content="Multunus">
 
   <?php if (is_search()) { ?>
