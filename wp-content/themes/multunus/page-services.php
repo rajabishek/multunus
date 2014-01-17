@@ -1,4 +1,4 @@
-<?php 
+<?php
 /*
  * Template Name: Service
  */
@@ -6,12 +6,12 @@
 
 <?php get_header(); the_post(); ?>
 
-<div class="video-section-container">
+<div class="video-section-container services-page">
   <div class="overlay">
     <div class="overlay-content">
       <h1 id="quote">A  thought project in 8 weeks</h1>
       <div class="hidden-xs">
-        <div rel="#main-content" class="btn-red">Get Started<span></span></div>
+        <div data-toggle="scroll" rel="#main-content" class="btn-red">Get Started<span></span></div>
       </div>
     </div>
   </div>
@@ -44,7 +44,7 @@
         ) );
 
         if ( $service_posts ):
-          foreach ( $service_posts as $post  ): 
+          foreach ( $service_posts as $post  ):
             setup_postdata($post);
         ?>
 
@@ -70,7 +70,7 @@
         <h3><a class="see-all-portfolio" href="<?php echo $permalink ?>">See All</a><span class="right-arrow"></span></h3>
       </div>
       <div class="row portfolio-list">
-        <?php 
+        <?php
           $portfolio_item = get_posts( array(
             'post_type' => 'portfolio',
             'posts_per_page' => -1, // Unlimited posts
@@ -116,9 +116,9 @@
 
         if ( $service_posts ):
           $count = 0;
-          foreach ( $service_posts as $post  ): 
+          foreach ( $service_posts as $post  ):
             setup_postdata($post);
-            $count++; 
+            $count++;
         ?>
 
           <div class="col-md-4 tech-image">
@@ -143,7 +143,7 @@
         <h3><a class="see-all-portfolio" href="<?php echo $permalink ?>">See All</a><span class="right-arrow"></span></h3>
       </div>
       <div class="row portfolio-list">
-        <?php 
+        <?php
           $portfolio_item = get_posts( array(
             'post_type' => 'portfolio',
             'posts_per_page' => -1, // Unlimited posts

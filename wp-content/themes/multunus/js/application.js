@@ -69,22 +69,18 @@ $(function() {
 
 });
 
-// 'explore' button should scroll to 'main-content'
-// get offset of 'main-content' from top of the viewport
-// get height of 'navbar'
-// subtract height from offset and scroll to that location
 $(document).ready(function() {
-  $('[rel=#main-content]').click(function(e) {
-    $('html, body').animate({scrollTop: $("#main-content").offset().top - $("nav").height()}, 1000);
-  });
 
-  $('[rel=#open-positions]').click(function(e) {
-    $('html, body').animate({scrollTop: $("#open-positions").offset().top - $("nav").height()}, 2000);
-  });
+  $('[data-toggle=scroll]').click(function(e) {
+    var targetElementId = $(this).attr('rel');
 
-  $('[href=#back-to-top]').click(function(e) {
-    $('html, body').animate({scrollTop: 0}, 500);
-    return false;
+    if(targetElementId === 'top') {
+      targetPosition = 0;
+    } else {
+      targetPosition = $(targetElementId).offset().top - $("nav").height(); //Offset the navbar height
+    }
+
+    $('html, body').animate({scrollTop: targetPosition}, 1000);
   });
 
   // 'recent work' video button
@@ -175,7 +171,7 @@ $(document).ready(function() {
     }
 
     $('html, body').animate({
-      scrollTop: selectedElement.position().top - 64
+      scrollTop: selectedElement.position().top - $("nav").height()
     },
     {
       duration: 'slow',

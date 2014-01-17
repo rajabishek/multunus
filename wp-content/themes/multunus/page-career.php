@@ -10,7 +10,7 @@
   <div class="overlay">
     <div class="overlay-content">
       <h1 id="quote">Build your dream. At work.</h1>
-      <div rel="#open-positions" class="btn-red">Open Positions<span></span></div>
+      <div data-toggle="scroll" rel="#test-drive" class="btn-red">Take A Test Drive<span></span></div>
     </div>
   </div>
 
@@ -72,10 +72,10 @@
   </div><!-- end of container -->
 </article>
 
-<section class="career-images">
+<section id="test-drive" class="career-images">
   <div class="container">
     <div class="row">
-    <article class="col-md-3 col-xs-12"> 
+    <article class="col-md-3 col-xs-12">
       <img src="http://placekitten.com/344/394" />
     </article>
 

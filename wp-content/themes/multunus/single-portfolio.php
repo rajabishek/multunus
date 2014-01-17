@@ -47,11 +47,8 @@
       <div class="container">
         <div class="row">
           <div class="project-title col-sm-8">
-            <?php
-            $category = get_field('category') == 'web' ? 'Web App' : 'Mobile App' ;
-            ?>
             <div class="post-title"><h1><?php the_title(); ?> </h1></div>
-            <div class="category"><span><?php echo $category; ?></span></div>
+            <div class="category"><span>Filed in: <?php the_field('category') ?></span></div>
           </div>
           <div class="col-sm-4 hidden-xs portfolio-nav">
             <a href="<?php echo get_permalink( $previous_post->ID ); ?>" class="links previous-project"></a>

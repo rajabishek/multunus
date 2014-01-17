@@ -46,7 +46,7 @@
 
       <div class="col-md-3 col-md-offset-1 career-details-sidebar">
         <div class="hidden-xs">
-          <h4>Current Openings</h4>
+          <h4>Open Positions</h4>
           <ul class="current-openings">
 
           <?php
@@ -63,7 +63,7 @@
           </ul>
         </div>
 
-        <h4>FAQ</h4>
+        <h4>FAQs</h4>
         <ol class="career-details-faq">
         <?php $page = get_page_by_path( 'faq'  ); ?>
         <?php $the_excerpt = $page->post_excerpt; ?>
@@ -71,7 +71,7 @@
         </ol>
 
         <?php $permalink = get_permalink( get_page_by_path( 'faq' ) ); ?>
-        <a id="read-faq-more" href="<?php echo $permalink ?>">Read All FAQ</a>
+        <a id="read-faq-more" href="<?php echo $permalink ?>">Read All FAQs</a>
       </div><!-- end of career-details-section -->
     </div><!-- end of row -->
   </div><!-- end of container -->

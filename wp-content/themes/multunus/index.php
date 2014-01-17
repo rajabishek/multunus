@@ -32,7 +32,7 @@
 
     </div><!-- end of blog-top -->
 
-    <h2>Recent Articles</h2>
+    <h2>All Posts</h2>
 
     <div class="row blog-row">
       <?php query_posts('posts_per_page=6&paged=' . $paged); ?>

@@ -6,10 +6,23 @@
   background-size: cover;
 
   &.mobile-device {
-    min-height: 360px;
+    min-height: 425px;
+
+    &.services-page, &.career-page, &.contact-page {
+      min-height: 470px;
+
+      .overlay-content {
+        margin: 10px;
+        margin-top: 45%;
+      }
+    }
 
     @media (min-width: $screen-sm) {
-      min-height: 700px;
+      min-height: 700px !important;
+
+      .overlay-content {
+        margin-top: 22% !important;
+      }
     }
 
     video {
@@ -42,7 +55,7 @@
 
   .overlay-content {
     display: inline-block;
-    margin-top: 15.5%;
+    margin-top: 17.5%;
 
     @media (max-width: $screen-xs) {
       margin-top: 28%;

@@ -1,12 +1,12 @@
 <?php
   /*
-   Template Name: FAQ
+   Template Name: FAQs
    */
 ?>
 
 <?php get_header(); the_post(); ?>
 
-<section class="career-faq">
+<section class="career-faq post">
   <div class="container">
     <div class="row">
 

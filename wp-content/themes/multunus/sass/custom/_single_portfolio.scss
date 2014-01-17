@@ -72,6 +72,50 @@
       }
     }
 
+    .android-tablet {
+      .app-image {
+        width: 444px;
+        top: 210px;
+        position: absolute;
+
+        &.left {
+          left: 5%;
+          @media (max-width: $screen-sm) {
+            display: none;
+          }
+        }
+
+        &.center {
+          width: 630px;
+          position: relative;
+          margin: auto;
+          z-index: 6;
+          top: 140px;
+
+          @media (max-width: $screen-sm) {
+            width: initial;
+            min-width: initial;
+            top: 185px;
+          }
+        }
+
+        &.right {
+          right: 5%;
+          @media (max-width: $screen-sm) {
+            display: none;
+          }
+        }
+
+        .screenshot {
+          position: absolute;
+          top: 5.76%;
+          left: 10.31%;
+          width: 79.86%;
+          //height: 80.95%;
+        }
+      }
+    }
+
     .nexus-5, .iphone {
       .app-image {
         margin-top: 333px;
@@ -143,7 +187,7 @@
   .title-container {
     border-bottom: 1px solid #ddd;
     box-shadow: 3px -6px 30px 8px #F3F3F3;
-    height: 90px;
+    // height: 90px;
   }
 
   .project-title, .portfolio-nav {
@@ -159,7 +203,7 @@
     }
 
     .post-title, .category {
-      display: inline-block;
+      // display: inline-block;
 
       @media (max-width: $screen-sm) {
         display: block;
@@ -185,6 +229,7 @@
 
   .portfolio-nav {
     text-align: center;
+    margin-top: 20px;
 
     @media (max-width: $screen-sm) {
       padding-top: 35px;

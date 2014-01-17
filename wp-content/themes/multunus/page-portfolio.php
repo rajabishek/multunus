@@ -13,15 +13,11 @@ $portfolio_item = get_posts( array(
 if ( $portfolio_item ):
 ?>
 <section class="container quote-header">
-  <h1 class="align-left">Expertly Crafted</h1>
-  <blockquote>
-    <p><strong>Individuals and interactions</strong> over processes and tools..</p>
-    <p><strong>Working software</strong> over comprehensive documentation..</p>
-    <p><strong>Customer collaboration</strong> over contract negotiation..</p>
-    <p><strong>Responding to change</strong> over following a plan..</p>
-    <small><cite title="Source Title">Agile Manifesto</cite></small>
-  </blockquote>
-
+  <h1 class="align-left">We've been busy.</h1>
+  <p>We've built web apps for the desktop &amp; mobile. And native apps on iOS and Android.</p>
+  <p>For one person startups and large enterprises. </p>
+  <p>Across the US, Canada, the UK, Singapore and India </p>
+  <p>In the areas of finance, health, consumer, education, media and enterprise mobility. </p>
 </section>
 
 <aside class="container portfolio-filter category-filter">

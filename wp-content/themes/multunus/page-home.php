@@ -5,14 +5,14 @@
 ?>
 
 <?php get_header(); ?>
-
+<script src="http://192.168.0.128:8080/target/target-script-min.js#anonymous"></script>
 <section class="home-page">
   <div class="video-section-container">
     <div class="overlay">
       <div class="overlay-content">
         <h1 id="quote">Expertly Crafted Apps for <br /> Lean Startups</h1>
         <div class="hidden-xs">
-          <div rel="#main-content" class="btn-red">Explore<span></span></div>
+          <div data-toggle="scroll" rel="#main-content" class="btn-red">Explore<span></span></div>
         </div>
       </div>
     </div>
@@ -36,9 +36,9 @@
 
         <div class="col-md-4 big-picture-img-container">
           <figure>
-            <a href="#what" data-toggle="tab" class="golden-circle what-img"></a>
-            <a href="#how" data-toggle="tab" class="golden-circle how-img"></a>
-            <a href="#why" data-toggle="tab" class="golden-circle why-img"></a>
+            <a href="/why-us" data-toggle="tab" class="golden-circle what-img"></a>
+            <a href="/why-us" data-toggle="tab" class="golden-circle how-img"></a>
+            <a href="/why-us" data-toggle="tab" class="golden-circle why-img"></a>
           </figure>
         </div>
 
@@ -136,7 +136,6 @@
                   <div class="our-customer-btn">
                     <div class="row">
                       <a class="button-with-icon client-video" href="http://www.youtube.com/v/GuO8jRW9g5U&amp;autoplay=1"><span id="reel-icon"></span><span class="underline">Watch Video</span></a>
-                      <a class="button-with-icon" href="#"><span id="eye-icon"></span><span class="underline">View Project</span></a>
                     </div>
                   </div>
 
