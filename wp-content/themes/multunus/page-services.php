@@ -16,9 +16,9 @@
     </div>
   </div>
 
-  <video tabindex="0" autoplay loop>
-    <source src="http://multunus_website.s3.amazonaws.com/wp-content/uploads/2013/12/1.mp4" type="video/mp4" />
-    <source src="http://multunus_website.s3.amazonaws.com/wp-content/uploads/2013/12/2.mp4" type="video/mp4" />
+  <video tabindex="0" autoplay="autoplay">
+    <source src="https://s3.amazonaws.com/Multunus-Website/Videos/services.mp4" type="video/mp4" />
+    <source src="https://s3.amazonaws.com/Multunus-Website/Videos/services.webm" type="video/webm" />
   </video>
 </div>
 
