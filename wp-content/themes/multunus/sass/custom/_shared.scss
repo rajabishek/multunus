@@ -289,6 +289,10 @@ ul.arrow-list-style {
     margin-top: 0.5em;
     font-size: 18px;
 
+    a {
+      color: $theme-color-pink;
+    }
+
     span {
       display: inline-block;
       width: 100%;
