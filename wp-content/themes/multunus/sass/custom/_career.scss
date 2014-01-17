@@ -75,33 +75,6 @@
     margin-left: 32px;
   }
 
-  ul {
-    list-style-type: none;
-    margin-top: 30px;
-    margin-bottom: 0;
-    padding-bottom: 1em;
-    padding-left: 0;
-
-    li {
-      background: url('/img/arrow-right-red.png') left 0.5em no-repeat;
-      line-height: 1.5em;
-      padding-left: 1.5em;
-      padding-right: 1em;
-      margin-top: 0.5em;
-      font-size: 18px;
-
-      span {
-        display: inline-block;
-        width: 100%;
-        padding-bottom: 0.5em;
-        border-bottom: 1px solid #e3e3e3;
-      }
-
-      &:last-child span {
-        border-bottom: none;
-      }
-    }
-  }
 }
 
 .career-images {

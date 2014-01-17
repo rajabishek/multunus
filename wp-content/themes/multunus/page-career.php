@@ -59,7 +59,7 @@
       </div>
 
       <div class="col-md-7 why-work-here" >
-        <ul>
+        <ul class="arrow-list-style">
           <li><span>You'll love our hacknights.</span></li>
           <li><span>Get high by shipping working software every 2 days.</span></li>
           <li><span>Create more than just software. Help entrepreneurs succeed.</span></li>

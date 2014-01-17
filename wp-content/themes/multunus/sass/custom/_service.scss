@@ -1,90 +1,71 @@
-.services-container {
-  border-bottom: 1px solid #e3e3e3;
+.services-section {
+  .post:nth-child(2n+1) {
+    .tech-text {
+      @include make-md-column-pull(4);
+    }
 
-  ul {
-    margin: 0 auto;
+    .tech-image {
+      @include make-md-column-push(8);
+    }
+   }
+
+  @media (max-width: $screen-sm) {
+    img { @include img-center;; }
   }
+}
 
-  li {
-    padding: 10px 0;
-    border-right: 1px solid #e3e3e3;
-
-    a {
-      color: inherit;
-      font-size: 20px;
-
-      &:hover {
-        color: $theme-color-pink;
+.services-tabs {
+  @media (max-width: $screen-xs) {
+    .tab.active {
+      a {
+        padding-bottom: 15px;
       }
     }
 
-    &.active a {
-      border-bottom: 4px solid $theme-color-pink;
-      padding-bottom: 12px;
-      color: $theme-color-pink;
+    a {
+      font-size: 16px;
     }
+  }
 
-    &:first-child {
-      padding-right: 35px;
-    }
-
-    &:last-child {
-      border-right: 0;
-      margin-left: 25px;
+  @media (max-width: $screen-sm) {
+    .clear {
+      clear: both;
     }
   }
 }
 
-.services-section {
-  padding-top: 20px;
-  padding-bottom: 40px;
-}
+.what-we-do {
+  padding-top: 15px;
 
-.technology-section div:nth-child(4n+1) {
-  float: right;
+  h1 {
+    text-align: right;
 
-  img {
-    float: right;
+    @media (max-width: $screen-sm) {
+      text-align: left;
+    }
   }
 }
 
-.tech-image {
-  clear: both;
-}
-
-.tech-text {
-  p {
-    color: #000;
-  }
-}
-
-@media (max-width: $screen-sm) {
-  .technology-section div:nth-child(4n+1) {
-    float: none;
-  }
-
-  .tech-image {
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-}
-
-.portfolio-container {
-  h1, h3 {
-   display: inline-block; 
-   text-align: right;
+.work-samples {
+  h1, h4 {
+    display: inline-block;
+    text-align: right;
   }
 
   h1 {
     width: 60%;
+
+    @media (max-width: $screen-xs) {
+      text-align: left;
+      font-size: 25px;
+    }
   }
 
-  h3 {
-    width: 39%;
+  h4 {
+    width: 38%;
   }
 
-  a.see-all-portfolio {
+  .see-all-portfolio {
     color: $theme-color-pink;
 
     &:hover {
@@ -93,18 +74,6 @@
   }
 }
 
-@media (max-width: $screen-sm) {
-  .portfolio-container {
-    h1, h3 {
-      text-align: center;
-    }
-
-    h1 {
-      width: 100%;
-    }
-
-    h3 {
-      width: 100%;
-   }
-  }
+.tech-image {
+  margin-top: 60px;
 }
