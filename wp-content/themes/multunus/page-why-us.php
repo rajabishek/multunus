@@ -28,39 +28,30 @@
         <div class="col-md-4 col-sm-12 big-picture-list fade in">
           <ul>
             <li><a class="red-text" href="#">Why</a></span> we exist?</li>
-            <li><a class="red-text" href="#">How</a></span> we achieve<br /> our mission?</li>
-            <li><a class="red-text" href="#">What</a></span> we do on a<br /> daily basis?</li>
+            <li><a class="red-text" href="#">How</a></span> we achieve<br /> our mission</li>
+            <li><a class="red-text" href="#">What</a></span> we do on a<br /> daily basis</li>
           </ul>
         </div>
 
         <div class="tab-content col-md-7 col-sm-12">
           <div class="tab-pane fade" id="why">
-            <h1><span class="red-text">Why</span> we exist?</h1>
-            <h4>Help Enterpreneurs succeed</h4>
-            <p>
-              Raw denim you probably haven't heard of them jean shorts Austin.
-              Nesciunt tofu stumptown aliqua, retro synth master cleanse.
-              Mustache cliche tempor, williamsburg carles vegan helvetica.
-            </p>
+            <h1><span class="red-text">Why</span> we exist</h1>
+            <h4>We help entrepreneurs [ & intrepreneurs! ] succeed</h4>
+            <p>Entrepreneurs are key drivers of positive change in any economy. And helping them succeed is our mission.</p>
           </div>
 
           <div class="tab-pane fade" id="how">
-            <h1><span class="red-text">How</span> we achieve our mission?</h1>
-            <h4>Better products, with deliberate discovery</h4>
-            <p>
-              Raw denim you probably haven't heard of them jean shorts Austin.
-              Nesciunt tofu stumptown aliqua, retro synth master cleanse.
-              Mustache cliche tempor, williamsburg carles vegan helvetica.
-            </p>
+            <h1><span class="red-text">How</span> we achieve our mission</h1>
+            <h4>We build better products. Using a process of "Deliberate Discovery"</h4>
+            <p>"Some unexpected bad things will happen" - Dan North.</p>
+            <p>That quote is a great reminder of the need to hustle, to discover risks early on. To stay on the course of Deliberately Discovery.</p>
           </div>
 
           <div class="tab-pane fade" id="what">
-            <h1><span class="red-text">What</span> we do on a daily basis?</h1>
-            <h4>Culture + Process + Technology &amp; Tools </h4>
-            <p>
-              Raw denim you probably haven't heard of them jean shorts Austin.
-              Nesciunt tofu stumptown aliqua, retro synth master cleanse.
-              Mustache cliche tempor, williamsburg carles vegan helvetica.
+            <h1><span class="red-text">What</span> we do on a daily basis</h1>
+            <h4>Okay, this is a <em>bit</em> more complex.</h4>
+            <p>We blend a great culture, a refined process and carefully chosen technologies and tools - to build better products.<br />
+            <p>Watch the "Big Picture" video below to learn more. Its just about 5 min long.</p>
             </p>
           </div>
         </div>
@@ -115,7 +106,7 @@
                 <iframe frameborder="0" src="<?php the_field('video_link'); ?>" allowfullscreen=""></iframe>
 
                 <?php if(get_field('video_quote') !== '') { ?>
-                <p class="quote">"<?php the_field('video_quote'); ?>"</p>
+                <p class="quote"><?php the_field('video_quote'); ?></p>
                 <?php } ?>
               </div>
 
