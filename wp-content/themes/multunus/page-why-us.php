@@ -27,7 +27,7 @@
 
         <div class="col-md-4 col-sm-12 big-picture-list fade in">
           <ul>
-            <li><a class="red-text" href="#">Why</a></span> we exist?</li>
+            <li><a class="red-text" href="#">Why</a></span> we exist</li>
             <li><a class="red-text" href="#">How</a></span> we achieve<br /> our mission</li>
             <li><a class="red-text" href="#">What</a></span> we do on a<br /> daily basis</li>
           </ul>
