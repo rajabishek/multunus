@@ -139,7 +139,7 @@
               <figcaption>
                 <p class="name"><?php the_title(); ?></p>
                 <p class="category">
-                  <?php the_field('portfolio_category'); ?>
+                  <?php the_field('category'); ?>
                 </p>
               </figcaption>
             </a>
