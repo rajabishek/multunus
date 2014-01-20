@@ -184,6 +184,21 @@
     background-size: 100% !important;
     transition: background 0.5s;
     position: absolute;
+
+    -moz-border-radius-topleft: 240px 180px;
+    -moz-border-radius-topright: 230px 180px;
+    -moz-border-radius-bottomright: 240px 170px;
+    -moz-border-radius-bottomleft: 230px 170px;
+
+    -webkit-border-top-right-radius: 240px 180px;
+    -webkit-border-top-left-radius: 230px 180px;
+    -webkit-border-bottom-right-radius: 240px 170px;
+    -webkit-border-bottom-left-radius: 230px 170px;
+
+    border-top-right-radius: 240px 180px;
+    border-top-left-radius: 230px 180px;
+    border-bottom-right-radius: 240px 170px;
+    border-bottom-left-radius: 230px 170px;
   }
 
   .what-img {

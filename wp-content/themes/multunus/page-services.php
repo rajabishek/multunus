@@ -25,9 +25,10 @@
 <div class="services-section">
   <article id="main-content" class="content-tabs services-tabs">
     <ul class="container">
-      <li class="col-sm-4 col-xs-6 tab active"><a href="#what_we_do" data-toggle="tab">What we do</a></li>
-      <li class="col-sm-4 col-xs-6 tab"><a href="#mobile_web" data-toggle="tab">Web & Mobile Web</a></li>
-      <li class="col-sm-4 col-xs-12 tab clear"><a href="#ios_android" data-toggle="tab">iOS & Android</a></li>
+      <li class="col-sm-3 col-xs-6 tab active"><a href="#what_we_do" data-toggle="tab">What we do</a></li>
+      <li class="col-sm-3 col-xs-6 tab"><a href="#mobile_web" data-toggle="tab">Web & Mobile Web</a></li>
+      <li class="col-sm-3 col-xs-6 tab"><a href="#ios_android" data-toggle="tab">iOS & Android</a></li>
+      <li class="col-sm-3 col-xs-6 tab"><a href="#every_2_days" data-toggle="tab">Every 2 Days</a></li>
     </ul>
   </article>
 
@@ -39,7 +40,7 @@
       ) );
 
     if ( $services_posts ):
-      $categories = array_unique(wp_list_pluck($services_posts, 'category'));
+    $categories = array_unique(wp_list_pluck($services_posts, 'category'));
     $default_category = 'what_we_do';
 
     foreach ( $categories as $key => $category ):
@@ -77,6 +78,22 @@
               </ul>
             </div>
           </div>
+        <?php } else if ($category === 'every_2_days') { ?>
+        <div class="every-2-days">
+          <div class="col-md-4">
+            <h1>Working software every 2 days. There's more to it than meets the eye.</h1>
+          </div>
+
+          <div class="col-md-7" >
+            <ul class="arrow-list-style">
+              <li><span>Remotely "See" what the dev is upto. Play with new features every 2 days.</span></li>
+              <li><span>Provide feedback on the thing that matters the most: "Working Software"</span></li>
+              <li><span>Continous Integration, Continuous Delivery, Continuous Deployment - that's our bread and butter</span></li>
+              <li><span>A few of our engineering practices: Test Driven Development, Automated Testing, One Click Deployment, Low Technical Debt</span></li>
+              <li><span>A few more non-technical practices: Exploratory Testing , A No Bugs Philosophy, Kanban board</span></li>
+            </ul>
+          </div>
+        </div>
         <?php } else { ?>
 
           <div class="row post">
