@@ -16,7 +16,7 @@
     </div>
   </div>
 
-  <video tabindex="0" autoplay="autoplay">
+  <video tabindex="0" autoplay="autoplay" loop="loop">
     <source src="https://s3.amazonaws.com/Multunus-Website/Videos/services.mp4" type="video/mp4" />
     <source src="https://s3.amazonaws.com/Multunus-Website/Videos/services.webm" type="video/webm" />
   </video>
