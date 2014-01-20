@@ -150,7 +150,7 @@
                   <div class="our-customer-btn">
                     <div class="row">
                         <a class="button-with-icon client-video" href="http://www.youtube.com/v/NAMGHISmWH8&amp;autoplay=1"><span id="reel-icon"></span><span class="underline">Watch Video</span></a>
-                        <a class="button-with-icon" href="#"><span id="eye-icon"></span><span class="underline">View Project</span></a>
+                        <a class="button-with-icon" href="/?portfolio=nimit"><span id="eye-icon"></span><span class="underline">View Project</span></a>
                     </div>
                   </div>
 
@@ -166,7 +166,7 @@
                   <div class="our-customer-btn">
                     <div class="row">
                       <a class="button-with-icon client-video" href="http://www.youtube.com/v/z1tzfsRI_Ds&amp;autoplay=1"><span id="reel-icon"></span><span class="underline">Watch Video</span></a>
-                      <a class="button-with-icon" href="#"><span id="eye-icon"></span><span class="underline">View Project</span></a>
+                      <a class="button-with-icon" href="/?portfolio=narrable"><span id="eye-icon"></span><span class="underline">View Project</span></a>
                     </div>
                   </div>
 
