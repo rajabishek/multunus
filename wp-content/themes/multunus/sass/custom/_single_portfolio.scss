@@ -66,15 +66,15 @@
           position: absolute;
           top: 5.76%;
           left: 10.31%;
-          width: 79.86%;
-          //height: 80.95%;
+          width: 80%;
+          height: 80.95%;
         }
       }
     }
 
     .android-tablet {
       .app-image {
-        width: 444px;
+        width: 358px;
         top: 210px;
         position: absolute;
 
@@ -86,7 +86,7 @@
         }
 
         &.center {
-          width: 630px;
+          width: 510px;
           position: relative;
           margin: auto;
           z-index: 6;
@@ -95,7 +95,7 @@
           @media (max-width: $screen-sm) {
             width: initial;
             min-width: initial;
-            top: 185px;
+            top: 160px;
           }
         }
 
@@ -108,10 +108,10 @@
 
         .screenshot {
           position: absolute;
-          top: 5.76%;
-          left: 10.31%;
-          width: 79.86%;
-          //height: 80.95%;
+          top: 9.43%;
+          left: 5.5%;
+          width: 89.386%;
+          height: 81.17%;
         }
       }
     }
@@ -168,8 +168,8 @@
         position: absolute;
         top: 8.45%;
         left: 2.72%;
-        width: 93.95%;
-        //height: 83.7%;
+        width: 94.546%;
+        height: 83.7%;
       }
     }
 
@@ -179,7 +179,7 @@
         top: 13.71%;
         left: 7.7%;
         width: 84.6%;
-        //height: 72.25%;
+        height: 72.25%;
       }
     }
   }

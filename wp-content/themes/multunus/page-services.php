@@ -86,7 +86,7 @@
 
           <div class="col-md-7" >
             <ul class="arrow-list-style">
-              <li><span>Remotely "See" what the dev is upto. Play with new features every 2 days.</span></li>
+              <li><span>Remotely "See" what the dev team is upto. Play with new features every 2 days.</span></li>
               <li><span>Provide feedback on the thing that matters the most: "Working Software"</span></li>
               <li><span>Continous Integration, Continuous Delivery, Continuous Deployment - that's our bread and butter</span></li>
               <li><span>A few of our engineering practices: Test Driven Development, Automated Testing, One Click Deployment, Low Technical Debt</span></li>
