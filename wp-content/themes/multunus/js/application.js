@@ -71,6 +71,7 @@ $(function() {
 
 $(document).ready(function() {
 
+  //Scroll Button
   $('[data-toggle=scroll]').click(function(e) {
     var targetElementId = $(this).attr('rel');
 
@@ -81,6 +82,18 @@ $(document).ready(function() {
     }
 
     $('html, body').animate({scrollTop: targetPosition}, 1000);
+  });
+
+  //Category list and dropdown
+  $('.category-list-mobile ul li a').click(function() {
+    var category = this.text;
+    $(this).parents('ul').siblings('button').html(category);
+  });
+
+  $('.category-filter ul li a').click(function() {
+    var selectedCategoryElement = $(this);
+    selectedCategoryElement.parents('ul').find('li').removeClass('active');
+    selectedCategoryElement.parents('li').addClass('active');
   });
 
   // 'recent work' video button
@@ -106,80 +119,6 @@ $(document).ready(function() {
   // remove 'src' attribute from iframe when user clicks on close button
   $('#myModal button').click(function () {
     $('#myModal iframe').removeAttr('src');
-  });
-
-  $('.team-filter ul li a').click(function() {
-    $('.team-images .profile').addClass('hidden');
-    $('.team-images figure').removeClass('active');
-    var selectedElement = $(this);
-    selectedElement.parents('ul').find('li').removeClass('active');
-    selectedElement.parents('li').addClass('active');
-
-    var category = selectedElement.data().category;
-    $('.team-images figure').removeClass('hidden');
-    $(".team-images figure[data-category!='" + category + "']").addClass('hidden');
-  });
-
-  $(".team-filter ul li a[data-category='all']").click(function() {
-    $('.team-images figure').removeClass('hidden');
-  });
-
-  $('.team-filter .category-list-mobile ul li a').click(function() {
-    var category = this.text;
-    $(this).parents('ul').siblings('button').html(category);
-  });
-
-  $('.team-images figure').click(function(event) {
-    selectedElement = $(this);
-    var profileData = selectedElement.data();
-    var profileElement = $('.team-images .profile').addClass('hidden');
-    var lastElementInCurrentRow;
-
-    $('.team-images figure').removeClass('active');
-    selectedElement.addClass('active');
-
-    if(selectedElement.nextAll().not('.hidden').length === 0) {
-      lastElementInCurrentRow = selectedElement;
-    } else {
-      selectedElement.nextAll().not('.hidden').each(function(index, element) {
-        if($(element).position().top !== selectedElement.position().top) {
-          lastElementInCurrentRow = $(element).prev();
-          return false;
-        }
-        lastElementInCurrentRow = $(element);
-      });
-    }
-
-    profileElement.find('.image-container img').attr('src', profileData.imageBig);
-    profileElement.find('h2').html(profileData.name);
-    profileElement.find('h4').html(profileData.position);
-    profileElement.find('.bio').html(profileData.bio);
-
-    socialLinks =  profileElement.find('.social-links');
-    socialLinks.find('.github').attr('href', profileData.github);
-
-    if(profileData.github) {
-      socialLinks.find('.github').parent().removeClass('hidden');
-    } else {
-      socialLinks.find('.github').parent().addClass('hidden');
-    }
-
-    if(profileData.twitter) {
-      socialLinks.find('.twitter').parent().removeClass('hidden');
-    } else {
-      socialLinks.find('.twitter').parent().addClass('hidden');
-    }
-
-    $('html, body').animate({
-      scrollTop: selectedElement.position().top - $("nav").height()
-    },
-    {
-      duration: 'slow',
-      start: function() {
-        profileElement.removeClass('hidden').insertAfter(lastElementInCurrentRow);
-      }
-    });
-
   });
 
 });

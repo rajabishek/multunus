@@ -66,6 +66,14 @@ if (!is_admin()) {
     }
   }
 
+  add_action('wp_enqueue_scripts', 'team_page_script', 16);
+  function team_page_script() {
+    if (is_page('team')) {
+      wp_register_script( 'team', get_template_directory_uri() . '/js/team.js', array( 'jquery' ), null, true );
+      wp_enqueue_script('team');
+    }
+  }
+
   // Add proxima-nova font from typekit
   add_filter( 'wp_footer', 'add_typekit_font' );
   function add_typekit_font() {

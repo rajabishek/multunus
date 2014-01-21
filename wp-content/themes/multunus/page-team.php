@@ -23,34 +23,35 @@ if ( $team_posts ):
 
 </section>
 
-<aside class="container team-filter category-filter">
-  <ul class="list-inline category-list-desktop hidden-xs">
-    <li class="categories-label"><span>Show:</span></li>
-    <li class="active"><a data-category="all">All</a></li>
-    <li><a data-category="management">Pointy Haired</a></li>
-    <li><a data-category="technology">Technology</a></li>
-    <li><a data-category="product">Product</a></li>
-    <li><a data-category="people-culture">People & Culture</a></li>
-  </ul>
+<section class="team-grid overflow-fix">
 
-  <div class="visible-xs category-list-mobile dropdown-container">
-    <div class="dropdown-label">Show: </div>
-    <div class="btn-group dropdown">
-      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-        All
-      </button>
-      <ul class="dropdown-menu" role="menu">
-        <li class="active"><a data-category="all">All</a></li>
-        <li><a data-category="management">Pointy Haired</a></li>
-        <li><a data-category="technology">Technology</a></li>
-        <li><a data-category="product">Product</a></li>
-        <li><a data-category="people-culture">People & Culture</a></li>
-      </ul>
+  <aside class="container team-filter category-filter">
+    <ul class="list-inline category-list-desktop hidden-xs">
+      <li class="categories-label"><span>Show:</span></li>
+      <li class="active"><a data-category="all">All</a></li>
+      <li><a data-category="management">Pointy Haired</a></li>
+      <li><a data-category="technology">Technology</a></li>
+      <li><a data-category="product">Product</a></li>
+      <li><a data-category="people-culture">People & Culture</a></li>
+    </ul>
+
+    <div class="visible-xs category-list-mobile dropdown-container">
+      <div class="dropdown-label">Show: </div>
+      <div class="btn-group dropdown">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+          All
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          <li class="active"><a data-category="all">All</a></li>
+          <li><a data-category="management">Pointy Haired</a></li>
+          <li><a data-category="technology">Technology</a></li>
+          <li><a data-category="product">Product</a></li>
+          <li><a data-category="people-culture">People & Culture</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</aside>
+  </aside>
 
-<section class="overflow-fix">
   <div class="container clearfix team-images">
     <aside class="profile hidden">
       <div class="translucent-layer"></div>

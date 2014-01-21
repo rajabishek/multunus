@@ -13,8 +13,4 @@ $(document).ready(function() {
     $('.portfolio-list figure').removeClass('hidden');
   });
 
-  $('.portfolio-filter .category-list-mobile ul li a').click(function() {
-    var category = this.text;
-    $(this).parents('ul').siblings('button').html(category);
-  });
 });
