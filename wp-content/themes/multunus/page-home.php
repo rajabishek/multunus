@@ -35,16 +35,16 @@
 
         <div class="col-md-4 big-picture-img-container">
           <figure>
-            <a href="/why-us" class="golden-circle what-img"></a>
-            <a href="/why-us" class="golden-circle how-img"></a>
-            <a href="/why-us" class="golden-circle why-img"></a>
+            <a href="/process" class="golden-circle what-img"></a>
+            <a href="/process" class="golden-circle how-img"></a>
+            <a href="/process" class="golden-circle why-img"></a>
           </figure>
         </div>
 
         <div class="col-md-4 col-sm-12 big-picture-list">
           <ul>
             <li>What makes us different?</li>
-            <li><a class="red-text" href="/why-us">Take a deep dive</a></span> to find out.</li>
+            <li><a class="red-text" href="/process">Take a deep dive</a></span> to find out.</li>
           </ul>
         </div>
       </div> <!-- end row -->
