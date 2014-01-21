@@ -73,7 +73,7 @@
           <img src="/img/cal-icon.png" />
           <h2>Every 2 Days</h2>
           <p> Working software every 2 days. It's the primary measure of progress.</p>
-          <a href="/why-us">Learn More</a><span class="right-arrow"></span>
+          <a href="/process">Learn More</a><span class="right-arrow"></span>
         </div>
       </div>
     </div>

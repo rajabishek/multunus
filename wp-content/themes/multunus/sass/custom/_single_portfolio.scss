@@ -94,6 +94,28 @@
       }
     }
 
+    .ipad-white {
+      .app-image {
+        width: 320px;
+
+        &.center {
+          width: 460px;
+
+          @media (max-width: $screen-sm) {
+            top: 150px;
+          }
+        }
+
+        .screenshot {
+          position: absolute;
+          top: 12.724%;
+          left: 9.148%;
+          width: 81.875%;
+          height: 77.638%;
+        }
+      }
+    }
+
     .android-tablet, .ipad-white {
       .app-image {
         top: 210px;
@@ -123,28 +145,6 @@
           @media (max-width: $screen-sm) {
             display: none;
           }
-        }
-      }
-    }
-
-    .ipad-white {
-      .app-image {
-        width: 320px;
-
-        &.center {
-          width: 460px;
-
-          @media (max-width: $screen-sm) {
-            top: 150px;
-          }
-        }
-
-        .screenshot {
-          position: absolute;
-          top: 12.724%;
-          left: 9.148%;
-          width: 81.875%;
-          height: 77.638%;
         }
       }
     }

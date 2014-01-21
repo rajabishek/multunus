@@ -71,6 +71,8 @@ $(document).ready(function() {
           lastElementInCurrentRow = $(element);
         });
       }
+
+      return lastElementInCurrentRow;
     },
 
     setupIndividualImageClick: function() {
@@ -79,7 +81,7 @@ $(document).ready(function() {
       self.$('.team-images figure').click(function(event) {
         var selectedElement = $(this);
 
-        var lastElementInCurrentRow = lastElementInTheRowOf(selectedElement);
+        var lastElementInCurrentRow = self.lastElementInTheRowOf(selectedElement);
 
         self.hideProfileDetails();
 
