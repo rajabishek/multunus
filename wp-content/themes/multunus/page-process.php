@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Why Us
+ * Template Name: Process
  */
   get_header();
 ?>
@@ -8,7 +8,7 @@
   <div class="why-us-image-section">
     <div class="container">
       <div class="row">
-        <div class="col-md-4 hidden-xs hidden-sm on-desktop big-picture-text fade in">
+        <div class="col-md-5 hidden-xs hidden-sm on-desktop big-picture-text fade in">
           <h1>The<br />Big Picture</h1>
         </div>
 
@@ -25,26 +25,26 @@
           </figure>
         </div>
 
-        <div class="col-md-4 col-sm-12 big-picture-list fade in">
+        <!--div class="col-md-4 col-sm-12 big-picture-list fade in">
           <ul>
-            <li><a class="red-text" href="#">Why</a></span> we exist</li>
-            <li><a class="red-text" href="#">How</a></span> we achieve<br /> our mission</li>
-            <li><a class="red-text" href="#">What</a></span> we do on a<br /> daily basis</li>
+            <li>Why we exist</li>
+            <li>How we achieve<br /> our mission</li>
+            <li>What we do on a<br /> daily basis</li>
           </ul>
-        </div>
+        </div-->
 
         <div class="tab-content col-md-7 col-sm-12">
           <div class="tab-pane fade" id="why">
             <h1><span class="red-text">Why</span> we exist</h1>
             <h4>We help entrepreneurs [ & intrepreneurs! ] succeed</h4>
-            <p>Entrepreneurs are key drivers of positive change in any economy. And helping them succeed is our mission.</p>
+            <p>Entrepreneurs are key drivers of positive change in any economy. Helping them succeed is our mission.</p>
           </div>
 
           <div class="tab-pane fade" id="how">
             <h1><span class="red-text">How</span> we achieve our mission</h1>
             <h4>We build better products. Using a process of "Deliberate Discovery"</h4>
             <p>"Some unexpected bad things will happen" - Dan North.</p>
-            <p>That quote is a great reminder of the need to hustle, to discover risks early on. To stay on the course of Deliberately Discovery.</p>
+            <p>That quote is a great reminder of the need to hustle, to discover risks early on. To stay on the course of Deliberate Discovery.</p>
           </div>
 
           <div class="tab-pane fade" id="what">

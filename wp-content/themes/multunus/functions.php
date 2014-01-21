@@ -50,11 +50,11 @@ if (!is_admin()) {
     }
   }
 
-  add_action('wp_enqueue_scripts', 'why_us_script', 14);
-  function why_us_script() {
+  add_action('wp_enqueue_scripts', 'process_page_script', 14);
+  function process_page_script() {
     if (is_page('process')) {
-      wp_register_script( 'why_us', get_template_directory_uri() . '/js/why_us.js', array( 'jquery' ), null, true );
-      wp_enqueue_script('why_us');
+      wp_register_script( 'process', get_template_directory_uri() . '/js/process.js', array( 'jquery' ), null, true );
+      wp_enqueue_script('process');
     }
   }
 

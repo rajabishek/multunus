@@ -75,34 +75,12 @@
     .android-tablet{
       .app-image {
         width: 358px;
-        top: 210px;
-        position: absolute;
-
-        &.left {
-          left: 5%;
-          @media (max-width: $screen-sm) {
-            display: none;
-          }
-        }
 
         &.center {
           width: 510px;
-          position: relative;
-          margin: auto;
-          z-index: 6;
-          top: 140px;
 
           @media (max-width: $screen-sm) {
-            width: initial;
-            min-width: initial;
             top: 160px;
-          }
-        }
-
-        &.right {
-          right: 5%;
-          @media (max-width: $screen-sm) {
-            display: none;
           }
         }
 
@@ -117,12 +95,7 @@
     }
 
     .android-tablet, .ipad-white {
-
-    }
-
-    .ipad-white {
       .app-image {
-        width: 320px;
         top: 210px;
         position: absolute;
 
@@ -134,7 +107,6 @@
         }
 
         &.center {
-          width: 460px;
           position: relative;
           margin: auto;
           z-index: 6;
@@ -143,7 +115,6 @@
           @media (max-width: $screen-sm) {
             width: initial;
             min-width: initial;
-            top: 150px;
           }
         }
 
@@ -153,12 +124,27 @@
             display: none;
           }
         }
+      }
+    }
+
+    .ipad-white {
+      .app-image {
+        width: 320px;
+
+        &.center {
+          width: 460px;
+
+          @media (max-width: $screen-sm) {
+            top: 150px;
+          }
+        }
+
         .screenshot {
           position: absolute;
-          top: 9.915%;
-          left: 8.992%;
-          width: 82.392%;
-          height: 80.488%;
+          top: 12.724%;
+          left: 9.148%;
+          width: 81.875%;
+          height: 77.638%;
         }
       }
     }
