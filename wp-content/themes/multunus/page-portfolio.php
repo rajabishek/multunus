@@ -53,7 +53,6 @@ if ( $portfolio_item ):
         <li><a data-category="Mobile Web">Mobile Web</a></li>
         <li><a data-category="iOS">iOS</a></li>
         <li><a data-category="Android">Android</a></li>
-        <li><a data-category="all">All</a></li>
         <li><a data-category="Finance">Finance</a></li>
         <li><a data-category="Consumer">Consumer</a></li>
         <li><a data-category="Media">Media</a></li>
