@@ -119,7 +119,7 @@
 function initialize() {
   var Latlng = new google.maps.LatLng(12.910562, 77.589097);
   var myOptions = {
-    zoom: 15,
+    zoom: 3,
     center: Latlng,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
     scrollwheel: false,
@@ -134,7 +134,7 @@ function initialize() {
   map.panBy(-300,-100);
 
   var contentString = '<div id="map-content">'+
-    '<a href="https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Multunus+Software+Pvt+Ltd,+9th+Cross+Road,+Phase+II,+J+P+Nagar,+Bangalore,+Karnataka,+India&aq=0&oq=multunus&sll=12.953997,77.63094&sspn=0.836455,1.229095&vpsrc=0&ie=UTF8&hq=multunus+software+pvt+ltd&hnear=9th+Cross+Rd,+Phase+II,+J+P+Nagar,+Bangalore,+Bangalore+Urban,+Karnataka,+India&ll=12.910541,77.588925&spn=0.006536,0.009602&t=m&z=17&iwloc=A&cid=14451696054480489098">We are here</a>'+
+    '<a target="_blank" href="https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Multunus+Software+Pvt+Ltd,+9th+Cross+Road,+Phase+II,+J+P+Nagar,+Bangalore,+Karnataka,+India&aq=0&oq=multunus&sll=12.953997,77.63094&sspn=0.836455,1.229095&vpsrc=0&ie=UTF8&hq=multunus+software+pvt+ltd&hnear=9th+Cross+Rd,+Phase+II,+J+P+Nagar,+Bangalore,+Bangalore+Urban,+Karnataka,+India&ll=12.910541,77.588925&spn=0.006536,0.009602&t=m&z=17&iwloc=A&cid=14451696054480489098">We are here</a>'+
     '<p>No. 1316/A, 2nd floor,</p>'+
     '<p>9th Cross, JP Nagar 2nd Phase,</p>'+
     '<p>Bangalore - 560078</p>'+
