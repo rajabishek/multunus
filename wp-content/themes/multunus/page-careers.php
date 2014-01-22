@@ -15,8 +15,8 @@
   </div>
 
   <video tabindex="0" autoplay="autoplay" loop="loop">
-    <source src="https://s3.amazonaws.com/Multunus-Website/Videos/careers.mp4" type="video/mp4" />
-    <source src="https://s3.amazonaws.com/Multunus-Website/Videos/careers.webm" type="video/webm" />
+    <source src="https://d3i6m9q7qxxzav.cloudfront.net/Videos/careers.mp4" type="video/mp4" />
+    <source src="https://d3i6m9q7qxxzav.cloudfront.net/Videos/careers.webm" type="video/webm" />
   </video>
 </div>
 
