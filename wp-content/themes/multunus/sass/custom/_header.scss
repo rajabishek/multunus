@@ -181,8 +181,7 @@
     color: #333;
 
     &:hover {
-      border-bottom: 1px dashed $theme-color-pink;
-      color: $theme-color-pink;
+      @include border-bottom-pink;
     }
   }
 }

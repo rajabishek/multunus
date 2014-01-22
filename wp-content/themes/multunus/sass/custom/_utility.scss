@@ -23,6 +23,6 @@ img {
 }
 
 @mixin border-bottom-pink {
-  border-bottom: 1px dotted;
+  box-shadow: 0 1px $theme-color-pink;
   color: $theme-color-pink;
 }

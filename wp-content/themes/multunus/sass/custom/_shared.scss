@@ -45,11 +45,11 @@
   }
 
   a {
-      color: $theme-color-pink;
+    color: $theme-color-pink;
 
-      &:hover {
-          text-decoration: underline;
-      }
+    &:hover {
+      @include border-bottom-pink;
+    }
   }
 }
 
