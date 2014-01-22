@@ -77,17 +77,12 @@ if ( $team_posts ):
                   </a>
                 </li>
 
-                <!--li>
-                  <a target="_blank" class="social facebook" href="" title="Facebook">
-                    <img src="/img/facebook-icon-footer.png" alt=""/>
+                <li>
+                  <a target="_blank" class="social linkedin" href="" title="LinkedIn">
+                    <img src="/img/linkedin-icon-footer.png" alt=""/>
                   </a>
                 </li>
 
-                <li>
-                  <a target="_blank" class="social google-plus" href="" title="G+">
-                    <img src="/img/google-plus-icon-footer.png" alt=""/>
-                  </a>
-                </li-->
               </ul>
             </div><!-- end of description -->
         </div><!-- end of row -->

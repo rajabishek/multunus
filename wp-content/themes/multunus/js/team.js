@@ -20,20 +20,18 @@ $(document).ready(function() {
 
       var socialLinks =  this.profileElement.find('.social-links');
 
-      socialLinks.find('.github').attr('href', profileData.github);
-      socialLinks.find('.twitter').attr('href', profileData.twitter);
+      $.each(['github','twitter','linkedin'], function(index, socialNetwork) {
+        var linkElement = socialLinks.find('.' + socialNetwork);
 
-      if(profileData.github) {
-        socialLinks.find('.github').parent().removeClass('hidden');
-      } else {
-        socialLinks.find('.github').parent().addClass('hidden');
-      }
+        linkElement.attr('href', profileData[socialNetwork]);
 
-      if(profileData.twitter) {
-        socialLinks.find('.twitter').parent().removeClass('hidden');
-      } else {
-        socialLinks.find('.twitter').parent().addClass('hidden');
-      }
+        if(profileData[socialNetwork]) {
+          linkElement.parent().removeClass('hidden');
+        } else {
+          linkElement.parent().addClass('hidden');
+        }
+
+      });
     },
 
     deactivateAllImages: function() {
