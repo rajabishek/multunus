@@ -75,7 +75,7 @@ $(document).ready(function() {
   $('[data-toggle=scroll]').click(function(e) {
     var targetElementId = $(this).attr('rel');
 
-    if(targetElementId === 'top') {
+    if(!targetElementId) {
       targetPosition = 0;
     } else {
       targetPosition = $(targetElementId).offset().top - $("nav").height(); //Offset the navbar height

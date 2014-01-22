@@ -41,10 +41,13 @@
   }
 
   .go-to-top {
-    position: relative;
     color: $theme-color-pink;
     margin: 2em 0;
     line-height: 2;
+
+    @media (min-width: $screen-sm) {
+      float: right;
+    }
 
     &:hover {
       text-decoration: underline;

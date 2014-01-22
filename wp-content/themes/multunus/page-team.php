@@ -109,6 +109,7 @@ if ( $team_posts ):
       data-linkedin="<?php the_field('team_linkedin'); ?>"
       data-bio="<?php the_content(); ?>">
         <img src="<?php the_field('team_display_picture_small'); ?>" alt="<?php the_title(); ?>, <?php the_field('team_position'); ?>">
+        <img class="image-prefetch hidden" src="<?php the_field('team_display_picture_big'); ?>">
         <figcaption><?php the_title(); ?></figcaption>
     </figure>
 

@@ -62,16 +62,16 @@
         ?>
 
         <?php if ($category === 'what_we_do') { ?>
-          <div class="what-we-do">
+          <div class="row what-we-do">
             <div class="col-md-4">
               <h1>The whole nine yards!</h1>
             </div>
 
-            <div class="col-md-7" >
+            <div class="list-container col-md-7" >
               <ul class="arrow-list-style">
-                <li><span>Startup idea to version 1</span></li>
+                <li><span>Startup Idea to Version 1</span></li>
                 <li><span>Enterprise Software Development [especially High Risk & Large Scale]</span></li>
-                <li><span>Product Analysis, Feature breakdown & release planning</span></li>
+                <li><span>Product Analysis, Feature Breakdown & Release Planning</span></li>
                 <li><span>UX and UI Design (with our <a href="http://www.lollypop.biz/">awesome partner)</a></span></li>
                 <li><span>Production Deployment and Monitoring</span></li>
                 <li><span>Maintenance</span></li>
@@ -79,12 +79,12 @@
             </div>
           </div>
         <?php } else if ($category === 'every_2_days') { ?>
-        <div class="every-2-days">
+        <div class="row every-2-days">
           <div class="col-md-4">
             <h1>Working software every 2 days. There's more to it than meets the eye.</h1>
           </div>
 
-          <div class="col-md-7" >
+          <div class="list-container col-md-7" >
             <ul class="arrow-list-style">
               <li><span>Remotely "See" what the dev team is upto. Play with new features every 2 days.</span></li>
               <li><span>Provide feedback on the thing that matters the most: "Working Software"</span></li>
