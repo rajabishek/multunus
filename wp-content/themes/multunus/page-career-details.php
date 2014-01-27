@@ -6,8 +6,15 @@
 
 <?php get_header(); the_post(); ?>
 <?php
-  $mypage = get_page_by_path('careers');
-  $mypageid = ( $mypage ? $mypage->ID : '0' );
+  $careers_page = get_page_by_path('careers');
+  $careers_page_id = ( $careers_page ? $careers_page->ID : '0' );
+
+  $args = array(
+    'post_type' => 'page',
+    'post_parent' => $careers_page_id,
+    'post_status' => 'publish'
+  );
+  $open_positions = get_children($args);
 ?>
 
 <div class="container current-openings-dropdown dropdown-container visible-xs">
@@ -18,13 +25,13 @@
     </button>
     <ul class="dropdown-menu" role="menu">
       <?php
-        $page_id = get_queried_object_id();
-        if ($childrens = get_children('post_parent=' . $mypageid . '&post_type=page')):
-          foreach ($childrens as $children):
-            $post = get_post($children->ID);
+        $current_page_id = get_queried_object_id();
+        if ($open_positions):
+          foreach ($open_positions as $open_position):
+            $post = get_post($open_position->ID);
             $title = $post->post_title;
-            $permalink = post_permalink($children->ID);
-            if ($page_id == $children->ID):
+            $permalink = post_permalink($open_position->ID);
+            if ($current_page_id == $open_position->ID):
               echo '<li class="active"><a href="' . $permalink . '">' . $title . '</a></li>';
             else:
               echo '<li><a href="' . $permalink . '">' . $title . '</a></li>';
@@ -50,11 +57,11 @@
           <ul class="current-openings">
 
           <?php
-          if ($childrens = get_children('post_parent=' . $mypageid . '&post_type=page')):
-            foreach ($childrens as $children):
-              $post = get_post($children->ID);
+          if ($open_positions):
+            foreach ($open_positions as $open_position):
+              $post = get_post($open_position->ID);
               $title = $post->post_title;
-              $permalink = post_permalink($children->ID);
+              $permalink = post_permalink($open_position->ID);
           ?>
 
             <li><a href="<?php echo $permalink ?>"><?php echo $title ?></a></li>
@@ -70,8 +77,8 @@
         <?php echo $the_excerpt; ?>
         </ol>
 
-        <?php $permalink = get_permalink( get_page_by_path( 'faq' ) ); ?>
-        <a id="read-faq-more" href="<?php echo $permalink ?>">Read All FAQs</a>
+        <?php $faq_page_permalink = get_permalink( get_page_by_path( 'faq' ) ); ?>
+        <a id="read-faq-more" href="<?php echo $faq_page_permalink ?>">Read All FAQs</a>
       </div><!-- end of career-details-section -->
     </div><!-- end of row -->
   </div><!-- end of container -->

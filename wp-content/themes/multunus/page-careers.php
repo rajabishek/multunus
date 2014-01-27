@@ -96,11 +96,16 @@
 <article id="open-positions" class="career-openings">
   <div class="container">
     <h1>Open Positions</h1>
-      <aside class="row career-positions-container">
-
+      <aside class="row career-positions-container hahah">
     <?php
-    if ($childrens = get_children('post_parent=40&post_type=page')):
-      foreach ($childrens as $children):
+    $args = array(
+      'post_type' => 'page',
+      'post_parent' => get_queried_object_id(),
+      'post_status' => 'publish'
+    );
+    $open_positions = get_children($args);
+    if ($open_positions):
+      foreach ($open_positions as $children):
         $post = get_post($children->ID);
         $title = $post->post_title;
         $excerpt = $post->post_excerpt;
