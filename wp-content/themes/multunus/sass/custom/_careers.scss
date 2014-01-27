@@ -123,33 +123,47 @@
     height: 100%;
   }
 
-  a:hover {
-    span { border-bottom: 1px solid $theme-color-pink; }
-    p { color: #333; }
-  }
+  .career-positions-container {
+    font-size: 0;
+    text-align: center;
 
-  a:focus { outline: none; }
+    .position-box-container {
+      padding-bottom: 20px;
+      @media (min-width: $screen-xs) {
+        float: none;
+        display: inline-block;
+        vertical-align: top;
+      }
+    }
+  }
 
   .career-position {
     background-color: rgb(241, 240, 240);
     background: url('/img/arrow-right-red.png') #fff center 90% no-repeat;
     text-align: center;
-    margin-right: 1em;
-    margin-bottom: 1em;
-    padding: 0 1em 1em 1em;
+    margin-bottom: 2em;
+    padding: 0 20px;
+    height: 245px;
 
     @media (max-width: $screen-xs) {
       margin-left: 1em;
     }
 
-    span {
+    .position-name {
       display: inline-block;
       border-bottom: 1px solid transparent;
-      padding-top: 1em;
-      margin-bottom: 25px;
       color: $theme-color-pink;
-      font-size: 1.5em;
+      line-height: 1;
+      margin-top: 40px;
+      margin-bottom: 18px;
     }
+
+    a:hover {
+      h2 { border-bottom: 1px solid $theme-color-pink; }
+      p { color: #333; }
+    }
+
+    a:focus { outline: none; }
 
     p {padding-bottom: 30px;}
   }

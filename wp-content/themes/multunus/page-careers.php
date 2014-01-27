@@ -96,45 +96,21 @@
 <article id="open-positions" class="career-openings">
   <div class="container">
     <h1>Open Positions</h1>
-      <aside class="row career-position-container">
+      <aside class="row career-positions-container">
 
     <?php
     if ($childrens = get_children('post_parent=40&post_type=page')):
-
-        // Logic to center align open positions
-        $num_childrens = count($childrens);
-
-        switch($num_childrens) {
-          case 1:
-            $offset_num = 4;
-            break;
-          case 2:
-              $offset_num = 2;
-              break;
-          case 3:
-              $offset_num = 1;
-              break;
-        }
-
-      $i = 0;
       foreach ($childrens as $children):
         $post = get_post($children->ID);
         $title = $post->post_title;
         $excerpt = $post->post_excerpt;
         $permalink = post_permalink($children->ID);
-
-        if ($i == 0) {
-          echo '<div class="col-md-4 col-md-offset-' . $offset_num . '">';
-        }
-        else {
-          echo '<div class="col-md-4">';
-        }
-        $i++;
     ?>
 
+    <div class="col-md-4 position-box-container">
       <div class="career-position">
          <a href="<?php echo $permalink ?>">
-         <span><?php echo $title ?></span>
+         <h2 class="position-name"><?php echo $title ?></h2>
          <p><?php echo $excerpt ?></p>
          </a>
        </div>
