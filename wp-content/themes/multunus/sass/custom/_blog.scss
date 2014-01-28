@@ -37,7 +37,7 @@
 }
 
 .one-post {
-  height: 430px;
+  height: 450px;
   border: 1px solid #dfdddd;
   position: relative;
 
@@ -48,20 +48,16 @@
   box-shadow: 0 2px 1px rgba(1, 2, 2, 0.15);
 
   .post-img {
-    max-height: 240px;
-    overflow: hidden;
-
     img {
       width: 100%;
+      max-height: 180px;
     }
   }
 
   .post-text {
-    padding: 5px 25px 42px 25px;
+    padding: 0 25px;
     font-size: 16px;
     line-height: 27.55px;
-    max-height: 195px;
-    overflow: hidden;
 
     h4 {
       font-weight: 400;
@@ -80,7 +76,8 @@
 .post-meta {
   background-color: #f1f1f1;
   font-size: 13px;
-  padding: 15px;
+  padding: 0 15px;
+  height: 65px;
 
   display: block;
   width: 100%;
@@ -89,11 +86,14 @@
   bottom: 0;
 
   #post-date {
+    @include vertical-center;
+    left: 25px;
     padding-right: 17px;
-    vertical-align: top;
   }
 
   #post-category {
+    @include vertical-center;
+    right: 0;
     padding-left: 17px;
     border-left: 1px solid #d1d1d1;
     display: inline-block;
@@ -118,7 +118,7 @@
 }
 
 .pagination {
-  @include clearfix; // includes only floated elements
+  @include clearfix;
 
   border-top: 1px solid #e3e3e3;
   border-bottom: 1px solid #e3e3e3;

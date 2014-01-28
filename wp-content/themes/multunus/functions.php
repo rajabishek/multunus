@@ -239,7 +239,9 @@ add_action( 'init', 'why_us_post_type', 0 );
 
 
 // Add Featured Image
-add_theme_support('post-thumbnails');
+if (function_exists( 'add_theme_support' ) ) {
+  add_theme_support('post-thumbnails');
+}
 
 // Add excerpt to pages
 add_action('init', 'add_excerpts_to_pages');
