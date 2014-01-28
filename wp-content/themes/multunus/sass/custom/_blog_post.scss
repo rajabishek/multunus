@@ -1,118 +1,118 @@
 .blog-post {
-    margin-top: 96px;
+  margin-top: 96px;
 
-    ul {
-        list-style: none;
-    }
-    .meta-data {
-        .authors {
-            border-bottom: 1px solid #e3e3e3;
-            padding: 7px 0;
-            line-height: 1.4;
+  ul {
+    list-style: none;
+  }
 
-            @media (max-width: $screen-xs) {
-                border-bottom: none;
-            }
-        }
+  .meta-data {
+    .authors {
+      border-bottom: 1px solid #e3e3e3;
+      padding: 7px 0;
+      line-height: 1.4;
 
-        .meta {
-            li {
-                border-bottom: 1px solid #e3e3e3;
-                padding: 7px 0;
-                line-height: 1.4;
-
-                @media (max-width: $screen-xs){
-                    display: inline;
-                    border-bottom: none;
-                    border-right: 1px solid #e3e3e3;
-                    padding: 0 12px;
-
-                    &:first-child {
-                        padding-left: 0;
-                    }
-
-                    &:last-child {
-                        border-right: none;
-                    }
-                }
-            }
-        }
-
-        .social-share {
-            margin-top: 10px;
-        }
+      @media (max-width: $screen-xs) {
+         border-bottom: none;
+      }
     }
 
-    .post {
+    .meta {
+      li {
         border-bottom: 1px solid #e3e3e3;
-        padding-bottom: 45px;
+        padding: 7px 0;
+        line-height: 1.4;
 
-        .alignleft {
-            float: left;
+        @media (max-width: $screen-xs){
+          display: inline;
+          border-bottom: none;
+          border-right: 1px solid #e3e3e3;
+          padding: 0 12px;
+
+          &:first-child {
+            padding-left: 0;
+          }
+
+          &:last-child {
+            border-right: none;
+          }
         }
+      }
+    }
 
-        .alignright {
-            float: right;
+    .social-share {
+      margin-top: 10px;
+    }
+  }
+
+  .post {
+    border-bottom: 1px solid #e3e3e3;
+    padding-bottom: 45px;
+
+    .alignleft {
+      float: left;
+    }
+
+    .alignright {
+      float: right;
+    }
+
+    .aligncenter {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .post-title {
+      margin-top: 50px;
+      margin-bottom: 18px;
+    }
+
+    .post-image {
+      margin-bottom: 25px;
+
+      img {
+        width: 100%;
+        height: 390px;
+        max-height: 390px;
+
+        @media (max-width: $screen-md) {
+          height: 202px;
         }
+      }
+    }
 
-        .aligncenter {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
+    .post-categories {
+      margin-top: 30px;
+    }
+
+    .content {
+      margin-bottom: 28px;
+
+      ul {
+        list-style: disc;
+        margin-left: 12px;
+      }
+
+      li {
+        margin-left: 10px;
+      }
+
+      .social-share {
+        margin-top: 30px;
+
+        li {
+          display: inline;
         }
+      }
 
-        .post-title {
-            margin-top: 50px;
-            margin-bottom: 18px;
-        }
+      code {
+        font-size: 12px;
+      }
+    }
 
-        .post-image {
-            height: 390px;
-            overflow: hidden;
-            margin-bottom: 25px;
-            position: relative;
-
-            img {
-                width: 100%;
-                position: absolute;
-                top: 50%;
-                -webkit-transform: translateY(-50%);
-                -ms-transform: translateY(-50%);
-                transform: translateY(-50%);
-            }
-        }
-
-        .post-categories {
-            margin-top: 30px;
-        }
-
-        .content {
-            margin-bottom: 28px;
-
-            ul {
-              list-style: disc;
-              margin-left: 12px;
-            }
-            li {
-              margin-left: 10px;
-            }
-
-            .social-share {
-              margin-top: 30px;
-
-              li {
-                  display: inline;
-              }
-            }
-
-            code {
-              font-size: 12px;
-            }
-        }
-
-        #disqus_thread {
-            margin-top: 40px;
-        }
+#disqus_thread {
+    margin-top: 40px;
+}
     }
 
     .sidebar {
