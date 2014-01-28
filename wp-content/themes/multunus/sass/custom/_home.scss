@@ -31,7 +31,8 @@
 
   .our-services {
     background-color: $grey-bg;
-    padding: 40px 0 108px 0;
+    padding-top: 40px;
+    padding-bottom: 108px;
     border-top: 1px solid #E4E4E4;
     border-bottom: 1px solid #E4E4E4;
 
@@ -53,17 +54,20 @@
         }
       }
     }
+
+    @media (max-width: $screen-md) {
+      padding-bottom: 0;
+
+      .service-item {
+        margin-bottom: 65px;
+      }
+
+      .service-item:last-child a{
+        margin-bottom: 60px;
+      }
+    }
   }
 
-  @media (max-width: $screen-md) {
-    .service-item a {
-      margin: 20px 0 60px 0;
-    }
-
-    .service-item:last-child a{
-      margin-bottom: 0;
-    }
-  }
 
   /* RECENT WORK */
 
