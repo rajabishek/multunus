@@ -36,7 +36,7 @@
         <div class="tab-content col-md-7 col-sm-12">
           <div class="tab-pane fade" id="why">
             <h1><span class="red-text">Why</span> we exist</h1>
-            <h4>We help entrepreneurs [ & intrepreneurs! ] succeed</h4>
+            <h4>We help entrepreneurs [ & intrapreneurs! ] succeed</h4>
             <p>Entrepreneurs are key drivers of positive change in any economy. Helping them succeed is our mission.</p>
           </div>
 
