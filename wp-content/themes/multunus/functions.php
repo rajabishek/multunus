@@ -74,6 +74,14 @@ if (!is_admin()) {
     }
   }
 
+  add_action('wp_enqueue_scripts', 'ofcourseus_page_script', 17);
+  function ofcourseus_page_script() {
+    if (is_page('ofcourseus')) {
+      wp_register_script( 'ofcourseus', get_template_directory_uri() . '/js/tagcloud_edgePreload.js', array( 'jquery' ), null, true );
+      wp_enqueue_script('ofcourseus');
+    }
+  }
+
   // Add proxima-nova font from typekit
   add_filter( 'wp_footer', 'add_typekit_font' );
   function add_typekit_font() {
@@ -236,6 +244,35 @@ function why_us_post_type() {
   ) );
 }
 add_action( 'init', 'why_us_post_type', 0 );
+
+// Register `ofcourseus` post type
+function ofcourseus_post_type() {
+  // Labels
+  $labels = array(
+    'name' => _x("ofcourseus", "post type general name"),
+    'singular_name' => _x("ofcourseus", "post type singular name"),
+    'menu_name' => 'ofcourseus',
+    'add_new' => _x("Add New", "post item"),
+    'add_new_item' => __("Add New Post"),
+    'edit_item' => __("Edit Post"),
+    'new_item' => __("New Post"),
+    'view_item' => __("View Post"),
+    'search_items' => __("Search Posts"),
+    'not_found' =>  __("No Posts Found"),
+    'not_found_in_trash' => __("No Posts Found in Trash"),
+    'parent_item_colon' => ''
+  );
+
+  // Register post type
+  register_post_type('ofcourseus' , array(
+    'labels' => $labels,
+    'public' => true,
+    'has_archive' => false,
+    'rewrite' => false,
+    'supports' => array('title', 'editor', 'thumbnail')
+  ) );
+}
+add_action( 'init', 'ofcourseus_post_type', 0 );
 
 
 // Add Featured Image
