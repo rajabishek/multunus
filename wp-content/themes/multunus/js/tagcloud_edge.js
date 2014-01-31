@@ -25,7 +25,7 @@ var symbols = {
             id:'Text2',
             type:'text',
             rect:['39.6%','38.8%','21.1%','14%','auto','auto'],
-            text:"Ruby",
+            text:"Cubicles",
             align:"left",
             font:['\'Lucida Sans Unicode\', \'Lucida Grande\', sans-serif',[300,"%"],"rgba(0,0,0,1)","100","none","normal"]
          },
@@ -33,7 +33,7 @@ var symbols = {
             id:'Text2Copy',
             type:'text',
             rect:['45.5%','57%','13.3%','9.5%','auto','auto'],
-            text:"Rails",
+            text:"",
             align:"left",
             font:['\'Lucida Sans Unicode\', \'Lucida Grande\', sans-serif',[200,"%"],"rgba(0,0,0,1)","500","none","normal"]
          },
@@ -41,7 +41,7 @@ var symbols = {
             id:'Text2Copy2',
             type:'text',
             rect:['7.5%','18%','8.4%','4.5%','auto','auto'],
-            text:"RSpec",
+            text:"",
             align:"left",
             font:['\'Lucida Sans Unicode\', \'Lucida Grande\', sans-serif',[100,"%"],"rgba(0,0,0,1)","100","none","normal"]
          },
@@ -49,7 +49,7 @@ var symbols = {
             id:'Text2Copy3',
             type:'text',
             rect:['27.1%','59%','11.1%','4.5%','auto','auto'],
-            text:"Jasmine",
+            text:"",
             align:"left",
             font:['\'Lucida Sans Unicode\', \'Lucida Grande\', sans-serif',[100,"%"],"rgba(0,0,0,1)","100","none","normal"]
          },
@@ -57,7 +57,7 @@ var symbols = {
             id:'Text2Copy4',
             type:'text',
             rect:['20.2%','24.8%','16.2%','5.5%','auto','auto'],
-            text:"Backbone",
+            text:"Unfair $$",
             align:"left",
             font:['\'Lucida Sans Unicode\', \'Lucida Grande\', sans-serif',[121,"%"],"rgba(0,0,0,1)","100","none","normal"]
          },
@@ -65,7 +65,7 @@ var symbols = {
             id:'Text2Copy5',
             type:'text',
             rect:['3.6%','70.5%','15.3%','7%','auto','auto'],
-            text:"Jenkins",
+            text:"Meaningless Work",
             align:"left",
             font:['\'Lucida Sans Unicode\', \'Lucida Grande\', sans-serif',[150,"%"],"rgba(0,0,0,1)","100","none","normal"]
          },
@@ -73,7 +73,7 @@ var symbols = {
             id:'Text2Copy6',
             type:'text',
             rect:['19.6%','34.5%','16.7%','8%','auto','auto'],
-            text:"HTML5",
+            text:"Suits",
             align:"left",
             font:['\'Lucida Sans Unicode\', \'Lucida Grande\', sans-serif',[170,"%"],"rgba(0,0,0,1)","100","none","normal"]
          },
@@ -81,7 +81,7 @@ var symbols = {
             id:'Text2Copy7',
             type:'text',
             rect:['62%','52.5%','7.1%','4.5%','auto','auto'],
-            text:"CSS3",
+            text:"",
             align:"left",
             font:['\'Lucida Sans Unicode\', \'Lucida Grande\', sans-serif',[100,"%"],"rgba(0,0,0,1)","100","none","normal"]
          },
@@ -89,7 +89,7 @@ var symbols = {
             id:'Text2Copy8',
             type:'text',
             rect:['80.7%','84%','10.9%','4.5%','auto','auto'],
-            text:"Node.JS",
+            text:"All Work, No Play",
             align:"left",
             font:['\'Lucida Sans Unicode\', \'Lucida Grande\', sans-serif',[100,"%"],"rgba(0,0,0,1)","100","none","normal"]
          },
@@ -97,7 +97,7 @@ var symbols = {
             id:'Text2Copy9',
             type:'text',
             rect:['63.8%','40.3%','16.9%','4.5%','auto','auto'],
-            text:"Objective-C",
+            text:"",
             align:"left",
             font:['\'Lucida Sans Unicode\', \'Lucida Grande\', sans-serif',[100,"%"],"rgba(0,0,0,1)","100","none","normal"]
          },
@@ -105,7 +105,7 @@ var symbols = {
             id:'Text2Copy10',
             type:'text',
             rect:['45.5%','25.5%','28.4%','9.5%','auto','auto'],
-            text:"PhoneGap",
+            text:"Appraisals",
             align:"left",
             font:['\'Lucida Sans Unicode\', \'Lucida Grande\', sans-serif',[200,"%"],"rgba(0,0,0,1)","100","none","normal"]
          },
@@ -113,7 +113,7 @@ var symbols = {
             id:'Text2Copy11',
             type:'text',
             rect:['73.8%','58.3%','16.9%','8.5%','auto','auto'],
-            text:"jQuery",
+            text:"Politics",
             align:"left",
             font:['\'Lucida Sans Unicode\', \'Lucida Grande\', sans-serif',[180,"%"],"rgba(0,0,0,1)","100","none","normal"]
          },
@@ -121,7 +121,7 @@ var symbols = {
             id:'Text2Copy14',
             type:'text',
             rect:['25.5%','82%','23.5%','5.5%','auto','auto'],
-            text:"jQuery Mobile",
+            text:"Elephants in the Room",
             align:"left",
             font:['\'Lucida Sans Unicode\', \'Lucida Grande\', sans-serif',[120,"%"],"rgba(0,0,0,1)","100","none","normal"]
          },
@@ -129,7 +129,7 @@ var symbols = {
             id:'Text2Copy15',
             type:'text',
             rect:['37.1%','7.5%','24.4%','4.5%','auto','auto'],
-            text:"Twitter Bootstrap",
+            text:"Pointy Haired Management",
             align:"left",
             font:['\'Lucida Sans Unicode\', \'Lucida Grande\', sans-serif',[100,"%"],"rgba(0,0,0,1)","100","none","normal"]
          },
@@ -137,7 +137,7 @@ var symbols = {
             id:'Text2Copy12',
             type:'text',
             rect:['73.3%','17.8%','11.3%','4.5%','auto','auto'],
-            text:"OpenGL",
+            text:"Silly Instructions",
             align:"left",
             font:['\'Lucida Sans Unicode\', \'Lucida Grande\', sans-serif',[100,"%"],"rgba(0,0,0,1)","100","none","normal"]
          },
@@ -145,7 +145,7 @@ var symbols = {
             id:'Text2Copy13',
             type:'text',
             rect:['14%','42.5%','22.7%','9.5%','auto','auto'],
-            text:"Android",
+            text:"",
             align:"left",
             font:['\'Lucida Sans Unicode\', \'Lucida Grande\', sans-serif',[200,"%"],"rgba(0,0,0,1)","100","none","normal"]
          },
@@ -153,7 +153,7 @@ var symbols = {
             id:'Text4',
             type:'text',
             rect:['58.4%','75.3%','17.1%','4.5%','auto','auto'],
-            text:"JSTestDriver",
+            text:"Insipid Tech",
             align:"left",
             font:['\'Lucida Sans Unicode\', \'Lucida Grande\', sans-serif',[100,"%"],"rgba(0,0,0,1)","100","none","normal"]
          }],
@@ -243,7 +243,7 @@ var symbols = {
             ["transform", "scaleY", '0'],
             ["style", "text-indent", '0%'],
             ["style", "height", '4.5%'],
-            ["style", "width", '10.91%'],
+            ["style", "width", '15%'],
             ["style", "word-spacing", '0em'],
             ["color", "color", 'rgba(255,255,255,1.00)']
          ],
@@ -257,7 +257,7 @@ var symbols = {
             ["transform", "scaleY", '0'],
             ["style", "text-indent", '0%'],
             ["style", "height", '5.5%'],
-            ["style", "width", '23.46%'],
+            ["style", "width", '23.56%'],
             ["style", "word-spacing", '0em'],
             ["color", "color", 'rgba(255,255,255,1.00)']
          ],
@@ -316,7 +316,7 @@ var symbols = {
             ["transform", "scaleY", '0'],
             ["style", "text-indent", '0%'],
             ["style", "height", '7%'],
-            ["style", "width", '15.28%'],
+            ["style", "width", '23.68%'],
             ["style", "word-spacing", '0em'],
             ["color", "color", 'rgba(255,255,255,1.00)']
          ],
@@ -358,7 +358,7 @@ var symbols = {
             ["transform", "scaleY", '0'],
             ["style", "text-indent", '0%'],
             ["style", "height", '4.5%'],
-            ["style", "width", '11.28%'],
+            ["style", "width", '14.2%'],
             ["style", "word-spacing", '0em'],
             ["color", "color", 'rgba(255,255,255,1.00)']
          ],
@@ -507,7 +507,7 @@ Edge.registerCompositionDefn(compId, symbols, fonts, resources);
 /**
  * Adobe Edge DOM Ready Event Handler
  */
-$(window).ready(function() {
+$(document).ready(function() {
      Edge.launchComposition(compId);
 });
 })(jQuery, AdobeEdge, "EDGE-17769441");

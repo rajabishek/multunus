@@ -1,6 +1,7 @@
 $(document).ready(function() {
   setTimeout(function() {
     $('#Stage').removeClass('in');
-  },8000);
+    $('.something').addClass('in');
+  },7000);
 
 });
