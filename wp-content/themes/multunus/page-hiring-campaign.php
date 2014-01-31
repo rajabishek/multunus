@@ -7,7 +7,7 @@ get_header();
 
 <div class="hiring-campaign">
   <div class="jumbotron campaign">
-    <div id="Stage" class="EDGE-17769441 fade in" style=".edgeLoad-EDGE-17769441 { visibility:hidden; }"></div>
+    <div id="Stage" class="EDGE-17769441 fade in hidden-xs" style=".edgeLoad-EDGE-17769441 { visibility:hidden; }"></div>
     <div class="something fade">
       <h1>We Do Things Differently.</h1>
       <h3><a data-toggle="scroll" rel=".content-section">Watch how</a></h3>
@@ -35,6 +35,10 @@ get_header();
 
             <div class="col-md-6 video-container">
               <iframe frameborder="0" src="<?php the_field('video_link'); ?>" allowfullscreen=""></iframe>
+
+              <?php if(get_field('video_quote') !== '') { ?>
+              <p class="quote"><?php the_field('video_quote'); ?></p>
+              <?php } ?>
             </div>
 
             <div class="col-md-6 video-summary">

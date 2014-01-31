@@ -1,4 +1,4 @@
-.why-us-page {
+.why-us-page, .hiring-campaign {
   margin-top: 108px;
 
   .why-us-image-section {
@@ -90,55 +90,54 @@
       @media (max-width: $screen-sm) {
         padding-top: 0;
       }
-
-      .post {
-        ul {
-          margin-left: 28px;
-        }
-      }
-
-      .title {
-        margin-bottom: 12px;
-      }
-
-      .video-container {
-        padding-top: 6px;
-        margin-bottom: 30px;
-
-        @media (max-width: $screen-sm) {
-          text-align: center;
-          padding-top: 0;
-        }
-
-        iframe {
-          width: 460px;
-          height: 280px;
-
-          @media (max-width: $screen-sm) {
-            width: 338px;
-            height: 207px;
-          }
-        }
-
-        .quote {
-          margin: 0;
-          text-align: center;
-          font-size: 25px;
-          font-weight: 100;
-          line-height: 1.45;
-          padding: 35px 18px;
-        }
+    }
+    .post {
+      ul {
+        margin-left: 28px;
       }
     }
 
-    .post:nth-child(2n+1) {
-      .video-summary {
-        @include make-md-column-pull(6);
+    .title {
+      margin-bottom: 12px;
+    }
+
+    .video-container {
+      padding-top: 6px;
+      margin-bottom: 30px;
+
+      @media (max-width: $screen-sm) {
+        text-align: center;
+        padding-top: 0;
       }
 
-      .video-container {
-        @include make-md-column-push(6);
+      iframe {
+        width: 460px;
+        height: 280px;
+
+        @media (max-width: $screen-sm) {
+          width: 338px;
+          height: 207px;
+        }
       }
+
+      .quote {
+        margin: 0;
+        text-align: center;
+        font-size: 25px;
+        font-weight: 100;
+        line-height: 1.45;
+        padding: 35px 18px;
+      }
+    }
+  }
+
+  .post:nth-child(2n+1) {
+    .video-summary {
+      @include make-md-column-pull(6);
+    }
+
+    .video-container {
+      @include make-md-column-push(6);
     }
   }
 
