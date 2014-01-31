@@ -1,13 +1,14 @@
 <?php
 /**
- * Template Name: ofcourseus
+ * Template Name: Hiring Campaign
  */
 get_header();
 ?>
 
 <div class="ofcourseus">
   <div class="jumbotron campaign">
-    <div id="Stage" class="EDGE-17769441" style=".edgeLoad-EDGE-17769441 { visibility:hidden; }"></div>
+    <div id="Stage" class="EDGE-17769441 fade in" style=".edgeLoad-EDGE-17769441 { visibility:hidden; }"></div>
+    <div></div>
   </div>
 
   <div class="content-section">

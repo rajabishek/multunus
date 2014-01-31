@@ -74,11 +74,13 @@ if (!is_admin()) {
     }
   }
 
-  add_action('wp_enqueue_scripts', 'ofcourseus_page_script', 17);
-  function ofcourseus_page_script() {
+  add_action('wp_enqueue_scripts', 'hiring_campaign_page_script', 17);
+  function hiring_campaign_page_script() {
     if (is_page('ofcourseus')) {
-      wp_register_script( 'ofcourseus', get_template_directory_uri() . '/js/tagcloud_edgePreload.js', array( 'jquery' ), null, true );
-      wp_enqueue_script('ofcourseus');
+      wp_register_script( 'tag_cloud', get_template_directory_uri() . '/js/tagcloud_edgePreload.js', array( 'jquery' ), null, true );
+      wp_enqueue_script('tag_cloud');
+      wp_register_script( 'hiring_campaign', get_template_directory_uri() . '/js/hiring_campaign.js', array( 'jquery' ), null, true );
+      wp_enqueue_script('hiring_campaign');
     }
   }
 
@@ -245,13 +247,13 @@ function why_us_post_type() {
 }
 add_action( 'init', 'why_us_post_type', 0 );
 
-// Register `ofcourseus` post type
-function ofcourseus_post_type() {
+// Register `hiring campaign` post type
+function hiring_campaign_post_type() {
   // Labels
   $labels = array(
-    'name' => _x("ofcourseus", "post type general name"),
-    'singular_name' => _x("ofcourseus", "post type singular name"),
-    'menu_name' => 'ofcourseus',
+    'name' => _x("Hiring Campaign", "post type general name"),
+    'singular_name' => _x("Hiring Campaign", "post type singular name"),
+    'menu_name' => 'Hiring Campaign',
     'add_new' => _x("Add New", "post item"),
     'add_new_item' => __("Add New Post"),
     'edit_item' => __("Edit Post"),
@@ -264,7 +266,7 @@ function ofcourseus_post_type() {
   );
 
   // Register post type
-  register_post_type('ofcourseus' , array(
+  register_post_type('hiring_campaign' , array(
     'labels' => $labels,
     'public' => true,
     'has_archive' => false,
@@ -272,7 +274,7 @@ function ofcourseus_post_type() {
     'supports' => array('title', 'editor', 'thumbnail')
   ) );
 }
-add_action( 'init', 'ofcourseus_post_type', 0 );
+add_action( 'init', 'hiring_campaign_post_type', 0 );
 
 
 // Add Featured Image
