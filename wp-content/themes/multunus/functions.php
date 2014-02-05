@@ -77,10 +77,10 @@ if (!is_admin()) {
   add_action('wp_enqueue_scripts', 'hiring_campaign_page_script', 17);
   function hiring_campaign_page_script() {
     if (is_page('ofcourseus')) {
-      wp_register_script( 'tag_cloud', get_template_directory_uri() . '/js/tagcloud_edgePreload.js', array( 'jquery' ), null, true );
-      wp_enqueue_script('tag_cloud');
-      wp_register_script( 'hiring_campaign', get_template_directory_uri() . '/js/hiring_campaign.js', array( 'jquery' ), null, true );
-      wp_enqueue_script('hiring_campaign');
+      // wp_register_script( 'tag_cloud', get_template_directory_uri() . '/js/tagcloud_edgePreload.js', array( 'jquery' ), null, true );
+      // wp_enqueue_script('tag_cloud');
+      // wp_register_script( 'hiring_campaign', get_template_directory_uri() . '/js/hiring_campaign.js', array( 'jquery' ), null, true );
+      // wp_enqueue_script('hiring_campaign');
     }
   }
 

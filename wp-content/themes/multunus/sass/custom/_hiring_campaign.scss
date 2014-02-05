@@ -34,9 +34,12 @@
       color: white;
       text-align: center;
 
-      a:hover {
+      a {
         color: white;
-        text-decoration: underline;
+        display: inline-block;
+        margin-top: 85px;
+        line-height: 1;
+        border-bottom: 1px solid white;
       }
     }
   }

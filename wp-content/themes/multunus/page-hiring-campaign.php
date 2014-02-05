@@ -7,8 +7,10 @@ get_header();
 
 <div class="hiring-campaign">
   <div class="jumbotron campaign">
+    <!--
     <div id="Stage" class="EDGE-17769441 fade in hidden-xs" style=".edgeLoad-EDGE-17769441 { visibility:hidden; }"></div>
-    <div class="something fade">
+    -->
+    <div class="something">
       <h1>We Do Things Differently.</h1>
       <h3><a data-toggle="scroll" rel=".content-section">Watch how</a></h3>
     </div>
