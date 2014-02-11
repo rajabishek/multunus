@@ -47,7 +47,7 @@
             </div>
 
             <div class="post-text">
-              <h4><a href="<?php the_permalink(); ?>" title="Read more"><?php echo wp_trim_words(get_the_title(), 5, '...'); ?></a></h2>
+              <h4><a href="<?php the_permalink(); ?>" title="Read more"><?php the_title(); ?></a></h2>
                 <?php
                   if ( has_post_thumbnail() ) {
                     echo '<p>' . wp_trim_words(get_the_excerpt(), 12, '...') . '</p>';
