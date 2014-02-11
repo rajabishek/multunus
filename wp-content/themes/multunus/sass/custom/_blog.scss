@@ -86,6 +86,7 @@
 
   position: absolute;
   bottom: 0;
+  box-shadow: 3px 3px 3px 16px white;
 
   #post-date {
     @include vertical-center;
