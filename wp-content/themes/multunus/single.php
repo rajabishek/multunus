@@ -20,6 +20,12 @@
 					<div class="content col-sm-10">
 						<?php the_content(); ?>
 
+            <aside class="blog-footer-text">
+            <p>"Some unexpected bad things will happen" - Dan North.</p>
+            <p>We ship working software every 2 days. Its a great way to discover those unexpected bad things early on.</p>
+            <p>We build web and mobile apps. If you have one in mind, talk to us.</p>
+            </aside>
+
 						<div class="post-categories">
 							Posted in :
 							<?php
