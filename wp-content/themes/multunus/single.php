@@ -20,6 +20,16 @@
 					<div class="content col-sm-10">
 						<?php the_content(); ?>
 
+            <aside><em>
+            Multunus is a boutique technology studio specializing in working with startups and entrepreneurs
+            (and intrapreneurs) to get their ideas off the ground and into the real world. We de-risk the business 
+            using our continuous delivery approach where we deliver working code every 2 days. This enables 
+            business owners to ‘see’ the product being built, test drive it and collect feedback giving 
+            sufficient time to tweak the feature set before the product hits the market. Risk is bad for new 
+            ideas and we reduce the risk of a big-bang release and subsequent heartburn if things don’t 
+            work as planned.
+            </em></aside>
+
 						<div class="post-categories">
 							Posted in :
 							<?php
