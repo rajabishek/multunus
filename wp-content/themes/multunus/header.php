@@ -13,8 +13,6 @@
   <title><?php bloginfo('name'); ?> | <?php is_front_page() ? bloginfo('description') : wp_title(''); ?></title>
   <link rel="shortcut icon" type="image/x-icon" href="<?php bloginfo('stylesheet_directory'); ?>/favicon.ico">
 
-	<?php if ( is_singular() ) wp_enqueue_script('comment-reply'); ?>
-
 	<?php wp_head(); ?>
 </head>
 

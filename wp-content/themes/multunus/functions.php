@@ -31,7 +31,7 @@ if (!is_admin()) {
   function twbs_load_scripts() {
     // jQuery
     wp_deregister_script('jquery');
-    wp_register_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js', array(), null, false);
+    wp_register_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js', array(), null, true);
     wp_enqueue_script('jquery');
     // Bootstrap
     wp_register_script('bootstrap-js', '//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js', array('jquery'), null, true);
