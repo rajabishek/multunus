@@ -1,8 +1,9 @@
-.hiring-campaign {
+.hiring-campaign, .community {
   margin-top: 108px;
 
-  .campaign {
+  .red-jumbo {
     background-color: rgba(189, 31, 58, 1);
+    margin-bottom: 0;
     height: 500px;
     position: relative;
 
@@ -21,7 +22,7 @@
       }
     }
 
-    .something {
+    .jumbo-content {
       position: absolute;
       top: 50%;
       left: 50%;
@@ -37,7 +38,7 @@
       a {
         color: white;
         display: inline-block;
-        margin-top: 85px;
+        margin-top: 86px;
         line-height: 1;
         border-bottom: 1px solid white;
       }

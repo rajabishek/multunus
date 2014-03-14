@@ -276,6 +276,66 @@ function hiring_campaign_post_type() {
 }
 add_action( 'init', 'hiring_campaign_post_type', 0 );
 
+// Register `open source` post type
+function open_source_post_type() {
+  // Labels
+  $labels = array(
+    'name' => _x("Open Source", "post type general name"),
+    'singular_name' => _x("Open Source", "post type singular name"),
+    'menu_name' => 'Open Source',
+    'add_new' => _x("Add New", "post item"),
+    'add_new_item' => __("Add New Post"),
+    'edit_item' => __("Edit Post"),
+    'new_item' => __("New Post"),
+    'view_item' => __("View Post"),
+    'search_items' => __("Search Posts"),
+    'not_found' =>  __("No Posts Found"),
+    'not_found_in_trash' => __("No Posts Found in Trash"),
+    'parent_item_colon' => ''
+  );
+
+  // Register post type
+  register_post_type('open_source' , array(
+    'labels' => $labels,
+    'public' => true,
+    'has_archive' => false,
+    'rewrite' => false,
+    'supports' => array('title', 'editor', 'excerpt', 'thumbnail', 'comments'),
+  ) );
+}
+add_action( 'init', 'open_source_post_type', 0 );
+
+// Register `platform` taxonomy
+function open_source_taxonomy() {
+
+  //  Labels
+  $singular = 'Platform';
+  $plural = 'Platforms';
+  $labels = array(
+    'name' => _x( $plural, "taxonomy general name"),
+    'singular_name' => _x( $singular, "taxonomy singular name"),
+    'search_items' =>  __("Search $singular"),
+    'all_items' => __("All $singular"),
+    'parent_item' => __("Parent $singular"),
+    'parent_item_colon' => __("Parent $singular:"),
+    'edit_item' => __("Edit $singular"),
+    'update_item' => __("Update $singular"),
+    'add_new_item' => __("Add New $singular"),
+    'new_item_name' => __("New $singular Name"),
+  );
+
+  // Register and attach to 'open_source' post type
+  register_taxonomy( strtolower($singular), 'open_source', array(
+    'public' => true,
+    'show_ui' => true,
+    'show_in_nav_menus' => true,
+    'hierarchical' => true,
+    'query_var' => true,
+    'rewrite' => false,
+    'labels' => $labels
+  ) );
+}
+add_action( 'init', 'open_source_taxonomy', 0 );
 
 // Add Featured Image
 if (function_exists( 'add_theme_support' ) ) {
