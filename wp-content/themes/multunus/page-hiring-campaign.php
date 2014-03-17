@@ -12,7 +12,7 @@ get_header();
     -->
     <div class="jumbo-content">
       <h1>We Do Things Differently.</h1>
-      <h3><a data-toggle="scroll" rel=".content-section">Watch how</a></h3>
+      <h3><a class="secondary-link" data-toggle="scroll" rel=".content-section">Watch how</a></h3>
     </div>
   </div>
 

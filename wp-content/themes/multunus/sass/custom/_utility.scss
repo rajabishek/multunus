@@ -10,6 +10,14 @@
   text-align: center;
 }
 
+.theme-pink-color {
+  color: $theme-color-pink;
+}
+
+.bold {
+  font-weight: bold;
+}
+
 // center images, using text-align is not supported by w3c
 @mixin img-center {
   display: block;

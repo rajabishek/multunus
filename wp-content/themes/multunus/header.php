@@ -57,6 +57,6 @@
 
   <?php if(!is_page_template("page-home.php") && function_exists('bcn_display')) {
     echo '<div class="breadcrumbs">';
-    bcn_display(); }
-    echo '</div>';
+    bcn_display();
+  } echo '</div>';
   ?>
