@@ -7,7 +7,7 @@ get_header();
 
 <div id="continuous-delivery" class="container">
   <div class="dotted-arrow hidden-xs">
-    <img src="/img/continuous-delivery/dotted-arrow.png"/>
+    <img src="/img/continuous-delivery/dotted-arrow.png" />
   </div>
   <section id="title" class="align-center">
     <h1 class="theme-pink-color">
@@ -22,14 +22,18 @@ get_header();
     <h1>EVERY <span class="bold">TWO</span> DAYS</h1>
   </section>
 
+  <section id="community-love" class="align-center">
+    <h2>We also <img src="/img/continuous-delivery/heart.png" class="heart" /> our community.</h2>
+  </section>
+
   <section id="links">
     <div class="row">
       <div class="col-md-4 link-box">
-        <h3><a href="/blog/category/continuous-delivery/">/blog</a></h3>
-        <p>Read about our continuous delivery experience in Android, iOS and Rails.</p>
+        <h3><a href="/blog/category/continuous-delivery/">Blog</a></h3>
+        <p>Read about our continuous delivery experience in iOS, Android and Rails.</p>
       </div>
       <div class="col-md-4 link-box">
-        <h3><a href="/events">/speaking</a></h3>
+        <h3><a href="/events">Speaking</a></h3>
         <ul class="events">
           <li id="android">
             <div class="name">DroidSync 2014</div>
@@ -42,7 +46,7 @@ get_header();
         </ul>
       </div>
       <div class="col-md-4 link-box">
-        <h3><a href="/open-source">/open-source</a></h3>
+        <h3><a href="/open-source">Open Source</a></h3>
         <p>Check out RubyMation! (iOS Animation Libraries in RubyMotion)</p>
       </div>
     </div>
