@@ -39,11 +39,6 @@ $eventon_sin_event->eventon_header();
 					?>
 					</div><!-- .entry-content -->
 
-
-
-					<footer class="entry-meta">
-						<?php edit_post_link( __( 'Edit', 'twentythirteen' ), '<span class="edit-link">', '</span>' ); ?>
-					</footer><!-- .entry-meta -->
 				</article><!-- #post -->
 			<?php endwhile; ?>
 

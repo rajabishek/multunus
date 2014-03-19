@@ -431,4 +431,11 @@ function numeric_pagination_nav() {
     }
   }
   // add_filter( 'after_setup_theme', 'create_pages' );
+
+  function change_slug($array){
+    $vals = array('rewrite'=> array('with_front'=> false) );
+    return array_merge($array, $vals);
+  }
+
+  add_action('eventon_register_post_type_ajde_events', 'change_slug');
 ?>
