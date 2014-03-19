@@ -3,7 +3,7 @@
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 	<div class="blog-post container">
 		<div class="row">
-			<article <?php post_class('col-sm-9 col-sm-pull-3') ?> id="post-<?php the_ID(); ?>">
+			<article <?php post_class('col-sm-9 post') ?> id="post-<?php the_ID(); ?>">
 
 				<h1 class="post-title"><?php the_title(); ?></h1>
 				<div class="post-image">
@@ -32,8 +32,6 @@
 
 					</div>
 				</div>
-				<hr>
-				<?php comments_template(); ?>
 
 				<?php edit_post_link('Edit this entry','','.'); ?>
 
