@@ -154,7 +154,7 @@ if (function_exists('register_sidebar')) {
      'labels' => $labels,
      'public' => true,
      'has_archive' => false,
-     'rewrite' => false,
+     'rewrite' => array('with_front' => false),
      'supports' => array('title', 'editor', 'thumbnail')
    ) );
  }
@@ -398,44 +398,10 @@ function numeric_pagination_nav() {
 
   }
 
-  function create_pages() {
-    $pages = array(
-      "Continuous Delivery" => array(
-        "title" => "ContinuousDelivery.in Landing Page",
-        "name" => "continuous-delivery",
-        "template" => "page-continuous-delivery.php"
-        ),
-      "Community" => array(
-        "title" => "Community",
-        "template" => "page-community.php"
-        ),
-      "Open Source" => array(
-        "title" => "Open Source",
-        "template" => "page-open-source.php"
-        )
-      );
-
-    foreach ( $pages as $page ) {
-      if( null == get_page_by_title( $page["title"] ) ) {
-
-        $post_id = wp_insert_post(
-          array(
-            'post_title'    =>  $page["title"],
-            'post_name' => $page["name"],
-            'post_status'   =>  'publish',
-            'post_type'   =>  'page',
-            'page_template' => $page["template"]
-          )
-        );
-      }
-    }
-  }
-  // add_filter( 'after_setup_theme', 'create_pages' );
-
-  function change_slug($array){
+  function change_front_for_events($array){
     $vals = array('rewrite'=> array('with_front'=> false) );
     return array_merge($array, $vals);
   }
 
-  add_action('eventon_register_post_type_ajde_events', 'change_slug');
+  add_action('eventon_register_post_type_ajde_events', 'change_front_for_events');
 ?>

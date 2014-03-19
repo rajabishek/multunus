@@ -42,5 +42,5 @@ global $eventon;
 </div>
 
 <?php
-	comments_template( '', true );
+	// comments_template( '', true );
 ?>
