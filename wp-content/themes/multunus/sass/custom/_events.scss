@@ -24,11 +24,6 @@
      border-right: none;
   }
 
-  #evcal_list .eventon_list_event .desc_trig, .evcal_evdata_img, .event_description .evcal_close, .evcal_btn, .evo_sort_btn, .calendar_header .evcal_arrows {
-     border-right: 1px solid #e5e5e5 !important;
-     border-top: 1px solid #e5e5e5 !important;
-  }
-
   .past-events .eventon_events_list .eventon_list_event .evcal_desc .evcal_desc_info, .evo_pop_body .evcal_desc .evcal_desc_info {
       font-size: 10px;
   }
@@ -45,4 +40,8 @@
 .evo_page_content {
   margin-top: 142px;
   margin-bottom: 92px;
+
+  #evcal_list .eventon_list_event .desc_trig, .evcal_evdata_img, .event_description .evcal_close, .evcal_btn, .evo_sort_btn, .calendar_header .evcal_arrows {
+     border-top: 1px solid #e5e5e5 !important;
+  }
 }
