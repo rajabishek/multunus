@@ -299,7 +299,7 @@ function open_source_post_type() {
     'labels' => $labels,
     'public' => true,
     'has_archive' => false,
-    'rewrite' => false,
+    'rewrite' => array('with_front' => false),
     'supports' => array('title', 'editor', 'excerpt', 'thumbnail', 'comments'),
   ) );
 }

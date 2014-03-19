@@ -5,23 +5,13 @@
 get_header();
 ?>
 
-<div class="community">
-  <div class="jumbotron red-jumbo">
-    <div class="jumbo-content">
-      <ul class="container">
-        <li class="col-sm-4 col-xs-12">
-          <a href="/blog">Blog</a>
-        </li>
-        <li class="col-sm-4 col-xs-12">
-          <a href="/open-source">Open Source</a>
-        </li>
-        <li class="col-sm-4 col-xs-12">
-          <a href="/events">Events</a>
-        </li>
-      </ul>
-    </div>
-  </div>
+<div id="community" class="container">
+  <section id="community-love" class="align-center">
+    <h1>We <img src="/img/continuous-delivery/heart.png" class="heart" /> our community.</h1>
+  </section>
 
-</div><!-- end of community -->
+  <?php get_template_part('blog-events-opensource'); ?>
+
+</div><!-- end of #community -->
 
 <?php get_footer(); ?>

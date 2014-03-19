@@ -1,4 +1,4 @@
-#continuous-delivery {
+#continuous-delivery, #community {
   margin-top: 108px;
   margin-bottom: 60px;
   position: relative;
@@ -102,16 +102,10 @@
 
           &#android {
             background-image: url("/img/continuous-delivery/android.png");
-            & > .name {
-              color: #698b3b;
-            }
           }
 
           &#rails {
             background-image: url("/img/continuous-delivery/rails.png");
-            & > .name {
-              color: #b22a3c;
-            }
           }
         }
 
