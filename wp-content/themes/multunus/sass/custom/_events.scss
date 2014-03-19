@@ -1,47 +1,47 @@
 #page-events {
   margin-top: 142px;
   margin-bottom: 92px;
-
-  .ajde_evcal_calendar .calendar_header {
-      min-height: 0;
-      margin: 0;
-  }
-
-  #evcal_list .eventon_list_event .evcal_desc span.evcal_event_title {
-      font-size: 24px;
-  }
-
-  .eventon_events_list .eventon_list_event .evcal_desc .evcal_desc_info, .evo_pop_body .evcal_desc .evcal_desc_info {
-      font-size: 18px;
-  }
-
-  .past-events #evcal_list .eventon_list_event .evcal_desc span.evcal_event_title {
-      font-size: 18px;
-      color: #333;
-  }
-
-  #evcal_list {
-     border-right: none;
-  }
-
-  .past-events .eventon_events_list .eventon_list_event .evcal_desc .evcal_desc_info, .evo_pop_body .evcal_desc .evcal_desc_info {
-      font-size: 10px;
-  }
-
-  .upcoming-events {
-      margin-top: 15px;
-  }
-
-  .evo_sort_btn {
-     display: none !important;
-  }
 }
 
 .evo_page_content {
   margin-top: 142px;
   margin-bottom: 92px;
+}
 
-  #evcal_list .eventon_list_event .desc_trig, .evcal_evdata_img, .event_description .evcal_close, .evcal_btn, .evo_sort_btn, .calendar_header .evcal_arrows {
-     border-top: 1px solid #e5e5e5 !important;
-  }
+.ajde_evcal_calendar .calendar_header {
+    min-height: 0;
+    margin: 0;
+}
+
+#evcal_list .eventon_list_event .evcal_desc span.evcal_event_title {
+    font-size: 24px;
+}
+
+.eventon_events_list .eventon_list_event .evcal_desc .evcal_desc_info, .evo_pop_body .evcal_desc .evcal_desc_info {
+    font-size: 18px;
+}
+
+.past-events #evcal_list .eventon_list_event .evcal_desc span.evcal_event_title {
+    font-size: 18px;
+    color: #333;
+}
+
+#evcal_list {
+   border-right: none;
+}
+
+.past-events .eventon_events_list .eventon_list_event .evcal_desc .evcal_desc_info, .evo_pop_body .evcal_desc .evcal_desc_info {
+    font-size: 10px;
+}
+
+.upcoming-events {
+    margin-top: 15px;
+}
+
+.evo_sort_btn {
+   display: none !important;
+}
+
+#evcal_list .eventon_list_event .desc_trig, .evcal_evdata_img, .event_description .evcal_close, .evcal_btn, .evo_sort_btn, .calendar_header .evcal_arrows {
+   border-top: 1px solid #e5e5e5 !important;
 }
