@@ -1,7 +1,7 @@
 <section id="community-links">
   <div class="row">
     <div class="col-md-4 link-box" id="blog-posts" >
-      <h3><a href="/blog/category/continuous-delivery/">/Blog</a></h3>
+      <h3><a href="/blog">/Blog</a></h3>
       <?php query_posts('posts_per_page=3&paged=' . $paged); ?>
 
       <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
