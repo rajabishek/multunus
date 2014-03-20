@@ -12,7 +12,7 @@
     </div>
     <div class="col-md-4 link-box" id="events" >
       <h3><a href="/events">/Events</a></h3>
-      <?php echo do_shortcode('[add_eventon_el pec="ct" etop_month="no" event_count="3" ]'); ?>
+      <?php echo do_shortcode('[add_eventon_el number_of_months="12" pec="ct" etop_month="no" event_count="3" ]'); ?>
     </div>
     <div class="col-md-4 link-box" id="open-source-projects" >
       <h3><a href="/open-source">/OpenSource</a></h3>
