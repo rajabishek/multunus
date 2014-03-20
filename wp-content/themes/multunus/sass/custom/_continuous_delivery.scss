@@ -5,12 +5,8 @@
 
   .dotted-arrow {
     position: absolute;
-    right: -75px;
+    right: -120px;
     top: 90px;
-
-    img {
-      height: 660px;
-    }
   }
 
   .heart {
@@ -57,71 +53,6 @@
       width: 25px;
       left: -10px;
       bottom: -15px;
-    }
-  }
-
-  section#links {
-    a {
-      color: $theme-color-pink;
-
-      &:hover {
-        border-bottom: 1px solid;
-      }
-    }
-
-    .link-box {
-      border-right: 1px solid #dfdddd;
-      min-height: 180px;
-      padding: 0 40px;
-
-      @media (max-width: $screen-sm) {
-        border-right: none;
-        border-bottom: 1px solid #dfdddd;
-        padding: 30px 40px;
-      }
-
-      p, ul {
-        color: #787878;
-      }
-
-      h3 {
-        font-weight: 500;
-        text-align: center;
-        margin: 0;
-      }
-
-      ul.events {
-        padding-left: 0;
-        list-style: none;
-
-        li {
-          margin-bottom: 10px;
-          background-size: 32px;
-          background-repeat: no-repeat;
-          background-position: left center;
-
-          &#android {
-            background-image: url("/img/continuous-delivery/android.png");
-          }
-
-          &#rails {
-            background-image: url("/img/continuous-delivery/rails.png");
-          }
-        }
-
-        .name, .place {
-          line-height: 1.4;
-          padding-left: 40px;
-        }
-
-        .name {
-          font-weight: 500;
-        }
-      }
-
-      &:last-child {
-        border: none;
-      }
     }
   }
 

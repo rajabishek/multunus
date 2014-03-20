@@ -8,3 +8,106 @@
     width: 50px;
   }
 }
+
+section#community-links {
+  padding-top: 0;
+  h3 a {
+    color: $theme-color-pink;
+
+    &:hover {
+      border-bottom: 1px solid;
+    }
+  }
+
+  .link-box {
+    border-right: 1px solid #dfdddd;
+    min-height: 280px;
+    padding: 0 40px;
+
+    @media (max-width: $screen-sm) {
+      border-right: none;
+      padding: 30px 40px;
+      min-height: 0;
+    }
+
+    p {
+      color: #787878;
+    }
+
+    h3 {
+      font-weight: 500;
+      text-align: center;
+      margin: 0;
+    }
+
+    &:last-child {
+      border: none;
+    }
+
+    .post-title, .eventon_list_event {
+      background: url("/img/arrow-right-red.png") left 1em no-repeat;
+      padding: 10px 0 0 30px;
+
+      a {
+        display: inline-block;
+        border-bottom: 1px dotted #d4d4d4;
+        padding-bottom: 10px;
+        width: 100%;
+      }
+    }
+  }
+
+  #eventon_loadbar_section {
+    display: none;
+  }
+
+  .eventon_events_list {
+    border: none !important;
+
+    .eventon_list_event .desc_trig {
+      border: none !important;
+      background: white;
+      padding: 0;
+      min-height: initial;
+      display: inline-block;
+      border-bottom: 1px dotted #d4d4d4 !important;
+      padding-bottom: 10px;
+      width: 100%;
+
+      &:hover span.evcal_event_title {
+        color: $theme-color-pink;
+      }
+    }
+
+    .evcal_cblock {
+      display: none;
+    }
+
+    .evcal_desc {
+      padding-left: 0;
+      margin-left: 0;
+
+      span.evcal_event_title {
+        color: #333;
+        font-size: 16px;
+        text-transform: none;
+      }
+
+      .evcal_desc_info, .evcal_desc3 {
+        display: none;
+      }
+    }
+  }
+}
+
+section#video {
+  iframe {
+    width: 560px;
+    height: 315px;
+
+    @media (max-width: $screen-sm) {
+      width: 300px;
+      height: 207px;
+    }
+  }
+}

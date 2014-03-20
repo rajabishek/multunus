@@ -21,7 +21,9 @@ get_header();
     </h1>
     <h1>EVERY <span class="bold">TWO</span> DAYS</h1>
   </section>
-
+  <section id="video" class="align-center">
+    <iframe src="//www.youtube.com/embed/5CCZUlhk8Jc?list=PLzwGsAhPUVNJbmmxL-QiHTSqgiy8mB2RP&controls=2" frameborder="0" allowfullscreen></iframe>
+  </section>
   <section id="community-love" class="align-center">
     <h2>We also <img src="/img/continuous-delivery/heart.png" class="heart" /> our community.</h2>
   </section>
