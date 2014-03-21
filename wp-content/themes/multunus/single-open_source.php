@@ -19,6 +19,8 @@
 					<div class="content col-sm-10">
 						<?php the_content(); ?>
 
+						<?php get_template_part('dan-north-quote'); ?>
+
 						<ul class="social-share visible-xs">
 							<li><a class="addthis_button_facebook_like" fb:like:layout="button_count"></a></li>
 							<li><a class="addthis_button_tweet"></a></li>

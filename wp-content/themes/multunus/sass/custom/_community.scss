@@ -11,6 +11,8 @@
 
 section#community-links {
   padding-top: 0;
+  position: relative;
+
   h3 a {
     color: $theme-color-pink;
 
@@ -21,7 +23,7 @@ section#community-links {
 
   .link-box {
     border-right: 1px solid #dfdddd;
-    min-height: 280px;
+    min-height: 380px;
     padding: 0 40px;
 
     @media (max-width: $screen-sm) {
@@ -55,6 +57,25 @@ section#community-links {
         width: 100%;
       }
     }
+
+    .post-title.blog:last-of-type, .post-title.open-source:last-of-type {
+      a {
+        border-bottom: none;
+      }
+    }
+
+    .view-all-link {
+      position: absolute;
+      bottom: 0;
+      margin-left: -40px;
+      color: $theme-color-pink;
+      width: 100%;
+      text-align: center;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 
   #eventon_loadbar_section {
@@ -79,6 +100,10 @@ section#community-links {
       }
     }
 
+    .eventon_list_event:last-child .desc_trig {
+      border-bottom: none !important;
+    }
+
     .evcal_cblock {
       display: none;
     }
@@ -91,6 +116,7 @@ section#community-links {
         color: #333;
         font-size: 16px;
         text-transform: none;
+        font-family: $font-family-sans-serif;
       }
 
       .evcal_desc_info, .evcal_desc3 {

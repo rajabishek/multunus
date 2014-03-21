@@ -45,3 +45,7 @@
 #evcal_list .eventon_list_event .desc_trig, .evcal_evdata_img, .event_description .evcal_close, .evcal_btn, .evo_sort_btn, .calendar_header .evcal_arrows {
    border-top: 1px solid #e5e5e5 !important;
 }
+
+.ajde_evcal_calendar #evcal_head.calendar_header #evcal_cur {
+  margin-bottom: 20px !important;
+}

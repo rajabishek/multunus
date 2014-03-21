@@ -13,8 +13,6 @@
       <h1>Open Source</h1>
     </div><!-- end of blog-top -->
 
-    <h2>All Platforms</h2>
-
     <div class="row blog-row">
       <?php query_posts('post_type="open_source"&posts_per_page=6&paged=' . $paged); ?>
       <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
