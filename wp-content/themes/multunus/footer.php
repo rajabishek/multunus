@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-sm-4 col-xs-6">
           <div class="align-center heading">Say Hello!</div>
-          <a class="mail-container" href="mailto:info@multunus.com"><img src="/img/footer-mail-icon-red.png"/></a>
+          <a class="mail-container" href="/contact/#main-content"><img src="/img/footer-mail-icon-red.png"/></a>
       </div>
 
       <div class="col-sm-4 col-xs-6">
@@ -56,9 +56,9 @@
 </footer>
 
 <?php wp_footer(); ?>
-	
+
 <!-- Don't forget analytics -->
-	
+
 </body>
 
 </html>
