@@ -6,13 +6,19 @@
 
 <?php get_header(); ?>
 
-<article class="our-blog">
+<section class="container quote-header">
+  <h1 class="align-left">Open Source</h1>
+  <p>
+    Without Open Source software, our business would perhaps have been non-existent.
+    We rely on the hard work and generosity of many many individuals and
+    companies - who have made their software open source. We’ve just started
+    on our own journey of giving back to the community. But please do come back
+    and visit this page every couple of months. You should see some new stuff here.
+  </p>
+</section>
+
+<article>
   <div class="container">
-
-    <div class="row blog-top">
-      <h1>Open Source</h1>
-    </div><!-- end of blog-top -->
-
     <div class="row blog-row">
       <?php query_posts('post_type="open_source"&posts_per_page=6&paged=' . $paged); ?>
       <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
