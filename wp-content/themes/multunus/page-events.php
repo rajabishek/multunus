@@ -14,7 +14,7 @@
         </div>
         <div class="col-md-4 col-md-offset-1 past-events">
           <h4 class="align-left">Past Events</h4>
-          <?php echo do_shortcode('[add_eventon_el cal_id="2" el_type="pe" pec="cd" event_count="5" etop_month="no" ]'); ?>
+          <?php echo do_shortcode('[add_eventon_el cal_id="2" el_type="pe" pec="ct" number_of_months="5" event_count="5" etop_month="no" ]'); ?>
         </div>
       </section>
 
