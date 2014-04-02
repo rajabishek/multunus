@@ -57,7 +57,7 @@
 
 <?php wp_footer(); ?>
 
-<!-- Don't forget analytics -->
+<?php include_once("analyticstracking.php") ?>
 
 </body>
 
