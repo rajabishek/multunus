@@ -9,6 +9,11 @@ jQuery(document).ready(function($){
 
 	function init(){
 		init_run_gmap_openevc();
+
+		$('.evopop_top').click(function(){
+			//_form_set_rsvp_choise($(this));
+			alert('f');
+		});
 	}
 
 
@@ -40,6 +45,7 @@ jQuery(document).ready(function($){
 			$('.evo_popin').css({'margin-top':cur_window_top});
 			
 			$('.evo_pop_body').html('');
+
 		}
 		
 		function show_popup(){
@@ -80,6 +86,7 @@ jQuery(document).ready(function($){
 					'_action':'lightbox',
 				});
 				
+
 				
 				return false;
 

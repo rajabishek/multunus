@@ -124,34 +124,34 @@ class evo_updater{
 	/**
 	 *	Update field values to licenses
 	 */
-	function save_new_update_details($remote_version, $has_new_update, $current_version){
-		$licenses =get_option('_evo_licenses');
-		
-		if(!empty($licenses) && count($licenses)>0 && !empty($licenses[$this->slug]) ){
+		function save_new_update_details($remote_version, $has_new_update, $current_version){
+			$licenses =get_option('_evo_licenses');
 			
-			$newarray = array();
-			
-			$this_license = $licenses[$this->slug];
-			
-			foreach($this_license as $field=>$val){		
-				if($field !='remote_version' || $field!='has_new_update' ){
-					$newarray[$field]=$val;
+			if(!empty($licenses) && count($licenses)>0 && !empty($licenses[$this->slug]) ){
+				
+				$newarray = array();
+				
+				$this_license = $licenses[$this->slug];
+				
+				foreach($this_license as $field=>$val){		
+					if($field !='remote_version' || $field!='has_new_update' ){
+						$newarray[$field]=$val;
+					}
 				}
+				$newarray['remote_version']=$remote_version;
+				$newarray['has_new_update']=$has_new_update;
+				
+				$new_ar[$this->slug] = $newarray;
+				
+				$merged=array_merge($licenses,$new_ar);
+							
+				update_option('_evo_licenses',$merged);
+				
+				return $newarray;
+			}else{
+				return false;
 			}
-			$newarray['remote_version']=$remote_version;
-			$newarray['has_new_update']=$has_new_update;
-			
-			$new_ar[$this->slug] = $newarray;
-			
-			$merged=array_merge($licenses,$new_ar);
-						
-			update_option('_evo_licenses',$merged);
-			
-			return $newarray;
-		}else{
-			return false;
 		}
-	}
 	
 	// save license fields to wp options
 	function save_new_license_field_values($license_field, $new_value, $license_slug){
@@ -236,102 +236,102 @@ class evo_updater{
 	}
 	
 	/** get license key **/
-	public function _verify_license_key($slug='', $key=''){
-		
-		$slug = (!empty($slug))? $slug: $this->slug;
-		$saved_key = (!empty($key) )? $key: $this->get_saved_license_key($slug);
-		
-		if($saved_key!=false ){		
-						
-			global $wp_version;
-		
-			$args = array(
-				'slug' => $this->slug,
-				'key'=>$saved_key,
-				'server'=>$_SERVER['SERVER_NAME']
-			);
-			$request_string = array(
-				'body' => array(
-					'action' => 'verify_envato_purchase', 
-					'request' => serialize($args),
-					'api-key' => md5(get_bloginfo('url'))
-				),
-				'user-agent' => 'WordPress/' . $wp_version . '; ' . get_bloginfo('url')
-			);
+		public function _verify_license_key($slug='', $key=''){
 			
-		
-			$request = wp_remote_post($this->api_url, $request_string);
-			if (!is_wp_error($request) || wp_remote_retrieve_response_code($request) === 200) {
-				$license_check_status =  $request['body'];
+			$slug = (!empty($slug))? $slug: $this->slug;
+			$saved_key = (!empty($key) )? $key: $this->get_saved_license_key($slug);
+			
+			if($saved_key!=false ){		
+							
+				global $wp_version;
+			
+				$args = array(
+					'slug' => $this->slug,
+					'key'=>$saved_key,
+					'server'=>$_SERVER['SERVER_NAME']
+				);
+				$request_string = array(
+					'body' => array(
+						'action' => 'verify_envato_purchase', 
+						'request' => serialize($args),
+						'api-key' => md5(get_bloginfo('url'))
+					),
+					'user-agent' => 'WordPress/' . $wp_version . '; ' . get_bloginfo('url')
+				);
 				
-				// if validation return 1 or if error code returned
-				return ($license_check_status==1)? true:$license_check_status;
+			
+				$request = wp_remote_post($this->api_url, $request_string);
+				if (!is_wp_error($request) || wp_remote_retrieve_response_code($request) === 200) {
+					$license_check_status =  $request['body'];
 					
-			}			
-		}	
-	}
+					// if validation return 1 or if error code returned
+					return ($license_check_status==1)? true:$license_check_status;
+						
+				}			
+			}	
+		}
 	
 	// get saved license key from wp options
-	public function get_saved_license_key($slug=''){
-		$licenses =get_option('_evo_licenses');
-		
-		$slug = (!empty($slug))? $slug: $this->slug;
-		
-		if(is_array($licenses)&&count($licenses)>0 && !empty($licenses[$slug]) ){	
-			return $licenses[$this->slug]['key'];
-		}else{
-			return false;
+		public function get_saved_license_key($slug=''){
+			$licenses =get_option('_evo_licenses');
+			
+			$slug = (!empty($slug))? $slug: $this->slug;
+			
+			if(is_array($licenses)&&count($licenses)>0 && !empty($licenses[$slug]) ){	
+				return $licenses[$this->slug]['key'];
+			}else{
+				return false;
+			}
 		}
-	}
 	
 	// save to wp options
-	public function save_license_key($slug, $key){
-		$licenses =get_option('_evo_licenses');
-		
-		if(!empty($licenses) && count($licenses)>0 && !empty($licenses[$slug]) && !empty($key) ){
+		public function save_license_key($slug, $key){
+			$licenses =get_option('_evo_licenses');
 			
-			$newarray = array();
-			
-			$this_license = $licenses[$slug];
-			
-			foreach($this_license as $field=>$val){
-				if($field=='key')
-					$val=$key;
+			if(!empty($licenses) && count($licenses)>0 && !empty($licenses[$slug]) && !empty($key) ){
 				
-				if($field =='status')
-					$val='active';
+				$newarray = array();
+				
+				$this_license = $licenses[$slug];
+				
+				foreach($this_license as $field=>$val){
+					if($field=='key')
+						$val=$key;
 					
-				$newarray[$field]=$val;
+					if($field =='status')
+						$val='active';
+						
+					$newarray[$field]=$val;
+				}
+				$new_ar[$slug] = $newarray;
+				
+				$merged=array_merge($licenses,$new_ar);
+				
+				
+				update_option('_evo_licenses',$merged);
+				
+				return $newarray;
+			}else{
+				return false;
 			}
-			$new_ar[$slug] = $newarray;
 			
-			$merged=array_merge($licenses,$new_ar);
-			
-			
-			update_option('_evo_licenses',$merged);
-			
-			return $newarray;
-		}else{
-			return false;
 		}
-		
-	}
 	
 	// compare and return true or false for has newset version;
-	public function has_newest_version($remote_version=''){
+		public function has_newest_version($remote_version=''){
+				
+			if(empty($remote_version)){
+				$evoOpt = get_option('_evo_licenses');			
+				if(!empty($evoOpt)){
+					$remote_version = $evoOpt['eventon']['remote_version'];
+				}else{
+					$remote_version = $this->getRemote_version;
+				}			
+			}
 			
-		if(empty($remote_version)){
-			$evoOpt = get_option('_evo_licenses');			
-			if(!empty($evoOpt)){
-				$remote_version = $evoOpt['eventon']['remote_version'];
-			}else{
-				$remote_version = $this->getRemote_version;
-			}			
+			
+			return ( version_compare($remote_version, $this->current_version ) >=0)? true:false;
+			
 		}
-		
-		
-		return ( version_compare($remote_version, $this->current_version ) >=0)? true:false;
-		
-	}
 	
 }

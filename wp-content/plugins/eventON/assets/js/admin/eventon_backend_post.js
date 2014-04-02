@@ -1,3 +1,7 @@
+/*
+	Version: 2.2.9
+*/
+
 jQuery(document).ready(function($){
 	
 	
@@ -258,7 +262,7 @@ jQuery(document).ready(function($){
 	
 	//yes no buttons in event edit page
 	// all day event switch
-	$('#evo_mb').on( 'click','.evcal_yn_btn',function(){
+	$('.eventon_mb').on( 'click','.evcal_yn_btn',function(){
 		// yes
 		if($(this).hasClass('btn_at_no')){
 			$(this).removeClass('btn_at_no');
@@ -270,6 +274,9 @@ jQuery(document).ready(function($){
 				//$('#evcal_end_date').val('');
 				//$('.evcal_date_select').val('');
 			}
+
+			$('#'+$(this).attr('afterstatement')).slideDown();
+
 		}else{//no
 			$(this).addClass('btn_at_no');
 			$(this).siblings('input').val('no');
@@ -278,6 +285,8 @@ jQuery(document).ready(function($){
 				$('.evcal_time_selector').show(); 
 				//$('#evcal_start_date_label').html("Event Start Date");
 			}
+
+			$('#'+$(this).attr('afterstatement')).slideUp();
 		}
 		
 	});

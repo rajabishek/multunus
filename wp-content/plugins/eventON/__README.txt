@@ -5,7 +5,7 @@ Author URI: http://ashanjay.com/
 Tags: calendar, event calendar, event posts
 Requires at least: 3.7
 Tested up to: 3.8.1
-Stable tag: 2.2.8
+Stable tag: 2.2.9
 
 Event calendar plugin for wordpress that utilizes WP's custom post type.  
 
@@ -19,13 +19,26 @@ Event calendar plugin for wordpress that utilizes WP's custom post type. This pl
 1. Activate the plugin through the 'Plugins' menu in WordPress
 
 == Changelog ==
+= 2.2.9 (2014-3-26)
+ADDED: More/less text background gradient to be able to change from settings
+ADDED: ability to enable upto 5 additional event type categories for events
+ADDED: shortcode generator button to wysiwyg editor
+ADDED: the ability to turn off content filter on event details
+ADDED: Language field to widget
+FIXED: minor responsive styles
+FIXED: zoom cursor arrow now loads from element class
+FIXED: Capitalize date format on eventcard
+FIXED: Featured image hover effect removal issues
+FIXED: Jump months missing month and year text added to Language
+CHANGED: plugin url to use a function to support SSL links
+
 = 2.2.8 (2014-3-13)
-UPDATED: We have integrated chat support direct into eventON settings
 ADDED: Reset to default colors button for appearance settings
 ADDED: Jump months option to jump to any month you want
 ADDED: Ability to assign colors by event type
 ADDED: the ability to create custom field as a button
 ADDED: User Interaction for events be able to override by overall variable value
+UPDATED: We have integrated chat support direct into eventON settings
 UPDATED: the Calendar header Interface design new arrows and cleaner design
 TWEAKED: main event wp_Query closing function
 FIXED: bulk edit event deleting meta values for event

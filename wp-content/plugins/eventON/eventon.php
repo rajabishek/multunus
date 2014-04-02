@@ -3,7 +3,7 @@
  * Plugin Name: EventON
  * Plugin URI: http://www.myeventon.com/
  * Description: A complete event calendar experience
- * Version: 2.2.8
+ * Version: 2.2.9
  * Author: AshanJay
  * Author URI: http://www.ashanjay.com
  * Requires at least: 3.7
@@ -19,22 +19,13 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-define( "AJDE_EVCAL_DIR", WP_PLUGIN_DIR );
-define( "AJDE_EVCAL_PATH", dirname( __FILE__ ) );
-define( "AJDE_EVCAL_FILE", ( __FILE__ ) );
-define( "AJDE_EVCAL_URL", path_join(WP_PLUGIN_URL, basename(dirname(__FILE__))) );
-define( "AJDE_EVCAL_BASENAME", plugin_basename(__FILE__) );
-define( "EVENTON_BASE", basename(dirname(__FILE__)) );
-define( "BACKEND_URL", get_bloginfo('url').'/wp-admin/' ); 
-
-
 
 
 // main eventon class
 if ( ! class_exists( 'EventON' ) ) {
 
 class EventON {
-	public $version = '2.2.8';
+	public $version = '2.2.9';
 	/**
 	 * @var evo_generator
 	 */
@@ -46,7 +37,10 @@ class EventON {
 	/**
 	 * Constructor.
 	 */
-	public function __construct() {		
+	public function __construct() {
+
+		// Define constants
+		$this->define_constants();	
 		
 		// Installation
 		register_activation_hook( __FILE__, array( $this, 'activate' ) );
@@ -61,12 +55,25 @@ class EventON {
 		// Hooks
 		add_action( 'init', array( $this, 'init' ), 0 );
 		add_action( 'widgets_init', array( $this, 'register_widgets' ) );
-		add_action( 'after_setup_theme', array( $this, 'compatibility' ) );
+		add_action( 'after_setup_theme', array( $this, 'setup_environment' ) );
 		
 		// Deactivation
 		register_deactivation_hook( AJDE_EVCAL_FILE, array($this,'deactivate'));
 		
 		
+	}
+
+	/**
+	 * Define EVO Constants
+	 */
+	public function define_constants() {
+		define( "AJDE_EVCAL_DIR", WP_PLUGIN_DIR );
+		define( "AJDE_EVCAL_PATH", dirname( __FILE__ ) );
+		define( "AJDE_EVCAL_FILE", ( __FILE__ ) );
+		define( "AJDE_EVCAL_URL", path_join(plugins_url(), basename(dirname(__FILE__))) );
+		define( "AJDE_EVCAL_BASENAME", plugin_basename(__FILE__) );
+		define( "EVENTON_BASE", basename(dirname(__FILE__)) );
+		define( "BACKEND_URL", get_bloginfo('url').'/wp-admin/' ); 
 	}
 	
 	
@@ -74,6 +81,10 @@ class EventON {
 	 * Include required core files used in admin and on the frontend.
 	 */
 	function includes() {
+
+		// post types
+		include_once( 'includes/class-evo-post-types.php' );
+
 		if ( is_admin() )
 			$this->admin_includes();
 		if ( ! is_admin() || defined('DOING_AJAX') )
@@ -84,6 +95,7 @@ class EventON {
 		// Functions
 		include_once( 'eventon-core-functions.php' );					// Contains core functions for the front/back end
 		include_once( 'classes/class-calendar_generator.php' );		// Main class to generate calendar
+
 		
 	}
 	
@@ -113,8 +125,11 @@ class EventON {
 	public function frontend_includes() {
 		// Functions
 		include_once( 'eventon-functions.php' );// Contains functions for various front-end events
-		// Classes
-		include_once( 'classes/shortcodes/class-evo-shortcodes.php' );// Shortcodes class
+		// Shortcodes
+		include_once( 'classes/shortcodes/class-evo-shortcodes.php' );
+
+		// Template loader
+		include_once( 'includes/class-evo-template-loader.php' );
 	}
 	/**
 	 * register_widgets function.
@@ -150,14 +165,7 @@ class EventON {
 
 			add_action( 'wp_enqueue_scripts', array( $this, 'load_default_evo_styles' ), 10 );
 			add_action( 'wp_head', array( $this, 'generator' ) );			
-			add_filter( 'template_include', array( $this, 'template_loader' ) );
 		}
-		
-		// Check for plugin addons
-		$this->include_addons();
-				
-		// Init taxonomies for eventON
-		$this->init_taxonomy();
 		
 		
 		// roles and capabilities
@@ -166,8 +174,8 @@ class EventON {
 		
 		// Initiate eventon update checker		
 		require_once( 'classes/class-evo-updater.php' );		
-		//$api_url = 'http://update.myeventon.com/';
-		$api_url = 'http://update.myeventon.com/index-temp.php';
+		$api_url = 'http://update.myeventon.com/';
+		//$api_url = 'http://update.myeventon.com/index-temp.php';
 		$this->evo_updater = new evo_updater ( $this->version, $api_url, AJDE_EVCAL_BASENAME);
 		
 	
@@ -178,82 +186,68 @@ class EventON {
 	}
 	
 	
-	/**
-	 * output the inpage popup window for eventon
-	 */
-	public function output_eventon_pop_window($arg){
-	
-		$defaults = array(
-			'content'=>'',
-			'class'=>'',
-			'attr'=>'',
-			'title'=>'',
-			'subtitle'=>'',
-			'type'=>'normal',
-			'hidden_content'=>'',
-			'width'=>''
-		);
-		$args = (!empty($arg) && is_array($arg) && count($arg)>0) ? array_merge($defaults, $arg) : $defaults;
+	/*** output the inpage popup window for eventon	 */
+		public function output_eventon_pop_window($arg){
 		
-		
-		
-		$_padding_class = (!empty($args['type']) && $args['type']=='padded')? ' padd':null;
+			$defaults = array(
+				'content'=>'',
+				'class'=>'',
+				'attr'=>'',
+				'title'=>'',
+				'subtitle'=>'',
+				'type'=>'normal',
+				'hidden_content'=>'',
+				'width'=>'',
+				'max_height'=>'',
+			);
+			$args = (!empty($arg) && is_array($arg) && count($arg)>0) ? array_merge($defaults, $arg) : $defaults;
+			
+			
+			
+			$_padding_class = (!empty($args['type']) && $args['type']=='padded')? ' padd':null;
 
-		$content = 
-		"<div id='eventon_popup_outter'>
-			<div id='eventon_popup' class='{$args['class']}{$_padding_class}' {$args['attr']} style='display:none; ". ( (!empty($args['width']))? 'width:'.$args['width'].'px;':null )."'>				
-				<div class='evoPOP_header'>
-					<a class='evopop_backbtn' style='display:none'><i class='fa fa-angle-left'></i></a>
-					<p id='evoPOP_title'>{$args['title']}</p>
-					". ( (!empty($args['subtitle']))? "<p id='evoPOP_subtitle'>{$args['subtitle']}</p>":null) ."
-					<a class='eventon_close_pop_btn'>X</a>
+			$content='';
+			$content .= 
+			"<div id='eventon_popup_outter'>
+				<div id='eventon_popup' class='{$args['class']}{$_padding_class}' {$args['attr']} style='display:none; ". ( (!empty($args['width']))? 'width:'.$args['width'].'px;':null )."'>				
+					<div class='evoPOP_header'>
+						<a class='evopop_backbtn' style='display:none'><i class='fa fa-angle-left'></i></a>
+						<p id='evoPOP_title'>{$args['title']}</p>
+						". ( (!empty($args['subtitle']))? "<p id='evoPOP_subtitle'>{$args['subtitle']}</p>":null) ."
+						<a class='eventon_close_pop_btn'>X</a>
+					</div>
+							
+					<div id='eventon_loading'></div>";
+
+				$content .= (!empty($args['max_height']))? "<div class='evo_lightbox_outter maxbox' style='height:{$args['max_height']}px'>":null;
+				$content .= "<div class='eventon_popup_text'>{$args['content']}</div>";
+				$content .= (!empty($args['max_height']))? "</div>":null;
+
+
+				$content .= "	<p class='message'></p>
+					
 				</div>
-						
-				<div id='eventon_loading'></div>
-				
-				<div class='eventon_popup_text'>{$args['content']}</div>
-				<p class='message'></p>
-				
-			</div>
-		</div><div id='evo_popup_bg'></div>";
-		
-		$this->content = $content;
-		add_action('admin_footer', array($this, 'actual_output_popup'));
-	}
-	
-	function actual_output_popup($content){
-		echo $this->content;
-	}
-	
-	/*
-		Legend popup box across wp-admin
-	*/
-	public function throw_guide($content, $position='', $echo=true){
-		
-		$L = (!empty($position) && $position=='L')? ' L':null;
-		
-		$content = "<span class='evoGuideCall{$L}'>?<em>{$content}</em></span>";
-		
-		if($echo){ echo $content;  }else{ return $content; }
-	}
-	
-	
-	/**
-	 * function to include addon files in the plugin
-	 */
-	public function include_addons(){
-		$eventon_addons_opt = get_option('eventon_addons');
-		
-		if(!empty($eventon_addons_opt) && is_array($eventon_addons_opt) ){
-			foreach($eventon_addons_opt as $ev_opt){
-								
-				if(!empty($ev_opt['status']) && $ev_opt['status']=='active' && !empty($ev_opt['path']) ){
-					include_once($ev_opt['path']);	
-				}
-			}
+			</div><div id='evo_popup_bg'></div>";
+			
+			$this->content = $content;
+			add_action('admin_footer', array($this, 'actual_output_popup'));
 		}
-	}
+		
+		function actual_output_popup($content){
+			echo $this->content;
+		}
 	
+	/*	Legend popup box across wp-admin	*/
+		public function throw_guide($content, $position='', $echo=true){
+			
+			$L = (!empty($position) && $position=='L')? ' L':null;
+			
+			$content = "<span class='evoGuideCall{$L}'>?<em>{$content}</em></span>";
+			
+			if($echo){ echo $content;  }else{ return $content; }
+		}
+	
+		
 	// ADDON new version notifications
 		private $addon_info ='';
 		public function addon_has_new_version($values){
@@ -270,176 +264,142 @@ class EventON {
 			echo '</tr><tr class="plugin-update-tr"><td colspan="3" class="plugin-update"><div class="update-message">' . $new_version . __(' Download the new version from <a href="http://www.myeventon.com/my-account/" target="_blank">My Account</a> at myeventon.com.', 'eventon') . '</div></td>';
 		}
 
-	/**
-	 * Init EvenON taxonomies.
-	 */
-	public function init_taxonomy() {
-		if ( post_type_exists('ajde_events') )
-			return;
-		
-		/**
-		 * Taxonomies
-		 **/
-		do_action( 'eventon_register_taxonomy' );
-		
-		$evcal_opt1= get_option('evcal_options_evcal_1');
-		
-		
-		// Event type custom taxonomy NAMES
-		$evt_name = eventon_get_event_tax_name('et',$evcal_opt1);
-		$evt_name2 = eventon_get_event_tax_name('et2',$evcal_opt1);
-		
-		$__capabilities = array(
-					'manage_terms' 		=> 'manage_eventon_terms',
-					'edit_terms' 		=> 'edit_eventon_terms',
-					'delete_terms' 		=> 'delete_eventon_terms',
-					'assign_terms' 		=> 'assign_eventon_terms',
-				);
-
-		register_taxonomy( 'event_location', 
-			apply_filters( 'eventon_taxonomy_objects_event_location', array('ajde_events') ),
-			apply_filters( 'eventon_taxonomy_args_event_location', array(
-				'hierarchical' => false, 
-				'label' => __('Event Location','eventon'), 
-				'show_ui' => true,
-				'query_var' => true,
-				'capabilities'			=> $__capabilities,
-				'rewrite' => array( 'slug' => 'event-type' ) 
-			)) 
-		);
-
-		register_taxonomy( 'event_type', 
-			apply_filters( 'eventon_taxonomy_objects_event_type', array('ajde_events') ),
-			apply_filters( 'eventon_taxonomy_args_event_type', array(
-				'hierarchical' => true, 
-				'label' => $evt_name, 
-				'show_ui' => true,
-				'query_var' => true,
-				'capabilities'			=> $__capabilities,
-				'rewrite' => array( 'slug' => 'event-type' ) 
-			)) 
-		);
-		register_taxonomy('event_type_2', 
-			apply_filters( 'eventon_taxonomy_objects_event_type_2', array('ajde_events') ),
-			apply_filters( 'eventon_taxonomy_args_event_type_2', array(
-				'hierarchical' => true, 
-				'label' => $evt_name2, 
-				'show_ui' => true,
-				'query_var' => true,
-				'capabilities'			=> $__capabilities,
-				'rewrite' => array( 'slug' => 'event-type-2' ) 
-			) )
-		); 
-		
-		
-		/**
-		 * Post Types
-		 **/
-		do_action( 'eventon_register_post_type' );
-		
-		$labels = eventon_get_proper_labels('Event','Events');
-		register_post_type('ajde_events', 
-			apply_filters( 'eventon_register_post_type_ajde_events',
-				array(
-					'labels' => $labels,
-					'description' 			=> __( 'This is where you can add new events to your calendar.', 'eventon' ),
-					'public' 				=> true,
-					'show_ui' 				=> true,
-					'capability_type' 		=> 'eventon',
-					'publicly_queryable' 	=> true,
-					'hierarchical' 			=> false,
-					'rewrite' 				=> apply_filters('eventon_event_slug', array('slug'=>'events')),
-					'query_var'		 		=> true,
-					'supports' 				=> array('title','editor','custom-fields','thumbnail'),
-					//'supports' 			=> array('title','editor','thumbnail'),
-					'menu_position' 		=> 5, 
-					'has_archive' 			=> true
-				)
-			)
-		);	
-	}
 	
-	/**
-	 * Register/queue frontend scripts.
-	 *
-	 * @access public
-	 * @return void
-	 */
-	public function register_scripts() {
-		global $post;
-		
-		$evcal_val1= get_option('evcal_options_evcal_1');
-		
-		
-		// Google gmap API script -- loadded from class-calendar_generator.php		
+	
 
-		wp_register_script('add_to_cal', AJDE_EVCAL_URL. '/assets/js/add_to_calendar.js', array('jquery'),'1.0',true );
+	/* EMAIL functions */
+		public function get_email_part($part){
 
-		wp_register_script('evcal_ajax_handle', AJDE_EVCAL_URL. '/assets/js/eventon_script.js', array('jquery'),'1.0',true );
-		wp_localize_script( 'evcal_ajax_handle', 'the_ajax_script', array( 'ajaxurl' => admin_url( 'admin-ajax.php' )));
+			$file_name = 'email_'.$part.'.php';
 
+			$paths = array(
+				0=> TEMPLATEPATH.'/'.$this->template_url.'templates/email/',
+				1=> AJDE_EVCAL_PATH.'/templates/email/',
+			);
 
+			foreach($paths as $path){				
+				if(file_exists($path.$file_name) ){	
+					$template = $path.$file_name;	
+					break;
+				}
 
-		// google maps	
-		wp_register_script('eventon_gmaps', AJDE_EVCAL_URL. '/assets/js/eventon_gen_maps.js', array('jquery'),'1.0',true );	
-		wp_register_script('eventon_init_gmaps', AJDE_EVCAL_URL. '/assets/js/eventon_init_gmap.js', array('jquery'),'1.0',true );
-		wp_register_script( 'eventon_init_gmaps_blank', AJDE_EVCAL_URL. '/assets/js/eventon_init_gmap_blank.js', array('jquery'),'1.0',true ); // load a blank initiate gmap javascript
-
-		wp_register_script( 'evcal_gmaps', apply_filters('eventon_google_map_url', 'https://maps.googleapis.com/maps/api/js?sensor=false'), array('jquery'),'1.0',true);
+				//echo($path.$file_name.'<br/>');
+			}
 
 
+			ob_start();
 
-		// STYLES
+			include($template);
 
-		wp_register_style('evo_font_icons',AJDE_EVCAL_URL.'/assets/fonts/font-awesome.css');		
-		
-		// select the current skin
-		$skin  = (!empty($evcal_val1['evcal_skin']))? $evcal_val1['evcal_skin'] : 'slick';		
-				
-		// Defaults styles and dynamic styles
-		wp_register_style('evcal_cal_default',AJDE_EVCAL_URL.'/assets/css/eventon_styles.css');	
-		//wp_register_style('evo_dynamic_css', admin_url('admin-ajax.php').'?action=evo_dynamic_css');
-
-		// LOAD custom google fonts for skins		
-		$gfont="http://fonts.googleapis.com/css?family=Oswald:400,300|Open+Sans:400,300";
-		wp_register_style( 'evcal_google_fonts', $gfont, '', '', 'screen' );
-		
-		
-
-		$this->register_evo_dynamic_styles();
-
-	}	
-
-	public function register_evo_dynamic_styles(){
-		if(is_multisite()) {
-			$uploads = wp_upload_dir();
-			wp_register_style('eventon_dynamic_styles', $uploads['baseurl'] . '/eventon_dynamic_styles.css', 'style');
-		} else {
-			wp_register_style('eventon_dynamic_styles', 
-				AJDE_EVCAL_URL. '/assets/css/eventon_dynamic_styles.css', 'style');
+			return ob_get_clean();
 		}
-	}
-	
-	public function load_default_evo_scripts(){
-		//wp_enqueue_script('add_to_cal');
-		wp_enqueue_script('evcal_ajax_handle');
-		wp_enqueue_script('eventon_gmaps');
-	}
-	public function load_default_evo_styles(){
+
+		// body part of the email template loading
+		public function get_email_body($part, $def_location){
+			$file_name = $part.'.php';
+
+			$paths = array(
+				0=> TEMPLATEPATH.'/'.$this->template_url.'templates/email/',
+				1=> $def_location,
+			);
+
+			foreach($paths as $path){				
+				if(file_exists($path.$file_name) ){	
+					$template = $path.$file_name;	
+					break;
+				}
+
+				//echo($path.$file_name.'<br/>');
+			}
+
+
+			ob_start();
+
+			include($template);
+
+			return ob_get_clean();
+		}
+
+	/** Register/queue frontend scripts. */
+		public function register_scripts() {
+			global $post;
+			
+			$evcal_val1= get_option('evcal_options_evcal_1');
+			
+			
+			// Google gmap API script -- loadded from class-calendar_generator.php		
+
+			wp_register_script('add_to_cal', AJDE_EVCAL_URL. '/assets/js/add_to_calendar.js', array('jquery'),'1.0',true );
+
+			wp_register_script('evcal_ajax_handle', AJDE_EVCAL_URL. '/assets/js/eventon_script.js', array('jquery'),'1.0',true );
+			wp_localize_script( 
+				'evcal_ajax_handle', 
+				'the_ajax_script', 
+				array( 
+					'ajaxurl' => admin_url( 'admin-ajax.php' ) , 
+					'postnonce' => wp_create_nonce( 'eventon_nonce' )
+				)
+			);
+
+
+
+			// google maps	
+			wp_register_script('eventon_gmaps', AJDE_EVCAL_URL. '/assets/js/eventon_gen_maps.js', array('jquery'),'1.0',true );	
+			wp_register_script('eventon_init_gmaps', AJDE_EVCAL_URL. '/assets/js/eventon_init_gmap.js', array('jquery'),'1.0',true );
+			wp_register_script( 'eventon_init_gmaps_blank', AJDE_EVCAL_URL. '/assets/js/eventon_init_gmap_blank.js', array('jquery'),'1.0',true ); // load a blank initiate gmap javascript
+
+			wp_register_script( 'evcal_gmaps', apply_filters('eventon_google_map_url', 'https://maps.googleapis.com/maps/api/js?sensor=false'), array('jquery'),'1.0',true);
+
+
+
+			// STYLES
+
+			wp_register_style('evo_font_icons',AJDE_EVCAL_URL.'/assets/fonts/font-awesome.css');		
+			
+			// select the current skin
+			$skin  = (!empty($evcal_val1['evcal_skin']))? $evcal_val1['evcal_skin'] : 'slick';		
+					
+			// Defaults styles and dynamic styles
+			wp_register_style('evcal_cal_default',AJDE_EVCAL_URL.'/assets/css/eventon_styles.css');	
+			//wp_register_style('evo_dynamic_css', admin_url('admin-ajax.php').'?action=evo_dynamic_css');
+
+			// LOAD custom google fonts for skins		
+			$gfont="http://fonts.googleapis.com/css?family=Oswald:400,300|Open+Sans:400,300";
+			wp_register_style( 'evcal_google_fonts', $gfont, '', '', 'screen' );
+			
+			
+
+			$this->register_evo_dynamic_styles();
+
+		}	
+
+		public function register_evo_dynamic_styles(){
+			if(is_multisite()) {
+				$uploads = wp_upload_dir();
+				wp_register_style('eventon_dynamic_styles', $uploads['baseurl'] . '/eventon_dynamic_styles.css', 'style');
+			} else {
+				wp_register_style('eventon_dynamic_styles', 
+					AJDE_EVCAL_URL. '/assets/css/eventon_dynamic_styles.css', 'style');
+			}
+		}
 		
-		wp_enqueue_style( 'evcal_cal_default');
-		wp_enqueue_style( 'eventon_dynamic_styles');
-		//wp_enqueue_style( 'evo_dynamic_css');		
-		wp_enqueue_style( 'evcal_google_fonts' );
-		wp_enqueue_style( 'evo_font_icons' );
-
-
-
-		//wp_enqueue_style( 'eventon_dynamic_inline_styles');
-	}
-	public function evo_styles(){
-		add_action('wp_head', array($this, 'load_default_evo_scripts'));
-	}
+		public function load_default_evo_scripts(){
+			//wp_enqueue_script('add_to_cal');
+			wp_enqueue_script('evcal_ajax_handle');
+			wp_enqueue_script('eventon_gmaps');
+		}
+		public function load_default_evo_styles(){
+			
+			wp_enqueue_style( 'evcal_cal_default');
+			wp_enqueue_style( 'eventon_dynamic_styles');
+			//wp_enqueue_style( 'evo_dynamic_css');		
+			wp_enqueue_style( 'evcal_google_fonts' );
+			wp_enqueue_style( 'evo_font_icons' );
+			//wp_enqueue_style( 'eventon_dynamic_inline_styles');
+		}
+		public function evo_styles(){
+			add_action('wp_head', array($this, 'load_default_evo_scripts'));
+		}
 	
 	/**
 	 * Activate function to store version.
@@ -505,12 +465,9 @@ class EventON {
 
 	
 	/**
-	 * Add Compatibility for various bits.
-	 *
-	 * @access public
-	 * @return void
+	 * Ensure theme and server variable compatibility and setup image sizes..
 	 */
-	public function compatibility() {
+	public function setup_environment() {
 		// Post thumbnail support
 		if ( ! current_theme_supports( 'post-thumbnails', 'ajde_events' ) ) {
 			add_theme_support( 'post-thumbnails' );
@@ -519,22 +476,42 @@ class EventON {
 		} else {
 			add_post_type_support( 'ajde_events', 'thumbnail' );
 		}
+
+		// IIS
+		if ( ! isset($_SERVER['REQUEST_URI'] ) ) {
+			$_SERVER['REQUEST_URI'] = substr( $_SERVER['PHP_SELF'], 1 );
+			if ( isset( $_SERVER['QUERY_STRING'] ) ) {
+				$_SERVER['REQUEST_URI'].='?'.$_SERVER['QUERY_STRING'];
+			}
+		}
+
+		// NGINX Proxy
+		if ( ! isset( $_SERVER['REMOTE_ADDR'] ) && isset( $_SERVER['HTTP_REMOTE_ADDR'] ) ) {
+			$_SERVER['REMOTE_ADDR'] = $_SERVER['HTTP_REMOTE_ADDR'];
+		}
+
+		if ( ! isset( $_SERVER['HTTPS'] ) && ! empty( $_SERVER['HTTP_HTTPS'] ) ) {
+			$_SERVER['HTTPS'] = $_SERVER['HTTP_HTTPS'];
+		}
+
+		// Support for hosts which don't use HTTPS, and use HTTP_X_FORWARDED_PROTO
+		if ( ! isset( $_SERVER['HTTPS'] ) && ! empty( $_SERVER['HTTP_X_FORWARDED_PROTO'] ) && $_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https' ) {
+			$_SERVER['HTTPS'] = '1';
+		}
 	}
 	
 	
-	/**
-	 * LOAD Backender UI and functionalities for settings.
-	 */
-	public function load_ajde_backender(){
-		wp_enqueue_script('thickbox');
-		wp_enqueue_style('thickbox');
+	/** LOAD Backender UI and functionalities for settings. */
+		public function load_ajde_backender(){
+			wp_enqueue_script('thickbox');
+			wp_enqueue_style('thickbox');
 
-		wp_enqueue_script('backender_colorpicker');
-		wp_enqueue_script('ajde_backender_script');
+			wp_enqueue_script('backender_colorpicker');
+			wp_enqueue_script('ajde_backender_script');
 
-		include_once('admin/ajde_backender.php');
-		
-	}
+			include_once('admin/ajde_backender.php');
+			
+		}
 	
 		public function enqueue_backender_styles(){
 			wp_enqueue_style( 'ajde_backender_styles',AJDE_EVCAL_URL.'/assets/css/ajde_backender_style.css');
@@ -548,76 +525,13 @@ class EventON {
 		}
 	
 	
-	/**
-	 * Output generator to aid debugging.
-	 */
-	public function generator() {
-		echo "\n\n" . '<!-- EventON Version -->' . "\n" . '<meta name="generator" content="EventON ' . esc_attr( $this->version ) . '" />' . "\n\n";
-	}
+	/** Output generator to aid debugging. */
+		public function generator() {
+			echo "\n\n" . '<!-- EventON Version -->' . "\n" . '<meta name="generator" content="EventON ' . esc_attr( $this->version ) . '" />' . "\n\n";
+		}
 	
 	
-	/**
-	 * Load a template.
-	 *
-	 * Handles template usage so that we can use our own templates instead of the themes.
-	 *
-	 * Templates are in the 'templates' folder. eventon looks for theme
-	 * overrides in /theme/eventon/ by default
-	 *
-	 * For beginners, it also looks for a eventon.php template first. If the user adds
-	 * this to the theme (containing a eventon() inside) this will be used for all
-	 * eventon templates.
-	 *
-	 * @access public
-	 * @param mixed $template
-	 * @return string
-	 */
-	public function template_loader( $template ) {
-		global $eventon_sin_event;
-		
-		$file='';
-		$sure_path = AJDE_EVCAL_PATH . '/templates/';
-		
-		
-		// Paths to check
-		$paths = apply_filters('eventon_template_paths', array(
-			0=>TEMPLATEPATH.'/',
-			1=>TEMPLATEPATH.'/'.$this->template_url,
-		));
-		
-		
-		$events_page_id = get_option('eventon_events_page_id');
-		
-		// single and archieve events page
-		if( is_single() && get_post_type() == 'ajde_events' ) {
-			$file 	= 'single-ajde_events.php';
-		}elseif ( is_post_type_archive( 'ajde_events' ) || ( !empty($events_page_id) && is_page( $events_page_id )  )) {
-			$file 	= 'archive-ajde_events.php';
-			$paths[] 	= AJDE_EVCAL_PATH . '/templates/';
-		}
-		
-		// FILE Exist
-		if ( $file ) {
-			
-			// each path
-			foreach($paths as $path){				
-				if(file_exists($path.$file) ){	
-					$template = $path.$file;	
-					break;
-				}
-			}		
-			
-				
-			if ( ! $template ) { 
-				$template = AJDE_EVCAL_PATH . '/templates/' . $file;
-			
-			}
-		}
-		
-		
-		
-		return $template;
-	}
+
 
 	
 	

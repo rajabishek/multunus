@@ -137,13 +137,13 @@ function print_ajde_customization_form($cutomization_pg_array, $evOPT, $extra_ta
 						
 						$default_value = (!empty($field['default']) )? 'placeholder="'.$field['default'].'"':null;
 						
-						$rightside.= "<p>".__($field['name'],'eventon')."</p><p><span class='nfe_f_width'><input type='text' name='".$field['id']."' value='".$this_value."' ".$default_value."/></span></p>";
+						$rightside.= "<p>".__($field['name'],'eventon').$legend_code."</p><p><span class='nfe_f_width'><input type='text' name='".$field['id']."' value='".$this_value."' ".$default_value."/></span></p>";
 					break;
 					case 'textarea':
 						
 						$textarea_value= (!empty($evOPT[ $field['id']]))?$evOPT[ $field['id']]:null;
 						
-						$rightside.= "<p>".__($field['name'],'eventon')."</p><p><span class='nfe_f_width'><textarea name='".$field['id']."'>".$textarea_value."</textarea></span></p>";
+						$rightside.= "<p>".__($field['name'],'eventon').$legend_code."</p><p><span class='nfe_f_width'><textarea name='".$field['id']."'>".$textarea_value."</textarea></span></p>";
 					break;
 					case 'font_size':
 						$rightside.= "<p>".__($field['name'],'eventon')." <select name='".$field['id']."'>";
@@ -181,9 +181,19 @@ function print_ajde_customization_form($cutomization_pg_array, $evOPT, $extra_ta
 							$evOPT[ $field['id']]:$field['default'];
 						$hex_color_val = (!empty($evOPT[ $field['id'] ]))? $evOPT[ $field['id'] ]: null;
 
+						// RGB Color for the color box
+						$rgb_color_val = (!empty($field['rgbid']) && !empty($evOPT[ $field['rgbid'] ]))? $evOPT[ $field['rgbid'] ]: null;
+						$__em_class = (!empty($field['rgbid']))? ' rgb': null;
+
 						$rightside.= "<p class='acus_line color'>
-							<em><span class='colorselector' style='background-color:#".$hex_color."' hex='".$hex_color."' title='".$hex_color."'></span>
-							<input name='".$field['id']."' class='backender_colorpicker' type='hidden' value='".$hex_color_val."' default='".$field['default']."'/></em>".__($field['name'],'foodpress')." </p>";
+							<em><span class='colorselector{$__em_class}' style='background-color:#".$hex_color."' hex='".$hex_color."' title='".$hex_color."'></span>
+							<input name='".$field['id']."' class='backender_colorpicker' type='hidden' value='".$hex_color_val."' default='".$field['default']."'/>";
+						if(!empty($field['rgbid'])){
+							$rightside .= "<input name='".$field['rgbid']."' class='rgb' type='hidden' value='".$rgb_color_val."' />";
+						}
+						$rightside .= "</em>".__($field['name'],'foodpress')." </p>";
+
+						
 					break;
 					
 
@@ -321,9 +331,15 @@ function print_ajde_customization_form($cutomization_pg_array, $evOPT, $extra_ta
 							$evOPT[$field['id']]:'no';
 						
 						$after_statement = (isset($field['afterstatement']) )?$field['afterstatement']:'';
-						
-						
-						$rightside.= "<p class='yesno_row'><a afterstatement='".$after_statement."' class='acus_yn_btn ".(($yesno_value=='yes')?null:'btn_at_no')."'></a><input type='hidden' name='".$field['id']."' value='".(($yesno_value=='yes')?'yes':'no')."'/><span>".__($field['name'],'eventon')."{$legend_code}</span></p>";
+
+						$__default = (!empty( $field['default'] ) && $evOPT[$field['id'] ]!='yes' )? 
+							$field['default']
+							:$yesno_value;
+
+
+
+
+						$rightside.= "<p class='yesno_row'><a afterstatement='".$after_statement."' class='acus_yn_btn ".(($__default=='yes')?null:'btn_at_no')."'></a><input type='hidden' name='".$field['id']."' value='".(($__default=='yes')?'yes':'no')."'/><span>".__($field['name'],'eventon')."{$legend_code}</span></p>";
 					break;
 					case 'begin_afterstatement': 
 						

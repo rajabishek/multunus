@@ -111,6 +111,8 @@ if ( ! function_exists( 'eventon_settings' ) ) {
 		
 		$evcal_opt[$current_tab_number] = get_option('evcal_options_'.$focus_tab);			
 
+		//print_r(get_option('_evo_licenses'));
+
 // TABBBED HEADER		
 ?>
 <div class="wrap" id='evcal_settings'>
@@ -140,8 +142,9 @@ switch ($focus_tab):
 	case "evcal_1":
 		
 		// Event type custom taxonomy NAMES
-		$evt_name = eventon_get_event_tax_name('et',$evcal_opt[1]);
-		$evt_name2 = eventon_get_event_tax_name('et2',$evcal_opt[1]);
+		$event_type_names = evo_get_ettNames($evcal_opt[1]);
+		$evt_name = $event_type_names[1];
+		$evt_name2 = $event_type_names[2];
 
 	?>
 	<form method="post" action=""><?php settings_fields('evcal_field_group'); 
@@ -185,10 +188,6 @@ switch ($focus_tab):
 	// LANGUAGE TAB
 	case "evcal_2":
 
-
-		// Event type custom taxonomy NAMES
-		$evt_name = eventon_get_event_tax_name('et');
-		$evt_name2 = eventon_get_event_tax_name('et2');
 
 		//print_r($evcal_opt[1]);
 
@@ -305,7 +304,7 @@ switch ($focus_tab):
 			
 			// hook into addons
 			//eventon_settings_lang_tab_content
-			$eventon_custom_language_array_updated = apply_filters('eventon_settings_lang_tab_content', $eventon_custom_language_array);			
+			$eventon_custom_language_array_updated = apply_filters('eventon_settings_lang_tab_content', array_filter($eventon_custom_language_array));			
 		
 			foreach($eventon_custom_language_array_updated as $cl){
 
@@ -317,12 +316,15 @@ switch ($focus_tab):
 				}else{
 
 					$val = (!empty($lang_options[$cl['name']]))?  $lang_options[$cl['name']]: '';
+
+					$placeholder = (!empty($cl['placeholder']))?  $cl['placeholder']: '';
+
 					echo "
 						<div class='eventon_custom_lang_line'>
 							<div class='eventon_cl_label_out'>
 								<p class='eventon_cl_label'>{$cl['label']}</p>
 							</div>";
-					echo '<input class="eventon_cl_input" type="text" name="'.$cl['name'].'" value="'.stripslashes($val).'"/>';
+					echo '<input class="eventon_cl_input" type="text" name="'.$cl['name'].'" placeholder="'.$placeholder.'" value="'.stripslashes($val).'"/>';
 					echo "<div class='clear'></div>
 						</div>";
 					echo (!empty($cl['legend']))? "<p class='eventon_cl_legend'>{$cl['legend']}</p>":null;	

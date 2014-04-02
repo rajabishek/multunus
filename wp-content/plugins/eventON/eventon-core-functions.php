@@ -32,8 +32,10 @@ function eventon_generate_options_css($newdata='') {
 	$uploads = wp_upload_dir();
 	
 	//$css_dir = get_template_directory() . '/css/'; // Shorten code, save 1 call
-	$css_dir = AJDE_EVCAL_DIR . '/'. EVENTON_BASE.  '/assets/css/'; // Shorten code, save 1 call
+	//$css_dir = AJDE_EVCAL_DIR . '/'. EVENTON_BASE.  '/assets/css/'; 
+	$css_dir = plugin_dir_path( __FILE__ ).  '/assets/css/'; 
 	
+
 	/** Save on different directory if on multisite **/
 	if(is_multisite()) {
 		$aq_uploads_dir = trailingslashit($uploads['basedir']);
@@ -51,7 +53,7 @@ function eventon_generate_options_css($newdata='') {
 	/** Write to options.css file **/
 	WP_Filesystem();
 	global $wp_filesystem;
-	if ( ! $wp_filesystem->put_contents( $aq_uploads_dir . 'eventon_dynamic_styles.css', $css, 0644) ) {
+	if ( ! $wp_filesystem->put_contents( $aq_uploads_dir . 'eventon_dynamic_styles.css', $css, 0777) ) {
 	    return true;
 	}
 	
@@ -626,7 +628,7 @@ if( !function_exists ('eventon_get_proper_labels')){
 		return array(
 		'name' => _x($plu, 'post type general name'),
 		'singular_name' => _x($sin, 'post type singular name'),
-		'add_new' => _x('Add New', $sin),
+		'add_new' => __('Add New '. $sin),
 		'add_new_item' => __('Add New '.$sin),
 		'edit_item' => __('Edit '.$sin),
 		'new_item' => __('New '.$sin),
@@ -952,7 +954,76 @@ function eventon_clean( $var ) {
 	return sanitize_text_field( $var );
 }
 
+// GET activated event type count
+	function evo_verify_extra_ett($evopt=''){
 
+		$evopt = (!empty($evopt))? $evopt: get_option('evcal_options_evcal_1');
+
+		$count=array();
+		for($x=3; $x<6; $x++ ){
+			if(!empty($evopt['evcal_ett_'.$x]) && $evopt['evcal_ett_'.$x]=='yes'){
+				$count[] = $x;
+			}else{
+				break;
+			}
+		}
+
+		return $count;
+	}
+	// this return the count for each event type that are activated in accordance
+	function evo_get_ett_count($evopt=''){
+		$evopt = (!empty($evopt))? $evopt: get_option('evcal_options_evcal_1');
+
+		$count=2;
+		for($x=3; $x<6; $x++ ){
+			if(!empty($evopt['evcal_ett_'.$x]) && $evopt['evcal_ett_'.$x]=='yes'){
+				$count = $x;
+			}else{
+				break;
+			}
+		}
+
+		return $count;
+	}
+
+// GET event type names
+	function evo_get_ettNames($options=''){
+		$output = array();
+
+		$options = (!empty($options))? $options: get_option('evcal_options_evcal_1');
+		for( $x=1; $x< (evo_get_ett_count($options)+1); $x++){
+			$ab = ($x==1)? '':$x;
+			$output[$x] = (!empty($options['evcal_eventt'.$ab]))? $options['evcal_eventt'.$ab]:'Event Type '.$ab;
+		}
+		return $output;
+	}
+	function evo_get_localized_ettNames($lang='', $options='', $options2=''){
+		$output ='';
+
+		$options = (!empty($options))? $options: get_option('evcal_options_evcal_1');
+		$options2 = (!empty($options2))? $options2: get_option('evcal_options_evcal_2');
+		$_lang_variation = (!empty($lang))? $lang:'L1';
+
+		// foreach event type upto activated event type categories
+		for( $x=1; $x< (evo_get_ett_count($options)+1); $x++){
+			$ab = ($x==1)? '':$x;
+
+			$_tax_lang_field = 'evcal_lang_et'.$x;
+
+			// check on eventon language values for saved name
+			$lang_name = (!empty($options2[$_lang_variation][$_tax_lang_field]))? 
+				stripslashes($options2[$_lang_variation][$_tax_lang_field]): null;
+
+			// conditions
+			if(!empty($lang_name)){
+				$output[$x] = $lang_name;
+			}else{
+				$output[$x] = (!empty($options['evcal_eventt'.$ab]))? $options['evcal_eventt'.$ab]:'Event Type '.$ab;
+			}
+			
+		}
+		return $output;
+	}
 
 
 // GET  event custom taxonomy field names

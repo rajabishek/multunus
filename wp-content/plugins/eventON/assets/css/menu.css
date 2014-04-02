@@ -194,6 +194,9 @@
 		border-radius:5px;
 		overflow: hidden;
 	}
+	#eventon_popup.padd .evo_lightbox_outter.maxbox{
+		overflow: auto;
+	}
 	#eventon_popup.padd .eventon_popup_text{
 		padding:5px 15px;
 	}
@@ -221,12 +224,7 @@
 		left: 10px; opacity: 0.8;
 	}
 
-
-	#eventon_popup .eventon_popup_text h2{margin:0}
-	.eventon_popup_text p{
-		font:13px 'open sans', arial
-	}
-
+	
 	.evoPOP_header{
 		background-color:#dfa872;
 		position:relative;
@@ -256,12 +254,30 @@
 		font:18px 'open sans', arial;
 		margin:0 0 5px 0
 	}
+	.eventon_popup_text p{	font:13px 'open sans', arial; margin: 0; padding-bottom:15px;}
+	.eventon_popup_text h3{	padding-bottom:5px;margin: 0;}
+
 	#eventon_popup .eventon_popup_text h4{
-		font:16px 'open sans', arial;
-		margin:0 0 5px 0
+		font:600 14px 'open sans', arial;
+		margin:5px 0 5px 0;
 	}
 
 /* shortcode popup */
+	.mceIcon.eventon_shortcode_button{position: relative;}
+	.mceIcon.eventon_shortcode_button:before{
+		font-family: 'eventon' !important;
+		content: '\e600';
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+		position: absolute;
+		left: 0;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
 	#evo_shortcode_btn{
 		line-height:130%;
 		-webkit-border-radius: 2px;
@@ -539,6 +555,13 @@
 	}
 	.evo_wig_item .evoGuideCall:hover em{ display:block}
 
+	.evo_wig_item.select_row select{
+		border:none; box-shadow: none
+	}
+	.evo_wig_item.select_row label{
+		padding-left: 10px;
+		font: italic 15px 'open sans',arial;
+	}
 	.evo_wig_item{
 		border-bottom:1px solid #dfdfdf;
 		position:relative;

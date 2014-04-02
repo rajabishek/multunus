@@ -166,19 +166,22 @@
 	}
 	
 
+	// more less gradient
+	$_grad_rgb = (!empty($opt['evcal__bc1_rgb']))? $opt['evcal__bc1_rgb']: '234,234,234';
+	$_grad_hex = (!empty($opt['evcal__bc1']))? $opt['evcal__bc1']: 'eaeaea';
 
+	echo ".evcal_event_details .evcal_evdata_cell .eventon_details_shading_bot{
+		background: -moz-linear-gradient(top,  rgba({$_grad_rgb},0) 0%, rgba({$_grad_rgb},0.01) 1%, rgba({$_grad_rgb},1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba({$_grad_rgb},0)), color-stop(1%,rgba({$_grad_rgb},0.01)), color-stop(100%,rgba({$_grad_rgb},1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba({$_grad_rgb}4,0) 0%,rgba({$_grad_rgb},0.01) 1%,rgba({$_grad_rgb},1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba({$_grad_rgb},0) 0%,rgba({$_grad_rgb},0.01) 1%,rgba({$_grad_rgb},1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba({$_grad_rgb},0) 0%,rgba({$_grad_rgb},0.01) 1%,rgba({$_grad_rgb},1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba({$_grad_rgb},0) 0%,rgba({$_grad_rgb},0.01) 1%,rgba({$_grad_rgb},1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00{$_grad_hex}', endColorstr='#{$_grad_hex}',GradientType=0 ); /* IE6-9 */
+	}";	
 
-
-
-	// magnifying glass cursor
-	echo (!empty($opt['evo_ftim_mag']) && $opt['evo_ftim_mag']=='yes')? ".evcal_evdata_img{cursor: url(".AJDE_EVCAL_URL."/assets/images/zoom.png), auto;}":null;
 	
-	// hover effect
-	echo (!empty($opt['evo_ftimghover']) && $opt['evo_ftimghover']=='yes')? 
-		".evcal_evdata_img:hover{background-position: 50% 50%;}":
-		".evcal_evdata_img:hover{background-position: 50% 45%;}";
-	
-	
+		
 
 	// STYLES
 	echo (!empty($opt['evo_ftimgheight']))?

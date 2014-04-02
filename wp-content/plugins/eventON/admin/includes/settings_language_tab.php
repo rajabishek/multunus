@@ -1,6 +1,23 @@
 <?php
+/**
+ * Language Settings 
+ *
+ * @version		2.2.9
+ * @package		EventON/settings
+ * @category	Settings
+ * @author 		AJDE
+ */
 
+// Event type custom taxonomy NAMES
+	$evopt = get_option('evcal_options_evcal_1');
+	$event_type_names = evo_get_ettNames($evopt);
+		
 
+	$_ett_lang_ar = array();
+	$ett_verify = evo_get_ett_count($evopt);
+	for($x=1; $x< ($ett_verify+1); $x++){
+		$_ett_lang_ar[$x]= array('label'=>$event_type_names[$x],'name'=>'evcal_lang_et'.$x);		
+	}
 
 $eventon_custom_language_array = array(
 	array('type'=>'togheader','name'=>'General Calendar'),
@@ -23,6 +40,14 @@ $eventon_custom_language_array = array(
 			'name'=>'evcal_lang_jumpmonths',
 			'legend'=>''
 		),array(
+			'label'=>'Jump Months: Month',
+			'name'=>'evcal_lang_jumpmonthsM',
+			'legend'=>''
+		),array(
+			'label'=>'Jump Months: Year',
+			'name'=>'evcal_lang_jumpmonthsY',
+			'legend'=>''
+		),array(
 			'label'=>'Sort Options',
 			'name'=>'evcal_lang_sopt',
 			'legend'=>''
@@ -43,13 +68,11 @@ $eventon_custom_language_array = array(
 			'label'=>'All',
 			'name'=>'evcal_lang_all',
 			'legend'=>'Sort options all text'
-		),array(
-			'label'=>$evt_name,
-			'name'=>'evcal_lang_et1',
-		),array(
-			'label'=>$evt_name2,
-			'name'=>'evcal_lang_et2',
 		),
+		$_ett_lang_ar[1],
+		$_ett_lang_ar[2],
+		( !empty($_ett_lang_ar[3])? $_ett_lang_ar[3]: null),
+		( !empty($_ett_lang_ar[4])? $_ett_lang_ar[4]: null),
 
 	array('type'=>'togend'),
 	array('type'=>'togheader','name'=>'Event Card'),

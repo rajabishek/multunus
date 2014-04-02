@@ -55,6 +55,35 @@ function eventon_shortcode_button($context) {
   	return $context;
 }
 
+/* eventON shortcode generator button for WYSIWYG editor */
+ add_action('init', 'eventon_shortcode_button_init');
+ function eventon_shortcode_button_init() {
+
+      //Abort early if the user will never see TinyMCE
+      if ( ! current_user_can('edit_posts') && ! current_user_can('edit_pages') && get_user_option('rich_editing') == 'true')
+           return;
+
+      //Add a callback to regiser our tinymce plugin   
+      add_filter("mce_external_plugins", "eventon_register_tinymce_plugin"); 
+
+      // Add a callback to add our button to the TinyMCE toolbar
+      add_filter('mce_buttons', 'eventon_add_tinymce_button');
+}
+
+
+//This callback registers our plug-in
+function eventon_register_tinymce_plugin($plugin_array) {
+    $plugin_array['eventon_shortcode_button'] = AJDE_EVCAL_URL.'/assets/js/admin/shortcode.js';
+    return $plugin_array;
+}
+
+//This callback adds our button to the toolbar
+function eventon_add_tinymce_button($buttons) {
+            //Add the button ID to the $button array
+    $buttons[] = "eventon_shortcode_button";
+    return $buttons;
+}
+
 
 
 

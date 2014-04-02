@@ -30,6 +30,7 @@ class EvcalWidget extends WP_Widget{
 			'fixed_year'=>'0',
 			'hide_empty_months'=>'no',
 			'number_of_months'=>'1',
+			'lang'=>'L1'
 		);
 	}
 	function widget_values($instance){
@@ -153,7 +154,22 @@ class EvcalWidget extends WP_Widget{
 				<div class='evo_wig_item'>
 					<input id="<?php echo $this->get_field_id('ev_type'); ?>" name="<?php echo $this->get_field_name('ev_type'); ?>" type="text" 
 					value="<?php echo esc_attr($ev_type); ?>" placeholder='Event Types' title='Event Types'/>
-					<em>Leave blank for all event types, else type <a href='edit-tags.php?taxonomy=event_type&post_type=ajde_events'>event type ID</a> separated by commas)</em>
+					<?php $eventon->throw_guide('Leave blank for all event types, else type <a href="edit-tags.php?taxonomy=event_type&post_type=ajde_events">event type ID</a> separated by commas)','L');?>
+					
+				</div>						
+			</div>
+			<div class='evo_widget_outter evowig'>
+				<div class='evo_wig_item select_row'>
+					<label>Language</label>
+					<select name="<?php echo $this->get_field_name('lang'); ?>">
+					<?php 
+
+						for($x=1; $x<4; $x++){
+							echo "<option value='L{$x}' ". (($lang=='L'.$x)? 'selected="selected"':null ). ">L{$x}</option>";
+						}
+					?>		
+					</select>					
+					
 				</div>						
 			</div>
 			
@@ -211,6 +227,7 @@ class EvcalWidget extends WP_Widget{
 			'show_upcoming'=>$show_upcoming,
 			'number_of_months'=>$number_of_months,
 			'event_type'=> $ev_type,
+			'lang'=> $lang,
 			'event_type_2'=> 'all',
 			'fixed_month'=>$fixed_month,
 			'fixed_year'=>$fixed_year,

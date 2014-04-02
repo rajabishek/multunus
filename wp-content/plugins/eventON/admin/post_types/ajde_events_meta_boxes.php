@@ -602,7 +602,7 @@ function ajde_evcal_show_box_2(){
 ?>
 	
 	
-	<div id='evo_mb'>
+	<div id='evo_mb' class='eventon_mb'>
 		<input type='hidden' id='evo_collapse_meta_boxes' name='evo_collapse_meta_boxes' value=''/>
 	<?php
 		foreach($metabox_array as $mBOX):

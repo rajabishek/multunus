@@ -161,7 +161,7 @@
 					)
 				),
 				array('id'=>'evcal__fc5','type'=>'color','name'=>'General Font Color', 'default'=>'656565'),
-				array('id'=>'evcal__bc1','type'=>'color','name'=>'Event Card Background Color', 'default'=>'eaeaea'),			
+				array('id'=>'evcal__bc1','type'=>'color','name'=>'Event Card Background Color', 'default'=>'eaeaea', 'rgbid'=>'evcal__bc1_rgb'),			
 
 				array('id'=>'evcal_fcx','type'=>'subheader','name'=>'Buttons'),
 				array('id'=>'fs_fonti3','type'=>'fontation','name'=>'Button Color',
@@ -194,6 +194,18 @@
 	// reused array parts
 		$__additions_009_1 = array('text'=>'Single line Text','textarea'=>'Multiple lines of text', 'button'=>'Button');
 
+	// event types category names		
+		$ett_verify = evo_get_ett_count($evcal_opt[1] );
+		for($x=1; $x< ($ett_verify+1); $x++){
+			$ab = ($x==1)? '':'_'.$x;
+			$event_type_options['event_type'.$ab] = $event_type_names[$x];
+		}
+
+		
+
+
+
+
 	$cutomization_pg_array = array(
 		array(
 			'id'=>'evcal_001',
@@ -213,17 +225,14 @@
 						'today_date'=>'Hide events past today\'s date')
 				),
 				array('id'=>'evcal_cal_hide_past','type'=>'end_afterstatement'),
-				array('id'=>'evcal_hide_sort','type'=>'yesno','name'=>'Hide sort bar on calendar'),
+				array('id'=>'evcal_hide_sort','type'=>'yesno','name'=>'Hide Sort Bar on Calendar'),
+				array('id'=>'evcal_dis_conFilter','type'=>'yesno','name'=>'Disable Content Filter','legend'=>'This will disable to use of the_content filter on event details and custom field values.'),
 				
 				array('id'=>'evo_usewpdateformat','type'=>'yesno','name'=>'Use WP default Date format in eventON calendar', 'legend'=>'Select this option to use the default WP Date format through out eventON calendar. Default format: yyyy/mm/dd'),
 				
 				array('id'=>'evcal_header_format','type'=>'text','name'=>'Calendar Header month/year format. <i>(<b>Allowed values:</b> m = month name, Y = 4 digit year, y = 2 digit year)</i>' , 'default'=>'m, Y'),
-				
 								
-				array('id'=>'evcal_fcx','type'=>'subheader','name'=>'Event Type Taxonomies'),
-				array('id'=>'evcal_fcx','type'=>'note','name'=>'Use this to assign custom names for the event type taxonomies which you can use to categorize events. Note: Once you update these custom taxonomies refresh the page for the values to show up.'),
-				array('id'=>'evcal_eventt','type'=>'text','name'=>'Custom name for Event Type #1',),
-				array('id'=>'evcal_eventt2','type'=>'text','name'=>'Custom name for Event Type #2',),
+				
 			
 		))),		
 		
@@ -272,10 +281,8 @@
 						'color'=>'Event Color',									
 					)),
 				array('id'=>'evcal_filter_options', 'type'=>'checkboxes','name'=>'Event filtering options to show on the calendar</i>',
-					'options'=>array(
-						'event_type'=>$evt_name,
-						'event_type_2'=>$evt_name2.' (This is only for filtering purposes will not show in individual events)',
-					)),
+					'options'=>$event_type_options
+				),
 		)),
 		array(
 			'id'=>'evcal_002',
@@ -289,7 +296,7 @@
 			'name'=>'Custom Icons for Calendar',
 			'tab_name'=>'Icons',
 			'top'=>'76',
-			'fields'=>array(
+			'fields'=> apply_filters('eventon_custom_icons', array(
 				array('id'=>'fs_fonti2','type'=>'fontation','name'=>'EventCard Icons',
 					'variations'=>array(
 						array('id'=>'evcal__ecI', 'type'=>'color', 'default'=>'6B6B6B'),
@@ -309,7 +316,7 @@
 				
 
 			
-			)
+			))
 		),array(
 			'id'=>'evcal_004aa',
 			'name'=>'EventTop Settings (EventTop is an event row on calendar)',
@@ -340,9 +347,11 @@
 				
 				array('id'=>'evo_opencard','type'=>'yesno','name'=>'Open all eventCards by default','legend'=>'This option will load the calendar with all the eventCards open by default and will not need to be clicked to slide down and see details.'),
 				
+				/*array('id'=>'evcal_tdate_format','type'=>'text','name'=>'EventCard Date/Time format.' , 'default'=>'F j (l)', 'legend'=>'Allowed values:<br/>M = Jan-Dec<br/>F = January-December <br/>j = 1-31 (date)<br/>S = st,nd,rd <br/>l = Sunday-Saturday<br/>D = Sun-Sat'),*/
+				
 
 				array('id'=>'evcal_sh001','type'=>'subheader','name'=>'Featured Image'),
-				array('id'=>'evo_ftimghover','type'=>'yesno','name'=>'Disable hover effect on features image','legend'=>'Remove the hover moving animation effect from featured image on event.'),
+				array('id'=>'evo_ftimghover','type'=>'yesno','name'=>'Disable hover effect on featured image','legend'=>'Remove the hover moving animation effect from featured image on event.'),
 				array('id'=>'evo_ftimgheight','type'=>'text','name'=>'Set event featured image height (value in pixels)', 'default'=>'eg. 400'),
 				array('id'=>'evo_ftim_mag','type'=>'yesno','name'=>'Show magnifying glass over featured image','legend'=>'This will convert the mouse cursor to a magnifying glass when hover over featured image. <br/><br/><img src="'.AJDE_EVCAL_URL.'/assets/images/ajde_backender/cursor_mag.jpg"/>'),
 				
@@ -381,13 +390,13 @@
 			)
 		),array(
 			'id'=>'evcal_009',
-			'name'=>'Additions to eventON default plugin',
-			'tab_name'=>'Additions',
+			'name'=>'Custom Meta Data fields for events',
+			'tab_name'=>'Custom Meta Data',
 			'fields'=>array(
 
 				
 
-				array('id'=>'evcal__note','type'=>'note','name'=>'You can add upto 3 additional custom fields for each event using the below fields. (* Required values)'),
+				array('id'=>'evcal__note','type'=>'note','name'=>'You can add upto 3 additional custom meta fields for each event using the below fields. (* Required values)'),
 				
 				array('id'=>'evcal_af_1','type'=>'yesno','name'=>'Activate Additional Field #1','legend'=>'This will activate additional event meta field.','afterstatement'=>'evcal_af_1'),
 				array('id'=>'evcal_af_1','type'=>'begin_afterstatement'),
@@ -415,6 +424,34 @@
 
 
 				
+				
+			)
+		),array(
+			'id'=>'evcal_010',
+			'name'=>'EventType Categories',
+			'tab_name'=>'Categories',
+			'fields'=>array(			
+
+				array('id'=>'evcal_fcx','type'=>'note','name'=>'Use this to assign custom names for the event type taxonomies which you can use to categorize events. Note: Once you update these custom taxonomies refresh the page for the values to show up.'),
+				array('id'=>'evcal_eventt','type'=>'text','name'=>'Custom name for Event Type Category #1',),
+				array('id'=>'evcal_eventt2','type'=>'text','name'=>'Custom name for Event Type Category #2',),
+
+
+				array('id'=>'evcal_fcx','type'=>'note','name'=>'In order to add additional event type categories make sure you activate them in order. eg. Activate #4 after you activate #3'),
+				array('id'=>'evcal_ett_3','type'=>'yesno','name'=>'Activate Event Type Category #3','legend'=>'This will activate additional event type category.','afterstatement'=>'evcal_ett_3'),
+				array('id'=>'evcal_ett_3','type'=>'begin_afterstatement'),
+					array('id'=>'evcal_eventt3','type'=>'text','name'=>'Category Type Name'),
+				array('id'=>'evcal_ett_3','type'=>'end_afterstatement'),
+
+				array('id'=>'evcal_ett_4','type'=>'yesno','name'=>'Activate Event Type Category #4','legend'=>'This will activate additional event type category.','afterstatement'=>'evcal_ett_4'),
+				array('id'=>'evcal_ett_4','type'=>'begin_afterstatement'),
+					array('id'=>'evcal_eventt4','type'=>'text','name'=>'Category Type Name'),
+				array('id'=>'evcal_ett_4','type'=>'end_afterstatement'),
+
+				array('id'=>'evcal_ett_5','type'=>'yesno','name'=>'Activate Event Type Category #5','legend'=>'This will activate additional event type category.','afterstatement'=>'evcal_ett_5'),
+				array('id'=>'evcal_ett_5','type'=>'begin_afterstatement'),
+					array('id'=>'evcal_eventt5','type'=>'text','name'=>'Category Type Name'),
+				array('id'=>'evcal_ett_5','type'=>'end_afterstatement'),
 				
 			)
 		)

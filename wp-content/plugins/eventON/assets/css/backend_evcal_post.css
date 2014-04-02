@@ -251,7 +251,7 @@
 }	
 
 /*-- recurring events --*/
-#evcal_rep{
+#evcal_rep, .evcal_rep{
 	border-top: 3px solid #666565;
 	background: #706f6f;
 	margin:15px -22px -20px;
@@ -307,7 +307,7 @@
 /*------------------ */
 /* ui v3 */
 .fcw{color:#fff}
-#evo_mb{margin:-6px -12px -12px -12px;}
+#evo_mb, .eventon_mb{margin:-6px -12px -12px -12px;}
 .evomb_section{
 	border-bottom:1px solid #dfdfdf;
 }

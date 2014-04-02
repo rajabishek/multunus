@@ -15,7 +15,12 @@ function eventon_eventcard_print($array, $evOPT, $evoOPT2){
 	
 	// close button
 	$close = "<div class='evcal_evdata_row evcal_close' title='".eventon_get_custom_language($evoOPT2, 'evcal_lang_close','Close')."'></div>";
+
+	// additional fields array 
+	$_additions = apply_filters('evo_eventcard_adds' , array());
+	$__content_filter = ( !empty($evOPT['evcal_dis_conFilter']) && $evOPT['evcal_dis_conFilter']=='yes')? true:false;
 	
+
 	foreach($array as $box_f=>$box){
 		
 		$end = ($count == $items)? $close: null;
@@ -27,13 +32,30 @@ function eventon_eventcard_print($array, $evOPT, $evoOPT2){
 			$object->$key = $value;
 		}
 		
+		$boxname = (in_array($box_f, $_additions))? $box_f: null;
+
 		//print_r($box_f);
 		//print_r($object);
 		//$OT.="".$items.'-'.$count." ".$box_f;
 		
 		// each eventcard type
 		switch($box_f){
+
+			// addition
+			case has_filter("eventon_eventCard_{$boxname}"):
+
+				$helpers = array(
+					'evOPT'=>$evOPT,
+					'evoOPT2'=>$evoOPT2,
+					'end_row_class'=>$end_row_class,
+					'end'=>$end,
+				);
+
+				$OT.= apply_filters("eventon_eventCard_{$boxname}", $object, $helpers);								
+				
+			break;
 			
+
 			// Event Details
 			case 'eventdetails':
 				
@@ -54,7 +76,7 @@ function eventon_eventcard_print($array, $evOPT, $evoOPT2){
 						<span class='evcal_evdata_icons'><i class='fa ".get_eventON_icon('evcal__fai_001', 'fa-align-justify',$evOPT )."'></i></span>
 						<div class='evcal_evdata_cell ".$evo_more_active_class."'>".$more_code."<div class='eventon_full_description'>
 								<h3 class='padb5 evo_h3'>".eventon_get_custom_language($evoOPT2, 'evcal_evcard_details','Event Details')."</h3><div class='eventon_desc_in' itemprop='description'>
-								".apply_filters('the_content__',$object->fulltext)."</div><div class='clear'></div>
+								". ( ($__content_filter)? apply_filters('the_content__',$object->fulltext):$object->fulltext) ."</div><div class='clear'></div>
 
 							</div>
 						</div>
@@ -117,7 +139,10 @@ function eventon_eventcard_print($array, $evOPT, $evoOPT2){
 			// Featured image
 			case 'ftimage':
 				
-				$OT.= "<div class='evorow evcal_evdata_img evo_metarow_fimg".$end_row_class."' imgheight='".$object->img[2]."' imgwidth='".$object->img[1]."'  style='background-image: url(".$object->img[0].")'>".$end."</div>";
+				$__hoverclass = (!empty($object->hovereffect) && $object->hovereffect!='yes')? ' imghover':null;
+				$__zoom_cursor = (!empty($evOPT['evo_ftim_mag']) && $evOPT['evo_ftim_mag']=='yes')? ' imgCursor':null;
+
+				$OT.= "<div class='evorow evcal_evdata_img evo_metarow_fimg".$end_row_class.$__hoverclass.$__zoom_cursor."' imgheight='".$object->img[2]."' imgwidth='".$object->img[1]."'  style='background-image: url(".$object->img[0].")'>".$end."</div>";
 				
 			break;
 			
@@ -163,7 +188,8 @@ function eventon_eventcard_print($array, $evOPT, $evoOPT2){
 					if($object->type=='button'){
 						$OT .="<a href='".$object->valueL."' class='evcal_btn'>".$object->value."</a>";
 					}else{
-						$OT .="<div class='evo_custom_content evo_data_val'>".apply_filters('the_content__', $object->value)."</div>";
+						$OT .="<div class='evo_custom_content evo_data_val'>". 
+						( ($__content_filter)? apply_filters('the_content__', $object->value): $object->value)."</div>";
 					}
 						$OT .="</div>".$end."</div>";
 				

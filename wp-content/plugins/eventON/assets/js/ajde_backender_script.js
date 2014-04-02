@@ -115,7 +115,15 @@ jQuery(document).ready(function($){
 				$(el).html( hex);
 			},	
 			onSubmit: function(hsb, hex, rgb, el) {
-				$(el).siblings('input').attr({'value':hex});
+				var obj_input = $(el).siblings('input.backender_colorpicker');
+
+				if($(el).hasClass('rgb')){
+					$(el).siblings('input.rgb').attr({'value':rgb.r+','+rgb.g+','+rgb.b});
+					//console.log(rgb);
+				}
+
+				obj_input.attr({'value':hex});
+
 				$(el).css('backgroundColor', '#' + hex);
 				$(el).attr({'title': '#' + hex});
 				$(el).ColorPickerHide();

@@ -1,4 +1,16 @@
 /* evcal settings page */
+	::-webkit-input-placeholder { /* WebKit browsers */
+	    color:    #EED1B5;
+	}
+	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	    color:    #EED1B5;
+	}
+	::-moz-placeholder { /* Mozilla Firefox 19+ */
+	    color:    #EED1B5;
+	}
+	:-ms-input-placeholder { /* Internet Explorer 10+ */
+	    color:    #EED1B5;
+	}
 
 	#meta_tabs a{cursor:pointer}
 	.postbox hr{background-color:#DFDFDF;border:none;height:1px;border-bottom:1px solid #fff}

@@ -27,6 +27,7 @@ jQuery(document).ready(function($){
 			{
 				container.animate({'margin-top':'70px','opacity':0}).fadeOut().removeClass('active');
 				$('#evo_popup_bg').fadeOut();
+				popup_open = false;
 			}
 		}
 	});
@@ -48,6 +49,7 @@ jQuery(document).ready(function($){
 					n();
 				});
 			$('#evo_popup_bg').fadeOut();
+			popup_open = false;
 				
 		}
 	}
@@ -60,20 +62,39 @@ jQuery(document).ready(function($){
 		DISPLAY Eventon in-window popup box
 		Usage: <a class='button eventon_popup_trig' content_id='is_for_content' dynamic_c='yes'>Click</a>
 	*/
-	$('.eventon_popup_trig').click(function(){
-		
+	var popup_open = false;
+	$('#poststuff').on('click','.eventon_popup_trig', function(){
+		if (popup_open) {
+			return;
+		}else{
+			eventon_popup_open( $(this));
+			popup_open = true;
+		}
+	});
+
+	$('.eventon_popup_trig').on('click', function(){
+		if (popup_open) {
+			return;
+		}else{
+			eventon_popup_open( $(this));
+			popup_open = true;
+		}
+	});
+	
+	// OPEN POPUP BOX
+	function eventon_popup_open(obj){
 		// dynamic content within the site
-		var dynamic_c = $(this).attr('dynamic_c');
+		var dynamic_c = obj.attr('dynamic_c');
 		if(typeof dynamic_c !== 'undefined' && dynamic_c !== false){
 			
-			var content_id = $(this).attr('content_id');
+			var content_id = obj.attr('content_id');
 			var content = $('#'+content_id).html();
 			
 			$('#eventon_popup').find('.eventon_popup_text').html( content);
 		}
 		
 		// if content coming from a AJAX file
-		var attr_ajax_url = $(this).attr('ajax_url');
+		var attr_ajax_url = obj.attr('ajax_url');
 		
 		if(typeof attr_ajax_url !== 'undefined' && attr_ajax_url !== false){
 			
@@ -92,7 +113,7 @@ jQuery(document).ready(function($){
 		}
 		
 		// change title if present		
-		var poptitle = $(this).attr('poptitle');
+		var poptitle = obj.attr('poptitle');
 		if(typeof poptitle !== 'undefined' && poptitle !== false){
 			$('#evoPOP_title').html(poptitle);
 		}
@@ -101,8 +122,9 @@ jQuery(document).ready(function($){
 		$('#eventon_popup').find('.message').removeClass('bad good').hide();
 		$('#eventon_popup').addClass('active').show().animate({'margin-top':'0px','opacity':1}).fadeIn();
 
+		$('html, body').animate({scrollTop:0}, 700);
 		$('#evo_popup_bg').fadeIn();
-	});
+	}
 	
 	
 	// licenses verification and saving
