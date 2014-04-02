@@ -1,6 +1,6 @@
 <script>
 
-  if (window.location.hostname === "multunus.staging.wpengine.com") {
+  if (window.location.hostname === "www.multunus.com") {
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-5073218-1']);
   _gaq.push(['_setDomainName', 'multunus.com']);
@@ -12,9 +12,9 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
-  console.log("staging");
+  console.log("production");
 
-  } else if(window.location.hostname === "www.multunus.com") {
+  } else if(window.location.hostname === "multunus.staging.wpengine.com") {
 
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -24,7 +24,7 @@
   ga('create', 'UA-5073218-6', 'multunus.com');
   ga('send', 'pageview');
 
-  console.log("production");
+  console.log("staging");
 
   }
 

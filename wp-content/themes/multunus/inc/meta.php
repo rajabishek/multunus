@@ -26,3 +26,4 @@
   <li><a class="addthis_button_google_plusone" g:plusone:size="medium"></a></li>
   <li><a class="addthis_button_linkedin_counter"></a></li>
 </ul>
+<?php bloginfo('rdf_url'); ?>
