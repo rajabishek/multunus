@@ -340,7 +340,7 @@ add_action( 'init', 'open_source_taxonomy', 0 );
 add_filter('request', 'custom_feed');
 function custom_feed( $vars ) {
     if ( isset( $vars['feed'] ) ) {
-      $vars['post_type'] = ['open_source', 'ajde_events', 'post'];
+      $vars['post_type'] = array('open_source', 'ajde_events', 'post');
     }
     return $vars;
 }
