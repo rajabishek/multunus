@@ -337,6 +337,14 @@ function open_source_taxonomy() {
 }
 add_action( 'init', 'open_source_taxonomy', 0 );
 
+add_filter('request', 'custom_feed');
+function custom_feed( $vars ) {
+    if ( isset( $vars['feed'] ) ) {
+      $vars['post_type'] = ['open_source', 'ajde_events', 'post'];
+    }
+    return $vars;
+}
+
 // Add Featured Image
 if (function_exists( 'add_theme_support' ) ) {
   add_theme_support('post-thumbnails');

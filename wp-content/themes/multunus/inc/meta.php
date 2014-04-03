@@ -21,9 +21,5 @@
 </ul>
 
 <ul class="social-share hidden-xs">
-  <li><a class="addthis_button_facebook_like" fb:like:layout="button_count"></a></li>
-  <li><a class="addthis_button_tweet"></a></li>
-  <li><a class="addthis_button_google_plusone" g:plusone:size="medium"></a></li>
-  <li><a class="addthis_button_linkedin_counter"></a></li>
+  <?php get_template_part('/shared_partials/social-links'); ?>
 </ul>
-<a href="http://www.multunus.com/feed">RSS</a>

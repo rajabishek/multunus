@@ -38,10 +38,7 @@
 						<?php get_template_part('dan-north-quote'); ?>
 
 						<ul class="social-share visible-xs">
-							<li><a class="addthis_button_facebook_like" fb:like:layout="button_count"></a></li>
-							<li><a class="addthis_button_tweet"></a></li>
-							<li><a class="addthis_button_google_plusone" g:plusone:size="medium"></a></li>
-							<li><a class="addthis_button_linkedin_counter"></a></li>
+							<?php get_template_part('/shared_partials/social-links'); ?>
 						</ul>
 
 						<?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
