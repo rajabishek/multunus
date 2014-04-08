@@ -84,15 +84,7 @@ if (!is_admin()) {
     }
   }
 
-  // add_action('wp_enqueue_scripts', 'events_page_script', 18);
-  function events_page_script() {
-    if (is_page('events')) {
-      wp_register_script( 'events', get_template_directory_uri() . '/js/events.js', array( 'jquery' ), null, true );
-      wp_enqueue_script('events');
-    }
-  }
-
-  add_action('wp_enqueue_scripts', 'home_page_script', 19);
+  add_action('wp_enqueue_scripts', 'home_page_script', 18);
   function home_page_script() {
     if (is_page('home')) {
       wp_register_script( 'home', get_template_directory_uri() . '/js/home.js', array( 'jquery' ), null, true );
@@ -100,8 +92,7 @@ if (!is_admin()) {
     }
   }
 
-
-  add_action('wp_enqueue_scripts', 'contact_page_script', 20);
+  add_action('wp_enqueue_scripts', 'contact_page_script', 19);
   function contact_page_script() {
     if (is_page('contact')) {
       wp_register_script( 'contact', get_template_directory_uri() . '/js/contact.js', array( 'jquery' ), null, true );

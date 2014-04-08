@@ -6,13 +6,13 @@
 
 <?php get_header(); ?>
 
-<div class="overlay">
-  <div class="overlay-content">
-    <h1 id="quote">Build your dream. At work.</h1>
-    <div data-toggle="scroll" rel="#test-drive" class="btn-red">Take A Test Drive<span></span></div>
-  </div>
-</div>
 <div class="video-section-container career-page">
+  <div class="overlay">
+    <div class="overlay-content">
+      <h1 id="quote">Build your dream. At work.</h1>
+      <div data-toggle="scroll" rel="#test-drive" class="btn-red">Take A Test Drive<span></span></div>
+    </div>
+  </div>
   <video autoplay="autoplay" loop="loop" preload="auto" poster="/img/careers-page-poster.jpeg" data-video-name="careers">
   </video>
 </div>

@@ -3,10 +3,10 @@
   margin-top: 60px;
   width: 100%;
   overflow: hidden;
-  background-size: cover;
 
   @media (max-width: $screen-xs) {
     background: transparent url("/img/home-page-poster.jpeg") no-repeat 0 0;
+    background-size: cover;
     height: 400px;
   }
 

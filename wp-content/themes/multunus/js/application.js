@@ -33,7 +33,6 @@ $(function() {
     // $('video').on('canplay', function() {
     //   $('.video-section-container .overlay').css('-webkit-transform', 'scale(1)'); //trying to redraw
     // });
-
   };
 
   setupScrollButton = function() {
