@@ -50,14 +50,6 @@ if (!is_admin()) {
     }
   }
 
-  add_action('wp_enqueue_scripts', 'home_page_script', 14);
-  function home_page_script() {
-    if (is_page('home')) {
-      wp_register_script( 'home', get_template_directory_uri() . '/js/home.js', array( 'jquery' ), null, true );
-      wp_enqueue_script('home');
-    }
-  }
-
   add_action('wp_enqueue_scripts', 'process_page_script', 14);
   function process_page_script() {
     if (is_page('process')) {
@@ -89,6 +81,31 @@ if (!is_admin()) {
       // wp_enqueue_script('tag_cloud');
       // wp_register_script( 'hiring_campaign', get_template_directory_uri() . '/js/hiring_campaign.js', array( 'jquery' ), null, true );
       // wp_enqueue_script('hiring_campaign');
+    }
+  }
+
+  // add_action('wp_enqueue_scripts', 'events_page_script', 18);
+  function events_page_script() {
+    if (is_page('events')) {
+      wp_register_script( 'events', get_template_directory_uri() . '/js/events.js', array( 'jquery' ), null, true );
+      wp_enqueue_script('events');
+    }
+  }
+
+  add_action('wp_enqueue_scripts', 'home_page_script', 19);
+  function home_page_script() {
+    if (is_page('home')) {
+      wp_register_script( 'home', get_template_directory_uri() . '/js/home.js', array( 'jquery' ), null, true );
+      wp_enqueue_script('home');
+    }
+  }
+
+
+  add_action('wp_enqueue_scripts', 'contact_page_script', 20);
+  function contact_page_script() {
+    if (is_page('contact')) {
+      wp_register_script( 'contact', get_template_directory_uri() . '/js/contact.js', array( 'jquery' ), null, true );
+      wp_enqueue_script('contact');
     }
   }
 
