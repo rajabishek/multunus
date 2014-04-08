@@ -76,10 +76,8 @@ $(document).ready(function() {
 
       self.$('.golden-circle').hover(function() {
         $(this).removeClass('inactive');
-        // self.showTabForCircle($(this));
       }, function() {
         $(this).addClass('inactive');
-        // self.showTabForCircle($(this));
       });
     },
 

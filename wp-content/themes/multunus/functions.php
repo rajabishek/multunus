@@ -50,6 +50,14 @@ if (!is_admin()) {
     }
   }
 
+  add_action('wp_enqueue_scripts', 'home_page_script', 14);
+  function home_page_script() {
+    if (is_page('home')) {
+      wp_register_script( 'home', get_template_directory_uri() . '/js/home.js', array( 'jquery' ), null, true );
+      wp_enqueue_script('home');
+    }
+  }
+
   add_action('wp_enqueue_scripts', 'process_page_script', 14);
   function process_page_script() {
     if (is_page('process')) {

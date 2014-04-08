@@ -16,9 +16,7 @@
       </div>
     </div>
 
-    <video tabindex="0" autoplay="autoplay" loop="loop">
-      <source src="https://d3i6m9q7qxxzav.cloudfront.net/Videos/home.mp4" type="video/mp4" />
-      <source src="https://d3i6m9q7qxxzav.cloudfront.net/Videos/home.webm" type="video/webm" />
+    <video autoplay="autoplay" loop="loop" preload="auto" poster="/img/home-page-poster.jpeg" data-video-name="home">
     </video>
   </div>
 
@@ -184,7 +182,7 @@
         </div>
 
 
-        <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div id="testimonialVideo" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="testimonialVideoLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
@@ -195,7 +193,7 @@
               </div>
             </div>
           </div>
-        </div><!-- end of myModal -->
+        </div><!-- end of testimonialVideo -->
 
       </div><!-- end of row -->
     </div><!-- end of container -->

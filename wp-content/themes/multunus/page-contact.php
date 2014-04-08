@@ -16,9 +16,7 @@
     </div>
   </div>
 
-  <video tabindex="0" autoplay="autoplay" loop="loop">
-    <source src="https://d3i6m9q7qxxzav.cloudfront.net/Videos/contact.mp4" type="video/mp4" />
-    <source src="https://d3i6m9q7qxxzav.cloudfront.net/Videos/contact.webm" type="video/webm" />
+  <video autoplay="autoplay" loop="loop" poster="/img/contact-page-poster.jpeg" data-video-name="contact">
   </video>
 </div>
 

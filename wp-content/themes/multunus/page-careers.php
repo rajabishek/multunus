@@ -6,17 +6,14 @@
 
 <?php get_header(); ?>
 
-<div class="video-section-container career-page">
-  <div class="overlay">
-    <div class="overlay-content">
-      <h1 id="quote">Build your dream. At work.</h1>
-      <div data-toggle="scroll" rel="#test-drive" class="btn-red">Take A Test Drive<span></span></div>
-    </div>
+<div class="overlay">
+  <div class="overlay-content">
+    <h1 id="quote">Build your dream. At work.</h1>
+    <div data-toggle="scroll" rel="#test-drive" class="btn-red">Take A Test Drive<span></span></div>
   </div>
-
-  <video tabindex="0" autoplay="autoplay" loop="loop">
-    <source src="https://d3i6m9q7qxxzav.cloudfront.net/Videos/careers.mp4" type="video/mp4" />
-    <source src="https://d3i6m9q7qxxzav.cloudfront.net/Videos/careers.webm" type="video/webm" />
+</div>
+<div class="video-section-container career-page">
+  <video autoplay="autoplay" loop="loop" preload="auto" poster="/img/careers-page-poster.jpeg" data-video-name="careers">
   </video>
 </div>
 

@@ -1,49 +1,35 @@
 .video-section-container {
   position: relative;
+  margin-top: 60px;
   width: 100%;
-  overflow: auto;
-  background: transparent url("/img/home-page-poster.png") no-repeat 0 0;
+  overflow: hidden;
   background-size: cover;
 
-  &.mobile-device {
-    min-height: 425px;
-
-    &.services-page, &.career-page, &.contact-page {
-      min-height: 470px;
-
-      .overlay-content {
-        margin: 10px;
-        margin-top: 45%;
-      }
-    }
-
-    @media (min-width: $screen-sm) {
-      min-height: 700px !important;
-
-      .overlay-content {
-        margin-top: 22% !important;
-      }
-    }
-
-    video {
-      height: 0 !important;
-    }
+  @media (max-width: $screen-xs) {
+    background: transparent url("/img/home-page-poster.jpeg") no-repeat 0 0;
+    height: 400px;
   }
 
   video {
-    background: transparent url('/img/home-page-poster.png') no-repeat 0 0;
+    position: relative;
     width: 100%;
     height: auto !important;
-    float: left;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    z-index: 998;
+
+    @media (max-width: 1025px) {
+      min-height: 100%;
+      width: 120%;
+    }
+
+    @media (max-width: $screen-xs) {
+      display: none;
+    }
   }
 }
 
 .overlay {
   position: absolute;
+  z-index: 999;
   top: 0;
   bottom: 0;
   width: 100%;

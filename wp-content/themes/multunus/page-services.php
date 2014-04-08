@@ -16,9 +16,7 @@
     </div>
   </div>
 
-  <video tabindex="0" autoplay="autoplay" loop="loop">
-    <source src="https://d3i6m9q7qxxzav.cloudfront.net/Videos/services.mp4" type="video/mp4" />
-    <source src="https://d3i6m9q7qxxzav.cloudfront.net/Videos/services.webm" type="video/webm" />
+  <video autoplay="autoplay" loop="loop" poster="/img/services-page-poster.jpeg" data-video-name="services">
   </video>
 </div>
 
