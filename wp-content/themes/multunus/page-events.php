@@ -8,7 +8,7 @@
     <div class="page" id="page-events">
 
       <section class="container">
-        <h1 class="align-left"><?php the_title(); ?></h1>
+        <h1 class="align-left">Upcoming Events</h1>
         <div class="upcoming-events">
           <?php echo do_shortcode('[add_eventon_list cal_id="1" number_of_months="5" hide_empty_months="yes" show_year="yes" jumper="yes" hide_past="yes"]'); ?>
         </div>
