@@ -14,8 +14,40 @@
 
     <div class="col-md-4 link-box" id="events" >
       <h3><a href="/events">/Events</a></h3>
-      <?php echo do_shortcode('[add_eventon_el number_of_months="12" pec="ct" etop_month="no" event_count="3" ]'); ?>
+
+      <?php
+        $today =  current_time ('timestamp');
+
+        $args = array(
+          'post_type' => 'ajde_events',
+          'meta_key' => 'evcal_srow',
+          'orderby'   => 'meta_value_num',
+          'order' => 'ASC',
+          'post_status' => 'publish',
+          'posts_per_page' => 3,
+          'meta_query' => array(
+             array(
+               'key' => 'evcal_srow',
+               'value' => $today,
+               'compare' => '>',
+             )
+          )
+        );
+
+        $my_query = new WP_Query($args);
+
+        while ($my_query->have_posts()) : $my_query->the_post();
+
+          $start_time = get_post_meta(get_the_ID(), 'evcal_erow', true); ?>
+
+          <div class="post-title blog">
+            <a href="<?php the_permalink(); ?>" title="Read more"><?php the_title(); ?><br> <?php echo date('- F, Y', $start_time); ?></a>
+          </div>
+
+       <?php endwhile;  wp_reset_query(); ?>
+
       <a class="view-all-link" href="/events">View all</a>
+
     </div>
 
     <div class="col-md-4 link-box" id="open-source-projects" >

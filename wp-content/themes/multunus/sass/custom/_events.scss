@@ -212,3 +212,11 @@
 #evcal_widget .eventon_events_list .eventon_list_event .evcal_desc .evcal_desc_info em {
     color: #333333;
 }
+
+.evcal_evdata_row .evcal_evdata_cell a {
+  color: #d22340;
+
+  &:hover {
+    border-bottom: 1px solid;
+  }
+}
