@@ -6,7 +6,13 @@
 
       <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
         <div class="post-title blog">
-          <a href="<?php the_permalink(); ?>" title="Read more"><?php the_title(); ?><br> - <?php the_date( 'F, Y' ); ?></a>
+          <a href="<?php the_permalink(); ?>" title="Read more"><?php the_title(); ?>
+            <br/>
+            <span class="community-meta-data">
+              <?php echo human_time_diff( get_the_time('U', true), current_time('timestamp') ) . ' ago'; ?>
+            </span>
+
+          </a>
         </div>
       <?php endwhile; endif; ?>
       <a class="view-all-link" href="/blog">View all</a>
@@ -41,7 +47,12 @@
           $start_time = get_post_meta(get_the_ID(), 'evcal_erow', true); ?>
 
           <div class="post-title blog">
-            <a href="<?php the_permalink(); ?>" title="Read more"><?php the_title(); ?><br> <?php echo date('- F, Y', $start_time); ?></a>
+            <a href="<?php the_permalink(); ?>" title="Read more"><?php the_title(); ?>
+              <br/>
+              <span class="community-meta-data">
+                <?php echo date('F d', $start_time); ?>
+              </span>
+            </a>
           </div>
 
        <?php endwhile;  wp_reset_query(); ?>
