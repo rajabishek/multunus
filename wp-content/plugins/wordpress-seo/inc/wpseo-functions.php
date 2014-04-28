@@ -311,7 +311,13 @@ function wpseo_replace_vars( $string, $args, $omit = array() ) {
 	}
 
 	if ( isset( $wp_query->query_vars['post_type'] ) && preg_match_all( '`%%pt_([^%]+)%%`u', $string, $matches, PREG_SET_ORDER ) ) {
-		$pt        = get_post_type_object( $wp_query->query_vars['post_type'] );
+		$post_type = $wp_query->query_vars['post_type'];
+
+		if ( is_array( $post_type ) ) {
+			$post_type = reset( $post_type );
+		}
+
+		$pt        = get_post_type_object( $post_type );
 		$pt_plural = $pt_singular = $pt->name;
 		if ( isset( $pt->labels->singular_name ) ) {
 			$pt_singular = $pt->labels->singular_name;
@@ -323,10 +329,20 @@ function wpseo_replace_vars( $string, $args, $omit = array() ) {
 		$string = str_replace( '%%pt_plural%%', $pt_plural, $string );
 	}
 
-	if ( is_singular() && preg_match_all( '`%%cf_([^%]+)%%`u', $string, $matches, PREG_SET_ORDER ) ) {
+	if ( ( is_singular() || is_admin() ) && preg_match_all( '`%%cf_([^%]+)%%`u', $string, $matches, PREG_SET_ORDER ) ) {
 		global $post;
-		foreach ( $matches as $match ) {
-			$string = str_replace( $match[0], get_post_meta( $post->ID, $match[1], true ), $string );
+		if( is_object( $post ) && isset( $post->ID ) ) {
+			foreach ( $matches as $match ) {
+				$string = str_replace( $match[0], get_post_meta( $post->ID, $match[1], true ), $string );
+			}
+		}
+	}
+
+	if ( ( is_singular() || is_admin() ) && false !== strpos( $string, '%%parent_title%%' ) ) {
+		global $post;
+		if ( isset( $post->post_parent ) && 0 != $post->post_parent ) {
+			$parent_title = get_the_title( $post->post_parent );
+			$string = str_replace( '%%parent_title%%', $parent_title, $string );
 		}
 	}
 
@@ -1023,6 +1039,26 @@ function wpseo_shortcode_yoast_breadcrumb() {
 	return yoast_breadcrumb( '', '', false );
 }
 add_shortcode( 'wpseo_breadcrumb', 'wpseo_shortcode_yoast_breadcrumb' );
+
+
+/**
+ * Emulate PHP native ctype_digit() function for when the ctype extension would be disabled *sigh*
+ * Only emulates the behaviour for when the input is a string, does not handle integer input as ascii value
+ *
+ * @param	string	$string
+ *
+ * @return 	bool
+ */
+if ( ! extension_loaded( 'ctype' ) || ! function_exists( 'ctype_digit' ) ) {
+	function ctype_digit( $string ) {
+		$return = false;
+		if ( ( is_string( $string ) && $string !== '' ) && preg_match( '`^\d+$`', $string ) === 1 ){
+			$return = true;
+		}
+		return $return;
+	}
+}
+
 
 
 /********************** DEPRECATED FUNCTIONS **********************/
