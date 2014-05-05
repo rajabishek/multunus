@@ -139,6 +139,12 @@ section#community-links {
   }
 }
 
+.evo_day:before {
+  content: '/ ';
+}
+
+
+
 section#video {
   iframe {
     width: 560px;
@@ -150,3 +156,15 @@ section#video {
     }
   }
 }
+
+.evcal_list_a desc_trig:hover {
+  border-left-width: initial;
+}
+
+.evcal_evdata_icons {
+  .fa-calendar, .fa-link {
+    margin-top:5px;
+  }
+}
+
+
