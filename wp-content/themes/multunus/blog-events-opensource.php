@@ -22,6 +22,7 @@
       <h3><a href="/events">/Events</a></h3>
 
       <?php
+        echo '<h6><a href="/events">Upcoming Events</a></h6>';
         $today =  current_time ('timestamp');
 
         $args_future = array(
@@ -83,7 +84,7 @@
 
             $past_query = new WP_Query($args_past);
 
-            echo '<h6><a href="/events">/Past Events</a></h6>';
+            echo '<h6><a href="/events">Past Events</a></h6>';
             while ($past_query->have_posts()) : $past_query->the_post();
 
               $start_time = get_post_meta(get_the_ID(), 'evcal_erow', true); ?>
