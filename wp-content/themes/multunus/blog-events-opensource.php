@@ -22,7 +22,7 @@
       <h3><a href="/events">/Events</a></h3>
 
       <?php
-        echo '<h6><a href="/events">Upcoming Events</a></h6>';
+       
         $today =  current_time ('timestamp');
 
         $args_future = array(
@@ -62,7 +62,7 @@
         <?php
           $future_posts = $future_query->post_count;
 
-          if ($future_posts < 3); {
+          if ($future_posts < 3) {
 
             $num_left = 3 - $future_posts;
 
