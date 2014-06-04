@@ -51,6 +51,7 @@
           $count++;
 
           $start_time = get_post_meta(get_the_ID(), 'evcal_erow', true); ?>
+          
 
           <div class="post-title blog">
             <a href="<?php the_permalink(); ?>" title="Read more" <?php if ($count == $future_posts) { echo "class='no-border'"; } ?>><?php the_title(); ?>
