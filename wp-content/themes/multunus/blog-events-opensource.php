@@ -84,7 +84,7 @@
 
             $past_query = new WP_Query($args_past);
 
-            echo '<h6><a href="/events">Past Events</a></h6>';
+            echo '<h6><a href="/events">PAST EVENTS</a></h6>';
             while ($past_query->have_posts()) : $past_query->the_post();
 
               $start_time = get_post_meta(get_the_ID(), 'evcal_erow', true); ?>
