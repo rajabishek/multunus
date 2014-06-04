@@ -43,12 +43,17 @@
 
         $future_query = new WP_Query($args_future);
 
+        $future_posts = $future_query->post_count;
+        $count = 0;
+
         while ($future_query->have_posts()) : $future_query->the_post();
+
+          $count++;
 
           $start_time = get_post_meta(get_the_ID(), 'evcal_erow', true); ?>
 
           <div class="post-title blog">
-            <a href="<?php the_permalink(); ?>" title="Read more"><?php the_title(); ?>
+            <a href="<?php the_permalink(); ?>" title="Read more" <?php if ($count == $future_posts) { echo "class='no-border'"; } ?>><?php the_title(); ?>
               <br/>
               <span class="community-meta-data">
                 <?php echo date('F d', $start_time); ?>
@@ -60,7 +65,6 @@
 
 
         <?php
-          $future_posts = $future_query->post_count;
 
           if ($future_posts < 4) {
 

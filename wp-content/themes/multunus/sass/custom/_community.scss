@@ -83,6 +83,10 @@ section#community-links {
           margin-top: -2px;
           display: block;
         }
+
+        &.no-border {
+          border-bottom: 0px;
+        }
       }
     }
 
