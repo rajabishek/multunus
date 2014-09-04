@@ -5,12 +5,13 @@
 ?>
 
 <?php get_header(); ?>
-
 <div class="video-section-container career-page">
   <div class="overlay">
     <div class="overlay-content">
       <h1 id="quote">Build your dream. At work.</h1>
-      <a href="http://hackerearth.com/multunus-hiring-challenge" class="btn-red">Take The HackerEarth Challenge - Sep 7</a>
+      <div class="btn-red">
+        <a href="http://hackerearth.com/multunus-hiring-challenge" style="text-decoration: none; color: #FFF">Take The HackerEarth Challenge - Sep 7</a>
+      </div>
     </div>
   </div>
   <video autoplay="autoplay" loop="loop" preload="auto" poster="/img/careers-page-poster.jpeg" data-video-name="careers">
