@@ -9,9 +9,7 @@
   <div class="overlay">
     <div class="overlay-content">
       <h1 id="quote">Build your dream. At work.</h1>
-      <div class="btn-red">
-        <a href="http://hackerearth.com/multunus-hiring-challenge" style="text-decoration: none; color: #FFF">Take The HackerEarth Challenge - Sep 7</a>
-      </div>
+      <div data-toggle="scroll" rel="#test-drive" class="btn-red">Take A Test Drive<span></span></div>
     </div>
   </div>
   <video autoplay="autoplay" loop="loop" preload="auto" poster="/img/careers-page-poster.jpeg" data-video-name="careers">
