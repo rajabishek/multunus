@@ -9,7 +9,7 @@
           <a href="<?php the_permalink(); ?>" title="Read more"><?php the_title(); ?>
             <br/>
             <span class="community-meta-data">
-              <?php echo human_time_diff( get_the_time('U', the_ID()), current_time('timestamp') ) . ' ago'; ?>
+              <?php echo human_time_diff( get_post_time('U', true), current_time('timestamp') ) . ' ago'; ?>
             </span>
 
           </a>
