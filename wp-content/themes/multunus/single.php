@@ -35,8 +35,6 @@
 							?>
 						</div>
 
-						<?php get_template_part('dan-north-quote'); ?>
-
 						<ul class="social-share visible-xs">
 							<?php get_template_part('/shared_partials/social-links'); ?>
 						</ul>
