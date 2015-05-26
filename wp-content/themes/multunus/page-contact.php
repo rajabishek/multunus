@@ -83,7 +83,7 @@
   </div>
 </section>
 
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbJH0CjhwXWdmqq5Hz9m3iBwEA7giflHQ&sensor=false&v=3"></script>
 
 <script>
 function initialize() {
