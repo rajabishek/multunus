@@ -40,19 +40,19 @@
       <div class="form-group ss-form-entry">
         <label class="ss-q-title" for="entry_0">Name <span>*</span></label>
         <label class="ss-q-help" for="entry_0"></label>
-        <input type="text" name="entry.0.single" value="" class="ss-q-short" id="entry_0">
+        <input type="text" name="entry.2767955" value="" class="ss-q-short" id="entry_0">
       </div>
 
       <div class="form-group ss-form-entry">
         <label class="ss-q-title" for="entry_1">Email <span>*</span></label>
         <label class="ss-q-help" for="entry_1"></label>
-        <input type="text" name="entry.1.single" value="" class="ss-q-short" id="entry_1">
+        <input type="text" name="entry.1000001" value="" class="ss-q-short" id="entry_1">
       </div>
 
       <div class="form-group ss-form-entry">
         <label class="ss-q-title" for="entry_4">Message <span>*</span></label>
         <label class="ss-q-help" for="entry_4"></label>
-        <textarea name="entry.4.single" rows="4" cols="75" class="ss-q-long" id="entry_4"></textarea>
+        <textarea name="entry.1000004" rows="4" cols="75" class="ss-q-long" id="entry_4"></textarea>
       </div>
 
       <input type="hidden" name="pageNumber" value="0">
