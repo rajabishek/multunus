@@ -1,4 +1,8 @@
 .home-page {
+  .section-heading {
+    margin-bottom: 50px;
+  }
+
   article.why-us-image-section{
     min-height: 432px;
     padding: 40px 0;
@@ -156,6 +160,16 @@
           }
       }
 
+    }
+  }
+
+  /* CUSTOMER STORIES */
+  .customer-stories {
+    padding-top: 40px;
+    padding-bottom: 108px;
+
+    .tab-pane figure {
+      padding: 30px 20px 35px 0;
     }
   }
 

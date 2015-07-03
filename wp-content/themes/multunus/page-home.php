@@ -50,7 +50,7 @@
   </article>
 
   <article class="our-services" >
-    <h1 class="align-center">Our Services</h1>
+    <h1 class="align-center section-heading">Our Services</h1>
     <div class="container">
       <div class="row">
         <div class="col-md-4 service-item">
@@ -77,126 +77,88 @@
     </div>
   </article>
 
-  <article class="recent-work">
+  <article class="customer-stories">
     <div class="container">
-      <p class="heading align-center">Our recent work</p>
-      <div class="row">
-        <div class="col-md-8">
-          <img class="recent-client-img" src="/img/work-narrable-imac-frame.jpg" />
-        </div>
+      <h1 class="section-heading align-center">Customer Stories</h1>
+      <div>
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active"><a href="#tab1" aria-controls="home" role="tab" data-toggle="tab"><img src="http://placehold.it/200x60"></a></li>
+          <li role="presentation"><a href="#tab2" aria-controls="profile" role="tab" data-toggle="tab"><img src="http://placehold.it/200x60"></a></li>
+          <li role="presentation"><a href="#tab3" aria-controls="messages" role="tab" data-toggle="tab"><img src="http://placehold.it/200x60"></a></li>
+          <li role="presentation"><a href="#tab4" aria-controls="settings" role="tab" data-toggle="tab"><img src="http://placehold.it/200x60"></a></li>
+        </ul>
 
-        <div class="col-md-4 recent-client-text">
-          <?php
-             $posts = get_posts(array('name' => 'Narrable', 'post_type' => 'portfolio'));
-              foreach ($posts as $post) {
-                $permalink_narrable = get_permalink($post->ID);
-                break;
-              }
-           ?>
-          <h2 class="hidden-xs visible-sm">
-            <a href="<?php echo $permalink_narrable ?>">Narrable</a>
-          </h2>
-          <h2 class="visible-xs">
-            <a href="<?php echo $permalink_narrable ?>">Narrable</a>
-            <span class="vertical-align-arrow"></span>
-          </h2>
-          <div class="hidden-xs">
-            <p>Narrable uses storytelling through images and narrations to engage students and to draw out important higher order thinking skills.</p>
-            <a class="view-work" href="<?php echo $permalink_narrable ?>">View Work</a><span class="right-arrow"></span>
-          </div>
-          <?php $permalink = get_permalink( get_page_by_path( 'portfolio') ); ?>
-          <a class="red-btn" href="<?php echo $permalink ?>">See All</a>
-        </div>
-      </div>
-    </div>
-  </article>
-
-  <article class="our-clients">
-    <div class="container">
-      <div class="row">
-        <p class="heading align-center">Hear from our customers</p>
-        <div class="slider" id="left-slider">
-          <a class="left carousel-control" href="#our-clients-carousel" data-slide="prev">
-          </a>
-        </div>
-
-        <div class="col-md-12 col-sm-12 coll-xs-12 our-customer-img">
-          <div id="our-clients-carousel" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-
-              <div class="item active">
-                <img src="/img/customer-picture-round-3.png">
-                <div class="carousel-caption">
-                  <h3>Anil Jain</h3>
-                  <h4>Brightmonk Innovation</h4>
-                  <p class="client-testimonial">"Working with Multunus has been the best experience out of all the Outsourced Companies I’ve worked with." </p>
-                  <div class="our-customer-btn">
-                    <div class="row">
-                      <a class="button-with-icon client-video" href="http://www.youtube.com/v/GuO8jRW9g5U&amp;autoplay=1"><span id="reel-icon"></span><span class="underline">Watch Video</span></a>
-                    </div>
-                  </div>
-
-                </div><!-- end of item -->
-              </div><!-- end of carousel-inner -->
-
-              <div class="item">
-                <img class="img-circle" src="/img/customer-picture-round-2.png" />
-                <div class="carousel-caption">
-                  <h3>Anuroop Iyengar</h3>
-                  <h4>CogKnit</h4>
-                  <p class="client-testimonial">"We are confidently speaking of going to market. You brought us here." </p>
-                  <div class="our-customer-btn">
-                    <div class="row">
-                        <a class="button-with-icon client-video" href="http://www.youtube.com/v/NAMGHISmWH8&amp;autoplay=1"><span id="reel-icon"></span><span class="underline">Watch Video</span></a>
-                        <a class="button-with-icon" href="/?portfolio=nimit"><span id="eye-icon"></span><span class="underline">View Project</span></a>
-                    </div>
-                  </div>
-
-                </div><!-- end of item -->
-              </div><!-- end of carousel-inner -->
-
-              <div class="item">
-                <img class="img-circle" src="/img/customer-picture-round.png" />
-                <div class="carousel-caption">
-                  <h3>Dustin Curzon</h3>
-                  <h4>Narrable</h4>
-                  <p class="client-testimonial">"I’m impressed with the team aspect of working with multunus." </p>
-                  <div class="our-customer-btn">
-                    <div class="row">
-                      <a class="button-with-icon client-video" href="http://www.youtube.com/v/z1tzfsRI_Ds&amp;autoplay=1"><span id="reel-icon"></span><span class="underline">Watch Video</span></a>
-                      <a class="button-with-icon" href="/?portfolio=narrable"><span id="eye-icon"></span><span class="underline">View Project</span></a>
-                    </div>
-                  </div>
-
-                </div><!-- end of item -->
-              </div><!-- end of carousel-inner -->
-
-            </div> <!-- end carousel-inner -->
-          </div> <!-- end our-clients-carousel -->
-
-        </div><!-- end of our-customer-img -->
-
-        <div class="slider" id="right-slider">
-          <a class="right carousel-control" href="#our-clients-carousel" data-slide="next">
-          </a>
-        </div>
-
-
-        <div id="testimonialVideo" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="testimonialVideoLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-              </div>
-              <div class="modal-body">
-                <iframe width="400" height="300" frameborder="0" allowfullscreen=""></iframe>
-              </div>
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="tab1">
+            <div class="col-md-4">
+              <figure class="">
+                <img src="http://placehold.it/350x250">
+              </figure>
+            </div>
+            <div class="col-md-8">
+              <h3>Tab 1 How Intersect became the largest micro lender in New Jersey</h3>
+              <p>
+                Rohan Mathew started the Intersect Fund as a non profit institution to serve the less privileged and to help make their dreams a reality
+              </p>
+              <p>
+                <a class="red-text" href="#">Read More</a>
+              </p>
             </div>
           </div>
-        </div><!-- end of testimonialVideo -->
+          <div role="tabpanel" class="tab-pane" id="tab2">
+            <div class="col-md-4">
+              <figure class="">
+                <img src="http://placehold.it/350x250">
+              </figure>
+            </div>
+            <div class="col-md-8">
+              <h3>Tab 2 How Intersect became the largest micro lender in New Jersey</h3>
+              <p>
+                Rohan Mathew started the Intersect Fund as a non profit institution to serve the less privileged and to help make their dreams a reality
+              </p>
+              <p>
+                <a class="red-text" href="#">Read More</a>
+              </p>
+            </div>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="tab3">
+            <div class="col-md-4">
+              <figure class="">
+                <img src="http://placehold.it/350x250">
+              </figure>
+            </div>
+            <div class="col-md-8">
+              <h3>Tab 3 How Intersect became the largest micro lender in New Jersey</h3>
+              <p>
+                Rohan Mathew started the Intersect Fund as a non profit institution to serve the less privileged and to help make their dreams a reality
+              </p>
+              <p>
+                <a class="red-text" href="#">Read More</a>
+              </p>
+            </div>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="tab4">
+            <div class="col-md-4">
+              <figure class="">
+                <img src="http://placehold.it/350x250">
+              </figure>
+            </div>
+            <div class="col-md-8">
+              <h3>Tab 4 How Intersect became the largest micro lender in New Jersey</h3>
+              <p>
+                Rohan Mathew started the Intersect Fund as a non profit institution to serve the less privileged and to help make their dreams a reality
+              </p>
+              <p>
+                <a class="red-text" href="#">Read More</a>
+              </p>
+            </div>
+          </div>
+        </div>
 
-      </div><!-- end of row -->
-    </div><!-- end of container -->
+      </div>
+    </div>
   </article>
 </section>
 
