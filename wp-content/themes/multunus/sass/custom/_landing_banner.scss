@@ -140,7 +140,18 @@
                 font-size: 32px;
                 line-height: 1.8;
             }
+            @media(min-width: 1406px) and (max-width: 1766px){
+                font-size: 38px;
+                line-height: 1.9;
+            }
+            @media(min-width: 1766px) and (max-width: 1906px){
+                font-size: 46px;
+                line-height: 2.0;
+            }
+            @media(min-width: 1906px){
+                font-size: 52px;
+                line-height: 2.1;
+            }
         }
-
     }
 }
