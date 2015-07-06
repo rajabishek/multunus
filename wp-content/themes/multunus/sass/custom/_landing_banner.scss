@@ -1,0 +1,116 @@
+.banner-section-container {
+    position: relative;
+    margin-top: 60px;
+    width: 100%;
+    overflow: hidden;
+    
+    #banner-img-container{
+        position: relative;
+        width: 100%;
+        height: auto !important;
+        z-index: 998;
+        margin: 0 0 0 0; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover !important;
+        background-attachment: fixed;
+        background-position: center !important;
+        background-repeat: no-repeat no-repeat;
+        background-image: url('/img/bidPress_gb_full@2x-min.png');
+        
+        @media (max-width: $screen-xs-max){
+            min-height: 400px;
+        }
+
+        @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+            min-height: 450px;
+        }
+
+        @media (min-width: $screen-md-min) and (max-width: $screen-md-max){
+            min-height: 500px;
+        }
+        @media (min-width: $screen-lg-min) {
+            min-height: 550px;
+        }
+    }
+    .overlay {
+        position: absolute;
+        z-index: 999;
+        top: 0;
+        bottom: 6px;
+        width: 100%;
+        background-position: left top, left top;
+        background-repeat: repeat-x, repeat;
+        text-align: center;
+        
+        .overlay-content {
+            display: inline-block;
+            margin-top: 12.0%;
+
+            @media (max-width: $screen-xs) {
+                margin-top: 28%;
+            }
+        }
+        a{
+            color: #FFFFFF;
+            &:focus{
+                outline: none;
+                text-decoration: none;
+            }
+            &:active{
+                outline: none;
+                text-decoration: none;
+            }
+            &:hover{
+                outline: none;
+                text-decoration: none;
+            }
+            &:visited{
+                outline: none;
+                text-decoration: none;
+            }
+        }
+        h1{
+            font-family: 'Montserrat', sans-serif;
+            color: #FFFFFF;
+            text-shadow: 0px 2px 4px rgba(0,0,0,0.50);
+            
+            @media (max-width: $screen-xs-max){
+            }
+            @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+                font-size: 3rem;
+                line-height: 1.4;
+            }
+
+            @media (min-width: $screen-md-min) and (max-width: $screen-md-max){
+                font-size: 4rem;
+                line-height: 1.6;
+            }
+            @media (min-width: $screen-lg-min) {
+                font-size: 4.8rem;
+                line-height: 1.8;
+            }
+        }
+
+        h4{
+            opacity: 0.9;
+            font-family: "proxima-nova",Helvetica;
+            color: #FFFFFF;
+            @media (max-width: $screen-xs-max){
+                margin-bottom: 40px;
+            }
+            @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+                line-height: 1.6;
+            }
+            @media (min-width: $screen-md-min) and (max-width: $screen-md-max){
+                line-height: 1.8;
+            }
+            @media (min-width: $screen-lg-min) {
+                font-size: 32px;
+                line-height: 1.8;
+            }
+        }
+
+    }
+}

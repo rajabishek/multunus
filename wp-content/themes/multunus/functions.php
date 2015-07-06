@@ -113,6 +113,12 @@ if (!is_admin()) {
     echo '<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>';
   }
 
+  // Add Montserrat font from google to head
+  add_filter('wp_head', 'add_montesserat_font');
+  function add_montesserat_font() {
+    echo '<link href="//fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet" type="text/css">';
+  }
+
 } // end if !is_admin
 
 // Clean up the <head>

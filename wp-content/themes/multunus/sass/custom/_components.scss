@@ -15,11 +15,10 @@ a {
   }
 }
 
-.btn-red {
-	margin-top: 1.4vw;
-	background: $theme-color-pink;
+@mixin std-btn{
+    	margin-top: 1.4vw;
 	color: #fff;
-  font-weight: lighter;
+        font-weight: lighter;
 	display: inline-block;
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
@@ -55,7 +54,42 @@ a {
 	}
 
   cursor: pointer;
+}
 
+.btn-green{
+    background: $theme-color-green;
+    @include std-btn;
+    &:hover {
+        background: $theme-color-dark-green;
+    }
+
+    span {
+	height: 14px;
+	width: 11px;
+	display: inline-block;
+	margin-left: 27px;
+	@media (max-width: $screen-xs){
+	    margin-left: 8px;
+            margin-right: 5px;
+	}
+	@media (min-width : 624px){
+	    margin-left: 12px;
+	}
+	@media (min-width : $screen-sm){
+	    margin-left: 16px;
+	}
+	@media (min-width : $screen-md){
+	    margin-left: 18px;
+	}
+	@media (min-width : $screen-lg){
+	    margin-left: 22px;
+	}
+    }
+}
+
+.btn-red {
+    background: $theme-color-pink;
+    @include std-btn;
   &:hover {
     background: $theme-color-dark-pink;
   }

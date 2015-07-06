@@ -3,21 +3,29 @@
    Template Name: Home
    */
 ?>
-
 <?php get_header(); ?>
 <section class="home-page">
-  <div class="video-section-container">
+  <div class="banner-section-container">
     <div class="overlay">
       <div class="overlay-content">
-        <h1 id="quote">Expertly Crafted Apps for <br /> Lean Startups</h1>
-        <div class="hidden-xs">
-          <div data-toggle="scroll" rel="#main-content" class="btn-red">Explore<span></span></div>
+        <a href="/portfolio/t-shirts-googlers/">
+          <h1 id="quote">
+            T-Shirts for Googlers?
+          </h1>
+        </a>
+        <h4 id="explanation">
+          See how bidPress is disrupting the printing industry
+        </h4>
+        <div>
+          <a href="/portfolio/t-shirts-googlers/">
+            <div class="btn-green">Read More<span>&#8594;</span></div>
+          </a>
         </div>
+        
       </div>
     </div>
-
-    <video autoplay="autoplay" loop="loop" preload="auto" poster="/img/home-page-poster.jpeg" data-video-name="home">
-    </video>
+    <div id="banner-img-container">
+    </div>
   </div>
 
   <article id="main-content" class="why-us-image-section">
