@@ -69,6 +69,31 @@
             @media(min-width: 1906px){
                 margin-top: 10%;
             }
+            .btn-green{
+                margin-top: 40px;
+                @media (min-width: $screen-xs) {
+                    margin-top: 40px;
+                }
+                @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+                    margin-top: 50px;
+                }
+                @media (min-width: $screen-md-min) and (max-width: $screen-md-max){
+                    margin-top: 50px;
+                    
+                }
+                @media (min-width: $screen-lg-min) and (max-width: 1406px) {
+                    margin-top: 70px;
+                }
+                @media(min-width: 1406px) and (max-width: 1766px){
+                    margin-top: 85px;
+                }
+                @media(min-width: 1766px) and (max-width: 1906px){
+                    margin-top: 85px;
+                }
+                @media(min-width: 1906px){
+                    margin-top: 85px;
+                }
+            }
         }
         a{
             color: #FFFFFF;
@@ -103,23 +128,23 @@
 
             @media (min-width: $screen-md-min) and (max-width: $screen-md-max){
                 font-size: 4rem;
-                line-height: 1.6;
+                line-height: 1.2;
             }
             @media (min-width: $screen-lg-min) {
                 font-size: 4.8rem;
-                line-height: 1.8;
+                line-height: 1.2;
             }
             @media(min-width: 1406px) and (max-width: 1766px){
                 font-size: 5.0rem;
-                line-height: 1.9;
+                line-height: 1.2;
             }
             @media(min-width: 1766px) and (max-width: 1906px){
-                font-size: 5.2rem;
-                line-height: 2.0;
+                font-size: 5.0rem;
+                line-height: 1.2;
             }
             @media(min-width: 1906px){
-                font-size: 5.4rem;
-                line-height: 2.1;
+                font-size: 5.2rem;
+                line-height: 1.2;
             }
         }
 
@@ -131,7 +156,7 @@
                 margin-bottom: 40px;
             }
             @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
-                line-height: 1.6;
+                margin-top: 16px;
             }
             @media (min-width: $screen-md-min) and (max-width: $screen-md-max){
                 line-height: 1.8;
@@ -141,15 +166,15 @@
                 line-height: 1.8;
             }
             @media(min-width: 1406px) and (max-width: 1766px){
-                font-size: 38px;
+                font-size: 34px;
                 line-height: 1.9;
             }
             @media(min-width: 1766px) and (max-width: 1906px){
-                font-size: 46px;
+                font-size: 38px;
                 line-height: 2.0;
             }
             @media(min-width: 1906px){
-                font-size: 52px;
+                font-size: 44px;
                 line-height: 2.1;
             }
         }
