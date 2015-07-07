@@ -123,7 +123,7 @@
         setup_postdata($post);
         $permalink = post_permalink($post->ID);
         ?>
-        <div role="tabpanel" class="tab-pane <?php echo($index == 0 ? 'active' : '') ?>" id="<?php echo $post->ID; ?>">
+        <div role="tabpanel" class="tab-pane fade <?php echo($index == 0 ? 'in active' : '') ?>" id="<?php echo $post->ID; ?>">
           <div class="container story-snippet-container">
             <div class="col-md-4">
               <figure class="">
@@ -149,10 +149,10 @@
 
                 <div class="right-section">
                   <div class="quote">
-                    Multunus is extremely transparent and honest about issues that arise after a contract is signed. They care not just about money, but also fairness and preserving the customer realtionship.
+                    <?php the_field('customer_quote'); ?>
                   </div>
                   <div class="author">
-                    -- Rohan Mathew, CEO of The IntersectFund
+                    -- <?php the_field('customer_name'); ?>, <?php the_field('customer_organization'); ?>
                   </div>
                 </div>
               </div>
