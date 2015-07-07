@@ -21,7 +21,7 @@
             <div class="btn-green">Read More<span>&#8594;</span></div>
           </a>
         </div>
-        
+
       </div>
     </div>
     <div id="banner-img-container">
@@ -119,16 +119,16 @@
         $permalink = post_permalink($post->ID);
         ?>
         <div role="tabpanel" class="tab-pane <?php echo($index == 0 ? 'active' : '') ?>" id="<?php echo $post->ID; ?>">
-          <div class="container">
+          <div class="container story-snippet-container">
             <div class="col-md-4">
               <figure class="">
-                <img src="https://trello-attachments.s3.amazonaws.com/55923c9cd0de3d350769c3c6/600x448/0d80d58c8c02125d329fa50929d5a943/Intersect_thumb.png">
+                <img src="<?php the_field('thumbnail'); ?>">
               </figure>
             </div>
             <div class="col-md-8">
-              <h3 class="title">How Intersect became the largest micro lender in New Jersey</h3>
+              <h3 class="title"><?php the_title(); ?></h3>
               <p class="story-snippet">
-                Rohan Mathew started the Intersect Fund as a non profit institution to serve the less privileged and to help make their dreams a reality
+                <?php the_field('story_snippet'); ?>
               </p>
               <p>
                 <a class="read-more-link red-text" href="<?php echo $permalink ?>">Read More</a>

@@ -1,6 +1,6 @@
 .home-page {
   .section-heading {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 
   article.why-us-image-section{
@@ -166,11 +166,29 @@
   /* CUSTOMER STORIES */
   .customer-stories {
     padding-top: 40px;
-    padding-bottom: 108px;
 
     .nav-tabs > li {
+      margin-bottom: 1px;
+      text-align: center;
+
       a {
+        border: none;
         padding: 0;
+
+        &:hover {
+          border-color: white;
+        }
+      }
+
+      &.active::after {
+        content: url('/img/tab_wedge.png') no-repeat;
+        position: absolute;
+        bottom: -33px;
+        margin-left: -20px;
+      }
+
+      &.active a {
+        border: none;
       }
 
       img {
@@ -181,6 +199,11 @@
     .tab-pane {
       .title {
         line-height: 1.4em;
+      }
+
+      .story-snippet-container {
+          padding-top: 10px;
+          padding-bottom: 10px;
       }
 
       .story-snippet {
@@ -199,7 +222,7 @@
       }
 
       figure {
-        padding: 25px 20px 35px 0;
+        padding: 28px 0;
       }
     }
 
