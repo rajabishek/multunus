@@ -3,32 +3,38 @@
     margin-bottom: 50px;
   }
 
-  article.why-us-image-section{
-    min-height: 432px;
-    padding: 40px 0;
-    @media (min-width: $screen-sm) {
-      padding-top: 45px;
-    }
+  article{
+      &.why-us-image-section{
+          min-height: 512px;
+          #title-line{
+              margin-top: 38px;
+              margin-bottom: 38px;
+              font-family: "proxima-nova",Helvetica;
+              color: #747473;
+              font-size: 32px;
+              font-style: italic;
+              @media(max-width: $screen-sm-max){
+                  font-size: 24px;
+              }
+          }
+          .big-picture-list {
+              padding-top: 60px;
 
-    .big-picture-list {
-      padding-top: 60px;
+              @media (max-width: $screen-sm) {
+                  padding-top: 10px;
+              }
 
-      @media (max-width: $screen-sm) {
-        padding-top: 10px;
+              @media (max-width: $screen-xs) {
+                  padding-top: 0;
+              }
+
+              li {
+                  display: block;
+                  font-size: 30px;
+                  line-height: 1.5;
+              }
+          }
       }
-
-      @media (max-width: $screen-xs) {
-        padding-top: 0;
-      }
-
-      li {
-        display: block;
-        font-size: 30px;
-        line-height: 1.5;
-      }
-
-    }
-
   }
 
   /* OUR SERVICES */
