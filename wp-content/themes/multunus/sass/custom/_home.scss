@@ -174,8 +174,70 @@
     padding-top: 40px;
     padding-bottom: 108px;
 
-    .tab-pane figure {
-      padding: 30px 20px 35px 0;
+    .nav-tabs > li {
+      a {
+        padding: 0;
+      }
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    .tab-pane {
+      .title {
+        line-height: 1.4em;
+      }
+
+      .story-snippet {
+        color: #747474;
+      }
+
+      .read-more-link {
+        &:after {
+          content: url('/img/arrow-right-red.png') no-repeat;
+          padding-left: 5px;
+        }
+
+        &:hover {
+          border-bottom: 1px solid;
+        }
+      }
+
+      figure {
+        padding: 25px 20px 35px 0;
+      }
+    }
+
+    .quote-banner {
+      background: $theme-color-pink;
+      color: white;
+      font-style: italic;
+      padding: 35px 0;
+
+      .no-float {
+        float: none;
+        display: inline-block;
+      }
+
+      .author-image-container, .right-section {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0 20px;
+      }
+
+      .author-image-container { width: 20%; }
+      .right-section { width: 79.5%; }
+
+      .quote {
+        font-size: 1.8em;
+        margin-bottom: 20px;
+      }
+
+      .author {
+        color: pink;
+        font-size: 1.4em;
+      }
     }
   }
 

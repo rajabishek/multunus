@@ -91,86 +91,75 @@
   </article>
 
   <article class="customer-stories">
+    <?php
+      $portfolio_items = get_posts( array(
+          'post_type' => 'portfolio',
+          'meta_key'		=> 'show_customer_story_in_home_page',
+	        'meta_value'	=> true,
+          'posts_per_page' => -1 // Unlimited posts
+      ) );
+    ?>
+    <h1 class="section-heading align-center">Customer Stories</h1>
     <div class="container">
-      <h1 class="section-heading align-center">Customer Stories</h1>
-      <div>
-        <!-- Nav tabs -->
-        <ul class="nav nav-tabs" role="tablist">
-          <li role="presentation" class="active"><a href="#tab1" aria-controls="home" role="tab" data-toggle="tab"><img src="http://placehold.it/200x60"></a></li>
-          <li role="presentation"><a href="#tab2" aria-controls="profile" role="tab" data-toggle="tab"><img src="http://placehold.it/200x60"></a></li>
-          <li role="presentation"><a href="#tab3" aria-controls="messages" role="tab" data-toggle="tab"><img src="http://placehold.it/200x60"></a></li>
-          <li role="presentation"><a href="#tab4" aria-controls="settings" role="tab" data-toggle="tab"><img src="http://placehold.it/200x60"></a></li>
-        </ul>
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs container" role="tablist">
+        <?php
+        foreach ( $portfolio_items as $index => $post ):
+          setup_postdata($post);
+          $permalink = post_permalink($post->ID);
+        ?>
+        <li role="presentation" class="col-md-3 <?php echo($index == 0 ? 'active' : '') ?>">
+          <a href="#<?php echo $post->ID; ?>" aria-controls="home" role="tab" data-toggle="tab">
+            <img src="<?php echo the_field('logo') ?>">
+          </a>
+        </li>
+        <?php endforeach; ?>
+      </ul>
+    </div>
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <?php
+      foreach ( $portfolio_items as $index => $post ):
+        setup_postdata($post);
+        $permalink = post_permalink($post->ID);
+        ?>
+        <div role="tabpanel" class="tab-pane <?php echo($index == 0 ? 'active' : '') ?>" id="<?php echo $post->ID; ?>">
+          <div class="container">
+            <div class="col-md-4">
+              <figure class="">
+                <img src="https://trello-attachments.s3.amazonaws.com/55923c9cd0de3d350769c3c6/600x448/0d80d58c8c02125d329fa50929d5a943/Intersect_thumb.png">
+              </figure>
+            </div>
+            <div class="col-md-8">
+              <h3 class="title">How Intersect became the largest micro lender in New Jersey</h3>
+              <p class="story-snippet">
+                Rohan Mathew started the Intersect Fund as a non profit institution to serve the less privileged and to help make their dreams a reality
+              </p>
+              <p>
+                <a class="read-more-link red-text" href="<?php echo $permalink ?>">Read More</a>
+              </p>
+            </div>
+          </div>
+          <div class="quote-banner">
+            <div class="container">
+              <div class="row">
+                <figure class="author-image-container">
+                  <img class="img-circle" src="<?php the_field('customer_image') ?>">
+                </figure>
 
-        <!-- Tab panes -->
-        <div class="tab-content">
-          <div role="tabpanel" class="tab-pane active" id="tab1">
-            <div class="col-md-4">
-              <figure class="">
-                <img src="http://placehold.it/350x250">
-              </figure>
-            </div>
-            <div class="col-md-8">
-              <h3>Tab 1 How Intersect became the largest micro lender in New Jersey</h3>
-              <p>
-                Rohan Mathew started the Intersect Fund as a non profit institution to serve the less privileged and to help make their dreams a reality
-              </p>
-              <p>
-                <a class="red-text" href="#">Read More</a>
-              </p>
-            </div>
-          </div>
-          <div role="tabpanel" class="tab-pane" id="tab2">
-            <div class="col-md-4">
-              <figure class="">
-                <img src="http://placehold.it/350x250">
-              </figure>
-            </div>
-            <div class="col-md-8">
-              <h3>Tab 2 How Intersect became the largest micro lender in New Jersey</h3>
-              <p>
-                Rohan Mathew started the Intersect Fund as a non profit institution to serve the less privileged and to help make their dreams a reality
-              </p>
-              <p>
-                <a class="red-text" href="#">Read More</a>
-              </p>
-            </div>
-          </div>
-          <div role="tabpanel" class="tab-pane" id="tab3">
-            <div class="col-md-4">
-              <figure class="">
-                <img src="http://placehold.it/350x250">
-              </figure>
-            </div>
-            <div class="col-md-8">
-              <h3>Tab 3 How Intersect became the largest micro lender in New Jersey</h3>
-              <p>
-                Rohan Mathew started the Intersect Fund as a non profit institution to serve the less privileged and to help make their dreams a reality
-              </p>
-              <p>
-                <a class="red-text" href="#">Read More</a>
-              </p>
-            </div>
-          </div>
-          <div role="tabpanel" class="tab-pane" id="tab4">
-            <div class="col-md-4">
-              <figure class="">
-                <img src="http://placehold.it/350x250">
-              </figure>
-            </div>
-            <div class="col-md-8">
-              <h3>Tab 4 How Intersect became the largest micro lender in New Jersey</h3>
-              <p>
-                Rohan Mathew started the Intersect Fund as a non profit institution to serve the less privileged and to help make their dreams a reality
-              </p>
-              <p>
-                <a class="red-text" href="#">Read More</a>
-              </p>
+                <div class="right-section">
+                  <div class="quote">
+                    Multunus is extremely transparent and honest about issues that arise after a contract is signed. They care not just about money, but also fairness and preserving the customer realtionship.
+                  </div>
+                  <div class="author">
+                    -- Rohan Mathew, CEO of The IntersectFund
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-
-      </div>
+      <?php endforeach; ?>
     </div>
   </article>
 </section>
