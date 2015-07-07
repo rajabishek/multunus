@@ -203,13 +203,32 @@
     }
 
     .tab-pane {
+      @media (max-width: $screen-xs) {
+        display: block !important;
+        opacity: 1 !important;
+      }
+
       .title {
         line-height: 1.4em;
+      }
+
+      .logo-container {
+        padding: 0;
+        text-align: center;
+
+        img {
+          height: 100px;
+        }
       }
 
       .story-snippet-container {
           padding-top: 10px;
           padding-bottom: 10px;
+
+          @media (max-width: $screen-xs) {
+            margin: 10px;
+            border: 1px solid #ddd;
+          }
       }
 
       .story-snippet {

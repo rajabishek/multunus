@@ -100,7 +100,7 @@
       ) );
     ?>
     <h1 class="section-heading align-center">Customer Stories</h1>
-    <div class="container">
+    <div class="container hidden-xs">
       <!-- Nav tabs -->
       <ul class="nav nav-tabs container" role="tablist">
         <?php
@@ -125,8 +125,11 @@
         ?>
         <div role="tabpanel" class="tab-pane fade <?php echo($index == 0 ? 'in active' : '') ?>" id="<?php echo $post->ID; ?>">
           <div class="container story-snippet-container">
+            <figure class="logo-container visible-xs">
+              <img src="<?php echo the_field('logo') ?>">
+            </figure>
             <div class="col-md-4">
-              <figure class="">
+              <figure>
                 <img src="<?php the_field('thumbnail'); ?>">
               </figure>
             </div>
@@ -140,7 +143,7 @@
               </p>
             </div>
           </div>
-          <div class="quote-banner">
+          <div class="quote-banner hidden-xs">
             <div class="container">
               <div class="row">
                 <figure class="author-image-container">
