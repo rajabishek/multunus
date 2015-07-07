@@ -19,8 +19,9 @@
         background-repeat: no-repeat no-repeat;
         background-image: url('/img/bidPress_gb_full@2x-min.png');
         height: 400px;
+
         @media (max-width: $screen-xs-max){
-            min-height: 400px;
+            min-height: 424px;
         }
 
         @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
@@ -31,7 +32,7 @@
             min-height: 520px;
         }
         @media (min-width: $screen-lg-min) and (max-width: 1406px) {
-            min-height: 570px;
+            min-height: 540px;
         }
         @media(min-width: 1406px) and (max-width: 1766px){
             min-height: 640px;
@@ -92,6 +93,9 @@
                 }
                 @media(min-width: 1906px){
                     margin-top: 85px;
+                }
+                span{
+                    height: 30px;
                 }
             }
         }
