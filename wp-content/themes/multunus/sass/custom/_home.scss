@@ -4,22 +4,26 @@
   }
 
   article{
-      &.why-us-image-section{
-          min-height: 512px;
-          #title-line{
-              margin-top: 24px;
-              margin-bottom: 38px;
+      &.tagline-container{
+          background-color: #f1f1f1;
+          h2{
               font-family: "proxima-nova",Helvetica;
-              color: #747473;
               font-size: 32px;
-              font-style: italic;
               @media(max-width: $screen-sm-max){
                   font-size: 24px;
               }
+              font-style: italic;
+              margin: 0 auto;
+          }
+          padding: 20px 0 20px 0;
+          border-bottom: 1px solid #E4E4E4;
+      }
+      &.why-us-image-section{
+          @media (min-width: $screen-md-min) {
+              margin: 60px 0 60px 0;
           }
           .big-picture-list {
               padding-top: 60px;
-
               @media (max-width: $screen-sm) {
                   padding-top: 10px;
               }

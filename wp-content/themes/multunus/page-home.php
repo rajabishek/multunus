@@ -28,14 +28,17 @@
     </div>
   </div>
 
+  <article class="tagline-container">
+    <header class="text-center">
+      <h2>
+        We build Web and Mobile Apps
+      </h2>
+    </header>
+  </article>
+
   <article id="main-content" class="why-us-image-section">
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-          <h2 id="title-line">
-            We build Web and Mobile Apps
-          </h2>
-        </div>
         <div class="col-md-4 hidden-xs hidden-sm big-picture-text on-desktop">
           <h1>The<br />Big Picture</h1>
         </div>
