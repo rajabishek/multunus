@@ -35,20 +35,65 @@
 }
 
 .what-we-do, .every-2-days {
-  padding-top: 15px;
-
   h1 {
-    text-align: right;
+  text-align: right;
 
     @media (max-width: $screen-sm) {
       text-align: left;
     }
   }
-
+}
+.every-2-days{
+  padding-top: 15px;
   .list-container {
     margin-left: 32px;
   }
 }
+
+.what-we-do {
+  margin-top: 90px;
+
+  .design-caption{
+      padding-right: 72px;
+    h1 {
+      font-size: 32px;
+      a{
+        color: #d22341;
+      }
+    }
+  }
+  .design-list-container {
+    border-left: 1px solid #e3e3e3;
+  }
+  .design-list-style {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li {
+      padding-left: 42px;
+      margin-bottom: 72px;
+      img {
+        width: 61px;
+      }
+    }
+  }
+  @media (max-width: $screen-sm) {
+    br {
+      display: none;
+    }
+  }
+  .design-heading {
+    h2 {
+      padding-left: 42px;
+      display: inline;
+      margin-bottom: 0;
+    }
+  }
+  .design-description {
+    padding-left: 103px;
+  }
+}
+
 
 .work-samples {
   h1, h4 {
