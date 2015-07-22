@@ -84,10 +84,10 @@
         </div>
 
         <div class="col-md-4 service-item">
-          <img src="/img/cal-icon.png" />
-          <h2>Every 2 Days</h2>
-          <p> Working software every 2 days. It's the primary measure of progress.</p>
-          <a href="/process">Learn More</a><span class="right-arrow"></span>
+          <img src="/img/design.png" />
+          <h2>Design</h2>
+          <p>Go beyond how it looks and how it works. Design for outcomes.</p>
+          <a href="/services">Learn More</a><span class="right-arrow"></span>
         </div>
       </div>
     </div>
