@@ -155,7 +155,7 @@
 
                 <div class="right-section">
                   <div class="quote">
-                    <?php the_field('customer_quote'); ?>
+                    &#8220;<?php the_field('customer_quote'); ?>&#8221;
                   </div>
                   <div class="author">
                     -- <?php the_field('customer_name'); ?>, <?php the_field('customer_organization'); ?>
