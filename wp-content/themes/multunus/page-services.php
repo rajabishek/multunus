@@ -23,10 +23,11 @@
 <div class="services-section">
   <article id="main-content" class="content-tabs services-tabs">
     <ul class="container">
-      <li class="col-sm-3 col-xs-6 tab active"><a href="#what_we_do" data-toggle="tab">What we do</a></li>
-      <li class="col-sm-3 col-xs-6 tab"><a href="#mobile_web" data-toggle="tab">Web & Mobile Web</a></li>
-      <li class="col-sm-3 col-xs-6 tab"><a href="#ios_android" data-toggle="tab">iOS & Android</a></li>
-      <li class="col-sm-3 col-xs-6 tab"><a href="#every_2_days" data-toggle="tab">Every 2 Days</a></li>
+      <li class="col-sm-offset-1 col-sm-2 col-xs-6 tab active"><a href="#what_we_do" data-toggle="tab">What we do</a></li>
+      <li class="col-sm-2 col-xs-6 tab"><a href="#design" data-toggle="tab">Design</a></li>
+      <li class="col-sm-2 col-xs-6 tab"><a href="#mobile_web" data-toggle="tab">Web</a></li>
+      <li class="col-sm-2 col-xs-6 tab"><a href="#ios_android" data-toggle="tab">iOS & Android</a></li>
+      <li class="col-sm-2 col-xs-6 tab"><a href="#every_2_days" data-toggle="tab">Every 2 Days</a></li>
     </ul>
   </article>
 
@@ -61,37 +62,54 @@
 
         <?php if ($category === 'what_we_do') { ?>
           <div class="row what-we-do">
+            <div class="col-md-4">
+              <h1>The whole nine yards!</h1>
+            </div>
+
+            <div class="list-container col-md-7" >
+              <ul class="arrow-list-style">
+                <li><span>Startup Idea to Version 1</span></li>
+                <li><span>Enterprise Software Development [especially High Risk & Large Scale]</span></li>
+                <li><span>Product Analysis, Feature Breakdown & Release Planning</span></li>
+                <li><span>UX and UI Design (with our <a target="_blank" href="http://www.lollypop.biz/">awesome partner)</a></span></li>
+                <li><span>Production Deployment and Monitoring</span></li>
+                <li><span>Maintenance</span></li>
+              </ul>
+            </div>
+          </div>
+          <?php } else if ($category === 'design'){ ?>
+            <div class="row design-container">
             <div class="col-md-6 design-caption">
-              <h1>We follow<br><a href="http://www.gv.com/sprint/"> Google Venture's<br> Design Sprint</a><br> to take an idea<br> into a<br> validated solution</h1>
+              <h1>We follow<br><a href="http://www.gv.com/sprint/"> Google Venture's Design Sprint</a><br> to take an idea<br> into a<br> validated solution</h1>
             </div>
 
             <div class="design-list-container col-md-6" >
               <ul class="design-list-style">
-                <li><span class="design-heading"><img src="/img/think-icon.png" alt="Understand" /><h2>Understand</h2></span>
+                <li><span class="design-heading"><figure><img src="/img/think-icon@2x.png" alt="Understand" /></figure><h2>Understand</h2></span>
                   <div class="design-description">
                     <p>
                     What are the user needs, business need and technology capacities?
                   </p>
                   </div></li>
-                <li><span class="design-heading"><img src="/img/diverge-icon.png" alt="Diverge" /><h2>Diverge</h2></span>
+                <li><span class="design-heading"><figure><img src="/img/diverge-icon@2x.png" alt="Diverge" /></figure><h2>Diverge</h2></span>
                   <div class="design-description">
                     <p>
                     What is the key strategy and focus?
                   </p>
                   </div></li>
-                <li><span class="design-heading"><img src="/img/converge-icon.png" alt="Converge" /><h2>Converge</h2></span>
+                <li><span class="design-heading"><figure><img src="/img/converge-icon@2x.png" alt="Converge" /></figure><h2>Converge</h2></span>
                   <div class="design-description">
                     <p>
                     How might we explore as many ideas as possible?
                   </p>
                   </div></li>
-                <li><span class="design-heading"><img src="/img/gear-icon.png" alt="Prototype" /><h2>Prototype</h2></span>
+                <li><span class="design-heading"><figure><img src="/img/gear-icon@2x.png" alt="Prototype" /></figure><h2>Prototype</h2></span>
                   <div class="design-description">
                     <p>
                     Create an artifact that allows to test the ideas with users.
                   </p>
                   </div></li>
-                <li><span class="design-heading"><img src="/img/tick-icon.png" alt="" /><h2>Validate</h2></span>
+                <li><span class="design-heading"><figure><img src="/img/tick-icon@2x.png" alt="" /></figure><h2>Validate</h2></span>
                   <div class="design-description">
                     <p>
                     Test the ideas with users, business stakeholders and technical experts.
@@ -100,7 +118,8 @@
               </ul>
             </div>
           </div>
-        <?php } else if ($category === 'every_2_days') { ?>
+          <?php }
+          else if ($category === 'every_2_days') { ?>
         <div class="row every-2-days">
           <div class="col-md-4">
             <h1>Working software every 2 days. There's more to it than meets the eye.</h1>
