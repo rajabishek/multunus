@@ -85,35 +85,35 @@
 
             <div class="design-list-container col-md-6" >
               <ul class="design-list-style">
-                <li><span class="design-heading"><figure><img src="/img/think-icon@2x.png" alt="Understand" /></figure><h2>Understand</h2></span>
+                <li><span class="design-heading"><figure><img id="think" src="/img/think-icon@2x.png" alt="Understand" /></figure><h2>Understand</h2></span>
                   <div class="design-description">
                     <p>
                     What are the user needs, business need and technology capacities?
                   </p>
                   </div></li>
-                <li><span class="design-heading"><figure><img src="/img/diverge-icon@2x.png" alt="Diverge" /></figure><h2>Diverge</h2></span>
+                <li><span class="design-heading"><figure><img id="diverge" src="/img/diverge-icon@2x.png" alt="Diverge" /></figure><h2>Diverge</h2></span>
                   <div class="design-description">
                     <p>
                     What is the key strategy and focus?
                   </p>
                   </div></li>
-                <li><span class="design-heading"><figure><img src="/img/converge-icon@2x.png" alt="Converge" /></figure><h2>Converge</h2></span>
+                <li><span class="design-heading"><figure><img id="converge" src="/img/converge-icon@2x.png" alt="Converge" /></figure><h2>Converge</h2></span>
                   <div class="design-description">
                     <p>
                     How might we explore as many ideas as possible?
                   </p>
                   </div></li>
-                <li><span class="design-heading"><figure><img src="/img/gear-icon@2x.png" alt="Prototype" /></figure><h2>Prototype</h2></span>
+                <li><span class="design-heading"><figure><img id="gear" src="/img/gear-icon@2x.png" alt="Prototype" /></figure><h2>Prototype</h2></span>
                   <div class="design-description">
                     <p>
                     Create an artifact that allows to test the ideas with users.
                   </p>
                   </div></li>
-                <li><span class="design-heading"><figure><img src="/img/tick-icon@2x.png" alt="" /></figure><h2>Validate</h2></span>
+                <li><span class="design-heading"><figure><img id="tick" src="/img/tick-icon@2x.png" alt="" /></figure><h2>Validate</h2></span>
                   <div class="design-description">
                     <p>
                     Test the ideas with users, business stakeholders and technical experts.
-                  </p>
+                  </p>  
                   </div></li>
               </ul>
             </div>

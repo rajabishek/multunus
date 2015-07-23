@@ -77,11 +77,30 @@
     padding: 0;
     padding-left: 22px;
     li {
-      margin-bottom: 72px;
+      margin-bottom: 62px;
       figure {
         display: inline-block;
         max-width: 50px;
       }
+    }
+    img {
+        vertical-align: baseline;
+        position: relative;
+    }
+      #think {
+      top: 20px;
+      }
+    #diverge {
+      top: 10px;
+    }
+    #converge {
+      top: 5px;
+    }
+    #gear {
+      top: 14px;
+    }
+    #tick {
+      top: 14px;
     }
   }
   @media (max-width: $screen-sm) {
