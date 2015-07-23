@@ -54,7 +54,9 @@
 
     .service-item {
       text-align: center;
-
+      p {
+          min-height: 75px;
+        }
       img {
         @include img-center;
         height: 63px;
@@ -81,6 +83,17 @@
         margin-bottom: 60px;
       }
     }
+      .every_2_days {
+        text-align: center;
+        padding: 14px 0 14px 0;
+        margin-top: 74px;
+        max-width: 855px;
+        background-color: #f6f6f6;
+        p {
+            font-size: 18px;
+            margin: 0;
+        }
+      }
   }
 
 

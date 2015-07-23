@@ -90,6 +90,10 @@
           <a href="/services">Learn More</a><span class="right-arrow"></span>
         </div>
       </div>
+            <div class="col-md-12 every_2_days">
+                <p>"We ship working software every 2 days. It's our primary measure of progress."</p>
+            </div>
+            
     </div>
   </article>
 
