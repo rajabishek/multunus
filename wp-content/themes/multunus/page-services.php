@@ -71,7 +71,7 @@
                 <li><span>Startup Idea to Version 1</span></li>
                 <li><span>Enterprise Software Development [especially High Risk & Large Scale]</span></li>
                 <li><span>Product Analysis, Feature Breakdown & Release Planning</span></li>
-                <li><span>UX and UI Design (with our <a target="_blank" href="http://www.lollypop.biz/">awesome partner)</a></span></li>
+                <li><span>UX and UI Design</span></li>
                 <li><span>Production Deployment and Monitoring</span></li>
                 <li><span>Maintenance</span></li>
               </ul>
