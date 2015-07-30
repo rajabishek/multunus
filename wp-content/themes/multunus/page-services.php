@@ -26,7 +26,7 @@
       <li class="col-sm-offset-1 col-sm-2 col-xs-6 tab active"><a href="#what_we_do" data-toggle="tab">What we do</a></li>
       <li class="col-sm-2 col-xs-6 tab"><a href="#design" data-toggle="tab">Design</a></li>
       <li class="col-sm-2 col-xs-6 tab"><a href="#mobile_web" data-toggle="tab">Web</a></li>
-      <li class="col-sm-2 col-xs-6 tab"><a href="#ios_android" data-toggle="tab">iOS & Android</a></li>
+      <li class="col-sm-2 col-xs-6 tab"><a href="#ios_android" data-toggle="tab">Mobile</a></li>
       <li class="col-sm-2 col-xs-6 tab"><a href="#every_2_days" data-toggle="tab">Every 2 Days</a></li>
     </ul>
   </article>
