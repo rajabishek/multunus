@@ -16,7 +16,7 @@ if ( $portfolio_item ):
   <h1 class="align-left">We've been busy.</h1>
   <p>We've built web apps for the desktop &amp; mobile. And native apps on iOS and Android.</p>
   <p>For one person startups and large enterprises. </p>
-  <p>Across the US, Canada, the UK, Singapore and India </p>
+  <p>Across the US, Canada, the UK, Australia, Singapore and India </p>
   <p>In the areas of finance, health, consumer, education, media and enterprise mobility. </p>
 </section>
 
