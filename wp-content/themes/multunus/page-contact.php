@@ -27,16 +27,17 @@
 <section class="multunus-gmap">
   <div id="map">
   </div>
-
   <div class="form-container">
-    <script type="text/javascript">var submitted=false;</script>
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='whateveryourredirectis.html';}"></iframe>
+      <script type="text/javascript">var submitted=false;</script>
+      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='whateveryourredirectis.html';}"></iframe>
 
-    <h2>Write To Us</h2>
-    <a href="mailto:info@multunus.com" class="mail-us visible-ipad">Email us at info@multunus.com</a>
-    <a href="mailto:info@multunus.com" >Email us at info@multunus.com</a>
-  </div><!-- end of form-container -->
-
+      <h2>Write To Us</h2>
+      <a href="mailto:info@multunus.com" class="mail-us hidden-ipad">Or Just email us at info@multunus.com</a>
+      <a href="mailto:info@multunus.com" class="mail-us visible-ipad">Email us at info@multunus.com</a>
+      <!-- Change the width and height values to suit you best -->
+<div class="typeform-widget" data-url="https://multunus-feedback.typeform.com/to/nGvoX3" data-text="Contact Us Form" style="width:320px;height:363px;"></div>
+<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
+<div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;">Powered by <a href="http://www.typeform.com/?utm_campaign=typeform_nGvoX3&amp;utm_source=website&amp;utm_medium=typeform&amp;utm_content=typeform-embedded&amp;utm_term=English" style="color: #999" target="_blank">Typeform</a></div>
   <div id="map-inner-shadow">
   </div>
 </section>
