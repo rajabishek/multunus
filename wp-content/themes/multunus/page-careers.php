@@ -37,6 +37,26 @@
     </div><!-- end of row -->
   </div><!-- end of container -->
 </article>
+<section id="test-drive" class="career-images">
+  <div class="container">
+    <div class="row">
+    <article class="col-md-3 col-xs-12">
+    </article>
+
+    <article class="col-md-4 col-md-push-2 col-xs-12 work-with-us">
+      <h1 id="still-thinking-heading">Take a test drive.</h1>
+      <p id="still-thinking-text">We hire differently. Interview with us for your favorite position below.
+      You'll get a taste of how it feels to work with us.</p>
+    </article>
+
+    <article class="col-md-2 col-md-pull-4 col-xs-12">
+    </article>
+
+    <article class="col-md-3 col-xs-12">
+    </article>
+    </div>
+</div>
+</section>
 <article id="open-positions" class="career-openings">
   <div class="container">
     <h1>Open Positions</h1>
