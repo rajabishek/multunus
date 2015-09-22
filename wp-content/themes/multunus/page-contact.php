@@ -33,41 +33,8 @@
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='whateveryourredirectis.html';}"></iframe>
 
     <h2>Write To Us</h2>
-    <a href="mailto:info@multunus.com" class="mail-us hidden-ipad">Or Just email us at info@multunus.com</a>
     <a href="mailto:info@multunus.com" class="mail-us visible-ipad">Email us at info@multunus.com</a>
-    <?php echo $response; ?>
-    <form action="http://docs.google.com/a/multunus.com/spreadsheet/formResponse?formkey=dDRNZFlZYUxqbGNpSEpzVGhiU2JZR1E6MQ&amp;ifq" method="POST" target="hidden_iframe" id="ss-form">
-      <div class="form-group ss-form-entry">
-        <label class="ss-q-title" for="entry_0">Name <span>*</span></label>
-        <label class="ss-q-help" for="entry_0"></label>
-        <input type="text" name="entry.2767955" value="" class="ss-q-short" id="entry_0">
-      </div>
-
-      <div class="form-group ss-form-entry">
-        <label class="ss-q-title" for="entry_1">Email <span>*</span></label>
-        <label class="ss-q-help" for="entry_1"></label>
-        <input type="text" name="entry.1000001" value="" class="ss-q-short" id="entry_1">
-      </div>
-
-      <div class="form-group ss-form-entry">
-        <label class="ss-q-title" for="entry_4">Message <span>*</span></label>
-        <label class="ss-q-help" for="entry_4"></label>
-        <textarea name="entry.1000004" rows="4" cols="75" class="ss-q-long" id="entry_4"></textarea>
-      </div>
-
-      <input type="hidden" name="pageNumber" value="0">
-      <input type="hidden" name="backupCache" value="">
-
-      <div class="ss-form-entry">
-        <input type="submit" name="submit" value="Submit">
-        <span></span>
-      </div>
-
-      <div class="notification success" style="display:none;">
-        <img src="/img/tick-arrow-white-icon.png" />
-        Thanks! We'll get in touch soon
-      </div>
-    </form>
+    <a href="mailto:info@multunus.com" >Email us at info@multunus.com</a>
   </div><!-- end of form-container -->
 
   <div id="map-inner-shadow">
