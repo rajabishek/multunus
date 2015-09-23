@@ -28,11 +28,11 @@
 
       <div class="col-md-7 why-work-here">
         <ul class="arrow-list-style">
-          <li><span> Making a difference | Charity & Health </span></li>
-          <li><span> Making a difference | Impactful Work </span></li>
           <li><span> Making a difference | <a href="http://www.multunus.com/community/" target="_blank"> Community </a></span></li>
+          <li><span> Making a difference | Impactful Work </span></li>
           <li><span> Making a difference | Creating Better Teams </span></li>
-        </ul>
+          <li><span> Making a difference | Charity & Health </span></li>
+        </ul>  
       </div>
 
     </div><!-- end of row -->
