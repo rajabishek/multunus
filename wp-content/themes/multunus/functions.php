@@ -359,6 +359,35 @@ function open_source_taxonomy() {
 }
 add_action( 'init', 'open_source_taxonomy', 0 );
 
+// Register `making_a_difference` post type
+function making_a_difference_post_type() {
+  // Labels
+  $labels = array(
+    'name' => _x("Making A Difference", "post type general name"),
+    'singular_name' => _x("Making A Difference", "post type singular name"),
+    'menu_name' => 'Making A Difference',
+    'add_new' => _x("Add New", "post item"),
+    'add_new_item' => __("Add New Post"),
+    'edit_item' => __("Edit Post"),
+    'new_item' => __("New Post"),
+    'view_item' => __("View Post"),
+    'search_items' => __("Search Posts"),
+    'not_found' =>  __("No Posts Found"),
+    'not_found_in_trash' => __("No Posts Found in Trash"),
+    'parent_item_colon' => ''
+  );
+
+  // Register post type
+  register_post_type('making_a_difference' , array(
+    'labels' => $labels,
+    'public' => true,
+    'has_archive' => false,
+    'rewrite' => array('with_front' => false),
+    'supports' => array('title', 'editor', 'excerpt', 'thumbnail', 'comments'),
+  ) );
+}
+add_action( 'init', 'making_a_difference_post_type', 0 );
+
 add_filter('request', 'custom_feed');
 function custom_feed( $vars ) {
     if ( isset( $vars['feed'] ) ) {

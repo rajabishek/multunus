@@ -32,30 +32,31 @@
           <li><span> Making a difference | Impactful Work </span></li>
           <li><span> Making a difference | Creating Better Teams </span></li>
           <li><span> Making a difference | Charity & Health </span></li>
-        </ul>  
+        </ul>
       </div>
 
     </div><!-- end of row -->
   </div><!-- end of container -->
 </article>
+
 <!-- <section id="test-drive" class="career-images">
   <div class="container">
     <div class="row">
     <article class="col-md-3 col-xs-12">
-    </article>
+    </article> -->
 
-    <!-- <article class="col-md-4 col-md-push-2 col-xs-12 work-with-us">
-      <h1 id="still-thinking-heading"><a href="https://github.com/multunus/Open-Playbook" target="_blank"> Just Launched Our Open Plabook </a></h1>
-      <p id="still-thinking-text">We hire differently. Interview with us for your favorite position below.
-      <!-- You'll get a taste of how it feels to work with us.</p> -->
+    <!-- <article class="col-md-4 col-md-push-2 col-xs-12 work-with-us"> -->
+      <!-- <h1><a href="https://github.com/multunus/Open-Playbook" target="_blank"> Just Launched Our Open Plabook </a></h1> -->
+      <!-- <p id="still-thinking-text">We hire differently. Interview with us for your favorite position below.
+     You'll get a taste of how it feels to work with us.</p> -->
     <!-- </article> -->
 
-    <article class="col-md-2 col-md-pull-4 col-xs-12">
-    </article>
+    <!-- <article class="col-md-2 col-md-pull-4 col-xs-12">
+    </article> -->
 
-    <article class="col-md-3 col-xs-12">
+    <!-- <article class="col-md-3 col-xs-12">
     </article>
-    </div>
+    </div> -->
 </div>
 </section>
 <article id="open-positions" class="career-openings">
