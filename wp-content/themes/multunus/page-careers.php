@@ -29,9 +29,9 @@
       <div class="col-md-7 why-work-here">
         <ul class="arrow-list-style">
           <li><span> Making a difference | <a href="http://www.multunus.com/community/" target="_blank"> Community </a></span></li>
-          <li><span> Making a difference | <a href="http://www.multunus.com/making-a-difference" target="_blank"> Impactful Work </span></li>
+          <li><span> Making a difference | <a href="http://www.multunus.com/making-a-difference/" target="_blank"> Impactful Work </a></span></li>
           <li><span> Making a difference | Creating Better Teams </span></li>
-          <li><span> Making a difference | <a href="http://www.multunus.com/making-a-difference" target="_blank"> Charity & Health </span></li>
+          <li><span> Making a difference | <a href="http://www.multunus.com/making-a-difference/" target="_blank"> Charity &amp; Health </a></span></li>
         </ul>
       </div>
 
