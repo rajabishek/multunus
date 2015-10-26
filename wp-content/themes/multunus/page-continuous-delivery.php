@@ -10,16 +10,8 @@ get_header();
     <img src="/img/continuous-delivery/dotted-arrow.png" />
   </div>
   <section id="title" class="align-center">
-    <h1 class="theme-pink-color">
-      WE SHIP
-      <div class="separator">
-        <img src="/img/continuous-delivery/working.png" id="working"/>
-        <img src="/img/continuous-delivery/caret.png" id="caret" />
-      </div>
-      <span class="visible-xs">WORKING</span>
-      SOFTWARE
-    </h1>
-    <h1>EVERY <span class="bold">TWO</span> DAYS</h1>
+    <h1 class="theme-pink-color">WE SHIP WORKING SOFTWARE</h1>
+    <h1>EVERY TWO DAYS</h1>
   </section>
   <section id="video" class="align-center">
     <iframe src="//www.youtube.com/embed/cuRyW0FfBiM" frameborder="0" allowfullscreen></iframe>
