@@ -6,7 +6,7 @@ get_header();
 ?>
 
 <div id="continuous-delivery" class="container">
-  <div class="dotted-arrow hidden-xs">
+  <div class="dotted-arrow hidden-xs hidden-sm">
     <img src="/img/continuous-delivery/dotted-arrow.png" />
   </div>
   <section id="title" class="align-center">
