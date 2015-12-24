@@ -81,6 +81,22 @@
 
     <?php numeric_pagination_nav(); ?>
 
+    <!-- Begin MailChimp Signup Form -->
+    <form action="//multunus.us12.list-manage.com/subscribe/post?u=fc87cb9f43a41205ba28f1740&amp;id=6254cd961d" method="post" name="mc-embedded-subscribe-form" target="_blank" style="margin-bottom: 30px;" class="validate form-inline">
+      <h2 class="text-center" style="margin-bottom: 24px;">Get weekly updates</h2>
+      <div class="row">
+        <div class="form-group col-sm-8 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+          <input type="email" value="" name="EMAIL" class="required email input-lg placeholder-grey" id="mce-EMAIL" placeholder="Your email address">
+        </div>
+        <div class="col-sm-2 col-sm-offset-0 col-xs-4 col-xs-offset-4">
+          <button type="submit" class="btn btn-lg" style="
+          background-color: #D22341;
+          color: white;
+          ">Subscribe</button>
+        </div>
+      </div>
+    </form>
+
     <?php wp_reset_query(); ?>
 
   </div><!-- end of container -->

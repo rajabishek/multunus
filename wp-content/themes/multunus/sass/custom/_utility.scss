@@ -18,6 +18,14 @@
   font-weight: bold;
 }
 
+.placeholder-grey {
+  &::-webkit-input-placeholder {
+    color: grey;
+  }
+  &::-moz-placeholder {
+    color: grey;
+  }
+}
 // center images, using text-align is not supported by w3c
 @mixin img-center {
   display: block;
