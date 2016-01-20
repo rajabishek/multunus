@@ -8,11 +8,11 @@
 <div class="video-section-container career-page">
   <div class="overlay">
     <div class="overlay-content">
-      <h1 id="quote">What Should "Work" Mean Today?</h1>
+      <h1 id="quote">Freedom.</h1>
     <!-- <h2 style="color:white"> -->
       <!-- <span>Autonomous Culture | Open Source | Large Scale Architectures</span> -->
        <!-- </h2> -->
-      <div data-toggle="scroll" rel="#more-info" class="btn-red">Read More<span></span></div>
+      <div data-toggle="scroll" rel="#more-info" class="btn-red">Start with a 4 day workweek<span></span></div>
     </div>
   </div>
   <video autoplay="autoplay" loop="loop" preload="auto" poster="/img/careers-page-poster.jpeg" data-video-name="careers">
@@ -21,18 +21,49 @@
 <article id="more-info" class="career-values">
   <div class="container">
     <div class="row">
-
-      <div class="col-md-4">
-        <h1>What Should "Work" Mean Today?</h1>
+      <div class="row design-container">
+      <div class="col-md-6 design-caption">
+          <ul class="design-list-style">
+        <li><span class="design-heading"><h2>Choose a 4 day workweek
+</h2></span>
+          <div class="design-description">
+            <p>
+              Choose your favorite project. Work on it every Monday. Read more about our 20% investment time.</a>
+          </p>
+          </div></li>
       </div>
-
-      <div class="col-md-7 why-work-here">
-        <ul class="arrow-list-style">
-          <li><span> Making a difference | <a href="http://www.multunus.com/community/" target="_blank"> Community </a></span></li>
-          <li><span> Making a difference | <a href="http://www.multunus.com/making-a-difference/" target="_blank"> Charity &amp; Health </a></span></li>
-          <li><span> Making a difference | <a href="http://www.multunus.com/making-a-difference/" target="_blank"> Impactful Work </a></span></li>
+      <div class="design-list-container col-md-6" >
+        <ul class="design-list-style">
+        <li><span class="design-heading"><h2>Choose our future.
+        </h2></span>
+        <div class="design-description">
+          <p>
+            Yep. Get elected into our council and make CEO level decisions. Like..what our revenues should be. No kidding.</a>
+        </p>
+        </div></li>
+        </div>
+        <div class="col-md-6 design-caption">
+          <ul class="design-list-style">
+          <li><span class="design-heading"><h2>Choose your Salary.
+          </h2></span>
+          <div class="design-description">
+            <p>
+              Its 2016. It’s time to break the rules. Have fun using <a href="http://www.multunus.com/blog/2015/09/our-autonomous-salary-system-the-background-story-part-1/" target="_blank">our autonomous salary system.</a>
+          </p>
+          </div></li>
+          </div>
+      <div class="design-list-container col-md-6" >
+        <ul class="design-list-style">
+          <li><span class="design-heading"><h2>Choose your Future.
+</h2></span>
+            <div class="design-description">
+              <p>
+                Want to stay a programmer all your life? No problem. Want to try out product management? Excellent. Want to get your hands dirty with Marketing? Fantastic. Think you’re a designer at heart? Sure, try our design studio.
+            </p>
+            </div></li>
         </ul>
       </div>
+    </div>
 
     </div><!-- end of row -->
   </div><!-- end of container -->
