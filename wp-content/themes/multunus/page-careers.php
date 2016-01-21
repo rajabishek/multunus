@@ -38,7 +38,7 @@
         </h2></span>
         <div class="design-description">
           <p>
-            Yep. Get elected into our council and make CEO level decisions. Like..what our revenues should be. No kidding.</a>
+            Yep. <a href="http://www.multunus.com/blog/2016/01/relinquishing-control-to-our-council-a-radical-experiment/" target="_blank">Get elected into our council</a> and make CEO level decisions. Like..what our revenues should be. No kidding.
         </p>
         </div></li>
         </div>
@@ -64,8 +64,8 @@
         </ul>
       </div>
     </div>
-    <!--div align="center">
-    <p><i><a href="http://www.multunus.com/blog/2015/09/our-autonomous-salary-system-the-background-story-part-1/" target="_blank">What's with the weird name though?</a></i></p>
+    <div align="center">
+    <p><i><a href="http://www.multunus.com/blog/2016/01/concoction-name/" target="_blank">What's with the weird name though?</a></i></p>
 </div>
     </div><!-- end of row -->
   </div><!-- end of container -->
