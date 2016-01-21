@@ -54,17 +54,19 @@
           </div>
       <div class="design-list-container col-md-6" >
         <ul class="design-list-style">
-          <li><span class="design-heading"><h2>Choose your Future.
+          <li><span class="design-heading"><h2>Choose <b><i>y</b></i>our Future.
 </h2></span>
             <div class="design-description">
               <p>
-                Want to stay a programmer all your life? No problem. Want to try out product management? Excellent. Want to get your hands dirty with Marketing? Fantastic. Think you’re a designer at heart? Sure, try our design studio.
+                Want to code all your life? No problem. Want to try out product management or think you’re a designer at heart? Go for it.
             </p>
             </div></li>
         </ul>
       </div>
     </div>
-
+    <!--div align="center">
+    <p><i><a href="http://www.multunus.com/blog/2015/09/our-autonomous-salary-system-the-background-story-part-1/" target="_blank">What's with the weird name though?</a></i></p>
+</div>
     </div><!-- end of row -->
   </div><!-- end of container -->
 </article>
