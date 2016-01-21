@@ -64,8 +64,8 @@
         </ul>
       </div>
     </div>
-    <div align="center">
-    <p><i><a href="http://www.multunus.com/blog/2016/01/concoction-name/" target="_blank">What's with the weird name though?</a></i></p>
+    <!--div align="center">
+          <p><i><a href="http://www.multunus.com/blog/2016/01/concoction-name/" target="_blank">What's with the weird name though?</a></i></p>
 </div>
     </div><!-- end of row -->
   </div><!-- end of container -->
