@@ -28,7 +28,7 @@
 </h2></span>
           <div class="design-description">
             <p>
-              Choose your favorite project. Work on it every Monday. Read more about our 20% investment time.</a>
+              Choose your favorite project. Work on it every Monday. <a href="http://www.multunus.com/blog/2016/01/20-investment-time-background-story/" target="_blank">Read more about our 20% investment time.</a>
           </p>
           </div></li>
       </div>
@@ -58,7 +58,7 @@
 </h2></span>
             <div class="design-description">
               <p>
-                Want to code all your life? No problem. Want to try out product management or think you’re a designer at heart? Go for it.
+                Want to code all your life? <a href="http://www.multunus.com/blog/2016/01/dont-assess-fish-with-tree-climbing-skills/" target="_blank">No problem</a>. Want to try out product management or think you’re a designer at heart? <a href="http://www.multunus.com/blog/2016/01/dont-assess-fish-with-tree-climbing-skills/" target="_blank"> Go for it</a>.
             </p>
             </div></li>
         </ul>
