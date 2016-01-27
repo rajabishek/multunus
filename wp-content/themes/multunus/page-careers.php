@@ -24,7 +24,7 @@
       <div class="row design-container">
       <div class="col-md-6 design-caption">
           <ul class="design-list-style">
-        <li><span class="design-heading"><h2>Choose a 4 day workweek
+        <li><span class="design-heading"><h2 alt style="font-size: 25px; padding-left: 90px;">Choose a 4 day workweek
 </h2></span>
           <div class="design-description">
             <p>
@@ -34,7 +34,7 @@
       </div>
       <div class="design-list-container col-md-6" >
         <ul class="design-list-style">
-        <li><span class="design-heading"><h2>Choose our future.
+        <li><span class="design-heading"><h2 alt style="font-size: 25px; padding-left: 90px;">Choose our future
         </h2></span>
         <div class="design-description">
           <p>
@@ -44,7 +44,7 @@
         </div>
         <div class="col-md-6 design-caption">
           <ul class="design-list-style">
-          <li><span class="design-heading"><h2>Choose your Salary.
+          <li><span class="design-heading"><h2 alt style="font-size: 25px; padding-left: 90px;">Choose your salary
           </h2></span>
           <div class="design-description">
             <p>
@@ -54,7 +54,7 @@
           </div>
       <div class="design-list-container col-md-6" >
         <ul class="design-list-style">
-          <li><span class="design-heading"><h2>Choose <b><i>y</b></i>our Future.
+          <li><span class="design-heading"><h2 alt style="font-size: 25px; padding-left: 90px;">Choose <b><i>y</b></i>our future
 </h2></span>
             <div class="design-description">
               <p>
