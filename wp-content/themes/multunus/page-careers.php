@@ -24,9 +24,9 @@
       <div class="row design-container">
       <div class="col-md-6 design-caption">
           <ul class="design-list-style">
-        <li><span class="design-heading"><h2 alt style="font-size: 25px; padding-left: -90px;">Choose a 4 day workweek
+        <li><span class="design-heading"><h2 alt style="font-size: 25px; padding-left: 0px;">Choose a 4 day workweek
 </h2></span>
-          <div class="design-description" alt style="padding-left: 45px">
+          <div class="design-description" alt style="padding-left: 2px">
             <p>
               Choose your favorite project. Work on it every Monday. <a href="http://www.multunus.com/blog/2016/01/20-investment-time-background-story/" target="_blank">Read more about our 20% investment time.</a>
           </p>
@@ -34,9 +34,9 @@
       </div>
       <div class="design-list-container col-md-6" >
         <ul class="design-list-style">
-        <li><span class="design-heading"><h2 alt style="font-size: 25px; padding-left: -90px;">Choose our future
+        <li><span class="design-heading"><h2 alt style="font-size: 25px; padding-left: 0px;">Choose our future
         </h2></span>
-        <div class="design-description" alt style="padding-left: 45px">
+        <div class="design-description" alt style="padding-left: 2px">
           <p>
             Yep. <a href="http://www.multunus.com/blog/2016/01/relinquishing-control-to-our-council-a-radical-experiment/" target="_blank">Get elected into our council</a> and make CEO level decisions. Like..what our revenues should be. No kidding.
         </p>
@@ -44,9 +44,9 @@
         </div>
         <div class="col-md-6 design-caption">
           <ul class="design-list-style">
-          <li><span class="design-heading"><h2 alt style="font-size: 25px; padding-left: -90px;">Choose your salary
+          <li><span class="design-heading"><h2 alt style="font-size: 25px; padding-left: 0px;">Choose your salary
           </h2></span>
-          <div class="design-description" alt style="padding-left: 45px">
+          <div class="design-description" alt style="padding-left: 2px">
             <p>
               Its 2016. It’s time to break the rules. Have fun using <a href="http://www.multunus.com/blog/2015/09/our-autonomous-salary-system-the-background-story-part-1/" target="_blank">our autonomous salary system.</a>
           </p>
@@ -54,9 +54,9 @@
           </div>
       <div class="design-list-container col-md-6" >
         <ul class="design-list-style">
-          <li><span class="design-heading"><h2 alt style="font-size: 25px">Choose <b><i>y</b></i>our future
+          <li><span class="design-heading"><h2 alt style="font-size: 25px; padding-left: 0px;">Choose <b><i>y</b></i>our future
 </h2></span>
-            <div class="design-description" alt style="padding-left: 45px">
+            <div class="design-description" alt style="padding-left: 2px">
               <p>
                 Want to code all your life? <a href="http://www.multunus.com/blog/2016/01/training-fish-climb-tree/" target="_blank">No problem</a>. Want to try out product management or think you’re a designer at heart? <a href="http://www.multunus.com/blog/2016/01/training-fish-climb-tree/" target="_blank"> Go for it</a>.
             </p>
