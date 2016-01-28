@@ -54,7 +54,7 @@
           </div>
       <div class="design-list-container col-md-6" >
         <ul class="design-list-style">
-          <li><span class="design-heading"><h2 alt style="font-size: 25px; padding-left: 0px;">Choose <b><i>y</b></i>our future
+          <li><span class="design-heading"><h2 alt style="font-size: 25px; padding-left: 0px;">Choose your future
 </h2></span>
             <div class="design-description" alt style="padding-left: 2px">
               <p>
