@@ -26,7 +26,7 @@ section#community-links {
 
     &:hover {
       border-bottom: 1px solid;
-    }       
+    }
   }
 
   .italics {
@@ -90,21 +90,15 @@ section#community-links {
       }
     }
 
-    .post-title.blog:last-of-type, .post-title.open-source:last-of-type {
-      a {
-        border-bottom: none;
-      }
-    }
-
     .view-all-link {
       position: absolute;
-      bottom: 0;
-      margin-left: -40px;
-      color: $theme-color-pink;
+      color: #999;
+      padding: 8px;
+      margin-left: 22px;
       width: 100%;
-      text-align: center;
 
       &:hover {
+        color: $theme-color-pink;
         text-decoration: underline;
       }
     }
@@ -185,5 +179,3 @@ section#video {
     margin-top:5px;
   }
 }
-
-
