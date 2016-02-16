@@ -35,6 +35,8 @@
                 <?php
                   if ( has_post_thumbnail() ) {
                     echo '<p>' . wp_trim_words(get_the_excerpt(), 12, '...') . '</p>';
+                  } elseif ( has_excerpt() ) {
+                    echo '<p>' . wp_trim_words(get_the_excerpt(), 40, '...') . '</p>';
                   } else {
                     echo '<p>' . wp_trim_words(get_the_content(), 40, '...') . '</p>';
                   }
