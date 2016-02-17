@@ -5,7 +5,6 @@
         coauthors_posts_links();
     } ?>
   </div>
-<?php } ?>
 
 <ul class="meta">
   <li>
@@ -19,6 +18,7 @@
     <li><?php the_time('M j, Y') ?></li>
     <?php //comments_popup_link('No Comments', '1 Comment', '% Comments', 'comments-link', ''); ?>
 </ul>
+<?php } ?>
 
 <ul class="social-share hidden-xs">
   <?php get_template_part('/shared_partials/social-links'); ?>
