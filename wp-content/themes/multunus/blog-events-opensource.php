@@ -31,7 +31,7 @@
           'orderby'   => 'meta_value_num',
           'order' => 'ASC',
           'post_status' => 'publish',
-          'posts_per_page' => 4,
+          'posts_per_page' => 3,
           'meta_query' => array(
              array(
                'key' => 'evcal_srow',
@@ -67,9 +67,9 @@
 
         <?php
 
-          if ($future_posts < 4) {
+          if ($future_posts < 3) {
 
-            $num_left = 4 - $future_posts;
+            $num_left = 3 - $future_posts;
 
             $args_past = array(
               'post_type' => 'ajde_events',
