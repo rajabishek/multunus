@@ -15,14 +15,14 @@
           </a>
         </div>
       <?php endwhile; endif; ?>
-      <a class="view-all-link" href="/blog">View all</a>
+      <a class="view-all-link" href="/blog">See all</a>
     </div>
 
     <div class="col-md-4 link-box" id="events" >
       <h3><a href="/events">/Events</a></h3>
 
       <?php
-       
+
         $today =  current_time ('timestamp');
 
         $args_future = array(
@@ -51,7 +51,7 @@
           $count++;
 
           $start_time = get_post_meta(get_the_ID(), 'evcal_erow', true); ?>
-          
+
 
           <div class="post-title blog">
             <a href="<?php the_permalink(); ?>" title="Read more" <?php if ($count == $future_posts) { echo "class='no-border'"; } ?>><?php the_title(); ?>
@@ -105,7 +105,7 @@
        <?php endwhile;  wp_reset_query(); ?>
        <?php } ?>
 
-      <a class="view-all-link" href="/events">View all</a>
+      <a class="view-all-link" href="/events">See all</a>
 
     </div>
 
@@ -118,7 +118,7 @@
           <a href="<?php the_permalink(); ?>" title="Read more"><?php the_title(); ?></a>
         </div>
       <?php endwhile; endif; ?>
-      <a class="view-all-link" href="/open-source">View all</a>
+      <a class="view-all-link" href="/open-source">See all</a>
     </div>
   </div>
 </section>
