@@ -36,6 +36,7 @@ section#community-links {
 
   .link-box {
     border-right: 1px solid #dfdddd;
+    border-left: 1px solid #dfdddd;
     min-height: 380px;
     padding: 0 40px;
 
@@ -62,6 +63,7 @@ section#community-links {
       padding-top: 10px;
     }
 
+    &:first-child,
     &:last-child {
       border: none;
     }
