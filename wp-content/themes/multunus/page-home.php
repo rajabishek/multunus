@@ -10,14 +10,14 @@
       <div class="overlay-content">
         <a href="/portfolio/t-shirts-googlers/">
           <h1 id="quote">
-            T-Shirts for Googlers?
+            Do something well or not at all
           </h1>
         </a>
         <h4 id="explanation">
-          See how bidPress is disrupting the printing industry
+          See how The Intersect Fund serves the less privileged &amp; makes their dreams come true.
         </h4>
         <div>
-          <a href="/portfolio/t-shirts-googlers/">
+          <a href="/portfolio/micro-loan-processing-platform/">
             <div class="btn-green">Read More<span>&#8594;</span></div>
           </a>
         </div>
@@ -93,7 +93,7 @@
             <div class="col-md-12 every_2_days">
                 <p>"We ship working software every 2 days. It's our primary measure of progress."</p>
             </div>
-            
+
     </div>
   </article>
 
