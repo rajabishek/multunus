@@ -11,7 +11,7 @@
         height: auto !important;
         z-index: 998;
         margin: 0 0 0 0;
-        background: url('/img/bidPress_gb_full@2x_mini_i.jpg') no-repeat center center fixed;
+        background: url('/img/bow-tie.jpg') no-repeat center center fixed;
         -webkit-background-size: 100%;
         -moz-background-size: 100%;
         -o-background-size: 100%;
@@ -128,7 +128,7 @@
             color: #FFFFFF;
             text-shadow: 0px 2px 4px rgba(0,0,0,0.32);
             font-weight: bold;
-            
+
             @media (max-width: $screen-xs-max){
             }
             @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
