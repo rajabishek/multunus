@@ -8,9 +8,9 @@
   <div class="banner-section-container">
     <div class="overlay">
       <div class="overlay-content">
-        <a href="/portfolio/t-shirts-googlers/">
+        <a href="/portfolio/micro-loan-processing-platform/">
           <h1 id="quote">
-            Do something well or not at all
+            Do something well <wbr>or not at all
           </h1>
         </a>
         <h4 id="explanation">
