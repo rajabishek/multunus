@@ -20,7 +20,7 @@
         a:focus {
         text-decoration: none;
     }
-    }  
+    }
   @media (max-width: $screen-xs) {
     .tab.active {
       a {
@@ -151,4 +151,15 @@
 
 .tech-image {
   margin-top: 60px;
+}
+// New category section style
+
+.category-section {
+  margin-top: 20px;
+  h4 {
+    text-transform: uppercase;
+  }
+  figcaption {
+    background: none;
+  }
 }

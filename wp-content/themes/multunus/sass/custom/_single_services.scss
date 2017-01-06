@@ -1,0 +1,42 @@
+.partial-underline {
+       background: none repeat scroll 0 0 #ddd;
+       display: block;
+       height: 1px;
+       position: relative;
+       width: 100px;
+       margin-bottom: 13px;
+       margin-top: 30px;
+}
+.single-portfolio .title-container.title-new-services {
+  border-bottom: none;
+  box-shadow: none;
+  margin-top: 160px;
+}
+.service-category {
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+.interact-with-us {
+  background-color: #d22341;
+  border-bottom: 0;
+  padding: 1.5rem 0.75rem;
+  @media screen and (min-width: 480px){
+        padding: 3rem;
+      }
+}
+.interact-wrapper {
+  color: #fff;
+  p {
+    margin:12px;
+  }
+  .btn {
+    margin-top:20px;
+    @media screen and (max-width: 480px) {
+      font-size: .8rem;
+      min-height: 1.5rem;
+      padding: 0.75rem 1.5rem;
+      width: 100%;
+    }
+  }
+}
