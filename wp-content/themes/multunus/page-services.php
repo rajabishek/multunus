@@ -46,7 +46,7 @@ if ( $service_item ):
         setup_postdata($post);
         $permalink = post_permalink($post->ID);
       ?>
-      <?php if (strcmp($category,get_field('category')) ): ?>
+      <?php if (strcmp($category,get_field('category')) == 0 ): ?>
         <figure class="col-sm-6 col-xs-12" data-category="<?php the_field('category'); ?>">
           <a href="<?php echo $permalink ?>">
             <figcaption>
