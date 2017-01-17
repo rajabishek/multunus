@@ -33,7 +33,7 @@
             <div class="partial-underline">
 
             </div>
-            <div class="category service-catergory"><span><?php the_field('category') ?></span></div>
+            <div class="category service-catergory"><span class="category-name"><?php the_field('category') ?></span></div>
           </div>
         </div>
       </div>
@@ -41,10 +41,11 @@
 
     <div class="content-container">
       <div class="container">
+        <div class ="row">
         <div class="col-md-push-2 col-md-8">
           <?php the_content(); ?>
         </div>
-
+      </div>
       </div>
     </div>
 
@@ -57,7 +58,7 @@
     <div class="container">
       <div class="align-center interact-wrapper">
         <p>Our best work gets done when we can work face-to-face with you.</p>
-        <div class="btn btn-default btn-lg" ><a href="https://multunus-feedback.typeform.com/to/nGvoX3" >Let's make something great togther</a></div>
+        <div class="btn btn-white btn-lg" ><a href="https://multunus-feedback.typeform.com/to/nGvoX3" >Let's make something great togther</a></div>
       </div>
     </div>
 

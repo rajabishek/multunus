@@ -117,7 +117,36 @@ a {
 		}
 	}
 }
+.btn-white {
+    background: #fff;
+    @include std-btn;
+    color: #000;
+  &:hover {
+    background: #eee;
+  }
 
+	span {
+		height: 14px;
+		width: 11px;
+		display: inline-block;
+		margin-left: 27px;
+		@media (max-width: $screen-xs){
+			margin-left:14px;
+		}
+		@media (min-width : 624px){
+			margin-left:19px;
+		}
+		@media (min-width : $screen-sm){
+			margin-left:21px;
+		}
+		@media (min-width : $screen-md){
+			margin-left:23px;
+		}
+		@media (min-width : $screen-lg){
+			margin-left: 27px;
+		}
+	}
+}
 form {
     input {
         height: 40px;

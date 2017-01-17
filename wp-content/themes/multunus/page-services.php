@@ -49,7 +49,7 @@ if ( $service_item ):
       <?php if (strcmp($category,get_field('category')) == 0 ): ?>
         <figure class="col-sm-6 col-xs-12" data-category="<?php the_field('category'); ?>">
           <a href="<?php echo $permalink ?>">
-            <figcaption>
+            <figcaption >
               <p class="name"><?php the_title(); ?></p>
               <p class="category"> <?php echo the_field('description'); ?></p>
 

@@ -155,11 +155,26 @@
 // New category section style
 
 .category-section {
-  margin-top: 20px;
+  margin-top: 10px;
   h4 {
     text-transform: uppercase;
   }
   figcaption {
+    height: auto;
     background: none;
+    p{
+      line-height: 25.5px;
+    }
+    p.name {
+      color: $theme-color-pink;
+      margin-bottom: 5px;
+    }
+    p.name:hover{
+      text-decoration: underline;
+    }
+    p.category {
+      color: #444;
+      font-size: 18px;
+    }
   }
 }
