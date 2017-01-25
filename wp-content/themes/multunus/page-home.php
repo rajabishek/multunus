@@ -21,7 +21,7 @@
         </div>
         <div id="banner-img-container">
         </div>
-    </div>
+    </div>            
     <div class="community">
         <div class="container">
             <div class="row">
@@ -37,10 +37,10 @@
                     </div>
                 </div>
                 <div class="col-md-5">
-                    <a href="http://github.com/multunus">
+                    <a href="https://github.com/multunus/onemdm-server">
                         <div class="repo-card">
                             <div class="repo-info">
-                                <h4 class="repo-title">One MDM Server</h4>
+                                <h5 class="repo-title">One MDM Server</h5>
                                 <p class="repo-description">Open Source Mobile Device Management (MDM) solution</p>
                             </div>
                             <div class="repo-stats">
@@ -55,35 +55,39 @@
                             </div>
                         </div>
                     </a>
-                    <div class="repo-card">
-                        <div class="repo-info">
-                            <h4 class="repo-title">CLJ Dashboard</h4>
-                            <p class="repo-description">A Clojure mini-framework for building realtime dashboards</p>
-                        </div>
-                        <div class="repo-stats">
-                            <div class="repo-stats-group">
-                                <h5 class="repo-stats-title">Stars</h5>
-                                <h6 class="repo-stat">77</h6>
+                    <a href="https://github.com/multunus/dashboard-clj">
+                        <div class="repo-card">
+                            <div class="repo-info">
+                                <h5 class="repo-title">CLJ Dashboard</h5>
+                                <p class="repo-description">A Clojure mini-framework for building realtime dashboards</p>
                             </div>
-                            <div class="repo-stats-group">
-                                <h5 class="repo-stats-title">Forks</h5>
-                                <h6 class="repo-stat">3</h6>
+                            <div class="repo-stats">
+                                <div class="repo-stats-group">
+                                    <h5 class="repo-stats-title">Stars</h5>
+                                    <h6 class="repo-stat">77</h6>
+                                </div>
+                                <div class="repo-stats-group">
+                                    <h5 class="repo-stats-title">Forks</h5>
+                                    <h6 class="repo-stat">3</h6>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-7">
                     <div class="clickable-card">
                         <h2>Blog</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit sapiente tempora amet asperiores exercitationem alias in voluptates provident nihil nulla illo dolores eos magnam nobis, qui, excepturi culpa nostrum ipsa!</p>
                         <a class="button button-red-border">Learn More</a>
                     </div>
                 </div>
-                <div class="col-md-6">
+            </div>
+            <div class="row">
+                <div class="col-md-7">
                     <div class="clickable-card">
-                        <h2>Events</h2>
+                        <h2>Talks</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste atque ipsam nisi, consequatur velit commodi eius delectus iusto beatae doloremque quam itaque aperiam dolore suscipit temporibus unde porro nobis accusamus.</p>
                         <a class="button button-red-border">Learn More</a>
                     </div>
@@ -205,5 +209,11 @@
             </div>
         </div>
     </article>
+    <div class="lets-talk">
+        <h2 class="text-center">Its time to craft brilliance together ? Let's chat.</h2>
+        <div class="text-center">
+            <a class="button button-white-filled" href="/contact">Get in touch with us today</a>
+        </div>
+    </div>
 </section>
 <?php get_footer(); ?>

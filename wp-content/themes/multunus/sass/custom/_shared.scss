@@ -393,3 +393,18 @@ ul.arrow-list-style {
 .grey {
   color: #656565;
 }
+
+.clickable-card {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 10px 10px 10px 30px;
+  padding-bottom: 30px;
+  background-color: white;
+  box-shadow: 0 2px 100px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  background-clip: padding-box;
+}
+
+.wild-sand {
+  background-color: #F4F4F4;
+}

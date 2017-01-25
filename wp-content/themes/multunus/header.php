@@ -56,9 +56,7 @@
           <div class="container-fluid">
               <div class="navbar-header">
                   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar b1"></span> <span class="icon-bar b2"></span> <span class="icon-bar b3"></span> </button> 
-                  <a class="navbar-brand">
-                      <h2>multunus</h2>
-                  </a>
+                  <img src="/img/header-logo.png">
               </div>
               <div class="navbar-collapse collapse">
                   <ul id="main-nav" class="nav navbar-nav navbar-right">
