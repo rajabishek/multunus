@@ -8,84 +8,47 @@ get_header();
 $portfolio_item = get_posts( array(
     'post_type' => 'portfolio',
     'posts_per_page' => -1 // Unlimited posts
-) );
+));
 
-if ( $portfolio_item ):
-?>
-<section class="container quote-header">
-  <h1 class="align-left">We've been busy.</h1>
-  <p>We've built web apps for the desktop &amp; mobile. And native apps on iOS and Android.</p>
-  <p>For one person startups and large enterprises. </p>
-  <p>Across the US, Canada, the UK, Australia, Singapore and India </p>
-  <p>In the areas of finance, health, consumer, education, media and enterprise mobility. </p>
-</section>
-
-<aside class="container portfolio-filter category-filter">
-  <ul class="list-inline category-list-desktop hidden-xs">
-    <li class="categories-label"><span>Platforms:</span></li>
-    <li class="active"><a data-category="all">All</a></li>
-    <li><a data-category="Web">Web</a></li>
-    <li><a data-category="Mobile Web">Mobile Web</a></li>
-    <li><a data-category="iOS">iOS</a></li>
-    <li><a data-category="Android">Android</a></li>
-  </ul>
-
-  <ul class="list-inline category-list-desktop hidden-xs">
-    <li class="categories-label"><span>Domains:</span></li>
-    <li><a data-category="all">All</a></li>
-    <li><a data-category="Finance">Finance</a></li>
-    <li><a data-category="Consumer">Consumer</a></li>
-    <li><a data-category="Media">Media</a></li>
-    <li><a data-category="Health">Health</a></li>
-    <li><a data-category="Education">Education</a></li>
-    <li><a data-category="Enterprise Mobility">Enterprise Mobility</a></li>
-  </ul>
-
-  <div class="visible-xs category-list-mobile dropdown-container">
-    <div class="dropdown-label">Show: </div>
-    <div class="btn-group dropdown">
-      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-        All
-      </button>
-      <ul class="dropdown-menu" role="menu">
-        <li class="active"><a data-category="all">All</a></li>
-        <li><a data-category="Web">Web</a></li>
-        <li><a data-category="Mobile Web">Mobile Web</a></li>
-        <li><a data-category="iOS">iOS</a></li>
-        <li><a data-category="Android">Android</a></li>
-        <li><a data-category="Finance">Finance</a></li>
-        <li><a data-category="Consumer">Consumer</a></li>
-        <li><a data-category="Media">Media</a></li>
-        <li><a data-category="Health">Health</a></li>
-        <li><a data-category="Education">Education</a></li>
-        <li><a data-category="Enterprise Mobility">Enterprise Mobility</a></li>
-      </ul>
+if ($portfolio_item): ?>
+    <div class="container">
+        <div class="main-heading">
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8 hero-message">
+                    <h1 class="text-center">We've been busy</h1>
+                    <h4 class="text-center grey">We do the best work of our life here, and we make sure that everyone has the right opportunity to grow exponentially in their careers.</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cards">
+                <?php  foreach ($portfolio_item as $post):
+                       setup_postdata($post);
+                       $permalink = post_permalink($post->ID); ?>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="card">
+                            <a href="href="<?php echo $permalink ?>" target="_blank">
+                                <figure class="media">
+                                    <span style="background-image: url(<?php the_field('thumbnail'); ?>);"></span>
+                                </figure>
+                                <div class="meta">
+                                    <h3>Company name</h3>
+                                    <p><?php the_title(); ?></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+        </div>
     </div>
-  </div>
-</aside>
-
-<section class="container clearfix portfolio-list">
-    <div class="row">
-    <?php
-    foreach ( $portfolio_item as $post ):
-      setup_postdata($post);
-      $permalink = post_permalink($post->ID);
-    ?>
-
-    <figure class="col-sm-4 col-xs-12" data-category="<?php the_field('category'); ?>">
-      <a href="<?php echo $permalink ?>">
-        <img src="<?php the_field('thumbnail'); ?>" alt="<?php the_title(); ?>">
-        <figcaption>
-          <p class="name"><?php the_title(); ?></p>
-          <p class="category">
-            <?php echo the_field('category'); ?>
-          </p>
-        </figcaption>
-      </a>
-    </figure>
-
-    <?php endforeach; ?>
-  </div>
-</section>
-<?php get_footer(); ?>
+    <div class="lets-talk">
+        <h2 class="text-center">Its time to craft brilliance together ? Let's chat.</h2>
+        <div class="text-center">
+            <a class="button button-white-filled" href="/contact">Get in touch with us today</a>
+        </div>
+    </div>
+    <?php get_footer(); ?>
 <?php endif; ?>
+
+
