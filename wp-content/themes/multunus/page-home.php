@@ -4,6 +4,7 @@
      */
     ?>
 <?php get_header(); ?>
+<link rel='stylesheet prefetch' href='http://cdn.jsdelivr.net/jquery.slick/1.3.15/slick.css'>
 <section class="home-page">
     <div class="banner-section-container">
         <div class="overlay">
@@ -121,7 +122,57 @@
             </div>
         </div>
     </div>
-    <article class="customer-stories">
+
+    <div class="container" style="margin-top: 20px; margin-bottom: 20px;">
+        <?php
+            $portfolio_items = get_posts( array(
+                'post_type' => 'portfolio',
+                'meta_key'    => 'show_customer_story_in_home_page',
+               'meta_value' => true,
+                'posts_per_page' => -1 // Unlimited posts
+            ) );
+        ?>
+        <h1 class="text-center">Customer stories</h1>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="testimonials">
+                    <?php
+                        foreach ( $portfolio_items as $index => $post ):
+                        setup_postdata($post);
+                        $permalink = post_permalink($post->ID);
+                    ?>
+                        <div class="testimonial">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="testimonial-image" src="<?php the_field('thumbnail'); ?>">
+                                </div>
+                                <div class="col-md-9">
+                                    <h3><?php the_title(); ?></h3>
+                                    <p><?php the_field('story_snippet'); ?></p>
+                                </div>
+                            </div>
+                            <div class="review-info">
+                                <div class="row">
+                                    <div class="col-md-1">
+                                        <img class="profile-image" src="<?php the_field('customer_image') ?>">
+                                    </div>
+                                    <div class="col-md-9">
+                                        <h4 class="review"><?php the_field('customer_quote'); ?></h4>
+                                        <p class="person-name">-- <?php the_field('customer_name'); ?>, <?php the_field('customer_organization'); ?></p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <a class="read-more button button-red-border" href="<?php echo $permalink ?>">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <article class="customer-stories">
         <?php
             $portfolio_items = get_posts( array(
                 'post_type' => 'portfolio',
@@ -194,7 +245,7 @@
             </div>
             <?php endforeach; ?>
         </div>
-    </article>
+    </article> -->
     <article id="main-content" class="wild-sand">
         <div class="container big-picture">
             <h1 class="text-center">The big picture</h1>
@@ -217,3 +268,14 @@
     </div>
 </section>
 <?php get_footer(); ?>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.3.14/slick.min.js'></script>
+<script>
+    $(document).ready(function() {
+        $('.testimonials').slick({
+            arrows: true,
+            prevArrow: '<a class="slick-prev"></span></a>',
+            nextArrow: '<a class="slick-next"></span></a>'
+        });
+    });
+</script>
