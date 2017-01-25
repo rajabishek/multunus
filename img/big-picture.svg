@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="529px" height="452px" viewBox="0 0 529 452" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Diagram</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="50" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <rect id="path-2" x="240.015372" y="74.9330127" width="108" height="1"></rect>
+        <mask id="mask-3" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="108" height="1" fill="white">
+            <use xlink:href="#path-2"></use>
+        </mask>
+        <rect id="path-4" x="242.015372" y="38.9330127" width="108" height="1"></rect>
+        <mask id="mask-5" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="108" height="1" fill="white">
+            <use xlink:href="#path-4"></use>
+        </mask>
+        <rect id="path-6" x="346" y="48" width="90" height="1"></rect>
+        <mask id="mask-7" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="90" height="1" fill="white">
+            <use xlink:href="#path-6"></use>
+        </mask>
+        <rect id="path-8" x="348" y="10" width="140" height="1"></rect>
+        <mask id="mask-9" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="140" height="1" fill="white">
+            <use xlink:href="#path-8"></use>
+        </mask>
+        <rect id="path-10" x="50" y="95" width="100" height="1"></rect>
+        <mask id="mask-11" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="100" height="1" fill="white">
+            <use xlink:href="#path-10"></use>
+        </mask>
+    </defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-270.000000, -2319.000000)">
+            <g id="Big-Picture-Sections" transform="translate(0.000000, 2200.000000)">
+                <g id="Diagram" transform="translate(270.000000, 214.000000)">
+                    <g id="Shape" filter="url(#filter-1)" transform="translate(111.000000, 0.000000)">
+                        <ellipse id="Circle" fill="#FFFFFF" cx="130" cy="130" rx="130" ry="130"></ellipse>
+                        <g id="Upper" transform="translate(30.000000, 30.000000)" opacity="0.300000012">
+                            <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C100,100 200,100 200,100 Z" id="Oval-2-Copy" fill="#1EAAF1"></path>
+                            <path d="M170,100 C170,61.3400675 138.659932,30 100,30 C61.3400675,30 30,61.3400675 30,100 C100,100 170,100 170,100 Z" id="Oval-2-Copy-2" fill="#FFFF00"></path>
+                            <path d="M140,100 C140,77.90861 122.09139,60 100,60 C77.90861,60 60,77.90861 60,100 C100,100 140,100 140,100 Z" id="Oval-2-Copy-3" fill="#1FBCD2"></path>
+                        </g>
+                        <g id="Lower" transform="translate(130.000000, 160.000000) scale(1, -1) translate(-130.000000, -160.000000) translate(30.000000, 130.000000)">
+                            <path d="M200,60 C200,26.862915 155.228475,0 100,0 C44.771525,0 0,26.862915 0,60 C100,60 200,60 200,60 Z" id="Oval-2-Copy" fill="#1EAAF1" opacity="0.300000012"></path>
+                            <path d="M170,60 C170,36.8040405 138.659932,18 100,18 C61.3400675,18 30,36.8040405 30,60 C100,60 170,60 170,60 Z" id="Oval-2-Copy-2" fill="#FFFF00" opacity="0.300000012"></path>
+                            <path d="M140,60 C140,46.745166 122.09139,36 100,36 C77.90861,36 60,46.745166 60,60 C100,60 140,60 140,60 Z" id="Oval-2-Copy-3" fill="#1FBCD2" opacity="0.300000012"></path>
+                            <path d="M200,60 C200,26.862915 155.228475,0 100,0 C44.771525,0 0,26.862915 0,60 C100,60 200,60 200,60 Z" id="Oval-2-Copy-4" fill="#000000" opacity="0.2"></path>
+                        </g>
+                        <g id="Arrow" transform="translate(82.000000, 85.000000) rotate(-135.000000) translate(-82.000000, -85.000000) translate(18.000000, 81.000000)" fill="#191919">
+                            <polygon id="Triangle" transform="translate(124.000000, 4.000000) rotate(90.000000) translate(-124.000000, -4.000000) " points="124 -3.33955086e-13 128 8 120 8"></polygon>
+                            <rect id="Rectangle" x="2.84217094e-14" y="4" width="120" height="1"></rect>
+                        </g>
+                    </g>
+                    <g id="Labelling" transform="translate(0.000000, 3.000000)">
+                        <use id="Rectangle-Copy-2" stroke="#3F3F3F" mask="url(#mask-3)" stroke-width="2" stroke-dasharray="8,8,8,8" transform="translate(294.015372, 75.433013) rotate(-30.000000) translate(-294.015372, -75.433013) " xlink:href="#path-2"></use>
+                        <use id="Rectangle-Copy-5" stroke="#3F3F3F" mask="url(#mask-5)" stroke-width="2" stroke-dasharray="8,8,8,8" transform="translate(296.015372, 39.433013) rotate(-30.000000) translate(-296.015372, -39.433013) " xlink:href="#path-4"></use>
+                        <use id="Rectangle-Copy-3" stroke="#3F3F3F" mask="url(#mask-7)" stroke-width="2" stroke-dasharray="8,8,8,8" xlink:href="#path-6"></use>
+                        <use id="Rectangle-Copy-6" stroke="#3F3F3F" mask="url(#mask-9)" stroke-width="2" stroke-dasharray="8,8,8,8" xlink:href="#path-8"></use>
+                        <use id="Rectangle-Copy-4" stroke="#3F3F3F" mask="url(#mask-11)" stroke-width="2" stroke-dasharray="8,8,8,8" xlink:href="#path-10"></use>
+                        <circle id="Oval-2" fill="#3F3F3F" cx="240" cy="107" r="4"></circle>
+                        <circle id="Oval-2" fill="#3F3F3F" cx="162" cy="95" r="4"></circle>
+                        <circle id="Oval-2" fill="#3F3F3F" cx="240" cy="73" r="4"></circle>
+                        <text id="Why" font-family="GTWalsheimProTrial-Regular, GT Walsheim Pro Trial" font-size="16" font-weight="normal" fill="#191919">
+                            <tspan x="446" y="53">Why</tspan>
+                        </text>
+                        <text id="How" font-family="GTWalsheimProTrial-Regular, GT Walsheim Pro Trial" font-size="16" font-weight="normal" fill="#191919">
+                            <tspan x="498" y="16">How</tspan>
+                        </text>
+                        <text id="What" font-family="GTWalsheimProTrial-Regular, GT Walsheim Pro Trial" font-size="16" font-weight="normal" fill="#191919">
+                            <tspan x="0" y="99">What</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
