@@ -16,7 +16,7 @@ if ($portfolio_item): ?>
             <div class="row">
                 <div class="col-md-offset-2 col-md-8 hero-message">
                     <h1 class="text-center">We've been busy</h1>
-                    <h4 class="text-center grey">We do the best work of our life here, and we make sure that everyone has the right opportunity to grow exponentially in their careers.</h3>
+                    <h4 class="text-center grey">We've built web apps for the desktop & mobile. And native apps on iOS and Android. For one person startups and large enterprises.</h3>
                 </div>
             </div>
         </div>

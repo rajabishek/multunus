@@ -18,44 +18,34 @@
 
 <body <?php body_class(); ?>>
   <header>
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="<?php bloginfo('url'); ?>">
-          <div class="logo-container"></div>
-        </a>
-      </div>
-
-      <?php
-        wp_nav_menu( array(
-          'menu'              => 'primary',
-          'theme_location'    => 'primary',
-          'depth'             => 2,
-          'container'         => 'div',
-          'container_class'   => 'collapse navbar-collapse',
-          'container_id'      => 'navbar-collapse',
-          'menu_class'        => 'nav navbar-nav',
-          'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-          'items_wrap'        => '<ul class="%2$s">%3$s</ul>
-                                  <div class="blinker">
-                                    <div class="navbar-text tagline active"><span class="text-white">Disciplined </span><span class="text-pink">Creativity</span></div>
-                                    <div class="navbar-text contact-no"><a class="text-white" href="mailto:info@multunus.com">info@multunus.com</a></div>
-                                  </div>',
-          'walker'            => new wp_bootstrap_navwalker())
-        );
-      ?>
-
-
+          </button>
+          <a class="navbar-brand" href="/" style="color: white;">multunus</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <?php
+              wp_nav_menu( array(
+                'menu'              => 'primary',
+                'theme_location'    => 'primary',
+                'depth'             => 2,
+                'container'         => 'div',
+                'container_class'   => 'collapse navbar-collapse',
+                'container_id'      => 'navbar-collapse',
+                'menu_class'        => 'nav navbar-nav',
+                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                'walker'            => new wp_bootstrap_navwalker())
+              );
+            ?>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div><!--/.container-fluid -->
     </nav>
   </header>
-
-  <?php if(!is_page_template("page-home.php") && function_exists('bcn_display')) {
-    echo '<div class="breadcrumbs">';
-    bcn_display();
-  } echo '</div>';
-  ?>

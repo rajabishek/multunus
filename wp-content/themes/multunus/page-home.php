@@ -18,7 +18,7 @@
         </h4>
         <div>
           <a href="/portfolio/micro-loan-processing-platform/">
-            <div class="btn-green">Read More<span>&#8594;</span></div>
+            <div class="button button-red-filled">Read More</div>
           </a>
         </div>
 
