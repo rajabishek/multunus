@@ -3,66 +3,40 @@
    Template Name: Home
    */
 ?>
+
 <?php get_header(); ?>
 <section class="home-page">
   <div class="banner-section-container">
     <div class="overlay">
       <div class="overlay-content">
-        <a href="/portfolio/micro-loan-processing-platform/">
-          <h1 id="quote">
-            Do something well <wbr>or not at all
-          </h1>
-        </a>
-        <h4 id="explanation">
-          See how The Intersect Fund serves the less privileged &amp; makes their dreams come true.
-        </h4>
-        <div>
-          <a href="/portfolio/micro-loan-processing-platform/">
-            <div class="button button-red-filled">Read More</div>
-          </a>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 main-heading centered">
+              <h1>Solutions by design.</h1>
+              <h4>We translate complex ideas into simple and elegant products</h4>
+              <button class="button button-red-filled">Read More</button>
+            </div>
+          </div>
         </div>
-
       </div>
     </div>
     <div id="banner-img-container">
     </div>
   </div>
 
-  <article class="tagline-container">
-    <header class="text-center">
-      <h2>
-        We build Web and Mobile Apps
-      </h2>
-    </header>
-  </article>
-
   <article id="main-content" class="why-us-image-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 hidden-xs hidden-sm big-picture-text on-desktop">
-          <h1>The<br />Big Picture</h1>
+    <div class="container big-picture">
+        <h1 class="text-center">The big picture</h1>
+        <div class="row">
+          <div class="col-md-7 media">
+            <img src="/img/big-picture.svg" />
+          </div>
+          <div class="col-md-5 meta">
+            <h2>We take an inside out approach.</h2>
+            <p>What makes us different. Take a <a>deep dive</a> to find out.</p>
+          </div>
         </div>
-
-        <div class="col-sm-12 visible-sm visible-xs align-center big-picture-text on-mobile">
-          <h1>The Big Picture</h1>
-        </div>
-
-        <div class="col-md-4 big-picture-img-container">
-          <figure>
-            <a href="/process" class="golden-circle what-img"></a>
-            <a href="/process" class="golden-circle how-img"></a>
-            <a href="/process" class="golden-circle why-img"></a>
-          </figure>
-        </div>
-
-        <div class="col-md-4 col-sm-12 big-picture-list">
-          <ul>
-            <li>What makes us different?</li>
-            <li><a class="red-text" href="/process">Take a deep dive</a></span> to find out.</li>
-          </ul>
-        </div>
-      </div> <!-- end row -->
-    </div> <!-- end container -->
+      </div>
   </article>
 
   <article class="our-services" >
