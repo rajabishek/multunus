@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Previous Button</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-270.000000, -1860.000000)">
+            <g id="Customer-Stories" transform="translate(-280.000000, 1500.000000)">
+                <g id="Stories" transform="translate(0.000000, 245.000000)">
+                    <g id="Previous-Button" transform="translate(550.000000, 115.000000)">
+                        <circle id="Oval" fill="#FFFFFF" cx="25" cy="25" r="25"></circle>
+                        <path d="M28.4677675,18.2114957 C28.1953001,17.9295014 27.7418228,17.9295014 27.4598285,18.2114957 C27.1873611,18.4839632 27.1873611,18.9374405 27.4598285,19.2092728 L32.5706574,24.3201016 L15.7056208,24.3201016 C15.3124802,24.3207367 15,24.6332169 15,25.0263576 C15,25.4194983 15.3124802,25.7421404 15.7056208,25.7421404 L32.5706574,25.7421404 L27.4598285,30.8434424 C27.1873611,31.1254366 27.1873611,31.5795491 27.4598285,31.8513814 C27.7418228,32.1333757 28.1959352,32.1333757 28.4677675,31.8513814 L34.7885043,25.5306446 C35.0704986,25.2581772 35.0704986,24.8046999 34.7885043,24.5328676 L28.4677675,18.2114957 Z" id="Next-Icon" fill="#191919" transform="translate(25.000000, 25.031439) rotate(180.000000) translate(-25.000000, -25.031439) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
