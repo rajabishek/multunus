@@ -1,45 +1,43 @@
-.portfolio-filter {
-  margin-top: 62px;
-}
-
-.portfolio-list {
-  margin-top: 25px;
-  margin-bottom: 65px;
-
-  figure {
-    margin-bottom: 30px;
-
+.card {
+  background-color: white;
+  display: block;
+  margin: 0 0 25px;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 2px 70px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  background-clip: padding-box;
+  &:hover {
+    background-color: #2A2A2A;
+    color: white;
+    transition: all 0.2s ease-in;
     a {
-      display: block;
-
-      img {
-        height: 230px;
-        width: 100%;
-      }
+      color: white;
     }
   }
-
-  figcaption {
-    background: url("/img/arrow-right-red.png") no-repeat right, #f1f1f1;
-    font-size: 1.3em;
-    height: 80px;
-    padding: 10px;
-    border-right: 16px solid transparent;
-
-    p {
-      margin: 0;
-      line-height: 1.3;
-
-      &.name {
-        font-weight: 600;
-      }
-
-      &.category {
-        color: #999999;
-        font-weight: 300;
-        font-size: 14px;
-      }
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #2A2A2A;
+  }
+  .media span {
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 170px;
+    display: block;
+  }
+  .meta {
+    h3 {
+      padding: 0 20px;
+      margin-bottom: 0;
+      margin-top: 20px;
     }
-
+    p {
+      padding: 0 20px;
+    }
   }
 }
