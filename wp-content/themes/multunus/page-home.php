@@ -123,7 +123,7 @@
         </div>
     </div>
 
-    <div class="container" style="margin-top: 20px; margin-bottom: 20px;">
+    <!-- <div class="container" style="margin-top: 20px; margin-bottom: 20px;">
         <?php
             $portfolio_items = get_posts( array(
                 'post_type' => 'portfolio',
@@ -170,8 +170,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <article id="main-content" class="wild-sand">
+    </div> -->
+    <article id="main-content">
         <div class="container big-picture">
             <h1 class="text-center">The big picture</h1>
             <div class="row">
