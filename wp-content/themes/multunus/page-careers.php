@@ -48,7 +48,7 @@
           </h2></span>
           <div class="design-description" alt style="padding-left: 2px">
             <p>
-              Its 2016. It’s time to break the rules. Have fun using <a href="http://www.multunus.com/blog/2015/09/our-autonomous-salary-system-the-background-story-part-1/" target="_blank">our autonomous salary system.</a>
+              Its 2017. It’s time to break the rules. Have fun using <a href="http://www.multunus.com/blog/2015/09/our-autonomous-salary-system-the-background-story-part-1/" target="_blank">our autonomous salary system.</a>
           </p>
           </div></li>
           </div>
