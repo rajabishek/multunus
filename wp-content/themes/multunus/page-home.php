@@ -74,16 +74,14 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-7">
+                <div class="col-md-6">
                     <div class="clickable-card">
                         <h2>Blog</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit sapiente tempora amet asperiores exercitationem alias in voluptates provident nihil nulla illo dolores eos magnam nobis, qui, excepturi culpa nostrum ipsa!</p>
                         <a class="button button-red-border">Learn More</a>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-7">
+                <div class="col-md-6">
                     <div class="clickable-card">
                         <h2>Events</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste atque ipsam nisi, consequatur velit commodi eius delectus iusto beatae doloremque quam itaque aperiam dolore suscipit temporibus unde porro nobis accusamus.</p>

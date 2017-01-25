@@ -13,9 +13,6 @@
     background-color: #2A2A2A;
     color: white;
     transition: all 0.2s ease-in;
-    a {
-      color: white;
-    }
   }
   a {
     text-decoration: none;
@@ -31,10 +28,12 @@
     display: block;
   }
   .meta {
-    h3 {
+    h5 {
       padding: 0 20px;
-      margin-bottom: 0;
+      margin-bottom: 10;
       margin-top: 20px;
+      text-transform: uppercase;
+      color: #656565;
     }
     p {
       padding: 0 20px;
