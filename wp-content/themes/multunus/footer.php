@@ -1,62 +1,59 @@
 <footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-4 col-xs-6">
-          <div class="align-center heading">Say Hello!</div>
-          <a class="mail-container" href="/contact/#main-content"><img src="/img/footer-mail-icon-red.png"/></a>
-      </div>
-
-      <div class="col-sm-4 col-xs-6">
-          <div class="align-center heading">Careers</div>
-          <a class="robot-container" href="/careers"><img src="/img/footer-robot-icon-red.png"></a>
-      </div>
-
-      <div class="col-sm-4 col-xs-12 follow-us-container">
-        <div class="follow-us">
-          <div class="align-center heading">Stay Updated</div>
-          <div class="hexagon">
-            <ul class="list-inline align-center">
-              <li>
-                <a class="social" href="https://www.facebook.com/multunus" title="Follow us on Facebook">
-                  <img class="facebook" src="/img/facebook-icon-footer.png" alt=""/>
-                </a>
-              </li>
-
-              <li>
-                <a class="social" href="https://twitter.com/multunus" title="Follow us on Twitter">
-                  <img class="twitter" src="/img/twitter-icon-footer.png" alt=""/>
-                </a>
-              </li>
-
-              <li>
-                <a class="social" href="http://www.linkedin.com/company/multunus" title="Follow us on Linkedin">
-                  <img class="linkedin" src="/img/linkedin-icon-footer.png" alt=""/>
-                </a>
-              </li>
-
-            </ul>
-          </div>
+    <div class="container content">
+        <div class="row">
+            <div class="col-xs-3">
+                <ul class="list-unstyled">
+                    <li class="nav-heading">Company
+                    <li>
+                    <li><a href="/process">Process</a></li>
+                    <li><a href="/team">Team</a></li>
+                    <li><a href="/careers">Careers</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-3">
+                <ul class="list-unstyled">
+                    <li class="nav-heading">Community
+                    <li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/events">Events</a></li>
+                    <li><a href="/open-source">Open Source</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-3">
+                <ul class="list-unstyled">
+                    <li class="nav-heading">Connect
+                    <li>
+                    <li><a title="Follow us on Facebook" href="https://facebook.com/multunus">Facebook</a></li>
+                    <li><a title="Follow us on Twitter" href="https://twitter.com/multunus">Twitter</a></li>
+                    <li><a  title="Follow us on LinkedIn" href="http://www.linkedin.com/company/multunus">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-3">
+                <ul class="list-unstyled">
+                    <li class="nav-heading">Services
+                    <li>
+                    <li><a href="/services/rails">Ruby On Rails</a></li>
+                    <li><a href="/services/ios">iOS</a></li>
+                    <li><a href="/services/android">Android</a></li>
+                    <li><a href="/services/business-modeling">Business Modelling</a></li>
+                    <li><a href="/services/design-sprints">Design Sprints</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
-
-    </div> <!-- .row end -->
-
-    <div class="row">
-      <div class="bottom">
-        <hr class="hidden-xs"/>
-        <div class="col-xs-12 col-sm-11 copyright">
-          <p>
-            &copy;<?php echo date("Y"); echo ", "; ?> Multunus Software Pvt Ltd
-          </p>
+        <hr>
+        <div class="row">
+            <div class="col-xs-8">
+                <ul class="list-unstyled list-inline pull-left">
+                    <li><a href="/contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-4">
+                <a class="pull-right regular">© 2017, Multunus Software Pvt Ltd</a>
+            </div>
         </div>
-
-      </div>
-    </div> <!-- .row end -->
- </div>  <!-- .container end -->
+    </div>
 </footer>
 
 <?php wp_footer(); ?>
-
 </body>
-
 </html>
