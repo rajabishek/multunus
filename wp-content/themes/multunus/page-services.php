@@ -32,7 +32,7 @@ if ($service_item ): ?>
         <div class="<?php echo str_replace(" ", "-", strtolower($category)); ?>">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-sm-6">
                         <h2><?php echo ucwords($category); ?></h2>
                         <p><?php echo $description; ?></p>
                     </div>

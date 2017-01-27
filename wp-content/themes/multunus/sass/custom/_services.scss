@@ -31,3 +31,9 @@
   background-repeat: no-repeat, repeat;
   background-size: contain, auto;
 }
+
+@media only screen and (max-width: 768px) {
+  .innovation-consulting, .mobile-development, .web-development {
+    background-image: none;
+  }
+}
