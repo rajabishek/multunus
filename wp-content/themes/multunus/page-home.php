@@ -27,7 +27,7 @@
     <div class="community">
         <div class="container">
             <div class="row">
-                <h1 class="text-center">We love our community</h1>
+                <h1 class="text-center">We <img src="/img/home-heart.svg" class="heart"> our community</h1>
             </div>
             <div class="row">
                 <div class="col-md-7">
@@ -171,22 +171,20 @@
             </div>
         </div>
     </div> -->
-    <article id="main-content">
-        <div class="container big-picture">
-            <h1 class="text-center">The big picture</h1>
-            <div class="row">
-                <div class="col-md-7 media">
-                    <img src="/img/big-picture.svg" />
-                </div>
-                <div class="col-md-5">
-                    <div class="meta">
-                        <h2>We take an inside out approach.</h2>
-                        <p class="grey">What makes us different. Take a <a href="/process">deep dive</a> to find out.</p>
-                    </div>
+    <!-- <div class="container big-picture">
+        <h1 class="text-center">The big picture</h1>
+        <div class="row">
+            <div class="col-md-7 media">
+                <img src="/img/big-picture.svg" />
+            </div>
+            <div class="col-md-5">
+                <div class="meta">
+                    <h2>We take an inside out approach.</h2>
+                    <p class="grey">What makes us different. Take a <a href="/process">deep dive</a> to find out.</p>
                 </div>
             </div>
         </div>
-    </article>
+    </div> -->
     <div class="lets-talk">
         <h2 class="text-center">Its time to craft brilliance together ? Let's chat.</h2>
         <div class="text-center">
