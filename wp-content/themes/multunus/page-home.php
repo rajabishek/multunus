@@ -22,7 +22,8 @@
         </div>
         <div id="banner-img-container">
         </div>
-    </div>            
+    </div>   
+
     <div class="community">
         <div class="container">
             <div class="row">
@@ -96,15 +97,15 @@
             </div>
         </div>
     </div>
-    <div class="craftmanship wild-sand">
-        <div class="container-fluid">
+    <div class="craftmanship">
+        <div class="container-fluid wild-sand">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-sm-6">
                     <div class="media">
                         <img src="/img/craftmanship.jpg" />
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-sm-6">
                     <div class="meta">
                         <h1 class="text-center">This is the title.</h1>
                         <h4 class="text-center grey">This is the subtile. A catchy one.</h4>
@@ -122,7 +123,6 @@
             </div>
         </div>
     </div>
-
     <!-- <div class="container" style="margin-top: 20px; margin-bottom: 20px;">
         <?php
             $portfolio_items = get_posts( array(
@@ -178,9 +178,11 @@
                 <div class="col-md-7 media">
                     <img src="/img/big-picture.svg" />
                 </div>
-                <div class="col-md-5 meta">
-                    <h2>We take an inside out approach.</h2>
-                    <p>What makes us different. Take a <a>deep dive</a> to find out.</p>
+                <div class="col-md-5">
+                    <div class="meta">
+                        <h2>We take an inside out approach.</h2>
+                        <p class="grey">What makes us different. Take a <a href="/process">deep dive</a> to find out.</p>
+                    </div>
                 </div>
             </div>
         </div>
