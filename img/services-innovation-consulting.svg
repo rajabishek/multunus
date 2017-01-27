@@ -3,334 +3,85 @@
     <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
     <title>services-innovation-consulting</title>
     <desc>Created with Sketch.</desc>
-    <defs>
-        <ellipse id="path-1" cx="3.84615385" cy="158.974359" rx="3.84615385" ry="3.84615385"></ellipse>
-        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="11.6923077" height="11.6923077">
-            <rect x="-2" y="153.128205" width="11.6923077" height="11.6923077" fill="white"></rect>
-            <use xlink:href="#path-1" fill="black"></use>
-        </mask>
-        <ellipse id="path-3" cx="52.5641026" cy="108.974359" rx="3.84615385" ry="3.84615385"></ellipse>
-        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="11.6923077" height="11.6923077">
-            <rect x="46.7179487" y="103.128205" width="11.6923077" height="11.6923077" fill="white"></rect>
-            <use xlink:href="#path-3" fill="black"></use>
-        </mask>
-        <circle id="path-5" cx="98.7179487" cy="157.692308" r="3.84615385"></circle>
-        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="11.6923077" height="11.6923077">
-            <rect x="92.8717949" y="151.846154" width="11.6923077" height="11.6923077" fill="white"></rect>
-            <use xlink:href="#path-5" fill="black"></use>
-        </mask>
-        <ellipse id="path-7" cx="144.871795" cy="143.589744" rx="3.84615385" ry="3.84615385"></ellipse>
-        <mask id="mask-8" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="11.6923077" height="11.6923077">
-            <rect x="139.025641" y="137.74359" width="11.6923077" height="11.6923077" fill="white"></rect>
-            <use xlink:href="#path-7" fill="black"></use>
-        </mask>
-        <ellipse id="path-9" cx="191.025641" cy="112.820513" rx="3.84615385" ry="3.84615385"></ellipse>
-        <mask id="mask-10" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="11.6923077" height="11.6923077">
-            <rect x="185.179487" y="106.974359" width="11.6923077" height="11.6923077" fill="white"></rect>
-            <use xlink:href="#path-9" fill="black"></use>
-        </mask>
-        <ellipse id="path-11" cx="241.025641" cy="3.84615385" rx="3.84615385" ry="3.84615385"></ellipse>
-        <mask id="mask-12" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="11.6923077" height="11.6923077">
-            <rect x="235.179487" y="-2" width="11.6923077" height="11.6923077" fill="white"></rect>
-            <use xlink:href="#path-11" fill="black"></use>
-        </mask>
-        <ellipse id="path-13" cx="283.333333" cy="42.3076923" rx="3.84615385" ry="3.84615385"></ellipse>
-        <mask id="mask-14" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="11.6923077" height="11.6923077">
-            <rect x="277.487179" y="36.4615385" width="11.6923077" height="11.6923077" fill="white"></rect>
-            <use xlink:href="#path-13" fill="black"></use>
-        </mask>
-        <ellipse id="path-15" cx="326.923077" cy="56.4102564" rx="3.84615385" ry="3.84615385"></ellipse>
-        <mask id="mask-16" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="11.6923077" height="11.6923077">
-            <rect x="321.076923" y="50.5641026" width="11.6923077" height="11.6923077" fill="white"></rect>
-            <use xlink:href="#path-15" fill="black"></use>
-        </mask>
-        <ellipse id="path-17" cx="374.358974" cy="51.2820513" rx="3.84615385" ry="3.84615385"></ellipse>
-        <mask id="mask-18" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="11.6923077" height="11.6923077">
-            <rect x="368.512821" y="45.4358974" width="11.6923077" height="11.6923077" fill="white"></rect>
-            <use xlink:href="#path-17" fill="black"></use>
-        </mask>
-        <ellipse id="path-19" cx="421.794872" cy="70.5128205" rx="3.84615385" ry="3.84615385"></ellipse>
-        <mask id="mask-20" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="11.6923077" height="11.6923077">
-            <rect x="415.948718" y="64.6666667" width="11.6923077" height="11.6923077" fill="white"></rect>
-            <use xlink:href="#path-19" fill="black"></use>
-        </mask>
-        <ellipse id="path-21" cx="469.230769" cy="96.1538462" rx="3.84615385" ry="3.84615385"></ellipse>
-        <mask id="mask-22" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="11.6923077" height="11.6923077">
-            <rect x="463.384615" y="90.3076923" width="11.6923077" height="11.6923077" fill="white"></rect>
-            <use xlink:href="#path-21" fill="black"></use>
-        </mask>
-        <ellipse id="path-23" cx="519.230769" cy="79.4871795" rx="3.84615385" ry="3.84615385"></ellipse>
-        <mask id="mask-24" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="11.6923077" height="11.6923077">
-            <rect x="513.384615" y="73.6410256" width="11.6923077" height="11.6923077" fill="white"></rect>
-            <use xlink:href="#path-23" fill="black"></use>
-        </mask>
-        <ellipse id="path-25" cx="561.538462" cy="57.6923077" rx="3.84615385" ry="3.84615385"></ellipse>
-        <mask id="mask-26" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="11.6923077" height="11.6923077">
-            <rect x="555.692308" y="51.8461538" width="11.6923077" height="11.6923077" fill="white"></rect>
-            <use xlink:href="#path-25" fill="black"></use>
-        </mask>
-        <ellipse id="path-27" cx="611.538462" cy="35.8974359" rx="3.84615385" ry="3.84615385"></ellipse>
-        <mask id="mask-28" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="11.6923077" height="11.6923077">
-            <rect x="605.692308" y="30.0512821" width="11.6923077" height="11.6923077" fill="white"></rect>
-            <use xlink:href="#path-27" fill="black"></use>
-        </mask>
-        <ellipse id="path-29" cx="657.692308" cy="88.4615385" rx="3.84615385" ry="3.84615385"></ellipse>
-        <mask id="mask-30" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="11.6923077" height="11.6923077">
-            <rect x="651.846154" y="82.6153846" width="11.6923077" height="11.6923077" fill="white"></rect>
-            <use xlink:href="#path-29" fill="black"></use>
-        </mask>
-        <ellipse id="path-31" cx="703.846154" cy="98.7179487" rx="3.84615385" ry="3.84615385"></ellipse>
-        <mask id="mask-32" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="11.6923077" height="11.6923077">
-            <rect x="698" y="92.8717949" width="11.6923077" height="11.6923077" fill="white"></rect>
-            <use xlink:href="#path-31" fill="black"></use>
-        </mask>
-        <ellipse id="path-33" cx="752.564103" cy="69.2307692" rx="3.84615385" ry="3.84615385"></ellipse>
-        <mask id="mask-34" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="11.6923077" height="11.6923077">
-            <rect x="746.717949" y="63.3846154" width="11.6923077" height="11.6923077" fill="white"></rect>
-            <use xlink:href="#path-33" fill="black"></use>
-        </mask>
-        <ellipse id="path-35" cx="796.153846" cy="79.4871795" rx="3.84615385" ry="3.84615385"></ellipse>
-        <mask id="mask-36" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="11.6923077" height="11.6923077">
-            <rect x="790.307692" y="73.6410256" width="11.6923077" height="11.6923077" fill="white"></rect>
-            <use xlink:href="#path-35" fill="black"></use>
-        </mask>
-        <ellipse id="path-37" cx="844.871795" cy="37.1794872" rx="3.84615385" ry="3.84615385"></ellipse>
-        <mask id="mask-38" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="11.6923077" height="11.6923077">
-            <rect x="839.025641" y="31.3333333" width="11.6923077" height="11.6923077" fill="white"></rect>
-            <use xlink:href="#path-37" fill="black"></use>
-        </mask>
-        <ellipse id="path-39" cx="889.74359" cy="23.0769231" rx="3.84615385" ry="3.84615385"></ellipse>
-        <mask id="mask-40" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="11.6923077" height="11.6923077">
-            <rect x="883.897436" y="17.2307692" width="11.6923077" height="11.6923077" fill="white"></rect>
-            <use xlink:href="#path-39" fill="black"></use>
-        </mask>
-        <ellipse id="path-41" cx="935.897436" cy="33.3333333" rx="3.84615385" ry="3.84615385"></ellipse>
-        <mask id="mask-42" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="11.6923077" height="11.6923077">
-            <rect x="930.051282" y="27.4871795" width="11.6923077" height="11.6923077" fill="white"></rect>
-            <use xlink:href="#path-41" fill="black"></use>
-        </mask>
-        <ellipse id="path-43" cx="980.769231" cy="26.9230769" rx="3.84615385" ry="3.84615385"></ellipse>
-        <mask id="mask-44" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="11.6923077" height="11.6923077">
-            <rect x="974.923077" y="21.0769231" width="11.6923077" height="11.6923077" fill="white"></rect>
-            <use xlink:href="#path-43" fill="black"></use>
-        </mask>
-        <ellipse id="path-45" cx="1030.76923" cy="48.7179487" rx="3.84615385" ry="3.84615385"></ellipse>
-        <mask id="mask-46" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="11.6923077" height="11.6923077">
-            <rect x="1024.92308" y="42.8717949" width="11.6923077" height="11.6923077" fill="white"></rect>
-            <use xlink:href="#path-45" fill="black"></use>
-        </mask>
-        <ellipse id="path-47" cx="1076.92308" cy="100" rx="3.84615385" ry="3.84615385"></ellipse>
-        <mask id="mask-48" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="11.6923077" height="11.6923077">
-            <rect x="1071.07692" y="94.1538462" width="11.6923077" height="11.6923077" fill="white"></rect>
-            <use xlink:href="#path-47" fill="black"></use>
-        </mask>
-        <ellipse id="path-49" cx="1123.07692" cy="129.487179" rx="3.84615385" ry="3.84615385"></ellipse>
-        <mask id="mask-50" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="11.6923077" height="11.6923077">
-            <rect x="1117.23077" y="123.641026" width="11.6923077" height="11.6923077" fill="white"></rect>
-            <use xlink:href="#path-49" fill="black"></use>
-        </mask>
-        <ellipse id="path-51" cx="1170.51282" cy="32.0512821" rx="3.84615385" ry="3.84615385"></ellipse>
-        <mask id="mask-52" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="11.6923077" height="11.6923077">
-            <rect x="1164.66667" y="26.2051282" width="11.6923077" height="11.6923077" fill="white"></rect>
-            <use xlink:href="#path-51" fill="black"></use>
-        </mask>
-        <ellipse id="path-53" cx="1214.10256" cy="75.6410256" rx="3.84615385" ry="3.84615385"></ellipse>
-        <mask id="mask-54" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="11.6923077" height="11.6923077">
-            <rect x="1208.25641" y="69.7948718" width="11.6923077" height="11.6923077" fill="white"></rect>
-            <use xlink:href="#path-53" fill="black"></use>
-        </mask>
-        <ellipse id="path-55" cx="1260.25641" cy="52.5641026" rx="3.84615385" ry="3.84615385"></ellipse>
-        <mask id="mask-56" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="11.6923077" height="11.6923077">
-            <rect x="1254.41026" y="46.7179487" width="11.6923077" height="11.6923077" fill="white"></rect>
-            <use xlink:href="#path-55" fill="black"></use>
-        </mask>
-        <ellipse id="path-57" cx="1306.41026" cy="93.5897436" rx="3.84615385" ry="3.84615385"></ellipse>
-        <mask id="mask-58" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="11.6923077" height="11.6923077">
-            <rect x="1300.5641" y="87.7435897" width="11.6923077" height="11.6923077" fill="white"></rect>
-            <use xlink:href="#path-57" fill="black"></use>
-        </mask>
-        <ellipse id="path-59" cx="1348.71795" cy="106.410256" rx="3.84615385" ry="3.84615385"></ellipse>
-        <mask id="mask-60" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="11.6923077" height="11.6923077">
-            <rect x="1342.87179" y="100.564103" width="11.6923077" height="11.6923077" fill="white"></rect>
-            <use xlink:href="#path-59" fill="black"></use>
-        </mask>
-        <ellipse id="path-61" cx="1396.15385" cy="79.4871795" rx="3.84615385" ry="3.84615385"></ellipse>
-        <mask id="mask-62" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="11.6923077" height="11.6923077">
-            <rect x="1390.30769" y="73.6410256" width="11.6923077" height="11.6923077" fill="white"></rect>
-            <use xlink:href="#path-61" fill="black"></use>
-        </mask>
-    </defs>
+    <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="services-innovation-consulting">
-            <g id="Graph" transform="translate(20.000000, 404.000000)">
+            <g id="Graph" transform="translate(18.000000, 400.000000)">
                 <path id="Path-345" stroke="#979797"></path>
-                <polyline id="Path-346" stroke="#46DB77" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="4.48717949 158.333333 52.5641026 107.692308 98.7179487 158.974359 145.512821 143.589744 191.025641 112.179487 241.666667 3.84615385 282.051282 42.3076923 325.641026 57.0512821 374.358974 51.2820513 421.794872 71.1538462 467.948718 96.1538462 518.589744 79.4871795 562.179487 57.0512821 612.054287 34.775641 658.458534 90.5448718 703.866186 100.570913 751.071715 66.9671474 796.92508 79.1165865 844.345954 36.1628606 890.589944 21.8449519 935.001002 34.2598157 982.527043 25.7311699 1029.55729 47.671274 1077.08333 101.216947 1123.77304 131.575521 1169.25581 30.9645433 1214.38301 77.0482772 1260.34155 51.3521635 1307.08634 95.7481971 1348.91326 107.607171 1395.03706 80.9695513"></polyline>
-                <g id="Points">
-                    <g id="Oval-19">
-                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
-                        <use stroke="#46DB77" mask="url(#mask-2)" stroke-width="4" xlink:href="#path-1"></use>
-                    </g>
-                    <g id="Oval-19">
-                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
-                        <use stroke="#46DB77" mask="url(#mask-4)" stroke-width="4" xlink:href="#path-3"></use>
-                    </g>
-                    <g id="Oval-19">
-                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-5"></use>
-                        <use stroke="#46DB77" mask="url(#mask-6)" stroke-width="4" xlink:href="#path-5"></use>
-                    </g>
-                    <g id="Oval-19">
-                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-7"></use>
-                        <use stroke="#46DB77" mask="url(#mask-8)" stroke-width="4" xlink:href="#path-7"></use>
-                    </g>
-                    <g id="Oval-19">
-                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-9"></use>
-                        <use stroke="#46DB77" mask="url(#mask-10)" stroke-width="4" xlink:href="#path-9"></use>
-                    </g>
-                    <g id="Oval-19">
-                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-11"></use>
-                        <use stroke="#46DB77" mask="url(#mask-12)" stroke-width="4" xlink:href="#path-11"></use>
-                    </g>
-                    <g id="Oval-19">
-                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-13"></use>
-                        <use stroke="#46DB77" mask="url(#mask-14)" stroke-width="4" xlink:href="#path-13"></use>
-                    </g>
-                    <g id="Oval-19">
-                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-15"></use>
-                        <use stroke="#46DB77" mask="url(#mask-16)" stroke-width="4" xlink:href="#path-15"></use>
-                    </g>
-                    <g id="Oval-19">
-                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-17"></use>
-                        <use stroke="#46DB77" mask="url(#mask-18)" stroke-width="4" xlink:href="#path-17"></use>
-                    </g>
-                    <g id="Oval-19">
-                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-19"></use>
-                        <use stroke="#46DB77" mask="url(#mask-20)" stroke-width="4" xlink:href="#path-19"></use>
-                    </g>
-                    <g id="Oval-19">
-                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-21"></use>
-                        <use stroke="#46DB77" mask="url(#mask-22)" stroke-width="4" xlink:href="#path-21"></use>
-                    </g>
-                    <g id="Oval-19">
-                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-23"></use>
-                        <use stroke="#46DB77" mask="url(#mask-24)" stroke-width="4" xlink:href="#path-23"></use>
-                    </g>
-                    <g id="Oval-19">
-                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-25"></use>
-                        <use stroke="#46DB77" mask="url(#mask-26)" stroke-width="4" xlink:href="#path-25"></use>
-                    </g>
-                    <g id="Oval-19">
-                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-27"></use>
-                        <use stroke="#46DB77" mask="url(#mask-28)" stroke-width="4" xlink:href="#path-27"></use>
-                    </g>
-                    <g id="Oval-19">
-                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-29"></use>
-                        <use stroke="#46DB77" mask="url(#mask-30)" stroke-width="4" xlink:href="#path-29"></use>
-                    </g>
-                    <g id="Oval-19">
-                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-31"></use>
-                        <use stroke="#46DB77" mask="url(#mask-32)" stroke-width="4" xlink:href="#path-31"></use>
-                    </g>
-                    <g id="Oval-19">
-                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-33"></use>
-                        <use stroke="#46DB77" mask="url(#mask-34)" stroke-width="4" xlink:href="#path-33"></use>
-                    </g>
-                    <g id="Oval-19">
-                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-35"></use>
-                        <use stroke="#46DB77" mask="url(#mask-36)" stroke-width="4" xlink:href="#path-35"></use>
-                    </g>
-                    <g id="Oval-19">
-                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-37"></use>
-                        <use stroke="#46DB77" mask="url(#mask-38)" stroke-width="4" xlink:href="#path-37"></use>
-                    </g>
-                    <g id="Oval-19">
-                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-39"></use>
-                        <use stroke="#46DB77" mask="url(#mask-40)" stroke-width="4" xlink:href="#path-39"></use>
-                    </g>
-                    <g id="Oval-19">
-                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-41"></use>
-                        <use stroke="#46DB77" mask="url(#mask-42)" stroke-width="4" xlink:href="#path-41"></use>
-                    </g>
-                    <g id="Oval-19">
-                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-43"></use>
-                        <use stroke="#46DB77" mask="url(#mask-44)" stroke-width="4" xlink:href="#path-43"></use>
-                    </g>
-                    <g id="Oval-19">
-                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-45"></use>
-                        <use stroke="#46DB77" mask="url(#mask-46)" stroke-width="4" xlink:href="#path-45"></use>
-                    </g>
-                    <g id="Oval-19">
-                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-47"></use>
-                        <use stroke="#46DB77" mask="url(#mask-48)" stroke-width="4" xlink:href="#path-47"></use>
-                    </g>
-                    <g id="Oval-19">
-                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-49"></use>
-                        <use stroke="#46DB77" mask="url(#mask-50)" stroke-width="4" xlink:href="#path-49"></use>
-                    </g>
-                    <g id="Oval-19">
-                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-51"></use>
-                        <use stroke="#46DB77" mask="url(#mask-52)" stroke-width="4" xlink:href="#path-51"></use>
-                    </g>
-                    <g id="Oval-19">
-                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-53"></use>
-                        <use stroke="#46DB77" mask="url(#mask-54)" stroke-width="4" xlink:href="#path-53"></use>
-                    </g>
-                    <g id="Oval-19">
-                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-55"></use>
-                        <use stroke="#46DB77" mask="url(#mask-56)" stroke-width="4" xlink:href="#path-55"></use>
-                    </g>
-                    <g id="Oval-19">
-                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-57"></use>
-                        <use stroke="#46DB77" mask="url(#mask-58)" stroke-width="4" xlink:href="#path-57"></use>
-                    </g>
-                    <g id="Oval-19">
-                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-59"></use>
-                        <use stroke="#46DB77" mask="url(#mask-60)" stroke-width="4" xlink:href="#path-59"></use>
-                    </g>
-                    <g id="Oval-19">
-                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-61"></use>
-                        <use stroke="#46DB77" mask="url(#mask-62)" stroke-width="4" xlink:href="#path-61"></use>
-                    </g>
+                <polyline id="Path-346" stroke="#4D8FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.5" points="6.48717949 162.333333 54.5641026 111.692308 100.717949 162.974359 147.512821 147.589744 193.025641 116.179487 243.666667 7.84615385 284.051282 46.3076923 327.641026 61.0512821 376.358974 55.2820513 423.794872 75.1538462 469.948718 100.153846 520.589744 83.4871795 564.179487 61.0512821 614.054287 38.775641 660.458534 94.5448718 705.866186 104.570913 753.071715 70.9671474 798.92508 83.1165865 846.345954 40.1628606 892.589944 25.8449519 937.001002 38.2598157 984.527043 29.7311699 1031.55729 51.671274 1079.08333 105.216947 1125.77304 135.575521 1171.25581 34.9645433 1216.38301 81.0482772 1262.34155 55.3521635 1309.08634 99.7481971 1350.91326 111.607171 1397.03706 84.9695513"></polyline>
+                <g id="Points" stroke="#FFFFFF" stroke-width="3" fill="#4D8FFF">
+                    <ellipse id="Oval-19" cx="7" cy="162.128205" rx="7" ry="7"></ellipse>
+                    <ellipse id="Oval-19" cx="55.7179487" cy="112.128205" rx="7" ry="7"></ellipse>
+                    <circle id="Oval-19" cx="101.871795" cy="160.846154" r="7"></circle>
+                    <ellipse id="Oval-19" cx="148.025641" cy="146.74359" rx="7" ry="7"></ellipse>
+                    <ellipse id="Oval-19" cx="194.179487" cy="115.974359" rx="7" ry="7"></ellipse>
+                    <ellipse id="Oval-19" cx="244.179487" cy="7" rx="7" ry="7"></ellipse>
+                    <ellipse id="Oval-19" cx="286.487179" cy="45.4615385" rx="7" ry="7"></ellipse>
+                    <circle id="Oval-19" cx="330.076923" cy="59.5641026" r="7"></circle>
+                    <ellipse id="Oval-19" cx="377.512821" cy="54.4358974" rx="7" ry="7"></ellipse>
+                    <ellipse id="Oval-19" cx="424.948718" cy="73.6666667" rx="7" ry="7"></ellipse>
+                    <ellipse id="Oval-19" cx="472.384615" cy="99.3076923" rx="7" ry="7"></ellipse>
+                    <ellipse id="Oval-19" cx="522.384615" cy="82.6410256" rx="7" ry="7"></ellipse>
+                    <ellipse id="Oval-19" cx="564.692308" cy="60.8461538" rx="7" ry="7"></ellipse>
+                    <ellipse id="Oval-19" cx="614.692308" cy="39.0512821" rx="7" ry="7"></ellipse>
+                    <ellipse id="Oval-19" cx="660.846154" cy="91.6153846" rx="7" ry="7"></ellipse>
+                    <ellipse id="Oval-19" cx="707" cy="101.871795" rx="7" ry="7"></ellipse>
+                    <ellipse id="Oval-19" cx="755.717949" cy="72.3846154" rx="7" ry="7"></ellipse>
+                    <ellipse id="Oval-19" cx="799.307692" cy="82.6410256" rx="7" ry="7"></ellipse>
+                    <ellipse id="Oval-19" cx="848.025641" cy="40.3333333" rx="7" ry="7"></ellipse>
+                    <ellipse id="Oval-19" cx="892.897436" cy="26.2307692" rx="7" ry="7"></ellipse>
+                    <ellipse id="Oval-19" cx="939.051282" cy="36.4871795" rx="7" ry="7"></ellipse>
+                    <ellipse id="Oval-19" cx="983.923077" cy="30.0769231" rx="7" ry="7"></ellipse>
+                    <ellipse id="Oval-19" cx="1033.92308" cy="51.8717949" rx="7" ry="7"></ellipse>
+                    <ellipse id="Oval-19" cx="1080.07692" cy="103.153846" rx="7" ry="7"></ellipse>
+                    <ellipse id="Oval-19" cx="1126.23077" cy="132.641026" rx="7" ry="7"></ellipse>
+                    <ellipse id="Oval-19" cx="1173.66667" cy="35.2051282" rx="7" ry="7"></ellipse>
+                    <ellipse id="Oval-19" cx="1217.25641" cy="78.7948718" rx="7" ry="7"></ellipse>
+                    <ellipse id="Oval-19" cx="1263.41026" cy="55.7179487" rx="7" ry="7"></ellipse>
+                    <ellipse id="Oval-19" cx="1309.5641" cy="96.7435897" rx="7" ry="7"></ellipse>
+                    <ellipse id="Oval-19" cx="1351.87179" cy="109.564103" rx="7" ry="7"></ellipse>
+                    <ellipse id="Oval-19" cx="1399.30769" cy="82.6410256" rx="7" ry="7"></ellipse>
                 </g>
             </g>
-            <g id="Design-Sprint" transform="translate(1062.000000, 11.000000)">
-                <path d="M53,152 C53,212.751322 102.248678,262 163,262 L163,262" id="Circle" stroke="#46DB77" stroke-width="3"></path>
-                <path d="M163,262 C223.751322,262 273,212.751322 273,152 C273,91.2486775 223.751322,42 163,42 C102.248678,42 53,91.2486775 53,152" id="Circle" stroke="#F4F4F4" stroke-width="3"></path>
-                <path d="M75.2109375,149.347656 C75.2109375,149.347656 165.46875,142.765625 169.65625,240.109375" id="Path-2" stroke="#46DB77" stroke-width="3"></path>
-                <g id="Step-1" transform="translate(40.000000, 140.000000)">
-                    <circle id="Oval-2" fill="#2A2A2A" cx="13" cy="13" r="13"></circle>
+            <g id="Design-Sprint" transform="translate(1085.000000, 50.000000)">
+                <path d="M143,222 C192.705627,222 233,181.705627 233,132 C233,82.2943725 192.705627,42 143,42 C93.2943725,42 53,82.2943725 53,132" id="Oval" stroke="#EBEBEB" stroke-width="3"></path>
+                <path d="M53,132 C53,181.705627 93.2943725,222 143,222 L143,222" id="Oval" stroke="#4D8FFF" stroke-width="3"></path>
+                <path d="M71.6210938,128.042969 C71.6210938,128.042969 134.019531,122.128906 145.707031,202.773437" id="Path-2" stroke="#4D8FFF" stroke-width="3"></path>
+                <g id="Step-1" transform="translate(40.000000, 119.000000)">
+                    <circle id="Oval-2" fill="#4D8FFF" cx="13" cy="13" r="13"></circle>
                     <text id="1" font-family="GTWalsheimProTrial-Light, GT Walsheim Pro Trial" font-size="12" font-weight="300" fill="#FFFFFF">
                         <tspan x="11" y="18">1</tspan>
                     </text>
                 </g>
-                <g id="Step-2" transform="translate(150.000000, 29.000000)">
-                    <circle id="Oval-2-Copy-3" fill="#2A2A2A" cx="13" cy="13" r="13"></circle>
+                <g id="Step-2" transform="translate(130.000000, 29.000000)">
+                    <circle id="Oval-2-Copy-3" fill="#4D8FFF" cx="13" cy="13" r="13"></circle>
                     <text id="2" font-family="GTWalsheimProTrial-Light, GT Walsheim Pro Trial" font-size="12" font-weight="300" fill="#FFFFFF">
                         <tspan x="10" y="18">2</tspan>
                     </text>
                 </g>
-                <g id="Step-3" transform="translate(260.000000, 139.000000)">
-                    <circle id="Oval-2-Copy" fill="#2A2A2A" cx="13" cy="13" r="13"></circle>
+                <g id="Step-3" transform="translate(220.000000, 119.000000)">
+                    <circle id="Oval-2-Copy" fill="#4D8FFF" cx="13" cy="13" r="13"></circle>
                     <text id="3" font-family="GTWalsheimProTrial-Light, GT Walsheim Pro Trial" font-size="12" font-weight="300" fill="#FFFFFF">
                         <tspan x="10" y="18">3</tspan>
                     </text>
                 </g>
-                <g id="Step-4" transform="translate(150.000000, 249.000000)">
-                    <circle id="Oval-2-Copy-2" fill="#2A2A2A" cx="13" cy="13" r="13"></circle>
+                <g id="Step-4" transform="translate(130.000000, 209.000000)">
+                    <circle id="Oval-2-Copy-2" fill="#4D8FFF" cx="13" cy="13" r="13"></circle>
                     <text id="4" font-family="GTWalsheimProTrial-Light, GT Walsheim Pro Trial" font-size="12" font-weight="300" fill="#FFFFFF">
                         <tspan x="10" y="18">4</tspan>
                     </text>
                 </g>
                 <text id="Learn" font-family="GTWalsheim-Light, GT Walsheim" font-size="15" font-weight="300" fill="#2A2A2A">
-                    <tspan x="146" y="300">Learn</tspan>
+                    <tspan x="126" y="260">Learn</tspan>
                 </text>
                 <text id="Build" font-family="GTWalsheim-Light, GT Walsheim" font-size="15" font-weight="300" fill="#2A2A2A">
-                    <tspan x="148" y="15">Build</tspan>
+                    <tspan x="126" y="15">Build</tspan>
                 </text>
                 <text id="Launch" font-family="GTWalsheim-Light, GT Walsheim" font-size="15" font-weight="300" fill="#2A2A2A">
-                    <tspan x="296" y="156">Launch</tspan>
+                    <tspan x="256" y="135">Launch</tspan>
                 </text>
                 <text id="Idea" font-family="GTWalsheim-Light, GT Walsheim" font-size="15" font-weight="300" fill="#2A2A2A">
-                    <tspan x="0" y="156">Idea</tspan>
+                    <tspan x="0" y="135">Idea</tspan>
                 </text>
             </g>
         </g>
