@@ -11,7 +11,7 @@
             <div class="overlay-content">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-12 main-heading centered">
+                        <div class="col-sm-12 main-heading">
                             <h1>Solutions by design.</h1>
                             <h4>We translate complex ideas into simple and elegant products</h4>
                             <button class="button button-red-filled">Read More</button>
@@ -39,7 +39,7 @@
                     </div>
                 </div>
                 <div class="col-md-5">
-                    <a href="https://github.com/multunus/onemdm-server">
+                    <a href="https://github.com/multunus/onemdm-server" target="_blank">
                         <div class="repo-card">
                             <div class="repo-info">
                                 <h5 class="repo-title">One MDM Server</h5>
@@ -57,7 +57,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="https://github.com/multunus/dashboard-clj">
+                    <a href="https://github.com/multunus/dashboard-clj" target="_blank">
                         <div class="repo-card">
                             <div class="repo-info">
                                 <h5 class="repo-title">CLJ Dashboard</h5>

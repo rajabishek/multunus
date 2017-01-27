@@ -8,14 +8,12 @@
 }
 
 .mobile-development {
-  background-color: #F6F9FC;
-  .clickable-card {
-    background-color: white;
-    h3 {
-      color: #32325D;
-    }
-    p {
-      color: #6B7C93;
-    }
-  }
+  background-color: #F4F4F4;
+}
+
+.innovation-consulting {
+  background-image: url(/img/services-innovation-consulting.svg);
+  background-position: center bottom;
+  background-repeat: no-repeat, repeat;
+  background-size: contain, auto;
 }
