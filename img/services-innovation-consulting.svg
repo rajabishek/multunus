@@ -292,45 +292,45 @@
                     </g>
                 </g>
             </g>
-            <g id="Design-Sprint" transform="translate(1052.000000, 10.000000)">
-                <path d="M63,153 C63,213.751322 112.248678,263 173,263 L173,263" id="Circle" stroke="#46DB77" stroke-width="2"></path>
-                <path d="M173,263 C233.751322,263 283,213.751322 283,153 C283,92.2486775 233.751322,43 173,43 C112.248678,43 63,92.2486775 63,153" id="Circle" stroke="#F4F4F4" stroke-width="2"></path>
-                <path d="M85.2109375,150.347656 C85.2109375,150.347656 175.46875,143.765625 179.65625,241.109375" id="Path-2" stroke="#46DB77" stroke-width="2"></path>
-                <g id="Step-1" transform="translate(50.000000, 141.000000)">
+            <g id="Design-Sprint" transform="translate(1062.000000, 11.000000)">
+                <path d="M53,152 C53,212.751322 102.248678,262 163,262 L163,262" id="Circle" stroke="#46DB77" stroke-width="3"></path>
+                <path d="M163,262 C223.751322,262 273,212.751322 273,152 C273,91.2486775 223.751322,42 163,42 C102.248678,42 53,91.2486775 53,152" id="Circle" stroke="#F4F4F4" stroke-width="3"></path>
+                <path d="M75.2109375,149.347656 C75.2109375,149.347656 165.46875,142.765625 169.65625,240.109375" id="Path-2" stroke="#46DB77" stroke-width="3"></path>
+                <g id="Step-1" transform="translate(40.000000, 140.000000)">
                     <circle id="Oval-2" fill="#2A2A2A" cx="13" cy="13" r="13"></circle>
                     <text id="1" font-family="GTWalsheimProTrial-Light, GT Walsheim Pro Trial" font-size="12" font-weight="300" fill="#FFFFFF">
                         <tspan x="11" y="18">1</tspan>
                     </text>
                 </g>
-                <g id="Step-2" transform="translate(160.000000, 30.000000)">
+                <g id="Step-2" transform="translate(150.000000, 29.000000)">
                     <circle id="Oval-2-Copy-3" fill="#2A2A2A" cx="13" cy="13" r="13"></circle>
                     <text id="2" font-family="GTWalsheimProTrial-Light, GT Walsheim Pro Trial" font-size="12" font-weight="300" fill="#FFFFFF">
                         <tspan x="10" y="18">2</tspan>
                     </text>
                 </g>
-                <g id="Step-3" transform="translate(270.000000, 140.000000)">
+                <g id="Step-3" transform="translate(260.000000, 139.000000)">
                     <circle id="Oval-2-Copy" fill="#2A2A2A" cx="13" cy="13" r="13"></circle>
                     <text id="3" font-family="GTWalsheimProTrial-Light, GT Walsheim Pro Trial" font-size="12" font-weight="300" fill="#FFFFFF">
                         <tspan x="10" y="18">3</tspan>
                     </text>
                 </g>
-                <g id="Step-4" transform="translate(160.000000, 250.000000)">
+                <g id="Step-4" transform="translate(150.000000, 249.000000)">
                     <circle id="Oval-2-Copy-2" fill="#2A2A2A" cx="13" cy="13" r="13"></circle>
                     <text id="4" font-family="GTWalsheimProTrial-Light, GT Walsheim Pro Trial" font-size="12" font-weight="300" fill="#FFFFFF">
                         <tspan x="10" y="18">4</tspan>
                     </text>
                 </g>
-                <text id="Learn" font-family="GTWalsheim-Light, GT Walsheim" font-size="16" font-weight="300" fill="#2A2A2A">
-                    <tspan x="157" y="302">Learn</tspan>
+                <text id="Learn" font-family="GTWalsheim-Light, GT Walsheim" font-size="15" font-weight="300" fill="#2A2A2A">
+                    <tspan x="146" y="300">Learn</tspan>
                 </text>
-                <text id="Build" font-family="GTWalsheim-Light, GT Walsheim" font-size="16" font-weight="300" fill="#2A2A2A">
-                    <tspan x="157" y="16">Build</tspan>
+                <text id="Build" font-family="GTWalsheim-Light, GT Walsheim" font-size="15" font-weight="300" fill="#2A2A2A">
+                    <tspan x="148" y="15">Build</tspan>
                 </text>
-                <text id="Launch" font-family="GTWalsheim-Light, GT Walsheim" font-size="16" font-weight="300" fill="#2A2A2A">
-                    <tspan x="306" y="156">Launch</tspan>
+                <text id="Launch" font-family="GTWalsheim-Light, GT Walsheim" font-size="15" font-weight="300" fill="#2A2A2A">
+                    <tspan x="296" y="156">Launch</tspan>
                 </text>
-                <text id="Idea" font-family="GTWalsheim-Light, GT Walsheim" font-size="16" font-weight="300" fill="#2A2A2A">
-                    <tspan x="0" y="158">Idea</tspan>
+                <text id="Idea" font-family="GTWalsheim-Light, GT Walsheim" font-size="15" font-weight="300" fill="#2A2A2A">
+                    <tspan x="0" y="156">Idea</tspan>
                 </text>
             </g>
         </g>
