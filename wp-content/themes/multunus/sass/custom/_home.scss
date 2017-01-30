@@ -516,11 +516,19 @@
     margin-top: 50px;
   }
   h4 {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
   .meta p {
     text-align: justify;
     line-height: 2;
+  }
+  .image-container {
+    width: 100%;
+    min-height: 440px;
+    background-image: url('/img/craftmanship.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
   }
 }
 

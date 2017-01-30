@@ -264,18 +264,19 @@
     <div class="craftmanship wild-sand">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-offset-6 col-md-6">
+                <div class="col-md-6">
+                    <div class="image-container"></div>
+                </div>
+                <div class="col-md-6">
                     <div class="meta">
                         <h1 class="text-center">This is the title.</h1>
                         <h4 class="text-center grey">This is the subtile. A catchy one.</h4>
                         <div class="row">
-                            <div class="col-md-8 col-md-offset-2">
+                            <div class="col-sm-10 col-sm-offset-1">
                                 <div class="grey">
                                     <p>This would talk about the mission and goal of the company. Why we do what we do and what we believe in.</p>
                                     <p>This would talk about what we want our customer to feel and how we are different from any other company out there. What makes us better and why someone should choose working with us.</p>
-                                    <p>This is an extra section whether we can add any other content that promotes the brand. This can probably tell others how we have grown and what steps we have taken so far to achieve our goals.</p>
                                 </div>
-                                <p class="grey" style="text-align: right;">- Team @multunus</p>
                             </div>
                         </div>
                     </div>
