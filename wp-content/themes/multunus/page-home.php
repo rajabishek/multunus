@@ -89,12 +89,12 @@
                     <figure class="logo-container visible-xs">
                         <img src="<?php echo the_field('logo') ?>">
                     </figure>
-                    <div class="col-md-2">
+                    <div class="col-md-1">
                         <figure class="author-image-container">
                             <img class="img-circle" src="<?php the_field('customer_image') ?>">
                         </figure>
                     </div>
-                    <div class="col-md-10">
+                    <div class="col-md-11">
                         <p class="story-snippet">
                             <?php the_field('customer_quote'); ?>
                         </p>
