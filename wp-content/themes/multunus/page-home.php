@@ -23,7 +23,86 @@
         <div id="banner-img-container">
         </div>
     </div>   
-
+    <div class="services-section">
+        <div class="container">
+            <div class="row">
+                <h1>Experience and skills you need</h1>
+                <p>We've produced top quality applications with hundreds of clients for more than 12 years. From one person startups to Fortune 500 enterprises, universities, and non-profits. This is our purpose, and here's what we can do for you.</p>
+            </div>
+            <div class="services">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="clickable-card">
+                            <h2>Design</h2>
+                            <p>Business goals should motivate design. The product must constantly evolve based on analytics, user feedback, and shifting short-term objectives.</p>
+                            <p>We help enterprises & startup clients to set a strong branding and design framework early on.</p>
+                            <a href="/services" class="button button-red-border">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="clickable-card">
+                            <h2>Technology</h2>
+                            <p>With our roots in enterprise systems and agile delivery, we’ve been at the forefront of some of the industry’s biggest changes.</p>
+                            <p>We’re here to bring the technology that’s at our core, to yours.</p>
+                            <a href="/services" class="button button-red-border">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="customer-stories wild-sand">
+        <div class="container">
+            <?php
+                $portfolio_items = get_posts( array(
+                    'post_type' => 'portfolio',
+                    'meta_key'    => 'show_customer_story_in_home_page',
+                   'meta_value' => true,
+                    'posts_per_page' => -1 // Unlimited posts
+                ) );
+            ?>
+            <h1 class="text-center">Customer stories</h1>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="testimonials">
+                        <?php
+                            foreach ( $portfolio_items as $index => $post ):
+                            setup_postdata($post);
+                            $permalink = post_permalink($post->ID);
+                        ?>
+                            <div class="testimonial">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="testimonial-image" src="<?php the_field('thumbnail'); ?>">
+                                    </div>
+                                    <div class="col-md-9">
+                                        <h3><?php the_title(); ?></h3>
+                                        <p><?php the_field('story_snippet'); ?></p>
+                                    </div>
+                                </div>
+                                <div class="review-info">
+                                    <div class="row">
+                                        <div class="col-md-1">
+                                            <img class="profile-image" src="<?php the_field('customer_image') ?>">
+                                        </div>
+                                        <div class="col-md-9">
+                                            <p class="review"><?php the_field('customer_quote'); ?></p>
+                                            <p class="person-name">-- <?php the_field('customer_name'); ?>, <?php the_field('customer_organization'); ?></p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <a class="read-more button button-red-border" href="<?php echo $permalink ?>">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <?php endforeach; ?>
+                        <button class="carousel-prev-button"></button>
+                        <button class="carousel-next-button"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="community">
         <div class="container">
             <div class="row">
@@ -97,8 +176,8 @@
             </div>
         </div>
     </div>
-    <div class="craftmanship">
-        <div class="container-fluid wild-sand">
+    <div class="craftmanship wild-sand">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-6">
                     <div class="media">
@@ -123,54 +202,6 @@
             </div>
         </div>
     </div>
-    <!-- <div class="container" style="margin-top: 20px; margin-bottom: 20px;">
-        <?php
-            $portfolio_items = get_posts( array(
-                'post_type' => 'portfolio',
-                'meta_key'    => 'show_customer_story_in_home_page',
-               'meta_value' => true,
-                'posts_per_page' => -1 // Unlimited posts
-            ) );
-        ?>
-        <h1 class="text-center">Customer stories</h1>
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="testimonials">
-                    <?php
-                        foreach ( $portfolio_items as $index => $post ):
-                        setup_postdata($post);
-                        $permalink = post_permalink($post->ID);
-                    ?>
-                        <div class="testimonial">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <img class="testimonial-image" src="<?php the_field('thumbnail'); ?>">
-                                </div>
-                                <div class="col-md-9">
-                                    <h3><?php the_title(); ?></h3>
-                                    <p><?php the_field('story_snippet'); ?></p>
-                                </div>
-                            </div>
-                            <div class="review-info">
-                                <div class="row">
-                                    <div class="col-md-1">
-                                        <img class="profile-image" src="<?php the_field('customer_image') ?>">
-                                    </div>
-                                    <div class="col-md-9">
-                                        <h4 class="review"><?php the_field('customer_quote'); ?></h4>
-                                        <p class="person-name">-- <?php the_field('customer_name'); ?>, <?php the_field('customer_organization'); ?></p>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <a class="read-more button button-red-border" href="<?php echo $permalink ?>">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    <?php endforeach; ?>
-                </div>
-            </div>
-        </div>
-    </div> -->
     <!-- <div class="container big-picture">
         <h1 class="text-center">The big picture</h1>
         <div class="row">
@@ -198,9 +229,16 @@
 <script>
     $(document).ready(function() {
         $('.testimonials').slick({
-            arrows: true,
-            prevArrow: '<a class="slick-prev"></span></a>',
-            nextArrow: '<a class="slick-next"></span></a>'
+            arrows: false,
         });
     });
+    
+    $('.carousel-next-button').click(function() { 
+        $(".testimonials").slickPrev(); 
+    });
+
+    $('.carousel-prev-button').click(function() { 
+        $(".testimonials").slickPrev(); 
+    });
+
 </script>
