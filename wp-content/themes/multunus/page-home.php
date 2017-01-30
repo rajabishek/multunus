@@ -26,8 +26,10 @@
     <div class="services-section">
         <div class="container">
             <div class="row">
-                <h1>Experience and skills you need</h1>
-                <p>We've produced top quality applications with hundreds of clients for more than 12 years. From one person startups to Fortune 500 enterprises, universities, and non-profits. This is our purpose, and here's what we can do for you.</p>
+                <div class="col-sm-12">
+                    <h1>Experience and skills you need</h1>
+                    <p>We've produced top quality applications with hundreds of clients for more than 12 years. From one person startups to Fortune 500 enterprises, universities, and non-profits. This is our purpose, and here's what we can do for you.</p>
+                </div>
             </div>
             <div class="services">
                 <div class="row">

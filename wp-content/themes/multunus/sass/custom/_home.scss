@@ -486,12 +486,16 @@
 
 }
 
-.services-section .container {
-  margin-top: 50px;
-}
-
-.services-section .services {
-  margin-top: 10px;
+.services-section {
+  .container {
+    margin-top: 50px;
+  }
+  .services {
+    margin-top: 10px;
+    .clickable-card {
+      min-height: 330px;
+    }
+  }
 }
 
 .big-picture {
