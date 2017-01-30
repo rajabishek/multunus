@@ -264,12 +264,7 @@
     <div class="craftmanship wild-sand">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-6">
-                    <div class="media">
-                        <img src="/img/craftmanship.jpg" />
-                    </div>
-                </div>
-                <div class="col-sm-6">
+                <div class="col-md-offset-6 col-md-6">
                     <div class="meta">
                         <h1 class="text-center">This is the title.</h1>
                         <h4 class="text-center grey">This is the subtile. A catchy one.</h4>
@@ -303,9 +298,13 @@
         </div>
     </div> -->
     <div class="lets-talk">
-        <h2 class="text-center">Its time to craft brilliance together ? Let's chat.</h2>
-        <div class="text-center">
-            <a class="button button-white-filled" href="/contact">Get in touch with us today</a>
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-center">Its time to craft brilliance together ? Let's chat.</h2>
+                <div class="text-center">
+                    <a class="button button-white-filled" href="/contact">Get in touch with us today</a>
+                </div>
+            </div>
         </div>
     </div>
 </section>

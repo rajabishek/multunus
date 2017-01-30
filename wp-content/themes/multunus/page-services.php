@@ -57,9 +57,13 @@ if ($service_item ): ?>
         </div>
     <?php endforeach; ?>
     <div class="lets-talk">
-        <h2 class="text-center">Its time to craft brilliance together ? Let's chat.</h2>
-        <div class="text-center">
-            <a class="button button-white-filled" href="/contact">Get in touch with us today</a>
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-center">Its time to craft brilliance together ? Let's chat.</h2>
+                <div class="text-center">
+                    <a class="button button-white-filled" href="/contact">Get in touch with us today</a>
+                </div>
+            </div>
         </div>
     </div>
     <!-- <div class="web-development">
