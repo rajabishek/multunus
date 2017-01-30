@@ -21,25 +21,23 @@ if ($portfolio_item): ?>
             </div>
         </div>
         <div class="row">
-            <div class="cards">
-                <?php  foreach ($portfolio_item as $post):
-                       setup_postdata($post);
-                       $permalink = post_permalink($post->ID); ?>
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="card">
-                            <a href="href="<?php echo $permalink ?>" target="_blank">
-                                <figure class="media">
-                                    <span style="background-image: url(<?php the_field('thumbnail'); ?>);"></span>
-                                </figure>
-                                <div class="meta">
-                                    <h5>Company name</h5>
-                                    <p><?php the_title(); ?></p>
-                                </div>
-                            </a>
-                        </div>
+            <?php  foreach ($portfolio_item as $post):
+                   setup_postdata($post);
+                   $permalink = post_permalink($post->ID); ?>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="media-card">
+                        <a href="href="<?php echo $permalink ?>" target="_blank">
+                            <figure class="media">
+                                <span style="background-image: url(<?php the_field('thumbnail'); ?>);"></span>
+                            </figure>
+                            <div class="meta">
+                                <h5>Company name</h5>
+                                <p><?php the_title(); ?></p>
+                            </div>
+                        </a>
                     </div>
-                <?php endforeach; ?>
-            </div>
+                </div>
+            <?php endforeach; ?>
         </div>
     </div>
     <div class="lets-talk">

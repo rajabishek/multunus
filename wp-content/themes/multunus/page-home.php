@@ -13,7 +13,7 @@
                     <div class="row">
                         <div class="col-sm-12 main-heading">
                             <h1>Solutions by design.</h1>
-                            <p>We translate complex ideas into simple and elegant products</p>
+                            <h5>We translate complex ideas into simple and elegant products</h5>
                             <button class="button button-red-filled">Read More</button>
                         </div>
                     </div>
@@ -110,89 +110,153 @@
             <div class="row">
                 <h1 class="text-center">We <img src="/img/home-heart.svg" class="heart"> our community</h1>
             </div>
-            <div class="row">
-                <div class="col-md-7">
-                    <div class="clickable-card">
+            <section class="open-source-section">
+                <div class="row">
+                    <div class="col-md-12">
                         <h2>Open Source</h2>
                         <p>We highly believe in open source technologies. We get benefited from open-source code every single day.</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus dicta, soluta animi molestiae minus soluta temporibus unde porro nobis accusamus.</p>
-                        <a class="button button-red-border">Learn More</a>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a href="https://github.com/multunus/dashboard-clj" target="_blank">
+                                    <div class="repo-card">
+                                        <div class="repo-info">
+                                            <h5 class="repo-title">CLJ Dashboard</h5>
+                                            <p class="repo-description">A Clojure mini-framework for building realtime dashboards</p>
+                                        </div>
+                                        <div class="repo-stats">
+                                            <div class="repo-stats-group">
+                                                <h5 class="repo-stats-title">Stars</h5>
+                                                <h6 class="repo-stat">77</h6>
+                                            </div>
+                                            <div class="repo-stats-group">
+                                                <h5 class="repo-stats-title">Forks</h5>
+                                                <h6 class="repo-stat">3</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="https://github.com/multunus/onemdm-server" target="_blank">
+                                    <div class="repo-card">
+                                        <div class="repo-info">
+                                            <h5 class="repo-title">One MDM Server</h5>
+                                            <p class="repo-description">Open Source Mobile Device Management (MDM) solution</p>
+                                        </div>
+                                        <div class="repo-stats">
+                                            <div class="repo-stats-group">
+                                                <h5 class="repo-stats-title">Stars</h5>
+                                                <h6 class="repo-stat">31</h6>
+                                            </div>
+                                            <div class="repo-stats-group">
+                                                <h5 class="repo-stats-title">Forks</h5>
+                                                <h6 class="repo-stat">12</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <a href="/community/open-source/" class="button button-red-border">See more projects</a>
                     </div>
                 </div>
-                <div class="col-md-5">
-                    <a href="https://github.com/multunus/onemdm-server" target="_blank">
-                        <div class="repo-card">
-                            <div class="repo-info">
-                                <h5 class="repo-title">One MDM Server</h5>
-                                <p class="repo-description">Open Source Mobile Device Management (MDM) solution</p>
-                            </div>
-                            <div class="repo-stats">
-                                <div class="repo-stats-group">
-                                    <h5 class="repo-stats-title">Stars</h5>
-                                    <h6 class="repo-stat">31</h6>
-                                </div>
-                                <div class="repo-stats-group">
-                                    <h5 class="repo-stats-title">Forks</h5>
-                                    <h6 class="repo-stat">12</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://github.com/multunus/dashboard-clj" target="_blank">
-                        <div class="repo-card">
-                            <div class="repo-info">
-                                <h5 class="repo-title">CLJ Dashboard</h5>
-                                <p class="repo-description">A Clojure mini-framework for building realtime dashboards</p>
-                            </div>
-                            <div class="repo-stats">
-                                <div class="repo-stats-group">
-                                    <h5 class="repo-stats-title">Stars</h5>
-                                    <h6 class="repo-stat">77</h6>
-                                </div>
-                                <div class="repo-stats-group">
-                                    <h5 class="repo-stats-title">Forks</h5>
-                                    <h6 class="repo-stat">3</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="clickable-card">
+            </section>
+            <section class="blog-section">
+                <div class="row">
+                    <div class="col-md-12">
                         <h2>Blog</h2>
-                        <p>We write a lot about design & technology. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, cumque laboriosam perspiciati.</p>
-                        <p>Our perceptions have evolved constantly. Here are some of our views and experiences.</p>
-                        <a class="button button-red-border">Learn More</a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus fugit alias molestiae labore odio vel quos sequi, cum esse saepe autem voluptate aperiam error quo adipisci nihil in. Quibusdam, dolores.</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                 <ul class="resource-links">
+                                    <li class="resource-link">
+                                        <a href="/blog/2016/12/abstractions-ruby-clojure/" target="_blank">
+                                            <h4>Abstractions in ruby & clojure</h4>
+                                            <p>One of the primary reasons I find it much easier to write Clojure is just the fact that you get to...</p>
+                                        </a>
+                                    </li>
+                                    <li class="resource-link">
+                                        <a href="/blog/2017/01/refactoring-rails-view-objects/" target="_blank">
+                                            <h4>Refactoring: Rails Presenter pattern</h4>
+                                            <p>One of the primary reasons I find it much easier to write Clojure is just the fact that you get to...</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="resource-links">
+                                    <li class="resource-link">
+                                        <a href="/blog/2017/01/parallel-tests-rails/" target="_blank">
+                                            <h4>Parallel Test Execution in Rails</h4>
+                                            <p>One of the primary reasons I find it much easier to write Clojure is just the fact that you get to...</p>
+                                        </a>
+                                    </li>
+                                    <li class="resource-link">
+                                        <a href="/blog/2016/12/continuous-delivery-us/" target="_blank">
+                                            <h4>Continuous Delivery – Is it for everyone?</h4>
+                                            <p>One of the primary reasons I find it much easier to write Clojure is just the fact that you get to...</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="/blog" class="button button-red-border">Read more articles</a>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <h2>Must Reads</h2>
-                    <ul class="resource-links">
-                        <li class="resource-link"><a href="/blog/2016/12/abstractions-ruby-clojure/" target="_blank"><h5>Abstractions in ruby & clojure</h5></a></li>
-                        <li class="resource-link"><a href="/blog/2017/01/refactoring-rails-view-objects/" target="_blank"><h5>Refactoring: Rails Presenter pattern</h5></a></li>
-                        <li class="resource-link"><a href="/blog/2017/01/parallel-tests-rails/" target="_blank"><h5>Parallel Test Execution in Rails</h5></a></li>
-                        <li class="resource-link"><a href="/blog/2016/12/continuous-delivery-us/" target="_blank"><h5>Continuous Delivery – Is it for everyone?</h5></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="clickable-card">
+            </section>
+            <section class="talks-section">
+                <div class="row">
+                    <div class="col-md-12">
                         <h2>Talks</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste atque ipsam nisi, consequatur velit commodi eius delectus iusto beatae doloremque quam itaque aperiam dolore suscipit temporibus unde porro nobis accusamus.</p>
+                        <div class="talks">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <div class="media-card">
+                                        <a href="href="/community/talks" target="_blank">
+                                            <figure class="media">
+                                                <span style="background-image: url('/img/home-talks-1.jpg');"></span>
+                                            </figure>
+                                            <div class="meta">
+                                                <h5>Conference name</h5>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <div class="media-card">
+                                        <a href="href="/community/talks" target="_blank">
+                                            <figure class="media">
+                                                <span style="background-image: url('/img/home-talks-2.jpg');"></span>
+                                            </figure>
+                                            <div class="meta">
+                                                <h5>Conference name</h5>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <div class="media-card">
+                                        <a href="href="/community/talks" target="_blank">
+                                            <figure class="media">
+                                                <span style="background-image: url('/img/home-talks-3.jpg');"></span>
+                                            </figure>
+                                            <div class="meta">
+                                                <h5>Conference name</h5>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <a class="button button-red-border">Learn More</a>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <h2>Conference Talks</h2>
-                    <ul class="resource-links">
-                        <li class="resource-link"><a href="https://www.youtube.com/watch?v=cuRyW0FfBiM" target="_blank"><h5>Culture of Continue Delivery</h5></a></li>
-                        <li class="resource-link"><a href="https://www.youtube.com/watch?v=RvlmVKf-NDs" target="_blank"><h5>Garden City Ruby 2014</h5></a></li?
-                    </ul>
-                </div>
-            </div>
+            </section>
         </div>
     </div>
     <div class="craftmanship wild-sand">
