@@ -204,11 +204,15 @@
   /* CUSTOMER STORIES */
   .customer-stories {
     padding-top: 40px;
-
+    .nav-tabs {
+      border-bottom: 0;
+      li.active {
+        border: 1px solid #BD1F3A;
+      }
+    }
     .nav-tabs > li {
       margin-bottom: 1px;
       text-align: center;
-
       a {
         border: none;
         padding: 0;
