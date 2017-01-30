@@ -639,6 +639,12 @@
       height: 50px;
       border: 0;
       border-radius: 25px;
+      outline: none;
+      &:hover {
+        -webkit-box-shadow: 1px 0px 50px 0px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 1px 0px 50px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: 1px 0px 50px 0px rgba(0, 0, 0, 0.1);
+      }
     }
     .carousel-prev-button {
       background: url('/img/carousel-left.svg');
