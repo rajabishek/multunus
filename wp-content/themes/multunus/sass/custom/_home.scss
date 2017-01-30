@@ -207,6 +207,9 @@
     padding-bottom: 40px;
     .nav-tabs {
       border-bottom: 0;
+      li.active img {
+        border-bottom: 1px solid #BD1F3A;
+      }
     }
     .nav-tabs > li {
       padding: 20px;
@@ -234,7 +237,6 @@
 
       img {
         max-width: 100%;
-        border-bottom: 2px solid #BD1F3A;
       }
     }
 
