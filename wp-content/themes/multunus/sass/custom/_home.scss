@@ -286,8 +286,7 @@
     .quote-banner {
       background: $theme-color-pink;
       color: white;
-      font-style: italic;
-      padding: 35px 0;
+      padding: 20px 0;
 
       .no-float {
         float: none;
@@ -305,12 +304,11 @@
 
       .quote {
         font-size: 1.4em;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
       }
 
       .author {
-        color: pink;
-        font-size: 1.2em;
+        color: white;
       }
     }
   }

@@ -100,7 +100,7 @@
                             <?php the_field('story_snippet'); ?>
                         </p>
                         <p>
-                            <a class="read-more-link red-text" href="<?php echo $permalink ?>">Read More</a>
+                            <a class="button button-red-border" href="<?php echo $permalink ?>">Read More</a>
                         </p>
                     </div>
                 </div>
