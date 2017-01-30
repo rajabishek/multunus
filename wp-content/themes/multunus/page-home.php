@@ -73,12 +73,12 @@
                             <div class="testimonial">
                                 <div class="container">
                                     <div class="row">
-                                        <div class="col-md-3">
+                                        <div class="col-md-2">
                                             <img class="testimonial-image" src="<?php the_field('thumbnail'); ?>">
                                         </div>
-                                        <div class="col-md-9">
+                                        <div class="col-md-10">
                                             <h3><?php the_title(); ?></h3>
-                                            <p><?php the_field('story_snippet'); ?></p>
+                                            <p class="story"><?php the_field('story_snippet'); ?></p>
                                         </div>
                                     </div>
                                     <div class="row">
