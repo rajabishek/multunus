@@ -1,8 +1,15 @@
 .home-page {
+  .main-heading {
+    text-align: left;
+    p {
+      font-size: 1.2em;
+      color: white;
+      opacity: 0.6;
+    }
+  }
   .section-heading {
     margin-bottom: 30px;
   }
-
   article{
       &.tagline-container{
           background-color: #f1f1f1;
@@ -500,7 +507,7 @@
   }
   .meta p {
     text-align: justify;
-    line-height: 1.8;
+    line-height: 2;
   }
 }
 

@@ -13,7 +13,7 @@
                     <div class="row">
                         <div class="col-sm-12 main-heading">
                             <h1>Solutions by design.</h1>
-                            <h4>We translate complex ideas into simple and elegant products</h4>
+                            <p>We translate complex ideas into simple and elegant products</p>
                             <button class="button button-red-filled">Read More</button>
                         </div>
                     </div>
@@ -36,7 +36,6 @@
                             <h2>Design</h2>
                             <p>Business goals should motivate design. The product must constantly evolve based on analytics, user feedback, and shifting short-term objectives.</p>
                             <p>We help enterprises & startup clients to set a strong branding and design framework early on.</p>
-                            <a href="/services" class="button button-red-border">Learn More</a>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -44,7 +43,6 @@
                             <h2>Technology</h2>
                             <p>With our roots in enterprise systems and agile delivery, we’ve been at the forefront of some of the industry’s biggest changes.</p>
                             <p>We’re here to bring the technology that’s at our core, to yours.</p>
-                            <a href="/services" class="button button-red-border">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -216,6 +214,7 @@
                                     <p>This would talk about what we want our customer to feel and how we are different from any other company out there. What makes us better and why someone should choose working with us.</p>
                                     <p>This is an extra section whether we can add any other content that promotes the brand. This can probably tell others how we have grown and what steps we have taken so far to achieve our goals.</p>
                                 </div>
+                                <p class="grey" style="text-align: right;">- Team @multunus</p>
                             </div>
                         </div>
                     </div>
