@@ -94,11 +94,13 @@
                             <img class="img-circle" src="<?php the_field('customer_image') ?>">
                         </figure>
                     </div>
-                    <div class="col-md-11">
+                    <div class="col-md-9">
                         <p class="story-snippet">
                             <?php the_field('customer_quote'); ?>
                         </p>
                         <p class="author">-- <?php the_field('customer_name'); ?>, <?php the_field('customer_organization'); ?></p>
+                    </div>
+                    <div class="col-md-2">
                         <a class="button button-red-border" href="<?php echo $permalink ?>">Read More</a>
                     </div>
                 </div>
