@@ -671,7 +671,12 @@
         max-height: 160px;
       }
       .story {
-        margin-right: 10px;
+        .title {
+          margin-top: 0px;
+        }
+        .snippet {
+          margin-right: 10px;
+        }
       }
       .review-info {
         margin-top: 30px;
