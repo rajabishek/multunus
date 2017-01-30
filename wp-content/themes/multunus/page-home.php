@@ -89,36 +89,17 @@
                     <figure class="logo-container visible-xs">
                         <img src="<?php echo the_field('logo') ?>">
                     </figure>
-                    <div class="col-md-4">
-                        <figure>
-                            <img src="<?php the_field('thumbnail'); ?>">
+                    <div class="col-md-2">
+                        <figure class="author-image-container">
+                            <img class="img-circle" src="<?php the_field('customer_image') ?>">
                         </figure>
                     </div>
-                    <div class="col-md-8">
-                        <h3 class="title"><?php the_title(); ?></h3>
+                    <div class="col-md-10">
                         <p class="story-snippet">
-                            <?php the_field('story_snippet'); ?>
+                            <?php the_field('customer_quote'); ?>
                         </p>
-                        <p>
-                            <a class="button button-red-border" href="<?php echo $permalink ?>">Read More</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="quote-banner hidden-xs">
-                    <div class="container">
-                        <div class="row">
-                            <figure class="author-image-container">
-                                <img class="img-circle" src="<?php the_field('customer_image') ?>">
-                            </figure>
-                            <div class="right-section">
-                                <div class="quote">
-                                    &#8220;<?php the_field('customer_quote'); ?>&#8221;
-                                </div>
-                                <div class="author">
-                                    -- <?php the_field('customer_name'); ?>, <?php the_field('customer_organization'); ?>
-                                </div>
-                            </div>
-                        </div>
+                        <p class="author">-- <?php the_field('customer_name'); ?>, <?php the_field('customer_organization'); ?></p>
+                        <a class="button button-red-border" href="<?php echo $permalink ?>">Read More</a>
                     </div>
                 </div>
             </div>
