@@ -207,13 +207,9 @@
     padding-bottom: 40px;
     .nav-tabs {
       border-bottom: 0;
-      li.active {
-        border-bottom: 2px solid #BD1F3A;
-      }
     }
     .nav-tabs > li {
-      padding-left: 0;
-      padding-right: 0;
+      padding: 20px;
       margin-bottom: 1px;
       text-align: center;
       a {
@@ -238,6 +234,7 @@
 
       img {
         max-width: 100%;
+        border-bottom: 2px solid #BD1F3A;
       }
     }
 
