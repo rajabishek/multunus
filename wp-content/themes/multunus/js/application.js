@@ -1,5 +1,9 @@
 $(function() {
 
+  $(".navbar-toggle").on("click", function () {
+    $(this).toggleClass("active");
+  });
+
   isMobileDevice = function() {
     if(/mobile.+firefox/i.test(navigator.userAgent)){
       return false;

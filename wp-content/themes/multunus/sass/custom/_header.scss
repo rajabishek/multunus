@@ -24,7 +24,32 @@
   .navbar-nav > li > a, .navbar-brand {
     color: #9C9C9C;
   }
-  
+  .navbar-toggle {
+    .icon-bar {
+      background-color: white;
+      &:nth-of-type(2) {
+        top: 1px;
+      }
+      &:nth-of-type(3) {
+        top: 2px;
+      }
+      position: relative;
+      transition: all 500ms ease-in-out;
+    }
+    &.active .icon-bar {
+      &:nth-of-type(1) {
+        top: 6px;
+        transform: rotate(45deg);
+      }
+      &:nth-of-type(2) {
+        background-color: transparent;
+      }
+      &:nth-of-type(3) {
+        top: -6px;
+        transform: rotate(-45deg);
+      }
+    }
+  }
 }
 
 #main-header {
