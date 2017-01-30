@@ -51,7 +51,7 @@
             </div>
         </div>
     </div>
-    <article class="customer-stories">
+    <article class="customer-stories wild-sand">
         <?php
             $portfolio_items = get_posts( array(
                 'post_type' => 'portfolio',
