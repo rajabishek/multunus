@@ -117,7 +117,7 @@
                     <div class="clickable-card">
                         <h2>Open Source</h2>
                         <p>We highly believe in open source technologies. We get benefited from open-source code every single day.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus dicta, soluta animi molestiae minus. Molestiae molestias, dolore rerum itaque esse magnam, corporis perferendis sit libero, vel soluta accusantium mollitia consequatur.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus dicta, soluta animi molestiae minus soluta temporibus unde porro nobis accusamus.</p>
                         <a class="button button-red-border">Learn More</a>
                     </div>
                 </div>
@@ -161,21 +161,37 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-7">
+                <div class="col-md-6">
                     <div class="clickable-card">
                         <h2>Blog</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit sapiente tempora amet asperiores exercitationem alias in voluptates provident nihil nulla illo dolores eos magnam nobis, qui, excepturi culpa nostrum ipsa!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit sapiente tempora amet asperiores exercitationem alias in voluptates provident nihil nulla.</p>
                         <a class="button button-red-border">Learn More</a>
                     </div>
                 </div>
+                <div class="col-md-6">
+                    <h2>Must Reads</h2>
+                    <ul class="resource-links">
+                        <li class="resource-link"><a href="/blog/2016/12/abstractions-ruby-clojure/" target="_blank"><h5>Abstractions in ruby & clojure</h5></a></li>
+                        <li class="resource-link"><a href="/blog/2017/01/refactoring-rails-view-objects/" target="_blank"><h5>Refactoring: Rails Presenter pattern</h5></a></li>
+                        <li class="resource-link"><a href="/blog/2017/01/parallel-tests-rails/" target="_blank"><h5>Parallel Test Execution in Rails</h5></a></li>
+                        <li class="resource-link"><a href="/blog/2016/12/continuous-delivery-us/" target="_blank"><h5>Continuous Delivery – Is it for everyone?</h5></a></li>
+                    </ul>
+                </div>
             </div>
             <div class="row">
-                <div class="col-md-7">
+                <div class="col-md-6">
                     <div class="clickable-card">
                         <h2>Talks</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste atque ipsam nisi, consequatur velit commodi eius delectus iusto beatae doloremque quam itaque aperiam dolore suscipit temporibus unde porro nobis accusamus.</p>
                         <a class="button button-red-border">Learn More</a>
                     </div>
+                </div>
+                <div class="col-md-6">
+                    <h2>Watch us speak</h2>
+                    <ul class="resource-links">
+                        <li class="resource-link"><a href="https://www.youtube.com/watch?v=cuRyW0FfBiM" target="_blank"><h5>Culture of Continue Delivery</h5></a></li>
+                        <li class="resource-link"><a href="https://www.youtube.com/watch?v=RvlmVKf-NDs" target="_blank"><h5>Garden City Ruby 2014</h5></a></li?
+                    </ul>
                 </div>
             </div>
         </div>
