@@ -164,7 +164,8 @@
                 <div class="col-md-6">
                     <div class="clickable-card">
                         <h2>Blog</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit sapiente tempora amet asperiores exercitationem alias in voluptates provident nihil nulla.</p>
+                        <p>We write a lot about design & technology. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, cumque laboriosam perspiciati.</p>
+                        <p>Our perceptions have evolved constantly. Here are some of our views and experiences.</p>
                         <a class="button button-red-border">Learn More</a>
                     </div>
                 </div>
