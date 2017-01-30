@@ -187,7 +187,7 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <h2>Watch us speak</h2>
+                    <h2>Conference Talks</h2>
                     <ul class="resource-links">
                         <li class="resource-link"><a href="https://www.youtube.com/watch?v=cuRyW0FfBiM" target="_blank"><h5>Culture of Continue Delivery</h5></a></li>
                         <li class="resource-link"><a href="https://www.youtube.com/watch?v=RvlmVKf-NDs" target="_blank"><h5>Garden City Ruby 2014</h5></a></li?
