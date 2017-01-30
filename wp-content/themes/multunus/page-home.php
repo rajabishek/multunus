@@ -71,26 +71,28 @@
                             $permalink = post_permalink($post->ID);
                         ?>
                             <div class="testimonial">
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <img class="testimonial-image" src="<?php the_field('thumbnail'); ?>">
-                                    </div>
-                                    <div class="col-md-9">
-                                        <h3><?php the_title(); ?></h3>
-                                        <p><?php the_field('story_snippet'); ?></p>
-                                    </div>
-                                </div>
-                                <div class="review-info">
+                                <div class="container">
                                     <div class="row">
-                                        <div class="col-md-1">
-                                            <img class="profile-image" src="<?php the_field('customer_image') ?>">
+                                        <div class="col-md-3">
+                                            <img class="testimonial-image" src="<?php the_field('thumbnail'); ?>">
                                         </div>
                                         <div class="col-md-9">
-                                            <p class="review"><?php the_field('customer_quote'); ?></p>
-                                            <p class="person-name">-- <?php the_field('customer_name'); ?>, <?php the_field('customer_organization'); ?></p>
+                                            <h3><?php the_title(); ?></h3>
+                                            <p><?php the_field('story_snippet'); ?></p>
                                         </div>
-                                        <div class="col-md-2">
-                                            <a class="read-more button button-red-border" href="<?php echo $permalink ?>">Read More</a>
+                                    </div>
+                                    <div class="row">
+                                        <div class="review-info">
+                                            <div class="col-md-1">
+                                                <img class="profile-image" src="<?php the_field('customer_image') ?>">
+                                            </div>
+                                            <div class="col-md-9">
+                                                <p class="review"><?php the_field('customer_quote'); ?></p>
+                                                <p class="person-name">-- <?php the_field('customer_name'); ?>, <?php the_field('customer_organization'); ?></p>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <a class="read-more button button-red-border" href="<?php echo $permalink ?>">Read More</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
