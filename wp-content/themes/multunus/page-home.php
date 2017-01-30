@@ -202,12 +202,12 @@
                                         </div>
                                         <div class="repo-stats">
                                             <div class="repo-stats-group">
-                                                <h5 class="repo-stats-title">Stars</h5>
-                                                <h6 class="repo-stat">77</h6>
+                                                <p class="repo-stats-title">Stars</p>
+                                                <p class="repo-stat">77</p>
                                             </div>
                                             <div class="repo-stats-group">
-                                                <h5 class="repo-stats-title">Forks</h5>
-                                                <h6 class="repo-stat">3</h6>
+                                                <p class="repo-stats-title">Forks</p>
+                                                <p class="repo-stat">3</p>
                                             </div>
                                         </div>
                                     </div>
@@ -222,12 +222,12 @@
                                         </div>
                                         <div class="repo-stats">
                                             <div class="repo-stats-group">
-                                                <h5 class="repo-stats-title">Stars</h5>
-                                                <h6 class="repo-stat">31</h6>
+                                                <p class="repo-stats-title">Stars</p>
+                                                <p class="repo-stat">31</p>
                                             </div>
                                             <div class="repo-stats-group">
-                                                <h5 class="repo-stats-title">Forks</h5>
-                                                <h6 class="repo-stat">12</h6>
+                                                <p class="repo-stats-title">Forks</p>
+                                                <p class="repo-stat">12</p>
                                             </div>
                                         </div>
                                     </div>

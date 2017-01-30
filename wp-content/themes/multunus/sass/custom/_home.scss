@@ -643,11 +643,14 @@
   -webkit-box-shadow: 2px 0px 50px 0px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 2px 0px 50px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 2px 0px 50px 0px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
+  border-radius: 2px;
   &:hover {
     -webkit-box-shadow: 2px 0px 50px 0px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 2px 0px 50px 0px rgba(0, 0, 0, 0.15);
     box-shadow: 2px 0px 50px 0px rgba(0, 0, 0, 0.15);
+  }
+  p {
+    line-height: 1.4;
   }
 }
 
@@ -658,25 +661,27 @@
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  padding: 0.375rem 1rem 1rem;
+  padding-left: 20px;
   color: #656565;
 }
 
 .repo-title {
   color: #232323;
   display: inline-block;
+  font-weight: 600;
+  margin-bottom: 0;
 }
 
 .repo-stats-group {
-  padding: 10px;
+  padding: 8px;
   text-align: center;
   &:last-of-type {
-    border-top: 1px solid #656565;
+    border-top: 1px solid #B3B3B3;
   }
 }
 
 .repo-stats {
-  border-left: 1px solid #656565;
+  border-left: 1px solid #B3B3B3;
   -ms-flex-negative: 0;
   flex-shrink: 0;
 }
@@ -689,7 +694,7 @@
 
 .repo-stat {
   color: #232323;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 0;
   margin-top: 0;
   &:hover {
