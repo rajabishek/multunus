@@ -230,19 +230,3 @@
 <?php get_footer(); ?>
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='http://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.3.14/slick.min.js'></script>
-<script>
-    $(document).ready(function() {
-        $('.testimonials').slick({
-            arrows: false,
-        });
-    });
-    
-    $('.carousel-next-button').click(function() { 
-        $(".testimonials").slickPrev(); 
-    });
-
-    $('.carousel-prev-button').click(function() { 
-        $(".testimonials").slickPrev(); 
-    });
-
-</script>

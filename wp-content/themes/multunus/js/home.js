@@ -35,5 +35,16 @@ $(function() {
     }
   };
 
-  window.homePage.setupTestimonialVideoInteraction();
+  $('.testimonials').slick({
+      arrows: false,
+  });
+
+  $('.carousel-next-button').click(function() { 
+      $(".testimonials").slickPrev(); 
+  });
+
+  $('.carousel-prev-button').click(function() { 
+      $(".testimonials").slickPrev(); 
+  });
+  
 });
