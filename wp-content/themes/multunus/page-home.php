@@ -51,7 +51,81 @@
             </div>
         </div>
     </div>
-    <div class="customer-stories wild-sand">
+    <article class="customer-stories">
+        <?php
+            $portfolio_items = get_posts( array(
+                'post_type' => 'portfolio',
+                'meta_key'            => 'show_customer_story_in_home_page',
+                      'meta_value'    => true,
+                'posts_per_page' => -1 // Unlimited posts
+            ) );
+            ?>
+        <h1 class="section-heading align-center">Customer Stories</h1>
+        <div class="container hidden-xs">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs container" role="tablist">
+                <?php
+                    foreach ( $portfolio_items as $index => $post ):
+                      setup_postdata($post);
+                      $permalink = post_permalink($post->ID);
+                    ?>
+                <li role="presentation" class="col-md-3 <?php echo($index == 0 ? 'active' : '') ?>">
+                    <a href="#<?php echo $post->ID; ?>" aria-controls="home" role="tab" data-toggle="tab">
+                    <img src="<?php echo the_field('logo') ?>">
+                    </a>
+                </li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <?php
+                foreach ( $portfolio_items as $index => $post ):
+                  setup_postdata($post);
+                  $permalink = post_permalink($post->ID);
+                  ?>
+            <div role="tabpanel" class="tab-pane fade <?php echo($index == 0 ? 'in active' : '') ?>" id="<?php echo $post->ID; ?>">
+                <div class="container story-snippet-container">
+                    <figure class="logo-container visible-xs">
+                        <img src="<?php echo the_field('logo') ?>">
+                    </figure>
+                    <div class="col-md-4">
+                        <figure>
+                            <img src="<?php the_field('thumbnail'); ?>">
+                        </figure>
+                    </div>
+                    <div class="col-md-8">
+                        <h3 class="title"><?php the_title(); ?></h3>
+                        <p class="story-snippet">
+                            <?php the_field('story_snippet'); ?>
+                        </p>
+                        <p>
+                            <a class="read-more-link red-text" href="<?php echo $permalink ?>">Read More</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="quote-banner hidden-xs">
+                    <div class="container">
+                        <div class="row">
+                            <figure class="author-image-container">
+                                <img class="img-circle" src="<?php the_field('customer_image') ?>">
+                            </figure>
+                            <div class="right-section">
+                                <div class="quote">
+                                    &#8220;<?php the_field('customer_quote'); ?>&#8221;
+                                </div>
+                                <div class="author">
+                                    -- <?php the_field('customer_name'); ?>, <?php the_field('customer_organization'); ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <?php endforeach; ?>
+        </div>
+    </article>
+    <!-- <div class="customer-stories wild-sand">
         <div class="container">
             <?php
                 $portfolio_items = get_posts( array(
@@ -106,7 +180,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="community">
         <div class="container">
             <div class="row">
