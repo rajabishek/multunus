@@ -518,8 +518,11 @@
         box-shadow: 0 2px 84px 0 rgba(208,208,208,0.9);
       }
       a {
-        &:hover {
+        text-decoration:none;
+        color: #333;
+        &:hover, &:active, &:visited {
           color: #333;
+          text-decoration:none;
         }
       }
     }
@@ -600,8 +603,11 @@
         box-shadow: 0 2px 64px 0 rgba(208,208,208,0.9);
       }
       a {
-        &:hover {
+        text-decoration:none;
+        color: #333;
+        &:hover, &:active, &:visited {
           color: #333;
+          text-decoration:none;
         }
       }
     }
