@@ -318,7 +318,6 @@
                                 </div>
                             </div>
                         </div>
-                        <a class="button button-red-border">Learn More</a>
                     </div>
                 </div>
             </section>
