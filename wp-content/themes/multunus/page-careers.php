@@ -85,7 +85,7 @@
                     $excerpt = $post->post_excerpt;
                     $permalink = post_permalink($children->ID);
                 ?>
-            <div class="col-md-4 position-box-container">
+            <div class="col-md-4 col-sm-6 col-xs-12 position-box-container">
                 <div class="career-position">
                     <h3 class="position-name"><?php echo $title ?></h3>
                     <p><?php echo $excerpt ?></p>
