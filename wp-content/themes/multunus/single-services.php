@@ -21,7 +21,7 @@
     }
     ?>
 <section class="single-portfolio">
-    <div class="title-container title-new-services">
+    <div class="title-container">
         <div class="container">
             <div class="row">
                 <div class="project-title col-md-push-1 col-md-10 col-sm-10">
@@ -30,7 +30,7 @@
                     </div>
                     <div class="partial-underline">
                     </div>
-                    <div class="category service-catergory"><span class="category-name"><?php the_field('category') ?></span></div>
+                    <!-- <div class="category service-catergory"><span class="category-name"><?php the_field('category') ?></span></div> -->
                 </div>
             </div>
         </div>
