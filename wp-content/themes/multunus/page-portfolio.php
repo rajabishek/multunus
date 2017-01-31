@@ -31,7 +31,7 @@ if ($portfolio_item): ?>
                                 <span style="background-image: url(<?php the_field('thumbnail'); ?>);"></span>
                             </figure>
                             <div class="meta">
-                                <h5>Company name</h5>
+                                <h5>COMPANY NAME</h5>
                                 <p><?php the_title(); ?></p>
                             </div>
                         </a>
