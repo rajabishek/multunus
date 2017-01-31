@@ -4,7 +4,7 @@
 		<div class="row">
 			<div class="col-xs-12">
 				<h1>Oops!</h1>
-				<h3>We cant seem to find the page you are looking for.</h3>
+				<h3>We can't seem to find the page you are looking for.</h3>
 				<p>Here are some helpful links instead.</p>
 				<div class="row">
 					<div class="col-md-2">
