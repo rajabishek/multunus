@@ -68,7 +68,7 @@
             ) );
             ?>
             <h1 class="section-heading align-center">Customer Stories</h1>
-            <div class="container hidden-xs">
+            <div class="container hidden-xs hidden-sm">
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs container" role="tablist">
                     <?php
