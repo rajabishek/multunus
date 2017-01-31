@@ -241,7 +241,7 @@
     }
 
     .tab-pane {
-      @media (max-width: $screen-sm) {
+      @media (max-width: $screen-xs) {
         display: block !important;
         opacity: 1 !important;
       }
@@ -253,7 +253,7 @@
       .logo-container {
         padding: 0;
         text-align: center;
-        @media (max-width: $screen-sm) {
+        @media (max-width: $screen-xs) {
           margin-bottom: 30px;
           width: 100%;
         }
@@ -266,7 +266,7 @@
           padding-top: 10px;
           padding-bottom: 10px;
 
-          @media (max-width: $screen-sm) {
+          @media (max-width: $screen-xs) {
             margin: 10px;
             border: 1px solid #ddd;
           }

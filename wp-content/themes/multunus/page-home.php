@@ -68,7 +68,7 @@
             ) );
             ?>
             <h1 class="section-heading align-center">Customer Stories</h1>
-            <div class="container hidden-xs">
+            <div class="container hidden-xs hidden-sm">
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs container" role="tablist">
                     <?php
@@ -76,7 +76,7 @@
                           setup_postdata($post);
                           $permalink = post_permalink($post->ID);
                         ?>
-                    <li role="presentation" class="col-md-3 <?php echo($index == 0 ? 'active' : '') ?>">
+                    <li role="presentation" class="col-xs-3 <?php echo($index == 0 ? 'active' : '') ?>">
                         <a href="#<?php echo $post->ID; ?>" aria-controls="home" role="tab" data-toggle="tab">
                         <img src="<?php echo the_field('logo') ?>">
                         </a>
@@ -93,7 +93,7 @@
                       ?>
                 <div role="tabpanel" class="tab-pane fade <?php echo($index == 0 ? 'in active' : '') ?>" id="<?php echo $post->ID; ?>">
                     <div class="container story-snippet-container">
-                        <figure class="logo-container visible-xs">
+                        <figure class="logo-container visible-sm visible-xs">
                             <img src="<?php echo the_field('logo') ?>">
                         </figure>
                         <div class="col-md-1">
