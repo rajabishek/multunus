@@ -259,12 +259,15 @@
       }
 
       .story-snippet-container {
-          padding-top: 10px;
-          padding-bottom: 10px;
-
+          padding: 20px;
           @media (max-width: $screen-md) {
-            margin: 10px;
-            border: 1px solid #ddd;
+            margin: 20px;
+            background-color: white;
+            -webkit-box-shadow: 0 2px 64px 0 rgba(208,208,208,0.5);
+            -moz-box-shadow: 0 2px 64px 0 rgba(208,208,208,0.5);
+            box-shadow: 0 2px 64px 0 rgba(208,208,208,0.5);
+            border-radius: 2px;
+            background-clip: padding-box;
           }
       }
 
