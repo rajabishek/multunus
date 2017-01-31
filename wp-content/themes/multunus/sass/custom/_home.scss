@@ -540,7 +540,7 @@
       a {
         text-decoration:none;
         color: #333;
-        &:hover, &:active, &:visited {
+        &:hover, &:active, &:focus, &:visited {
           color: #333;
           text-decoration:none;
         }
