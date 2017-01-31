@@ -93,9 +93,6 @@
                       ?>
                 <div role="tabpanel" class="tab-pane fade <?php echo($index == 0 ? 'in active' : '') ?>" id="<?php echo $post->ID; ?>">
                     <div class="container story-snippet-container">
-                        <figure class="logo-container visible-sm visible-xs">
-                            <img src="<?php echo the_field('logo') ?>">
-                        </figure>
                         <div class="col-md-1">
                             <figure class="author-image-container">
                                 <img class="img-circle" src="<?php the_field('customer_image') ?>">

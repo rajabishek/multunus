@@ -253,10 +253,6 @@
       .logo-container {
         padding: 0;
         text-align: center;
-        @media (max-width: $screen-sm) {
-          margin-bottom: 30px;
-          width: 100%;
-        }
         img {
           height: 100px;
         }
@@ -292,6 +288,9 @@
         padding: 20px 0;
         height: 60px;
         width: 60px;
+        @media (max-width: $screen-sm) {
+          float: left;
+        }
       }
     }
 
