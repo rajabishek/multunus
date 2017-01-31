@@ -253,7 +253,10 @@
       .logo-container {
         padding: 0;
         text-align: center;
-
+        @media (max-width: $screen-xs) {
+          margin-bottom: 30px;
+          width: 100%;
+        }
         img {
           height: 100px;
         }
