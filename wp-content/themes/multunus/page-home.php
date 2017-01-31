@@ -35,16 +35,20 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="clickable-card">
-                            <h2>Innovation</h2>
-                            <p>Business goals should motivate design. The product must constantly evolve based on analytics, user feedback, and shifting short-term objectives.</p>
-                            <p>We help enterprises & startup clients to set a strong branding and design framework early on.</p>
+                            <a href="/services#innovation-consulting">
+                                <h2>Innovation</h2>
+                                <p>Business goals should motivate design. The product must constantly evolve based on analytics, user feedback, and shifting short-term objectives.</p>
+                                <p>We help enterprises & startup clients to set a strong branding and design framework early on.</p>
+                            </a>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="clickable-card">
-                            <h2>Technology</h2>
-                            <p>With our roots in enterprise systems and agile delivery, we’ve been at the forefront of some of the industry’s biggest changes.</p>
-                            <p>We’re here to bring the technology that’s at our core, to yours.</p>
+                           <a href="/services#mobile-development">
+                                <h2>Technology</h2>
+                                <p>With our roots in enterprise systems and agile delivery, we’ve been at the forefront of some of the industry’s biggest changes.</p>
+                                <p>We’re here to bring the technology that’s at our core, to yours.</p>
+                           </a>
                         </div>
                     </div>
                 </div>

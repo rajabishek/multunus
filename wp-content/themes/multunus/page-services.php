@@ -29,7 +29,7 @@ if ($service_item ): ?>
         </div>
     </div>
     <?php foreach ($category_list as $category => $description): ?>
-        <div class="<?php echo str_replace(" ", "-", strtolower($category)); ?>">
+        <div class="<?php echo str_replace(" ", "-", strtolower($category)); ?>" id="<?php echo str_replace(" ", "-", strtolower($category)); ?>">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
