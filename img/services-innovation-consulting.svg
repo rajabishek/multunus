@@ -4,7 +4,7 @@
     <title>services-innovation-consulting</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Services" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="services-innovation-consulting">
             <g id="Graph" transform="translate(18.000000, 400.000000)">
                 <path id="Path-345" stroke="#979797"></path>
@@ -43,45 +43,45 @@
                     <ellipse id="Oval-19" cx="1399.30769" cy="82.6410256" rx="7" ry="7"></ellipse>
                 </g>
             </g>
-            <g id="Design-Sprint" transform="translate(1085.000000, 50.000000)">
-                <path d="M143,222 C192.705627,222 233,181.705627 233,132 C233,82.2943725 192.705627,42 143,42 C93.2943725,42 53,82.2943725 53,132" id="Oval" stroke="#EBEBEB" stroke-width="3"></path>
-                <path d="M53,132 C53,181.705627 93.2943725,222 143,222 L143,222" id="Oval" stroke="#4D8FFF" stroke-width="3"></path>
-                <path d="M71.6210938,128.042969 C71.6210938,128.042969 134.019531,122.128906 145.707031,202.773437" id="Path-2" stroke="#4D8FFF" stroke-width="3"></path>
-                <g id="Step-1" transform="translate(40.000000, 119.000000)">
+            <g id="Design-Sprint" transform="translate(1087.000000, 52.000000)">
+                <path d="M141,220 C190.705627,220 231,179.705627 231,130 C231,80.2943725 190.705627,40 141,40 C91.2943725,40 51,80.2943725 51,130" id="Oval" stroke="#EBEBEB" stroke-width="3"></path>
+                <path d="M51,130 C51,179.705627 91.2943725,220 141,220 L141,220" id="Oval" stroke="#4D8FFF" stroke-width="3"></path>
+                <path d="M69.6210938,126.042969 C69.6210938,126.042969 132.019531,120.128906 143.707031,200.773437" id="Path-2" stroke="#4D8FFF" stroke-width="3"></path>
+                <g id="Step-1" transform="translate(38.000000, 117.000000)">
                     <circle id="Oval-2" fill="#4D8FFF" cx="13" cy="13" r="13"></circle>
                     <text id="1" font-family="GTWalsheimProTrial-Light, GT Walsheim Pro Trial" font-size="12" font-weight="300" fill="#FFFFFF">
                         <tspan x="11" y="18">1</tspan>
                     </text>
                 </g>
-                <g id="Step-2" transform="translate(130.000000, 29.000000)">
+                <g id="Step-2" transform="translate(128.000000, 27.000000)">
                     <circle id="Oval-2-Copy-3" fill="#4D8FFF" cx="13" cy="13" r="13"></circle>
                     <text id="2" font-family="GTWalsheimProTrial-Light, GT Walsheim Pro Trial" font-size="12" font-weight="300" fill="#FFFFFF">
                         <tspan x="10" y="18">2</tspan>
                     </text>
                 </g>
-                <g id="Step-3" transform="translate(220.000000, 119.000000)">
+                <g id="Step-3" transform="translate(218.000000, 117.000000)">
                     <circle id="Oval-2-Copy" fill="#4D8FFF" cx="13" cy="13" r="13"></circle>
                     <text id="3" font-family="GTWalsheimProTrial-Light, GT Walsheim Pro Trial" font-size="12" font-weight="300" fill="#FFFFFF">
                         <tspan x="10" y="18">3</tspan>
                     </text>
                 </g>
-                <g id="Step-4" transform="translate(130.000000, 209.000000)">
+                <g id="Step-4" transform="translate(128.000000, 207.000000)">
                     <circle id="Oval-2-Copy-2" fill="#4D8FFF" cx="13" cy="13" r="13"></circle>
                     <text id="4" font-family="GTWalsheimProTrial-Light, GT Walsheim Pro Trial" font-size="12" font-weight="300" fill="#FFFFFF">
                         <tspan x="10" y="18">4</tspan>
                     </text>
                 </g>
-                <text id="Learn" font-family="GTWalsheim-Light, GT Walsheim" font-size="15" font-weight="300" fill="#2A2A2A">
-                    <tspan x="126" y="260">Learn</tspan>
+                <text id="Learn" font-family="ProximaNova-Regular, Proxima Nova" font-size="14" font-weight="normal" fill="#333333">
+                    <tspan x="126" y="257">Learn</tspan>
                 </text>
-                <text id="Build" font-family="GTWalsheim-Light, GT Walsheim" font-size="15" font-weight="300" fill="#2A2A2A">
-                    <tspan x="126" y="15">Build</tspan>
+                <text id="Build" font-family="ProximaNova-Regular, Proxima Nova" font-size="14" font-weight="normal" fill="#333333">
+                    <tspan x="125" y="14">Build</tspan>
                 </text>
-                <text id="Launch" font-family="GTWalsheim-Light, GT Walsheim" font-size="15" font-weight="300" fill="#2A2A2A">
-                    <tspan x="256" y="135">Launch</tspan>
+                <text id="Launch" font-family="ProximaNova-Regular, Proxima Nova" font-size="14" font-weight="normal" fill="#333333">
+                    <tspan x="254" y="134">Launch</tspan>
                 </text>
-                <text id="Idea" font-family="GTWalsheim-Light, GT Walsheim" font-size="15" font-weight="300" fill="#2A2A2A">
-                    <tspan x="0" y="135">Idea</tspan>
+                <text id="Idea" font-family="ProximaNova-Regular, Proxima Nova" font-size="14" font-weight="normal" fill="#333333">
+                    <tspan x="0" y="134">Idea</tspan>
                 </text>
             </g>
         </g>
