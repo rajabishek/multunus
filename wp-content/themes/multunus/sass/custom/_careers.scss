@@ -133,7 +133,6 @@
     .position-box-container {
       padding-bottom: 20px;
       @media (min-width: $screen-xs) {
-        float: none;
         display: inline-block;
         vertical-align: top;
       }
