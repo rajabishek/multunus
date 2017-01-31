@@ -55,7 +55,6 @@
                     </div>
                 </div>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem quam minima quas, similique officiis, consequuntur, placeat cumque optio in alias voluptatem maiores tempore debitis totam beatae dolores earum eaque nam. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             <a class="button button-red-border" href="/services">See all our services</a>
         </div>
     </div>
