@@ -461,3 +461,22 @@ ul.arrow-list-style {
     display: block;
   }
 }
+
+.lost-page-content {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  h1 {
+    font-size: 60px;
+  }
+  ul {
+    margin-top: 20px;
+    li {
+      list-style-type: none;
+      margin-bottom: 20px;
+      a {
+        color: #BD1F3A;
+        text-decoration: underline;
+      }
+    }
+  }
+}
