@@ -508,7 +508,8 @@
   .services {
     margin-top: 10px;
     .clickable-card {
-      min-height: 280px;
+      text-align: center;
+      min-height: 320px;
       padding: 10px 30px;
       cursor: pointer;
       -webkit-transition: 0.2s;
@@ -524,6 +525,17 @@
         -webkit-box-shadow: 0 2px 84px 0 rgba(208,208,208,0.9);
         -moz-box-shadow: 0 2px 84px 0 rgba(208,208,208,0.9);
         box-shadow: 0 2px 84px 0 rgba(208,208,208,0.9);
+      }
+      h3 {
+        margin-top: 0px;
+      }
+      p{
+        text-align: left;
+      }
+      .illustration {
+        width: 40px;
+        margin-top: 20px;
+        margin-bottom: 10px;
       }
       a {
         text-decoration:none;

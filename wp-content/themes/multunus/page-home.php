@@ -36,7 +36,8 @@
                     <div class="col-md-6">
                         <div class="clickable-card">
                             <a href="/services#innovation-consulting">
-                                <h2>Innovation</h2>
+                                <img src="/img/home-services-innovation.svg" class="illustration">
+                                <h3>Innovation</h3>
                                 <p>Business goals should motivate design. The product must constantly evolve based on analytics, user feedback, and shifting short-term objectives.</p>
                                 <p>We help enterprises & startup clients to set a strong branding and design framework early on.</p>
                             </a>
@@ -45,7 +46,8 @@
                     <div class="col-md-6">
                         <div class="clickable-card">
                            <a href="/services#mobile-development">
-                                <h2>Technology</h2>
+                                <img src="/img/home-services-tech.svg" class="illustration">
+                                <h3>Technology</h3>
                                 <p>With our roots in enterprise systems and agile delivery, we’ve been at the forefront of some of the industry’s biggest changes.</p>
                                 <p>We’re here to bring the technology that’s at our core, to yours.</p>
                            </a>
@@ -53,7 +55,7 @@
                     </div>
                 </div>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem quam minima quas, similique officiis, consequuntur, placeat cumque optio in alias voluptatem maiores tempore debitis totam beatae dolores earum eaque nam.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem quam minima quas, similique officiis, consequuntur, placeat cumque optio in alias voluptatem maiores tempore debitis totam beatae dolores earum eaque nam. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             <a class="button button-red-border" href="/services">See all our services</a>
         </div>
     </div>
