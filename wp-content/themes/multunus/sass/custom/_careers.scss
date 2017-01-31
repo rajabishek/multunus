@@ -130,9 +130,6 @@
   }
 
   .career-positions-container {
-    font-size: 0;
-    text-align: center;
-
     .position-box-container {
       padding-bottom: 20px;
       @media (min-width: $screen-xs) {
@@ -144,34 +141,27 @@
   }
 
   .career-position {
-    background-color: rgb(241, 240, 240);
-    background: url('/img/arrow-right-red.png') #fff center 90% no-repeat;
-    text-align: center;
-    margin-bottom: 2em;
+    background-color: white;
+    text-align: left;
     padding: 0 20px;
-    height: 230px;
-
+    min-height: 250px;
+    .button {
+      margin-top: 10px;
+    }
     @media (max-width: $screen-xs) {
       margin-left: 1em;
     }
-
     .position-name {
       display: inline-block;
       border-bottom: 1px solid transparent;
-      color: $theme-color-pink;
       line-height: 1;
-      margin-top: 40px;
-      margin-bottom: 18px;
+      margin-top: 30px;
+      margin-bottom: 20px;
     }
-
-    a:hover {
-      h2 { border-bottom: 1px solid $theme-color-pink; }
-      p { color: #333; }
+    p {
+      color: #656565;
     }
-
     a:focus { outline: none; }
-
-    p {padding-bottom: 30px;}
   }
 }
 

@@ -87,19 +87,13 @@ a {
     }
 }
 
-.btn-red {
-    background: $theme-color-pink;
-    @include std-btn;
-  &:hover {
-    background: $theme-color-dark-pink;
-  }
-
+.button-red-filled {
 	span {
 		background: url('/img/down_arrow.png') left center no-repeat;
 		height: 14px;
 		width: 11px;
 		display: inline-block;
-		margin-left: 27px;
+		margin-left: 25px;
 		@media (max-width: $screen-xs){
 			margin-left:14px;
 		}
@@ -117,6 +111,7 @@ a {
 		}
 	}
 }
+
 .btn-white {
     background: #fff;
     @include std-btn;
