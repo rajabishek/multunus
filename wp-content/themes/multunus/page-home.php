@@ -35,7 +35,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="clickable-card">
-                            <h2>Design</h2>
+                            <h2>Innovation</h2>
                             <p>Business goals should motivate design. The product must constantly evolve based on analytics, user feedback, and shifting short-term objectives.</p>
                             <p>We help enterprises & startup clients to set a strong branding and design framework early on.</p>
                         </div>
@@ -49,6 +49,8 @@
                     </div>
                 </div>
             </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem quam minima quas, similique officiis, consequuntur, placeat cumque optio in alias voluptatem maiores tempore debitis totam beatae dolores earum eaque nam.</p>
+            <a class="button button-red-border" href="/services">See all our services</a>
         </div>
     </div>
     <article class="customer-stories wild-sand">

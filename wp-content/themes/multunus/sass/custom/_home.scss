@@ -500,7 +500,20 @@
   .services {
     margin-top: 10px;
     .clickable-card {
-      min-height: 330px;
+      min-height: 320px;
+      padding: 10px 30px;
+      cursor: pointer;
+      -webkit-transition: 0.2s;
+      -o-transition: 0.2s;
+      transition: 0.2s;
+      position: relative;
+      &:hover {
+        -webkit-transform: scale(1.06);
+        -moz-transform: scale(1.06);
+        -ms-transform: scale(1.06);
+        -o-transform: scale(1.06);
+        transform: scale(1.06);
+      }
     }
   }
 }
@@ -570,13 +583,13 @@
       border-radius: 2px;
       background-clip: padding-box;
       cursor: pointer;
-      -webkit-box-shadow: 2px 0px 50px 0px rgba(0, 0, 0, 0.1);
-      -moz-box-shadow: 2px 0px 50px 0px rgba(0, 0, 0, 0.1);
-      box-shadow: 2px 0px 50px 0px rgba(0, 0, 0, 0.1);
+      -webkit-box-shadow: 0 2px 64px 0 rgba(208,208,208,0.5);
+      -moz-box-shadow: 0 2px 64px 0 rgba(208,208,208,0.5);
+      box-shadow: 0 2px 64px 0 rgba(208,208,208,0.5);
       &:hover {
-        -webkit-box-shadow: 2px 0px 50px 0px rgba(0, 0, 0, 0.15);
-        -moz-box-shadow: 2px 0px 50px 0px rgba(0, 0, 0, 0.15);
-        box-shadow: 2px 0px 50px 0px rgba(0, 0, 0, 0.15);
+        -webkit-box-shadow: 0 2px 64px 0 rgba(208,208,208,0.9);
+        -moz-box-shadow: 0 2px 64px 0 rgba(208,208,208,0.9);
+        box-shadow: 0 2px 64px 0 rgba(208,208,208,0.9);
       }
       a {
         &:hover {
@@ -649,14 +662,14 @@
   flex-direction: row;
   width: 100%;
   background-color: white;
-  -webkit-box-shadow: 2px 0px 50px 0px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 2px 0px 50px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 2px 0px 50px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 2px 64px 0 rgba(208,208,208,0.5);
+  -moz-box-shadow: 0 2px 64px 0 rgba(208,208,208,0.5);
+  box-shadow: 0 2px 64px 0 rgba(208,208,208,0.5);
   border-radius: 2px;
   &:hover {
-    -webkit-box-shadow: 2px 0px 50px 0px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 2px 0px 50px 0px rgba(0, 0, 0, 0.15);
-    box-shadow: 2px 0px 50px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 2px 64px 0 rgba(208,208,208,0.9);
+    -moz-box-shadow: 0 2px 64px 0 rgba(208,208,208,0.9);
+    box-shadow: 0 2px 64px 0 rgba(208,208,208,0.9);
   }
   p {
     line-height: 1.4;
