@@ -339,18 +339,18 @@ ul.arrow-list-style {
 }
 
 .button-red-border {
-  border: 1px solid #BD1F3A;
-  color: #BD1F3A;
+  border: 1px solid $theme-color-pink;
+  color: $theme-color-pink;
   background-color: transparent;
   &:hover, &:focus {
-    background-color: #BD1F3A;
+    background-color: $theme-color-pink;
     color: white;
     text-decoration: none;
   }
 }
 
 .button-red-filled {
-  background-color: #BD1F3A;
+  background-color: $theme-color-pink;
   color: white;
 }
 
@@ -379,7 +379,7 @@ ul.arrow-list-style {
 }
 
 .lets-talk {
-  background-color: #BD1F3A;
+  background-color: $theme-color-pink;
   padding-top: 40px;
   padding-bottom: 80px;
   box-shadow: none;
@@ -476,7 +476,7 @@ ul.arrow-list-style {
       list-style-type: none;
       margin-bottom: 20px;
       a {
-        color: #BD1F3A;
+        color: $theme-color-pink;
         text-decoration: underline;
       }
     }

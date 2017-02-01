@@ -208,7 +208,7 @@
     .nav-tabs {
       border-bottom: 0;
       li.active img {
-        border: 1px solid #BD1F3A;
+        border: 1px solid $theme-color-pink;
       }
     }
     .nav-tabs > li {
@@ -555,7 +555,7 @@
     margin-top: 100px;
     a {
       text-decoration: underline;
-      color: #BD1F3A;
+      color: $theme-color-pink;
     }
   }
   h1 {
