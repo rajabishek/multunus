@@ -11,7 +11,7 @@
     <div class="overlay-content">
       <h1 id="quote">Namaste! We'd love to hear from you.</h1>
         <div class="hidden-xs">
-          <div data-toggle="scroll" rel="#main-content" class="btn-red">Get in Touch<span></span></div>
+          <div data-toggle="scroll" rel="#main-content" class="button button-red-filled">Get in Touch<span></span></div>
         </div>
     </div>
   </div>
