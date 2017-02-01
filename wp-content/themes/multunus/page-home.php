@@ -174,7 +174,8 @@
                 <div class="row">
                     <div class="col-md-12">
                         <h2>Blog</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus fugit alias molestiae labore odio vel quos sequi, cum esse saepe autem voluptate aperiam error quo adipisci nihil in. Quibusdam, dolores.</p>
+                        <p>We write a lot about technology & design. We have always found better ways to improve our craft by reading articles from the community. It has given our team an opportunity to understand different perspectives & ideas on solving a particular problem.</p>
+                        <p>The learnings vary from small insights to full blown realizations. In some cases it helps us to connect the dots & understand the bigger picture.</p>
                         <div class="row">
                             <div class="col-md-6">
                                  <ul class="resource-links">
@@ -216,8 +217,9 @@
             <section class="talks-section">
                 <div class="row">
                     <div class="col-md-12">
-                        <h2>Talks</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste atque ipsam nisi, consequatur velit commodi eius delectus iusto beatae doloremque quam itaque aperiam dolore suscipit temporibus unde porro nobis accusamus.</p>
+                        <h2>Conferences talks</h2>
+                        <p>We are very active with giving talks & attending conferences. This is one of the ways we are keep ourseleves closely engaged with the community. Apart from learning something new at conferences, meeting new people & sharing our experiences help us with networking.</p>
+                        <p>Supporting conferences has also helped us in gaining more exposure & awareness about the happening in the community. The inspiration that we get from every conference pushes us to work harder every day.</p>
                         <div class="talks">
                             <div class="row">
                                 <div class="col-md-4 col-sm-6 col-xs-12">
@@ -274,13 +276,13 @@
                 </div>
                 <div class="col-md-6">
                     <div class="meta">
-                        <h1 class="text-center">This is the title.</h1>
-                        <h4 class="text-center grey">This is the subtile. A catchy one.</h4>
+                        <h1 class="text-center">Craftmanship</h1>
+                        <h4 class="text-center grey">We work with craftsman. Not developers.</h4>
                         <div class="row">
                             <div class="col-sm-10 col-sm-offset-1">
                                 <div class="grey">
-                                    <p>This would talk about the mission and goal of the company. Why we do what we do and what we believe in.</p>
-                                    <p>This would talk about what we want our customer to feel and how we are different from any other company out there. What makes us better and why someone should choose working with us.</p>
+                                    <p>We focus on building products that are engaging & user friendly. Before even we start adding in a pixel we start thinking about what we want our customers to feel & then begin to craft around our intentions.</p>
+                                    <p>With passion in our heart, and our lifelong commitment to building user centric products, our close-knit team has never stopped amazing people. Every single day, we work hard to push ourselves forward.</p>
                                 </div>
                             </div>
                         </div>
