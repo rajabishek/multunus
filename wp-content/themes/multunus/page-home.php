@@ -122,8 +122,8 @@
                 <div class="row">
                     <div class="col-md-12">
                         <h2>Open Source</h2>
-                        <p>We highly believe in open source technologies. We get benefited from open-source code every single day.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus dicta, soluta animi molestiae minus soluta temporibus unde porro nobis accusamus.</p>
+                        <p>We highly believe in open source technologies. We get benefited from open source code every single day. With open source we are more productive & fight lesser number of problems.</p>
+                        <p>Open source projects helps us in developing a more polished product over time which would be impossible if it is closed and maintained by a single person/team. Its stops us from reinventing the wheel & encourages us to build upon the work done by the community. We equally spend time contributing to projects & giving back to the community.</p>
                         <div class="row">
                             <div class="col-md-6">
                                 <a href="https://github.com/multunus/dashboard-clj" target="_blank">
