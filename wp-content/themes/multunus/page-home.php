@@ -282,7 +282,7 @@
                             <div class="col-sm-10 col-sm-offset-1">
                                 <div class="grey">
                                     <p>We focus on building products that are engaging & user friendly. Before even we start adding in a pixel we start thinking about what we want our customers to feel & then begin to craft around our intentions.</p>
-                                    <p>With passion in our heart, and our lifelong commitment to building user centric products, our close-knit team has never stopped amazing people. Every single day, we work hard to push ourselves forward.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, ab, obcaecati. Tempore illo perspiciatis iusto animi quia. Neque ipsa incidunt mollitia sint blanditiis saepe.</p>
                                 </div>
                             </div>
                         </div>
