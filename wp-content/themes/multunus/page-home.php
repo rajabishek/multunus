@@ -224,24 +224,11 @@
                                     <div class="media-card">
                                         <a href="https://www.youtube.com/watch?v=E15ZV7eL5CM" target="_blank">
                                             <figure class="media">
-                                                <span style="background-image: url('/img/home-community-leena.jpg');"></span>
+                                                <span style="background-image: url('/img/home-community-rootconf.jpg');"></span>
                                             </figure>
                                             <div class="meta">
                                                 <h5>Rootconf 2016</h5>
                                                 <p>Merge Hells? Feature Toggle to the Rescue</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-6 col-xs-12">
-                                    <div class="media-card">
-                                        <a href="https://twitter.com/cooldip/status/778840086586634240" target="_blank">
-                                            <figure class="media">
-                                                <span style="background-image: url('/img/home-community-manish.jpg');"></span>
-                                            </figure>
-                                            <div class="meta">
-                                                <h5>Innovation Management</h5>
-                                                <p>Fintech, Edutech, Aerospace. #IdeasInProgress</p>
                                             </div>
                                         </a>
                                     </div>
@@ -255,6 +242,19 @@
                                             <div class="meta">
                                                 <h5>Meta Refresh 2014</h5>
                                                 <p>Twitter Puzzle, Pair Programming & more</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <div class="media-card">
+                                        <a href="https://www.youtube.com/watch?v=2kJW0Mpg844" target="_blank">
+                                            <figure class="media">
+                                                <span style="background-image: url('/img/home-community-droidcon.jpg');"></span>
+                                            </figure>
+                                            <div class="meta">
+                                                <h5>Droidcon 2015</h5>
+                                                <p>Learnings from building Custom MDM</p>
                                             </div>
                                         </a>
                                     </div>
