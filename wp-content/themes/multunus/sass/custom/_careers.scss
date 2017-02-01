@@ -140,6 +140,9 @@
     padding: 0 20px;
     min-height: 240px;
     position: relative;
+    -webkit-box-shadow: 0 2px 64px 0 rgba(208,208,208,0.5);
+    -moz-box-shadow: 0 2px 64px 0 rgba(208,208,208,0.5);
+    box-shadow: 0 2px 64px 0 rgba(208,208,208,0.5);
     @media (max-width: $screen-xs) {
       margin-left: 1em;
     }
@@ -148,7 +151,7 @@
       bottom: 20px;
       left: 50%;
       -webkit-transform: translateX(-50%);
-      transform: translateX(-50%)
+      transform: translateX(-50%);
     }
     .position-name {
       display: inline-block;

@@ -13,13 +13,14 @@
             </div>
 
             <div class="post-text">
-              <h4><a href="<?php the_permalink(); ?>" title="Read more"><?php the_title(); ?></a></h2>
-                <?php
-                  if ( has_post_thumbnail() ) {
-                    echo '<p>' . wp_trim_words(get_the_excerpt(), 12, '...') . '</p>';
-                  } else {
-                    echo '<p>' . wp_trim_words(get_the_content(), 40, '...') . '</p>';
-                  }
+              <h3>
+                <a href="<?php the_permalink(); ?>" title="Read more"><?php the_title(); ?></a>
+              </h3>
+                <?php if (has_post_thumbnail() ): ?>
+                    <p><?php wp_trim_words(get_the_excerpt(), 12, '...'); ?></p>
+                <?php else: ?>
+                    <p><?php wp_trim_words(get_the_content(), 40, '...'); ?></p>
+                <?php endif; ?>
                 ?>
             </div>
 
