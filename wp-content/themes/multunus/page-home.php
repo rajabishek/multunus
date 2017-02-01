@@ -217,7 +217,7 @@
             <section class="talks-section">
                 <div class="row">
                     <div class="col-md-12">
-                        <h2>Conferences talks</h2>
+                        <h2>Conference talks</h2>
                         <p>We are very active with giving talks & attending conferences. This is one of the ways we are keep ourseleves closely engaged with the community. Apart from learning something new at conferences, meeting new people & sharing our experiences help us with networking.</p>
                         <p>Supporting conferences has also helped us in gaining more exposure & awareness about the happening in the community. The inspiration that we get from every conference pushes us to work harder every day.</p>
                         <div class="talks">
