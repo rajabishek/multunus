@@ -58,6 +58,9 @@
     -webkit-box-shadow: 0 2px 84px 0 rgba(208,208,208,0.9);
     -moz-box-shadow: 0 2px 84px 0 rgba(208,208,208,0.9);
     box-shadow: 0 2px 84px 0 rgba(208,208,208,0.9);
+    h4 {
+      color: $theme-color-pink;
+    }
   }
   .post-img {
     img {
@@ -75,12 +78,8 @@
       font-weight: 400;
     }
   }
-  .post-text h4 a {
+  .post-text h4 {
     color: inherit;
-
-    &:hover {
-      color: $theme-color-pink;
-    }
   }
   .post-meta {
     background-color: white;
