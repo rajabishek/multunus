@@ -4,7 +4,6 @@
      */
     ?>
 <?php get_header(); ?>
-<link rel='stylesheet prefetch' href='http://cdn.jsdelivr.net/jquery.slick/1.3.15/slick.css'>
 <section class="home-page">
     <div class="banner-section-container">
         <div class="overlay">
@@ -372,5 +371,3 @@
     </div>
 </section>
 <?php get_footer(); ?>
-<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='http://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.3.14/slick.min.js'></script>
