@@ -113,62 +113,6 @@
             </div>
         </div>
     </section>
-    <!-- <div class="customer-stories wild-sand">
-        <div class="container">
-            <?php
-                $portfolio_items = get_posts( array(
-                    'post_type' => 'portfolio',
-                    'meta_key'    => 'show_customer_story_in_home_page',
-                   'meta_value' => true,
-                    'posts_per_page' => -1 // Unlimited posts
-                ) );
-            ?>
-            <h1 class="text-center">Customer stories</h1>
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="testimonials">
-                        <?php
-                            foreach ( $portfolio_items as $index => $post ):
-                            setup_postdata($post);
-                            $permalink = post_permalink($post->ID);
-                        ?>
-                            <div class="testimonial">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-md-3">
-                                            <img class="testimonial-image" src="<?php the_field('thumbnail'); ?>">
-                                        </div>
-                                        <div class="col-md-9">
-                                            <div class="story">
-                                                <h3 class="title"><?php the_title(); ?></h3>
-                                                <p class="snippet"><?php the_field('story_snippet'); ?></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="review-info">
-                                            <div class="col-md-1">
-                                                <img class="profile-image" src="<?php the_field('customer_image') ?>">
-                                            </div>
-                                            <div class="col-md-9">
-                                                <p class="review"><?php the_field('customer_quote'); ?></p>
-                                                <p class="person-name">-- <?php the_field('customer_name'); ?>, <?php the_field('customer_organization'); ?></p>
-                                            </div>
-                                            <div class="col-md-2">
-                                                <a class="read-more button button-red-border" href="<?php echo $permalink ?>">Read More</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        <?php endforeach; ?>
-                        <button class="carousel-prev-button"></button>
-                        <button class="carousel-next-button"></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
     <div class="community">
         <div class="container">
             <div class="row">
