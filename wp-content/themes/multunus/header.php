@@ -53,11 +53,9 @@
               </div>
               <div class="navbar-collapse collapse">
                   <ul id="main-nav" class="nav navbar-nav navbar-right">
-                      <li><a href="/portfolio">Portfolio</a></li>
-                      <li><a href="/process">Process</a></li>
                       <li><a href="/services">Services</a></li>
-                      <li><a href="/team">Team</a></li>
-                      <li><a href="/community">Community</a></li>
+                      <li><a href="/portfolio">Portfolio</a></li>
+                      <li><a href="/blog">Blog</a></li>
                       <li><a href="/careers">Careers</a></li>
                       <li><a href="/contact">Contact Us</a></li>
                 </ul>
