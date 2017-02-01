@@ -179,15 +179,15 @@
                             <div class="col-md-6">
                                  <ul class="resource-links">
                                     <li class="resource-link">
-                                        <a href="/blog/2016/12/abstractions-ruby-clojure/" target="_blank">
-                                            <h4>Abstractions in ruby & clojure</h4>
-                                            <p>One of the primary reasons I find it much easier to write Clojure is just the fact that you get to...</p>
+                                        <a href="/blog/2016/07/test-driving-react-native-applications/" target="_blank">
+                                            <h4>Test driving React Native applications</h4>
+                                            <p>React Native is a game changing mobile app development framework that concentrates on fast...</p>
                                         </a>
                                     </li>
                                     <li class="resource-link">
-                                        <a href="/blog/2017/01/refactoring-rails-view-objects/" target="_blank">
-                                            <h4>Refactoring: Rails Presenter pattern</h4>
-                                            <p>One of the primary reasons I find it much easier to write Clojure is just the fact that you get to...</p>
+                                        <a href="/blog/2016/11/building-sql-like-dsl-clojure-part-1/" target="_blank">
+                                            <h4>Building an SQL like DSL in Clojure</h4>
+                                            <p>Clojure is a modern dialect of Lisp. Being a Lisp is what gives Clojure a lot of its power. Clojure...</p>
                                         </a>
                                     </li>
                                 </ul>
@@ -195,15 +195,15 @@
                             <div class="col-md-6">
                                 <ul class="resource-links">
                                     <li class="resource-link">
-                                        <a href="/blog/2017/01/parallel-tests-rails/" target="_blank">
-                                            <h4>Parallel Test Execution in Rails</h4>
-                                            <p>One of the primary reasons I find it much easier to write Clojure is just the fact that you get to...</p>
+                                        <a href="/blog/2016/02/noobs-walkthrough-re-frame-app/" target="_blank">
+                                            <h4>Re-frame Application</h4>
+                                            <p>Re-frame is a very simple but expressive library for writing single-page applications (SPAs)...</p>
                                         </a>
                                     </li>
                                     <li class="resource-link">
                                         <a href="/blog/2016/12/continuous-delivery-us/" target="_blank">
-                                            <h4>Continuous Delivery – Is it for everyone?</h4>
-                                            <p>One of the primary reasons I find it much easier to write Clojure is just the fact that you get to...</p>
+                                            <h4>Autonomous RC car</h4>
+                                            <p>In this project, we will be building an autonomous rc car using supervised learning of a neural...</p>
                                         </a>
                                     </li>
                                 </ul>
@@ -222,39 +222,39 @@
                             <div class="row">
                                 <div class="col-md-4 col-sm-6 col-xs-12">
                                     <div class="media-card">
-                                        <a href="href="/community/talks" target="_blank">
+                                        <a href="https://www.youtube.com/watch?v=E15ZV7eL5CM" target="_blank">
                                             <figure class="media">
-                                                <span style="background-image: url('/img/home-talks-1.jpg');"></span>
+                                                <span style="background-image: url('/img/home-community-leena.jpg');"></span>
                                             </figure>
                                             <div class="meta">
-                                                <h5>Conference name</h5>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                                <h5>Rootconf 2016</h5>
+                                                <p>Merge Hells? Feature Toggle to the Rescue</p>
                                             </div>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="col-md-4 col-sm-6 col-xs-12">
                                     <div class="media-card">
-                                        <a href="href="/community/talks" target="_blank">
+                                        <a href="https://twitter.com/cooldip/status/778840086586634240" target="_blank">
                                             <figure class="media">
-                                                <span style="background-image: url('/img/home-talks-2.jpg');"></span>
+                                                <span style="background-image: url('/img/home-community-manish.jpg');"></span>
                                             </figure>
                                             <div class="meta">
-                                                <h5>Conference name</h5>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                                <h5>Innovation Management</h5>
+                                                <p>Fintech, Edutech, Aerospace. #IdeasInProgress</p>
                                             </div>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="col-md-4 col-sm-6 col-xs-12">
                                     <div class="media-card">
-                                        <a href="href="/community/talks" target="_blank">
+                                        <a href="http://www.multunus.com/blog/2014/02/sponsor-tech-conference-experiments/" target="_blank">
                                             <figure class="media">
-                                                <span style="background-image: url('/img/home-talks-3.jpg');"></span>
+                                                <span style="background-image: url('/img/home-community-multunus.jpg');"></span>
                                             </figure>
                                             <div class="meta">
-                                                <h5>Conference name</h5>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                                <h5>Meta Refresh 2014</h5>
+                                                <p>Twitter Puzzle, Pair Programming & more</p>
                                             </div>
                                         </a>
                                     </div>
