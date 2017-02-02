@@ -33,38 +33,5 @@ $(function() {
         self.$('#testimonialVideo iframe').removeAttr('src');
       });
     }
-  };
-
-  $('.testimonials').slick({
-      arrows: false,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: "unslick"
-        }, 
-        {
-          breakpoint: 600,
-          settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2
-          }
-        }, 
-        {
-          breakpoint: 480,
-          settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-          }
-        }
-      ]
-  });
-
-  $('.carousel-next-button').click(function() { 
-      $(".testimonials").slickPrev(); 
-  });
-
-  $('.carousel-prev-button').click(function() { 
-      $(".testimonials").slickPrev(); 
-  });
-  
+  };  
 });
