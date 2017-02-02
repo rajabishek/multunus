@@ -144,6 +144,24 @@
                                         </div>
                                     </div>
                                 </a>
+                                <a href="https://github.com/multunus/Open-Playbook" target="_blank">
+                                    <div class="repo-card">
+                                        <div class="repo-info">
+                                            <h5 class="repo-title">Open Playbook</h5>
+                                            <p class="repo-description">Our open culture, tools and process playbook.</p>
+                                        </div>
+                                        <div class="repo-stats">
+                                            <div class="repo-stats-group">
+                                                <p class="repo-stats-title">Stars</p>
+                                                <p class="repo-stat">33</p>
+                                            </div>
+                                            <div class="repo-stats-group">
+                                                <p class="repo-stats-title">Forks</p>
+                                                <p class="repo-stat">5</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
                             <div class="col-md-6">
                                 <a href="https://github.com/multunus/onemdm-server" target="_blank">
@@ -160,6 +178,24 @@
                                             <div class="repo-stats-group">
                                                 <p class="repo-stats-title">Forks</p>
                                                 <p class="repo-stat">12</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="https://github.com/multunus/autonomous-rc-car" target="_blank">
+                                    <div class="repo-card">
+                                        <div class="repo-info">
+                                            <h5 class="repo-title">Autonomous RC car</h5>
+                                            <p class="repo-description">Autonomous RC car using Raspberry Pi and ANN</p>
+                                        </div>
+                                        <div class="repo-stats">
+                                            <div class="repo-stats-group">
+                                                <p class="repo-stats-title">Stars</p>
+                                                <p class="repo-stat">142</p>
+                                            </div>
+                                            <div class="repo-stats-group">
+                                                <p class="repo-stats-title">Forks</p>
+                                                <p class="repo-stat">37</p>
                                             </div>
                                         </div>
                                     </div>
