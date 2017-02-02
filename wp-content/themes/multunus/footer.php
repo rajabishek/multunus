@@ -5,7 +5,7 @@
                 <ul class="list-unstyled">
                     <li class="nav-heading">Company
                     <li>
-                    <li><a href="/process">The Big Picture</a></li>
+                    <li><a href="/process">Process</a></li>
                     <li><a href="/team">Team</a></li>
                     <li><a href="/careers">Careers</a></li>
                 </ul>
