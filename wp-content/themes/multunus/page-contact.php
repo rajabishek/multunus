@@ -3,23 +3,7 @@
  * Template Name: Contact Us
  */
 ?>
-
 <?php get_header(); ?>
-
-<div class="video-section-container contact-page">
-  <div class="overlay">
-    <div class="overlay-content">
-      <h1 id="quote">Namaste! We'd love to hear from you.</h1>
-        <div class="hidden-xs">
-          <div data-toggle="scroll" rel="#main-content" class="button button-red-filled">Get in Touch<span></span></div>
-        </div>
-    </div>
-  </div>
-
-  <video autoplay="autoplay" loop="loop" poster="/img/contact-page-poster.jpeg" data-video-name="contact">
-  </video>
-</div>
-
 <section id="main-content" class="container">
   <h1 class="align-center">Find us on the map</h1>
 </section><!-- end of get-in-touch -->
