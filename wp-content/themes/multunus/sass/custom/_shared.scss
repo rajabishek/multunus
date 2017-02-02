@@ -429,15 +429,16 @@ ul.arrow-list-style {
   background-clip: padding-box;
   
   .meta {
-    h5 {
+    p.heading {
       padding: 0 20px;
       margin-bottom: 0px;
       margin-top: 20px;
       text-transform: uppercase;
       color: #656565;
     }
-    p {
+    p.description {
       padding: 0 20px;
+      margin-top: 5px;
     }
   }
 
@@ -445,7 +446,7 @@ ul.arrow-list-style {
     background-color: #2A2A2A;
     color: white;
     transition: all 0.2s ease-in;
-    a, h5 {
+    a, p.heading {
       color: white;
     }
   }

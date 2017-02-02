@@ -229,8 +229,8 @@
                                                 <span style="background-image: url('/img/home-community-rootconf.jpg');"></span>
                                             </figure>
                                             <div class="meta">
-                                                <h5>Rootconf 2016</h5>
-                                                <p>Merge Hells? Feature Toggle to the Rescue</p>
+                                                <p class="heading">Rootconf 2016</p>
+                                                <p class="description">Merge Hells? Feature Toggle to the Rescue</p>
                                             </div>
                                         </a>
                                     </div>
@@ -242,8 +242,8 @@
                                                 <span style="background-image: url('/img/home-community-multunus.jpg');"></span>
                                             </figure>
                                             <div class="meta">
-                                                <h5>Meta Refresh 2014</h5>
-                                                <p>Twitter Puzzle, Pair Programming & more</p>
+                                                <p class="heading">Meta Refresh 2014</p>
+                                                <p class="description">Twitter Puzzle, Pair Programming & more</p>
                                             </div>
                                         </a>
                                     </div>
@@ -255,8 +255,8 @@
                                                 <span style="background-image: url('/img/home-community-droidcon.jpg');"></span>
                                             </figure>
                                             <div class="meta">
-                                                <h5>Droidcon 2015</h5>
-                                                <p>Learnings from building Custom MDM</p>
+                                                <p class="heading">Droidcon 2015</p>
+                                                <p class="description">Learnings from building Custom MDM</p>
                                             </div>
                                         </a>
                                     </div>
