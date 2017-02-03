@@ -51,7 +51,7 @@
 	    		</div>
 	    		<div class="col-sm-4">
 	    			<div class="email-group">
-	    				<h3 class="email-category">Carrers</h3>
+	    				<h3 class="email-category">Careers</h3>
 	    				<a href="mailto:careers@multunus.com" class="email-address">careers@multunus.com</a>
 	    			</div>
 	    		</div>
