@@ -9,7 +9,7 @@
     <section id="main-content" class="container">
         <h1 class="align-center">Hello there</h1>
         <p>We answer over 100 messages every week from our contact form, and we love talking to our potential customers, fans, haters and people who've got some feedback for us.</p>
-        <p>Just email us at <a href="mailto:info@multunus.com" class="email-link">info@multunus.com</a>, or fill in the form below.</p>
+        <!-- <p>Just email us at <a href="mailto:info@multunus.com" class="email-link">info@multunus.com</a>, or fill in the form below.</p> -->
         <div class="type-form-container">
 			<iframe id="contact-typeform" src="https://multunus-feedback.typeform.com/to/nGvoX3"></iframe>
 		</div>
@@ -34,6 +34,30 @@
         	</div>
 		</div>
     </section>
+    <div class="email-addresses wild-sand">
+    	<div class="container">
+    		<div class="row">
+	    		<div class="col-sm-4">
+	    			<div class="email-group">
+	    				<h3 class="email-category">Business</h3>
+	    				<a href="mailto:info@multunus.com" class="email-address">info@multunus.com</a>
+	    			</div>
+	    		</div>
+	    		<div class="col-sm-4">
+	    			<div class="email-group">
+	    				<h3 class="email-category">Community</h3>
+	    				<a href="mailto:community@multunus.com" class="email-address">community@multunus.com</a>
+	    			</div>
+	    		</div>
+	    		<div class="col-sm-4">
+	    			<div class="email-group">
+	    				<h3 class="email-category">Carrers</h3>
+	    				<a href="mailto:careers@multunus.com" class="email-address">careers@multunus.com</a>
+	    			</div>
+	    		</div>
+	    	</div>
+    	</div>
+    </div>
 </div>
 <?php get_footer(); ?>
 

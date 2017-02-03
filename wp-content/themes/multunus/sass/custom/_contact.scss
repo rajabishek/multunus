@@ -1,6 +1,5 @@
 .contact-us-section {
   margin-top: 50px;
-  margin-bottom: 50px;
   .email-link {
     text-decoration: underline;
     color: $theme-color-pink;
@@ -19,12 +18,28 @@
     }
   }
   .clickable-card {
+    margin-top: 30px;
     .google-maps-container {
       margin-top: 30px;
     }
     .office-address-container {
       margin-top: 30px;
       margin-left: 30px;
+    }
+  }
+  .email-addresses {
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    .email-group {
+      text-align: center;
+      .email-category {
+        margin-bottom: 0;
+      }
+      .email-address {
+        text-decoration: underline;
+        color: $theme-color-pink;
+      }
     }
   }
 }
