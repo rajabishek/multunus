@@ -44,7 +44,7 @@
         <div class="row">
             <div class="col-xs-8">
                 <ul class="list-unstyled list-inline pull-left">
-                    <li><a href="/contact">Hire Us</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
                 </ul>
             </div>
             <div class="col-xs-4">
