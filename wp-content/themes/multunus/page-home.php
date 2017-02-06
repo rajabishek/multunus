@@ -1,8 +1,8 @@
 <?php
-    /*
-     Template Name: Home
-     */
-    ?>
+/*
+ Template Name: Home
+ */
+?>
 <?php get_header(); ?>
 <section class="home-page">
     <div class="banner-section-container">
