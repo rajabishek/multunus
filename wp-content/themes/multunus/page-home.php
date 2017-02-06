@@ -37,8 +37,7 @@
                             <a href="/services#innovation-consulting">
                                 <img src="/img/home-services-innovation.svg" class="illustration">
                                 <h3>Innovation</h3>
-                                <p>Business goals should motivate design. The product must constantly evolve based on analytics, user feedback, and shifting short-term objectives.</p>
-                                <p>We help enterprises & startup clients to set a strong branding and design framework early on.</p>
+                                <p>We believe Innovation should happen all the time in all teams, not just before starting a project or by a special A-Team. Design Thinking & Lean Startup are our weapons.</p>
                             </a>
                         </div>
                     </div>
