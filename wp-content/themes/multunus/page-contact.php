@@ -34,30 +34,6 @@
         	</div>
 		</div>
     </section>
-    <div class="email-addresses wild-sand">
-    	<div class="container">
-    		<div class="row">
-	    		<div class="col-sm-4">
-	    			<div class="email-group">
-	    				<h3 class="email-category">Business</h3>
-	    				<a href="mailto:info@multunus.com" class="email-address">info@multunus.com</a>
-	    			</div>
-	    		</div>
-	    		<div class="col-sm-4">
-	    			<div class="email-group">
-	    				<h3 class="email-category">Community</h3>
-	    				<a href="mailto:community@multunus.com" class="email-address">community@multunus.com</a>
-	    			</div>
-	    		</div>
-	    		<div class="col-sm-4">
-	    			<div class="email-group">
-	    				<h3 class="email-category">Careers</h3>
-	    				<a href="mailto:careers@multunus.com" class="email-address">careers@multunus.com</a>
-	    			</div>
-	    		</div>
-	    	</div>
-    	</div>
-    </div>
 </div>
 <?php get_footer(); ?>
 
