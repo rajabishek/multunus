@@ -26,7 +26,7 @@ if ($portfolio_item): ?>
                    $permalink = post_permalink($post->ID); ?>
                 <div class="col-md-4 col-sm-6 col-xs-12">
                     <div class="media-card">
-                        <a href="<?php echo $permalink ?>" target="_blank">
+                        <a href="<?php echo $permalink ?>">
                             <figure class="media">
                                 <span style="background-image: url(<?php the_field('thumbnail'); ?>);"></span>
                             </figure>
