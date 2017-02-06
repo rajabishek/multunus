@@ -1,39 +1,38 @@
-.web-development, .mobile-development, .innovation-consulting {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.web-development ul li {
-  padding-bottom: 10px;
-}
-
-.mobile-development {
-  background-color: #F4F4F4;
-}
-
-.innovation-consulting {
-  background-image: url(/img/services-innovation-consulting.svg);
-  background-position: center bottom;
-  background-repeat: no-repeat, repeat;
-  background-size: contain, auto;
-}
-
-.mobile-development {
-  background-image: url(/img/services-mobile-development.svg);
-  background-position: center top;
-  background-repeat: no-repeat, repeat;
-  background-size: contain, auto;
-}
-
-.web-development {
-  background-image: url(/img/services-web-development.svg);
-  background-position: center top;
-  background-repeat: no-repeat, repeat;
-  background-size: contain, auto;
-}
-
-@media only screen and (max-width: 768px) {
-  .innovation-consulting, .mobile-development, .web-development {
-    background-image: none;
+.services {
+  .clickable-card {
+    min-height: 350px;
+  }
+  .web-development, .mobile-development, .innovation-consulting {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .web-development ul li {
+    padding-bottom: 10px;
+  }
+  .mobile-development {
+    background-color: #F4F4F4;
+  }
+  .innovation-consulting {
+    background-image: url(/img/services-innovation-consulting.svg);
+    background-position: center bottom;
+    background-repeat: no-repeat, repeat;
+    background-size: contain, auto;
+  }
+  .mobile-development {
+    background-image: url(/img/services-mobile-development.svg);
+    background-position: center top;
+    background-repeat: no-repeat, repeat;
+    background-size: contain, auto;
+  }
+  .web-development {
+    background-image: url(/img/services-web-development.svg);
+    background-position: center top;
+    background-repeat: no-repeat, repeat;
+    background-size: contain, auto;
+  }
+  @media only screen and (max-width: 768px) {
+    .innovation-consulting, .mobile-development, .web-development {
+      background-image: none;
+    }
   }
 }

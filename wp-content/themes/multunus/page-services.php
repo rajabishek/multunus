@@ -31,27 +31,29 @@ if ($service_item ): ?>
     <?php foreach ($category_list as $category => $description): ?>
         <div class="<?php echo str_replace(" ", "-", strtolower($category)); ?>" id="<?php echo str_replace(" ", "-", strtolower($category)); ?>">
             <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <h2><?php echo ucwords($category); ?></h2>
-                        <p><?php echo $description; ?></p>
+                <div class="services">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h2><?php echo ucwords($category); ?></h2>
+                            <p><?php echo $description; ?></p>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <?php foreach ( $service_item as $post ):
-                          setup_postdata($post);
-                          $permalink = post_permalink($post->ID);
-                    ?>
-                        <?php if (strcmp($category,get_field('category')) == 0 ): ?>
-                            <div class="col-md-6">
-                                <div class="clickable-card">
-                                    <h3><?php the_title(); ?></h3>
-                                    <p><?php echo the_field('description'); ?></p>
-                                    <a class="button button-red-border" href="<?php echo $permalink ?>">Learn More</a>
+                    <div class="row">
+                        <?php foreach ( $service_item as $post ):
+                              setup_postdata($post);
+                              $permalink = post_permalink($post->ID);
+                        ?>
+                            <?php if (strcmp($category,get_field('category')) == 0 ): ?>
+                                <div class="col-md-6">
+                                    <div class="clickable-card">
+                                        <h3><?php the_title(); ?></h3>
+                                        <p><?php echo the_field('description'); ?></p>
+                                        <a class="button button-red-border" href="<?php echo $permalink ?>">Learn More</a>
+                                    </div>
                                 </div>
-                            </div>
-                        <? endif; ?>
-                    <?php endforeach; ?>
+                            <? endif; ?>
+                        <?php endforeach; ?>
+                    </div>
                 </div>
             </div>
         </div>
