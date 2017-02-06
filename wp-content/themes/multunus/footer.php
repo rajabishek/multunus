@@ -36,7 +36,7 @@
                     <li><a href="/services/ios">iOS</a></li>
                     <li><a href="/services/android">Android</a></li>
                     <li><a href="/services/business-modeling">Business Modelling</a></li>
-                    <li><a href="/services/design-sprints">Design Sprints</a></li>
+                    <!-- <li><a href="/services/design-sprints">Design Sprints</a></li> -->
                 </ul>
             </div>
         </div>
