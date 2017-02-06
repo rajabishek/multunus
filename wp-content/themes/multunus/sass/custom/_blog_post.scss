@@ -86,6 +86,9 @@
     }
 
     .content {
+      p {
+        line-height: 1.8;
+      }
       margin-bottom: 28px;
 
       ul {
@@ -95,6 +98,7 @@
 
       li {
         margin-left: 10px;
+        font-size: 18px;
       }
 
       .social-share {

@@ -6,7 +6,6 @@
       <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
         <div class="col-md-4">
-          <a href="<?php the_permalink(); ?>" title="Read more">
           <div class="one-post">
             <div class="post-img">
               <?php if ( has_post_thumbnail() ) { the_post_thumbnail(); } ?>
@@ -41,7 +40,6 @@
             </div>
 
           </div><!-- end of one-post -->
-          </a>
         </div><!-- end of col-md-4 -->
       <?php endwhile; endif; ?><!-- end The Loop -->
     </div><!-- end of row  -->

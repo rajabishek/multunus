@@ -27,7 +27,7 @@
             <div class="row">
                 <div class="col-sm-12">
                     <h1>Experience and skills you need</h1>
-                    <p>We've produced top quality applications with hundreds of clients for more than 12 years. From one person startups to Fortune 500 enterprises, universities, and non-profits. This is our purpose, and here's what we can do for you.</p>
+                    <p>9 years on a mission to build a remarkable software consulting team from India. Not the large hordes of programmers but a specialised SWAT team experienced in building web and mobile products. 24 awesome warriors and growing slowly, one warrior at a time.</p>
                 </div>
             </div>
             <div class="services">
@@ -47,8 +47,8 @@
                            <a href="/services#mobile-development">
                                 <img src="/img/home-services-tech.svg" class="illustration">
                                 <h3>Technology</h3>
-                                <p>With our roots in enterprise systems and agile delivery, we’ve been at the forefront of some of the industry’s biggest changes.</p>
-                                <p>We’re here to bring the technology that’s at our core, to yours.</p>
+                                <p>We develop software that is engaging, user friendly & easy to use without a user manual.</p>
+                                <p>We release a new feature every week because real learning for the business is from usage by customers.</p>
                            </a>
                         </div>
                     </div>

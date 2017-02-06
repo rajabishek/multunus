@@ -44,20 +44,19 @@
   -webkit-box-shadow: 0 2px 64px 0 rgba(208,208,208,0.5);
   -moz-box-shadow: 0 2px 64px 0 rgba(208,208,208,0.5);
   box-shadow: 0 2px 64px 0 rgba(208,208,208,0.5);
-  cursor: pointer;
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
   position: relative;
   &:hover {
-    -webkit-transform: scale(1.04);
-    -moz-transform: scale(1.04);
-    -ms-transform: scale(1.04);
-    -o-transform: scale(1.04);
-    transform: scale(1.04);
-    -webkit-box-shadow: 0 2px 84px 0 rgba(208,208,208,0.9);
-    -moz-box-shadow: 0 2px 84px 0 rgba(208,208,208,0.9);
-    box-shadow: 0 2px 84px 0 rgba(208,208,208,0.9);
+    // -webkit-transform: scale(1.04);
+    // -moz-transform: scale(1.04);
+    // -ms-transform: scale(1.04);
+    // -o-transform: scale(1.04);
+    // transform: scale(1.04);
+    // -webkit-box-shadow: 0 2px 84px 0 rgba(208,208,208,0.9);
+    // -moz-box-shadow: 0 2px 84px 0 rgba(208,208,208,0.9);
+    // box-shadow: 0 2px 84px 0 rgba(208,208,208,0.9);
     h4 {
       color: $theme-color-pink;
     }
