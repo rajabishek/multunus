@@ -304,7 +304,7 @@
             </section>
         </div>
     </div>
-    <div class="craftmanship wild-sand">
+    <!-- <div class="craftmanship wild-sand">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6">
@@ -326,7 +326,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- <div class="container big-picture">
         <h1 class="text-center">The big picture</h1>
         <div class="row">
@@ -342,12 +342,14 @@
         </div>
     </div> -->
     <div class="lets-talk">
-        <div class="row">
-            <div class="col-xs-12">
-                <h2 class="text-center">Its time to craft brilliance together ? Let's chat.</h2>
-                <div class="text-center">
-                    <a class="typeform-share link button button-white-filled" href="https://multunus-feedback.typeform.com/to/nGvoX3" data-mode="2" target="_blank">Get in touch with us today</a>
-                    <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm_share',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2 class="text-center">Its time to craft brilliance together ? Let's chat.</h2>
+                    <div class="text-center">
+                        <a class="typeform-share link button button-white-filled" href="https://multunus-feedback.typeform.com/to/nGvoX3" data-mode="2" target="_blank">Get in touch with us today</a>
+                        <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm_share',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
+                    </div>
                 </div>
             </div>
         </div>
