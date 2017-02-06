@@ -27,7 +27,7 @@
             <div class="row">
                 <div class="col-sm-12">
                     <h1>Experience and skills you need</h1>
-                    <p>9 years on a mission to build a remarkable software consulting team from India. Not the large hordes of programmers but a specialised SWAT team experienced in building web and mobile products. 24 awesome warriors and growing slowly, one warrior at a time.</p>
+                    <p class="spacing">9 years on a mission to build a remarkable software consulting team from India. Not the large hordes of programmers but a specialised SWAT team experienced in building web and mobile products. 24 awesome warriors and growing slowly, one warrior at a time.</p>
                 </div>
             </div>
             <div class="services">
@@ -37,7 +37,7 @@
                             <a href="/services#innovation-consulting">
                                 <img src="/img/home-services-innovation.svg" class="illustration">
                                 <h3>Innovation</h3>
-                                <p>We believe Innovation should happen all the time in all teams, not just before starting a project or by a special A-Team. Design Thinking & Lean Startup are our weapons.</p>
+                                <p class="spacing">We believe Innovation should happen all the time in all teams, not just before starting a project or by a special A-Team. Design Thinking & Lean Startup are our weapons.</p>
                             </a>
                         </div>
                     </div>
@@ -46,7 +46,7 @@
                            <a href="/services#mobile-development">
                                 <img src="/img/home-services-tech.svg" class="illustration">
                                 <h3>Technology</h3>
-                                <p>We develop software that is engaging, user friendly & easy to use without a user manual.</p>
+                                <p class="spacing">We develop software that is engaging, user friendly & easy to use without a user manual.</p>
                                 <p>We release a new feature every week because real learning for the business is from usage by customers.</p>
                            </a>
                         </div>
@@ -121,8 +121,8 @@
                 <div class="row">
                     <div class="col-md-12">
                         <h2>Open Source</h2>
-                        <p>We highly believe in open source technologies. With open source we are more productive & fight lesser number of problems every day.</p>
-                        <p>Open source projects helps us in developing a more polished product over time. Its stops us from reinventing the wheel & encourages us to build upon the work done by the community. We equally spend time contributing to projects & giving back to the community.</p>
+                        <p class="spacing">We highly believe in open source technologies. With open source we are more productive & fight lesser number of problems every day.</p>
+                        <p class="spacing">Open source projects helps us in developing a more polished product over time. Its stops us from reinventing the wheel & encourages us to build upon the work done by the community. We equally spend time contributing to projects & giving back to the community.</p>
                         <div class="row">
                             <div class="col-md-6">
                                 <a href="https://github.com/multunus/dashboard-clj" target="_blank">
@@ -209,8 +209,8 @@
                 <div class="row">
                     <div class="col-md-12">
                         <h2>Blog</h2>
-                        <p>We write a lot about technology & design. We have always found better ways to improve our craft by reading articles from the community. It has given our team an opportunity to understand different perspectives & ideas on solving a particular problem.</p>
-                        <p>The learnings vary from small insights to full blown realizations. In some cases it helps us to connect the dots & understand the bigger picture.</p>
+                        <p class="spacing">We write a lot about technology & design. We have always found better ways to improve our craft by reading articles from the community. It has given our team an opportunity to understand different perspectives & ideas on solving a particular problem.</p>
+                        <p class="spacing">The learnings vary from small insights to full blown realizations. In some cases it helps us to connect the dots & understand the bigger picture.</p>
                         <div class="row">
                             <div class="col-md-6">
                                  <ul class="resource-links">
@@ -253,8 +253,8 @@
                 <div class="row">
                     <div class="col-md-12">
                         <h2>Conference talks</h2>
-                        <p>We are very active with giving talks & attending conferences. This is one of the ways we are keep ourseleves closely engaged with the community. Apart from learning something new at conferences, meeting new people & sharing our experiences help us with networking.</p>
-                        <p>Supporting conferences has also helped us in gaining more exposure & awareness about the happening in the community. The inspiration that we get from every conference pushes us to work harder every day.</p>
+                        <p class="spacing">We are very active with giving talks & attending conferences. This is one of the ways we are keep ourseleves closely engaged with the community. Apart from learning something new at conferences, meeting new people & sharing our experiences help us with networking.</p>
+                        <p class="spacing">Supporting conferences has also helped us in gaining more exposure & awareness about the happening in the community. The inspiration that we get from every conference pushes us to work harder every day.</p>
                         <div class="talks">
                             <div class="row">
                                 <div class="col-md-4 col-sm-6 col-xs-12">

@@ -1,4 +1,7 @@
 .home-page {
+  p.spacing {
+    line-height: 1.8;
+  }
   .banner-section-container {
     position: relative;
   }
@@ -533,7 +536,6 @@
       }
       p{
         text-align: left;
-        line-height: 1.8;
       }
       .illustration {
         width: 40px;
