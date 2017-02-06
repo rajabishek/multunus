@@ -13,7 +13,7 @@
                         <div class="col-sm-12 main-heading">
                             <h1>Solutions by design.</h1>
                             <h5>We translate complex ideas into simple and elegant products</h5>
-                            <button class="button button-red-filled">Read More</button>
+                            <a href="/services" class="button button-red-filled">Read More</a>
                         </div>
                     </div>
                 </div>
