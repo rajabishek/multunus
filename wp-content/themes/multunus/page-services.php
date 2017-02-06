@@ -28,10 +28,10 @@ if ($service_item ): ?>
             </div>
         </div>
     </div>
-    <?php foreach ($category_list as $category => $description): ?>
-        <div class="<?php echo str_replace(" ", "-", strtolower($category)); ?>" id="<?php echo str_replace(" ", "-", strtolower($category)); ?>">
-            <div class="container">
-                <div class="services">
+    <div class="services">
+        <?php foreach ($category_list as $category => $description): ?>
+            <div class="<?php echo str_replace(" ", "-", strtolower($category)); ?>" id="<?php echo str_replace(" ", "-", strtolower($category)); ?>">
+                <div class="container">
                     <div class="row">
                         <div class="col-sm-6">
                             <h2><?php echo ucwords($category); ?></h2>
@@ -56,8 +56,8 @@ if ($service_item ): ?>
                     </div>
                 </div>
             </div>
-        </div>
-    <?php endforeach; ?>
+        <?php endforeach; ?>
+    </div>
     <div class="lets-talk">
         <div class="row">
             <div class="col-xs-12">
