@@ -37,7 +37,7 @@
                             <a href="/services#innovation-consulting">
                                 <img src="/img/home-services-innovation.svg" class="illustration">
                                 <h3>Innovation</h3>
-                                <p class="spacing">We believe Innovation should happen all the time in all teams, not just before starting a project or by a special A-Team. Design Thinking & Lean Startup are our weapons.</p>
+                                <p class="spacing">We believe that innovation should happen all the time in all teams, not just before starting a project or by a special A-Team. Design Thinking & Lean Startup are our weapons.</p>
                             </a>
                         </div>
                     </div>
@@ -47,7 +47,7 @@
                                 <img src="/img/home-services-tech.svg" class="illustration">
                                 <h3>Technology</h3>
                                 <p class="spacing">We develop software that is engaging, user friendly & easy to use without a user manual.</p>
-                                <p>We release a new feature every week because real learning for the business is from usage by customers.</p>
+                                <p class="spacing">We release a new feature every week because real learning for the business is from usage by customers.</p>
                            </a>
                         </div>
                     </div>
