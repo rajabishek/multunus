@@ -61,7 +61,7 @@
                 </article>
                 <aside class="col-sm-4">
                     <div class="customer-data">
-                        <img src="http://www.multunus.com/wp-content/uploads/2015/06/Rohan1.jpg"></img>
+                        <img src="<?php the_field('customer_image'); ?>"></img>
                         <div class="customer-info">
                             <h4><?php the_field('customer_name'); ?></h4>
                             <p class="customer-org"><?php the_field('customer_organization'); ?></p>
