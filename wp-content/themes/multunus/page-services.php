@@ -13,9 +13,14 @@ $service_item = get_posts( array(
 $category_list = array();
 foreach ( $service_item as $post ) {
     setup_postdata($post);
-    $category_list[get_field('category')] = get_field('description');
+    $category_list[] = get_field('category');
 }
 $category_list = array_unique($category_list);
+rsort($category_list);
+$categoryDescriptions = [];
+$categoryDescriptions['innovation-consulting'] = "We believe that innovation should happen all the time in all teams, not just before starting a project or by a special A-Team. Design Thinking & Lean Startup are our weapons.";
+$categoryDescriptions['web-development'] = "We've worked on both Backbone.js and AngularJS as MV* Javascript frameworks. We like Backbone.js for its simplicity and like AngularJS as its opinionated which is helpful for highly interactive applications.";
+$categoryDescriptions['mobile-development'] = "We've done Native iOS development using both Objective C & RubyMotion";
 
 if ($service_item ): ?>
     <div class="container">
@@ -29,13 +34,13 @@ if ($service_item ): ?>
         </div>
     </div>
     <div class="services">
-        <?php foreach ($category_list as $category => $description): ?>
+        <?php foreach ($category_list as $category): ?>
             <div class="<?php echo str_replace(" ", "-", strtolower($category)); ?>" id="<?php echo str_replace(" ", "-", strtolower($category)); ?>">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-6">
                             <h2><?php echo ucwords($category); ?></h2>
-                            <p><?php echo $description; ?></p>
+                            <p><?php echo $categoryDescriptions[str_replace(" ", "-", strtolower($category))] ?></p>
                         </div>
                     </div>
                     <div class="row">
