@@ -4,6 +4,7 @@
  */
 ?>
 <?php get_header(); ?>
+<link rel="stylesheet" type="text/css" href="/wp-content/themes/multunus/css/lity.min.css">
 <section class="home-page">
     <div class="banner-section-container">
         <div class="overlay">
@@ -259,7 +260,7 @@
                             <div class="row">
                                 <div class="col-md-4 col-sm-6 col-xs-12">
                                     <div class="media-card">
-                                        <a href="https://www.youtube.com/watch?v=E15ZV7eL5CM" target="_blank">
+                                        <a href="https://www.youtube.com/watch?v=E15ZV7eL5CM" target="_blank" data-lity>
                                             <figure class="media">
                                                 <span style="background-image: url('/img/home-community-rootconf.jpg');"></span>
                                             </figure>
@@ -272,7 +273,7 @@
                                 </div>
                                 <div class="col-md-4 col-sm-6 col-xs-12">
                                     <div class="media-card">
-                                        <a href="http://www.multunus.com/blog/2014/02/sponsor-tech-conference-experiments/" target="_blank">
+                                        <a href="/blog/2014/02/sponsor-tech-conference-experiments/">
                                             <figure class="media">
                                                 <span style="background-image: url('/img/home-community-multunus.jpg');"></span>
                                             </figure>
@@ -285,7 +286,7 @@
                                 </div>
                                 <div class="col-md-4 col-sm-6 col-xs-12">
                                     <div class="media-card">
-                                        <a href="https://www.youtube.com/watch?v=2kJW0Mpg844" target="_blank">
+                                        <a href="https://www.youtube.com/watch?v=2kJW0Mpg844" target="_blank" data-lity>
                                             <figure class="media">
                                                 <span style="background-image: url('/img/home-community-droidcon.jpg');"></span>
                                             </figure>
@@ -355,3 +356,4 @@
     </div>
 </section>
 <?php get_footer(); ?>
+<script type="text/javascript" src="/wp-content/themes/multunus/js/lity.min.js"></script>
