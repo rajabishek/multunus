@@ -7,7 +7,9 @@ get_header();
 // Get 'Service' posts
 $service_item = get_posts( array(
     'post_type' => 'services',
-    'posts_per_page' => -1 // Unlimited posts
+    'posts_per_page' => -1, // Unlimited posts
+    'orderby'        => 'title',
+    'order'          => 'DESC',
 ) );
 
 $category_list = array();
