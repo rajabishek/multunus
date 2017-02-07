@@ -6,8 +6,12 @@
     padding-top: 30px;
     padding-bottom: 30px;
   }
-  .web-development ul li {
-    padding-bottom: 10px;
+  .web-development {
+    ul {
+      li {
+        padding-bottom: 10px;
+      }
+    }
   }
   .mobile-development {
     background-color: #F4F4F4;
