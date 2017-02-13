@@ -29,7 +29,7 @@ if ($service_item ): ?>
         <div class="main-heading">
             <div class="row">
                 <div class="col-md-offset-2 col-md-8 hero-message">
-                    <h1 class="text-center">We build products that engaging & user friendly</h1>
+                    <h1 class="text-center">We build products that are engaging & user friendly</h1>
                     <h4 class="text-center grey">We create user centric products for forward thinking startups and companies.</h3>
                 </div>
             </div>
