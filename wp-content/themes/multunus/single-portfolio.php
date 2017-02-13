@@ -80,7 +80,6 @@
                             <p class="customer-org"><?php the_field('customer_organization'); ?></p>
                         </div>
                         <div class="customer-review">
-                            
                             <?php if(get_field('customer_quote') != "") { ?>
                             <div class="quote-text">
                                 <i class="fa fa-quote-left"> </i><span id="text"><?php the_field('customer_quote'); ?></span>
