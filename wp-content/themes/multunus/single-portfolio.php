@@ -72,7 +72,7 @@
     <section class="story-content">
         <div class="container">
             <div class="row">
-                <div class="col-xs-offset-1 col-xs-10 col-sm-offset-4 col-sm-4">
+                <div class="col-xs-offset-1 col-xs-10 col-sm-offset-6 col-sm-3">
                     <div class="customer-data">
                         <img src="<?php the_field('customer_image'); ?>"></img>
                         <div class="customer-info">
