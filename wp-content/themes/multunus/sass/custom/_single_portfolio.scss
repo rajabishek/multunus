@@ -79,6 +79,14 @@
       }
       .customer-review {
         margin-top: 60px;
+          .quote-text {
+            i{
+              font-size:1.0em;
+              margin-right: 0.4em;
+            }
+            clear:both;
+            font-weight:500;
+          }
       }
       img {
         width: 100px;
