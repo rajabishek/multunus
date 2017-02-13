@@ -24,7 +24,7 @@ if ($portfolio_item): ?>
             <?php  foreach ($portfolio_item as $post):
                    setup_postdata($post);
                    $permalink = post_permalink($post->ID); ?>
-                <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="col-sm-6 col-xs-12">
                     <div class="media-card">
                         <a href="<?php echo $permalink ?>">
                             <figure class="media">
