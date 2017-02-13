@@ -20,22 +20,30 @@
       $previous_post = $previous_posts[0];
     }
     ?>
-<section class="single-portfolio">
-    <div class="portfolio-image-section">
-        <div class="overlay"></div>
-        <img class="background" src="<?php the_field('background_image'); ?>"></img>
-        <div class="app-images-container container <?php the_field('display_device'); ?>">
-            <?php foreach (array(1 => "left", 2 => "center", 3 => "right") as $position) {
-                $device_image_src = '/img/' . get_field('display_device') . '.png';
-                $screenshot_src = get_field('app_image_' . $position);
-                
-                echo '<div class="app-image ' . $position . '" >';
-                echo '<img src="' . $device_image_src . '"></img>';
-                echo '<img class="screenshot" src="' . $screenshot_src . '"></img>';
-                echo '</div>';
-                } ?>
+<section class="single-portfolio"> 
+    <div class="banner-section-container">
+        <div class="overlay">
+            <div class="overlay-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 main-heading">
+                            <h1><?php the_title(); ?></h1>
+                            <h5>User Research | Information Architecture | Wireframing | Prototyping | Product development</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+        <div id="banner-img-container" style="background: url('<?php the_field('background_image'); ?>') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-attachment: scroll;
+        background-position: center !important;
+        background-repeat: no-repeat no-repeat;">
+        </div>
+    </div>   
     <section class="story-overview">
         <div class="container-fluid">
             <div class="row">
@@ -64,7 +72,7 @@
     <section class="story-content">
         <div class="container">
             <div class="row">
-                <div class="col-sm-offset-1 col-sm-10">
+                <div class="col-xs-offset-1 col-xs-10 col-sm-offset-4 col-sm-4">
                     <div class="customer-data">
                         <img src="<?php the_field('customer_image'); ?>"></img>
                         <div class="customer-info">
@@ -83,6 +91,10 @@
                             <?php } ?>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-offset-1 col-sm-10">
                     <div class="story">
                         <?php the_content(); ?>
                     </div>

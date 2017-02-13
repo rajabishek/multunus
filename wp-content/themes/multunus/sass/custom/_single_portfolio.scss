@@ -1,4 +1,27 @@
 .single-portfolio {
+  #banner-img-container{
+    @media (max-width: $screen-xs-max){
+        min-height: 174px;
+    }
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+        min-height: 210px;
+    }
+    @media (min-width: $screen-md-min) and (max-width: $screen-md-max){
+        min-height: 270px;
+    }
+    @media (min-width: $screen-lg-min) and (max-width: 1406px) {
+        min-height: 290px;
+    }
+    @media(min-width: 1406px) and (max-width: 1766px){
+        min-height: 390px;
+    }
+    @media(min-width: 1766px) and (max-width: 1906px){
+        min-height: 430px;
+    }
+    @media(min-width: 1906px){
+        min-height: 500px;
+    }
+  }
   .story-overview {
     .highlight {
       margin-top: 80px;
@@ -15,21 +38,21 @@
       }
     }
     .border {
-      margin-top: 80px;
+      margin-top: 60px;
       border-bottom: 2px solid #EAEAEA;
     }
   }
   .story-content {
     margin-top: 80px;
-    p {
-      line-height: 2;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      font-weight: 400;
-    }
     .story {
       margin-top: 80px;
       margin-bottom: 80px;
+      p {
+        line-height: 2;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-weight: 400;
+      }
     }
     .customer-data {
       background: white;
@@ -71,222 +94,6 @@
       }
       .button-with-icon {
         margin: 10px;
-      }
-    }
-  }
-  .portfolio-image-section {
-    height: 566px;
-    overflow: hidden;
-    position: relative;
-
-    @media (max-width: $screen-sm) {
-      height: 469px;
-    }
-
-    .overlay {
-      background: url("/img/portfolio-parrern-one.png");
-      position: absolute;
-      opacity: 0.4;
-      z-index: 1;
-    }
-
-    .background {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-    }
-
-    .app-images-container {
-      position: relative;
-      text-align: center;
-      z-index: 5;
-    }
-
-    .macbook {
-      .app-image {
-        width: 444px;
-        top: 210px;
-        position: absolute;
-
-        &.left {
-          left: 5%;
-          @media (max-width: $screen-sm) {
-            display: none;
-          }
-        }
-
-        &.center {
-          width: 630px;
-          position: relative;
-          margin: auto;
-          z-index: 6;
-          top: 140px;
-
-          @media (max-width: $screen-sm) {
-            width: initial;
-            min-width: initial;
-            top: 185px;
-          }
-        }
-
-        &.right {
-          right: 5%;
-          @media (max-width: $screen-sm) {
-            display: none;
-          }
-        }
-
-        .screenshot {
-          position: absolute;
-          top: 5.76%;
-          left: 10.31%;
-          width: 80%;
-          height: 80.95%;
-        }
-      }
-    }
-
-    .android-tablet{
-      .app-image {
-        width: 358px;
-
-        &.center {
-          width: 510px;
-
-          @media (max-width: $screen-sm) {
-            top: 160px;
-          }
-        }
-
-        .screenshot {
-          position: absolute;
-          top: 9.12%;
-          left: 5.866%;
-          width: 88.824%;
-          height: 82.6%;
-        }
-      }
-    }
-
-    .ipad-white {
-      .app-image {
-        width: 320px;
-
-        &.center {
-          width: 460px;
-
-          @media (max-width: $screen-sm) {
-            top: 150px;
-          }
-        }
-
-        .screenshot {
-          position: absolute;
-          top: 12.724%;
-          left: 9.148%;
-          width: 81.875%;
-          height: 77.638%;
-        }
-      }
-    }
-
-    .android-tablet, .ipad-white {
-      .app-image {
-        top: 210px;
-        position: absolute;
-
-        &.left {
-          left: 5%;
-          @media (max-width: $screen-sm) {
-            display: none;
-          }
-        }
-
-        &.center {
-          position: relative;
-          margin: auto;
-          z-index: 6;
-          top: 140px;
-
-          @media (max-width: $screen-sm) {
-            width: initial;
-            min-width: initial;
-          }
-        }
-
-        &.right {
-          right: 5%;
-          @media (max-width: $screen-sm) {
-            display: none;
-          }
-        }
-      }
-    }
-
-    .nexus-5, .iphone {
-      .app-image {
-        margin-top: 333px;
-        width: 194px;
-        display: inline-block;
-        vertical-align: top;
-        position: relative;
-
-        &.left {
-          margin-right: 30px;
-        }
-
-        &.center {
-          margin-top: 170px;
-          width: 275px;
-        }
-
-        &.right {
-          margin-left: 30px;
-        }
-
-        @media (max-width: $screen-sm) {
-          &.left, &.right {
-            width: 135px;
-            width: 125px;
-            margin-top: 278px;
-            position: absolute;
-          }
-
-          &.left {
-            left: 24px;
-          }
-
-          &.right {
-            right: 24px;
-          }
-
-          &.center {
-            position: relative;
-            margin-top: 175px;
-            width: 192px;
-            z-index: 6;
-          }
-        }
-      }
-    }
-
-    .nexus-5 {
-      .screenshot {
-        position: absolute;
-        top: 8.45%;
-        left: 2.72%;
-        width: 94.546%;
-        height: 83.7%;
-      }
-    }
-
-    .iphone {
-      .screenshot {
-        position: absolute;
-        top: 13.71%;
-        left: 7.7%;
-        width: 84.6%;
-        height: 72.25%;
       }
     }
   }

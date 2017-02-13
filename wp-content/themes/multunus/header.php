@@ -16,8 +16,28 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
-  <?php if (!is_front_page()): ?>
+<body <?php body_class(); ?>
+  <?php if (is_front_page() || (is_single() && 'portfolio' == get_post_type())): ?>
+    <div id="main-header">
+      <div class="navbar navbar-default navbar-fat navbar-clean">
+          <div class="container-fluid">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar b1"></span> <span class="icon-bar b2"></span> <span class="icon-bar b3"></span> </button> 
+                  <a href="/"><img src="/img/home-logo.svg"></a>
+              </div>
+              <div class="navbar-collapse collapse">
+                  <ul id="main-nav" class="nav navbar-nav navbar-right">
+                      <li><a href="/services">Services</a></li>
+                      <li><a href="/portfolio">Portfolio</a></li>
+                      <li><a href="/blog">Blog</a></li>
+                      <li><a href="/careers">Careers</a></li>
+                      <li><a href="/contact">Let's Talk</a></li>
+                </ul>
+              </div>
+          </div>
+      </div>
+    </div>
+  <?php else: ?>
     <header>
       <div class="navbar navbar-default">
           <div class="container-fluid">
@@ -43,24 +63,4 @@
           </div>
       </div>
     </header>
-  <?php else: ?>
-    <div id="main-header">
-      <div class="navbar navbar-default navbar-fat navbar-clean">
-          <div class="container-fluid">
-              <div class="navbar-header">
-                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar b1"></span> <span class="icon-bar b2"></span> <span class="icon-bar b3"></span> </button> 
-                  <a href="/"><img src="/img/home-logo.svg"></a>
-              </div>
-              <div class="navbar-collapse collapse">
-                  <ul id="main-nav" class="nav navbar-nav navbar-right">
-                      <li><a href="/services">Services</a></li>
-                      <li><a href="/portfolio">Portfolio</a></li>
-                      <li><a href="/blog">Blog</a></li>
-                      <li><a href="/careers">Careers</a></li>
-                      <li><a href="/contact">Let's Talk</a></li>
-                </ul>
-              </div>
-          </div>
-      </div>
-    </div>
   <? endif; ?>
