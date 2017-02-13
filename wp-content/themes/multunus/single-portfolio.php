@@ -36,30 +36,35 @@
                 } ?>
         </div>
     </div>
-    <div class="title-container">
-        <div class="container">
+    <section class="story-overview">
+        <div class="container-fluid">
             <div class="row">
-                <div class="project-title col-sm-8">
-                    <div class="post-title">
-                        <h1><?php the_title(); ?> </h1>
+                <div class="highlight">
+                    <div class="col-md-offset-2 col-md-4">
+                        <div class="challenge">
+                            <h3>The challenge</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum debitis, explicabo qui iusto, quaerat voluptates magni aperiam, voluptatem aut quos maiores? Sunt ex culpa perspiciatis! Quaerat molestias, earum saepe pariatur.</p>
+                        </div>
                     </div>
-                    <div class="category"><span>Filed in: <?php the_field('category') ?></span></div>
+                    <div class="col-md-4">
+                        <div class="outcome">
+                            <h3>The outcome</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error accusantium laborum dolores fugit aut aspernatur sequi labore quos minima, quaerat fugiat. Doloremque aperiam qui eos repellendus officiis iste blanditiis nobis.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-4 hidden-xs portfolio-nav">
-                    <a href="<?php echo get_permalink( $previous_post->ID ); ?>" class="links previous-project"></a>
-                    <a href="/portfolio" class="links portfolio-link"></a>
-                    <a href="<?php echo get_permalink( $next_post->ID ); ?>" class="links next-project"></a>
+            </div>
+            <div class="row">
+                <div class="col-sm-offset-2 col-sm-8">
+                    <div class="border"></div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="content-container">
+    </section>
+    <section class="story-content">
         <div class="container">
             <div class="row">
-                <article class="post col-sm-8">
-                    <?php the_content(); ?>
-                </article>
-                <aside class="col-sm-4">
+                <div class="col-sm-offset-1 col-sm-10">
                     <div class="customer-data">
                         <img src="<?php the_field('customer_image'); ?>"></img>
                         <div class="customer-info">
@@ -78,15 +83,13 @@
                             <?php } ?>
                         </div>
                     </div>
-                </aside>
-                <div class="col-sm-12 visible-xs portfolio-nav">
-                    <a href="<?php echo get_permalink( $previous_post->ID ); ?>" class="col-xs-4 links previous-project"></a>
-                    <a href="/portfolio" class="col-xs-4 links portfolio-link"></a>
-                    <a href="<?php echo get_permalink( $next_post->ID ); ?>" class="col-xs-4 links next-project"></a>
+                    <div class="story">
+                        <?php the_content(); ?>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 </section>
 <?php endwhile; endif; ?>
 <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

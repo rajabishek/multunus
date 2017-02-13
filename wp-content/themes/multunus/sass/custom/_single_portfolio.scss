@@ -1,4 +1,79 @@
 .single-portfolio {
+  .story-overview {
+    .highlight {
+      margin-top: 80px;
+      .challenge, .outcome {
+        h3 {
+          text-transform: uppercase;
+          font-weight: 600;
+          color: #333333;
+        }
+        p {
+          line-height: 2;
+          margin-top: 10px;
+        }
+      }
+    }
+    .border {
+      margin-top: 80px;
+      border-bottom: 2px solid #EAEAEA;
+    }
+  }
+  .story-content {
+    margin-top: 80px;
+    p {
+      line-height: 2;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-weight: 400;
+    }
+    .story {
+      margin-top: 80px;
+      margin-bottom: 80px;
+    }
+    .customer-data {
+      background: white;
+      padding: 25px;
+      position: relative;
+      -webkit-box-shadow: 0 2px 64px 0 rgba(208,208,208,0.5);
+      -moz-box-shadow: 0 2px 64px 0 rgba(208,208,208,0.5);
+      box-shadow: 0 2px 64px 0 rgba(208,208,208,0.5);
+      border-radius: 2px;
+      background-clip: padding-box;
+      .customer-info {
+          background-color: $theme-color-pink;
+          position: absolute;
+          top: -30px;
+          left: 40px;
+          padding: 10px;
+          color: white;
+          width: 100%;
+          border-radius: 2px;
+          background-clip: padding-box;
+          h4, p {
+            margin: 0px 0px 0px 30px;
+          }
+      }
+      .customer-review {
+        margin-top: 60px;
+      }
+      img {
+        width: 100px;
+        position: absolute;
+        left: -40px;
+        top: -40px;
+        z-index: 10;
+        border-radius: 2px;
+        background-clip: padding-box;
+      }
+      .customer-org {
+        font-size: 1em;
+      }
+      .button-with-icon {
+        margin: 10px;
+      }
+    }
+  }
   .portfolio-image-section {
     height: 566px;
     overflow: hidden;
@@ -298,81 +373,6 @@
         background: url('/img/arrow-right-grey.png') no-repeat center;
         @media (max-width: $screen-sm) {
           background-position: right;
-        }
-      }
-    }
-  }
-
-  .content-container {
-    padding-bottom: 95px;
-
-    @media (max-width: $screen-sm) {
-      padding-bottom: 0;
-    }
-
-    article {
-      padding-top: 40px;
-      padding-bottom: 40px;
-
-      @media (min-width: $screen-sm) {
-        padding-right: 75px;
-      }
-
-      ul {
-        margin-left: 12px;
-      }
-
-      li {
-        margin-left: 10px;
-      }
-
-    }
-
-    aside {
-      @media (max-width: $screen-sm) {
-        padding: 0;
-      }
-
-      .customer-data {
-        background: white;
-        padding: 25px;
-        position: relative;
-        -webkit-box-shadow: 0 2px 64px 0 rgba(208,208,208,0.5);
-        -moz-box-shadow: 0 2px 64px 0 rgba(208,208,208,0.5);
-        box-shadow: 0 2px 64px 0 rgba(208,208,208,0.5);
-        border-radius: 2px;
-        background-clip: padding-box;
-        .customer-info {
-            background-color: $theme-color-pink;
-            position: absolute;
-            top: -30px;
-            left: 40px;
-            padding: 10px;
-            color: white;
-            width: 100%;
-            border-radius: 2px;
-            background-clip: padding-box;
-            h4, p {
-              margin: 0px 0px 0px 30px;
-            }
-        }
-        .customer-review {
-          margin-top: 60px;
-        }
-        img {
-          width: 100px;
-          position: absolute;
-          left: -40px;
-          top: -40px;
-          z-index: 10;
-          border-radius: 2px;
-          background-clip: padding-box;
-        }
-        .customer-org {
-          font-size: 1em;
-        }
-        .button-with-icon {
-          margin: 10px;
         }
       }
     }
