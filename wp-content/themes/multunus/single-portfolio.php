@@ -117,7 +117,7 @@
                                     </figure>
                                     <div class="meta">
                                         <p class="heading"><?php the_field('company',$previous_post->ID); ?></p>
-                                        <p class="description"><?php the_field('title',$previous_post->ID); ?></p>
+                                        <p class="description"><?php echo $previous_post->post_title; ?></p>
                                     </div>
                                 </a>
                             </div>
@@ -130,7 +130,7 @@
                                     </figure>
                                     <div class="meta">
                                         <p class="heading"><?php the_field('company',$next_post->ID); ?></p>
-                                        <p class="description"><?php the_field('title',$previous_post->ID); ?></p>
+                                        <p class="description"><?php echo $next_post->post_title; ?></p>
                                     </div>
                                 </a>
                             </div>
