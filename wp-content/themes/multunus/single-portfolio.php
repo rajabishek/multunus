@@ -53,13 +53,13 @@
                             <div class="col-md-6">
                                  <div class="challenge">
                                     <h3>The challenge</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum debitis, explicabo qui iusto, quaerat voluptates magni aperiam, voluptatem aut quos maiores? Sunt ex culpa perspiciatis! Quaerat molestias, earum saepe pariatur.</p>
+                                    <p class="overview-content"><?php the_field('challenge'); ?></p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                  <div class="outcome">
-                                    <h3>The challenge</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum debitis, explicabo qui iusto, quaerat voluptates magni aperiam, voluptatem aut quos maiores? Sunt ex culpa perspiciatis! Quaerat molestias, earum saepe pariatur.</p>
+                                    <h3>The outcome</h3>
+                                    <p class="overview-content"><?php the_field('outcome'); ?></p>
                                 </div>
                             </div>
                         </div>
