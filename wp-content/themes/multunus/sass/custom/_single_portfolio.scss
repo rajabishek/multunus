@@ -25,6 +25,9 @@
   .story-overview {
     .highlight {
       margin-top: 80px;
+      margin-bottom: 80px;
+      padding-bottom: 60px;
+      border-bottom: 2px solid #EAEAEA;
       .challenge, .outcome {
         h3 {
           text-transform: uppercase;
@@ -37,10 +40,6 @@
           color: #484848;
         }
       }
-    }
-    .border {
-      margin-top: 60px;
-      border-bottom: 2px solid #EAEAEA;
     }
   }
   .story-content {
@@ -108,7 +107,15 @@
       }
     }
   }
-
+  .other-portfolios {
+    margin-bottom: 80px;
+    h3 {
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #333333;
+      margin-bottom: 30px;
+    }
+  }
   .title-container {
     border-bottom: 1px solid #ddd;
     box-shadow: 3px -6px 30px 8px #F3F3F3;

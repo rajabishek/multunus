@@ -47,24 +47,23 @@
     <section class="story-overview">
         <div class="container-fluid">
             <div class="row">
-                <div class="highlight">
-                    <div class="col-md-offset-2 col-md-4">
-                        <div class="challenge">
-                            <h3>The challenge</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum debitis, explicabo qui iusto, quaerat voluptates magni aperiam, voluptatem aut quos maiores? Sunt ex culpa perspiciatis! Quaerat molestias, earum saepe pariatur.</p>
+                <div class="col-md-offset-2 col-md-8">
+                    <div class="highlight">
+                        <div class="row">
+                            <div class="col-md-6">
+                                 <div class="challenge">
+                                    <h3>The challenge</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum debitis, explicabo qui iusto, quaerat voluptates magni aperiam, voluptatem aut quos maiores? Sunt ex culpa perspiciatis! Quaerat molestias, earum saepe pariatur.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                 <div class="outcome">
+                                    <h3>The challenge</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum debitis, explicabo qui iusto, quaerat voluptates magni aperiam, voluptatem aut quos maiores? Sunt ex culpa perspiciatis! Quaerat molestias, earum saepe pariatur.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="outcome">
-                            <h3>The outcome</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error accusantium laborum dolores fugit aut aspernatur sequi labore quos minima, quaerat fugiat. Doloremque aperiam qui eos repellendus officiis iste blanditiis nobis.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-offset-2 col-sm-8">
-                    <div class="border"></div>
                 </div>
             </div>
         </div>
@@ -99,6 +98,43 @@
                 <div class="col-sm-offset-1 col-sm-10">
                     <div class="story">
                         <?php the_content(); ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="other-portfolios">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8">
+                    <h3>MORE STORIES YOU MIGHT LIKE</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="media-card">
+                                <a href="<?php get_permalink($previous_post->ID); ?>" target="_blank" data-lity>
+                                    <figure class="media">
+                                        <span style="background-image: url('<?php the_field('background_image',$previous_post->ID); ?>');"></span>
+                                    </figure>
+                                    <div class="meta">
+                                        <p class="heading"><?php the_field('company',$previous_post->ID); ?></p>
+                                        <p class="description"><?php the_field('title',$previous_post->ID); ?></p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="media-card">
+                                <a href="<?php get_permalink($next_post->ID); ?>" target="_blank" data-lity>
+                                    <figure class="media">
+                                        <span style="background-image: url('<?php the_field('background_image',$next_post->ID); ?>');"></span>
+                                    </figure>
+                                    <div class="meta">
+                                        <p class="heading"><?php the_field('company',$next_post->ID); ?></p>
+                                        <p class="description"><?php the_field('title',$previous_post->ID); ?></p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
