@@ -26,9 +26,9 @@
             <div class="overlay-content">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-12 main-heading">
+                        <div class="col-sm-6 main-heading">
                             <h1><?php the_title(); ?></h1>
-                            <h5>User Research | Information Architecture | Wireframing | Prototyping | Product development</h5>
+                            <h5 class="hidden-xs hidden-sm">User Research | Information Architecture | Wireframing | Prototyping | Product development</h5>
                         </div>
                     </div>
                 </div>
@@ -47,7 +47,7 @@
     <section class="story-overview">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-offset-2 col-md-8">
+                <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
                     <div class="highlight">
                         <div class="row">
                             <div class="col-md-6">
@@ -95,7 +95,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-offset-1 col-sm-10">
+                <div class="col-sm-12 col-md-offset-1 col-md-10">
                     <div class="story">
                         <?php the_content(); ?>
                     </div>
@@ -106,7 +106,7 @@
     <section class="other-portfolios">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-offset-2 col-md-8">
+                <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
                     <h3>MORE STORIES YOU MIGHT LIKE</h3>
                     <div class="row">
                         <div class="col-md-6">
