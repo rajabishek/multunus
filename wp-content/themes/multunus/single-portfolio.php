@@ -43,31 +43,33 @@
         background-position: center !important;
         background-repeat: no-repeat no-repeat;">
         </div>
-    </div>   
-    <section class="story-overview">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
-                    <div class="highlight">
-                        <div class="row">
-                            <div class="col-md-6">
-                                 <div class="challenge">
-                                    <h3>The challenge</h3>
-                                    <p class="overview-content"><?php the_field('challenge'); ?></p>
+    </div>
+    <?php if(!empty(get_post_meta($post->ID, 'challenge', true)) && !empty(get_post_meta($post->ID, 'outcome', true))): ?>
+        <section class="story-overview">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
+                        <div class="highlight">
+                            <div class="row">
+                                <div class="col-md-6">
+                                     <div class="challenge">
+                                        <h3>The challenge</h3>
+                                        <p class="overview-content"><?php the_field('challenge'); ?></p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6">
-                                 <div class="outcome">
-                                    <h3>The outcome</h3>
-                                    <p class="overview-content"><?php the_field('outcome'); ?></p>
+                                <div class="col-md-6">
+                                     <div class="outcome">
+                                        <h3>The outcome</h3>
+                                        <p class="overview-content"><?php the_field('outcome'); ?></p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    <?php endif; ?>
     <section class="story-content">
         <div class="container">
             <div class="row">
