@@ -48,7 +48,7 @@
         <section class="story-overview">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
+                    <div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
                         <div class="highlight">
                             <div class="row">
                                 <div class="col-md-6">
@@ -73,7 +73,7 @@
     <section class="story-content">
         <div class="container">
             <div class="row">
-                <div class="col-xs-offset-1 col-xs-10 col-sm-offset-3 col-sm-6">
+                <div class="col-xs-offset-2 col-xs-8 col-sm-offset-3 col-sm-6">
                     <div class="customer-data">
                         <img src="<?php the_field('customer_image'); ?>"></img>
                         <div class="customer-info">
@@ -108,8 +108,12 @@
     <section class="other-portfolios">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
-                    <h3>MORE STORIES YOU MIGHT LIKE</h3>
+                <div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h3>MORE STORIES YOU MIGHT LIKE</h3>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="media-card">
