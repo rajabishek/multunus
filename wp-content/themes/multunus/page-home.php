@@ -14,7 +14,7 @@
                         <div class="col-sm-12 main-heading">
                             <h1>Solutions by design.</h1>
                             <h5>We translate complex ideas into simple and elegant products</h5>
-                            <a href="/services" class="button button-red-filled">See our services</a>
+                            <a href="/portfolio/good-karma" class="button button-red-filled">See our work</a>
                         </div>
                     </div>
                 </div>
