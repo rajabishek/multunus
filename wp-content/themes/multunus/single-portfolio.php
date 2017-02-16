@@ -70,7 +70,7 @@
             </div>
         </section>
     <?php endif; ?>
-    <section class="story-content">
+    <div class="story-review">
         <div class="container">
             <div class="row">
                 <div class="col-xs-offset-2 col-xs-8 col-sm-offset-3 col-sm-6">
@@ -96,6 +96,38 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <section class="story-context">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-offset-2 col-sm-8">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <div class="context">
+                                <p class="heading">Client</p>
+                                <h3 class="detail">Good Karma</h3>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="context">
+                                <p class="heading">Location</p>
+                                <h3 class="detail">Bengaluru, India</h3>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="context">
+                                <p class="heading">Project Length</p>
+                                <h3 class="detail">11 months</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="story-content">
+        <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-offset-1 col-md-10">
                     <div class="story">
