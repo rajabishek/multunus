@@ -28,7 +28,9 @@
                     <div class="row">
                         <div class="col-sm-6 main-heading">
                             <h1><?php the_title(); ?></h1>
-                            <h5 class="hidden-xs hidden-sm">User Research | Information Architecture | Wireframing | Prototyping | Product development</h5>
+                            <?php if(!empty(get_post_meta($post->ID, 'services', true))): ?>
+                                <h5 class="hidden-xs hidden-sm"><?php the_field('services'); ?></h5>
+                            <?php endif; ?>
                         </div>
                     </div>
                 </div>
@@ -98,34 +100,36 @@
             </div>
         </div>
     </div>
-    <section class="story-context">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-offset-2 col-sm-8">
-                    <div class="row">
-                        <div class="col-xs-4">
-                            <div class="context">
-                                <p class="heading">Client</p>
-                                <h3 class="detail"><?php the_field('company'); ?></h3>
+    <?php if(!empty(get_post_meta($post->ID, 'company', true)) && !empty(get_post_meta($post->ID, 'client_location', true)) && !empty(get_post_meta($post->ID, 'project_duration', true))): ?>
+        <section class="story-context">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-offset-2 col-sm-8">
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <div class="context">
+                                    <p class="heading">Client</p>
+                                    <h3 class="detail"><?php the_field('company'); ?></h3>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-xs-4">
-                            <div class="context">
-                                <p class="heading">Location</p>
-                                <h3 class="detail"><?php the_field('client_location'); ?></h3>
+                            <div class="col-xs-4">
+                                <div class="context">
+                                    <p class="heading">Location</p>
+                                    <h3 class="detail"><?php the_field('client_location'); ?></h3>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-xs-4">
-                            <div class="context">
-                                <p class="heading">Project Duration</p>
-                                <h3 class="detail"><?php the_field('project_duration'); ?></h3>
+                            <div class="col-xs-4">
+                                <div class="context">
+                                    <p class="heading">Project Duration</p>
+                                    <h3 class="detail"><?php the_field('project_duration'); ?></h3>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    <?php endif; ?>
     <section class="story-content">
         <div class="container">
             <div class="row">
