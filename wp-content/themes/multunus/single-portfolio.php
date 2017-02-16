@@ -106,19 +106,19 @@
                         <div class="col-xs-4">
                             <div class="context">
                                 <p class="heading">Client</p>
-                                <h3 class="detail">Good Karma</h3>
+                                <h3 class="detail"><?php the_field('company'); ?></h3>
                             </div>
                         </div>
                         <div class="col-xs-4">
                             <div class="context">
                                 <p class="heading">Location</p>
-                                <h3 class="detail">Bengaluru, India</h3>
+                                <h3 class="detail"><?php the_field('client_location'); ?></h3>
                             </div>
                         </div>
                         <div class="col-xs-4">
                             <div class="context">
-                                <p class="heading">Project Length</p>
-                                <h3 class="detail">11 months</h3>
+                                <p class="heading">Project Duration</p>
+                                <h3 class="detail"><?php the_field('project_duration'); ?></h3>
                             </div>
                         </div>
                     </div>
