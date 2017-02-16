@@ -72,34 +72,36 @@
             </div>
         </section>
     <?php endif; ?>
-    <div class="story-review">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-offset-2 col-xs-8 col-sm-offset-3 col-sm-6">
-                    <div class="customer-data">
-                        <img src="<?php the_field('customer_image'); ?>"></img>
-                        <div class="customer-info">
-                            <h4><?php the_field('customer_name'); ?></h4>
-                            <p class="customer-org"><?php the_field('customer_organization'); ?></p>
-                        </div>
-                        <div class="customer-review">
-                            <?php if(get_field('customer_quote') != "") { ?>
-                            <div class="quote-text">
-                                <i class="fa fa-quote-left"> </i><span id="text"><?php the_field('customer_quote'); ?></span>
+    <?php if(!empty(get_post_meta($post->ID, 'customer_quote', true)) || !empty(get_post_meta($post->ID, 'customer_video', true))): ?>
+        <section class="story-review">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-offset-2 col-xs-8 col-sm-offset-3 col-sm-6">
+                        <div class="customer-data">
+                            <img src="<?php the_field('customer_image'); ?>"></img>
+                            <div class="customer-info">
+                                <h4><?php the_field('customer_name'); ?></h4>
+                                <p class="customer-org"><?php the_field('customer_organization'); ?></p>
                             </div>
-                            <?php } ?>
-                            <?php if(get_field('customer_video') != "") { ?>
-                            <a class="button-with-icon client-video" href="<?php the_field('customer_video'); ?>">
-                            <span id="reel-icon"></span>
-                            <span class="underline">Watch Video</span>
-                            </a>
-                            <?php } ?>
+                            <div class="customer-review">
+                                <?php if(get_field('customer_quote') != "") { ?>
+                                <div class="quote-text">
+                                    <i class="fa fa-quote-left"> </i><span id="text"><?php the_field('customer_quote'); ?></span>
+                                </div>
+                                <?php } ?>
+                                <?php if(get_field('customer_video') != "") { ?>
+                                <a class="button-with-icon client-video" href="<?php the_field('customer_video'); ?>">
+                                <span id="reel-icon"></span>
+                                <span class="underline">Watch Video</span>
+                                </a>
+                                <?php } ?>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+    <?php endif; ?>
     <?php if(!empty(get_post_meta($post->ID, 'company', true)) && !empty(get_post_meta($post->ID, 'client_location', true)) && !empty(get_post_meta($post->ID, 'project_duration', true))): ?>
         <section class="story-context">
             <div class="container-fluid">
