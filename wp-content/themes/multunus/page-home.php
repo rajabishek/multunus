@@ -128,6 +128,7 @@
                             <div class="col-md-6">
                                 <a href="https://github.com/multunus/dashboard-clj" target="_blank">
                                     <div class="repo-card">
+                                        <img src="/img/home-community-dashboard.svg">
                                         <div class="repo-info">
                                             <h5 class="repo-title">CLJ Dashboard</h5>
                                             <p class="repo-description">A Clojure mini-framework for building realtime dashboards</p>
@@ -146,6 +147,7 @@
                                 </a>
                                 <a href="https://github.com/multunus/Open-Playbook" target="_blank">
                                     <div class="repo-card">
+                                        <img src="/img/home-community-network.svg">
                                         <div class="repo-info">
                                             <h5 class="repo-title">Open Playbook</h5>
                                             <p class="repo-description">Our open culture, tools and process playbook.</p>
@@ -166,6 +168,7 @@
                             <div class="col-md-6">
                                 <a href="https://github.com/multunus/onemdm-server" target="_blank">
                                     <div class="repo-card">
+                                        <img src="/img/home-community-database.svg">
                                         <div class="repo-info">
                                             <h5 class="repo-title">One MDM Server</h5>
                                             <p class="repo-description">Open Source Mobile Device Management (MDM) solution</p>
@@ -184,6 +187,7 @@
                                 </a>
                                 <a href="https://github.com/multunus/autonomous-rc-car" target="_blank">
                                     <div class="repo-card">
+                                        <img src="/img/home-community-racing.svg">
                                         <div class="repo-info">
                                             <h5 class="repo-title">Autonomous RC car</h5>
                                             <p class="repo-description">Autonomous RC car using Raspberry Pi and ANN</p>
