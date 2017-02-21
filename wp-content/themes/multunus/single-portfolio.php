@@ -108,19 +108,19 @@
                 <div class="row">
                     <div class="col-sm-offset-2 col-sm-8">
                         <div class="row">
-                            <div class="col-xs-4">
+                            <div class="col-xs-12 col-sm-4">
                                 <div class="context">
                                     <p class="heading">Client</p>
                                     <h3 class="detail"><?php the_field('company'); ?></h3>
                                 </div>
                             </div>
-                            <div class="col-xs-4">
+                            <div class="col-xs-12 col-sm-4">
                                 <div class="context">
                                     <p class="heading">Location</p>
                                     <h3 class="detail"><?php the_field('client_location'); ?></h3>
                                 </div>
                             </div>
-                            <div class="col-xs-4">
+                            <div class="col-xs-12 col-sm-4">
                                 <div class="context">
                                     <p class="heading">Project Duration</p>
                                     <h3 class="detail"><?php the_field('project_duration'); ?></h3>
