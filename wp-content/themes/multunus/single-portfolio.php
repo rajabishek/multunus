@@ -155,7 +155,7 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="media-card">
-                                <a href="<?php get_permalink($previous_post->ID); ?>" target="_blank" data-lity>
+                                <a href="<?php echo get_permalink($previous_post->ID); ?>" target="_blank" data-lity>
                                     <figure class="media">
                                         <span style="background-image: url('<?php the_field('background_image',$previous_post->ID); ?>');"></span>
                                     </figure>
@@ -168,7 +168,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="media-card">
-                                <a href="<?php get_permalink($next_post->ID); ?>" target="_blank" data-lity>
+                                <a href="<?php echo get_permalink($next_post->ID); ?>" target="_blank" data-lity>
                                     <figure class="media">
                                         <span style="background-image: url('<?php the_field('background_image',$next_post->ID); ?>');"></span>
                                     </figure>
