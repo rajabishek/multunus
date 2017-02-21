@@ -8,7 +8,7 @@
 <div class="contact-us-section">
     <section id="main-content" class="container">
         <h1 class="align-center">Hello there</h1>
-        <p>We answer over 100 messages every week from our contact form, and we love talking to our potential customers, fans, haters and people who've got some feedback for us.</p>
+        <p>We love talking to our potential customers, fans, haters and people who've got some feedback for us.</p>
         <p>You can email us to <a href="mailto:info@multunus.com" class="email-link">info@multunus.com</a> or fill the form below.</p>
         <!-- <p>Just email us at <a href="mailto:info@multunus.com" class="email-link">info@multunus.com</a>, or fill in the form below.</p> -->
         <div class="type-form-container">
