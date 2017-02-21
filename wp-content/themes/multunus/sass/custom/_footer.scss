@@ -7,10 +7,6 @@ footer {
     color: #B3B3B3;
   }
   
-  li.nav-heading {
-    font-size: 19px;
-  }
-  
   hr {
     display: block;
     height: 1px;
@@ -23,7 +19,11 @@ footer {
   .container {
     padding-top: 30px;
     li {
-      margin-bottom: 10px;
+      margin-bottom: 8px;
+    }
+    li.nav-heading {
+      font-size: 19px;
+      margin-bottom: 15px;
     }
   }
   
