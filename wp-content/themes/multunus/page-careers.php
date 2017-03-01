@@ -80,7 +80,7 @@
                                 <div class="col-xs-9">
                                     <div class="content">
                                         <h4>Autonomous salary system</h4>
-                                        <p>Lorem ipsum dolor sit amet conse adipisicing elit. Neque, iusto aliquid rem at in voluptatum rerum.</p>
+                                        <p>We made our salaries transparent. All of our salaries are now open to everyone within the company.</p>
                                     </div>
                                 </div>
                             </div>
@@ -92,8 +92,8 @@
                                 </div>
                                 <div class="col-xs-9">
                                     <div class="content">
-                                        <h4>Flexible working hours</h4>
-                                        <p>Lorem ipsum dolor sit amet conse adipisicing elit. Neque, iusto aliquid rem at in voluptatum rerum.</p>
+                                        <h4>Flexible work hours</h4>
+                                        <p>Take vacation when you need it and work when and where you are most productive.</p>
                                     </div>
                                 </div>
                             </div>
@@ -110,7 +110,7 @@
                                 <div class="col-xs-9">
                                     <div class="content">
                                         <h4>Transparency</h4>
-                                        <p>Lorem ipsum dolor sit amet conse adipisicing elit. Neque, iusto aliquid rem at in voluptatum rerum.</p>
+                                        <p>We hardly DM each other on slack. Full access trello boards and google docs. Transparency is our core value.</p>
                                     </div>
                                 </div>
                             </div>
@@ -123,7 +123,7 @@
                                 <div class="col-xs-9">
                                     <div class="content">
                                         <h4>Outcomes over outputs</h4>
-                                        <p>Lorem ipsum dolor sit amet conse adipisicing elit. Neque, iusto aliquid rem at in voluptatum rerum.</p>
+                                        <p>We work to make the world a better place. In this epic journey, we are always looking for torchbearers.</p>
                                     </div>
                                 </div>
                             </div>
@@ -142,7 +142,7 @@
                                 <div class="col-xs-9">
                                     <div class="content">
                                         <h4>Challenge the status quo</h4>
-                                        <p>Lorem ipsum dolor sit amet conse adipisicing elit. Neque, iusto aliquid rem at in voluptatum rerum.</p>
+                                        <p>Take responsibility and don’t be a bystander. Be a part of out journey to make the world a better place to live.</p>
                                     </div>
                                 </div>
                             </div>
@@ -159,7 +159,7 @@
                                 <div class="col-xs-9">
                                     <div class="content">
                                         <h4>Continuous improvement</h4>
-                                        <p>Lorem ipsum dolor sit amet conse adipisicing elit. Neque, iusto aliquid rem at in voluptatum rerum.</p>
+                                        <p>We believe in continuous improvement. Incrementally imrpove the products, services or processes over time.</p>
                                     </div>
                                 </div>
                             </div>
@@ -181,8 +181,8 @@
             </div>
             <div class="col-md-6 col-lg-6">
                 <div class="text-container">
-                    <p>Many conventional colleges and universities are now offering online DVD repair courses, which are the exact same as those taught on a traditional college campus, to distance learners. </p>
-                    <p>Online education is generally taught through the use of several different methods, including online satellite feeds, correspondence or online lessons.</p>
+                    <p>At Multunus, you will work with the world’s most talented engineers, designers, and thought leaders to shape the future of how people use digital products.</p>
+                    <p>Come make history with the brightest, most curious people from every discipline. We've only just begun.</p>
                 </div>
             </div>
         </div>
