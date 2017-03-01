@@ -113,7 +113,7 @@
             </div>
         </div>
     </section>
-    <div class="community">
+    <div class="community" id="community-section">
         <div class="container">
             <div class="row">
                 <h1 class="text-center">We <img src="/img/home-heart.svg" class="heart"> our community</h1>

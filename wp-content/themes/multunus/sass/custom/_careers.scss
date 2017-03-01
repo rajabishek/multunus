@@ -6,6 +6,189 @@
   }
 }
 
+.careers-page {
+  .subtle-heading {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 20px;
+  }
+  .why-multunus {
+    margin-top: 50px;
+    .overview-content {
+      line-height: 2;
+      margin-top: 10px;
+      color: #484848;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+  }
+  .community-section {
+    background-color: #F4F4F4;
+    .image-bg{
+      background-image:url('/img/careers-community.jpg');
+      background-size: cover;
+    }
+    .overlay-bg{
+      height: inherit;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 150px 20px 150px 20px;
+      z-index: 99;
+      text-align: center;
+      h3 {
+        margin-top: 5%;
+        color: white;
+        line-height: 1.8;
+        font-weight: 600;
+      }
+    }
+    .text-container{
+      font-size: 18px;
+      width: 90%;
+      margin: 100px auto;
+      p {
+        line-height: 2;
+        margin-bottom: 20px;
+      }
+    }
+    .row.no-gutters {
+      margin-right: 0;
+      margin-left: 0;
+    }
+    .row.no-gutters > [class^="col-"],
+    .row.no-gutters > [class*=" col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+  .life-at-multunus {
+    margin-top: 30px;
+    .subtle-heading {
+      margin-bottom: 0px;
+    }
+    margin-top: 30px;
+    margin-bottom: 70px;
+    .resource-links {
+      list-style-type: none;
+      .resource-link {
+        margin-top: 20px;
+        img {
+          margin-top: 40px;
+          margin-left: 15px;
+        }
+        .content{
+          padding-right: 5px;
+          h4 {
+            margin: 10px 0px 0px 0px;
+          }
+          p {
+            color: #656565;
+            margin-top: 10px;
+          }
+        }
+        position: relative;
+        background-color: white;
+        padding: 15px;
+        margin-bottom: 10px;
+        border-radius: 2px;
+        background-clip: padding-box;
+        -webkit-box-shadow: 0 2px 64px 0 rgba(208,208,208,0.5);
+        -moz-box-shadow: 0 2px 64px 0 rgba(208,208,208,0.5);
+        box-shadow: 0 2px 64px 0 rgba(208,208,208,0.5);
+      }
+    }
+  }
+  .main-elements {
+    .clickable-card {
+      text-align: center;
+      min-height: 250px;
+      padding: 10px 30px;
+      cursor: pointer;
+      -webkit-transition: 0.2s;
+      -o-transition: 0.2s;
+      transition: 0.2s;
+      position: relative;
+      h3 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+      p{
+        text-align: left;
+      }
+      .illustration {
+        width: 80px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      a {
+        text-decoration:none;
+        color: #333;
+        &:hover, &:active, &:focus, &:visited {
+          color: #333;
+          text-decoration:none;
+        }
+      }
+    }
+  }
+  .banner-section-container {
+    .main-heading {
+      h1 {
+        @media (max-width: $screen-xs-max){
+          font-size: 26px;
+          line-height: 1.4;
+        }
+        @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+          font-size: 30px;
+          line-height: 1.4;
+        }
+        @media (min-width: $screen-md-min) and (max-width: $screen-md-max){
+          font-size: 34px;
+          line-height: 1.4;
+        }
+        @media (min-width: $screen-lg-min) and (max-width: 1406px) {
+          font-size: 38px;
+          line-height: 1.4;
+        }
+        @media(min-width: 1406px) and (max-width: 1766px){
+          font-size: 40px;
+          line-height: 1.4;
+        }
+        @media(min-width: 1766px) and (max-width: 1906px){
+          font-size: 46px;
+        }
+        @media(min-width: 1906px){
+          font-size: 50px;
+        }
+      }
+    }
+    #banner-img-container{
+      @media (max-width: $screen-xs-max){
+          min-height: 274px;
+      }
+      @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+          min-height: 310px;
+      }
+      @media (min-width: $screen-md-min) and (max-width: $screen-md-max){
+          min-height: 370px;
+      }
+      @media (min-width: $screen-lg-min) and (max-width: 1406px) {
+          min-height: 390px;
+      }
+      @media(min-width: 1406px) and (max-width: 1766px){
+          min-height: 490px;
+      }
+      @media(min-width: 1766px) and (max-width: 1906px){
+          min-height: 530px;
+      }
+      @media(min-width: 1906px){
+          min-height: 600px;
+      }
+    }
+  }
+}
+
 .founder-quote {
   padding-top: 32px;
   padding-bottom: 38px;
@@ -117,8 +300,6 @@
 .career-openings {
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color: #F4F4F4;
-
   h1 {
     text-align: center;
     padding-bottom: 45px;
