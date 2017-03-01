@@ -33,8 +33,8 @@
             <div class="row">
                 <div class="col-xs-12">
                     <h3 class="subtle-heading">Why Multunus ?</h3>
-                    <p class="spacing grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur numquam libero deleniti unde, mollitia ad, cum esse veritatis dolores eaque obcaecati consequuntur voluptas voluptatibus voluptatem sit earum, illo magnam. Quisquam.</p>
-                    <p class="spacing grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum aliquid accusantium laudantium cupiditate explicabo ipsam soluta pariatur eaque, quasi, placeat quibusdam consequatur sapiente saepe incidunt culpa vero eum corrupti quae.</p>
+                    <p class="spacing">As Multunus leapfrogs into the future, we make the most of our present. We are a group of ambitious and fun-loving people, many of whom have come from across the globe and made it to the Multunus family.</p>
+                    <p class="spacing">The only thing that matches the enthusiasm of our employees is the audacity of what we do. While we don’t sweat the small stuff, we don’t compromise on quality either.</p>
                 </div>
             </div>
         </div>
@@ -46,21 +46,21 @@
                     <div class="clickable-card">
                         <img src="/img/careers-build.svg" class="illustration">
                         <h3>Build</h3>
-                        <p class="spacing grey">We believe that innovation should happen all the time in all teams.</p>
+                        <p class="spacing grey">We build the best experience for our community - as a team.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="clickable-card">
                         <img src="/img/careers-learn.svg" class="illustration">
                         <h3>Learn</h3>
-                        <p class="spacing grey">We believe that innovation should happen all the time in all teams.</p>
+                        <p class="spacing grey">We look inside and outside for inspiration and learning.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="clickable-card">
                         <img src="/img/careers-play.svg" class="illustration">
                         <h3>Play</h3>
-                        <p class="spacing grey">We believe that innovation should happen all the time in all teams.</p>        
+                        <p class="spacing grey">Life is what happens when you're busy working. We make sure to enjoy it.</p>        
                     </div>
                 </div>
             </div>
