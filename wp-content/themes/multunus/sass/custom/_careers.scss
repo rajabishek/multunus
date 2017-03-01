@@ -28,13 +28,19 @@
     background-color: #F4F4F4;
     .image-bg{
       background-image:url('/img/careers-community.jpg');
+      -webkit-background-image: url('/img/careers-community.jpg');
+      -moz-background-image: url('/img/careers-community.jpg');
+      -o-background-image: url('/img/careers-community.jpg');
       background-size: cover;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
     }
     .overlay-bg{
       height: inherit;
       width: 100%;
       background-color: rgba(0, 0, 0, 0.6);
-      padding: 150px 20px 150px 20px;
+      padding: 120px 20px 120px 20px;
       z-index: 99;
       text-align: center;
       h3 {
@@ -43,10 +49,15 @@
         line-height: 1.8;
         font-weight: 600;
       }
+      a {
+        &:hover {
+          color: white;
+        }
+      }
     }
     .text-container{
       font-size: 18px;
-      width: 90%;
+      width: 85%;
       margin: 100px auto;
       p {
         line-height: 2;
@@ -105,7 +116,6 @@
       text-align: center;
       min-height: 250px;
       padding: 10px 30px;
-      cursor: pointer;
       -webkit-transition: 0.2s;
       -o-transition: 0.2s;
       transition: 0.2s;
@@ -121,14 +131,6 @@
         width: 80px;
         margin-top: 20px;
         margin-bottom: 20px;
-      }
-      a {
-        text-decoration:none;
-        color: #333;
-        &:hover, &:active, &:focus, &:visited {
-          color: #333;
-          text-decoration:none;
-        }
       }
     }
   }

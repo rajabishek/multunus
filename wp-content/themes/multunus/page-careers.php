@@ -12,6 +12,7 @@
                     <div class="row">
                         <div class="col-sm-6 main-heading">
                             <h1>Join our team.</h1>
+                            <a data-toggle="scroll" rel="#open-positions" class="button button-red-filled">Find a role<span></span></a>
                         </div>
                     </div>
                 </div>
@@ -43,29 +44,23 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="clickable-card">
-                        <a href="/services#innovation-consulting">
-                            <img src="/img/careers-build.svg" class="illustration">
-                            <h3>Build</h3>
-                            <p class="spacing grey">We believe that innovation should happen all the time in all teams.</p>
-                        </a>
+                        <img src="/img/careers-build.svg" class="illustration">
+                        <h3>Build</h3>
+                        <p class="spacing grey">We believe that innovation should happen all the time in all teams.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="clickable-card">
-                        <a href="/services#innovation-consulting">
-                            <img src="/img/careers-learn.svg" class="illustration">
-                            <h3>Learn</h3>
-                            <p class="spacing grey">We believe that innovation should happen all the time in all teams.</p>
-                        </a>
+                        <img src="/img/careers-learn.svg" class="illustration">
+                        <h3>Learn</h3>
+                        <p class="spacing grey">We believe that innovation should happen all the time in all teams.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="clickable-card">
-                        <a href="/services#innovation-consulting">
-                            <img src="/img/careers-play.svg" class="illustration">
-                            <h3>Play</h3>
-                            <p class="spacing grey">We believe that innovation should happen all the time in all teams.</p>
-                        </a>
+                        <img src="/img/careers-play.svg" class="illustration">
+                        <h3>Play</h3>
+                        <p class="spacing grey">We believe that innovation should happen all the time in all teams.</p>        
                     </div>
                 </div>
             </div>
