@@ -159,7 +159,7 @@
                                 <div class="col-xs-9">
                                     <div class="content">
                                         <h4>Continuous improvement</h4>
-                                        <p>We believe in continuous improvement. Incrementally imrpove the products, services or processes over time.</p>
+                                        <p>We believe in continuous improvement. Incrementally improve the products, services or processes over time.</p>
                                     </div>
                                 </div>
                             </div>
