@@ -7,7 +7,6 @@
                     <li>
                     <li><a href="/process">Process</a></li>
                     <li><a href="/team">Team</a></li>
-                    <li><a href="/careers">Careers</a></li>
                 </ul>
             </div>
             <div class="col-xs-3">
