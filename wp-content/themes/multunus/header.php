@@ -30,7 +30,6 @@
                       <li><a href="/services">Services</a></li>
                       <li><a href="/portfolio">Portfolio</a></li>
                       <li><a href="/blog">Blog</a></li>
-                      <li><a href="/careers">Careers</a></li>
                       <li><a href="/contact">Let's Talk</a></li>
                 </ul>
               </div>
