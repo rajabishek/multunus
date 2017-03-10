@@ -13,7 +13,6 @@
 							<li><a href="/services">Services</a></li>
 							<li><a href="/portfolio">Portfolio</a></li>
 							<li><a href="/contact">Contact Us</a></li>
-							<li><a href="/careers">Careers</a></li>
 						</ul>
 					</div>
 					<div class="col-md-2">
