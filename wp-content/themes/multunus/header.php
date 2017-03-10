@@ -62,6 +62,6 @@
           </div>
       </div>
     </header>
-  <? endif; ?>
+  <?php endif; ?>
 </body>
 </html>
